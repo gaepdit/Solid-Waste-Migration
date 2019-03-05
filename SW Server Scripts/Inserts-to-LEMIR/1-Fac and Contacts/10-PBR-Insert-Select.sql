@@ -64,7 +64,7 @@ SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
                                   ELSE '2'+substring([MF].[PermitNumber], 7, 20)
                                 END
                          END
-FROM [PermitByRule].[dbo].[PBR Main Facility] AS [MF]
+FROM [PermitByRule].[dbo].[PBR_Main_Facility] AS [MF]
      JOIN [PermitByRule].[dbo].[PBR Contacts] AS [PC] ON [MF].[PermitNumber] = [PC].[PermitNumber]
      LEFT JOIN [LEMIR_Stage].[dbo].[Update_Insert] AS [UI] ON [MF].[PermitNumber] = [UI].[Permit_Number]
 WHERE [UI].[InsUpd] = 'I'

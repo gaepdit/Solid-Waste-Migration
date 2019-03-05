@@ -56,7 +56,7 @@ SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
        [Comments] AS [COMMENTS],
        '1' AS [PERMIT_STATUS_RID],
        '1108' AS [PERMIT_TYPE_RID],
-       '' AS [APPLICATION_RID],
+       --'' AS [APPLICATION_RID],
        GETDATE() AS [CREATED_DATE],
        @created_by_string AS [CREATED_BY],
        GETDATE() AS [UPDATED_DATE],
