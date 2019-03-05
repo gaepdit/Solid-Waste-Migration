@@ -1,0 +1,296 @@
+<DynamicFormValue>
+    <ENVInterestMRF>
+        <dataField>
+            <id>txtPermitNumber</id>
+            <value></value>
+            <tag>Permit Number</tag>
+            <visible>true</visible>
+            <history></history>
+            <description>Permit Number:</description>
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>ddlEnvInterestStatus</id>
+            <value></value>
+            <tag>EI Status</tag>
+            <visible>true</visible>
+            <history></history>
+            <description>EI Status:</description>
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>rdoOwnershipType</id>
+            <value></value>
+            <tag>Ownership Type</tag>
+            <visible>true</visible>
+            <history></history>
+            <description>Ownership Type:</description>
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>txtComment</id>
+            <value></value>
+            <tag>General Comments</tag>
+            <visible>true</visible>
+            <history></history>
+            <description>General Comments:</description>
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>rdoGWInstalled</id>
+            <value></value>
+            <tag>GW Monitoring System Installed</tag>
+            <visible>true</visible>
+            <history></history>
+            <description>GW Monitoring System Installed:</description>
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>rdoMethaneInstalled</id>
+            <value></value>
+            <tag>Methane Monitoring System Installed</tag>
+            <visible>true</visible>
+            <history></history>
+            <description>Methane Monitoring System Installed:</description>
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>rdoUnderDrainInstalled</id>
+            <value></value>
+            <tag>Under Drain System Installed</tag>
+            <visible>true</visible>
+            <history></history>
+            <description>Under Drain System Installed:</description>
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>rdoLFGasInstalled</id>
+            <value></value>
+            <tag>LF Gas Collection Installed</tag>
+            <visible>true</visible>
+            <history></history>
+            <description>LF Gas Collection Installed:</description>
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>rdoWasteEnergyOnsite</id>
+            <value></value>
+            <tag>Waste to Energy Onsite?</tag>
+            <visible>true</visible>
+            <history></history>
+            <description>Waste to Energy Onsite?</description>
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>txtEnergyProduced</id>
+            <value></value>
+            <tag>Energy Produced (MWH)</tag>
+            <visible>false</visible>
+            <history></history>
+            <description>Energy Produced (MWH): </description>
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>chkRelatedEnvInterest</id>
+            <value></value>
+            <tag>Related Environmental Interests</tag>
+            <visible>true</visible>
+            <history></history>
+            <description>Related Environmental Interests: </description>
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>txtPermitIssueDate</id>
+            <value></value>
+            <tag>Permit Issued Date</tag>
+            <visible>true</visible>
+            <history></history>
+            <description>Permit Issued Date:</description>
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>txtReceiveWasteApprovedDate</id>
+            <value></value>
+            <tag>Date Approved to Receive Waste</tag>
+            <visible>true</visible>
+            <history></history>
+            <description>Date Approved to Receive Waste:</description>
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>txtPermitReviewDueDate</id>
+            <value></value>
+            <tag>Current Permit Review Due Date</tag>
+            <visible>true</visible>
+            <history></history>
+            <description>Current Permit Review Due Date:</description>
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>txtAcceptingWasteCeasedDate</id>
+            <value></value>
+            <tag>Date Ceased Accepting Waste</tag>
+            <visible>true</visible>
+            <history></history>
+            <description>Date Ceased Accepting Waste:</description>
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>txtClosurePermitIssuedDate</id>
+            <value></value>
+            <tag>Closure Permit Issued Date</tag>
+            <visible>true</visible>
+            <history></history>
+            <description>Closure Permit Issued Date:</description>
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>txtPermittedCapacity</id>
+            <value></value>
+            <tag>Permitted Capacity (CY)</tag>
+            <visible>true</visible>
+            <history></history>
+            <description>Permitted Capacity (CY): </description>
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>txtTotalAcreage</id>
+            <value></value>
+            <tag>Total Acreage (acres)</tag>
+            <visible>true</visible>
+            <history></history>
+            <description>Total Acreage (acres): </description>
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>txtWasteTypesAccepted</id>
+            <value></value>
+            <tag>Waste Types Accepted</tag>
+            <visible>true</visible>
+            <history></history>
+            <description>Waste Types Accepted:</description>
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>txtMaterialsNotAccepted</id>
+            <value></value>
+            <tag>Materials Not Accepted</tag>
+            <visible>true</visible>
+            <history></history>
+            <description>Materials Not Accepted:</description>
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>txtMaterialsRecovered</id>
+            <value></value>
+            <tag>Materials Recovered</tag>
+            <visible>true</visible>
+            <history></history>
+            <description>Materials Recovered:</description>
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>rdoAcceptPublicWaste</id>
+            <value></value>
+            <tag>Accept Public Waste?</tag>
+            <visible>true</visible>
+            <history></history>
+            <description>Accept Public Waste?</description>
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>txtConstructionDetails</id>
+            <value></value>
+            <tag>Construction Details</tag>
+            <visible>true</visible>
+            <history></history>
+            <description>Details:</description>
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>txtAddress1</id>
+            <value></value>
+            <tag>Mailing Address 1</tag>
+            <visible>true</visible>
+            <history></history>
+            <description>Address 1:</description>
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>txtAddress2</id>
+            <value></value>
+            <tag>Mailing Address 2</tag>
+            <visible>true</visible>
+            <history></history>
+            <description />
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>txtCity</id>
+            <value></value>
+            <tag>City</tag>
+            <visible>true</visible>
+            <history></history>
+            <description>City:</description>
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>txtCounty</id>
+            <value></value>
+            <tag>County</tag>
+            <visible>true</visible>
+            <history></history>
+            <description>County:</description>
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>ddlState</id>
+            <value></value>
+            <tag>State</tag>
+            <visible>true</visible>
+            <history></history>
+            <description>State:</description>
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>txtZipCode</id>
+            <value></value>
+            <tag>Zip Code</tag>
+            <visible>true</visible>
+            <history></history>
+            <description>Zip Code:</description>
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>txtLatitudeSiteLocation</id>
+            <value></value>
+            <tag>Latitude</tag>
+            <visible>true</visible>
+            <history></history>
+            <description>Latitude:</description>
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>txtLongitudeSiteLocation</id>
+            <value></value>
+            <tag>Longitude</tag>
+            <visible>true</visible>
+            <history></history>
+            <description>Longitude:</description>
+            <comment></comment>
+        </dataField>
+        <dataField>
+            <id>ucMapcontrol</id>
+            <value></value>
+            <tag />
+            <visible>true</visible>
+            <history></history>
+            <description />
+            <comment></comment>
+        </dataField>
+        <grdMajorModification>
+            <txtMajorModificationIssuedDate />
+            <txtMajorModificationPurpose />
+        </grdMajorModification>
+    </ENVInterestMRF>
+</DynamicFormValue>

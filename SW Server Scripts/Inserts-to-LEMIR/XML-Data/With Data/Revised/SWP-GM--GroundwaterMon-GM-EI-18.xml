@@ -1,0 +1,67 @@
+<DynamicFormValue>
+    <SolidWaste>
+        <dataField>
+            <id>ucontrolGeologist</id>
+            <value />
+            <tag />
+            <visible>true</visible>
+            <history>|1/15/2019 12:14:12 PM|Admin||</history>
+            <description />
+            <comment />
+        </dataField>
+        <dataField>
+            <id>ucontrolComplianceStatus</id>
+            <value />
+            <tag />
+            <visible>true</visible>
+            <history>|1/15/2019 12:14:12 PM|Admin||</history>
+            <description />
+            <comment />
+        </dataField>
+        <dataField>
+            <id>ucontrolMilestone</id>
+            <value />
+            <tag />
+            <visible>true</visible>
+            <history>|1/15/2019 12:14:12 PM|Admin||</history>
+            <description />
+            <comment />
+        </dataField>
+        <dataField>
+            <id>ucontrolSubmittal</id>
+            <value />
+            <tag />
+            <visible>true</visible>
+            <history>|1/15/2019 12:14:12 PM|Admin||</history>
+            <description />
+            <comment />
+        </dataField>
+        <dataField>
+            <id>ucontrolAttachment</id>
+            <value />
+            <tag />
+            <visible>true</visible>
+            <history>|1/15/2019 12:14:12 PM|Admin||</history>
+            <description />
+            <comment />
+        </dataField>
+        <dataField>
+            <id>ddlGeologist</id>
+            <value>1002</value>
+            <tag />
+            <visible>false</visible>
+            <history>1002|1/15/2019 12:14:12 PM|Admin||</history>
+            <description />
+            <comment />
+        </dataField>
+        <dataField>
+            <id>ddlComplianceStatus</id>
+            <value>Assessment Monitoring</value>
+            <tag />
+            <visible>false</visible>
+            <history>Assessment Monitoring|1/15/2019 12:14:12 PM|Admin||</history>
+            <description />
+            <comment />
+        </dataField>
+    </SolidWaste>
+</DynamicFormValue>

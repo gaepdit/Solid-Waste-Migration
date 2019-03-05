@@ -1,0 +1,79 @@
+<dynamicForms>
+    <form id="SolidWaste" name="" url="">
+        <formSession>
+            <sessionIn>
+                <session id="" />
+                <session id="" />
+                <session id="" />
+            </sessionIn>
+            <sessionOut>
+                <session id="" />
+                <session id="" />
+                <session id="" />
+            </sessionOut>
+        </formSession>
+        <formSourceData>            <!--<searchEngine id="querygrdMilestoneTracking" file="ENVInterest_grdMilestoneTracking.xml" targetID="grdMilestoneTracking"></searchEngine>-->            <!--<query id="queryGeologist" targetID="chkRelatedEnvInterest" runOnce="true">select USER_RID, FIRST_NAME + ' ' + LAST_NAME AS [USER_NAME] from SEC_USER where USER_RID in (select A.USER_RID from SEC_USER_GROUP A INNER JOIN SEC_USER_GROUP_ROLE B ON A.USER_GROUP_RID = B.USER_GROUP_RID where A.GROUP_RID=20 and B.ROLE_RID=11 and A.STATUS_CD='A' and B.STATUS_CD='A') and STATUS_CD='A'</query>--></formSourceData>
+        <formAction>
+            <condition />
+        </formAction>
+        <formValidation />
+        <formSection id="sec1" title="I. Responsible Geologist" titleCss="secTtl" contentCss="secCnt">
+            <formBlock id="" cssClass="fmBlk">
+                <formRow id="" cssClass="fmRow">
+                    <formField id="" cssClass="fmFld">
+                        <formControl id="ucontrolGeologist" type="usercontrol" src="~/Client/GA_GEOS/Controls/Env_Geologist.ascx" cssClass="" text="" value="" break="true">
+                            <attribute name="GroupRidList" value="20" />
+                            <attribute name="RoleRidList" value="11" />
+                        </formControl>
+                    </formField>
+                </formRow>                <!--<formRow id="" cssClass="fmRow"> <formField id="" cssClass="fmFld"> <formControl id="lblGeologist" type="label" cssClass="" text="Geologist: " value="" break="true"></formControl> <formControl id="ddlGeologist" type="dropdownlist" cssClass="" text="" value="" break="true" associatedLabelID="lblGeologist" required="true" requiredCondition="" errorMessage="Responsible Geologist must be entered" tag="Responsible Geologist"> <attribute name="DataTextField" value="USER_NAME"/> <attribute name="DataValueField" value="USER_RID"/> </formControl> </formField> </formRow>--></formBlock>
+        </formSection>
+        <formSection id="sec2" title="II. Overall Compliance Status" titleCss="secTtl" contentCss="secCnt">
+            <formBlock id="" cssClass="fmBlk">
+                <formRow id="" cssClass="fmRow">
+                    <formField id="" cssClass="fmFld">
+                        <formControl id="ucontrolComplianceStatus" type="usercontrol" src="~/Client/GA_GEOS/Controls/Env_ComplianceStatus.ascx" cssClass="" text="" value="" break="true"></formControl>
+                    </formField>
+                </formRow>
+            </formBlock>
+        </formSection>
+        <formSection id="sec3" title="III. Compliance Milestone Tracking" titleCss="secTtl" contentCss="secCnt">
+            <formBlock id="" cssClass="fmBlk">
+                <formRow id="" cssClass="fmRow">
+                    <formField id="" cssClass="fmFld">
+                        <formControl id="ucontrolMilestone" type="usercontrol" src="~/Client/GA_GEOS/Controls/Env_Milestone.ascx" cssClass="" text="" value="" break="true"></formControl>                        <!--<formControl id="grdMilestoneTracking" type="datagrid" text="" value="" break="true"> <attribute name="PageSize" value="5"/> <attribute name="AllowPaging" value="true" /> </formControl>--></formField>
+                </formRow>
+            </formBlock>
+        </formSection>
+        <formSection id="sec4" title="IV. Submittal" titleCss="secTtl" contentCss="secCnt">
+            <formBlock id="" cssClass="fmBlk">
+                <formRow id="" cssClass="fmRow">
+                    <formField id="" cssClass="fmFld">
+                        <formControl id="ucontrolSubmittal" type="usercontrol" src="~/Client/GA_GEOS/Controls/Env_SubmittalList.ascx" cssClass="" text="" value="" break="true">
+                            <attribute name="ApplicationRid" value="2147" />
+                        </formControl>
+                    </formField>
+                </formRow>
+            </formBlock>
+        </formSection>
+        <formSection id="sec5" title="V. Documents" titleCss="secTtl" contentCss="secCnt">
+            <formBlock id="" cssClass="fmBlk">
+                <formRow id="" cssClass="fmRow">
+                    <formField id="" cssClass="fmFld">
+                        <formControl id="ucontrolAttachment" type="usercontrol" src="~/Client/GA_GEOS/Controls/Env_Attachment.ascx" cssClass="" text="" value="" break="true"></formControl>
+                    </formField>
+                </formRow>
+            </formBlock>
+        </formSection>
+        <formSection id="secHidden" title="" titleCss="secTtl" contentCss="secCnt" visible="false">
+            <formBlock id="" cssClass="fmBlk">
+                <formRow id="" cssClass="fmRow">
+                    <formField id="" cssClass="fmFld">
+                        <formControl id="ddlGeologist" type="textbox" cssClass="" text="" value="" break="true"></formControl>
+                        <formControl id="ddlComplianceStatus" type="textbox" cssClass="" text="" value="" break="true"></formControl>
+                    </formField>
+                </formRow>
+            </formBlock>
+        </formSection>
+    </form>
+</dynamicForms>

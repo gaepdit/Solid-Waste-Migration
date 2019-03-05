@@ -1,0 +1,161 @@
+<Element> Name: id                              value:  txtPermitNumber                         
+<Element> Name: value                           value:  w                                       
+<Element> Name: tag                             value:  Permit Number                           
+<Element> Name: visible                         value:  true                                    
+<Element> Name: history                         value:  w|11/26/2018 5:28:55 PM|Admin||         
+<Element> Name: description                     value:  Permit Number:                          
+<Element> Name: comment                         value:                                          
+<Element> Name: id1                             value:  ddlEnvInterestStatus                    
+<Element> Name: value1                          value:  Construction                            
+<Element> Name: tag1                            value:  EI Status                               
+<Element> Name: visible1                        value:  true                                    
+<Element> Name: history1                        value:  Construction|11/26/2018 5:28:55 PM|Admin||
+<Element> Name: description1                    value:  EI Status:                              
+<Element> Name: comment1                        value:                                          
+<Element> Name: id2                             value:  rdoOwnershipType                        
+<Element> Name: value2                          value:                                          
+<Element> Name: tag2                            value:  Ownership Type                          
+<Element> Name: visible2                        value:  true                                    
+<Element> Name: history2                        value:  |11/26/2018 5:28:55 PM|Admin||          
+<Element> Name: description2                    value:  Ownership Type:                         
+<Element> Name: comment2                        value:                                          
+<Element> Name: id3                             value:  chkRelatedEnvInterest                   
+<Element> Name: value3                          value:  BIO,COL,C&D                             
+<Element> Name: tag3                            value:  Related Environmental Interests         
+<Element> Name: visible3                        value:  true                                    
+<Element> Name: history3                        value:  BIO,COL,C&D|11/26/2018 5:28:55 PM|Admin||
+<Element> Name: description3                    value:  Related Environmental Interests:        
+<Element> Name: comment3                        value:                                          
+<Element> Name: id4                             value:  ddlOtherPBRType                         
+<Element> Name: value4                          value:  On-site Processing                      
+<Element> Name: tag4                            value:  Type of Other PBR Facility              
+<Element> Name: visible4                        value:  true                                    
+<Element> Name: history4                        value:  On-site Processing|11/26/2018 5:28:55 PM|Admin||
+<Element> Name: description4                    value:  Type of Other PBR Facility:             
+<Element> Name: comment4                        value:                                          
+<Element> Name: id5                             value:  txtOtherPBRType_Other                   
+<Element> Name: value5                          value:                                          
+<Element> Name: tag5                            value:  Other Type of Other PBR Facility        
+<Element> Name: visible5                        value:  false                                   
+<Element> Name: history5                        value:  |11/26/2018 5:28:55 PM|Admin||          
+<Element> Name: description5                    value:  Other:                                  
+<Element> Name: comment5                        value:                                          
+<Element> Name: id6                             value:  txtComment                              
+<Element> Name: value6                          value:  r                                       
+<Element> Name: tag6                            value:  General Comments                        
+<Element> Name: visible6                        value:  true                                    
+<Element> Name: history6                        value:  r|11/26/2018 5:28:55 PM|Admin||         
+<Element> Name: description6                    value:  General Comments:                       
+<Element> Name: comment6                        value:                                          
+<Element> Name: id7                             value:  txtFacilityStartDate                    
+<Element> Name: value7                          value:  11/26/2018                              
+<Element> Name: tag7                            value:  Facility Start Date                     
+<Element> Name: visible7                        value:  true                                    
+<Element> Name: history7                        value:  11/26/2018|11/26/2018 5:28:55 PM|Admin||
+<Element> Name: description7                    value:  Facility Start Date:                    
+<Element> Name: comment7                        value:                                          
+<Element> Name: id8                             value:  txtPBRApprovalDate                      
+<Element> Name: value8                          value:  11/29/2018                              
+<Element> Name: tag8                            value:  PBR Approval Date                       
+<Element> Name: visible8                        value:  true                                    
+<Element> Name: history8                        value:  11/29/2018|11/26/2018 5:28:55 PM|Admin||
+<Element> Name: description8                    value:  PBR Approval Date:                      
+<Element> Name: comment8                        value:                                          
+<Element> Name: id9                             value:  txtAcceptingWasteCeasedDate             
+<Element> Name: value9                          value:  11/16/2018                              
+<Element> Name: tag9                            value:  Date Ceased Accepting Waste             
+<Element> Name: visible9                        value:  true                                    
+<Element> Name: history9                        value:  11/16/2018|11/26/2018 5:28:55 PM|Admin||
+<Element> Name: description9                    value:  Date Ceased Accepting Waste:            
+<Element> Name: comment9                        value:                                          
+<Element> Name: id10                            value:  txtClosureAcknowledgedDate              
+<Element> Name: value10                         value:  11/30/2018                              
+<Element> Name: tag10                           value:  Closure Acknowledged Date               
+<Element> Name: visible10                       value:  true                                    
+<Element> Name: history10                       value:  11/30/2018|11/26/2018 5:28:55 PM|Admin||
+<Element> Name: description10                   value:  Closure Acknowledged Date:              
+<Element> Name: comment10                       value:                                          
+<Element> Name: id11                            value:  txtTotalAcreage                         
+<Element> Name: value11                         value:  3                                       
+<Element> Name: tag11                           value:  Total Acreage (acres)                   
+<Element> Name: visible11                       value:  true                                    
+<Element> Name: history11                       value:  3|11/26/2018 5:28:55 PM|Admin||         
+<Element> Name: description11                   value:  Total Acreage (acres):                  
+<Element> Name: comment11                       value:                                          
+<Element> Name: id12                            value:  txtWasteDescription                     
+<Element> Name: value12                         value:  ww                                      
+<Element> Name: tag12                           value:  Waste Description                       
+<Element> Name: visible12                       value:  true                                    
+<Element> Name: history12                       value:  ww|11/26/2018 5:28:55 PM|Admin||        
+<Element> Name: description12                   value:  Waste Description:                      
+<Element> Name: comment12                       value:                                          
+<Element> Name: id13                            value:  rdoAcceptPublicWaste                    
+<Element> Name: value13                         value:  Y                                       
+<Element> Name: tag13                           value:  Accept Public Waste?                    
+<Element> Name: visible13                       value:  true                                    
+<Element> Name: history13                       value:  Y|11/26/2018 5:28:55 PM|Admin||         
+<Element> Name: description13                   value:  Accept Public Waste?                    
+<Element> Name: comment13                       value:                                          
+<Element> Name: id14                            value:  txtAddress1                             
+<Element> Name: value14                         value:  w                                       
+<Element> Name: tag14                           value:  Mailing Address 1                       
+<Element> Name: visible14                       value:  true                                    
+<Element> Name: history14                       value:  w|11/26/2018 5:28:55 PM|Admin||         
+<Element> Name: description14                   value:  Address 1:                              
+<Element> Name: comment14                       value:                                          
+<Element> Name: id15                            value:  txtAddress2                             
+<Element> Name: value15                         value:  w                                       
+<Element> Name: tag15                           value:  Mailing Address 2                       
+<Element> Name: visible15                       value:  true                                    
+<Element> Name: history15                       value:  w|11/26/2018 5:28:55 PM|Admin||         
+<Element> Name: description15                   value:                                          
+<Element> Name: comment15                       value:                                          
+<Element> Name: id16                            value:  txtCity                                 
+<Element> Name: value16                         value:  LA                                      
+<Element> Name: tag16                           value:  City                                    
+<Element> Name: visible16                       value:  true                                    
+<Element> Name: history16                       value:  LA|11/26/2018 5:28:55 PM|Admin||        
+<Element> Name: description16                   value:  City:                                   
+<Element> Name: comment16                       value:                                          
+<Element> Name: id17                            value:  txtCounty                               
+<Element> Name: value17                         value:  q                                       
+<Element> Name: tag17                           value:  County                                  
+<Element> Name: visible17                       value:  true                                    
+<Element> Name: history17                       value:  q|11/26/2018 5:28:55 PM|Admin||         
+<Element> Name: description17                   value:  County:                                 
+<Element> Name: comment17                       value:                                          
+<Element> Name: id18                            value:  ddlState                                
+<Element> Name: value18                         value:  ME                                      
+<Element> Name: tag18                           value:  State                                   
+<Element> Name: visible18                       value:  true                                    
+<Element> Name: history18                       value:  ME|11/26/2018 5:28:55 PM|Admin||        
+<Element> Name: description18                   value:  State:                                  
+<Element> Name: comment18                       value:                                          
+<Element> Name: id19                            value:  txtZipCode                              
+<Element> Name: value19                         value:  30341                                   
+<Element> Name: tag19                           value:  Zip Code                                
+<Element> Name: visible19                       value:  true                                    
+<Element> Name: history19                       value:  30341|11/26/2018 5:28:55 PM|Admin||     
+<Element> Name: description19                   value:  Zip Code:                               
+<Element> Name: comment19                       value:                                          
+<Element> Name: id20                            value:  txtLatitudeSiteLocation                 
+<Element> Name: value20                         value:  31.1234                                 
+<Element> Name: tag20                           value:  Latitude                                
+<Element> Name: visible20                       value:  true                                    
+<Element> Name: history20                       value:  31.1234|11/26/2018 5:28:55 PM|Admin||   
+<Element> Name: description20                   value:  Latitude:                               
+<Element> Name: comment20                       value:                                          
+<Element> Name: id21                            value:  txtLongitudeSiteLocation                
+<Element> Name: value21                         value:  -81.1234                                
+<Element> Name: tag21                           value:  Longitude                               
+<Element> Name: visible21                       value:  true                                    
+<Element> Name: history21                       value:  -81.1234|11/26/2018 5:28:55 PM|Admin||  
+<Element> Name: description21                   value:  Longitude:                              
+<Element> Name: comment21                       value:                                          
+<Element> Name: id22                            value:  ucMapcontrol                            
+<Element> Name: value22                         value:                                          
+<Element> Name: tag22                           value:                                          
+<Element> Name: visible22                       value:  true                                    
+<Element> Name: history22                       value:  |11/26/2018 5:28:55 PM|Admin||          
+<Element> Name: description22                   value:                                          
+<Element> Name: comment22                       value:                                          
