@@ -1,0 +1,184 @@
+<DynamicFormValue>
+    <ENVInterestTS>
+        <dataField>
+            <id>txtPermitNumber</id>
+            <value>iii</value>
+            <tag>Permit Number</tag>
+            <visible>true</visible>
+            <history>iii|11/26/2018 5:26:31 PM|Admin||</history>
+            <description>Permit Number:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>ddlEnvInterestStatus</id>
+            <value>Construction</value>
+            <tag>EI Status</tag>
+            <visible>true</visible>
+            <history>Construction|11/26/2018 5:26:31 PM|Admin||</history>
+            <description>EI Status:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>rdoOwnershipType</id>
+            <value>Public</value>
+            <tag>Ownership Type</tag>
+            <visible>true</visible>
+            <history>Public|11/26/2018 5:26:31 PM|Admin||</history>
+            <description>Ownership Type:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtComment</id>
+            <value>4</value>
+            <tag>General Comments</tag>
+            <visible>true</visible>
+            <history>4|11/26/2018 5:26:31 PM|Admin||</history>
+            <description>General Comments:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>chkRelatedEnvInterest</id>
+            <value>C&amp;amp;D,MRF</value>
+            <tag>Related Environmental Interests</tag>
+            <visible>true</visible>
+            <history>C&amp;amp;D,MRF|11/26/2018 5:26:31 PM|Admin||</history>
+            <description>Related Environmental Interests: </description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtFacilityStartDate</id>
+            <value>11/06/2018</value>
+            <tag>Facility Start Date</tag>
+            <visible>true</visible>
+            <history>11/06/2018|11/26/2018 5:26:31 PM|Admin||</history>
+            <description>Facility Start Date:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtPBRApprovalDate</id>
+            <value>11/09/2018</value>
+            <tag>PBR Approval Date</tag>
+            <visible>true</visible>
+            <history>11/09/2018|11/26/2018 5:26:31 PM|Admin||</history>
+            <description>PBR Approval Date:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtFacilityEndDate</id>
+            <value>11/20/2018</value>
+            <tag>Facility End Date</tag>
+            <visible>true</visible>
+            <history>11/20/2018|11/26/2018 5:26:31 PM|Admin||</history>
+            <description>Facility End Date:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtClosureAcknowledgedDate</id>
+            <value>11/27/2018</value>
+            <tag>Closure Acknowledged Date</tag>
+            <visible>true</visible>
+            <history>11/27/2018|11/26/2018 5:26:31 PM|Admin||</history>
+            <description>Closure Acknowledged Date:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtWasteDescription</id>
+            <value>4</value>
+            <tag>Waste Description</tag>
+            <visible>true</visible>
+            <history>4|11/26/2018 5:26:31 PM|Admin||</history>
+            <description>Waste Description:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>rdoAcceptPublicWaste</id>
+            <value>Y</value>
+            <tag>Accept Public Waste?</tag>
+            <visible>true</visible>
+            <history>Y|11/26/2018 5:26:31 PM|Admin||</history>
+            <description>Accept Public Waste?</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtAddress1</id>
+            <value>oo1</value>
+            <tag>Mailing Address 1</tag>
+            <visible>true</visible>
+            <history>oo1|11/26/2018 5:26:31 PM|Admin||</history>
+            <description>Address 1:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtAddress2</id>
+            <value>oo</value>
+            <tag>Mailing Address 2</tag>
+            <visible>true</visible>
+            <history>oo|11/26/2018 5:26:31 PM|Admin||</history>
+            <description />
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtCity</id>
+            <value>oo</value>
+            <tag>City</tag>
+            <visible>true</visible>
+            <history>oo|11/26/2018 5:26:31 PM|Admin||</history>
+            <description>City:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtCounty</id>
+            <value>oo</value>
+            <tag>County</tag>
+            <visible>true</visible>
+            <history>oo|11/26/2018 5:26:31 PM|Admin||</history>
+            <description>County:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>ddlState</id>
+            <value />
+            <tag>State</tag>
+            <visible>true</visible>
+            <history>|11/26/2018 5:26:31 PM|Admin||</history>
+            <description>State:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtZipCode</id>
+            <value>30341</value>
+            <tag>Zip Code</tag>
+            <visible>true</visible>
+            <history>30341|11/26/2018 5:26:31 PM|Admin||</history>
+            <description>Zip Code:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtLatitudeSiteLocation</id>
+            <value>32.1234</value>
+            <tag>Latitude</tag>
+            <visible>true</visible>
+            <history>32.1234|11/26/2018 5:26:31 PM|Admin||</history>
+            <description>Latitude:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtLongitudeSiteLocation</id>
+            <value>-81.1233</value>
+            <tag>Longitude</tag>
+            <visible>true</visible>
+            <history>-81.1233|11/26/2018 5:26:31 PM|Admin||</history>
+            <description>Longitude:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>ucMapcontrol</id>
+            <value />
+            <tag />
+            <visible>true</visible>
+            <history>|11/26/2018 5:26:31 PM|Admin||</history>
+            <description />
+            <comment />
+        </dataField>
+    </ENVInterestTS>
+</DynamicFormValue>

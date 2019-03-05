@@ -1,0 +1,66 @@
+--
+--
+--
+SELECT DISTINCT
+       [MF].[PermitNumber],
+       [MF].[FacilityName],
+       [MF].[FacilityAddress],
+       [MF].[FacilityType],
+       [MF].[FacilityTypeDescription],
+       [MF].[OperationStatus],
+       [OS].[OperationStatusDescription],
+       [MF].[City],
+       [MF].[State],
+       [MF].[ZipCode],
+       [MF].[County],
+       [MF].[CountyNumber],
+       [MF].[Region],
+       [MF].[Latitude],
+       [MF].[Longitude],
+       [MF].[EPAID],
+       [MF].[FacilityStartDate],
+       [MF].[FacilityAmendedDate],
+       [MF].[FacilityEndDate],
+       [MF].[AcceptPublicWaste],
+       [MF].[Comments],
+       [MF].[DateLegalDescriptionReceived],
+       [MF].[LastDateOperatorNotified],
+       [MF].[DateCourtClerkNotified],
+       [MF].[DateEPDNotified],
+       [MF].[DateSiteClosed],
+       [MF].[WasteDescription],
+       [MF].[Dominion],
+       [MF].[PBR Approval Date],
+       [MF].[Autonumber],
+       [PBRC].[PermitNumber],
+       [PBRC].[Owner/ContactName],
+       [PBRC].[Owner/ContactAddress],
+       [PBRC].[City],
+       [PBRC].[State],
+       [PBRC].[ZipCode],
+       [PBRC].[Owner/ContactEmail],
+       [PBRC].[Owner/ContactFax],
+       [PBRC].[FacilityManagerName],
+       [PBRC].[FacilityManagerAddress],
+       [PBRC].[FacilityManagerCity],
+       [PBRC].[FacilityManagerState],
+       [PBRC].[FacilityManagerZipCode],
+       [PBRC].[Owner/ContactAreaCode],
+       [PBRC].[Owner/ContactPhoneNumber],
+       [PBRC].[FacilityManagerAreaCode],
+       [PBRC].[FacilityManagerTelephoneNumber],
+       [PBRC].[FacilityManagerTitle]
+       --[TON].[AutoNumber],
+       --[TON].[PermitNo],
+       --[TON].[ReportingYear],
+       --[TON].[ReportingQtr],
+       --[TON].[SourceofWaste],
+       --[TON].[State],
+       --[TON].[TonnageReported],
+       --[TON].[Comments]
+FROM [PermitByRule].[dbo].[PBR Main Facility] AS [MF]
+     LEFT JOIN [PermitByRule].[dbo].[PBR Contacts] AS [PBRC] ON [MF].[PermitNumber] = [PBRC].[PermitNumber]
+     --JOIN [PermitByRule].[dbo].[Tonnage] AS [TON] ON [mf].[PermitNumber] = [TON].[PermitNo]
+     LEFT JOIN [PermitByRule].[dbo].[Operation Status] AS [OS] ON [mf].[OperationStatus] = [OS].[OperationStatus]
+--WHERE [PBRC].[Owner/ContactName] IS NULL or [PBRC].[Owner/ContactName] = '*'
+--and [MF].[PermitNumber] <> 'PBR-011-21IL'

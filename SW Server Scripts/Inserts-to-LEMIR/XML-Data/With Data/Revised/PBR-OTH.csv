@@ -1,0 +1,91 @@
+Name:, id                              ,  value:,txtPermitNumber                         
+Name:, value                           ,  value:,123-045(PBR-OTH)                        
+Name:, tag                             ,  value:,Permit Number                           
+Name:, visible                         ,  value:,true                                    
+Name:, history                         ,  value:,123-045(PBR-OTH)|1/23/2019 4:11:40 PM|MHeaphy||
+Name:, description                     ,  value:,Permit Number:                          
+Name:, comment                         ,  value:,                                        
+Name:, id1                             ,  value:,ddlEnvInterestStatus                    
+Name:, value1                          ,  value:,Operating                               
+Name:, tag1                            ,  value:,EI Status                               
+Name:, visible1                        ,  value:,true                                    
+Name:, history1                        ,  value:,Operating|1/23/2019 4:11:40 PM|MHeaphy||
+Name:, description1                    ,  value:,EI Status:                              
+Name:, comment1                        ,  value:,                                        
+Name:, id2                             ,  value:,ddlOwnershipType                        
+Name:, value2                          ,  value:,Private Commercial                      
+Name:, tag2                            ,  value:,Ownership Type                          
+Name:, visible2                        ,  value:,true                                    
+Name:, history2                        ,  value:,Private Commercial|1/23/2019 4:11:40 PM|MHeaphy||
+Name:, description2                    ,  value:,Ownership Type:                         
+Name:, comment2                        ,  value:,                                        
+Name:, id3                             ,  value:,ddlOtherPBRType                         
+Name:, value3                          ,  value:,On-site Processing                      
+Name:, tag3                            ,  value:,Type of Other PBR Facility              
+Name:, visible3                        ,  value:,true                                    
+Name:, history3                        ,  value:,On-site Processing|1/23/2019 4:11:40 PM|MHeaphy||
+Name:, description3                    ,  value:,Type of Other PBR Facility:             
+Name:, comment3                        ,  value:,                                        
+Name:, id4                             ,  value:,txtOtherPBRType_Other                   
+Name:, value4                          ,  value:,                                        
+Name:, tag4                            ,  value:,Other Type of Other PBR Facility        
+Name:, visible4                        ,  value:,false                                   
+Name:, history4                        ,  value:,|1/23/2019 4:11:40 PM|MHeaphy||         
+Name:, description4                    ,  value:,Other:                                  
+Name:, comment4                        ,  value:,                                        
+Name:, id5                             ,  value:,txtComment                              
+Name:, value5                          ,  value:,test                                    
+Name:, tag5                            ,  value:,General Comments                        
+Name:, visible5                        ,  value:,true                                    
+Name:, history5                        ,  value:,test|1/23/2019 4:11:40 PM|MHeaphy||     
+Name:, description5                    ,  value:,General Comments:                       
+Name:, comment5                        ,  value:,                                        
+Name:, id6                             ,  value:,txtFacilityStartDate                    
+Name:, value6                          ,  value:,01/01/2019                              
+Name:, tag6                            ,  value:,Facility Start Date                     
+Name:, visible6                        ,  value:,true                                    
+Name:, history6                        ,  value:,01/01/2019|1/23/2019 4:11:40 PM|MHeaphy||
+Name:, description6                    ,  value:,Facility Start Date:                    
+Name:, comment6                        ,  value:,                                        
+Name:, id7                             ,  value:,txtPBRApprovalDate                      
+Name:, value7                          ,  value:,01/02/2019                              
+Name:, tag7                            ,  value:,PBR Approval Date                       
+Name:, visible7                        ,  value:,true                                    
+Name:, history7                        ,  value:,01/02/2019|1/23/2019 4:11:40 PM|MHeaphy||
+Name:, description7                    ,  value:,PBR Approval Date:                      
+Name:, comment7                        ,  value:,                                        
+Name:, id8                             ,  value:,txtAcceptingWasteCeasedDate             
+Name:, value8                          ,  value:,01/03/2019                              
+Name:, tag8                            ,  value:,Date Ceased Accepting Waste             
+Name:, visible8                        ,  value:,true                                    
+Name:, history8                        ,  value:,01/03/2019|1/23/2019 4:11:40 PM|MHeaphy||
+Name:, description8                    ,  value:,Date Ceased Accepting Waste:            
+Name:, comment8                        ,  value:,                                        
+Name:, id9                             ,  value:,txtClosureAcknowledgedDate              
+Name:, value9                          ,  value:,01/04/2019                              
+Name:, tag9                            ,  value:,Closure Acknowledged Date               
+Name:, visible9                        ,  value:,true                                    
+Name:, history9                        ,  value:,01/04/2019|1/23/2019 4:11:40 PM|MHeaphy||
+Name:, description9                    ,  value:,Closure Acknowledged Date:              
+Name:, comment9                        ,  value:,                                        
+Name:, id10                            ,  value:,txtTotalAcreage                         
+Name:, value10                         ,  value:,2                                       
+Name:, tag10                           ,  value:,Total Acreage (acres)                   
+Name:, visible10                       ,  value:,true                                    
+Name:, history10                       ,  value:,2|1/23/2019 4:11:40 PM|MHeaphy||        
+Name:, description10                   ,  value:,Total Acreage (acres):                  
+Name:, comment10                       ,  value:,                                        
+Name:, id11                            ,  value:,txtWasteDescription                     
+Name:, value11                         ,  value:,all other                               
+Name:, tag11                           ,  value:,Description of Waste Handled            
+Name:, visible11                       ,  value:,true                                    
+Name:, history11                       ,  value:,all other|1/23/2019 4:11:40 PM|MHeaphy||
+Name:, description11                   ,  value:,Description of Waste Handled:           
+Name:, comment11                       ,  value:,                                        
+Name:, id12                            ,  value:,rdoAcceptPublicWaste                    
+Name:, value12                         ,  value:,Y                                       
+Name:, tag12                           ,  value:,Accept Public Waste?                    
+Name:, visible12                       ,  value:,true                                    
+Name:, history12                       ,  value:,Y|1/23/2019 4:11:40 PM|MHeaphy||        
+Name:, description12                   ,  value:,Accept Public Waste?                    
+Name:, comment12                       ,  value:,                                        

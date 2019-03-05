@@ -1,0 +1,94 @@
+<DynamicFormValue>
+    <SolidWaste>
+        <dataField>
+            <id>txtPermitNumber</id>
+            <value>123-045(TS)</value>
+            <tag>Permit Number</tag>
+            <visible>true</visible>
+            <history>123-045(TS)|1/23/2019 4:15:35 PM|MHeaphy||</history>
+            <description>Permit Number:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>ddlEnvInterestStatus</id>
+            <value>Operating</value>
+            <tag>EI Status</tag>
+            <visible>true</visible>
+            <history>Operating|1/23/2019 4:15:35 PM|MHeaphy||</history>
+            <description>EI Status:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>ddlOwnershipType</id>
+            <value>Private Commercial</value>
+            <tag>Ownership Type</tag>
+            <visible>true</visible>
+            <history>Private Commercial|1/23/2019 4:15:35 PM|MHeaphy||</history>
+            <description>Ownership Type:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtComment</id>
+            <value>test</value>
+            <tag>General Comments</tag>
+            <visible>true</visible>
+            <history>test|1/23/2019 4:15:35 PM|MHeaphy||</history>
+            <description>General Comments:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtFacilityStartDate</id>
+            <value>01/01/2019</value>
+            <tag>Facility Start Date</tag>
+            <visible>true</visible>
+            <history>01/01/2019|1/23/2019 4:15:35 PM|MHeaphy||</history>
+            <description>Facility Start Date:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtFacilityEndDate</id>
+            <value>01/02/2019</value>
+            <tag>Facility End Date</tag>
+            <visible>true</visible>
+            <history>01/02/2019|1/23/2019 4:15:35 PM|MHeaphy||</history>
+            <description>Facility End Date:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtPBRApprovalDate</id>
+            <value>01/03/2019</value>
+            <tag>PBR Approval Date</tag>
+            <visible>true</visible>
+            <history>01/03/2019|1/23/2019 4:15:35 PM|MHeaphy||</history>
+            <description>PBR Approval Date:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtClosureAcknowledgedDate</id>
+            <value>01/04/2019</value>
+            <tag>Closure Acknowledged Date</tag>
+            <visible>true</visible>
+            <history>01/04/2019|1/23/2019 4:15:35 PM|MHeaphy||</history>
+            <description>Closure Acknowledged Date:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtWasteDescription</id>
+            <value>garbage</value>
+            <tag>Description of Waste Handled</tag>
+            <visible>true</visible>
+            <history>garbage|1/23/2019 4:15:35 PM|MHeaphy||</history>
+            <description>Description of Waste Handled:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>rdoAcceptPublicWaste</id>
+            <value>Y</value>
+            <tag>Accept Public Waste?</tag>
+            <visible>true</visible>
+            <history>Y|1/23/2019 4:15:35 PM|MHeaphy||</history>
+            <description>Accept Public Waste?</description>
+            <comment />
+        </dataField>
+    </SolidWaste>
+</DynamicFormValue>
