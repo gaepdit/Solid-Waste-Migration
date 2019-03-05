@@ -1,0 +1,235 @@
+,Tag Name,,Inner Text
+Name:, id                              ,  value:,txtPermitNumber                         
+Name:, value                           ,  value:,w                                       
+Name:, tag                             ,  value:,Permit Number                           
+Name:, visible                         ,  value:,true                                    
+Name:, history                         ,  value:,w|11/26/2018 5:47:45 PM|Admin||         
+Name:, description                     ,  value:,Permit Number:                          
+Name:, comment                         ,  value:,                                        
+,,,
+Name:, id1                             ,  value:,ddlEnvInterestStatus                    
+Name:, value1                          ,  value:,Construction                            
+Name:, tag1                            ,  value:,EI Status                               
+Name:, visible1                        ,  value:,true                                    
+Name:, history1                        ,  value:,Construction|11/26/2018 5:47:45 PM|Admin||
+Name:, description1                    ,  value:,EI Status:                              
+Name:, comment1                        ,  value:,                                        
+,,,
+Name:, id2                             ,  value:,rdoOwnershipType                        
+Name:, value2                          ,  value:,Private Commercial                      
+Name:, tag2                            ,  value:,Ownership Type                          
+Name:, visible2                        ,  value:,true                                    
+Name:, history2                        ,  value:,Private Commercial|11/26/2018 5:47:45 PM|Admin||
+Name:, description2                    ,  value:,Ownership Type:                         
+Name:, comment2                        ,  value:,                                        
+,,,
+Name:, id3                             ,  value:,txtComment                              
+Name:, value3                          ,  value:,asdfg                                   
+Name:, tag3                            ,  value:,General Comments                        
+Name:, visible3                        ,  value:,true                                    
+Name:, history3                        ,  value:,asdfg|11/26/2018 5:47:45 PM|Admin||     
+Name:, description3                    ,  value:,General Comments:                       
+Name:, comment3                        ,  value:,                                        
+,,,
+Name:, id4                             ,  value:,rdoGWInstalled                          
+Name:, value4                          ,  value:,Y                                       
+Name:, tag4                            ,  value:,GW Monitoring System Installed          
+Name:, visible4                        ,  value:,true                                    
+Name:, history4                        ,  value:,Y|11/26/2018 5:47:45 PM|Admin||         
+Name:, description4                    ,  value:,GW Monitoring System Installed:         
+Name:, comment4                        ,  value:,                                        
+,,,
+Name:, id5                             ,  value:,rdoMethaneInstalled                     
+Name:, value5                          ,  value:,Y                                       
+Name:, tag5                            ,  value:,Methane Monitoring System Installed     
+Name:, visible5                        ,  value:,true                                    
+Name:, history5                        ,  value:,Y|11/26/2018 5:47:45 PM|Admin||         
+Name:, description5                    ,  value:,Methane Monitoring System Installed:    
+Name:, comment5                        ,  value:,                                        
+,,,
+Name:, id6                             ,  value:,rdoUnderDrainInstalled                  
+Name:, value6                          ,  value:,Y                                       
+Name:, tag6                            ,  value:,Under Drain System Installed            
+Name:, visible6                        ,  value:,true                                    
+Name:, history6                        ,  value:,Y|11/26/2018 5:47:45 PM|Admin||         
+Name:, description6                    ,  value:,Under Drain System Installed:           
+Name:, comment6                        ,  value:,                                        
+,,,
+Name:, id7                             ,  value:,rdoLFGasInstalled                       
+Name:, value7                          ,  value:,Y                                       
+Name:, tag7                            ,  value:,LF Gas Collection Installed             
+Name:, visible7                        ,  value:,true                                    
+Name:, history7                        ,  value:,Y|11/26/2018 5:47:45 PM|Admin||         
+Name:, description7                    ,  value:,LF Gas Collection Installed:            
+Name:, comment7                        ,  value:,                                        
+,,,
+Name:, id8                             ,  value:,rdoWasteEnergyOnsite                    
+Name:, value8                          ,  value:,N                                       
+Name:, tag8                            ,  value:,Waste to Energy Onsite?                 
+Name:, visible8                        ,  value:,true                                    
+Name:, history8                        ,  value:,N|11/26/2018 5:47:45 PM|Admin||         
+Name:, description8                    ,  value:,Waste to Energy Onsite?                 
+Name:, comment8                        ,  value:,                                        
+,,,
+Name:, id9                             ,  value:,txtEnergyProduced                       
+Name:, value9                          ,  value:,                                        
+Name:, tag9                            ,  value:,Energy Produced (MWH)                   
+Name:, visible9                        ,  value:,false                                   
+Name:, history9                        ,  value:,|11/26/2018 5:47:45 PM|Admin||          
+Name:, description9                    ,  value:,Energy Produced (MWH):                  
+Name:, comment9                        ,  value:,                                        
+,,,
+Name:, id10                            ,  value:,chkRelatedEnvInterest                   
+Name:, value10                         ,  value:,"IN, LSF, MSWL, PBH-OTH, LS"
+Name:, tag10                           ,  value:,Related Environmental Interests         
+Name:, visible10                       ,  value:,true                                    
+Name:, history10                       ,  value:,"IN, LSF, MSWL, PBH-OTH, LS|11/26/2018 5:47:45 PM|Admin||"
+Name:, description10                   ,  value:,Related Environmental Interests:        
+Name:, comment10                       ,  value:,                                        
+,,,
+Name:, id11                            ,  value:,txtPermitIssueDate                      
+Name:, value11                         ,  value:,11/6/2018
+Name:, tag11                           ,  value:,Permit Issued Date                      
+Name:, visible11                       ,  value:,true                                    
+Name:, history11                       ,  value:,11/06/2018|11/26/2018 5:47:45 PM|Admin||
+Name:, description11                   ,  value:,Permit Issued Date:                     
+Name:, comment11                       ,  value:,                                        
+,,,
+Name:, id12                            ,  value:,txtReceiveWasteApprovedDate             
+Name:, value12                         ,  value:,11/16/2018
+Name:, tag12                           ,  value:,Date Approved to Receive Waste          
+Name:, visible12                       ,  value:,true                                    
+Name:, history12                       ,  value:,11/16/2018|11/26/2018 5:47:45 PM|Admin||
+Name:, description12                   ,  value:,Date Approved to Receive Waste:         
+Name:, comment12                       ,  value:,                                        
+,,,
+Name:, id13                            ,  value:,txtPermitReviewDueDate                  
+Name:, value13                         ,  value:,11/8/2018
+Name:, tag13                           ,  value:,Current Permit Review Due Date          
+Name:, visible13                       ,  value:,true                                    
+Name:, history13                       ,  value:,11/08/2018|11/26/2018 5:47:45 PM|Admin||
+Name:, description13                   ,  value:,Current Permit Review Due Date:         
+Name:, comment13                       ,  value:,                                        
+,,,
+Name:, id14                            ,  value:,txtAcceptingWasteCeasedDate             
+Name:, value14                         ,  value:,11/15/2018
+Name:, tag14                           ,  value:,Date Ceased Accepting Waste             
+Name:, visible14                       ,  value:,true                                    
+Name:, history14                       ,  value:,11/15/2018|11/26/2018 5:47:45 PM|Admin||
+Name:, description14                   ,  value:,Date Ceased Accepting Waste:            
+Name:, comment14                       ,  value:,                                        
+,,,
+Name:, id15                            ,  value:,txtClosurePermitIssuedDate              
+Name:, value15                         ,  value:,11/21/2018
+Name:, tag15                           ,  value:,Closure Permit Issued Date              
+Name:, visible15                       ,  value:,true                                    
+Name:, history15                       ,  value:,11/21/2018|11/26/2018 5:47:45 PM|Admin||
+Name:, description15                   ,  value:,Closure Permit Issued Date:             
+Name:, comment15                       ,  value:,                                        
+,,,
+Name:, id16                            ,  value:,txtPermittedCapacity                    
+Name:, value16                         ,  value:,1
+Name:, tag16                           ,  value:,Permitted Capacity (CY)                 
+Name:, visible16                       ,  value:,true                                    
+Name:, history16                       ,  value:,1|11/26/2018 5:47:45 PM|Admin||         
+Name:, description16                   ,  value:,Permitted Capacity (CY):                
+Name:, comment16                       ,  value:,                                        
+,,,
+Name:, id17                            ,  value:,txtWasteDescription                     
+Name:, value17                         ,  value:,poiuyt                                  
+Name:, tag17                           ,  value:,Waste Description                       
+Name:, visible17                       ,  value:,true                                    
+Name:, history17                       ,  value:,poiuyt|11/26/2018 5:47:45 PM|Admin||    
+Name:, description17                   ,  value:,Waste Description:                      
+Name:, comment17                       ,  value:,                                        
+,,,
+Name:, id18                            ,  value:,rdoAcceptPublicWaste                    
+Name:, value18                         ,  value:,N                                       
+Name:, tag18                           ,  value:,Accept Public Waste?                    
+Name:, visible18                       ,  value:,true                                    
+Name:, history18                       ,  value:,N|11/26/2018 5:47:45 PM|Admin||         
+Name:, description18                   ,  value:,Accept Public Waste?                    
+Name:, comment18                       ,  value:,                                        
+,,,
+Name:, id19                            ,  value:,txtConstructionDetails                  
+Name:, value19                         ,  value:,tyui                                    
+Name:, tag19                           ,  value:,Construction Details                    
+Name:, visible19                       ,  value:,true                                    
+Name:, history19                       ,  value:,tyui|11/26/2018 5:47:45 PM|Admin||      
+Name:, description19                   ,  value:,Details:                                
+Name:, comment19                       ,  value:,                                        
+,,,
+Name:, id20                            ,  value:,txtAddress1                             
+Name:, value20                         ,  value:,ww                                      
+Name:, tag20                           ,  value:,Mailing Address 1                       
+Name:, visible20                       ,  value:,true                                    
+Name:, history20                       ,  value:,ww|11/26/2018 5:47:45 PM|Admin||        
+Name:, description20                   ,  value:,Address 1:                              
+Name:, comment20                       ,  value:,                                        
+,,,
+Name:, id21                            ,  value:,txtAddress2                             
+Name:, value21                         ,  value:,w                                       
+Name:, tag21                           ,  value:,Mailing Address 2                       
+Name:, visible21                       ,  value:,true                                    
+Name:, history21                       ,  value:,w|11/26/2018 5:47:45 PM|Admin||         
+Name:, description21                   ,  value:,                                        
+Name:, comment21                       ,  value:,                                        
+,,,
+Name:, id22                            ,  value:,txtCity                                 
+Name:, value22                         ,  value:,w                                       
+Name:, tag22                           ,  value:,City                                    
+Name:, visible22                       ,  value:,true                                    
+Name:, history22                       ,  value:,w|11/26/2018 5:47:45 PM|Admin||         
+Name:, description22                   ,  value:,City:                                   
+Name:, comment22                       ,  value:,                                        
+,,,
+Name:, id23                            ,  value:,txtCounty                               
+Name:, value23                         ,  value:,w                                       
+Name:, tag23                           ,  value:,County                                  
+Name:, visible23                       ,  value:,true                                    
+Name:, history23                       ,  value:,w|11/26/2018 5:47:45 PM|Admin||         
+Name:, description23                   ,  value:,County:                                 
+Name:, comment23                       ,  value:,                                        
+,,,
+Name:, id24                            ,  value:,ddlState                                
+Name:, value24                         ,  value:,IA                                      
+Name:, tag24                           ,  value:,State                                   
+Name:, visible24                       ,  value:,true                                    
+Name:, history24                       ,  value:,IA|11/26/2018 5:47:45 PM|Admin||        
+Name:, description24                   ,  value:,State:                                  
+Name:, comment24                       ,  value:,                                        
+,,,
+Name:, id25                            ,  value:,txtZipCode                              
+Name:, value25                         ,  value:,30306
+Name:, tag25                           ,  value:,Zip Code                                
+Name:, visible25                       ,  value:,true                                    
+Name:, history25                       ,  value:,30306|11/26/2018 5:47:45 PM|Admin||     
+Name:, description25                   ,  value:,Zip Code:                               
+Name:, comment25                       ,  value:,                                        
+,,,
+Name:, id26                            ,  value:,txtLatitudeSiteLocation                 
+Name:, value26                         ,  value:,31.1234
+Name:, tag26                           ,  value:,Latitude                                
+Name:, visible26                       ,  value:,true                                    
+Name:, history26                       ,  value:,31.1234|11/26/2018 5:47:45 PM|Admin||   
+Name:, description26                   ,  value:,Latitude:                               
+Name:, comment26                       ,  value:,                                        
+,,,
+Name:, id27                            ,  value:,txtLongitudeSiteLocation                
+Name:, value27                         ,  value:,-81.1234
+Name:, tag27                           ,  value:,Longitude                               
+Name:, visible27                       ,  value:,true                                    
+Name:, history27                       ,  value:,-81.1234|11/26/2018 5:47:45 PM|Admin||  
+Name:, description27                   ,  value:,Longitude:                              
+Name:, comment27                       ,  value:,                                        
+,,,
+Name:, id28                            ,  value:,ucMapcontrol                            
+Name:, value28                         ,  value:,                                        
+Name:, tag28                           ,  value:,                                        
+Name:, visible28                       ,  value:,true                                    
+Name:, history28                       ,  value:,|11/26/2018 5:47:45 PM|Admin||          
+Name:, description28                   ,  value:,                                        
+Name:, comment28                       ,  value:,                                        
+,,,
+Name:, txtMajorModificationIssuedDate  ,  value:,                                        
+Name:, txtMajorModificationPurpose     ,  value:,                                        

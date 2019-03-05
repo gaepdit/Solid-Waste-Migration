@@ -1,0 +1,371 @@
+﻿TABLE_NAME,COLUMN_NAME,ORDINAL_POSITION,COLUMN_DEFAULT,IS_NULLABLE,DATA_TYPE,CHARACTER_MAXIMUM_LENGTH
+InvestigatorListing,InvestigatorName,1,NULL,YES,nvarchar,255
+InvestigatorListing,BranchProgram,2,NULL,YES,nvarchar,255
+GroundAndSurfaceWaterMajorCodes,AutoNumber,1,NULL,NO,int,NULL
+GroundAndSurfaceWaterMajorCodes,GWAndSWMajorCodes,2,NULL,YES,nvarchar,255
+GroundAndSurfaceWater,AutoNumber,1,NULL,NO,int,NULL
+GroundAndSurfaceWater,PermitNumber,2,NULL,YES,nvarchar,20
+GroundAndSurfaceWater,ComplianceStatus,3,NULL,YES,nvarchar,25
+GroundAndSurfaceWater,GWAndSWMajorCodes,4,NULL,YES,nvarchar,100
+GroundAndSurfaceWater,MinorCode,5,NULL,YES,int,NULL
+GroundAndSurfaceWater,StartDate,6,NULL,YES,datetime,NULL
+GroundAndSurfaceWater,DueDate,7,NULL,YES,datetime,NULL
+GroundAndSurfaceWater,CompletionDate,8,NULL,YES,datetime,NULL
+GroundAndSurfaceWater,InvestigatorName,9,NULL,YES,nvarchar,25
+GroundAndSurfaceWater,ReferenceNumber,10,NULL,YES,nvarchar,20
+GroundAndSurfaceWater,Dollars,11,NULL,YES,money,NULL
+GroundAndSurfaceWater,Comments,12,NULL,YES,ntext,1073741823
+GIS,PermitNumber,1,NULL,NO,nvarchar,20
+GIS,Latitude,2,NULL,YES,float,NULL
+GIS,Longitude,3,NULL,YES,float,NULL
+GIS,GISDate,4,NULL,YES,datetime,NULL
+GIS,HorizontalCollectionMethod,5,NULL,YES,nvarchar,30
+GIS,Accuracy Measurement Units,6,NULL,YES,nvarchar,31
+GIS,HorizontalMethodAccuracy,7,NULL,YES,nvarchar,30
+GIS,HorizontalReferencedDatum,8,NULL,YES,nvarchar,31
+GIS,RefPointGeographicPosition,9,NULL,YES,nvarchar,31
+ConstructionMajorCodes,AutoNumber,1,NULL,NO,int,NULL
+ConstructionMajorCodes,ConstructionMajorCodes,2,NULL,YES,nvarchar,255
+Tonnage,AutoNumber,1,NULL,NO,int,NULL
+Tonnage,PermitNumber,2,NULL,YES,nvarchar,20
+Tonnage,FY,3,NULL,YES,int,NULL
+Tonnage,ReportingYear,4,NULL,YES,nvarchar,25
+Tonnage,SourceOfWaste,5,NULL,YES,nvarchar,50
+Tonnage,State,6,NULL,YES,nvarchar,50
+Tonnage,CountyofOrigin,7,NULL,YES,nvarchar,50
+Tonnage,ReportingQuarter,8,NULL,YES,nvarchar,25
+Tonnage,TonnageReported,9,NULL,YES,float,NULL
+Tonnage,TonsPerDay(365),10,NULL,YES,int,NULL
+Tonnage,AnnualFees,11,NULL,YES,money,NULL
+Tonnage,ReferenceNumber,12,NULL,YES,nvarchar,20
+Tonnage,Dollars,13,NULL,YES,money,NULL
+Tonnage,Comments,14,NULL,YES,ntext,1073741823
+Tonnage,WasteType,15,NULL,YES,nvarchar,255
+FA MAIN,ID,1,NULL,NO,int,NULL
+FA MAIN,COUNTY,2,NULL,YES,nvarchar,255
+FA MAIN,PERMIT NUMBER,3,NULL,YES,nvarchar,255
+FA MAIN,PRIVATE,4,((0)),YES,bit,NULL
+FA MAIN,CA RQD,5,((0)),YES,bit,NULL
+FA MAIN,Type Year,6,NULL,YES,nvarchar,50
+FA MAIN,TypeInstrument,7,NULL,YES,nvarchar,50
+FA MAIN,InstrumentNo,8,NULL,YES,nvarchar,30
+FA MAIN,InstrumentAmountReceived,9,NULL,YES,money,NULL
+FA MAIN,InstrumentBeginDate,10,NULL,YES,datetime,NULL
+FA MAIN,InstrumrntEndDate,11,NULL,YES,datetime,NULL
+FA MAIN,InstrumentCovers,12,NULL,YES,nvarchar,50
+FA MAIN,CEASEDRECEIVINGWASTEDATE,13,NULL,YES,datetime,NULL
+FA MAIN,CLOSURE CERT DATE,14,NULL,YES,datetime,NULL
+FA MAIN,FISCAL YEAR END,15,NULL,YES,datetime,NULL
+FA MAIN,DATE FA DUE,16,NULL,YES,datetime,NULL
+FA MAIN,DATE FA REC'D,17,NULL,YES,datetime,NULL
+FA MAIN,DATE FA APPVD,18,NULL,YES,datetime,NULL
+FA MAIN,DATE FA REJECT,19,NULL,YES,datetime,NULL
+FA MAIN,CL BASE DATE,20,NULL,YES,datetime,NULL
+FA MAIN,PC BASE DATE,21,NULL,YES,datetime,NULL
+FA MAIN,CA BASE DATE,22,NULL,YES,datetime,NULL
+FA MAIN,DISCOUNT,23,((0)),YES,bit,NULL
+FA MAIN,ORIG CL AMT,24,NULL,YES,money,NULL
+FA MAIN,ORIG PC AMT,25,NULL,YES,money,NULL
+FA MAIN,CURRENT CL AMT,26,NULL,YES,money,NULL
+FA MAIN,CURRENT PC AMT,27,NULL,YES,money,NULL
+FA MAIN,ORIG CA AMT,28,NULL,YES,money,NULL
+FA MAIN,CURRENT CA AMT,29,NULL,YES,money,NULL
+FA MAIN,ORIG ASSURED COST,30,NULL,YES,money,NULL
+FA MAIN,CURRENT ASSURED COST,31,NULL,YES,money,NULL
+FA MAIN,EPD ENGINEER,32,NULL,YES,nvarchar,50
+FA MAIN,IN/OUT COMPL,33,NULL,YES,nvarchar,50
+FA MAIN,Received(butnotreviewed),34,NULL,YES,nvarchar,50
+FA MAIN,IN COMPLIANCE?,35,NULL,YES,nvarchar,50
+FA MAIN,Comments,36,NULL,YES,ntext,1073741823
+FA MAIN,InComplianceUntil,37,NULL,YES,datetime,NULL
+FA MAIN,FA_Required,38,((0)),YES,bit,NULL
+ModificationsMajorCodes,IDNumber,1,NULL,NO,int,NULL
+ModificationsMajorCodes,ModificationMajorCodes,2,NULL,YES,nvarchar,255
+sysdiagrams,name,1,NULL,NO,nvarchar,128
+sysdiagrams,principal_id,2,NULL,NO,int,NULL
+sysdiagrams,diagram_id,3,NULL,NO,int,NULL
+sysdiagrams,version,4,NULL,YES,int,NULL
+sysdiagrams,definition,5,NULL,YES,varbinary,-1
+EnvironmentalMonitoring,ID,1,NULL,NO,int,NULL
+EnvironmentalMonitoring,PermitNumber,2,NULL,YES,nvarchar,20
+EnvironmentalMonitoring,InvestigatorName,3,NULL,YES,nvarchar,25
+EnvironmentalMonitoring,GWRelease,4,NULL,YES,nvarchar,50
+EnvironmentalMonitoring,AssessmentMonitoringImplemented,5,NULL,YES,nvarchar,50
+EnvironmentalMonitoring,ACM(Required),6,NULL,YES,nvarchar,50
+EnvironmentalMonitoring,ACMWorkPlanSubmitted,7,NULL,YES,nvarchar,50
+EnvironmentalMonitoring,ACMReportSubmitted,8,NULL,YES,nvarchar,50
+EnvironmentalMonitoring,GWCorrectiveMeasuresImplemented,9,NULL,YES,nvarchar,50
+EnvironmentalMonitoring,GWReturnedToCompliance,10,NULL,YES,nvarchar,50
+EnvironmentalMonitoring,GWTypeOfCorrectiveMeasure,11,NULL,YES,nvarchar,100
+EnvironmentalMonitoring,Methane>LELatPropertyLine,12,NULL,YES,nvarchar,50
+EnvironmentalMonitoring,MethaneRemediationSystem(ActiveorPassive),13,NULL,YES,nvarchar,50
+EnvironmentalMonitoring,MethaneReturnedToCompliance,14,NULL,YES,nvarchar,50
+EnvironmentalMonitoring,CYYearReporting,15,NULL,YES,float,NULL
+EnvironmentalMonitoring,IfActive(TypeSystem),16,NULL,YES,nvarchar,100
+EnvironmentalMonitoring,Comments,17,NULL,YES,ntext,1073741823
+EMU DO Reviews Minor Codes,AutoNumber,1,NULL,NO,int,NULL
+EMU DO Reviews Minor Codes,MinorCodes,2,NULL,YES,nvarchar,255
+EMU DO Reviews Major Codes,ID,1,NULL,NO,int,NULL
+EMU DO Reviews Major Codes,Description,2,NULL,YES,nvarchar,255
+AssessmentOfCorrectiveMeasures,AutoNumber,1,NULL,NO,int,NULL
+AssessmentOfCorrectiveMeasures,PermitNumber,2,NULL,YES,nvarchar,20
+AssessmentOfCorrectiveMeasures,ComplianceStatus,3,NULL,YES,nvarchar,25
+AssessmentOfCorrectiveMeasures,ACMMajorCodes,4,NULL,YES,nvarchar,100
+AssessmentOfCorrectiveMeasures,MinorCode,5,NULL,YES,int,NULL
+AssessmentOfCorrectiveMeasures,StartDate,6,NULL,YES,datetime,NULL
+AssessmentOfCorrectiveMeasures,DueDate,7,NULL,YES,datetime,NULL
+AssessmentOfCorrectiveMeasures,CompletionDate,8,NULL,YES,datetime,NULL
+AssessmentOfCorrectiveMeasures,InvestigatorName,9,NULL,YES,nvarchar,50
+AssessmentOfCorrectiveMeasures,ReferenceNumber,10,NULL,YES,nvarchar,25
+AssessmentOfCorrectiveMeasures,Dollars,11,NULL,YES,money,NULL
+AssessmentOfCorrectiveMeasures,Comments,12,NULL,YES,ntext,1073741823
+EMU DO Reviews,AutoNumber,1,NULL,NO,int,NULL
+EMU DO Reviews,PermitNumber,2,NULL,YES,nvarchar,20
+EMU DO Reviews,ComplianceStatus,3,NULL,YES,nvarchar,25
+EMU DO Reviews,MajorCode,4,NULL,YES,nvarchar,100
+EMU DO Reviews,MinorCodes,5,NULL,YES,int,NULL
+EMU DO Reviews,StartDate,6,NULL,YES,datetime,NULL
+EMU DO Reviews,DueDate,7,NULL,YES,datetime,NULL
+EMU DO Reviews,CompletionDate,8,NULL,YES,datetime,NULL
+EMU DO Reviews,InvestigatorName,9,NULL,YES,nvarchar,25
+EMU DO Reviews,ReferenceNumber,10,NULL,YES,nvarchar,20
+EMU DO Reviews,Dollars,11,NULL,YES,money,NULL
+EMU DO Reviews,Comments,12,NULL,YES,ntext,1073741823
+EMU DO Reviews,Phase(s),13,NULL,YES,nvarchar,50
+EMU DO Reviews,Cell(s),14,NULL,YES,nvarchar,50
+CountyTable,County,1,NULL,YES,nvarchar,50
+CountyCountyNoRegionListing,County1,1,NULL,YES,nvarchar,50
+CountyCountyNoRegionListing,CountyNo1,2,NULL,YES,nvarchar,50
+CountyCountyNoRegionListing,Region1,3,NULL,YES,nvarchar,255
+ConstructionMinorCodes,AutoNumber,1,NULL,NO,int,NULL
+ConstructionMinorCodes,MinorCodes,2,NULL,YES,nvarchar,255
+Geologist Listing,Investigator,1,NULL,YES,nvarchar,75
+Geologist Listing,County,2,NULL,YES,nvarchar,50
+Construction,ID,1,NULL,NO,int,NULL
+Construction,PermitNumber,2,NULL,YES,nvarchar,20
+Construction,ComplianceStatus,3,NULL,YES,nvarchar,25
+Construction,ConstructionMajorCodes,4,NULL,YES,nvarchar,100
+Construction,MinorCode,5,NULL,YES,int,NULL
+Construction,StartDate,6,NULL,YES,datetime,NULL
+Construction,DueDate,7,NULL,YES,datetime,NULL
+Construction,CompletionDate,8,NULL,YES,datetime,NULL
+Construction,InvestigatorName,9,NULL,YES,nvarchar,25
+Construction,ReferenceNumber,10,NULL,YES,nvarchar,20
+Construction,Dollars,11,NULL,YES,money,NULL
+Construction,Comments,12,NULL,YES,ntext,1073741823
+Construction,Phase(s),13,NULL,YES,nvarchar,50
+Construction,Cell(s),14,NULL,YES,nvarchar,50
+ComplianceInspections,AutoNumber,1,NULL,NO,int,NULL
+ComplianceInspections,MainPermitNumber,2,NULL,YES,nvarchar,20
+ComplianceInspections,ComplianceStatus,3,NULL,YES,nvarchar,25
+ComplianceInspections,ComplianceMajorCodes,4,NULL,YES,nvarchar,100
+ComplianceInspections,MinorCode,5,NULL,YES,int,NULL
+ComplianceInspections,SLRScore,6,NULL,YES,int,NULL
+ComplianceInspections,DueDate,7,NULL,YES,datetime,NULL
+ComplianceInspections,CompletionDate,8,NULL,YES,datetime,NULL
+ComplianceInspections,InvestigatorName,9,NULL,YES,nvarchar,25
+ComplianceInspections,ReferenceNumber,10,NULL,YES,nvarchar,20
+ComplianceInspections,Dollars,11,NULL,YES,money,NULL
+ComplianceInspections,Comments,12,NULL,YES,ntext,1073741823
+ComplianceInspectionMajorCodes,AutoNumber,1,NULL,NO,int,NULL
+ComplianceInspectionMajorCodes,ComplianceMajorCodes,2,NULL,YES,nvarchar,255
+ClosureMinorCodes,AutoNumber,1,NULL,NO,int,NULL
+ClosureMinorCodes,MinorCodes,2,NULL,YES,nvarchar,255
+ClosureMajorCodes,AutoNumber,1,NULL,NO,int,NULL
+ClosureMajorCodes,ClosureMajorCodes,2,NULL,YES,nvarchar,255
+Closure,ID,1,NULL,NO,int,NULL
+Closure,PermitNumber,2,NULL,YES,nvarchar,20
+Closure,ComplianceStatus,3,NULL,YES,nvarchar,25
+Closure,ClosureMajorCodes,4,NULL,YES,nvarchar,100
+Closure,MinorCode,5,NULL,YES,int,NULL
+Closure,StartDate,6,NULL,YES,datetime,NULL
+Closure,DueDate,7,NULL,YES,datetime,NULL
+Closure,CompletionDate,8,NULL,YES,datetime,NULL
+Closure,InvestigatorName,9,NULL,YES,nvarchar,50
+Closure,ReferenceNumber,10,NULL,YES,nvarchar,25
+Closure,Dollars,11,NULL,YES,money,NULL
+Closure,Comments,12,NULL,YES,ntext,1073741823
+CityCountyReference,City1,1,NULL,YES,nvarchar,255
+CityCountyReference,County1,2,NULL,YES,nvarchar,255
+CityCountyReference,AuotNumber,3,NULL,NO,int,NULL
+AssessmentOfCorrectiveMeasuresMajorCodes,AutoNumber,1,NULL,NO,int,NULL
+AssessmentOfCorrectiveMeasuresMajorCodes,ACMMajorCodes,2,NULL,YES,nvarchar,255
+Contacts,PermitNumber,1,NULL,NO,nvarchar,20
+Contacts,Owner/ContactName,2,NULL,YES,nvarchar,50
+Contacts,Owner/ContactTitle,3,NULL,YES,nvarchar,50
+Contacts,Owner/ConatctAddress,4,NULL,YES,nvarchar,100
+Contacts,City,5,NULL,YES,nvarchar,25
+Contacts,State,6,NULL,YES,nvarchar,15
+Contacts,Zip Code,7,NULL,YES,nvarchar,20
+Contacts,Owner/ContactE-Mail,8,NULL,YES,nvarchar,50
+Contacts,Owner/ContactFax,9,NULL,YES,nvarchar,20
+Contacts,FacilityManagerName,10,NULL,YES,nvarchar,50
+Contacts,FacilityManagerAddress,11,NULL,YES,nvarchar,100
+Contacts,FacilityManagerCity,12,NULL,YES,nvarchar,30
+Contacts,FacilityManagerState,13,NULL,YES,nvarchar,30
+Contacts,FacilityManagerZipCode,14,NULL,YES,nvarchar,30
+Contacts,FacilityManagerE-mail,15,NULL,YES,nvarchar,50
+Contacts,FacilityManagerFax,16,NULL,YES,nvarchar,20
+Contacts,Owner/ContactTelephoneNo,17,NULL,YES,nvarchar,50
+Contacts,FacilityManagerTelephoneNo,18,NULL,YES,nvarchar,50
+Contacts,FacilityManagerTitle,19,NULL,YES,nvarchar,50
+MinorCodes,AutoNumber,1,NULL,NO,int,NULL
+MinorCodes,MinorCodes,2,NULL,YES,nvarchar,255
+SiteAssessment,AutoNumber,1,NULL,NO,int,NULL
+SiteAssessment,PermitNumber,2,NULL,YES,nvarchar,20
+SiteAssessment,ComplianceStatus,3,NULL,YES,nvarchar,25
+SiteAssessment,MajorCode,4,NULL,YES,nvarchar,100
+SiteAssessment,MinorCode,5,NULL,YES,int,NULL
+SiteAssessment,StartDate,6,NULL,YES,datetime,NULL
+SiteAssessment,DueDate,7,NULL,YES,datetime,NULL
+SiteAssessment,CompletionDate,8,NULL,YES,datetime,NULL
+SiteAssessment,InvestigatorName,9,NULL,YES,nvarchar,25
+SiteAssessment,ReferenceNumber,10,NULL,YES,nvarchar,20
+SiteAssessment,Dollars,11,NULL,YES,money,NULL
+SiteAssessment,Comments,12,NULL,YES,ntext,1073741823
+SiteAssessment,Phase(s),13,NULL,YES,nvarchar,50
+SiteAssessment,Cell(s),14,NULL,YES,nvarchar,50
+RemainingCapacity,AutoNumber,1,NULL,NO,int,NULL
+RemainingCapacity,PermitNumber,2,NULL,YES,nvarchar,20
+RemainingCapacity,FYReportingYear,3,NULL,YES,nvarchar,25
+RemainingCapacity,RemainingCapacity(CY),4,NULL,YES,int,NULL
+RemainingCapacity,AverageDailyTons,5,NULL,YES,int,NULL
+RemainingCapacity,NetVolPerYear,6,NULL,YES,int,NULL
+RemainingCapacity,RateOfFill(CYD),7,NULL,YES,int,NULL
+RemainingCapacity,Years Remaining,8,NULL,YES,int,NULL
+RemainingCapacity,EstimatedFillDate,9,NULL,YES,datetime,NULL
+RemainingCapacity,MethodOfCalculation,10,NULL,YES,nvarchar,200
+RemainingCapacity,ReferenceNumber,11,NULL,YES,nvarchar,20
+RemainingCapacity,Dollars,12,NULL,YES,money,NULL
+RemainingCapacity,WasteType,13,NULL,YES,nvarchar,255
+RemainingCapacity,Comments,14,NULL,YES,ntext,1073741823
+RemainingCapacity,TotalOpDaysYr,15,NULL,YES,int,NULL
+practice tonnage,AutoNumber,1,NULL,NO,int,NULL
+practice tonnage,PermitNumber,2,NULL,YES,nvarchar,20
+practice tonnage,ReportingYear,3,NULL,YES,nvarchar,25
+practice tonnage,SourceOfWaste,4,NULL,YES,nvarchar,50
+practice tonnage,State,5,NULL,YES,nvarchar,50
+practice tonnage,CountyofOrigin,6,NULL,YES,nvarchar,50
+practice tonnage,ReportingQuarter,7,NULL,YES,nvarchar,25
+practice tonnage,TonnageReported,8,NULL,YES,float,NULL
+practice tonnage,TonsPerDay(365),9,NULL,YES,int,NULL
+practice tonnage,AnnualFees,10,NULL,YES,money,NULL
+practice tonnage,ReferenceNumber,11,NULL,YES,nvarchar,20
+practice tonnage,Dollars,12,NULL,YES,money,NULL
+practice tonnage,Comments,13,NULL,YES,ntext,1073741823
+PermitMinorCodes,AutoNumber,1,NULL,NO,int,NULL
+PermitMinorCodes,MinorCodes,2,NULL,YES,nvarchar,255
+PermitMajorCodes,ID,1,NULL,NO,int,NULL
+PermitMajorCodes,Description,2,NULL,YES,nvarchar,255
+Permit,AutoNumber,1,NULL,NO,int,NULL
+Permit,PermitNumber,2,NULL,YES,nvarchar,20
+Permit,ComplianceStatus,3,NULL,YES,nvarchar,25
+Permit,MajorCode,4,NULL,YES,nvarchar,100
+Permit,MinorCodes,5,NULL,YES,int,NULL
+Permit,StartDate,6,NULL,YES,datetime,NULL
+Permit,DueDate,7,NULL,YES,datetime,NULL
+Permit,CompletionDate,8,NULL,YES,datetime,NULL
+Permit,InvestigatorName,9,NULL,YES,nvarchar,25
+Permit,ReferenceNumber,10,NULL,YES,nvarchar,20
+Permit,Dollars,11,NULL,YES,money,NULL
+Permit,Comments,12,NULL,YES,ntext,1073741823
+Permit,Phase(s),13,NULL,YES,nvarchar,50
+Permit,Cell(s),14,NULL,YES,nvarchar,50
+OperationStatus,OperationStatus,1,NULL,NO,nvarchar,50
+OperationStatus,Definition,2,NULL,YES,nvarchar,50
+ModificationsMinorCodes,AutoNumber,1,NULL,NO,int,NULL
+ModificationsMinorCodes,MinorCodes,2,NULL,YES,nvarchar,255
+FacilityNameHistory,ID,1,NULL,NO,int,NULL
+FacilityNameHistory,PermitNumber,2,NULL,YES,nvarchar,20
+FacilityNameHistory,AtlernateName,3,NULL,YES,nvarchar,50
+FacilityNameHistory,AtlernateNameStartDate,4,NULL,YES,datetime,NULL
+FacilityNameHistory,AlternateNameEndDate,5,NULL,YES,datetime,NULL
+Modifications,AutoNumber,1,NULL,NO,int,NULL
+Modifications,PermitNumber,2,NULL,YES,nvarchar,20
+Modifications,ComplianceStatus,3,NULL,YES,nvarchar,25
+Modifications,MajorCode,4,NULL,YES,nvarchar,100
+Modifications,MinorCode,5,NULL,YES,int,NULL
+Modifications,StartDate,6,NULL,YES,datetime,NULL
+Modifications,DueDate,7,NULL,YES,datetime,NULL
+Modifications,CompletionDate,8,NULL,YES,datetime,NULL
+Modifications,InvestigatorName,9,NULL,YES,nvarchar,25
+Modifications,ReferenceNumber,10,NULL,YES,nvarchar,20
+Modifications,Dollars,11,NULL,YES,money,NULL
+Modifications,Comments,12,NULL,YES,ntext,1073741823
+Modifications,Phase(s),13,NULL,YES,nvarchar,50
+Modifications,Cell(s),14,NULL,YES,nvarchar,50
+FacilityTypeDescriptions,FacilityType1,1,NULL,NO,nvarchar,14
+FacilityTypeDescriptions,FacilityTypeDescription1,2,NULL,YES,nvarchar,100
+MethaneMajorCodes,AutoNumber,1,NULL,NO,int,NULL
+MethaneMajorCodes,MethaneMajorCodes,2,NULL,YES,nvarchar,255
+Methane,AutoNumber,1,NULL,NO,int,NULL
+Methane,PermitNumber,2,NULL,YES,nvarchar,20
+Methane,ComplianceStatus,3,NULL,YES,nvarchar,25
+Methane,MethaneMajorCodes,4,NULL,YES,nvarchar,100
+Methane,MinorCode,5,NULL,YES,int,NULL
+Methane,StartDate,6,NULL,YES,datetime,NULL
+Methane,DueDate,7,NULL,YES,datetime,NULL
+Methane,CompletionDate,8,NULL,YES,datetime,NULL
+Methane,InvestigatorName,9,NULL,YES,nvarchar,50
+Methane,ReferenceNumber,10,NULL,YES,nvarchar,20
+Methane,Dollars,11,NULL,YES,money,NULL
+Methane,Comments,12,NULL,YES,ntext,1073741823
+MAIN FACILITY INFO,MainPermitNumber,1,NULL,NO,nvarchar,20
+MAIN FACILITY INFO,FacilityName,2,NULL,YES,nvarchar,255
+MAIN FACILITY INFO,EPAID,3,NULL,YES,nvarchar,20
+MAIN FACILITY INFO,OperationStatus,4,NULL,YES,nvarchar,50
+MAIN FACILITY INFO,FacilityType,5,NULL,YES,nvarchar,15
+MAIN FACILITY INFO,FacilityTypeDescription,6,NULL,YES,nvarchar,60
+MAIN FACILITY INFO,FacilityStartDate,7,NULL,YES,datetime,NULL
+MAIN FACILITY INFO,FacilityAmendedDate,8,NULL,YES,datetime,NULL
+MAIN FACILITY INFO,FacilityEndDate,9,NULL,YES,datetime,NULL
+MAIN FACILITY INFO,FacilityAddress,10,NULL,YES,nvarchar,200
+MAIN FACILITY INFO,City,11,NULL,YES,nvarchar,25
+MAIN FACILITY INFO,State,12,NULL,YES,nvarchar,10
+MAIN FACILITY INFO,ZipCode,13,NULL,YES,nvarchar,15
+MAIN FACILITY INFO,County,14,NULL,YES,nvarchar,50
+MAIN FACILITY INFO,Region,15,NULL,YES,nvarchar,10
+MAIN FACILITY INFO,TotalAcreage,16,NULL,YES,nvarchar,50
+MAIN FACILITY INFO,UsableAcreage,17,NULL,YES,nvarchar,50
+MAIN FACILITY INFO,LocationDescription,18,NULL,YES,nvarchar,255
+MAIN FACILITY INFO,Comments,19,NULL,YES,ntext,1073741823
+MAIN FACILITY INFO,Private,20,((0)),YES,bit,NULL
+MAIN FACILITY INFO,Dominion,21,NULL,YES,nvarchar,25
+MAIN FACILITY INFO,HSIRequested,22,((0)),YES,bit,NULL
+MAIN FACILITY INFO,HSIListed,23,((0)),YES,bit,NULL
+MAIN FACILITY INFO,ProposedCapacity(CY),24,NULL,YES,float,NULL
+MAIN FACILITY INFO,PermittedCapacity(CY),25,NULL,YES,float,NULL
+MAIN FACILITY INFO,PermitIssueDate,26,NULL,YES,datetime,NULL
+MAIN FACILITY INFO,DateCeasedAcceptingWaste,27,NULL,YES,datetime,NULL
+MAIN FACILITY INFO,DateClosureCertificate Issued,28,NULL,YES,datetime,NULL
+MAIN FACILITY INFO,PC/CPeriod,29,NULL,YES,int,NULL
+MAIN FACILITY INFO,LCSystem,30,NULL,YES,nvarchar,50
+MAIN FACILITY INFO,VE,31,NULL,YES,nvarchar,50
+MAIN FACILITY INFO,Liner,32,NULL,YES,nvarchar,50
+MAIN FACILITY INFO,LinerType,33,NULL,YES,nvarchar,15
+MAIN FACILITY INFO,OtherLinerType,34,NULL,YES,nvarchar,50
+MAIN FACILITY INFO,SIC,35,NULL,YES,nvarchar,50
+MAIN FACILITY INFO,GWSystemInstalled,36,NULL,YES,nvarchar,50
+MAIN FACILITY INFO,MethaneSystemInstalled,37,NULL,YES,nvarchar,50
+MAIN FACILITY INFO,GWReleaseConfirmed,38,NULL,YES,nvarchar,50
+MAIN FACILITY INFO,UnderDrainSystemInstalled,39,NULL,YES,nvarchar,50
+MAIN FACILITY INFO,UDSystemReleaseConfirmed,40,NULL,YES,nvarchar,50
+MAIN FACILITY INFO,MailingAddress,41,NULL,YES,nvarchar,50
+MAIN FACILITY INFO,MailingCity,42,NULL,YES,nvarchar,50
+MAIN FACILITY INFO,MailingState,43,NULL,YES,nvarchar,50
+MAIN FACILITY INFO,MailingZipCode,44,NULL,YES,nvarchar,50
+MAIN FACILITY INFO,PostCLosureCareReleaseDate,45,NULL,YES,datetime,NULL
+MAIN FACILITY INFO,LFGasCollectionApproved,46,NULL,YES,nvarchar,50
+MAIN FACILITY INFO,LandfillGastoEnergyApproved,47,NULL,YES,nvarchar,50
+MAIN FACILITY INFO,LandfillGasenergyUsedfor,48,NULL,YES,nvarchar,50
+MAIN FACILITY INFO,Materials Recovery Facility (MRF) Approved?,49,((0)),YES,bit,NULL
+MAIN FACILITY INFO,Type of Waste(s) Processed by MRF,50,NULL,YES,nvarchar,100
+MAIN FACILITY INFO,Composting Operation Approved?,51,((0)),YES,bit,NULL
+MAIN FACILITY INFO,Type of Material (s) Composted,52,NULL,YES,nvarchar,100
+MAIN FACILITY INFO,Combined Landfills with Common GW System Description,53,NULL,YES,nvarchar,150
+MAIN FACILITY INFO,CDLandfill,54,NULL,YES,nvarchar,255
+MAIN FACILITY INFO,CDLandfillOperationStatus,55,NULL,YES,nvarchar,255
+MAIN FACILITY INFO,InertLandfill,56,NULL,YES,nvarchar,255
+MAIN FACILITY INFO,InertLandfillOperationStatus,57,NULL,YES,nvarchar,255
+MAIN FACILITY INFO,TransferStation,58,NULL,YES,nvarchar,255
+MAIN FACILITY INFO,TransferStationOperationStatus,59,NULL,YES,nvarchar,255

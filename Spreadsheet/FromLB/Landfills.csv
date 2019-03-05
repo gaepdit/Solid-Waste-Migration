@@ -1,0 +1,121 @@
+Permit Number,County,Facility Name,Facility Type,Operating Status,Latitude,Longitude,Dominion,Reporting Year,Reporting Quarter,"Remaining Capacity 
+(cubic yards) ",Average Daily Tons,Fill Rate (cubic yards per day),Years Remaining, Total Tons 
+001-006D(SL),Appling,Appling Co - Roaring Creek Ph 1-2 SL,Construction and Demolition Landfill,Operating,31.88405167,-82.22754722,Public,FY 2011,4," 433,112 ",26,52,33," 6,549 "
+002-009D(MSWL),Atkinson,Atkinson Co - SR 50 MSWL,Municipal Solid Waste Landfill,Operating,31.319415,-82.96428583,Public,FY 2011,4," 3,108,720 ",185,247,50," 73,172 "
+002-009D(MSWL),Atkinson,Atkinson Co - SR 50 MSWL,Municipal Solid Waste Landfill,Operating,31.319415,-82.96428583,Public,FY 2011,," 740,679 ",105,144,21,  -    
+005-017D(SL),Baldwin,"Baldwin Co - Union Hill Ch Rd, Ph 3 MSWL",Municipal Solid Waste Landfill,Operating,32.96876306,-83.33781444,Public,FY 2011,1," 21,000 ",0,0,0, 0 
+006-009D(MSWL),Banks,Chambers R&B Landfill Site 2,Municipal Solid Waste Landfill,Operating,34.349715,-83.42533028,Private Commercial,FY 2011,4," 16,401,596 ",1637,2183,26," 468,214 "
+007-020D(SL),Barrow,Republic Waste - Oak Grove SR 324,Municipal Solid Waste Landfill,Operating,33.96591056,-83.77283806,Private Commercial,FY 2011,4," 9,170,983 ",1294,1415,23," 352,943 "
+008-008D(SL),Bartow,Bartow Co - SR 294 Emerson SL Ph 1 C&D,Construction and Demolition Landfill,Operating,34.14390944,-84.76293556,Public,FY 2011,4," 10,400 ",1,2,25, 283 
+008-016D(SL),Bartow,Bartow Co - SR 294 Emerson MSWL Ph 2-3,Municipal Solid Waste Landfill,Operating,34.14390944,-84.76293556,Public,FY 2011,4," 756,000 ",287,435,6," 82,754 "
+009-005D(SL),Ben Hill,"Fitzgerald, Kiochee Church Rd, Ph 2",Municipal Solid Waste Landfill,Operating,31.74601583,-83.19379778,Public,FY 2011,4," 66,888 ",13,23,11," 3,252 "
+009-005D(SL),Ben Hill,"Fitzgerald, Kiochee Church Rd, Ph 2",Municipal Solid Waste Landfill,Operating,31.74601583,-83.19379778,Public,FY 2011,," 631,174 ",0,0,0,  -    
+011-017D(SL),Bibb,Macon - Walker Rd Ph 2 SL,Unlined Sanitary Landfill,Operating,32.82249694,-83.61994944,Public,FY 2011,4," 2,046,783 ",234,426,15," 79,062 "
+011-018D(L),Bibb,Republic Services - Swift Creek,Construction and Demolition Landfill,Operating,32.82345833,-83.51756944,Private Commercial,FY 2011,," 494,869 ",24,42,44," 6,409 "
+011-026D(SL),Bibb,Republic Services - Swift Creek MSW,Municipal Solid Waste Landfill,Operating,,,Private Commercial,FY 2011,," 406,516 ",595,821,2," 158,861 "
+016-013P(INC),Bulloch,"Ellis Wood Contracting, Inc ACD",Air Curtain Destructor,Operating,,,,FY 2011,,,,,, 972 
+017-002D(SL),Burke,Burke Co - Clarke Rd SL,Construction and Demolition Landfill,Operating,33.08094056,-81.96482528,Public,FY 2011,3," 76,459 ",18,47,6," 20,226 "
+018-008D(MSWL),Butts,Republic Services - Pine Ridge Recycling MSWL,Municipal Solid Waste Landfill,Operating,33.23628139,-84.12280361,Private Commercial,FY 2011,4," 24,926,138 ",3300,4125,22," 818,476 "
+020-017D(MSWL),Camden,Camden Co - SR 110 MSWL,Municipal Solid Waste Landfill,Operating,30.85909028,-81.85451556,Public,FY 2011,4," 2,406 ",309,622,12," 94,000 "
+020-019D(C&D),Camden,Camden Co - SR 110 C/D/I Waste Landfill,Construction and Demolition Landfill,Operating,30.84833333,-81.86388889,Public,FY 2011,4," 25,561,415 ",175,254,322," 54,627 "
+021-006D(MSWL),Candler,Candler Co - SR 121 Ph 2 MSWL,Municipal Solid Waste Landfill,Operating,32.45862778,-82.06678417,Public,FY 2011,4," 298,265 ",23,45,26," 5,366 "
+024-006D(SL),Charlton,"Chesser Island Road Landfill, Inc MSWL",Municipal Solid Waste Landfill,Operating,30.70714528,-82.08606417,Private Commercial,FY 2011,4," 59,832,930 ",4,5,43," 1,257,264 "
+025-051D(SL),Chatham,Savannah - Dean Forest Rd SL,Municipal Solid Waste Landfill,Operating,32.05817139,-81.2147375,Public,FY 2011,4," 1,324,998 ",189,379,11," 103,914 "
+025-070D(MSWL),Chatham,Superior Landfill & Recycling Center Site 2 MSWL,Municipal Solid Waste Landfill,Operating,32.02999639,-81.27162361,Private Commercial,FY 2011,4," 13,471,339 ",1560,2026,24," 435,120 "
+025-072D(L)(I),Chatham,"Republic Services - Savannah Regional Industrial Landfill, Inc",Industrial Landfill,Operating,32.14159722,-81.17872806,Commercial Industrial,FY 2011,4," 2,411,500 ",571,680,12," 141,497 "
+028-039D(SL),Cherokee,"Cherokee Co - Pine Bluff Landfill, Inc",Municipal Solid Waste Landfill,Operating,34.28519,-84.38857889,Private Commercial,FY 2011,4," 43,731,628 ",3464,4619,33," 990,558 "
+028-040D(C&D),Cherokee,Cherokee Co - Swims SR 92 Ph 5,Construction and Demolition Landfill,Operating,34.08965194,-84.55906972,Private Commercial,FY 2011,4," 39,750 ",43,86,2," 13,059 "
+028-043D(C&D),Cherokee,"Waste Pro of GA, Inc d/b/a Cherokee C&D Landfill",Construction and Demolition Landfill,Operating,34.30916667,-84.41138889,Private Commercial,FY 2011,4," 2,451,796 ",128,170,50," 36,545 "
+029-012D(SL),Clarke,Clarke Co - Athens Dunlap Rd SL Ph 2-4,Municipal Solid Waste Landfill,Operating,33.92406806,-83.26550222,Public,FY 2011,4," 895,343 ",201,432,7," 61,334 "
+031-037D(SL),Clayton,Clayton Co - SR 3 Lovejoy Site 3,Municipal Solid Waste Landfill,Operating,33.43663028,-84.31289972,Public,FY 2011,4," 2,686,025 ",155,309,28," 47,759 "
+031-039D(C&D),Clayton,"Stephens MDS, LP, C&D Landfill",Construction and Demolition Landfill,Operating,33.01027778,-84.00694444,Private Commercial,FY 2011,4," 13,615,560 ",533,594,80," 158,170 "
+034-005D(C&D),Coffee,"Transwaste Services, Inc CR 129 - 17 Mile River",Construction and Demolition Landfill,Operating,,,Private Commercial,FY 2011,,  -    ,0,0,0, 11 
+036-015P(INC),Columbia,"Sample & Son, Inc, SR 232 ACD",Air Curtain Destructor,Operating,,,,FY 2011,,,,,," 1,605 "
+036-017D(C&D),Columbia,Columbia Co - Sample & Son C&D,Construction and Demolition Landfill,Operating,33.52438889,-82.25889917,Private Commercial,FY 2011,4," 2,797,109 ",89,133,57," 27,475 "
+037-008D(L),Cook,Cook Co - Taylor Rd Adel (L),Construction and Demolition Landfill,Operating,31.09884667,-83.42193444,Public,FY 2011,4,  -    ,0,0,0," 5,023 "
+037-010D(MSWL),Cook,Cook Co - Taylor Rd Site 2 MSWL,Municipal Solid Waste Landfill,Operating,31.09884667,-83.42193444,Public,FY 2011,4," 500,607 ",26,51,32," 7,814 "
+037-011D(C&D),Cook,Cook Co - CR 216 C&D Landfill,Construction and Demolition Landfill,Operating,,,,FY 2011,,,,,,  -    
+038-015D(C&D),Coweta,Coweta Co - Ishman Ballard Rd C&D Landfill,Construction and Demolition Landfill,Operating,33.36325861,-84.86091722,Public,FY 2011,4," 200,139 ",10,24,26," 3,033 "
+040-008D(MSWL),Crisp,Crisp Co - US 41S Site 2 Ph 4-5 MSWL,Municipal Solid Waste Landfill,Operating,31.86696722,-83.74903083,Public,FY 2011,4," 7,805,708 ",117,243,116," 42,699 "
+043-011D(MSWL),Decatur,Decatur Co - US Hwy 27 MSWL,Municipal Solid Waste Landfill,Operating,30.71055556,-84.40722222,Public,FY 2011,4," 856,556 ",444,499,6," 112,396 "
+044-037D(SL),DeKalb,DeKalb Co - Seminole Rd Ph 2 SL,Construction and Demolition Landfill,Operating,,,Public,FY 2011,," 57,528 ",175,118,2," 45,441 "
+044-041D(L),DeKalb,Rogers Lake Road C&D Landfill,Construction and Demolition Landfill,Operating,33.73634111,-84.10470194,Private Commercial,FY 2011,4," 294,461 ",95,95,11," 28,385 "
+044-042D(L),DeKalb,APAC/GA - Donzi Ln Ph 5A (L),Construction and Demolition Landfill,Operating,33.70886667,-84.34644944,Private Commercial,FY 2011,4," 267,089 ",372,344,2," 120,361 "
+044-048D(SL),DeKalb,BFI - Hickory Ridge MSWL,Municipal Solid Waste Landfill,Operating,33.66228889,-84.33639444,Private Commercial,FY 2011,,,,,, 45 
+044-049D(C&D),DeKalb,BFI - East DeKalb Landfill,Construction and Demolition Landfill,Operating,,,,FY 2011,,,,,, 5 
+044-050D(SL),DeKalb,"DeKalb Co - Seminole Rd Ph 2A,3, 4 SL",Municipal Solid Waste Landfill,Operating,33.65644167,-84.25284889,Public,FY 2011,4," 47,122,437 ",1478,2178,79," 384,279 "
+047-014D(SL),Dougherty,Dougherty Co - Fleming/Gaissert Rd SL,Municipal Solid Waste Landfill,Operating,31.53278361,-84.0283525,Public,FY 2011,4," 1,702,250 ",46,165,34," 93,394 "
+047-014D(SL),Dougherty,Dougherty Co - Fleming/Gaissert Rd SL,Municipal Solid Waste Landfill,Operating,31.53278361,-84.0283525,Public,FY 2011,," 7,409,172 ",259,382,63,  -    
+047-023D(C&D),Dougherty,"Maple Hill Landfill, Inc",Construction and Demolition Landfill,Operating,31.565325,-84.04782778,Private Commercial,FY 2011,4," 10,250,487 ",115,192,214," 28,369 "
+048-009D(SL),Douglas,Douglas Co - Cedar Mt/Worthan Rd Ph 1 SL,Construction and Demolition Landfill,Operating,33.75738417,-84.81143028,Public,FY 2011,4," 475,804 ",44,88,18," 13,201 "
+054-006D(C&D),Evans,Evans Co - Little Bull Creek C&D,Construction and Demolition Landfill,Operating,32.00194444,-83.01333333,Public,FY 2011,4," 2,382,537 ",23,49,180," 5,338 "
+057-020D(MSWL),Floyd,"Rome Walker Mtn Rd, Site 2",Municipal Solid Waste Landfill,Operating,34.19471639,-85.21479889,Public,FY 2011,4," 4,505,049 ",231,462,32," 82,128 "
+057-021D(C&D),Floyd,Floyd Co - Rome Walker Mtn Rd C&D,Construction and Demolition Landfill,Operating,34.18833333,-85.21972222,Public,FY 2011,4," 260,841 ",46,48,5387," 15,573 "
+058-012D(MSWL),Forsyth,Eagle Point Landfill,Municipal Solid Waste Landfill,Operating,34.32555556,-84.24083333,Private Commercial,FY 2011,4," 26,433,451 ",4122,5153,19," 1,178,699 "
+058-012D(MSWL),Forsyth,Eagle Point Landfill,Municipal Solid Waste Landfill,Operating,34.32555556,-84.24083333,Private Commercial,FY 2011,," 2,650,714 ",224,345,28,  -    
+058-013D(C&D),Forsyth,"Greenleaf Recycling, LLC",Construction and Demolition Landfill,Operating,34.27416667,-84.04916667,Private Commercial,FY 2011,4," 696,298 ",119,238,9," 36,419 "
+059-012D(C&D),Franklin,"EarthResources of Franklin Co, LLC, SR 51",Construction and Demolition Landfill,Operating,34.36258889,-83.35020556,Private Commercial,FY 2011,4," 8,388,226 ",119,199,147," 34,280 "
+060-072D(L),Fulton,"Chadwick Rd Landfill, Inc",Construction and Demolition Landfill,Operating,34.11436972,-84.38154611,Private Commercial,FY 2011,4," 1,741,472 ",288,443,14," 84,128 "
+060-088D(C&D),Fulton,Safeguard Landfill Management C&D,Construction and Demolition Landfill,Operating,33.54861111,-84.61472222,Private Commercial,FY 2011,4," 7,313,769 ",1394,1743,15," 312,102 "
+060-089D(C&D),Fulton,Willow Oak C&D,Construction and Demolition Landfill,Operating,33.54083333,-84.62805556,Private Commercial,FY 2011,4," 12,532,207 ",575,884,50," 164,417 "
+063-025D(L),Glynn,Eller - Whitlock Ave (L),Construction and Demolition Landfill,Operating,31.19698194,-81.50314361,Private Commercial,FY 2011,4," 10,331 ",4,6,32, 978 
+064-016D(SL),Gordon,Gordon Co - Redbone Ridges Rd SL,Municipal Solid Waste Landfill,Operating,34.51055667,-84.76581111,Public,FY 2011,4," 11,654,987 ",653,920,46," 178,757 "
+065-002D(SL),Grady,Cairo - 6th Ave SL,Unlined Sanitary Landfill,Operating,30.88193639,-84.22876361,Public,FY 2011,4," 255,180 ",68,135,8," 25,627 "
+067-032D(SL),Gwinnett,BFI - Richland Creek Road MSWL,Municipal Solid Waste Landfill,Operating,34.12138056,-84.03926389,Private Commercial,FY 2011,4," 11,121,064 ",1182,1819,16," 440,185 "
+068-020D(SL),Habersham,Habersham Co - SR 13 MSWL,Municipal Solid Waste Landfill,Operating,34.55538111,-83.45889028,Public,FY 2011,4," 1,379,665 ",73,121,40," 25,848 "
+068-020D(SL),Habersham,Habersham Co - SR 13 MSWL,Construction and Demolition Landfill,Operating,34.55538111,-83.45889028,Public,FY 2011,," 99,186 ",19,50,7,  -    
+069-014D(C&D),Hall,"Reliable Tire Services, Monroe Dr",Construction and Demolition Landfill,Operating,34.28227861,-83.80205722,Private Commercial,FY 2011,4," 1,815,827 ",169,261,24," 48,428 "
+069-015D(MSWL),Hall,Hall Co - Candler Rd - SR 60,Municipal Solid Waste Landfill,Operating,34.24257417,-83.80076417,Public,FY 2011,4," 5,394,451 ",196,392,44," 56,899 "
+076-020D(SL),Houston,Houston Co - SR 247 Klondike MSWL,Municipal Solid Waste Landfill,Operating,32.39956056,-83.55573,Public,FY 2011,4," 2,658,583 ",450,991,9," 139,486 "
+076-024D(C&D),Houston,Houston Co - SR 247 Klondike C&D,Construction and Demolition Landfill,Operating,32.39960278,-83.55592861,Public,FY 2011,4," 2,799,944 ",145,242,37," 45,069 "
+079-007D(C&D),Jasper,Jasper Co - SR 212 C&D/Industrial,Construction and Demolition Landfill,Operating,33.31361111,-83.72333333,Public,FY 2011,4," 312,604 ",13,26,49," 1,866 "
+081-011D(MSWL),Jefferson,Jefferson Co - CR 138 MSWL,Municipal Solid Waste Landfill,Operating,33.08861917,-82.42988528,Public,FY 2011,4," 1,268,597 ",48,95,43," 12,528 "
+082-005D(SL),Jenkins,Jenkins Co - CR 54 Ph 2 MSWL/C&D,Construction and Demolition Landfill,Operating,32.78856833,-81.91160389,Public,FY 2011,4," 867,982 ",8,33,97," 1,589 "
+085-007D(MSWL),Lamar,Lamar Co - Cedar Grove Regional MSWL,Municipal Solid Waste Landfill,Operating,33.08597306,-84.20856278,Public,FY 2011,4," 5,726,269 ",219,332,62," 62,671 "
+087-015D(SL),Laurens,Laurens Co - Old Macon Road MSWL,Construction and Demolition Landfill,Operating,32.58805556,-83.05361111,Public,FY 2011,4," 141,471 ",60,117,4," 46,655 "
+087-015D(SL),Laurens,Laurens Co - Old Macon Road MSWL,Municipal Solid Waste Landfill,Operating,32.58805556,-83.05361111,Public,FY 2011,," 1,622,023 ",91,158,33,  -    
+089-010D(SL),Liberty,US Army - Ft Stewart Main Cantonment SL,Unlined Sanitary Landfill,Operating,31.88720389,-81.64353417,Public,FY 2011,4," 576,070 ",32,64,32," 9,126 "
+089-020D(L),Liberty,US Army - Ft Stewart Main Cantonment (L),Construction and Demolition Landfill,Operating,31.88720389,-81.64353417,Public,FY 2011,4," 123,155 ",8,15,28," 2,168 "
+092-019D(MSWL),Lowndes,Veolia ES Pecan Row MSWL,Municipal Solid Waste Landfill,Operating,30.81291194,-83.36030167,Private Commercial,FY 2011,4," 233,800 ",916,1018,1," 216,204 "
+092-022D(MSWL),Lowndes,Veolia ES Evergreen MSWL,Municipal Solid Waste Landfill,Operating,30.82286306,-83.35995722,Private Commercial,FY 2011,4," 14,183,962 ",1200,1500,33," 180,945 "
+094-009D(MSWL),Macon,Macon Co - Middle Ga SWMA Regional MSWL,Construction and Demolition Landfill,Operating,32.36297583,-84.01418222,Public,FY 2011,4," 328,474 ",34,81,16," 21,094 "
+098-003D(SL),McIntosh,McIntosh Co - King Rd SL,Unlined Sanitary Landfill,Operating,31.51332167,-81.48258,Public,FY 2011,4," 525,278 ",38,77,22," 11,941 "
+099-019D(MSWL),Meriwether,"Greenbow, LLC Turkey Run MSWL",Municipal Solid Waste Landfill,Operating,33.18074722,-84.83664444,Private Commercial,FY 2011,4," 29,415,091 ",1057,1510,68," 302,434 "
+102-008D(SL),Monroe,Monroe Co - Strickland Loop Rd,Municipal Solid Waste Landfill,Operating,33.09571889,-83.91179778,Public,FY 2011,4," 2,033,392 ",69,192,38," 18,184 "
+105-014D(MSWL),Murray,Murray Co. - US 411 Westside Site 2 MSWL,Municipal Solid Waste Landfill,Operating,34.68076056,-84.73062806,Public,FY 2011,4," 12,198,654 ",226,294,151," 61,732 "
+106-016D(MSWL),Muscogee,"Columbus, Pine Grove MSWL",Municipal Solid Waste Landfill,Operating,32.48655139,-84.85255944,Public,FY 2011,4," 4,510,751 ",253,603,30," 68,493 "
+106-016D(MSWL),Muscogee,"Columbus, Pine Grove MSWL",Construction and Demolition Landfill,Operating,32.48655139,-84.85255944,Public,FY 2011,," 172,727 ",16,57,16,  -    
+107-013D(SL)(2),Newton,Newton Co - Lower River Rd Site 2 HE MSWL,Municipal Solid Waste Landfill,Operating,33.55158083,-83.89550806,Public,FY 2011,4," 1,144,244 ",265,408,9," 78,018 "
+107-014D(C&D),Newton,Newton Co - Lower River Road C&D,Construction and Demolition Landfill,Operating,,,Public,FY 2011,," 1,771,108 ",1,1,43, 221 
+109-003D(C&D),Oglethorpe,Oglethorpe Co - US 78 Ph 2 C&D,Construction and Demolition Landfill,Operating,33.88937389,-83.13413639,Public,FY 2011,4," 395,786 ",33,44,29," 12,706 "
+110-005D(SL),Paulding,Paulding Co - Gulledge Rd N Tract 1 SL,Construction and Demolition Landfill,Operating,34.01749806,-84.79878444,Public,FY 2011,4," 29,529 ",0,1,9, 75 
+112-008D(C&D),Pickens,"K&M, Old Whitestone Road C&D",Construction and Demolition Landfill,Operating,34.55,-84.52083333,Private Commercial,FY 2011,4," 4,076,593 ",68,110,129," 19,568 "
+115-008D(SL),Polk,Polk Co - Grady Rd SL,Municipal Solid Waste Landfill,Operating,33.99525611,-85.16851167,Public,FY 2011,4," 496,316 ",1468,1769,1," 425,374 "
+119-006D(C&D),Rabun,Rabun Co - Boggs Mountain Rd C&D,Construction and Demolition Landfill,Operating,34.81237139,-83.41542056,Public,FY 2011,4," 195,940 ",11,26,30," 2,727 "
+121-014D(SL),Richmond,US Army - Ft Gordon Gibson Rd Ph 1-3 SL,Construction and Demolition Landfill,Operating,33.37044167,-82.24288694,Public,FY 2011,3," 121,873 ",8,16,45," 1,206 "
+121-016D(SL),Richmond,Richmond Co - Deans Bridge Rd Ph 2C SL,Municipal Solid Waste Landfill,Operating,33.35257194,-82.14324556,Public,FY 2011,4," 227,957 ",1,1,4, 183 
+121-018D(MSWL),Richmond,Richmond Co - Deans Bridge Rd Ph 3 MSWL,Municipal Solid Waste Landfill,Operating,32.35166667,-82.13222222,Public,FY 2011,4," 65,857,376 ",964,1303,162," 310,001 "
+126-010D(C&D),Spalding,Spalding Co - Griffin Shoal Creek Rd Ph 3 C&D,Construction and Demolition Landfill,Operating,33.25,-84.36833333,Public,FY 2011,4," 804,851 ",150,215,13," 41,245 "
+127-003D(SL),Stephens,Stephens Co - SR 145 Ph 2-3 SL,Construction and Demolition Landfill,Operating,,,Public,FY 2011,," 20,240 ",,,, 96 
+133-003D(SL),Taylor,"Veolia ES Taylor Co Landfill, LLC",Municipal Solid Waste Landfill,Operating,32.46226333,-84.37152583,Private Commercial,FY 2011,4," 45,659,317 ",2000,2500,65," 545,980 "
+134-015D(MSWL),Telfair,Telfair Co - CR 144 MSWL,Municipal Solid Waste Landfill,Operating,31.8902,-82.90823806,Public,FY 2011,4," 395,686 ",40,80,18," 9,502 "
+136-017D(C&D),Thomas,Thomas Co - Thomasville/Sunset Dr Ph 3 C&D,Construction and Demolition Landfill,Operating,30.82138889,-83.91444444,Public,FY 2011,4," 447,702 ",108,344,5," 29,699 "
+136-018D(MSWL),Thomas,Thomasville/Sunset Dr Phases 4-5 MSWL,Municipal Solid Waste Landfill,Operating,30.8,-83.90833333,Public,FY 2011,4," 10,584,165 ",393,714,54," 108,002 "
+137-007D(SL)(3),Tift,Tifton - Omega/Eldorado Rd Ph 3 SL,Municipal Solid Waste Landfill,Operating,31.35777278,-83.53698111,Public,FY 2011,4," 439,226 ",143,197,8," 41,952 "
+138-006D(MSWL),Toombs,"Toombs Co - S1898, Ph 3 MSWL",Municipal Solid Waste Landfill,Operating,32.14646694,-82.38856583,Public,FY 2011,4," 1,249,770 ",150,300,15," 33,316 "
+138-007D(C&D),Toombs,Toombs Co - S1898 C&D,Construction and Demolition Landfill,Operating,32.14583333,-82.38472222,Public,FY 2011,4," 97,495 ",75,150,2," 15,825 "
+141-013D(SL),Troup,LaGrange - I85/SR 109 SL,Municipal Solid Waste Landfill,Operating,33.04626194,-84.95322167,Public,FY 2011,4," 3,124,628 ",418,597,19," 125,121 "
+141-013D(SL),Troup,LaGrange - I85/SR 109 SL,Construction and Demolition Landfill,Operating,33.04626194,-84.95322167,Public,FY 2011,," 21,651 ",37,74,1,  -    
+141-023D(SL),Troup,Troup Co - SR 109 Mountville Ph 2 SL,Construction and Demolition Landfill,Operating,33.03366611,-84.90198667,Public,FY 2011,4," 114,947 ",21,41,9," 4,560 "
+143-008D(SL),Twiggs,"Wolf Creek Landfill, LLC",Municipal Solid Waste Landfill,Operating,32.770535,-83.4378725,Private Commercial,FY 2011,4," 9,024,665 ",1686,2248,15," 461,983 "
+146-013D(L),Walker,LaFayette - Coffman Springs Rd (L),Construction and Demolition Landfill,Operating,34.66727278,-85.26768444,Public,FY 2011,4," 85,007 ",2,3,98, 431 
+146-015D(MSWL),Walker,Walker Co - Marble Top Rd Site 2 MSWL,Construction and Demolition Landfill,Operating,34.83943111,-85.36346389,Public,FY 2011,4," 379,035 ",58,104,15," 14,394 "
+147-012D(C&D),Walton,Republic - US 78 C&D,Construction and Demolition Landfill,Operating,33.87555556,-83.59277778,Private Commercial,FY 2011,4," 13,415,952 ",0,0,98, 34 
+147-013D(C&D),Walton,Walton C&D,Construction and Demolition Landfill,Operating,33.87722222,-83.60055556,Private Commercial,FY 2011,4," 1,983,592 ",207,414,17," 58,028 "
+147-014D(C&D),Walton,Caruthers Mill C&D,Construction and Demolition Landfill,Operating,33.87694444,-83.60027778,Private Commercial,FY 2011,4," 8,289,352 ",502,803,40," 130,352 "
+150-010D(MSWL),Washington,Washington Co - Kaolin Rd S #3 SL,Municipal Solid Waste Landfill,Operating,32.93544806,-82.8728225,Public,FY 2011,4," 1,263,680 ",38,105,49, 332 
+150-010D(MSWL),Washington,Washington Co - Kaolin Rd S #3 SL,Construction and Demolition Landfill,Operating,32.93544806,-82.8728225,Public,FY 2011,," 49,280 ",8,13,15,  -    
+151-014D(SL),Wayne,Republic Services - Broadhurst Environmental,Municipal Solid Waste Landfill,Operating,31.47084583,-81.94114528,Private Commercial,FY 2011,4," 49,142,554 ",2180,1982,87," 569,459 "
+155-047D(SL),Whitfield,Whitfield Co - Dalton - Old Dixie Hwy Ph 6,Municipal Solid Waste Landfill,Operating,34.65164167,-84.95028389,Public,FY 2011,4," 7,400,498 ",493,758,32," 149,824 "
+155-048D(LI),Whitfield,Whitfield Co - DWRSWA Old Dixie Hwy Baled Carpet,Industrial Landfill,Operating,34.64722222,-84.94444444,Public,FY 2011,4," 1,008,493 ",48,194,17," 16,483 "
+,,,,,,,,,," 713,006,209 ",,,," 13,482,605 "
