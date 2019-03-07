@@ -16,7 +16,7 @@ GO
 CREATE TABLE [dbo].[$grdClosure](
 	[PermitNumber] [varchar](100) NULL,
 	[txtAcceptingWasteCeasedDate] [varchar](50) NULL,
-	[txtPhaseCell] [varchar](50) NULL,
+	[txtPhaseCell] [varchar](max) NULL,
 	[txtClosurePermitIssuedDate] [varchar](50) NULL,
 	[FACILITY_ID_REF] [varchar](100) NOT NULL
 ) ON [PRIMARY]

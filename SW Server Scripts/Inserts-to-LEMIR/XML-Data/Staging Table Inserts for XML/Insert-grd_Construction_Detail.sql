@@ -14,9 +14,9 @@ GO
 --        [txtCell],
 --        [FACILITY_ID_REF])
 SELECT [C].[PermitNumber] AS [PermitNumber],
-       [C].[CompletionDate] AS [txtApprovedDate],
-       [C].[Phase(s)] AS [txtPhase],
-       [C].[Cell(s)] AS [txtCell],
+       isnull(convert(VARCHAR(50), [C].[CompletionDate], 101), '') AS [txtApprovedDate],
+       isnull([C].[Phase(s)], '') AS [txtPhase],
+       isnull([C].[Cell(s)], '') AS [txtCell],
        [FACILITY_ID_REF]=CASE
                            WHEN [C].[PermitNumber] LIKE '0%'
                              THEN(SUBSTRING([C].[PermitNumber], 0, 8))

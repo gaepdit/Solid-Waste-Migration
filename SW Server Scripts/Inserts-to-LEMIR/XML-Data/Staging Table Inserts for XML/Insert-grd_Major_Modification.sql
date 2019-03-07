@@ -13,8 +13,8 @@ GO
 --        [txtMajorModificationPurpose],
 --        [FACILITY_ID_REF])
 SELECT [M].[PermitNumber],
-       [M].[CompletionDate] as [txtMajorModificationIssuedDate],
-       [txtMajorModificationPurpose]=[M].[MajorCode]+' -- '+[M].[Comments],
+       isnull(convert(VARCHAR(50), [M].[CompletionDate], 101), '') AS [txtMajorModificationIssuedDate],
+       isnull([M].[MajorCode]+' -- '+[M].[Comments], '') AS [txtMajorModificationPurpose],
        [FACILITY_ID_REF]=CASE
                            WHEN [M].[PermitNumber] LIKE '0%'
                              THEN(SUBSTRING([M].[PermitNumber], 0, 8))
@@ -43,8 +43,8 @@ SELECT [M].[PermitNumber],
                            ELSE '0'
                          END
 FROM [LandDataBase].[dbo].[Modifications] AS [M]
-where [M].[MinorCode] = 26
-and [M].[MajorCode] <> 'Other Modification'
+WHERE [M].[MinorCode] = 26
+      AND [M].[MajorCode] <> 'Other Modification'
 GO
 
 
