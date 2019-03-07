@@ -67,4 +67,4 @@ SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
 FROM [PermitByRule].[dbo].[PBR_Main_Facility] AS [MF]
      JOIN [PermitByRule].[dbo].[PBR Contacts] AS [PC] ON [MF].[PermitNumber] = [PC].[PermitNumber]
      LEFT JOIN [LEMIR_Stage].[dbo].[Update_Insert] AS [UI] ON [MF].[PermitNumber] = [UI].[Permit_Number]
-WHERE [UI].[InsUpd] = 'I'
+--WHERE [UI].[InsUpd] = 'I'

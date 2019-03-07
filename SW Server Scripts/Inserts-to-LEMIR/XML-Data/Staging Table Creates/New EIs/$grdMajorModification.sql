@@ -16,7 +16,7 @@ GO
 CREATE TABLE [dbo].[$grdMajorModification](
 	[PermitNumber] [varchar](100) NULL,
 	[txtMajorModificationIssuedDate] [varchar](50) NULL,
-	[txtMajorModificationPurpose] [varchar](50) NULL,
+	[txtMajorModificationPurpose] [varchar](max) NULL,
 	[FACILITY_ID_REF] [varchar](100) NOT NULL
 ) ON [PRIMARY]
 GO

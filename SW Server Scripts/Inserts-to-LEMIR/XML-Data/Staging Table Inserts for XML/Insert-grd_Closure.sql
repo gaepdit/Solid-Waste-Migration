@@ -14,9 +14,9 @@ GO
 --        [txtClosurePermitIssuedDate],
 --        [FACILITY_ID_REF])
 SELECT [CL].[PermitNumber] AS [PermitNumber],
-       convert(VARCHAR(50), [MFI].[DateCeasedAcceptingWaste], 110) AS [txtAcceptingWasteCeasedDate],
-       [CL].[Comments] AS [txtPhaseCell],
-       isnull(convert(VARCHAR(50), [MFI].[DateClosureCertificate Issued], 110), convert(VARCHAR(50), [CL].[CompletionDate], 110)) AS [txtClosurePermitIssuedDate],
+       isnull(convert(VARCHAR(50), [MFI].[DateCeasedAcceptingWaste], 101), '') AS [txtAcceptingWasteCeasedDate],
+       isnull([CL].[Comments], '') AS [txtPhaseCell],
+       isnull(convert(VARCHAR(50), [MFI].[DateClosureCertificate Issued], 101), convert(VARCHAR(50), [CL].[CompletionDate], 101)) AS [txtClosurePermitIssuedDate],
        [FACILITY_ID_REF]=CASE
                            WHEN [CL].[PermitNumber] LIKE '0%'
                              THEN(SUBSTRING([CL].[PermitNumber], 0, 8))

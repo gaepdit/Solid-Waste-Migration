@@ -8,7 +8,7 @@ USE [LEMIR_Stage]
 GO
 --
 --INSERT INTO [dbo].[$grdFinancialAssurance]
---       ([PERMIT NUMBER],
+--       ([PermitNumber],
 --        [txtFiscalYearEndDate],
 --        [txtEffectiveStartDate],
 --        [txtEffectiveEndDate],
@@ -23,18 +23,18 @@ GO
 --        [txtComments],
 --        [FACILITY_ID_REF])
 SELECT [FM].[PERMIT NUMBER] AS [PERMIT NUMBER],
-       convert(varchar(50),[FM].[FISCAL YEAR END], 110) AS [txtFiscalYearEndDate],
-       convert(varchar(50),[FM].[DATE FA DUE], 110) AS [txtEffectiveStartDate],
-       convert(varchar(50),dateadd([yyyy], 1, [FM].[DATE FA DUE]), 110) AS [txtEffectiveEndDate],
-       [FM].[TypeInstrument] AS [ddlFAType],
+       isnull(convert(varchar(50),[FM].[FISCAL YEAR END], 101), '') AS [txtFiscalYearEndDate],
+       isnull(convert(varchar(50),[FM].[DATE FA DUE], 101), '') AS [txtEffectiveStartDate],
+       isnull(convert(varchar(50),dateadd([yyyy], 1, [FM].[DATE FA DUE]), 101), '') AS [txtEffectiveEndDate],
+       isnull([FM].[TypeInstrument], '') AS [ddlFAType],
        '' AS [txtMechanismNo],
        '' AS [txtCurrentOpenArea],
        '' AS [txtApprovedOpenArea],
-       [FM].[CURRENT CL AMT] AS [txtClosureAmount],
-       [FM].[CURRENT PC AMT] AS [txtPostClosureCareAmount],
-       [FM].[CURRENT CA AMT] AS [txtCorrectiveActionAmount],
-       [FM].[CURRENT ASSURED COST] AS [txtTotalAssuredCost],
-       [FM].[Comments] AS [txtComments],
+       isnull([FM].[CURRENT CL AMT], '') AS [txtClosureAmount],
+       isnull([FM].[CURRENT PC AMT], '') AS [txtPostClosureCareAmount],
+       isnull([FM].[CURRENT CA AMT], '') AS [txtCorrectiveActionAmount],
+       isnull([FM].[CURRENT ASSURED COST], '') AS [txtTotalAssuredCost],
+       isnull([FM].[Comments], '') AS [txtComments],
        [FACILITY_ID_REF]=CASE
                            WHEN [FM].[PERMIT NUMBER] LIKE '0%'
                              THEN(SUBSTRING([FM].[PERMIT NUMBER], 0, 8))

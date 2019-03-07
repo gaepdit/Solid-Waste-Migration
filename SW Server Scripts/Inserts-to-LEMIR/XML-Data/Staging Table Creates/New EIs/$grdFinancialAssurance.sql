@@ -26,7 +26,7 @@ CREATE TABLE [dbo].[$grdFinancialAssurance](
 	[txtPostClosureCareAmount] [varchar](50) NULL,
 	[txtCorrectiveActionAmount] [varchar](50) NULL,
 	[txtTotalAssuredCost] [varchar](50) NULL,
-	[txtComments] [varchar](100) NULL,
+	[txtComments] [varchar](max) NULL,
 	[FACILITY_ID_REF] [varchar](100) NOT NULL
 ) ON [PRIMARY]
 GO
