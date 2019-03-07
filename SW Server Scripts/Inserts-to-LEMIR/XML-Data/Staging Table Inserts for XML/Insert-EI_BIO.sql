@@ -143,7 +143,7 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        '' AS [txtPermitNumber_COM],
        --
        'ddlEnvInterestStatus' AS [ddlEnvInterestStatus_ID],
-       [MFI].[OperationStatus] AS [ddlEnvInterestStatus_VAL],
+       [OS].[Definition] AS [ddlEnvInterestStatus_VAL],
        'EI Status' AS [ddlEnvInterestStatus_TAG],
        'true' AS [ddlEnvInterestStatus_VIS],
        [MFI].[OperationStatus]+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||' AS [ddlEnvInterestStatus_HIS],
@@ -193,6 +193,7 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
         END)+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||' AS [rdoGWInstalled_HIS],
        'GW Monitoring System Installed:' AS [rdoGWInstalled_DES],
        '' AS [rdoGWInstalled_COM],
+       --
        NULL AS [ddlAssessmentMonitoring_ID],
        NULL AS [ddlAssessmentMonitoring_VAL],
        NULL AS [ddlAssessmentMonitoring_TAG],
@@ -200,6 +201,7 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        NULL AS [ddlAssessmentMonitoring_HIS],
        NULL AS [ddlAssessmentMonitoring_DES],
        NULL AS [ddlAssessmentMonitoring_COM],
+       --
        'rdoMethaneInstalled' AS [rdoMethaneInstalled_ID],
        (CASE
           WHEN [MFI].[MethaneSystemInstalled] = 'D'
@@ -223,6 +225,7 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
         END)+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||' AS [rdoMethaneInstalled_HIS],
        'Methane Monitoring System Installed:' AS [rdoMethaneInstalled_DES],
        '' AS [rdoMethaneInstalled_COM],
+       --
        NULL AS [ddlMethaneMonitoringFrequency_ID],
        NULL AS [ddlMethaneMonitoringFrequency_VAL],
        NULL AS [ddlMethaneMonitoringFrequency_TAG],
@@ -253,6 +256,7 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
         END)+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||' AS [rdoUnderDrainInstalled_HIS],
        'Under Drain System Installed:' AS [rdoUnderDrainInstalled_DES],
        '' AS [rdoUnderDrainInstalled_COM],
+       --
        'rdoLFGasInstalled' AS [rdoLFGasInstalled_ID],
        (CASE
           WHEN [MFI].[LFGasCollectionApproved] = 'Yes'
@@ -276,6 +280,7 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
         END)+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||' AS [rdoLFGasInstalled_HIS],
        'LF Gas Collection Installed:' AS [rdoLFGasInstalled_DES],
        '' AS [rdoLFGasInstalled_COM],
+       --
        'rdoWasteEnergyOnsite' AS [rdoWasteEnergyOnsite_ID],
        (CASE
           WHEN [MFI].[LandfillGastoEnergyApproved] = 'Yes'
@@ -299,6 +304,7 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
         END)+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||' AS [rdoWasteEnergyOnsite_HIS],
        'Waste to Energy Onsite?' AS [rdoWasteEnergyOnsite_DES],
        '' AS [rdoWasteEnergyOnsite_COM],
+       --
        'txtEnergyProduced' AS [txtEnergyProduced_ID],
        '' AS [txtEnergyProduced_VAL],
        'Energy Produced (MWH)' AS [txtEnergyProduced_TAG],
@@ -306,6 +312,7 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        '' AS [txtEnergyProduced_HIS],
        'Energy Produced (MWH):' AS [txtEnergyProduced_DES],
        '' AS [txtEnergyProduced_COM],
+       --
        'txtPermitIssueDate' AS [txtPermitIssueDate_ID],
        isnull(convert(VARCHAR(50), [MFI].[PermitIssueDate], 101), '') AS [txtPermitIssueDate_VAL],
        'Permit Issued Date' AS [txtPermitIssueDate_TAG],
@@ -313,6 +320,7 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        isnull(convert(VARCHAR(50), [MFI].[PermitIssueDate], 101)+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||', '') AS [txtPermitIssueDate_HIS],
        'Permit Issued Date:' AS [txtPermitIssueDate_DES],
        '' AS [txtPermitIssueDate_COM],
+       --
        NULL AS [txtPermitReviewDueDate_ID],
        NULL AS [txtPermitReviewDueDate_VAL],
        NULL AS [txtPermitReviewDueDate_TAG],
@@ -320,6 +328,7 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        NULL AS [txtPermitReviewDueDate_HIS],
        NULL AS [txtPermitReviewDueDate_DES],
        NULL AS [txtPermitReviewDueDate_COM],
+       --
        NULL AS [txtWasteDescription_ID],
        NULL AS [txtWasteDescription_VAL],
        NULL AS [txtWasteDescription_TAG],
@@ -327,6 +336,7 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        NULL AS [txtWasteDescription_HIS],
        NULL AS [txtWasteDescription_DES],
        NULL AS [txtWasteDescription_COM],
+       --
        'rdoAcceptPublicWaste' AS [rdoAcceptPublicWaste_ID],
        (CASE
           WHEN [MFI].[Private] = 1
@@ -411,6 +421,7 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
                            ELSE '0'
                          END
 FROM [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MFI]
+     LEFT JOIN [LandDataBase].[dbo].[OperationStatus] AS [OS] ON [MFI].[OperationStatus] = [OS].[OperationStatus]
 GO
 
 
