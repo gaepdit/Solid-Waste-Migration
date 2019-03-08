@@ -194,13 +194,13 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        'GW Monitoring System Installed:' AS [rdoGWInstalled_DES],
        '' AS [rdoGWInstalled_COM],
        --
-       NULL AS [ddlAssessmentMonitoring_ID],
-       NULL AS [ddlAssessmentMonitoring_VAL],
-       NULL AS [ddlAssessmentMonitoring_TAG],
-       NULL AS [ddlAssessmentMonitoring_VIS],
-       NULL AS [ddlAssessmentMonitoring_HIS],
-       NULL AS [ddlAssessmentMonitoring_DES],
-       NULL AS [ddlAssessmentMonitoring_COM],
+      'ddlAssessmentMonitoring' as [ddlAssessmentMonitoring_ID],
+       '' as [ddlAssessmentMonitoring_VAL],
+       'Assessment/Detection Monitoring' as [ddlAssessmentMonitoring_TAG],
+       'true' as [ddlAssessmentMonitoring_VIS],
+       '' as [ddlAssessmentMonitoring_HIS],
+       'Assessment/Detection Monitoring' as [ddlAssessmentMonitoring_DES],
+       '' as [ddlAssessmentMonitoring_COM],
        --
        'rdoMethaneInstalled' AS [rdoMethaneInstalled_ID],
        (CASE
@@ -233,6 +233,7 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        NULL AS [ddlMethaneMonitoringFrequency_HIS],
        NULL AS [ddlMethaneMonitoringFrequency_DES],
        NULL AS [ddlMethaneMonitoringFrequency_COM],
+       --
        'rdoUnderDrainInstalled' AS [rdoUnderDrainInstalled_ID],
        (CASE
           WHEN [MFI].[UnderDrainSystemInstalled] = 'y'

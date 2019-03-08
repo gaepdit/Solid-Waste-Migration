@@ -291,13 +291,13 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        'GW Monitoring System Installed' AS [rdoGWInstalled_DES],
        '' AS [rdoGWInstalled_COM],
        --
-       NULL AS [ddlAssessmentMonitoring_ID],
-       NULL AS [ddlAssessmentMonitoring_VAL],
-       NULL AS [ddlAssessmentMonitoring_TAG],
-       NULL AS [ddlAssessmentMonitoring_VIS],
-       NULL AS [ddlAssessmentMonitoring_HIS],
-       NULL AS [ddlAssessmentMonitoring_DES],
-       NULL AS [ddlAssessmentMonitoring_COM],
+      'ddlAssessmentMonitoring' as [ddlAssessmentMonitoring_ID],
+       '' as [ddlAssessmentMonitoring_VAL],
+       'Assessment/Detection Monitoring' as [ddlAssessmentMonitoring_TAG],
+       'true' as [ddlAssessmentMonitoring_VIS],
+       '' as [ddlAssessmentMonitoring_HIS],
+       'Assessment/Detection Monitoring' as [ddlAssessmentMonitoring_DES],
+       '' as [ddlAssessmentMonitoring_COM],
        --
        'rdoMethaneInstalled' AS [rdoMethaneInstalled_ID],
        (CASE
@@ -424,7 +424,7 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        '' AS [txtPermitReviewDueDate_COM],
        --
        'txtPostClosureCarePeriod' AS [txtPostClosureCarePeriod_ID],
-       [MFI].[PC/CPeriod] AS [txtPostClosureCarePeriod_VAL],
+       isnull([MFI].[PC/CPeriod], '') AS [txtPostClosureCarePeriod_VAL],
        'Post Closure Care Period' AS [txtPostClosureCarePeriod_TAG],
        'true' AS [txtPostClosureCarePeriod_VIS],
        isnull(convert(VARCHAR(50), [MFI].[PC/CPeriod], 101)+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||', '') AS [txtPostClosureCarePeriod_HIS],
@@ -432,36 +432,44 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        '' AS [txtPostClosureCarePeriod_COM],
        --
        'txtPostClosureReleaseDate' AS [txtPostClosureReleaseDate_ID],
-       [MFI].[PostCLosureCareReleaseDate] AS [txtPostClosureReleaseDate_VAL],
+       isnull(convert(varchar(50),[MFI].[PostCLosureCareReleaseDate], 101),'' )AS [txtPostClosureReleaseDate_VAL],
        'Post Closure Care Release Date' AS [txtPostClosureReleaseDate_TAG],
        'true' AS [txtPostClosureReleaseDate_VIS],
-       +'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||', '') as [txtPostClosureReleaseDate_HIS],
-       --'Post Closure Care Release Date:' AS [txtPostClosureReleaseDate_DES],
-       --'' AS [txtPostClosureReleaseDate_COM],
-      -- --
-      -- [rdoAcceptPublicWaste_ID],
-      -- [rdoAcceptPublicWaste_VAL],
-      -- [rdoAcceptPublicWaste_TAG],
-      -- 'true' AS [rdoAcceptPublicWaste_VIS],
-      -- [rdoAcceptPublicWaste_HIS],
-      -- [rdoAcceptPublicWaste_DES],
-      -- '' AS [rdoAcceptPublicWaste_COM],
-      -- --
-      -- [rdoAcceptCCR_ID],
-      -- [rdoAcceptCCR_VAL],
-      -- [rdoAcceptCCR_TAG],
-      -- 'true' AS [rdoAcceptCCR_VIS],
-      -- [rdoAcceptCCR_HIS],
-      -- [rdoAcceptCCR_DES],
-      -- '' AS [rdoAcceptCCR_COM],
-      -- --
-      -- [rdoAcceptAsbestos_ID],
-      -- [rdoAcceptAsbestos_VAL],
-      -- [rdoAcceptAsbestos_TAG],
-      -- 'true' AS [rdoAcceptAsbestos_VIS],
-      -- [rdoAcceptAsbestos_HIS],
-      -- [rdoAcceptAsbestos_DES],
-      -- '' AS [rdoAcceptAsbestos_COM],
+       isnull(convert(varchar(50),[MFI].[PostCLosureCareReleaseDate], 101)+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||','') as [txtPostClosureReleaseDate_HIS],
+       'Post Closure Care Release Date:' AS [txtPostClosureReleaseDate_DES],
+       '' AS [txtPostClosureReleaseDate_COM],
+       --
+       'rdoAcceptPublicWaste' AS [rdoAcceptPublicWaste_ID],
+       (CASE
+          WHEN [MFI].[Private] = 1
+            THEN 'Y'
+          ELSE 'N'
+        END) AS [rdoAcceptPublicWaste_VAL],
+       'Accept Public Waste?' AS [rdoAcceptPublicWaste_TAG],
+       'true' AS [rdoAcceptPublicWaste_VIS],
+       (CASE
+          WHEN [MFI].[Private] = 1
+            THEN 'Y'
+          ELSE 'N'
+        END)+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||' AS [rdoAcceptPublicWaste_HIS],
+       'Accept Public Waste?' AS [rdoAcceptPublicWaste_DES],
+       '' AS [rdoAcceptPublicWaste_COM],
+       --
+       'rdoAcceptCCR' as [rdoAcceptCCR_ID],
+       '' as [rdoAcceptCCR_VAL],
+       'Accept CCR?' as [rdoAcceptCCR_TAG],
+       'true' AS [rdoAcceptCCR_VIS],
+       '' as [rdoAcceptCCR_HIS],
+       'Accept CCR?' as [rdoAcceptCCR_DES],
+       '' AS [rdoAcceptCCR_COM],
+       --
+       'rdoAcceptAsbestos' as [rdoAcceptAsbestos_ID],
+       '' as [rdoAcceptAsbestos_VAL],
+       'Accept Asbestos?' as [rdoAcceptAsbestos_TAG],
+       'true' AS [rdoAcceptAsbestos_VIS],
+       '' as [rdoAcceptAsbestos_HIS],
+       'Accept Asbestos?' as [rdoAcceptAsbestos_DES],
+       '' AS [rdoAcceptAsbestos_COM],
        --
        isnull(
     (SELECT DISTINCT
