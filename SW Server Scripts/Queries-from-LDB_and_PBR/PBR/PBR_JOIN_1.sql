@@ -58,7 +58,7 @@ SELECT DISTINCT
        --[TON].[State],
        --[TON].[TonnageReported],
        --[TON].[Comments]
-FROM [PermitByRule].[dbo].[PBR Main Facility] AS [MF]
+FROM [PermitByRule].[dbo].[PBR_Main_Facility] AS [MF]
      LEFT JOIN [PermitByRule].[dbo].[PBR Contacts] AS [PBRC] ON [MF].[PermitNumber] = [PBRC].[PermitNumber]
      --JOIN [PermitByRule].[dbo].[Tonnage] AS [TON] ON [mf].[PermitNumber] = [TON].[PermitNo]
      LEFT JOIN [PermitByRule].[dbo].[Operation Status] AS [OS] ON [mf].[OperationStatus] = [OS].[OperationStatus]
