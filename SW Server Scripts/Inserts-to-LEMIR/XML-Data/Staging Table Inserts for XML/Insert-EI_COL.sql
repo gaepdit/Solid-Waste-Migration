@@ -92,43 +92,95 @@ SELECT [MF].[PermitNumber] AS [PermitNumber],
        '' AS [txtPermitNumber_COM],
        --
        'ddlEnvInterestStatus' AS [ddlEnvInterestStatus_ID],
-       --CASE 
-       --WHEN [OS].[OperationStatus] IN ()
-       --then
-       -- WHEN [OS].[OperationStatus] IN ()
-       --then
-       -- WHEN [OS].[OperationStatus] IN ()
-       --then
-       -- WHEN [OS].[OperationStatus] IN ()
-       --then
-       -- WHEN [OS].[OperationStatus] IN ()
-       --then
-       -- WHEN [OS].[OperationStatus] IN ()
-       --then
-       -- WHEN [OS].[OperationStatus] IN ()
-       --then
-       -- WHEN [OS].[OperationStatus] IN ()
-       --then
-       -- WHEN [OS].[OperationStatus] IN ()
-       --then
-       -- WHEN [OS].[OperationStatus] IN ()
-       --then
-       -- WHEN [OS].[OperationStatus] IN ()
-       --then
-       --else
-       --end AS [ddlEnvInterestStatus_VAL],
+       [ddlEnvInterestStatus_VAL]=CASE
+                                    WHEN [OS].[OperationStatus] = '1'
+                                      THEN 'Operating'
+                                    WHEN [OS].[OperationStatus] = '2'
+                                      THEN 'Closed'
+                                    WHEN [OS].[OperationStatus] = '3'
+                                      THEN 'Archived'
+                                    WHEN [OS].[OperationStatus] = 'I'
+                                      THEN 'Inactive'
+                                    WHEN [OS].[OperationStatus] = 'I-D'
+                                      THEN 'In-Closure'
+                                    WHEN [OS].[OperationStatus] = '1-C'
+                                      THEN 'Operating'
+                                    WHEN [OS].[OperationStatus] = '1-E'
+                                      THEN 'Operating'
+                                    WHEN [OS].[OperationStatus] = '4'
+                                      THEN 'Closed'
+                                    WHEN [OS].[OperationStatus] = '1-A'
+                                      THEN 'Permit Applied For'
+                                    WHEN [OS].[OperationStatus] = 'O'
+                                      THEN 'Operating'
+                                    WHEN [OS].[OperationStatus] = 'O-2'
+                                      THEN 'Closed'
+                                    WHEN [OS].[OperationStatus] = 'O,I-D'
+                                      THEN 'In-Closure'
+                                    ELSE ''
+                                  END,
        'EI Status' AS [ddlEnvInterestStatus_TAG],
        'true' AS [ddlEnvInterestStatus_VIS],
-       --[OS].[OperationStatusDescription]+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR WHEN [OS].[OperationStatus] IN ()
-       --then(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||' AS [ddlEnvInterestStatus_HIS],
+       CASE
+         WHEN [OS].[OperationStatus] = '1'
+           THEN 'Operating'
+         WHEN [OS].[OperationStatus] = '2'
+           THEN 'Closed'
+         WHEN [OS].[OperationStatus] = '3'
+           THEN 'Archived'
+         WHEN [OS].[OperationStatus] = 'I'
+           THEN 'Inactive'
+         WHEN [OS].[OperationStatus] = 'I-D'
+           THEN 'In-Closure'
+         WHEN [OS].[OperationStatus] = '1-C'
+           THEN 'Operating'
+         WHEN [OS].[OperationStatus] = '1-E'
+           THEN 'Operating'
+         WHEN [OS].[OperationStatus] = '4'
+           THEN 'Closed'
+         WHEN [OS].[OperationStatus] = '1-A'
+           THEN 'Permit Applied For'
+         WHEN [OS].[OperationStatus] = 'O'
+           THEN 'Operating'
+         WHEN [OS].[OperationStatus] = 'O-2'
+           THEN 'Closed'
+         WHEN [OS].[OperationStatus] = 'O,I-D'
+           THEN 'In-Closure'
+         ELSE ''
+       END+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||' AS [ddlEnvInterestStatus_HIS],
        'EI Status:' AS [ddlEnvInterestStatus_DES],
        '' AS [ddlEnvInterestStatus_COM],
        --
-       'rdoOwnershipType' AS [ddlOwnershipType_ID],
-       [MF].[Dominion] AS [ddlOwnershipType_VAL],
+       'ddlOwnershipType' AS [ddlOwnershipType_ID],
+       [ddlOwnershipType_VAL]=(CASE
+                                 WHEN [MF].[Dominion] = 'Private'
+                                   THEN 'Private Industrial'
+                                 WHEN [MF].[Dominion] = 'Private Commercial'
+                                   THEN 'Private Commercial'
+                                 WHEN [MF].[Dominion] = 'Public'
+                                   THEN 'Public'
+                                 ELSE ''
+                               END),
        'Ownership Type' AS [ddlOwnershipType_TAG],
        'true' AS [ddlOwnershipType_VIS],
-       [MF].[Dominion]+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||' AS [ddlOwnershipType_HIS],
+       IIF(CASE
+             WHEN [MF].[Dominion] = 'Private'
+               THEN 'Private Industrial'
+             WHEN [MF].[Dominion] = 'Private Commercial'
+               THEN 'Private Commercial'
+             WHEN [MF].[Dominion] = 'Public'
+               THEN 'Public'
+             ELSE ''
+           END = '', '',
+                     CASE
+                       WHEN [MF].[Dominion] = 'Private'
+                         THEN 'Private Industrial'
+                       WHEN [MF].[Dominion] = 'Private Commercial'
+                         THEN 'Private Commercial'
+                       WHEN [MF].[Dominion] = 'Public'
+                         THEN 'Public'
+                       ELSE ''
+                     END+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||') AS [ddlOwnershipType_HIS],
        'Ownership Type:' AS [ddlOwnershipType_DES],
        '' AS [ddlOwnershipType_COM],
        --
@@ -136,7 +188,7 @@ SELECT [MF].[PermitNumber] AS [PermitNumber],
        isnull([MF].[Comments], '') AS [txtComment_VAL],
        'General Comments' AS [txtComment_TAG],
        'true' AS [txtComment_VIS],
-       isnull([MF].[Comments], '')+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||' AS [txtComment_HIS],
+       isnull([MF].[Comments]+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||', '') AS [txtComment_HIS],
        'General Comments:' AS [txtComment_DES],
        '' AS [txtComment_COM],
        --
