@@ -144,13 +144,40 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        --
        'ddlEnvInterestStatus' AS [ddlEnvInterestStatus_ID],
        [OS].[Definition] AS [ddlEnvInterestStatus_VAL],
+       [ddlEnvInterestStatus_VAL]=CASE
+                                    WHEN [OS].[OperationStatus] = '1'
+                                      THEN 'Operating'
+                                    WHEN [OS].[OperationStatus] = '2'
+                                      THEN 'Closed'
+                                    WHEN [OS].[OperationStatus] = '3'
+                                      THEN 'Archived'
+                                    WHEN [OS].[OperationStatus] = 'I'
+                                      THEN 'Inactive'
+                                    WHEN [OS].[OperationStatus] = 'I-D'
+                                      THEN 'In-Closure'
+                                    WHEN [OS].[OperationStatus] = '1-C'
+                                      THEN 'Operating'
+                                    WHEN [OS].[OperationStatus] = '1-E'
+                                      THEN 'Operating'
+                                    WHEN [OS].[OperationStatus] = '4'
+                                      THEN 'Closed'
+                                    WHEN [OS].[OperationStatus] = '1-A'
+                                      THEN 'Permit Applied For'
+                                    WHEN [OS].[OperationStatus] = 'O'
+                                      THEN 'Operating'
+                                    WHEN [OS].[OperationStatus] = 'O-2'
+                                      THEN 'Closed'
+                                    WHEN [OS].[OperationStatus] = 'O,I-D'
+                                      THEN 'In-Closure'
+                                    ELSE ''
+                                  END,
        'EI Status' AS [ddlEnvInterestStatus_TAG],
        'true' AS [ddlEnvInterestStatus_VIS],
        [MFI].[OperationStatus]+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||' AS [ddlEnvInterestStatus_HIS],
        'EI Status:' AS [ddlEnvInterestStatus_DES],
        '' AS [ddlEnvInterestStatus_COM],
        --
-       'rdoOwnershipType' AS [ddlOwnershipType_ID],
+       'ddlOwnershipType' AS [ddlOwnershipType_ID],
        [MFI].[Dominion] AS [ddlOwnershipType_VAL],
        'Ownership Type' AS [ddlOwnershipType_TAG],
        'true' AS [ddlOwnershipType_VIS],
@@ -194,13 +221,13 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        'GW Monitoring System Installed:' AS [rdoGWInstalled_DES],
        '' AS [rdoGWInstalled_COM],
        --
-      'ddlAssessmentMonitoring' as [ddlAssessmentMonitoring_ID],
-       '' as [ddlAssessmentMonitoring_VAL],
-       'Assessment/Detection Monitoring' as [ddlAssessmentMonitoring_TAG],
-       'true' as [ddlAssessmentMonitoring_VIS],
-       '' as [ddlAssessmentMonitoring_HIS],
-       'Assessment/Detection Monitoring' as [ddlAssessmentMonitoring_DES],
-       '' as [ddlAssessmentMonitoring_COM],
+       'ddlAssessmentMonitoring' AS [ddlAssessmentMonitoring_ID],
+       '' AS [ddlAssessmentMonitoring_VAL],
+       'Assessment/Detection Monitoring' AS [ddlAssessmentMonitoring_TAG],
+       'true' AS [ddlAssessmentMonitoring_VIS],
+       '' AS [ddlAssessmentMonitoring_HIS],
+       'Assessment/Detection Monitoring' AS [ddlAssessmentMonitoring_DES],
+       '' AS [ddlAssessmentMonitoring_COM],
        --
        'rdoMethaneInstalled' AS [rdoMethaneInstalled_ID],
        (CASE

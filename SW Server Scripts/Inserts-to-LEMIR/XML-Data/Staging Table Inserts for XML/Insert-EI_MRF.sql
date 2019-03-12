@@ -187,7 +187,7 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        'EI Status:' AS [ddlEnvInterestStatus_DES],
        '' AS [ddlEnvInterestStatus_COM],
        --
-       'rdoOwnershipType' AS [ddlOwnershipType_ID],
+       'ddlOwnershipType' AS [ddlOwnershipType_ID],
        [MFI].[Dominion] AS [ddlOwnershipType_VAL],
        'Ownership Type' AS [ddlOwnershipType_TAG],
        'true' AS [ddlOwnershipType_VIS],
