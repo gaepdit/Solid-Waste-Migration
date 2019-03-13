@@ -148,40 +148,125 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
                                     WHEN [OS].[OperationStatus] = '1'
                                       THEN 'Operating'
                                     WHEN [OS].[OperationStatus] = '2'
-                                      THEN 'Closed'
+                                      THEN 'Closed/PCC'
                                     WHEN [OS].[OperationStatus] = '3'
                                       THEN 'Archived'
+                                    WHEN [OS].[OperationStatus] = 'A'
+                                      THEN 'Permit Appealed'
+                                    WHEN [OS].[OperationStatus] = 'AB'
+                                      THEN 'Abandoned'
+                                    WHEN [OS].[OperationStatus] = 'AD'
+                                      THEN 'Permit Denied'
+                                    WHEN [OS].[OperationStatus] = 'AE'
+                                      THEN 'Permit Expired'
+                                    WHEN [OS].[OperationStatus] = 'AW'
+                                      THEN 'Application Withdrawn'
+                                    WHEN [OS].[OperationStatus] = 'C'
+                                      THEN 'Construction'
+                                    WHEN [OS].[OperationStatus] = 'CCR'
+                                      THEN ''
+                                    WHEN [OS].[OperationStatus] = 'E'
+                                      THEN ''
                                     WHEN [OS].[OperationStatus] = 'I'
                                       THEN 'Inactive'
                                     WHEN [OS].[OperationStatus] = 'I-D'
                                       THEN 'In-Closure'
-                                    WHEN [OS].[OperationStatus] = '1-C'
-                                      THEN 'Operating'
-                                    WHEN [OS].[OperationStatus] = '1-E'
-                                      THEN 'Operating'
-                                    WHEN [OS].[OperationStatus] = '4'
-                                      THEN 'Closed'
-                                    WHEN [OS].[OperationStatus] = '1-A'
+                                    WHEN [OS].[OperationStatus] = 'PA'
                                       THEN 'Permit Applied For'
-                                    WHEN [OS].[OperationStatus] = 'O'
-                                      THEN 'Operating'
-                                    WHEN [OS].[OperationStatus] = 'O-2'
-                                      THEN 'Closed'
-                                    WHEN [OS].[OperationStatus] = 'O,I-D'
-                                      THEN 'In-Closure'
+                                    WHEN [OS].[OperationStatus] = 'PD'
+                                      THEN 'Permit Denied'
+                                    WHEN [OS].[OperationStatus] = 'PE'
+                                      THEN 'Permit Expired'
+                                    WHEN [OS].[OperationStatus] = 'PI'
+                                      THEN 'Inactive'
+                                    WHEN [OS].[OperationStatus] = 'PR'
+                                      THEN 'Permit Revoked'
+                                    WHEN [OS].[OperationStatus] = 'R'
+                                      THEN 'Released'
                                     ELSE ''
                                   END,
        'EI Status' AS [ddlEnvInterestStatus_TAG],
        'true' AS [ddlEnvInterestStatus_VIS],
-       [MFI].[OperationStatus]+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||' AS [ddlEnvInterestStatus_HIS],
+       CASE
+         WHEN [OS].[OperationStatus] = '1'
+           THEN 'Operating'
+         WHEN [OS].[OperationStatus] = '2'
+           THEN 'Closed/PCC'
+         WHEN [OS].[OperationStatus] = '3'
+           THEN 'Archived'
+         WHEN [OS].[OperationStatus] = 'A'
+           THEN 'Permit Appealed'
+         WHEN [OS].[OperationStatus] = 'AB'
+           THEN 'Abandoned'
+         WHEN [OS].[OperationStatus] = 'AD'
+           THEN 'Permit Denied'
+         WHEN [OS].[OperationStatus] = 'AE'
+           THEN 'Permit Expired'
+         WHEN [OS].[OperationStatus] = 'AW'
+           THEN 'Application Withdrawn'
+         WHEN [OS].[OperationStatus] = 'C'
+           THEN 'Construction'
+         WHEN [OS].[OperationStatus] = 'CCR'
+           THEN ''
+         WHEN [OS].[OperationStatus] = 'E'
+           THEN ''
+         WHEN [OS].[OperationStatus] = 'I'
+           THEN 'Inactive'
+         WHEN [OS].[OperationStatus] = 'I-D'
+           THEN 'In-Closure'
+         WHEN [OS].[OperationStatus] = 'PA'
+           THEN 'Permit Applied For'
+         WHEN [OS].[OperationStatus] = 'PD'
+           THEN 'Permit Denied'
+         WHEN [OS].[OperationStatus] = 'PE'
+           THEN 'Permit Expired'
+         WHEN [OS].[OperationStatus] = 'PI'
+           THEN 'Inactive'
+         WHEN [OS].[OperationStatus] = 'PR'
+           THEN 'Permit Revoked'
+         WHEN [OS].[OperationStatus] = 'R'
+           THEN 'Released'
+         ELSE ''
+       END+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||' AS [ddlEnvInterestStatus_HIS],
        'EI Status:' AS [ddlEnvInterestStatus_DES],
        '' AS [ddlEnvInterestStatus_COM],
        --
        'ddlOwnershipType' AS [ddlOwnershipType_ID],
-       [MFI].[Dominion] AS [ddlOwnershipType_VAL],
+       [ddlOwnershipType_VAL]=(CASE
+                                 WHEN [MFI].[Dominion] = 'Private'
+                                   THEN 'Private Industrial'
+                                 WHEN [MFI].[Dominion] = 'Private Commercial'
+                                   THEN 'Private Commercial'
+                                 WHEN [MFI].[Dominion] = 'Commercial Industrial'
+                                   THEN 'Private Commercial'
+                                 WHEN [MFI].[Dominion] = 'Public'
+                                   THEN 'Public'
+                                 ELSE ''
+                               END),
        'Ownership Type' AS [ddlOwnershipType_TAG],
        'true' AS [ddlOwnershipType_VIS],
-       [MFI].[Dominion]+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||' AS [ddlOwnershipType_HIS],
+       IIF(CASE
+             WHEN [MFI].[Dominion] = 'Private'
+               THEN 'Private Industrial'
+             WHEN [MFI].[Dominion] = 'Private Commercial'
+               THEN 'Private Commercial'
+             WHEN [MFI].[Dominion] = 'Commercial Industrial'
+               THEN 'Private Commercial'
+             WHEN [MFI].[Dominion] = 'Public'
+               THEN 'Public'
+             ELSE ''
+           END = '', '',
+                     CASE
+                       WHEN [MFI].[Dominion] = 'Private'
+                         THEN 'Private Industrial'
+                       WHEN [MFI].[Dominion] = 'Private Commercial'
+                         THEN 'Private Commercial'
+                       WHEN [MFI].[Dominion] = 'Commercial Industrial'
+                         THEN 'Private Commercial'
+                       WHEN [MFI].[Dominion] = 'Public'
+                         THEN 'Public'
+                       ELSE ''
+                     END+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||') AS [ddlOwnershipType_HIS],
        'Ownership Type:' AS [ddlOwnershipType_DES],
        '' AS [ddlOwnershipType_COM],
        --
@@ -253,13 +338,13 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        'Methane Monitoring System Installed:' AS [rdoMethaneInstalled_DES],
        '' AS [rdoMethaneInstalled_COM],
        --
-       NULL AS [ddlMethaneMonitoringFrequency_ID],
-       NULL AS [ddlMethaneMonitoringFrequency_VAL],
-       NULL AS [ddlMethaneMonitoringFrequency_TAG],
-       NULL AS [ddlMethaneMonitoringFrequency_VIS],
-       NULL AS [ddlMethaneMonitoringFrequency_HIS],
-       NULL AS [ddlMethaneMonitoringFrequency_DES],
-       NULL AS [ddlMethaneMonitoringFrequency_COM],
+      'ddlMethaneMonitoringFrequency' AS [ddlMethaneMonitoringFrequency_ID],
+       '' AS [ddlMethaneMonitoringFrequency_VAL],
+       'Current Methane Monitoring Frequency' AS [ddlMethaneMonitoringFrequency_TAG],
+       'true' AS [ddlMethaneMonitoringFrequency_VIS],
+       '' AS [ddlMethaneMonitoringFrequency_HIS],
+       'Current Methane Monitoring Frequency:' AS [ddlMethaneMonitoringFrequency_DES],
+       '' AS [ddlMethaneMonitoringFrequency_COM],
        --
        'rdoUnderDrainInstalled' AS [rdoUnderDrainInstalled_ID],
        (CASE
