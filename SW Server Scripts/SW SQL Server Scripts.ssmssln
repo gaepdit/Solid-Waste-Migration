@@ -3,14 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # SQL Server Management Studio Solution File, Format Version 14.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "SW Server Scripts", "SW Server Scripts.ssmssqlproj", "{0BFD4CD7-CB75-4984-A2FC-3EFB2DBBB2D8}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Default|Default = Default|Default
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0BFD4CD7-CB75-4984-A2FC-3EFB2DBBB2D8}.Default|Default.ActiveCfg = Default
+		{61D15A17-4C98-45D4-9257-A3D3FC05F62F}.Default|Default.ActiveCfg = Default
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

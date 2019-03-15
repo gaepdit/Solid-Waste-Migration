@@ -7,185 +7,209 @@
 USE [LEMIR_Stage]
 GO
 --
---INSERT INTO [dbo].[EI_CD]
---       ([PermitNumber],
---        [EnvIntType],
---        [txtPermitNumber_ID],
---        [txtPermitNumber_VAL],
---        [txtPermitNumber_TAG],
---        [txtPermitNumber_VIS],
---        [txtPermitNumber_HIS],
---        [txtPermitNumber_DES],
---        [txtPermitNumber_COM],
---        [ddlEnvInterestStatus_ID],
---        [ddlEnvInterestStatus_VAL],
---        [ddlEnvInterestStatus_TAG],
---        [ddlEnvInterestStatus_VIS],
---        [ddlEnvInterestStatus_HIS],
---        [ddlEnvInterestStatus_DES],
---        [ddlEnvInterestStatus_COM],
---        [ddlOwnershipType_ID],
---        [ddlOwnershipType_VAL],
---        [ddlOwnershipType_TAG],
---        [ddlOwnershipType_VIS],
---        [ddlOwnershipType_HIS],
---        [ddlOwnershipType_DES],
---        [ddlOwnershipType_COM],
---        [txtComment_ID],
---        [txtComment_VAL],
---        [txtComment_TAG],
---        [txtComment_VIS],
---        [txtComment_HIS],
---        [txtComment_DES],
---        [txtComment_COM],
---        [txtPermittedCapacity_ID],
---        [txtPermittedCapacity_VAL],
---        [txtPermittedCapacity_TAG],
---        [txtPermittedCapacity_VIS],
---        [txtPermittedCapacity_HIS],
---        [txtPermittedCapacity_DES],
---        [txtPermittedCapacity_COM],
---        [txtRemainingCapacity_ID],
---        [txtRemainingCapacity_VAL],
---        [txtRemainingCapacity_TAG],
---        [txtRemainingCapacity_VIS],
---        [txtRemainingCapacity_HIS],
---        [txtRemainingCapacity_DES],
---        [txtRemainingCapacity_COM],
---        [txtRemainingLife_ID],
---        [txtRemainingLife_VAL],
---        [txtRemainingLife_TAG],
---        [txtRemainingLife_VIS],
---        [txtRemainingLife_HIS],
---        [txtRemainingLife_DES],
---        [txtRemainingLife_COM],
---        [txtTotalAcreage_ID],
---        [txtTotalAcreage_VAL],
---        [txtTotalAcreage_TAG],
---        [txtTotalAcreage_VIS],
---        [txtTotalAcreage_HIS],
---        [txtTotalAcreage_DES],
---        [txtTotalAcreage_COM],
---        [txtConstructedDisposalFootprint_ID],
---        [txtConstructedDisposalFootprint_VAL],
---        [txtConstructedDisposalFootprint_TAG],
---        [txtConstructedDisposalFootprint_VIS],
---        [txtConstructedDisposalFootprint_HIS],
---        [txtConstructedDisposalFootprint_DES],
---        [txtConstructedDisposalFootprint_COM],
---        [rdoGWInstalled_ID],
---        [rdoGWInstalled_VAL],
---        [rdoGWInstalled_TAG],
---        [rdoGWInstalled_VIS],
---        [rdoGWInstalled_HIS],
---        [rdoGWInstalled_DES],
---        [rdoGWInstalled_COM],
---        [ddlAssessmentMonitoring_ID],
---        [ddlAssessmentMonitoring_VAL],
---        [ddlAssessmentMonitoring_TAG],
---        [ddlAssessmentMonitoring_VIS],
---        [ddlAssessmentMonitoring_HIS],
---        [ddlAssessmentMonitoring_DES],
---        [ddlAssessmentMonitoring_COM],
---        [rdoMethaneInstalled_ID],
---        [rdoMethaneInstalled_VAL],
---        [rdoMethaneInstalled_TAG],
---        [rdoMethaneInstalled_VIS],
---        [rdoMethaneInstalled_HIS],
---        [rdoMethaneInstalled_DES],
---        [rdoMethaneInstalled_COM],
---        [ddlMethaneMonitoringFrequency_ID],
---        [ddlMethaneMonitoringFrequency_VAL],
---        [ddlMethaneMonitoringFrequency_TAG],
---        [ddlMethaneMonitoringFrequency_VIS],
---        [ddlMethaneMonitoringFrequency_HIS],
---        [ddlMethaneMonitoringFrequency_DES],
---        [ddlMethaneMonitoringFrequency_COM],
---        [rdoUnderDrainInstalled_ID],
---        [rdoUnderDrainInstalled_VAL],
---        [rdoUnderDrainInstalled_TAG],
---        [rdoUnderDrainInstalled_VIS],
---        [rdoUnderDrainInstalled_HIS],
---        [rdoUnderDrainInstalled_DES],
---        [rdoUnderDrainInstalled_COM],
---        [rdoLFGasInstalled_ID],
---        [rdoLFGasInstalled_VAL],
---        [rdoLFGasInstalled_TAG],
---        [rdoLFGasInstalled_VIS],
---        [rdoLFGasInstalled_HIS],
---        [rdoLFGasInstalled_DES],
---        [rdoLFGasInstalled_COM],
---        [rdoWasteEnergyOnsite_ID],
---        [rdoWasteEnergyOnsite_VAL],
---        [rdoWasteEnergyOnsite_TAG],
---        [rdoWasteEnergyOnsite_VIS],
---        [rdoWasteEnergyOnsite_HIS],
---        [rdoWasteEnergyOnsite_DES],
---        [rdoWasteEnergyOnsite_COM],
---        [txtEnergyProduced_ID],
---        [txtEnergyProduced_VAL],
---        [txtEnergyProduced_TAG],
---        [txtEnergyProduced_VIS],
---        [txtEnergyProduced_HIS],
---        [txtEnergyProduced_DES],
---        [txtEnergyProduced_COM],
---        [txtPermitIssueDate_ID],
---        [txtPermitIssueDate_VAL],
---        [txtPermitIssueDate_TAG],
---        [txtPermitIssueDate_VIS],
---        [txtPermitIssueDate_HIS],
---        [txtPermitIssueDate_DES],
---        [txtPermitIssueDate_COM],
---        [txtPermitReviewDueDate_ID],
---        [txtPermitReviewDueDate_VAL],
---        [txtPermitReviewDueDate_TAG],
---        [txtPermitReviewDueDate_VIS],
---        [txtPermitReviewDueDate_HIS],
---        [txtPermitReviewDueDate_DES],
---        [txtPermitReviewDueDate_COM],
---        [txtPostClosureCarePeriod_ID],
---        [txtPostClosureCarePeriod_VAL],
---        [txtPostClosureCarePeriod_TAG],
---        [txtPostClosureCarePeriod_VIS],
---        [txtPostClosureCarePeriod_HIS],
---        [txtPostClosureCarePeriod_DES],
---        [txtPostClosureCarePeriod_COM],
---        [txtPostClosureReleaseDate_ID],
---        [txtPostClosureReleaseDate_VAL],
---        [txtPostClosureReleaseDate_TAG],
---        [txtPostClosureReleaseDate_VIS],
---        [txtPostClosureReleaseDate_HIS],
---        [txtPostClosureReleaseDate_DES],
---        [txtPostClosureReleaseDate_COM],
---        [rdoAcceptPublicWaste_ID],
---        [rdoAcceptPublicWaste_VAL],
---        [rdoAcceptPublicWaste_TAG],
---        [rdoAcceptPublicWaste_VIS],
---        [rdoAcceptPublicWaste_HIS],
---        [rdoAcceptPublicWaste_DES],
---        [rdoAcceptPublicWaste_COM],
---        [rdoAcceptCCR_ID],
---        [rdoAcceptCCR_VAL],
---        [rdoAcceptCCR_TAG],
---        [rdoAcceptCCR_VIS],
---        [rdoAcceptCCR_HIS],
---        [rdoAcceptCCR_DES],
---        [rdoAcceptCCR_COM],
---        [rdoAcceptAsbestos_ID],
---        [rdoAcceptAsbestos_VAL],
---        [rdoAcceptAsbestos_TAG],
---        [rdoAcceptAsbestos_VIS],
---        [rdoAcceptAsbestos_HIS],
---        [rdoAcceptAsbestos_DES],
---        [rdoAcceptAsbestos_COM],
---        [grdClosure],
---        [grdConstructionDetail],
---        [grdMajorModification],
---        [grdFinancialAssurance],
---        [FACILITY_ID_REF])
+SELECT DISTINCT
+       [PermitNumber],
+       max([FYReportingYear]) OVER(PARTITION BY [PermitNumber]) AS [latest year],
+       count([FYReportingYear]) OVER(PARTITION BY [PermitNumber]) AS [YearCount]
+INTO [#latestYear]
+FROM [LandDataBase].[dbo].[RemainingCapacity]
+WHERE [FYReportingYear] IS NOT NULL
+      AND [permitnumber] NOT IN(
+                                '002-009D(MSWL)',
+                                '009-005D(SL)',
+                                '040-008D(MSWL)',
+                                '043-011D(MSWL)',
+                                '047-014D(SL)',
+                                '058-012D(MSWL)',
+                                '065-002D(SL)',
+                                '068-020D(SL)',
+                                '087-015D(MSWL)',
+                                '087-015D(SL)',
+                                '106-016D(MSWL)',
+                                '127-003D(SL)',
+                                '141-013D(SL)',
+                                '150-010D(MSWL)',
+                                '133-003D(SL)'
+                               )
+ORDER BY 1;
+--
+INSERT INTO [dbo].[EI_CD]
+       ([PermitNumber],
+        [txtPermitNumber_ID],
+        [txtPermitNumber_VAL],
+        [txtPermitNumber_TAG],
+        [txtPermitNumber_VIS],
+        [txtPermitNumber_HIS],
+        [txtPermitNumber_DES],
+        [txtPermitNumber_COM],
+        [ddlEnvInterestStatus_ID],
+        [ddlEnvInterestStatus_VAL],
+        [ddlEnvInterestStatus_VIS],
+        [ddlEnvInterestStatus_HIS],
+        [ddlEnvInterestStatus_DES],
+        [ddlEnvInterestStatus_COM],
+        [ddlOwnershipType_ID],
+        [ddlOwnershipType_VAL],
+        [ddlOwnershipType_TAG],
+        [ddlOwnershipType_VIS],
+        [ddlOwnershipType_HIS],
+        [ddlOwnershipType_DES],
+        [ddlOwnershipType_COM],
+        [txtComment_ID],
+        [txtComment_VAL],
+        [txtComment_TAG],
+        [txtComment_VIS],
+        [txtComment_HIS],
+        [txtComment_DES],
+        [txtComment_COM],
+        [txtPermittedCapacity_ID],
+        [txtPermittedCapacity_VAL],
+        [txtPermittedCapacity_TAG],
+        [txtPermittedCapacity_VIS],
+        [txtPermittedCapacity_HIS],
+        [txtPermittedCapacity_DES],
+        [txtPermittedCapacity_COM],
+        [txtRemainingCapacity_ID],
+        [txtRemainingCapacity_VAL],
+        [txtRemainingCapacity_TAG],
+        [txtRemainingCapacity_VIS],
+        [txtRemainingCapacity_HIS],
+        [txtRemainingCapacity_DES],
+        [txtRemainingCapacity_COM],
+        [txtRemainingLife_ID],
+        [txtRemainingLife_VAL],
+        [txtRemainingLife_TAG],
+        [txtRemainingLife_VIS],
+        [txtRemainingLife_HIS],
+        [txtRemainingLife_DES],
+        [txtRemainingLife_COM],
+        [txtTotalAcreage_ID],
+        [txtTotalAcreage_VAL],
+        [txtTotalAcreage_TAG],
+        [txtTotalAcreage_VIS],
+        [txtTotalAcreage_HIS],
+        [txtTotalAcreage_DES],
+        [txtTotalAcreage_COM],
+        [txtConstructedDisposalFootprint_ID],
+        [txtConstructedDisposalFootprint_VAL],
+        [txtConstructedDisposalFootprint_TAG],
+        [txtConstructedDisposalFootprint_VIS],
+        [txtConstructedDisposalFootprint_HIS],
+        [txtConstructedDisposalFootprint_DES],
+        [txtConstructedDisposalFootprint_COM],
+        [rdoGWInstalled_ID],
+        [rdoGWInstalled_VAL],
+        [rdoGWInstalled_TAG],
+        [rdoGWInstalled_VIS],
+        [rdoGWInstalled_HIS],
+        [rdoGWInstalled_DES],
+        [rdoGWInstalled_COM],
+        [ddlAssessmentMonitoring_ID],
+        [ddlAssessmentMonitoring_VAL],
+        [ddlAssessmentMonitoring_TAG],
+        [ddlAssessmentMonitoring_VIS],
+        [ddlAssessmentMonitoring_HIS],
+        [ddlAssessmentMonitoring_DES],
+        [ddlAssessmentMonitoring_COM],
+        [rdoMethaneInstalled_ID],
+        [rdoMethaneInstalled_VAL],
+        [rdoMethaneInstalled_TAG],
+        [rdoMethaneInstalled_VIS],
+        [rdoMethaneInstalled_HIS],
+        [rdoMethaneInstalled_DES],
+        [rdoMethaneInstalled_COM],
+        [ddlMethaneMonitoringFrequency_ID],
+        [ddlMethaneMonitoringFrequency_VAL],
+        [ddlMethaneMonitoringFrequency_TAG],
+        [ddlMethaneMonitoringFrequency_VIS],
+        [ddlMethaneMonitoringFrequency_HIS],
+        [ddlMethaneMonitoringFrequency_DES],
+        [ddlMethaneMonitoringFrequency_COM],
+        [rdoUnderDrainInstalled_ID],
+        [rdoUnderDrainInstalled_VAL],
+        [rdoUnderDrainInstalled_TAG],
+        [rdoUnderDrainInstalled_VIS],
+        [rdoUnderDrainInstalled_HIS],
+        [rdoUnderDrainInstalled_DES],
+        [rdoUnderDrainInstalled_COM],
+        [rdoLFGasInstalled_ID],
+        [rdoLFGasInstalled_VAL],
+        [rdoLFGasInstalled_TAG],
+        [rdoLFGasInstalled_VIS],
+        [rdoLFGasInstalled_HIS],
+        [rdoLFGasInstalled_DES],
+        [rdoLFGasInstalled_COM],
+        [rdoWasteEnergyOnsite_ID],
+        [rdoWasteEnergyOnsite_VAL],
+        [rdoWasteEnergyOnsite_TAG],
+        [rdoWasteEnergyOnsite_VIS],
+        [rdoWasteEnergyOnsite_HIS],
+        [rdoWasteEnergyOnsite_DES],
+        [rdoWasteEnergyOnsite_COM],
+        [txtEnergyProduced_ID],
+        [txtEnergyProduced_VAL],
+        [txtEnergyProduced_TAG],
+        [txtEnergyProduced_VIS],
+        [txtEnergyProduced_HIS],
+        [txtEnergyProduced_DES],
+        [txtEnergyProduced_COM],
+        [txtPermitIssueDate_ID],
+        [txtPermitIssueDate_VAL],
+        [txtPermitIssueDate_TAG],
+        [txtPermitIssueDate_VIS],
+        [txtPermitIssueDate_HIS],
+        [txtPermitIssueDate_DES],
+        [txtPermitIssueDate_COM],
+        [txtPermitReviewDueDate_ID],
+        [txtPermitReviewDueDate_VAL],
+        [txtPermitReviewDueDate_TAG],
+        [txtPermitReviewDueDate_VIS],
+        [txtPermitReviewDueDate_HIS],
+        [txtPermitReviewDueDate_DES],
+        [txtPermitReviewDueDate_COM],
+        [txtPostClosureCarePeriod_ID],
+        [txtPostClosureCarePeriod_VAL],
+        [txtPostClosureCarePeriod_TAG],
+        [txtPostClosureCarePeriod_VIS],
+        [txtPostClosureCarePeriod_HIS],
+        [txtPostClosureCarePeriod_DES],
+        [txtPostClosureCarePeriod_COM],
+        [txtPostClosureReleaseDate_ID],
+        [txtPostClosureReleaseDate_VAL],
+        [txtPostClosureReleaseDate_TAG],
+        [txtPostClosureReleaseDate_VIS],
+        [txtPostClosureReleaseDate_HIS],
+        [txtPostClosureReleaseDate_DES],
+        [txtPostClosureReleaseDate_COM],
+        [rdoAcceptPublicWaste_ID],
+        [rdoAcceptPublicWaste_VAL],
+        [rdoAcceptPublicWaste_TAG],
+        [rdoAcceptPublicWaste_VIS],
+        [rdoAcceptPublicWaste_HIS],
+        [rdoAcceptPublicWaste_DES],
+        [rdoAcceptPublicWaste_COM],
+        [rdoAcceptCCR_ID],
+        [rdoAcceptCCR_VAL],
+        [rdoAcceptCCR_TAG],
+        [rdoAcceptCCR_VIS],
+        [rdoAcceptCCR_HIS],
+        [rdoAcceptCCR_DES],
+        [rdoAcceptCCR_COM],
+        [rdoAcceptAsbestos_ID],
+        [rdoAcceptAsbestos_VAL],
+        [rdoAcceptAsbestos_TAG],
+        [rdoAcceptAsbestos_VIS],
+        [rdoAcceptAsbestos_HIS],
+        [rdoAcceptAsbestos_DES],
+        [rdoAcceptAsbestos_COM],
+        [grdClosure],
+        [grdConstructionDetail],
+        [grdMajorModification],
+        [grdFinancialAssurance],
+        [FACILITY_ID_REF])
 SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        --
-              'txtPermitNumber' AS [txtPermitNumber_ID],
+       'txtPermitNumber' AS [txtPermitNumber_ID],
        [MFI].[MainPermitNumber] AS [txtPermitNumber_VAL],
        'Permit Number' AS [txtPermitNumber_TAG],
        'true' AS [txtPermitNumber_VIS],
@@ -193,8 +217,7 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        'Permit Number:' AS [txtPermitNumber_DES],
        '' AS [txtPermitNumber_COM],
        --
-      'ddlEnvInterestStatus' AS [ddlEnvInterestStatus_ID],
-       [OS].[Definition] AS [ddlEnvInterestStatus_VAL],
+       'ddlEnvInterestStatus' AS [ddlEnvInterestStatus_ID],
        [ddlEnvInterestStatus_VAL]=CASE
                                     WHEN [OS].[OperationStatus] = '1'
                                       THEN 'Operating'
@@ -329,56 +352,80 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        'General Comments:' AS [txtComment_DES],
        '' AS [txtComment_COM],
        --
-              'txtPermittedCapacity' AS [txtPermittedCapacity_ID],
+       'txtPermittedCapacity' AS [txtPermittedCapacity_ID],
        isnull(str([MFI].[PermittedCapacity(CY)], 20, 2), '') AS [txtPermittedCapacity_VAL],
        'Permitted Capacity (CY)' AS [txtPermittedCapacity_TAG],
        'true' AS [txtPermittedCapacity_VIS],
        isnull(str([MFI].[PermittedCapacity(CY)], 20, 2), '')+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||' AS [txtPermittedCapacity_HIS],
        'Permitted Capacity (CY):' AS [txtPermittedCapacity_DES],
        '' AS [txtPermittedCapacity_COM],
-       --
+      --
        'txtRemainingCapacity' AS [txtRemainingCapacity_ID],
-       isnull(convert(VARCHAR(50),
+       isnull(convert(VARCHAR(50), isnull(IIF(
     (SELECT DISTINCT
-            max([RC].[RemainingCapacity(CY)]) OVER(PARTITION BY [RC].[PermitNumber]) AS [txtRemainingCapacity_VAL]
+            [RC].[RemainingCapacity(CY)]
      FROM [LandDataBase].[dbo].[RemainingCapacity] AS [RC]
-          JOIN [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MF] ON [MF].[MainPermitNumber] = [RC].[PermitNumber]
-     WHERE [MFI].[MainPermitNumber] = [RC].[PermitNumber]), 101), '') AS [txtRemainingCapacity_VAL],
+          LEFT JOIN [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MF] ON [MF].[MainPermitNumber] = [RC].[PermitNumber]
+          JOIN [#latestYear] AS [LY] ON [RC].[PermitNumber] = [LY].[PermitNumber]
+     WHERE [LY].[latest year] = [RC].[FYReportingYear]
+           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber]) = 0, NULL,
+    (SELECT DISTINCT
+            [RC].[RemainingCapacity(CY)]
+     FROM [LandDataBase].[dbo].[RemainingCapacity] AS [RC]
+          LEFT JOIN [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MF] ON [MF].[MainPermitNumber] = [RC].[PermitNumber]
+          JOIN [#latestYear] AS [LY] ON [RC].[PermitNumber] = [LY].[PermitNumber]
+     WHERE [LY].[latest year] = [RC].[FYReportingYear]
+           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber])), NULL)), '') AS [txtRemainingCapacity_VAL],
        'Remaining Capacity (CY)' AS [txtRemainingCapacity_TAG],
        'true' AS [txtRemainingCapacity_VIS],
-       isnull(isnull(convert(VARCHAR(50),
+       isnull(convert(VARCHAR(50),
     (SELECT DISTINCT
-            max([RC].[RemainingCapacity(CY)]) OVER(PARTITION BY [RC].[PermitNumber]) AS [txtRemainingCapacity_VAL]
+            [RC].[RemainingCapacity(CY)]
      FROM [LandDataBase].[dbo].[RemainingCapacity] AS [RC]
-          JOIN [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MF] ON [MF].[MainPermitNumber] = [RC].[PermitNumber]
-     WHERE [MFI].[MainPermitNumber] = [RC].[PermitNumber]), 101), '')+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||', '') AS [txtRemainingCapacity_HIS],
+          LEFT JOIN [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MF] ON [MF].[MainPermitNumber] = [RC].[PermitNumber]
+          JOIN [#latestYear] AS [LY] ON [RC].[PermitNumber] = [LY].[PermitNumber]
+     WHERE [LY].[latest year] = [RC].[FYReportingYear]
+           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber]))+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||', '') AS [txtRemainingCapacity_HIS],
        'Remaining Capacity (CY):' AS [txtRemainingCapacity_DES],
        '' AS [txtRemainingCapacity_COM],
        --
        'txtRemainingLife' AS [txtRemainingLife_ID],
-    --   isnull(convert(VARCHAR(50),
-    --(SELECT DISTINCT
-    --        [RC].[Years Remaining] AS [txtRemainingLife_VAL]
-    -- FROM [LandDataBase].[dbo].[RemainingCapacity] AS [RC]
-    --      JOIN [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MF] ON [MF].[MainPermitNumber] = [RC].[PermitNumber]
-    -- WHERE [MFI].[MainPermitNumber] = [RC].[PermitNumber]
-    --       AND [RC].[FYReportingYear] =
-    --(SELECT DISTINCT
-    --        max([R].[FYReportingYear]) OVER(PARTITION BY [R].[PermitNumber])
-    -- FROM [LandDataBase].[dbo].[RemainingCapacity] AS [R]
-    -- WHERE [R].[PermitNumber] = [MFI].[MainPermitNumber]))), '') AS [txtRemainingLife_VAL],
+       isnull(convert(VARCHAR(50), isnull(IIF(
+    (SELECT DISTINCT
+            [RC].[Years Remaining]
+     FROM [LandDataBase].[dbo].[RemainingCapacity] AS [RC]
+          LEFT JOIN [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MF] ON [MF].[MainPermitNumber] = [RC].[PermitNumber]
+          JOIN [#latestYear] AS [LY] ON [RC].[PermitNumber] = [LY].[PermitNumber]
+     WHERE [LY].[latest year] = [RC].[FYReportingYear]
+           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber]) = 0, NULL,
+    (SELECT DISTINCT
+            [RC].[Years Remaining]
+     FROM [LandDataBase].[dbo].[RemainingCapacity] AS [RC]
+          LEFT JOIN [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MF] ON [MF].[MainPermitNumber] = [RC].[PermitNumber]
+          JOIN [#latestYear] AS [LY] ON [RC].[PermitNumber] = [LY].[PermitNumber]
+     WHERE [LY].[latest year] = [RC].[FYReportingYear]
+           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber])), NULL)), '') AS [txtRemainingLife_VAL],
        'Remaining Life of EI (Years)' AS [txtRemainingLife_TAG],
        'true' AS [txtRemainingLife_VIS],
-       isnull(convert(VARCHAR(50),
+       isnull(convert(VARCHAR(50), isnull(IIF(
     (SELECT DISTINCT
-            max([RC].[Years Remaining]) OVER(PARTITION BY [RC].[PermitNumber]) AS [txtRemainingLife_VAL]
+            [RC].[Years Remaining]
      FROM [LandDataBase].[dbo].[RemainingCapacity] AS [RC]
-          JOIN [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MF] ON [MF].[MainPermitNumber] = [RC].[PermitNumber]
-     WHERE [MFI].[MainPermitNumber] = [RC].[PermitNumber]))+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||', '') AS [txtRemainingLife_HIS],
+          LEFT JOIN [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MF] ON [MF].[MainPermitNumber] = [RC].[PermitNumber]
+          JOIN [#latestYear] AS [LY] ON [RC].[PermitNumber] = [LY].[PermitNumber]
+     WHERE [LY].[latest year] = [RC].[FYReportingYear]
+           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber]) = 0, NULL,
+    (SELECT DISTINCT
+            [RC].[Years Remaining]
+     FROM [LandDataBase].[dbo].[RemainingCapacity] AS [RC]
+          LEFT JOIN [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MF] ON [MF].[MainPermitNumber] = [RC].[PermitNumber]
+          JOIN [#latestYear] AS [LY] ON [RC].[PermitNumber] = [LY].[PermitNumber]
+     WHERE [LY].[latest year] = [RC].[FYReportingYear]
+           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber])), NULL))+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||', '') AS [txtRemainingLife_HIS],
        'Remaining Life of EI (Years):' AS [txtRemainingLife_DES],
        '' AS [txtRemainingLife_COM],
        --
-             'txtTotalAcreage' AS [txtTotalAcreage_ID],
+       'txtTotalAcreage' AS [txtTotalAcreage_ID],
        isnull([MFI].[TotalAcreage], '') AS [txtTotalAcreage_VAL],
        'Total Acreage (acres)' AS [txtTotalAcreage_TAG],
        'true' AS [txtTotalAcreage_VIS],
@@ -386,7 +433,7 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        'Total Acreage (acres):' AS [txtTotalAcreage_DES],
        '' AS [txtTotalAcreage_COM],
        --
-      'txtConstructedDisposalFootprint' AS [txtConstructedDisposalFootprint_ID],
+       'txtConstructedDisposalFootprint' AS [txtConstructedDisposalFootprint_ID],
        '' AS [txtConstructedDisposalFootprint_VAL],
        'Constructed Disposal Footprint (acres)' AS [txtConstructedDisposalFootprint_TAG],
        'true' AS [txtConstructedDisposalFootprint_VIS],
@@ -394,7 +441,7 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        'Constructed Disposal Footprint (acres):' AS [txtConstructedDisposalFootprint_DES],
        '' AS [txtConstructedDisposalFootprint_COM],
        --
-        'rdoGWInstalled' AS [rdoGWInstalled_ID],
+       'rdoGWInstalled' AS [rdoGWInstalled_ID],
        (CASE
           WHEN [MFI].[GWSystemInstalled] = 'D'
             THEN 'Y'
@@ -422,7 +469,7 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        'Assessment/Detection Monitoring' AS [ddlAssessmentMonitoring_DES],
        '' AS [ddlAssessmentMonitoring_COM],
        --
-             'rdoMethaneInstalled' AS [rdoMethaneInstalled_ID],
+       'rdoMethaneInstalled' AS [rdoMethaneInstalled_ID],
        (CASE
           WHEN [MFI].[MethaneSystemInstalled] = 'D'
             THEN 'Y'
@@ -502,12 +549,12 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        'LF Gas Collection Installed:' AS [rdoLFGasInstalled_DES],
        '' AS [rdoLFGasInstalled_COM],
        --
-      'rdoWasteEnergyOnsite' AS [rdoWasteEnergyOnsite_ID],
+       'rdoWasteEnergyOnsite' AS [rdoWasteEnergyOnsite_ID],
        (CASE
           WHEN [MFI].[LandfillGastoEnergyApproved] = 'Yes'
             THEN 'Y'
           WHEN [MFI].[LandfillGastoEnergyApproved] = 'Y'
-            THEN 'Y'
+            THEN 'Y'q
           WHEN [MFI].[LandfillGastoEnergyApproved] = 'No'
             THEN 'N'
           ELSE 'N'
@@ -550,7 +597,7 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        'Current Permit Review Due Date:' AS [txtPermitReviewDueDate_DES],
        '' AS [txtPermitReviewDueDate_COM],
        --
-        'txtPostClosureCarePeriod' AS [txtPostClosureCarePeriod_ID],
+       'txtPostClosureCarePeriod' AS [txtPostClosureCarePeriod_ID],
        isnull([MFI].[PC/CPeriod], '') AS [txtPostClosureCarePeriod_VAL],
        'Post Closure Care Period' AS [txtPostClosureCarePeriod_TAG],
        'true' AS [txtPostClosureCarePeriod_VIS],
@@ -667,6 +714,10 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
                          END
 FROM [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MFI]
      LEFT JOIN [LandDataBase].[dbo].[OperationStatus] AS [OS] ON [MFI].[OperationStatus] = [OS].[OperationStatus]
-     --LEFT JOIN [LandDataBase].[dbo].[RemainingCapacity] AS [RC] ON [MFI].[MainPermitNumber] = [RC].[PermitNumber]
+     LEFT JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [EI] ON [MFI].[MainPermitNumber] = [EI].[PermitNumber]
+     WHERE [EI].[LEMIR_EI_CD] = 'C&D'
 GO
-
+--SELECT *
+--FROM [#latestYear];
+--
+DROP TABLE [#latestYear];
