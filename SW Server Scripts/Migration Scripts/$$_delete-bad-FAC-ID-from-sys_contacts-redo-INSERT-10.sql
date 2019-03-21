@@ -1,8 +1,0 @@
-USE [LEMIR_Stage]
-GO
-
-DELETE FROM [dbo].[SYS_CONTACT]
-      WHERE [FACILITY_ID_REF] like 'SW-FAC-%'
-GO
-
-

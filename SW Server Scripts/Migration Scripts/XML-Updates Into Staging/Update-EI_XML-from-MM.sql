@@ -1,8 +1,7 @@
 USE [LEMIR_Stage]
 GO
-
 UPDATE [dbo].[EI_GW_MM_XML]
-   SET [dbo].[EI_GW_MM_XML].[LEMIR_XML]=
+  SET [dbo].[EI_GW_MM_XML].[LEMIR_XML]=
     (SELECT
     --[ucontrolGeologist_ID]
     (SELECT DISTINCT
@@ -90,9 +89,10 @@ UPDATE [dbo].[EI_GW_MM_XML]
      WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*]
      --Outer Tags
      FROM [dbo].[EI_GW_MM_XML] AS [EI]
-          INNER JOIN [dbo].[EI_MM] AS [C] ON [EI].[PermitNumber] = [C].[PermitNumber]
-     WHERE [EI].[PermitNumber] = [E].[PermitNumber] FOR XML PATH('SolidWaste'), ROOT('DynamicFormValue'))
+          INNER JOIN [dbo].[EI_MM] AS [MM] ON [EI].[PermitNumber] = [MM].[PermitNumber]
+     WHERE [EI].[PermitNumber] = [E].[PermitNumber]
+           AND [EI].[LEMIR_EI_CD] = 'MM' FOR XML PATH('SolidWaste'), ROOT('DynamicFormValue'))
      --EI Where clause
 FROM [dbo].[EI_GW_MM_XML] AS [E]
-     INNER JOIN [dbo].[EI_MM] AS [LI] ON [E].[PermitNumber] = [LI].[PermitNumber]
+     INNER JOIN [dbo].[EI_MM] AS [MMO] ON [E].[PermitNumber] = [MMO].[PermitNumber]
 WHERE [E].[LEMIR_EI_CD] = 'MM'
