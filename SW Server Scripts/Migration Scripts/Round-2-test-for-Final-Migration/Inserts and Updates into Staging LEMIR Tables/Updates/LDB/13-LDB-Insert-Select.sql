@@ -14,7 +14,7 @@ DECLARE @rid_counter_start [INT];
 DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 --
 SELECT @rid_counter_start=ISNULL(MAX([FAC_ENV_PROGRAM_RID]), 1)
-FROM [GovOnline_LEMIR].[dbo].[FAC_ENV_PROGRAM];
+FROM [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM];
 --
 IF 'EPDMIG SW' =
     (SELECT [CREATED_BY]
@@ -55,42 +55,19 @@ SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
        [EIT].[LEMIR_XML] AS [PROGRAM_DETAIL],
        [MFI].[MainPermitNumber] AS [FAC_PROGRAM_IDENTIFIER],
        [MFI].[FacilityName] AS [AKA_NAME],
-       [FF].[FACILITY_ID_REF] AS [FACILITY_ID_REF]
-FROM [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF]
-     JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [EIT] ON [FF].[FACILITY_ID_REF] = [EIT].[FACILITY_ID_REF]
-     JOIN [LandDatabase].[dbo].[MAIN FACILITY INFO] AS [MFI] ON [FF].[FACILITY_ID_REF] = CASE
-                                                                                           WHEN [MFI].[MainPermitNumber] LIKE '0%'
-                                                                                             THEN(SUBSTRING([MFI].[MainPermitNumber], 0, 8))
-                                                                                           WHEN [MFI].[MainPermitNumber] LIKE '1%'
-                                                                                             THEN(SUBSTRING([MFI].[MainPermitNumber], 0, 8))
-                                                                                           WHEN [MFI].[MainPermitNumber] LIKE 'APL %'
-                                                                                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                                                                                           WHEN [MFI].[MainPermitNumber] LIKE 'APL0%'
-                                                                                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                                                                                           WHEN [MFI].[MainPermitNumber] LIKE 'APL-%'
-                                                                                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                                                                                           WHEN [MFI].[MainPermitNumber] LIKE 'APLI%'
-                                                                                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                                                                                           WHEN [MFI].[MainPermitNumber] LIKE 'APL1%'
-                                                                                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                                                                                           WHEN [MFI].[MainPermitNumber] LIKE 'B%'
-                                                                                             THEN '0'
-                                                                                           WHEN [MFI].[MainPermitNumber] LIKE 'CCR%'
-                                                                                             THEN '500-'+[MFI].[MainPermitNumber]
-                                                                                           WHEN [MFI].[MainPermitNumber] LIKE 'CON%'
-                                                                                             THEN '600-'+[MFI].[MainPermitNumber]
-                                                                                           WHEN [MFI].[MainPermitNumber] LIKE 'MOD%'
-                                                                                             THEN '700-'+[MFI].[MainPermitNumber]
-                                                                                           WHEN [MFI].[MainPermitNumber] LIKE 'PCSP%'
-                                                                                             THEN '800-'+[MFI].[MainPermitNumber]
-                                                                                           ELSE '0'
-                                                                                         END
-                                                                AND [FF].[FACILITY_NAME] = [MFI].[FacilityName]
-     JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [MFI].[MainPermitNumber] = [UI].[MainPermitNumber]
-                                                             AND [UI].[Insert or Update] = 'I'
-WHERE [EIT].[LEMIR_EI_RID] <> 0
-      AND [EIT].[LEMIR_XML] IS NOT NULL
-      AND [MFI].[MainPermitNumber] not in ('025-041D(LI)(4)','025-041D(LI)','025-073P(RM)','036-010D(SL)','036-010D(SL)(1)','036-010D(SL1)(1)','034-005D(SL)','025-073P(RM)','146-011D(LI)','150-009D(SL)','150-009D(LI)','146-011D(LI)','028-040D(L)','063-027P(RM)','099-018D(L)(I)','099-018D(LI)','146-011D(L)','146-011D(LI)')
-      ORDER BY 2
+       [EIT].[FACILITY_ID_REF] AS [FACILITY_ID_REF]
+FROM [GovOnline_LEMIR].[dbo].[FAC_FACILITY] AS [FF]
+     join [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [FF].[FACILITY_RID] = [UI].[LEMIR ID for Update]
+     JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [EIT] ON [UI].[MainPermitNumber] = [EIT].[PermitNumber]
+     JOIN [LandDatabase].[dbo].[MAIN FACILITY INFO] AS [MFI] ON [UI].[MainPermitNumber] = [MFI].[MainPermitNumber]
+WHERE [EIT].[LEMIR_XML] IS NOT NULL
+      AND [UI].[Insert or Update] = 'U'
+       AND [UI].[LEMIR ID for Update] IS NOT NULL
+--     JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [MFI].[MainPermitNumber] = [UI].[MainPermitNumber]
+--                                                             AND [UI].[Insert or Update] = 'U'
+----WHERE [EIT].[LEMIR_EI_RID] <> 0
+--      AND [EIT].[LEMIR_XML] IS NOT NULL
+--      AND [MFI].[MainPermitNumber] not in ('025-041D(LI)(4)','025-041D(LI)','025-073P(RM)','036-010D(SL)','036-010D(SL)(1)','036-010D(SL1)(1)','034-005D(SL)','025-073P(RM)','146-011D(LI)','150-009D(SL)','150-009D(LI)','146-011D(LI)','028-040D(L)','063-027P(RM)','099-018D(L)(I)','099-018D(LI)','146-011D(L)','146-011D(LI)')
+--      ORDER BY 2
 
                                                        
