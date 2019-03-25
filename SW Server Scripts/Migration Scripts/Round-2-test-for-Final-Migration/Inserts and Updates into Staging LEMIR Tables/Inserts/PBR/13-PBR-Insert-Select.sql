@@ -30,19 +30,19 @@ IF 'EPDMIG SW' =
 --
 -- DONE
 --
---INSERT INTO [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM]
---       ([FAC_ENV_PROGRAM_RID],
---        [FACILITY_RID],
---        [TYPE_RID],
---        [STATUS_CD],
---        [CREATED_DATE],
---        [CREATED_BY],
---        [UPDATED_DATE],
---        [UPDATED_BY],
---        [PROGRAM_DETAIL],
---        [FAC_PROGRAM_IDENTIFIER],
---        [AKA_NAME],
---        [FACILITY_ID_REF])
+INSERT INTO [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM]
+       ([FAC_ENV_PROGRAM_RID],
+        [FACILITY_RID],
+        [TYPE_RID],
+        [STATUS_CD],
+        [CREATED_DATE],
+        [CREATED_BY],
+        [UPDATED_DATE],
+        [UPDATED_BY],
+        [PROGRAM_DETAIL],
+        [FAC_PROGRAM_IDENTIFIER],
+        [AKA_NAME],
+        [FACILITY_ID_REF])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [FAC_ENV_PROGRAM_RID],
        [FF].[FACILITY_RID] AS [FACILITY_RID],

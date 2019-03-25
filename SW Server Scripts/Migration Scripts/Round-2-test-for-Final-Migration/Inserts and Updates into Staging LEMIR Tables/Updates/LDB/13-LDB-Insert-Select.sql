@@ -57,12 +57,14 @@ SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
        [MFI].[FacilityName] AS [AKA_NAME],
        [EIT].[FACILITY_ID_REF] AS [FACILITY_ID_REF]
 FROM [GovOnline_LEMIR].[dbo].[FAC_FACILITY] AS [FF]
-     join [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [FF].[FACILITY_RID] = [UI].[LEMIR ID for Update]
-     JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [EIT] ON [UI].[MainPermitNumber] = [EIT].[PermitNumber]
+     JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [FF].[FACILITY_RID] = [UI].[LEMIR ID for Update]
      JOIN [LandDatabase].[dbo].[MAIN FACILITY INFO] AS [MFI] ON [UI].[MainPermitNumber] = [MFI].[MainPermitNumber]
-WHERE [EIT].[LEMIR_XML] IS NOT NULL
-      AND [UI].[Insert or Update] = 'U'
-       AND [UI].[LEMIR ID for Update] IS NOT NULL
+     JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [EIT] ON [UI].[MainPermitNumber] = [EIT].[PermitNumber]
+WHERE [UI].[Insert or Update] = 'U'
+      AND [UI].[LEMIR ID for Update] IS not NULL
+      AND [UI].[analysis hist notes] IS NULL
+      AND [EIT].[LEMIR_XML] IS NOT NULL
+
 --     JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [MFI].[MainPermitNumber] = [UI].[MainPermitNumber]
 --                                                             AND [UI].[Insert or Update] = 'U'
 ----WHERE [EIT].[LEMIR_EI_RID] <> 0

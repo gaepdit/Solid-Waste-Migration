@@ -1,4 +1,4 @@
-
+ 
 /***********************************************************************
 Author:      Tom Karasch
 Overview:    FAC_Facility insert select for script
@@ -30,49 +30,50 @@ IF 'EPDMIG SW' =
     SET @rid_counter_start=@rid_counter_start + 1000;
   END
   --
---INSERT INTO [LEMIR_Stage].[dbo].[FAC_FACILITY]
---       ([FACILITY_RID],
---        [FACILITY_IDENTIFIER],
---        [FACILITY_NAME],
---        [FACILITY_TYPE_RID],
---        [OPERATING_STATUS],
---        [STATUS_CD],
---        [CREATED_DATE],
---        [CREATED_BY],
---        [UPDATED_DATE],
---        [UPDATED_BY],
---        [FACILITY_STATUS_RID],
---        [VENDOR_IND],
---        [FACILITY_ID_REF])
+INSERT INTO [LEMIR_Stage].[dbo].[FAC_FACILITY]
+       ([FACILITY_RID],
+        [FACILITY_IDENTIFIER],
+        [FACILITY_NAME],
+        [FACILITY_TYPE_RID],
+        [OPERATING_STATUS],
+        [STATUS_CD],
+        [CREATED_DATE],
+        [CREATED_BY],
+        [UPDATED_DATE],
+        [UPDATED_BY],
+        [FACILITY_STATUS_RID],
+        [VENDOR_IND],
+        [FACILITY_ID_REF])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [FACILITY_RID],
-       [FACILITY_IDENTIFIER]=CASE
-                               WHEN [MFI].[MainPermitNumber] LIKE '0%'
-                                 THEN(SUBSTRING([MFI].[MainPermitNumber], 0, 8))
-                               WHEN [MFI].[MainPermitNumber] LIKE '1%'
-                                 THEN(SUBSTRING([MFI].[MainPermitNumber], 0, 8))
-                               WHEN [MFI].[MainPermitNumber] LIKE 'APL %'
-                                 THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                               WHEN [MFI].[MainPermitNumber] LIKE 'APL0%'
-                                 THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                               WHEN [MFI].[MainPermitNumber] LIKE 'APL-%'
-                                 THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                               WHEN [MFI].[MainPermitNumber] LIKE 'APLI%'
-                                 THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                               WHEN [MFI].[MainPermitNumber] LIKE 'APL1%'
-                                 THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                               WHEN [MFI].[MainPermitNumber] LIKE 'B%'
-                                 THEN '0'
-                               WHEN [MFI].[MainPermitNumber] LIKE 'CCR%'
-                                 THEN '500-'+[MFI].[MainPermitNumber]
-                               WHEN [MFI].[MainPermitNumber] LIKE 'CON%'
-                                 THEN '600-'+[MFI].[MainPermitNumber]
-                               WHEN [MFI].[MainPermitNumber] LIKE 'MOD%'
-                                 THEN '700-'+[MFI].[MainPermitNumber]
-                               WHEN [MFI].[MainPermitNumber] LIKE 'PCSP%'
-                                 THEN '800-'+[MFI].[MainPermitNumber]
-                               ELSE '0'
-                             END,
+    [MFI].[MainPermitNumber] AS [FACILITY_IDENTIFIER],
+       --[FACILITY_IDENTIFIER]=CASE
+       --                        WHEN [MFI].[MainPermitNumber] LIKE '0%'
+       --                          THEN(SUBSTRING([MFI].[MainPermitNumber], 0, 8))
+       --                        WHEN [MFI].[MainPermitNumber] LIKE '1%'
+       --                          THEN(SUBSTRING([MFI].[MainPermitNumber], 0, 8))
+       --                        WHEN [MFI].[MainPermitNumber] LIKE 'APL %'
+       --                          THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
+       --                        WHEN [MFI].[MainPermitNumber] LIKE 'APL0%'
+       --                          THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
+       --                        WHEN [MFI].[MainPermitNumber] LIKE 'APL-%'
+       --                          THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
+       --                        WHEN [MFI].[MainPermitNumber] LIKE 'APLI%'
+       --                          THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
+       --                        WHEN [MFI].[MainPermitNumber] LIKE 'APL1%'
+       --                          THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
+       --                        WHEN [MFI].[MainPermitNumber] LIKE 'B%'
+       --                          THEN '0'
+       --                        WHEN [MFI].[MainPermitNumber] LIKE 'CCR%'
+       --                          THEN '500-'+[MFI].[MainPermitNumber]
+       --                        WHEN [MFI].[MainPermitNumber] LIKE 'CON%'
+       --                          THEN '600-'+[MFI].[MainPermitNumber]
+       --                        WHEN [MFI].[MainPermitNumber] LIKE 'MOD%'
+       --                          THEN '700-'+[MFI].[MainPermitNumber]
+       --                        WHEN [MFI].[MainPermitNumber] LIKE 'PCSP%'
+       --                          THEN '800-'+[MFI].[MainPermitNumber]
+       --                        ELSE '0'
+       --                      END,
        [MFI].[FacilityName] AS [FACILITY_NAME],
        3 AS [FACILITY_TYPE_RID], --[MFI].[FacilityType] --3 is for Regulated Entity
        [mfi].[OperationStatus] AS [OPERATING_STATUS],
