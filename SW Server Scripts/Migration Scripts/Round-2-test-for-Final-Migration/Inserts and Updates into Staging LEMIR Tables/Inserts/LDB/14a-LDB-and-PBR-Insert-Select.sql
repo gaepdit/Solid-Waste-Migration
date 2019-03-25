@@ -37,17 +37,17 @@ IF 'EPDMIG SW' =
   --
   -- DONE
   --
---INSERT INTO [LEMIR_Stage].[dbo].[SYS_ENV_PROGRAM_CONTACT]
---       ([ENV_PROGRAM_CONTACT_RID],
---        [CONTACT_RID],
---        [TYPE_RID],
---        [STATUS_CD],
---        [CREATED_DATE],
---        [CREATED_BY],
---        [UPDATED_DATE],
---        [UPDATED_BY],
---        [FAC_ENV_PROGRAM_RID],
---        [FACILITY_ID_REF])
+INSERT INTO [LEMIR_Stage].[dbo].[SYS_ENV_PROGRAM_CONTACT]
+       ([ENV_PROGRAM_CONTACT_RID],
+        [CONTACT_RID],
+        [TYPE_RID],
+        [STATUS_CD],
+        [CREATED_DATE],
+        [CREATED_BY],
+        [UPDATED_DATE],
+        [UPDATED_BY],
+        [FAC_ENV_PROGRAM_RID],
+        [FACILITY_ID_REF])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [ENV_PROGRAM_CONTACT_RID],
        [SC].[CONTACT_RID] AS [CONTACT_RID],
@@ -63,4 +63,4 @@ FROM [LEMIR_Stage].[dbo].[SYS_CONTACT] AS [SC]
      JOIN [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF] ON [FF].[FACILITY_ID_REF] = [SC].[FACILITY_ID_REF]
      JOIN [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM] AS [FEP] ON [FF].[FACILITY_ID_REF] = [FEP].[FACILITY_ID_REF]
                                                             AND [FEP].[CREATED_BY] = @created_by_string
-where [SC].[CONTACT_RID] not in ('602595','602596','602630','602631')
+where [SC].[CONTACT_RID] not in ('602595','602596','602630','602631','607889','607890','607924','607925')

@@ -31,27 +31,27 @@ IF 'EPDMIG SW' =
   END
   
   --
---INSERT INTO [LEMIR_Stage].[dbo].[SYS_CONTACT]
---       ([CONTACT_RID],
---        [LAST_NAME],
---        [FIRST_NAME],
---        [MIDDLE_INITIAL],
---        [CONTACT_TYPE_RID],
---        [COMPANY_NAME],
---        [JOB_TITLE],
---        [SALUTATION],
---        [STATUS_CD],
---        [CREATED_BY],
---        [UPDATED_BY],
---        [CREATED_DATE],
---        [UPDATED_DATE],
---        [FACILITY_ID_REF])
+INSERT INTO [LEMIR_Stage].[dbo].[SYS_CONTACT]
+       ([CONTACT_RID],
+        [LAST_NAME],
+        [FIRST_NAME],
+        [MIDDLE_INITIAL],
+        [CONTACT_TYPE_RID],
+        [COMPANY_NAME],
+        [JOB_TITLE],
+        [SALUTATION],
+        [STATUS_CD],
+        [CREATED_BY],
+        [UPDATED_BY],
+        [CREATED_DATE],
+        [UPDATED_DATE],
+        [FACILITY_ID_REF])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [CONTACT_RID],
        right([LC].[Owner/ContactName], (charindex(' ', reverse([LC].[Owner/ContactName]), 1))) AS [LAST_NAME],
        left([LC].[Owner/ContactName], (charindex(' ', [LC].[Owner/ContactName], 1))) AS [FIRST_NAME],
        '' AS [MIDDLE_INITIAL],
-       '13' AS [CONTACT_TYPE_RID],
+       13 AS [CONTACT_TYPE_RID],
        '' AS [COMPANY_NAME],
        'Owner' AS [JOB_TITLE],
        '' AS [SALUTATION],
