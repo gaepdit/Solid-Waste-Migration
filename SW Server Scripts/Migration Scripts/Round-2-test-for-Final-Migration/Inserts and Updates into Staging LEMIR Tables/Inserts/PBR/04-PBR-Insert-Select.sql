@@ -16,8 +16,8 @@ DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 SELECT @rid_counter_start=ISNULL(MAX([CONTACT_RID]), 1)
 FROM [LEMIR_Stage].[dbo].[SYS_CONTACT];
 --
-IF 'EPDMIG ' <>
-    (SELECT SUBSTRING([CREATED_BY], 1, 7)
+IF 'EPDMIG SW' <>
+    (SELECT [CREATED_BY]
      FROM [LEMIR_Stage].[dbo].[SYS_CONTACT]
      WHERE [CONTACT_RID] = @rid_counter_start)
   BEGIN
@@ -28,28 +28,28 @@ IF 'EPDMIG ' <>
     SET @rid_counter_start=@rid_counter_start + 1;
   END
   --
---INSERT INTO [LEMIR_Stage].[dbo].[SYS_CONTACT]
---       ([CONTACT_RID],
---        [LAST_NAME],
---        [FIRST_NAME],
---        [MIDDLE_INITIAL],
---        [CONTACT_TYPE_RID],
---        [COMPANY_NAME],
---        [JOB_TITLE],
---        [SALUTATION],
---        [STATUS_CD],
---        [CREATED_BY],
---        [UPDATED_BY],
---        [CREATED_DATE],
---        [UPDATED_DATE],
---        [FACILITY_ID_REF])
+INSERT INTO [LEMIR_Stage].[dbo].[SYS_CONTACT]
+       ([CONTACT_RID],
+        [LAST_NAME],
+        [FIRST_NAME],
+        [MIDDLE_INITIAL],
+        [CONTACT_TYPE_RID],
+        [COMPANY_NAME],
+        [JOB_TITLE],
+        [SALUTATION],
+        [STATUS_CD],
+        [CREATED_BY],
+        [UPDATED_BY],
+        [CREATED_DATE],
+        [UPDATED_DATE],
+        [FACILITY_ID_REF])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [CONTACT_RID],
        right([PC].[Owner/ContactName], (charindex(' ', reverse([PC].[Owner/ContactName]), 1))) AS [LAST_NAME],
        left([PC].[Owner/ContactName], (charindex(' ', [PC].[Owner/ContactName], 1))) AS [FIRST_NAME],
        '' AS [MIDDLE_INITIAL],
        --[PC].[Owner/ContactName] AS [Full Name],
-       '' AS [CONTACT_TYPE_RID],
+       13 AS [CONTACT_TYPE_RID],
        '' AS [COMPANY_NAME],
        '' AS [JOB_TITLE],
        '' AS [SALUTATION],

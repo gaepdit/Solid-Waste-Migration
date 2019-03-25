@@ -28,35 +28,36 @@ IF 'EPDMIG SW' <>
     SET @rid_counter_start=@rid_counter_start + 1;
   END
 --
---INSERT INTO [LEMIR_Stage].[dbo].[FAC_FACILITY]
---       ([FACILITY_RID],
---        [FACILITY_IDENTIFIER],
---        [FACILITY_NAME],
---        [FACILITY_TYPE_RID],
---        [OPERATING_STATUS],
---        [STATUS_CD],
---        [CREATED_DATE],
---        [CREATED_BY],
---        [UPDATED_DATE],
---        [UPDATED_BY],
---        [FACILITY_STATUS_RID],
---        [VENDOR_IND],
---        [FACILITY_ID_REF])
+INSERT INTO [LEMIR_Stage].[dbo].[FAC_FACILITY]
+       ([FACILITY_RID],
+        [FACILITY_IDENTIFIER],
+        [FACILITY_NAME],
+        [FACILITY_TYPE_RID],
+        [OPERATING_STATUS],
+        [STATUS_CD],
+        [CREATED_DATE],
+        [CREATED_BY],
+        [UPDATED_DATE],
+        [UPDATED_BY],
+        [FACILITY_STATUS_RID],
+        [VENDOR_IND],
+        [FACILITY_ID_REF])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [FACILITY_RID],
-       [FACILITY_IDENTIFIER]=CASE
-                               WHEN substring([MF].[PermitNumber], 5, 1) = '0'
-                                 THEN '2'+substring([MF].[PermitNumber], 6, 20)
-                               WHEN substring([MF].[PermitNumber], 5, 1) = '1'
-                                 THEN '3'+substring([MF].[PermitNumber], 6, 20)
-                               ELSE CASE
-                                      WHEN substring([MF].[PermitNumber], 4, 1) = '0'
-                                        THEN '2'+substring([MF].[PermitNumber], 5, 20)
-                                      WHEN substring([MF].[PermitNumber], 4, 1) = '1'
-                                        THEN '3'+substring([MF].[PermitNumber], 5, 20)
-                                      ELSE '2'+substring([MF].[PermitNumber], 7, 20)
-                                    END
-                             END,
+    [MF].[PermitNumber] as [FACILITY_IDENTIFIER],
+       --[FACILITY_IDENTIFIER]=CASE
+       --                        WHEN substring([MF].[PermitNumber], 5, 1) = '0'
+       --                          THEN '2'+substring([MF].[PermitNumber], 6, 20)
+       --                        WHEN substring([MF].[PermitNumber], 5, 1) = '1'
+       --                          THEN '3'+substring([MF].[PermitNumber], 6, 20)
+       --                        ELSE CASE
+       --                               WHEN substring([MF].[PermitNumber], 4, 1) = '0'
+       --                                 THEN '2'+substring([MF].[PermitNumber], 5, 20)
+       --                               WHEN substring([MF].[PermitNumber], 4, 1) = '1'
+       --                                 THEN '3'+substring([MF].[PermitNumber], 5, 20)
+       --                               ELSE '2'+substring([MF].[PermitNumber], 7, 20)
+       --                             END
+       --                      END,
        [MF].[FacilityName] AS [FACILITY_NAME],
        3 AS [FACILITY_TYPE_RID],    --[MF].[FacilityType]
        [mf].[OperationStatus] AS [OPERATING_STATUS],

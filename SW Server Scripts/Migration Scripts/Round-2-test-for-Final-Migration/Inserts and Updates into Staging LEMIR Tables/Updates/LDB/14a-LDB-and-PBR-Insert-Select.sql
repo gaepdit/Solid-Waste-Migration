@@ -21,7 +21,7 @@ DECLARE @rid_counter_start INT;
 DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 --
 SELECT @rid_counter_start=ISNULL(MAX([ENV_PROGRAM_CONTACT_RID]), 1)
-FROM [GovOnline_LEMIR].[dbo].[SYS_ENV_PROGRAM_CONTACT];
+FROM [LEMIR_Stage].[dbo].[SYS_ENV_PROGRAM_CONTACT];
 --
 IF 'EPDMIG SW' =
     (SELECT [CREATED_BY]
@@ -59,8 +59,14 @@ SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
        @created_by_string AS [UPDATED_BY],
        [FEP].[FAC_ENV_PROGRAM_RID] AS [FAC_ENV_PROGRAM_RID],
        [FEP].[FACILITY_ID_REF]
-FROM [LEMIR_Stage].[dbo].[SYS_CONTACT] AS [SC]
-     JOIN [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF] ON [FF].[FACILITY_ID_REF] = [SC].[FACILITY_ID_REF]
-     JOIN [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM] AS [FEP] ON [FF].[FACILITY_ID_REF] = [FEP].[FACILITY_ID_REF]
-                                                            AND [FEP].[CREATED_BY] = @created_by_string
-where [SC].[CONTACT_RID] not in ('602595','602596','602630','602631')
+FROM [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF]
+     JOIN [LEMIR_Stage].[dbo].[SYS_CONTACT] AS [SC] ON [FF].[FACILITY_ID_REF] = [SC].[FACILITY_ID_REF]
+     JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [FF].[FACILITY_RID] = [UI].[LEMIR ID for Update]
+     JOIN [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM] AS [FEP] ON [FF].[FACILITY_RID] = [FEP].[FACILITY_RID]
+WHERE [UI].[Insert or Update] = 'U'
+      AND [UI].[LEMIR ID for Update] IS NOT NULL
+      AND [UI].[analysis hist notes] IS NULL
+      AND [SC].[CONTACT_RID] NOT IN(
+                                    '603354',
+                                    '608648'
+                                   )

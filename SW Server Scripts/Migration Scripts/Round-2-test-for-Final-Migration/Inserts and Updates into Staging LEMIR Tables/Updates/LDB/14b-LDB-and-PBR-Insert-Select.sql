@@ -55,6 +55,16 @@ SELECT [SEPC].[ENV_PROGRAM_CONTACT_RID] AS [ENV_PROGRAM_CONTACT_RID],
        GETDATE() AS [UPDATED_DATE],
        @created_by_string AS [UPDATED_BY],
        [SC].[FACILITY_ID_REF] AS [FACILITY_ID_REF]
-FROM [LEMIR_Stage].[dbo].[SYS_ENV_PROGRAM_CONTACT] AS [SEPC]
+FROM [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF]
+     JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [FF].[FACILITY_RID] = [UI].[LEMIR ID for Update]
+     JOIN [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM] AS [FEP] ON [FF].[FACILITY_RID] = [FEP].[FACILITY_RID]
+     JOIN [LEMIR_Stage].[dbo].[SYS_ENV_PROGRAM_CONTACT] AS [SEPC] ON [FEP].[FAC_ENV_PROGRAM_RID] = [SEPC].[FAC_ENV_PROGRAM_RID]
      JOIN [LEMIR_Stage].[dbo].[SYS_CONTACT] AS [SC] ON [SC].[CONTACT_RID] = [SEPC].[CONTACT_RID]
-WHERE [SEPC].[CREATED_BY] = @created_by_string;
+WHERE [UI].[Insert or Update] = 'U'
+      AND [UI].[LEMIR ID for Update] IS NOT NULL
+      AND [UI].[analysis hist notes] IS NULL
+      AND [SEPC].[CREATED_BY] = @created_by_string
+      AND [SEPC].[ENV_PROGRAM_CONTACT_RID] NOT IN(
+                                                  '692746',
+                                                  '700215'
+                                                 )

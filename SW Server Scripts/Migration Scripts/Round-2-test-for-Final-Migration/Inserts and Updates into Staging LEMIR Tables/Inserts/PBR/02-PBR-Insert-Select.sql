@@ -28,16 +28,16 @@ IF 'EPDMIG ' <>
     SET @rid_counter_start=@rid_counter_start + 1;
   END
 --
---INSERT INTO [LEMIR_Stage].[dbo].[SYS_GEO_COORDINATE]
---       ([GEO_COORDINATE_RID],
---        [LATITUDE_MEASURE],
---        [LONGITUDE_MEASURE],
---        [STATUS_CD],
---        [CREATED_DATE],
---        [CREATED_BY],
---        [UPDATED_DATE],
---        [UPDATED_BY],
---        [FACILITY_ID_REF])
+INSERT INTO [LEMIR_Stage].[dbo].[SYS_GEO_COORDINATE]
+       ([GEO_COORDINATE_RID],
+        [LATITUDE_MEASURE],
+        [LONGITUDE_MEASURE],
+        [STATUS_CD],
+        [CREATED_DATE],
+        [CREATED_BY],
+        [UPDATED_DATE],
+        [UPDATED_BY],
+        [FACILITY_ID_REF])
 SELECT DISTINCT
        [GEO_COORDINATE_RID]=@rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)),

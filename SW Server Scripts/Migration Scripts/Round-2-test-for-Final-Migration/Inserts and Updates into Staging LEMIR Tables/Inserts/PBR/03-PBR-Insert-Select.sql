@@ -16,8 +16,10 @@ DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 SELECT @rid_counter_start=ISNULL(MAX([LOCATION_RID]), 1)
 FROM [LEMIR_Stage].[dbo].[SYS_PHYSICAL_LOCATION];
 --
+--set @rid_counter_start = 624244;
+--
 IF 'EPDMIG SW' <>
-    (SELECT SUBSTRING([SPL].[CREATED_BY], 1, 7)
+    (SELECT [SPL].[CREATED_BY]
      FROM [LEMIR_Stage].[dbo].[SYS_PHYSICAL_LOCATION] AS [SPL]
      WHERE [SPL].[LOCATION_RID] = @rid_counter_start)
   BEGIN
@@ -28,30 +30,30 @@ IF 'EPDMIG SW' <>
     SET @rid_counter_start=@rid_counter_start + 1;
   END
 --
---INSERT INTO [LEMIR_Stage].[dbo].[SYS_PHYSICAL_LOCATION]
---       ([LOCATION_RID],
---        [LOCATION_DESC],
---        [ST_NO],
---        [ST_DIRECTION_RID],
---        [ST_NAME],
---        [CITY_NAME],
---        [STATE_RID],
---        [COUNTY_RID],
---        [COUNTRY_RID],
---        [ZIP_CD],
---        [ZIP_SUFFIX_CD],
---        [GEO_COORDINATE_RID],
---        [STATUS_CD],
---        [CREATED_BY],
---        [UPDATED_BY],
---        [CREATED_DATE],
---        [UPDATED_DATE],
---        [FACILITY_ID_REF])
+INSERT INTO [LEMIR_Stage].[dbo].[SYS_PHYSICAL_LOCATION]
+       ([LOCATION_RID],
+        [LOCATION_DESC],
+        [ST_NO],
+        [ST_DIRECTION_RID],
+        [ST_NAME],
+        [CITY_NAME],
+        [STATE_RID],
+        [COUNTY_RID],
+        [COUNTRY_RID],
+        [ZIP_CD],
+        [ZIP_SUFFIX_CD],
+        [GEO_COORDINATE_RID],
+        [STATUS_CD],
+        [CREATED_BY],
+        [UPDATED_BY],
+        [CREATED_DATE],
+        [UPDATED_DATE],
+        [FACILITY_ID_REF])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [LOCATION_RID],
        '' AS [LOCATION_DESC],
        '' AS [ST_NO],
-       '' AS [ST_DIRECTION_RID],
+       NULL AS [ST_DIRECTION_RID],
        [MF].[FacilityAddress] AS [ST_NAME],
        [MF].[City] AS [CITY_NAME],
        [RS].[STATE_RID] AS [STATE_RID],
@@ -81,19 +83,19 @@ SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
 FROM [PermitByRule].[dbo].[PBR_Main_Facility] AS [MF]
      LEFT JOIN [GovOnline_LEMIR].[dbo].[REF_STATE] AS [RS] ON [MF].[State] = [RS].[STATE_CD]
      LEFT JOIN [GovOnline_LEMIR].[dbo].[REF_COUNTY] AS [RC] ON [MF].[County] = [RC].[COUNTY_CD]
-     INNER JOIN [LEMIR_Stage].[dbo].[SYS_GEO_COORDINATE] AS [SGC] ON(CASE
-                                                                       WHEN substring([MF].[PermitNumber], 5, 1) = '0'
-                                                                         THEN '2'+substring([MF].[PermitNumber], 6, 20)
-                                                                       WHEN substring([MF].[PermitNumber], 5, 1) = '1'
-                                                                         THEN '3'+substring([MF].[PermitNumber], 6, 20)
-                                                                       ELSE CASE
-                                                                              WHEN substring([MF].[PermitNumber], 4, 1) = '0'
-                                                                                THEN '2'+substring([MF].[PermitNumber], 5, 20)
-                                                                              WHEN substring([MF].[PermitNumber], 4, 1) = '1'
-                                                                                THEN '3'+substring([MF].[PermitNumber], 5, 20)
-                                                                              ELSE '2'+substring([MF].[PermitNumber], 7, 20)
-                                                                            END
-                                                                     END) = [SGC].[FACILITY_ID_REF]
+     JOIN [LEMIR_Stage].[dbo].[SYS_GEO_COORDINATE] AS [SGC] ON(CASE
+                                                                 WHEN substring([MF].[PermitNumber], 5, 1) = '0'
+                                                                   THEN '2'+substring([MF].[PermitNumber], 6, 20)
+                                                                 WHEN substring([MF].[PermitNumber], 5, 1) = '1'
+                                                                   THEN '3'+substring([MF].[PermitNumber], 6, 20)
+                                                                 ELSE CASE
+                                                                        WHEN substring([MF].[PermitNumber], 4, 1) = '0'
+                                                                          THEN '2'+substring([MF].[PermitNumber], 5, 20)
+                                                                        WHEN substring([MF].[PermitNumber], 4, 1) = '1'
+                                                                          THEN '3'+substring([MF].[PermitNumber], 5, 20)
+                                                                        ELSE '2'+substring([MF].[PermitNumber], 7, 20)
+                                                                      END
+                                                               END) = [SGC].[FACILITY_ID_REF]
 --     LEFT JOIN [LEMIR_Stage].[dbo].[Update_Insert] AS [UI] ON [MF].[PermitNumber] = [UI].[Permit_Number]
 --WHERE [UI].[InsUpd] IS NULL
 WHERE [MF].[Latitude] IS NOT NULL
