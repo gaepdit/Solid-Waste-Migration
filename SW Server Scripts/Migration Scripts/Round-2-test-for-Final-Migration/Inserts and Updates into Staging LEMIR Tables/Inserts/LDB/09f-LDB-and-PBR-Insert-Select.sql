@@ -13,15 +13,15 @@ When        Who                 What
 DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 --
 --F
-INSERT INTO [LEMIR_Stage].[dbo].[FAC_ADDRESS]
-       ([FACILITY_RID],
-        [ADDRESS_RID],
-        [STATUS_CD],
-        [CREATED_DATE],
-        [CREATED_BY],
-        [UPDATED_DATE],
-        [UPDATED_BY],
-        [FACILITY_ID_REF])
+--INSERT INTO [LEMIR_Stage].[dbo].[FAC_ADDRESS]
+--       ([FACILITY_RID],
+--        [ADDRESS_RID],
+--        [STATUS_CD],
+--        [CREATED_DATE],
+--        [CREATED_BY],
+--        [UPDATED_DATE],
+--        [UPDATED_BY],
+--        [FACILITY_ID_REF])
 SELECT [FF].[FACILITY_RID] AS [FACILITY_RID],
        [SA].[ADDRESS_RID] AS [ADDRESS_RID],
        'A' AS [STATUS_CD],
@@ -31,8 +31,10 @@ SELECT [FF].[FACILITY_RID] AS [FACILITY_RID],
        @created_by_string AS [UPDATED_BY],
        [FF].[FACILITY_ID_REF]
 FROM [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF]
-     JOIN [LEMIR_Stage].[dbo].[SYS_ADDRESS] AS [SA] ON [FF].[FACILITY_ID_REF] = [SA].[FACILITY_ID_REF]
-     --LEFT JOIN [LEMIR_Stage].[dbo].[Update_Insert] AS [UI] ON [FF].[FACILITY_ID_REF] = [UI].[FACILITY_ID_REF]
+     JOIN [LEMIR_Stage].[dbo].[SYS_ADDRESS] AS [SA] ON [FF].[FACILITY_IDENTIFIER] = [SA].[FACILITY_ID_REF]
+     JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [FF].[FACILITY_IDENTIFIER] = [UI].[MainPermitNumber]
 WHERE [FF].[CREATED_BY] = @created_by_string
-      AND [SA].[CREATED_BY] = @created_by_string;
+      AND [SA].[CREATED_BY] = @created_by_string
+      AND [UI].[Insert or Update] = 'I'
+
 

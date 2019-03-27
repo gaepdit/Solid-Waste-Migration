@@ -247,19 +247,7 @@ SELECT [MF].[PermitNumber] AS [PermitNumber],
        'Accept Public Waste?' AS [rdoAcceptPublicWaste_DES],
        '' AS [rdoAcceptPublicWaste_COM],
        --
-       [FACILITY_ID_REF]=CASE
-                           WHEN substring([MF].[PermitNumber], 5, 1) = '0'
-                             THEN '2'+substring([MF].[PermitNumber], 6, 20)
-                           WHEN substring([MF].[PermitNumber], 5, 1) = '1'
-                             THEN '3'+substring([MF].[PermitNumber], 6, 20)
-                           ELSE CASE
-                                  WHEN substring([MF].[PermitNumber], 4, 1) = '0'
-                                    THEN '2'+substring([MF].[PermitNumber], 5, 20)
-                                  WHEN substring([MF].[PermitNumber], 4, 1) = '1'
-                                    THEN '3'+substring([MF].[PermitNumber], 5, 20)
-                                  ELSE '2'+substring([MF].[PermitNumber], 7, 20)
-                                END
-                         END
+       [MF].[PermitNumber] as [FACILITY_ID_REF]
 FROM [PermitByRule].[dbo].[PBR_Main_Facility] AS [MF]
      LEFT JOIN [PermitByRule].[dbo].[Operation Status] AS [OS] ON [mf].[OperationStatus] = [OS].[OperationStatus]
        LEFT JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [EI] ON [MF].[PermitNumber] = [EI].[PermitNumber] 

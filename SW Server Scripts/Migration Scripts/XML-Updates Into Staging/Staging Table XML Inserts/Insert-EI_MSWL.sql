@@ -210,7 +210,6 @@ ORDER BY 1;
 --        [grdFinancialAssurance],
 --        [FACILITY_ID_REF])
 SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
-       
        'txtPermitNumber' AS [txtPermitNumber_ID],
        [MFI].[MainPermitNumber] AS [txtPermitNumber_VAL],
        'Permit Number' AS [txtPermitNumber_TAG],
@@ -218,8 +217,7 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        [MFI].[MainPermitNumber]+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||' AS [txtPermitNumber_HIS],
        'Permit Number:' AS [txtPermitNumber_DES],
        '' AS [txtPermitNumber_COM],
-       
-'ddlEnvInterestStatus' AS [ddlEnvInterestStatus_ID],
+       'ddlEnvInterestStatus' AS [ddlEnvInterestStatus_ID],
        [ddlEnvInterestStatus_VAL]=CASE
                                     WHEN [OS].[OperationStatus] = '1'
                                       THEN 'Operating'
@@ -363,21 +361,21 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        '' AS [txtPermittedCapacity_COM],
        --
        'txtRemainingCapacity' AS [txtRemainingCapacity_ID],
-       isnull(convert(varchar(50),isnull(IIF(
+       isnull(convert(VARCHAR(50), isnull(IIF(
     (SELECT DISTINCT
             [RC].[RemainingCapacity(CY)]
      FROM [LandDataBase].[dbo].[RemainingCapacity] AS [RC]
           LEFT JOIN [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MF] ON [MF].[MainPermitNumber] = [RC].[PermitNumber]
           JOIN [#latestYear] AS [LY] ON [RC].[PermitNumber] = [LY].[PermitNumber]
      WHERE [LY].[latest year] = [RC].[FYReportingYear]
-           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber]) = 0, NULL, 
+           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber]) = 0, NULL,
     (SELECT DISTINCT
             [RC].[RemainingCapacity(CY)]
      FROM [LandDataBase].[dbo].[RemainingCapacity] AS [RC]
           LEFT JOIN [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MF] ON [MF].[MainPermitNumber] = [RC].[PermitNumber]
           JOIN [#latestYear] AS [LY] ON [RC].[PermitNumber] = [LY].[PermitNumber]
      WHERE [LY].[latest year] = [RC].[FYReportingYear]
-           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber])), null)),'') AS [txtRemainingCapacity_VAL],
+           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber])), NULL)), '') AS [txtRemainingCapacity_VAL],
        'Remaining Capacity (CY)' AS [txtRemainingCapacity_TAG],
        'true' AS [txtRemainingCapacity_VIS],
        isnull(convert(VARCHAR(50),
@@ -392,38 +390,38 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        '' AS [txtRemainingCapacity_COM],
        --
        'txtRemainingLife' AS [txtRemainingLife_ID],
-   isnull(convert(varchar(50),isnull(IIF(
+       isnull(convert(VARCHAR(50), isnull(IIF(
     (SELECT DISTINCT
             [RC].[Years Remaining]
      FROM [LandDataBase].[dbo].[RemainingCapacity] AS [RC]
           LEFT JOIN [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MF] ON [MF].[MainPermitNumber] = [RC].[PermitNumber]
           JOIN [#latestYear] AS [LY] ON [RC].[PermitNumber] = [LY].[PermitNumber]
      WHERE [LY].[latest year] = [RC].[FYReportingYear]
-           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber]) = 0, NULL, 
+           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber]) = 0, NULL,
     (SELECT DISTINCT
             [RC].[Years Remaining]
      FROM [LandDataBase].[dbo].[RemainingCapacity] AS [RC]
           LEFT JOIN [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MF] ON [MF].[MainPermitNumber] = [RC].[PermitNumber]
           JOIN [#latestYear] AS [LY] ON [RC].[PermitNumber] = [LY].[PermitNumber]
      WHERE [LY].[latest year] = [RC].[FYReportingYear]
-           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber])), null)),'') AS [txtRemainingLife_VAL],
+           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber])), NULL)), '') AS [txtRemainingLife_VAL],
        'Remaining Life of EI (Years)' AS [txtRemainingLife_TAG],
        'true' AS [txtRemainingLife_VIS],
-    isnull(convert(varchar(50),isnull(IIF(
+       isnull(convert(VARCHAR(50), isnull(IIF(
     (SELECT DISTINCT
             [RC].[Years Remaining]
      FROM [LandDataBase].[dbo].[RemainingCapacity] AS [RC]
           LEFT JOIN [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MF] ON [MF].[MainPermitNumber] = [RC].[PermitNumber]
           JOIN [#latestYear] AS [LY] ON [RC].[PermitNumber] = [LY].[PermitNumber]
      WHERE [LY].[latest year] = [RC].[FYReportingYear]
-           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber]) = 0, NULL, 
+           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber]) = 0, NULL,
     (SELECT DISTINCT
             [RC].[Years Remaining]
      FROM [LandDataBase].[dbo].[RemainingCapacity] AS [RC]
           LEFT JOIN [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MF] ON [MF].[MainPermitNumber] = [RC].[PermitNumber]
           JOIN [#latestYear] AS [LY] ON [RC].[PermitNumber] = [LY].[PermitNumber]
      WHERE [LY].[latest year] = [RC].[FYReportingYear]
-           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber])), null))+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||', '') AS [txtRemainingLife_HIS],
+           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber])), NULL))+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||', '') AS [txtRemainingLife_HIS],
        'Remaining Life of EI (Years):' AS [txtRemainingLife_DES],
        '' AS [txtRemainingLife_COM],
        --
@@ -687,38 +685,11 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
      FROM [LEMIR_Stage].[dbo].[$grdFinancialAssurance] AS [F]
      WHERE [F].[PermitNumber] = [MFI].[MainPermitNumber] FOR XML PATH('grdFinancialAssurance')), '') AS [grdFinancialAssurance],
        --
-       [FACILITY_ID_REF]=CASE
-                           WHEN [MFI].[MainPermitNumber] LIKE '0%'
-                             THEN(SUBSTRING([MFI].[MainPermitNumber], 0, 8))
-                           WHEN [MFI].[MainPermitNumber] LIKE '1%'
-                             THEN(SUBSTRING([MFI].[MainPermitNumber], 0, 8))
-                           WHEN [MFI].[MainPermitNumber] LIKE 'APL %'
-                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                           WHEN [MFI].[MainPermitNumber] LIKE 'APL0%'
-                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                           WHEN [MFI].[MainPermitNumber] LIKE 'APL-%'
-                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                           WHEN [MFI].[MainPermitNumber] LIKE 'APLI%'
-                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                           WHEN [MFI].[MainPermitNumber] LIKE 'APL1%'
-                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                           WHEN [MFI].[MainPermitNumber] LIKE 'B%'
-                             THEN '0'
-                           WHEN [MFI].[MainPermitNumber] LIKE 'CCR%'
-                             THEN '500-'+[MFI].[MainPermitNumber]
-                           WHEN [MFI].[MainPermitNumber] LIKE 'CON%'
-                             THEN '600-'+[MFI].[MainPermitNumber]
-                           WHEN [MFI].[MainPermitNumber] LIKE 'MOD%'
-                             THEN '700-'+[MFI].[MainPermitNumber]
-                           WHEN [MFI].[MainPermitNumber] LIKE 'PCSP%'
-                             THEN '800-'+[MFI].[MainPermitNumber]
-                           ELSE '0'
-                         END
+       [MFI].[MainPermitNumber] AS [FACILITY_ID_REF]
 FROM [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MFI]
      LEFT JOIN [LandDataBase].[dbo].[OperationStatus] AS [OS] ON [MFI].[OperationStatus] = [OS].[OperationStatus]
-        LEFT JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [EI] ON [MFI].[MainPermitNumber] = [EI].[PermitNumber]
-     WHERE [EI].[LEMIR_EI_CD] = 'MSWL'
+     LEFT JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [EI] ON [MFI].[MainPermitNumber] = [EI].[PermitNumber]
+WHERE [EI].[LEMIR_EI_CD] = 'MSWL'
 GO
-
 DROP TABLE [#latestYear];
 

@@ -104,7 +104,7 @@ SELECT [MF].[PermitNumber] AS [PermitNumber],
        'Permit Number:' AS [txtPermitNumber_DES],
        '' AS [txtPermitNumber_COM],
        --
-              'ddlEnvInterestStatus' AS [ddlEnvInterestStatus_ID],
+       'ddlEnvInterestStatus' AS [ddlEnvInterestStatus_ID],
        [ddlEnvInterestStatus_VAL]=CASE
                                     WHEN [OS].[OperationStatus] = '1'
                                       THEN 'Operating'
@@ -164,7 +164,7 @@ SELECT [MF].[PermitNumber] AS [PermitNumber],
        'EI Status:' AS [ddlEnvInterestStatus_DES],
        '' AS [ddlEnvInterestStatus_COM],
        --
-        'ddlOwnershipType' AS [ddlOwnershipType_ID],
+       'ddlOwnershipType' AS [ddlOwnershipType_ID],
        [ddlOwnershipType_VAL]=(CASE
                                  WHEN [MF].[Dominion] = 'Private'
                                    THEN 'Private Industrial'
@@ -206,18 +206,18 @@ SELECT [MF].[PermitNumber] AS [PermitNumber],
        '' AS [txtComment_COM],
        --
        'txtFacilityStartDate' AS [txtFacilityStartDate_ID],
-       IIF([MF].[FacilityStartDate] = '','',convert(varchar(50),[MF].[FacilityStartDate], 101)) AS [txtFacilityStartDate_VAL],
+       IIF([MF].[FacilityStartDate] = '', '', convert(VARCHAR(50), [MF].[FacilityStartDate], 101)) AS [txtFacilityStartDate_VAL],
        'Facility Start Date' AS [txtFacilityStartDate_TAG],
        'true' AS [txtFacilityStartDate_VIS],
-       IIF([MF].[FacilityStartDate] = '','',convert(varchar(50),[MF].[FacilityStartDate], 101)+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||') AS [txtFacilityStartDate_HIS],
+       IIF([MF].[FacilityStartDate] = '', '', convert(VARCHAR(50), [MF].[FacilityStartDate], 101)+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||') AS [txtFacilityStartDate_HIS],
        'Facility Start Date:' AS [txtFacilityStartDate_DES],
        '' AS [txtFacilityStartDate_COM],
        --
-      'txtPBRApprovalDate' AS [txtPBRApprovalDate_ID],
-       IIF([MF].[PBR Approval Date] = '','', convert(varchar(50),cast([MF].[PBR Approval Date] AS datetime), 101)) AS [txtPBRApprovalDate_VAL],
+       'txtPBRApprovalDate' AS [txtPBRApprovalDate_ID],
+       IIF([MF].[PBR Approval Date] = '', '', convert(VARCHAR(50), cast([MF].[PBR Approval Date] AS DATETIME), 101)) AS [txtPBRApprovalDate_VAL],
        'PBR Approval Date' AS [txtPBRApprovalDate_TAG],
        'true' AS [txtPBRApprovalDate_VIS],
-       IIF([MF].[PBR Approval Date] = '','', convert(varchar(50),cast([MF].[PBR Approval Date] AS datetime), 101)+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||') AS [txtPBRApprovalDate_HIS],
+       IIF([MF].[PBR Approval Date] = '', '', convert(VARCHAR(50), cast([MF].[PBR Approval Date] AS DATETIME), 101)+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||') AS [txtPBRApprovalDate_HIS],
        'PBR Approval Date:' AS [txtPBRApprovalDate_DES],
        '' AS [txtPBRApprovalDate_COM],
        --
@@ -229,15 +229,15 @@ SELECT [MF].[PermitNumber] AS [PermitNumber],
        'Date Ceased Accepting Waste:' AS [txtAcceptingWasteCeasedDate_DES],
        '' AS [txtAcceptingWasteCeasedDate_COM],
        --
-        'txtClosureAcknowledgedDate' AS [txtClosureAcknowledgedDate_ID],
-       IIF([MF].[DateSiteClosed]='','',[MF].[DateSiteClosed]) AS [txtClosureAcknowledgedDate_VAL],
+       'txtClosureAcknowledgedDate' AS [txtClosureAcknowledgedDate_ID],
+       IIF([MF].[DateSiteClosed] = '', '', [MF].[DateSiteClosed]) AS [txtClosureAcknowledgedDate_VAL],
        'Closure Acknowledged Date' AS [txtClosureAcknowledgedDate_TAG],
        'true' AS [txtClosureAcknowledgedDate_VIS],
-       IIF([MF].[DateSiteClosed]='','',[MF].[DateSiteClosed]+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||') AS [txtClosureAcknowledgedDate_HIS],
+       IIF([MF].[DateSiteClosed] = '', '', [MF].[DateSiteClosed]+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||') AS [txtClosureAcknowledgedDate_HIS],
        'Closure Acknowledged Date:' AS [txtClosureAcknowledgedDate_DES],
        '' AS [txtClosureAcknowledgedDate_COM],
        --
-        'txtTotalAcreage' AS [txtTotalAcreage_ID],
+       'txtTotalAcreage' AS [txtTotalAcreage_ID],
        '' AS [txtTotalAcreage_VAL],
        'Total Acreage (acres)' AS [txtTotalAcreage_TAG],
        'true' AS [txtTotalAcreage_VIS],
@@ -253,11 +253,11 @@ SELECT [MF].[PermitNumber] AS [PermitNumber],
        'Disposal Footprint (acres):' AS [txtDisposalFootprint_DES],
        '' AS [txtDisposalFootprint_COM],
        --
-      'txtWasteDescription' AS [txtWasteDescription_ID],
-       IIF([MF].[WasteDescription] IN ('','*'), '', [MF].[WasteDescription]) AS [txtWasteDescription_VAL],
+       'txtWasteDescription' AS [txtWasteDescription_ID],
+       IIF([MF].[WasteDescription] IN('', '*'), '', [MF].[WasteDescription]) AS [txtWasteDescription_VAL],
        'Waste Description' AS [txtWasteDescription_TAG],
        'true' AS [txtWasteDescription_VIS],
-       IIF([MF].[WasteDescription] IN ('','*'), '', [MF].[WasteDescription]+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||') AS [txtWasteDescription_HIS],
+       IIF([MF].[WasteDescription] IN('', '*'), '', [MF].[WasteDescription]+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||') AS [txtWasteDescription_HIS],
        'Waste Description:' AS [txtWasteDescription_DES],
        '' AS [txtWasteDescription_COM],
        --
@@ -277,23 +277,11 @@ SELECT [MF].[PermitNumber] AS [PermitNumber],
        'Accept Public Waste?' AS [rdoAcceptPublicWaste_DES],
        '' AS [rdoAcceptPublicWaste_COM],
        --
-       [FACILITY_ID_REF]=CASE
-                           WHEN substring([MF].[PermitNumber], 5, 1) = '0'
-                             THEN '2'+substring([MF].[PermitNumber], 6, 20)
-                           WHEN substring([MF].[PermitNumber], 5, 1) = '1'
-                             THEN '3'+substring([MF].[PermitNumber], 6, 20)
-                           ELSE CASE
-                                  WHEN substring([MF].[PermitNumber], 4, 1) = '0'
-                                    THEN '2'+substring([MF].[PermitNumber], 5, 20)
-                                  WHEN substring([MF].[PermitNumber], 4, 1) = '1'
-                                    THEN '3'+substring([MF].[PermitNumber], 5, 20)
-                                  ELSE '2'+substring([MF].[PermitNumber], 7, 20)
-                                END
-                         END
+       [MF].[PermitNumber] AS [FACILITY_ID_REF]
 FROM [PermitByRule].[dbo].[PBR_Main_Facility] AS [MF]
      LEFT JOIN [PermitByRule].[dbo].[Operation Status] AS [OS] ON [mf].[OperationStatus] = [OS].[OperationStatus]
-   LEFT JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [EI] ON [MF].[PermitNumber] = [EI].[PermitNumber] 
-     WHERE [EI].[LEMIR_EI_CD] = 'YTL'
+     LEFT JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [EI] ON [MF].[PermitNumber] = [EI].[PermitNumber]
+WHERE [EI].[LEMIR_EI_CD] = 'YTL'
 GO
 
 
