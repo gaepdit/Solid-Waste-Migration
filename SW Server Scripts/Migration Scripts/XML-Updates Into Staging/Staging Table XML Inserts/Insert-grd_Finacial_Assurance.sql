@@ -23,10 +23,37 @@ GO
 --        [txtComments],
 --        [FACILITY_ID_REF])
 SELECT [FM].[PERMIT NUMBER] AS [PERMIT NUMBER],
-       isnull(convert(varchar(50),[FM].[FISCAL YEAR END], 101), '') AS [txtFiscalYearEndDate],
-       isnull(convert(varchar(50),[FM].[DATE FA DUE], 101), '') AS [txtEffectiveStartDate],
-       isnull(convert(varchar(50),dateadd([yyyy], 1, [FM].[DATE FA DUE]), 101), '') AS [txtEffectiveEndDate],
-       isnull([FM].[TypeInstrument], '') AS [ddlFAType],
+       isnull(convert(VARCHAR(50), [FM].[FISCAL YEAR END], 101), '') AS [txtFiscalYearEndDate],
+       isnull(convert(VARCHAR(50), [FM].[DATE FA DUE], 101), '') AS [txtEffectiveStartDate],
+       isnull(convert(VARCHAR(50), dateadd([yyyy], 1, [FM].[DATE FA DUE]), 101), '') AS [txtEffectiveEndDate],
+       --************************ Modify this case statement when all types are clarified *********************************
+       [ddlFAType]=CASE
+                     WHEN [FM].[TypeInstrument] = 'PB'
+                       THEN NULL
+                     WHEN [FM].[TypeInstrument] = 'Combo'
+                       THEN 'Combo'
+                     WHEN [FM].[TypeInstrument] = 'n/a'
+                       THEN 'Exempt'
+                     WHEN [FM].[TypeInstrument] = 'TA'
+                       THEN NULL
+                     WHEN [FM].[TypeInstrument] = 'COI'
+                       THEN 'COI'
+                     WHEN [FM].[TypeInstrument] = 'LOC'
+                       THEN 'LOC'
+                     WHEN [FM].[TypeInstrument] = 'CFT'
+                       THEN 'CFT'
+                     WHEN [FM].[TypeInstrument] = 'TF'
+                       THEN 'TF'
+                     WHEN [FM].[TypeInstrument] = 'SB'
+                       THEN 'Bond'
+                     WHEN [FM].[TypeInstrument] = 'LGT'
+                       THEN 'LGT'
+                     WHEN [FM].[TypeInstrument] = 'Combination of Insturments'
+                       THEN 'COI'
+                     WHEN [FM].[TypeInstrument] = 'Surety Bond Performance'
+                       THEN 'Bond'
+                     ELSE NULL
+                   END,
        '' AS [txtMechanismNo],
        '' AS [txtCurrentOpenArea],
        '' AS [txtApprovedOpenArea],
@@ -35,33 +62,7 @@ SELECT [FM].[PERMIT NUMBER] AS [PERMIT NUMBER],
        isnull([FM].[CURRENT CA AMT], '') AS [txtCorrectiveActionAmount],
        isnull([FM].[CURRENT ASSURED COST], '') AS [txtTotalAssuredCost],
        isnull([FM].[Comments], '') AS [txtComments],
-       [FACILITY_ID_REF]=CASE
-                           WHEN [FM].[PERMIT NUMBER] LIKE '0%'
-                             THEN(SUBSTRING([FM].[PERMIT NUMBER], 0, 8))
-                           WHEN [FM].[PERMIT NUMBER] LIKE '1%'
-                             THEN(SUBSTRING([FM].[PERMIT NUMBER], 0, 8))
-                           WHEN [FM].[PERMIT NUMBER] LIKE 'APL %'
-                             THEN '400-'+substring([FM].[PERMIT NUMBER], 5, 20)
-                           WHEN [FM].[PERMIT NUMBER] LIKE 'APL0%'
-                             THEN '400-'+substring([FM].[PERMIT NUMBER], 5, 20)
-                           WHEN [FM].[PERMIT NUMBER] LIKE 'APL-%'
-                             THEN '400-'+substring([FM].[PERMIT NUMBER], 5, 20)
-                           WHEN [FM].[PERMIT NUMBER] LIKE 'APLI%'
-                             THEN '400-'+substring([FM].[PERMIT NUMBER], 5, 20)
-                           WHEN [FM].[PERMIT NUMBER] LIKE 'APL1%'
-                             THEN '400-'+substring([FM].[PERMIT NUMBER], 5, 20)
-                           WHEN [FM].[PERMIT NUMBER] LIKE 'B%'
-                             THEN [FM].[PERMIT NUMBER]
-                           WHEN [FM].[PERMIT NUMBER] LIKE 'CCR%'
-                             THEN [FM].[PERMIT NUMBER]
-                           WHEN [FM].[PERMIT NUMBER] LIKE 'CON%'
-                             THEN [FM].[PERMIT NUMBER]
-                           WHEN [FM].[PERMIT NUMBER] LIKE 'MOD%'
-                             THEN [FM].[PERMIT NUMBER]
-                           WHEN [FM].[PERMIT NUMBER] LIKE 'PCSP%'
-                             THEN [FM].[PERMIT NUMBER]
-                           ELSE '0'
-                         END
+       [FM].[PERMIT NUMBER] as [FACILITY_ID_REF]
 FROM [LandDataBase].[dbo].[FA MAIN] AS [FM]
 WHERE [FM].[FA_Required] = 1
 ORDER BY 1,
