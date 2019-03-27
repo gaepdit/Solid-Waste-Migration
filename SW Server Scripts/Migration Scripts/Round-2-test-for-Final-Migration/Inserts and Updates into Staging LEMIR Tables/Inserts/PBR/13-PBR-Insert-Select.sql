@@ -30,19 +30,19 @@ IF 'EPDMIG SW' =
 --
 -- DONE
 --
-INSERT INTO [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM]
-       ([FAC_ENV_PROGRAM_RID],
-        [FACILITY_RID],
-        [TYPE_RID],
-        [STATUS_CD],
-        [CREATED_DATE],
-        [CREATED_BY],
-        [UPDATED_DATE],
-        [UPDATED_BY],
-        [PROGRAM_DETAIL],
-        [FAC_PROGRAM_IDENTIFIER],
-        [AKA_NAME],
-        [FACILITY_ID_REF])
+--INSERT INTO [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM]
+--       ([FAC_ENV_PROGRAM_RID],
+--        [FACILITY_RID],
+--        [TYPE_RID],
+--        [STATUS_CD],
+--        [CREATED_DATE],
+--        [CREATED_BY],
+--        [UPDATED_DATE],
+--        [UPDATED_BY],
+--        [PROGRAM_DETAIL],
+--        [FAC_PROGRAM_IDENTIFIER],
+--        [AKA_NAME],
+--        [FACILITY_ID_REF])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [FAC_ENV_PROGRAM_RID],
        [FF].[FACILITY_RID] AS [FACILITY_RID],
@@ -58,20 +58,5 @@ SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
        [FF].[FACILITY_ID_REF] AS [FACILITY_ID_REF]
 FROM [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF]
      JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [EIT] ON [FF].[FACILITY_ID_REF] = [EIT].[FACILITY_ID_REF]
-     JOIN [PermitByRule].[dbo].[PBR_Main_Facility] AS [MF] ON [FF].[FACILITY_ID_REF] = CASE
-                           WHEN substring([MF].[PermitNumber], 5, 1) = '0'
-                             THEN '2'+substring([MF].[PermitNumber], 6, 20)
-                           WHEN substring([MF].[PermitNumber], 5, 1) = '1'
-                             THEN '3'+substring([MF].[PermitNumber], 6, 20)
-                           ELSE CASE
-                                  WHEN substring([MF].[PermitNumber], 4, 1) = '0'
-                                    THEN '2'+substring([MF].[PermitNumber], 5, 20)
-                                  WHEN substring([MF].[PermitNumber], 4, 1) = '1'
-                                    THEN '3'+substring([MF].[PermitNumber], 5, 20)
-                                  ELSE '2'+substring([MF].[PermitNumber], 7, 20)
-                                END
-                         END
-                                                                AND [FF].[FACILITY_NAME] = [MF].[FacilityName]
-     --JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [MF].[PermitNumber] = [UI].[MainPermitNumber]
-     --                                                        AND [UI].[Insert or Update] = 'I' 
+     JOIN [PermitByRule].[dbo].[PBR_Main_Facility] AS [MF] ON [FF].[FACILITY_ID_REF] =[MF].[PermitNumber] 
 where [EIT].[LEMIR_XML] is not null

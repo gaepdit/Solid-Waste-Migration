@@ -285,33 +285,7 @@ SELECT [MFI].[MainPermitNumber],
                       THEN 'TT'
                     ELSE '********'
                   END,
-       [FACILITY_ID_REF]=CASE
-                           WHEN [MFI].[MainPermitNumber] LIKE '0%'
-                             THEN(SUBSTRING([MFI].[MainPermitNumber], 0, 8))
-                           WHEN [MFI].[MainPermitNumber] LIKE '1%'
-                             THEN(SUBSTRING([MFI].[MainPermitNumber], 0, 8))
-                           WHEN [MFI].[MainPermitNumber] LIKE 'APL %'
-                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                           WHEN [MFI].[MainPermitNumber] LIKE 'APL0%'
-                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                           WHEN [MFI].[MainPermitNumber] LIKE 'APL-%'
-                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                           WHEN [MFI].[MainPermitNumber] LIKE 'APLI%'
-                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                           WHEN [MFI].[MainPermitNumber] LIKE 'APL1%'
-                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                           WHEN [MFI].[MainPermitNumber] LIKE 'B%'
-                             THEN [MFI].[MainPermitNumber]
-                           WHEN [MFI].[MainPermitNumber] LIKE 'CCR%'
-                             THEN [MFI].[MainPermitNumber]
-                           WHEN [MFI].[MainPermitNumber] LIKE 'CON%'
-                             THEN [MFI].[MainPermitNumber]
-                           WHEN [MFI].[MainPermitNumber] LIKE 'MOD%'
-                             THEN [MFI].[MainPermitNumber]
-                           WHEN [MFI].[MainPermitNumber] LIKE 'PCSP%'
-                             THEN [MFI].[MainPermitNumber]
-                           ELSE '0'
-                         END
+       [MFI].[MainPermitNumber] as [FACILITY_ID_REF]
 --INTO [#EI]
 FROM [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MFI]
 ORDER BY 3,1;

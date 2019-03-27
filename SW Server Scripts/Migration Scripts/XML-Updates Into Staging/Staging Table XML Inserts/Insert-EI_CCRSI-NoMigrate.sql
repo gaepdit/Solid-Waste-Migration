@@ -191,7 +191,7 @@ GO
 --        [grdFinancialAssurance],
 --        [FACILITY_ID_REF])
 SELECT [PermitNumber],
-       [EnvIntType],
+       --[EnvIntType],
        [txtPermitNumber_ID],
        [txtPermitNumber_VAL],
        [txtPermitNumber_TAG],

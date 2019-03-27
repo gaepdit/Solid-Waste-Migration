@@ -117,33 +117,7 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        '' as [ddlComplianceStatus_DES],
        '' as [ddlComplianceStatus_COM],
        --
-       [FACILITY_ID_REF]=CASE
-                           WHEN [MFI].[MainPermitNumber] LIKE '0%'
-                             THEN(SUBSTRING([MFI].[MainPermitNumber], 0, 8))
-                           WHEN [MFI].[MainPermitNumber] LIKE '1%'
-                             THEN(SUBSTRING([MFI].[MainPermitNumber], 0, 8))
-                           WHEN [MFI].[MainPermitNumber] LIKE 'APL %'
-                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                           WHEN [MFI].[MainPermitNumber] LIKE 'APL0%'
-                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                           WHEN [MFI].[MainPermitNumber] LIKE 'APL-%'
-                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                           WHEN [MFI].[MainPermitNumber] LIKE 'APLI%'
-                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                           WHEN [MFI].[MainPermitNumber] LIKE 'APL1%'
-                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                           WHEN [MFI].[MainPermitNumber] LIKE 'B%'
-                             THEN '0'
-                           WHEN [MFI].[MainPermitNumber] LIKE 'CCR%'
-                             THEN '500-'+[MFI].[MainPermitNumber]
-                           WHEN [MFI].[MainPermitNumber] LIKE 'CON%'
-                             THEN '600-'+[MFI].[MainPermitNumber]
-                           WHEN [MFI].[MainPermitNumber] LIKE 'MOD%'
-                             THEN '700-'+[MFI].[MainPermitNumber]
-                           WHEN [MFI].[MainPermitNumber] LIKE 'PCSP%'
-                             THEN '800-'+[MFI].[MainPermitNumber]
-                           ELSE '0'
-                         END
+       [MFI].[MainPermitNumber] as [FACILITY_ID_REF]
 FROM [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MFI]
     LEFT JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [MFI].[MainPermitNumber] = [UI].[MainPermitNumber]
      WHERE [UI].[GWM] = 'Y'

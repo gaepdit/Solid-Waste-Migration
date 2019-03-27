@@ -29,18 +29,18 @@ IF 'EPDMIG SW' =
     SET @rid_counter_start=@rid_counter_start + 1000;
   END
   --
-INSERT INTO [LEMIR_Stage].[dbo].[SYS_TELEPHONIC]
-       ([TELEPHONIC_RID],
-        [PHONE_TYPE_RID],
-        [PHONE_AREA_CODE],
-        [PHONE_NO],
-        [PHONE_EXTENSION],
-        [STATUS_CD],
-        [CREATED_BY],
-        [UPDATED_BY],
-        [CREATED_DATE],
-        [UPDATED_DATE],
-        [FACILITY_ID_REF])
+--INSERT INTO [LEMIR_Stage].[dbo].[SYS_TELEPHONIC]
+--       ([TELEPHONIC_RID],
+--        [PHONE_TYPE_RID],
+--        [PHONE_AREA_CODE],
+--        [PHONE_NO],
+--        [PHONE_EXTENSION],
+--        [STATUS_CD],
+--        [CREATED_BY],
+--        [UPDATED_BY],
+--        [CREATED_DATE],
+--        [UPDATED_DATE],
+--        [FACILITY_ID_REF])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [TELEPHONIC_RID],
        '1' AS [PHONE_TYPE_RID],
@@ -52,23 +52,9 @@ SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
        @created_by_string AS [UPDATED_BY],
        GETDATE() AS [CREATED_DATE],
        GETDATE() AS [UPDATED_DATE],
-       [FACILITY_ID_REF]=CASE
-                           WHEN substring([MF].[PermitNumber], 5, 1) = '0'
-                             THEN '2'+substring([MF].[PermitNumber], 6, 20)
-                           WHEN substring([MF].[PermitNumber], 5, 1) = '1'
-                             THEN '3'+substring([MF].[PermitNumber], 6, 20)
-                           ELSE CASE
-                                  WHEN substring([MF].[PermitNumber], 4, 1) = '0'
-                                    THEN '2'+substring([MF].[PermitNumber], 5, 20)
-                                  WHEN substring([MF].[PermitNumber], 4, 1) = '1'
-                                    THEN '3'+substring([MF].[PermitNumber], 5, 20)
-                                  ELSE '2'+substring([MF].[PermitNumber], 7, 20)
-                                END
-                         END
+       [MF].[PermitNumber] as [FACILITY_ID_REF]
 FROM [PermitByRule].[dbo].[PBR_Main_Facility] AS [MF]
      JOIN [PermitByRule].[dbo].[PBR Contacts] AS [PC] ON [MF].[PermitNumber] = [PC].[PermitNumber]
---     LEFT JOIN [LEMIR_Stage].[dbo].[Update_Insert] AS [UI] ON [MF].[PermitNumber] = [UI].[Permit_Number]
---WHERE [UI].[InsUpd] = 'I'
 WHERE [MF].[Latitude] IS NOT NULL
       AND [MF].[Latitude] NOT IN(
                                  '',
