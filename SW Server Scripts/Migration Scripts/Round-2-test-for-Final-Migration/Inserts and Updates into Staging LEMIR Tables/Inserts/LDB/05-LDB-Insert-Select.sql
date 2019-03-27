@@ -30,23 +30,23 @@ IF 'EPDMIG SW' =
   END
   
   --
-INSERT INTO [LEMIR_Stage].[dbo].[SYS_ADDRESS]
-       ([ADDRESS_RID],
-        [ADDRESS_LINE1],
-        [ADDRESS_LINE2],
-        [CITY_NAME],
-        [PROVINCE_NAME],
-        [STATE_RID],
-        [COUNTRY_RID],
-        [ZIP_CD],
-        [ZIP_SUFFIX_CD],
-        [STATUS_CD],
-        [CREATED_BY],
-        [UPDATED_BY],
-        [CREATED_DATE],
-        [UPDATED_DATE],
-        [ADDRESS_TYPE_RID],
-        [FACILITY_ID_REF])
+--INSERT INTO [LEMIR_Stage].[dbo].[SYS_ADDRESS]
+--       ([ADDRESS_RID],
+--        [ADDRESS_LINE1],
+--        [ADDRESS_LINE2],
+--        [CITY_NAME],
+--        [PROVINCE_NAME],
+--        [STATE_RID],
+--        [COUNTRY_RID],
+--        [ZIP_CD],
+--        [ZIP_SUFFIX_CD],
+--        [STATUS_CD],
+--        [CREATED_BY],
+--        [UPDATED_BY],
+--        [CREATED_DATE],
+--        [UPDATED_DATE],
+--        [ADDRESS_TYPE_RID],
+--        [FACILITY_ID_REF])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [ADDRESS_RID],
        ltrim([MFI].[MailingAddress]) AS [ADDRESS_LINE1],
@@ -63,33 +63,7 @@ SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
        GETDATE() AS [CREATED_DATE],
        GETDATE() AS [UPDATED_DATE],
        '2' AS [ADDRESS_TYPE_RID],
-       [FACILITY_ID_REF]=CASE
-                           WHEN [MFI].[MainPermitNumber] LIKE '0%'
-                             THEN(SUBSTRING([MFI].[MainPermitNumber], 0, 8))
-                           WHEN [MFI].[MainPermitNumber] LIKE '1%'
-                             THEN(SUBSTRING([MFI].[MainPermitNumber], 0, 8))
-                           WHEN [MFI].[MainPermitNumber] LIKE 'APL %'
-                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                           WHEN [MFI].[MainPermitNumber] LIKE 'APL0%'
-                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                           WHEN [MFI].[MainPermitNumber] LIKE 'APL-%'
-                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                           WHEN [MFI].[MainPermitNumber] LIKE 'APLI%'
-                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                           WHEN [MFI].[MainPermitNumber] LIKE 'APL1%'
-                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                           WHEN [MFI].[MainPermitNumber] LIKE 'B%'
-                             THEN '0'
-                           WHEN [MFI].[MainPermitNumber] LIKE 'CCR%'
-                             THEN '500-'+[MFI].[MainPermitNumber]
-                           WHEN [MFI].[MainPermitNumber] LIKE 'CON%'
-                             THEN '600-'+[MFI].[MainPermitNumber]
-                           WHEN [MFI].[MainPermitNumber] LIKE 'MOD%'
-                             THEN '700-'+[MFI].[MainPermitNumber]
-                           WHEN [MFI].[MainPermitNumber] LIKE 'PCSP%'
-                             THEN '800-'+[MFI].[MainPermitNumber]
-                           ELSE '0'
-                         END
+       [MFI].[MainPermitNumber] as [FACILITY_ID_REF]
 FROM [LandDatabase].[dbo].[MAIN FACILITY INFO] AS [MFI]
      LEFT JOIN [GovOnline_LEMIR].[dbo].[REF_STATE] AS [RS] ON [MFI].[State] = [RS].[STATE_CD]
      INNER JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [MFI].[MainPermitNumber] = [UI].[MainPermitNumber]

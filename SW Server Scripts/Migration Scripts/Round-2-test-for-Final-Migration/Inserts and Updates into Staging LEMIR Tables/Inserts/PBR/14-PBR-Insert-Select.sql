@@ -21,11 +21,11 @@ DECLARE @rid_counter_start INT;
 DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 --
 SELECT @rid_counter_start=ISNULL(MAX([ENV_PROGRAM_CONTACT_RID]), 1)
-FROM [GovOnline_LEMIR].[dbo].[SYS_ENV_PROGRAM_CONTACT];
+FROM [LEMIR_Stage].[dbo].[SYS_ENV_PROGRAM_CONTACT];
 --
 IF 'EPDMIG SW' =
     (SELECT [CREATED_BY]
-     FROM [GovOnline_LEMIR].[dbo].[SYS_ENV_PROGRAM_CONTACT]
+     FROM [LEMIR_Stage].[dbo].[SYS_ENV_PROGRAM_CONTACT]
      WHERE [ENV_PROGRAM_CONTACT_RID] = @rid_counter_start)
   BEGIN
     SET @rid_counter_start=@rid_counter_start + 1;

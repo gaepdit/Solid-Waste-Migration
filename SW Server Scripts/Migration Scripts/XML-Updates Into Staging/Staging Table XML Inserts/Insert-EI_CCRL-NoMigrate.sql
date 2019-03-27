@@ -403,13 +403,13 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        'GW Monitoring System Installed' AS [rdoGWInstalled_DES],
        '' AS [rdoGWInstalled_COM],
        --
-      'ddlAssessmentMonitoring' as [ddlAssessmentMonitoring_ID],
-       '' as [ddlAssessmentMonitoring_VAL],
-       'Assessment/Detection Monitoring' as [ddlAssessmentMonitoring_TAG],
-       'true' as [ddlAssessmentMonitoring_VIS],
-       '' as [ddlAssessmentMonitoring_HIS],
-       'Assessment/Detection Monitoring' as [ddlAssessmentMonitoring_DES],
-       '' as [ddlAssessmentMonitoring_COM],
+       'ddlAssessmentMonitoring' AS [ddlAssessmentMonitoring_ID],
+       '' AS [ddlAssessmentMonitoring_VAL],
+       'Assessment/Detection Monitoring' AS [ddlAssessmentMonitoring_TAG],
+       'true' AS [ddlAssessmentMonitoring_VIS],
+       '' AS [ddlAssessmentMonitoring_HIS],
+       'Assessment/Detection Monitoring' AS [ddlAssessmentMonitoring_DES],
+       '' AS [ddlAssessmentMonitoring_COM],
        --
        'rdoMethaneInstalled' AS [rdoMethaneInstalled_ID],
        (CASE
@@ -544,10 +544,10 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        '' AS [txtPostClosureCarePeriod_COM],
        --
        'txtPostClosureReleaseDate' AS [txtPostClosureReleaseDate_ID],
-       isnull(convert(varchar(50),[MFI].[PostCLosureCareReleaseDate], 101),'' )AS [txtPostClosureReleaseDate_VAL],
+       isnull(convert(VARCHAR(50), [MFI].[PostCLosureCareReleaseDate], 101), '') AS [txtPostClosureReleaseDate_VAL],
        'Post Closure Care Release Date' AS [txtPostClosureReleaseDate_TAG],
        'true' AS [txtPostClosureReleaseDate_VIS],
-       isnull(convert(varchar(50),[MFI].[PostCLosureCareReleaseDate], 101)+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||','') as [txtPostClosureReleaseDate_HIS],
+       isnull(convert(VARCHAR(50), [MFI].[PostCLosureCareReleaseDate], 101)+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||', '') AS [txtPostClosureReleaseDate_HIS],
        'Post Closure Care Release Date:' AS [txtPostClosureReleaseDate_DES],
        '' AS [txtPostClosureReleaseDate_COM],
        --
@@ -567,20 +567,20 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        'Accept Public Waste?' AS [rdoAcceptPublicWaste_DES],
        '' AS [rdoAcceptPublicWaste_COM],
        --
-       'rdoAcceptCCR' as [rdoAcceptCCR_ID],
-       '' as [rdoAcceptCCR_VAL],
-       'Accept CCR?' as [rdoAcceptCCR_TAG],
+       'rdoAcceptCCR' AS [rdoAcceptCCR_ID],
+       '' AS [rdoAcceptCCR_VAL],
+       'Accept CCR?' AS [rdoAcceptCCR_TAG],
        'true' AS [rdoAcceptCCR_VIS],
-       '' as [rdoAcceptCCR_HIS],
-       'Accept CCR?' as [rdoAcceptCCR_DES],
+       '' AS [rdoAcceptCCR_HIS],
+       'Accept CCR?' AS [rdoAcceptCCR_DES],
        '' AS [rdoAcceptCCR_COM],
        --
-       'rdoAcceptAsbestos' as [rdoAcceptAsbestos_ID],
-       '' as [rdoAcceptAsbestos_VAL],
-       'Accept Asbestos?' as [rdoAcceptAsbestos_TAG],
+       'rdoAcceptAsbestos' AS [rdoAcceptAsbestos_ID],
+       '' AS [rdoAcceptAsbestos_VAL],
+       'Accept Asbestos?' AS [rdoAcceptAsbestos_TAG],
        'true' AS [rdoAcceptAsbestos_VIS],
-       '' as [rdoAcceptAsbestos_HIS],
-       'Accept Asbestos?' as [rdoAcceptAsbestos_DES],
+       '' AS [rdoAcceptAsbestos_HIS],
+       'Accept Asbestos?' AS [rdoAcceptAsbestos_DES],
        '' AS [rdoAcceptAsbestos_COM],
        --
        isnull(
@@ -623,36 +623,12 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
      FROM [LEMIR_Stage].[dbo].[$grdMajorModification] AS [M]
      WHERE [M].[PermitNumber] = [MFI].[MainPermitNumber] FOR XML PATH('grdMajorModification')), '') AS [grdMajorModification],
      --
-       [FACILITY_ID_REF]=CASE
-                           WHEN [MFI].[MainPermitNumber] LIKE '0%'
-                             THEN(SUBSTRING([MFI].[MainPermitNumber], 0, 8))
-                           WHEN [MFI].[MainPermitNumber] LIKE '1%'
-                             THEN(SUBSTRING([MFI].[MainPermitNumber], 0, 8))
-                           WHEN [MFI].[MainPermitNumber] LIKE 'APL %'
-                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                           WHEN [MFI].[MainPermitNumber] LIKE 'APL0%'
-                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                           WHEN [MFI].[MainPermitNumber] LIKE 'APL-%'
-                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                           WHEN [MFI].[MainPermitNumber] LIKE 'APLI%'
-                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                           WHEN [MFI].[MainPermitNumber] LIKE 'APL1%'
-                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                           WHEN [MFI].[MainPermitNumber] LIKE 'B%'
-                             THEN '0'
-                           WHEN [MFI].[MainPermitNumber] LIKE 'CCR%'
-                             THEN '500-'+[MFI].[MainPermitNumber]
-                           WHEN [MFI].[MainPermitNumber] LIKE 'CON%'
-                             THEN '600-'+[MFI].[MainPermitNumber]
-                           WHEN [MFI].[MainPermitNumber] LIKE 'MOD%'
-                             THEN '700-'+[MFI].[MainPermitNumber]
-                           WHEN [MFI].[MainPermitNumber] LIKE 'PCSP%'
-                             THEN '800-'+[MFI].[MainPermitNumber]
-                           ELSE '0'
-                         END
+       [MFI].[MainPermitNumber] AS [FACILITY_ID_REF]
 FROM [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MFI]
      LEFT JOIN [LandDataBase].[dbo].[OperationStatus] AS [OS] ON [MFI].[OperationStatus] = [OS].[OperationStatus]
      LEFT JOIN [LandDataBase].[dbo].[RemainingCapacity] AS [RC] ON [MFI].[MainPermitNumber] = [RC].[PermitNumber]
+     LEFT JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [EI] ON [MFI].[MainPermitNumber] = [EI].[PermitNumber]
+WHERE [EI].[LEMIR_EI_CD] = 'CCR-LF'
 GO
 
 
