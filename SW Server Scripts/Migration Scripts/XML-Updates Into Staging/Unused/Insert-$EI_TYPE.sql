@@ -6,7 +6,7 @@ GO
 --        [LEMIR_EI_CD],
 --        [FACILITY_ID_REF])
 SELECT [MFI].[MainPermitNumber],
-       [MFI].[FacilityName],
+       --[MFI].[FacilityName],
        [LEMIR_EI_RID]=CASE
                     WHEN [MFI].[FacilityType] = 'ACD'
                          AND [MFI].[FacilityTypeDescription] = 'Air Curtain Destructor'
@@ -244,7 +244,7 @@ SELECT [MFI].[MainPermitNumber],
                              WHEN [MFI].[MainPermitNumber] IN('060-082P(DW)', 'APL0085', 'APL 06023', 'APL 0926')
                                THEN 'NoMigrate???'
                              WHEN [MFI].[MainPermitNumber] IN('155-008P(IWT)', '155-028P(IWT)')
-                               THEN 'NoMigrate or Other-D or P???'
+                               THEN 'NoMigrate???'
                              WHEN [MFI].[MainPermitNumber] IN('009-006P', '011-027P', '025-073P', '033-096P', '033-097P', '060-093(P)', '121-019P', '067-038P', '092-023P', '105-015P', '129-013P', 'APL 03103')
                                THEN 'LS'
                              WHEN [MFI].[MainPermitNumber] IN('031-038P')

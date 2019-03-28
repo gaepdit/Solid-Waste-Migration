@@ -29,13 +29,13 @@ SELECT [FM].[PERMIT NUMBER] AS [PERMIT NUMBER],
        --************************ Modify this case statement when all types are clarified *********************************
        [ddlFAType]=CASE
                      WHEN [FM].[TypeInstrument] = 'PB'
-                       THEN NULL
+                       THEN 'Bond'
                      WHEN [FM].[TypeInstrument] = 'Combo'
                        THEN 'Combo'
                      WHEN [FM].[TypeInstrument] = 'n/a'
                        THEN 'Exempt'
                      WHEN [FM].[TypeInstrument] = 'TA'
-                       THEN NULL
+                       THEN 'TF'
                      WHEN [FM].[TypeInstrument] = 'COI'
                        THEN 'COI'
                      WHEN [FM].[TypeInstrument] = 'LOC'
@@ -49,10 +49,10 @@ SELECT [FM].[PERMIT NUMBER] AS [PERMIT NUMBER],
                      WHEN [FM].[TypeInstrument] = 'LGT'
                        THEN 'LGT'
                      WHEN [FM].[TypeInstrument] = 'Combination of Insturments'
-                       THEN 'COI'
+                       THEN 'Combo'
                      WHEN [FM].[TypeInstrument] = 'Surety Bond Performance'
                        THEN 'Bond'
-                     ELSE NULL
+                     ELSE ''
                    END,
        '' AS [txtMechanismNo],
        '' AS [txtCurrentOpenArea],
@@ -65,8 +65,7 @@ SELECT [FM].[PERMIT NUMBER] AS [PERMIT NUMBER],
        [FM].[PERMIT NUMBER] as [FACILITY_ID_REF]
 FROM [LandDataBase].[dbo].[FA MAIN] AS [FM]
 WHERE [FM].[FA_Required] = 1
-ORDER BY 1,
-         2
+ORDER BY 1
 GO
 
 

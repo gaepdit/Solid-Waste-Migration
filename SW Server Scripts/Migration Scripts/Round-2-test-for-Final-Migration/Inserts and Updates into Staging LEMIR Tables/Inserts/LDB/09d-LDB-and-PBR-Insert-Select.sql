@@ -32,7 +32,5 @@ SELECT [FF].[FACILITY_RID] AS [FACILITY_RID],
        [FF].[FACILITY_ID_REF]
 FROM [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF]
      JOIN [LEMIR_Stage].[dbo].[SYS_CONTACT] AS [SC] ON [FF].[FACILITY_ID_REF] = [SC].[FACILITY_ID_REF]
-     JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [SC].[FACILITY_ID_REF] = [UI].[MainPermitNumber]
 WHERE [FF].[CREATED_BY] = @created_by_string
       AND [SC].[CREATED_BY] = @created_by_string
-      AND [UI].[Insert or Update] = 'I'

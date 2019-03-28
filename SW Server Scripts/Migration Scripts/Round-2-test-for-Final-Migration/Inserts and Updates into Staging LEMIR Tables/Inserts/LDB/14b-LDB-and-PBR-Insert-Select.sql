@@ -57,6 +57,5 @@ SELECT [SEPC].[ENV_PROGRAM_CONTACT_RID] AS [ENV_PROGRAM_CONTACT_RID],
        [SC].[FACILITY_ID_REF] AS [FACILITY_ID_REF]
 FROM [LEMIR_Stage].[dbo].[SYS_ENV_PROGRAM_CONTACT] AS [SEPC]
      JOIN [LEMIR_Stage].[dbo].[SYS_CONTACT] AS [SC] ON [SC].[CONTACT_RID] = [SEPC].[CONTACT_RID]
-     JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [SC].[FACILITY_ID_REF] = [UI].[MainPermitNumber]
 WHERE [SEPC].[CREATED_BY] = @created_by_string
- AND [UI].[Insert or Update] = 'I'
+

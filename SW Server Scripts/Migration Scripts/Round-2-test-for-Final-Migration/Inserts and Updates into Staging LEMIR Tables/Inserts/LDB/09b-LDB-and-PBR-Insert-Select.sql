@@ -32,7 +32,6 @@ SELECT [SC].[CONTACT_RID] AS [CONTACT_RID],
        [SC].[FACILITY_ID_REF]
 FROM [LEMIR_Stage].[dbo].[SYS_CONTACT] AS [SC]
      JOIN [LEMIR_Stage].[dbo].[SYS_TELEPHONIC] AS [ST] ON [SC].[FACILITY_ID_REF] = [ST].[FACILITY_ID_REF]
-     JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [SC].[FACILITY_ID_REF] = [UI].[MainPermitNumber]
 WHERE [ST].[CREATED_BY] = @created_by_string
       AND [SC].[CREATED_BY] = @created_by_string
-      AND [UI].[Insert or Update] = 'I'
+ 
