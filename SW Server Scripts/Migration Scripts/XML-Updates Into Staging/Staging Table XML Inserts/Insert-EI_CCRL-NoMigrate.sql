@@ -200,7 +200,7 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        '' AS [txtPermitNumber_COM],
 --
        'ddlEnvInterestStatus' AS [ddlEnvInterestStatus_ID],
-       [OS].[Definition] AS [ddlEnvInterestStatus_VAL],
+       --[OS].[Definition] AS [ddlEnvInterestStatus_VAL],
        [ddlEnvInterestStatus_VAL]=CASE
                                     WHEN [OS].[OperationStatus] = '1'
                                       THEN 'Operating'
