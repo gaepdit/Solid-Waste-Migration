@@ -1,0 +1,345 @@
+﻿<DynamicFormValue>
+	<SolidWaste>
+		<datafield>
+			<id>txtPermitNumber</id>
+			<value>043-003D(LI)</value>
+			<tag>Permit Number</tag>
+			<visible>true</visible>
+			<history>043-003D(LI)|03/17/2019 10:05:08 PM|EPDMIG SW||</history>
+			<description>Permit Number:</description>
+			<comment />
+		</datafield>
+		<datafield>
+			<id>ddlEnvInterestStatus</id>
+			<value>Operating</value>
+			<tag>EI Status</tag>
+			<visible>true</visible>
+			<history>Operating|03/17/2019 10:05:08 PM|EPDMIG SW||</history>
+			<description>EI Status:</description>
+			<comment>EI Status:</comment>
+		</datafield>
+		<datafield>
+			<id>ddlOwnershipType</id>
+			<value />
+			<tag>Ownership Type</tag>
+			<visible>true</visible>
+			<history />
+			<description>Ownership Type:</description>
+			<comment />
+		</datafield>
+		<datafield>
+			<id>txtComment</id>
+			<value>accepts general waste from Plant: paper, wood, plastics, metals, textiles, glass, &amp; other non-putrescible materials. *1/8/20189 Address was updated from original (PLANT PROPERTY-DEPOT ROAD, 31715) using D&amp;O plan sheets and google maps. This site is associated with 043-008D(LI) and 043-010D(LI).</value>
+			<tag>General Comments</tag>
+			<visible>true</visible>
+			<history>accepts general waste from Plant: paper, wood, plastics, metals, textiles, glass, &amp; other non-putrescible materials. *1/8/20189 Address was updated from original (PLANT PROPERTY-DEPOT ROAD, 31715) using D&amp;O plan sheets and google maps. This site is associated with 043-008D(LI) and 043-010D(LI).|03/17/2019 10:05:08 PM|EPDMIG SW||</history>
+			<description>General Comments:</description>
+			<comment />
+		</datafield>
+		<datafield>
+			<id>txtPermittedCapacity</id>
+			<value />
+			<tag>Permitted Capacity (CY)</tag>
+			<visible>true</visible>
+			<history>|03/17/2019 10:05:08 PM|EPDMIG SW||</history>
+			<description>Permitted Capacity (CY):</description>
+			<comment />
+		</datafield>
+		<datafield>
+			<id>txtRemainingCapacity</id>
+			<value />
+			<tag>Remaining Capacity (CY)</tag>
+			<visible>true</visible>
+			<history />
+			<description>Remaining Capacity (CY):</description>
+			<comment />
+		</datafield>
+		<datafield>
+			<id>txtRemainingLife</id>
+			<value />
+			<tag>Remaining Life of EI (Years)</tag>
+			<visible>true</visible>
+			<history />
+			<description>Remaining Life of EI (Years):</description>
+			<comment />
+		</datafield>
+		<datafield>
+			<id>txtTotalAcreage</id>
+			<value />
+			<tag>Total Acreage (acres)</tag>
+			<visible>true</visible>
+			<history />
+			<description>Total Acreage (acres):</description>
+			<comment />
+		</datafield>
+		<datafield>
+			<id>txtConstructedDisposalFootprint</id>
+			<value />
+			<tag>Constructed Disposal Footprint (acres)</tag>
+			<visible>true</visible>
+			<history />
+			<description>Constructed Disposal Footprint (acres):</description>
+			<comment />
+		</datafield>
+		<dataefield>
+			<id>rdoGWInstalled</id>
+			<value>Y</value>
+			<tag>GW Monitoring System Installed</tag>
+			<visible>true</visible>
+			<history>Y|03/17/2019 10:05:08 PM|EPDMIG SW||</history>
+			<description>GW Monitoring System Installed</description>
+			<comment />
+		</dataefield>
+		<datafield>
+			<id>ddlAssessmentMonitoring</id>
+			<value />
+			<tag>Assessment/Detection Monitoring</tag>
+			<visible>true</visible>
+			<history />
+			<description>Assessment/Detection Monitoring</description>
+			<comment />
+		</datafield>
+		<datafield>
+			<id>rdoMethaneInstalled</id>
+			<value>Y</value>
+			<tag>Methane Monitoring System Installed</tag>
+			<visible>true</visible>
+			<history>Y|03/17/2019 10:05:08 PM|EPDMIG SW||</history>
+			<description>Methane Monitoring System Installed:</description>
+			<comment />
+		</datafield>
+		<datafield>
+			<id>ddlMethaneMonitoringFrequency</id>
+			<value />
+			<tag>Current Methane Monitoring Frequency</tag>
+			<visible>true</visible>
+			<history />
+			<description>Current Methane Monitoring Frequency:</description>
+			<comment />
+		</datafield>
+		<datafield>
+			<id>rdoUnderDrainInstalled</id>
+			<value>N</value>
+			<tag>Under Drain System Installed</tag>
+			<visible>true</visible>
+			<history>N|03/17/2019 10:05:08 PM|EPDMIG SW||</history>
+			<description>Under Drain System Installed:</description>
+			<comment />
+		</datafield>
+		<datafield>
+			<id>rdoLFGasInstalled</id>
+			<value>N</value>
+			<tag>LF Gas Collection Installed</tag>
+			<visible>true</visible>
+			<history>N|03/17/2019 10:05:08 PM|EPDMIG SW||</history>
+			<description>LF Gas Collection Installed:</description>
+			<comment />
+		</datafield>
+		<datafield>
+			<id>rdoWasteEnergyOnsite</id>
+			<value>N</value>
+			<tag>Waste to Energy Onsite?</tag>
+			<visible>true</visible>
+			<history>N|03/17/2019 10:05:08 PM|EPDMIG SW||</history>
+			<description>Waste to Energy Onsite?</description>
+			<comment />
+		</datafield>
+		<datafield>
+			<id>txtEnergyProduced</id>
+			<value />
+			<tag>Energy Produced (MWH)</tag>
+			<visible>true</visible>
+			<history />
+			<description>Energy Produced (MWH):</description>
+			<comment />
+		</datafield>
+		<datafield>
+			<id>txtPermitIssueDate</id>
+			<value>12/12/1980</value>
+			<tag>Permit Issued Date</tag>
+			<visible>true</visible>
+			<history>12/12/1980|03/17/2019 10:05:08 PM|EPDMIG SW||</history>
+			<description>Permit Issued Date:</description>
+			<comment />
+		</datafield>
+		<datafield>
+			<id>txtPermitReviewDueDate</id>
+			<value />
+			<tag>Current Permit Review Due Date</tag>
+			<visible>true</visible>
+			<history />
+			<description>Current Permit Review Due Date:</description>
+			<comment />
+		</datafield>
+		<datafield>
+			<id>txtPostClosureCarePeriod</id>
+			<value>30</value>
+			<tag>Post Closure Care Period</tag>
+			<visible>true</visible>
+			<history>30|03/17/2019 10:05:08 PM|EPDMIG SW||</history>
+			<description>Post Closure Care Period:</description>
+			<comment />
+		</datafield>
+		<datafield>
+			<id>txtPostClosureReleaseDate</id>
+			<value />
+			<tag>Post Closure Care Release Date</tag>
+			<visible>true</visible>
+			<history />
+			<description>Post Closure Care Release Date:</description>
+			<comment />
+		</datafield>
+		<datafield>
+			<id>txtWasteDescription</id>
+			<value />
+			<tag>Waste Description</tag>
+			<visible>true</visible>
+			<history />
+			<description>Waste Description:</description>
+			<comment />
+		</datafield>
+		<datafield>
+			<id>rdoAcceptPublicWaste</id>
+			<value>Y</value>
+			<tag>Accept Public Waste?</tag>
+			<visible>true</visible>
+			<history>Y|03/17/2019 10:05:08 PM|EPDMIG SW||</history>
+			<description>Accept Public Waste?</description>
+			<comment />
+		</datafield>
+		<datafield>
+			<id>rdoAcceptCCR</id>
+			<value />
+			<tag>Accept CCR?</tag>
+			<visible>true</visible>
+			<history />
+			<description>Accept CCR?</description>
+			<comment />
+		</datafield>
+		<datafield>
+			<id>rdoAcceptAsbestos</id>
+			<value />
+			<tag>Accept Asbestos?</tag>
+			<visible>true</visible>
+			<history />
+			<description>Accept Asbestos?</description>
+			<comment />
+		</datafield>
+		<grdConstructionDetail>
+			<txtApprovedDate>01/31/2000</txtApprovedDate>
+			<txtPhase />
+			<txtCell />
+		</grdConstructionDetail>
+		<grdConstructionDetail>
+			<txtApprovedDate>12/10/2014</txtApprovedDate>
+			<txtPhase />
+			<txtCell />
+		</grdConstructionDetail>
+		<grdMajorModification>
+			<txtMajorModificationIssuedDate>08/17/2012</txtMajorModificationIssuedDate>
+			<txtMajorModificationPurpose>Transfer of Permit -- Permit transferred to BASF Corporation</txtMajorModificationPurpose>
+		</grdMajorModification>
+		<grdMajorModification>
+			<txtMajorModificationIssuedDate>09/22/1999</txtMajorModificationIssuedDate>
+			<txtMajorModificationPurpose>LF Gas Collection/Control System -- vent trench approved by bem per compliance db - do not know if installed</txtMajorModificationPurpose>
+		</grdMajorModification>
+		<grdFinancialAssurance>
+			<txtFiscalYearEndDate>12/31/2006</txtFiscalYearEndDate>
+			<txtEffectiveStartDate>06/30/2007</txtEffectiveStartDate>
+			<txtEffectiveEndDate>06/30/2008</txtEffectiveEndDate>
+			<ddlFAType>CFT</ddlFAType>
+			<txtMechanismNo />
+			<txtCurrentOpenArea />
+			<txtApprovedOpenArea />
+			<txtClosureAmount>0.00</txtClosureAmount>
+			<txtPostClosureCareAmount>4070039.29</txtPostClosureCareAmount>
+			<txtCorrectiveActionAmount>0.00</txtCorrectiveActionAmount>
+			<txtTotalAssuredCost>0.00</txtTotalAssuredCost>
+			<txtComments />
+		</grdFinancialAssurance>
+		<grdFinancialAssurance>
+			<txtFiscalYearEndDate>12/31/2011</txtFiscalYearEndDate>
+			<txtEffectiveStartDate>04/30/2011</txtEffectiveStartDate>
+			<txtEffectiveEndDate>04/30/2012</txtEffectiveEndDate>
+			<ddlFAType>LOC</ddlFAType>
+			<txtMechanismNo />
+			<txtCurrentOpenArea />
+			<txtApprovedOpenArea />
+			<txtClosureAmount>0.00</txtClosureAmount>
+			<txtPostClosureCareAmount>4168306.32</txtPostClosureCareAmount>
+			<txtCorrectiveActionAmount>0.00</txtCorrectiveActionAmount>
+			<txtTotalAssuredCost>4168306.32</txtTotalAssuredCost>
+			<txtComments>Intesa Sanpaolo LOC 36655</txtComments>
+		</grdFinancialAssurance>
+		<grdFinancialAssurance>
+			<txtFiscalYearEndDate>12/31/2012</txtFiscalYearEndDate>
+			<txtEffectiveStartDate>04/30/2012</txtEffectiveStartDate>
+			<txtEffectiveEndDate>04/30/2013</txtEffectiveEndDate>
+			<ddlFAType>LOC</ddlFAType>
+			<txtMechanismNo />
+			<txtCurrentOpenArea />
+			<txtApprovedOpenArea />
+			<txtClosureAmount>0.00</txtClosureAmount>
+			<txtPostClosureCareAmount>4239339.24</txtPostClosureCareAmount>
+			<txtCorrectiveActionAmount>0.00</txtCorrectiveActionAmount>
+			<txtTotalAssuredCost>4239339.24</txtTotalAssuredCost>
+			<txtComments>Intesa Sanpaolo LOC 36655</txtComments>
+		</grdFinancialAssurance>
+		<grdFinancialAssurance>
+			<txtFiscalYearEndDate>12/31/2013</txtFiscalYearEndDate>
+			<txtEffectiveStartDate>04/30/2013</txtEffectiveStartDate>
+			<txtEffectiveEndDate>04/30/2014</txtEffectiveEndDate>
+			<ddlFAType>LOC</ddlFAType>
+			<txtMechanismNo />
+			<txtCurrentOpenArea />
+			<txtApprovedOpenArea />
+			<txtClosureAmount>0.00</txtClosureAmount>
+			<txtPostClosureCareAmount>4328355.15</txtPostClosureCareAmount>
+			<txtCorrectiveActionAmount>0.00</txtCorrectiveActionAmount>
+			<txtTotalAssuredCost>4328355.15</txtTotalAssuredCost>
+			<txtComments>Intesa Sanpaolo LOC 36655</txtComments>
+		</grdFinancialAssurance>
+		<grdFinancialAssurance>
+			<txtFiscalYearEndDate>12/31/2014</txtFiscalYearEndDate>
+			<txtEffectiveStartDate>04/30/2014</txtEffectiveStartDate>
+			<txtEffectiveEndDate>04/30/2015</txtEffectiveEndDate>
+			<ddlFAType>LOC</ddlFAType>
+			<txtMechanismNo />
+			<txtCurrentOpenArea />
+			<txtApprovedOpenArea />
+			<txtClosureAmount>0.00</txtClosureAmount>
+			<txtPostClosureCareAmount>4410429.91</txtPostClosureCareAmount>
+			<txtCorrectiveActionAmount>0.00</txtCorrectiveActionAmount>
+			<txtTotalAssuredCost>4410429.91</txtTotalAssuredCost>
+			<txtComments>Intesa Sanpaolo LOC 36655</txtComments>
+		</grdFinancialAssurance>
+		<grdFinancialAssurance>
+			<txtFiscalYearEndDate>12/31/2015</txtFiscalYearEndDate>
+			<txtEffectiveStartDate>04/30/2015</txtEffectiveStartDate>
+			<txtEffectiveEndDate>04/30/2016</txtEffectiveEndDate>
+			<ddlFAType>LOC</ddlFAType>
+			<txtMechanismNo />
+			<txtCurrentOpenArea />
+			<txtApprovedOpenArea />
+			<txtClosureAmount>0.00</txtClosureAmount>
+			<txtPostClosureCareAmount>4463394.07</txtPostClosureCareAmount>
+			<txtCorrectiveActionAmount>0.00</txtCorrectiveActionAmount>
+			<txtTotalAssuredCost>4463394.07</txtTotalAssuredCost>
+			<txtComments>Intesa Sanpaolo LOC 36655</txtComments>
+		</grdFinancialAssurance>
+		<grdFinancialAssurance>
+			<txtFiscalYearEndDate>12/31/2015</txtFiscalYearEndDate>
+			<txtEffectiveStartDate>04/30/2016</txtEffectiveStartDate>
+			<txtEffectiveEndDate>04/30/2017</txtEffectiveEndDate>
+			<ddlFAType>LOC</ddlFAType>
+			<txtMechanismNo />
+			<txtCurrentOpenArea />
+			<txtApprovedOpenArea />
+			<txtClosureAmount>1236755.46</txtClosureAmount>
+			<txtPostClosureCareAmount>5230074.71</txtPostClosureCareAmount>
+			<txtCorrectiveActionAmount>0.00</txtCorrectiveActionAmount>
+			<txtTotalAssuredCost>6466830.17</txtTotalAssuredCost>
+			<txtComments />
+		</grdFinancialAssurance>
+	</SolidWaste>
+</DynamicFormValue>

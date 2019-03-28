@@ -28,24 +28,24 @@ IF 'EPDMIG SW' =
     SET @rid_counter_start=@rid_counter_start + 1000;
   END
 --
-INSERT INTO [LEMIR_Stage].[GOV].[SUB_PERMIT]
-       ([PERMIT_RID],
-        [PERMIT_NUMBER],
-        [SYS_FACILITY_ID],
-        [FACILITY_NAME],
-        [ISSUED_DTTM],
---        [EFFECTIVE_DTTM],
-        --[EXPIRATION_DTTM],
-        [STATUS_CD],
-        [COMMENTS],
-        [PERMIT_STATUS_RID],
-        [PERMIT_TYPE_RID],
---        [APPLICATION_RID],
-        [CREATED_DTTM],
-        [CREATED_BY],
-        [UPDATED_DTTM],
-        [UPDATED_BY],
-        [FACILITY_ID_REF])
+--INSERT INTO [LEMIR_Stage].[GOV].[SUB_PERMIT]
+--       ([PERMIT_RID],
+--        [PERMIT_NUMBER],
+--        [SYS_FACILITY_ID],
+--        [FACILITY_NAME],
+--        [ISSUED_DTTM],
+----        [EFFECTIVE_DTTM],
+--        --[EXPIRATION_DTTM],
+--        [STATUS_CD],
+--        [COMMENTS],
+--        [PERMIT_STATUS_RID],
+--        [PERMIT_TYPE_RID],
+----        [APPLICATION_RID],
+--        [CREATED_DTTM],
+--        [CREATED_BY],
+--        [UPDATED_DTTM],
+--        [UPDATED_BY],
+--        [FACILITY_ID_REF])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [PERMIT_RID],
        [MF].[PermitNumber] AS [PERMIT_NUMBER],
@@ -64,29 +64,6 @@ SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
        @created_by_string AS [UPDATED_BY],
        [FF].[FACILITY_ID_REF] AS [FACILITY_ID_REF]
 FROM [PermitByRule].[dbo].[PBR_Main_Facility] AS [MF]
-     JOIN [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF] ON [FF].[FACILITY_ID_REF] = CASE
-                                                                                   WHEN substring([MF].[PermitNumber], 5, 1) = '0'
-                                                                                     THEN '2'+substring([MF].[PermitNumber], 6, 20)
-                                                                                   WHEN substring([MF].[PermitNumber], 5, 1) = '1'
-                                                                                     THEN '3'+substring([MF].[PermitNumber], 6, 20)
-                                                                                   ELSE CASE
-                                                                                          WHEN substring([MF].[PermitNumber], 4, 1) = '0'
-                                                                                            THEN '2'+substring([MF].[PermitNumber], 5, 20)
-                                                                                          WHEN substring([MF].[PermitNumber], 4, 1) = '1'
-                                                                                            THEN '3'+substring([MF].[PermitNumber], 5, 20)
-                                                                                          ELSE '2'+substring([MF].[PermitNumber], 7, 20)
-                                                                                        END
-                                                                                 END
-     --LEFT JOIN [LandDatabase].[dbo].[OperationStatus] AS [LOS] ON [mfi].[OperationStatus] = [LOS].[OperationStatus]
-     --LEFT JOIN [LandDatabase].[dbo].[GIS] AS [GIS] ON [mfi].[MainPermitNumber] = [gis].[PermitNumber]
+     JOIN [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF] ON [FF].[FACILITY_ID_REF] = [MF].[PermitNumber]
 WHERE [FF].[CREATED_BY] = 'EPDMIG SW'
 
-
---updating submission_RID in SUB_PERMIT
-
---Update P
---set P.SUBMISSION_RID = S.SUbmission_RID
---from [GovOnline_LEMIR].[GOV].[SUB_Permit] as P 
---inner JOIN [GovOnline_LEMIR].[GOV].[SUB_SUBMISSION] AS S
---ON S.SYS_FACILITY_ID = P.SYS_FACILITY_ID and P.Permit_Number = S.EXTERNAL_ID
---where P.Created_by = 'EPDMIG UST'
