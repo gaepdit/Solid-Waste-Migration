@@ -162,6 +162,14 @@ CREATE TABLE [dbo].[EI_BIO]
              [rdoAcceptPublicWaste_HIS]          VARCHAR(MAX) NULL,
              [rdoAcceptPublicWaste_DES]          VARCHAR(100) NULL,
              [rdoAcceptPublicWaste_COM]          VARCHAR(200) NULL,
+        --DataField
+             [ucontrol_FinAssuranceType_ID]      VARCHAR(100) NULL,
+             [ucontrol_FinAssuranceType_VAL]     VARCHAR(MAX) NULL,
+             [ucontrol_FinAssuranceType_TAG]     VARCHAR(100) NULL,
+             [ucontrol_FinAssuranceType_VIS]     VARCHAR(100) NULL,
+             [ucontrol_FinAssuranceType_HIS]     VARCHAR(MAX) NULL,
+             [ucontrol_FinAssuranceType_DES]     VARCHAR(100) NULL,
+             [ucontrol_FinAssuranceType_COM]     VARCHAR(MAX) NULL,
       --Closure XML
              [grdClosure]                        XML NULL,
       --Construction Detail XML

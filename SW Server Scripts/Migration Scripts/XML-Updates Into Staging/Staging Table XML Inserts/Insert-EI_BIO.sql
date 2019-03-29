@@ -6,7 +6,6 @@
 --
 USE [LEMIR_Stage]
 GO
-
 --INSERT INTO [dbo].[EI_BIO]
 --       ([PermitNumber],
 --        [txtPermitNumber_ID],
@@ -128,6 +127,13 @@ GO
 --        [rdoAcceptPublicWaste_HIS],
 --        [rdoAcceptPublicWaste_DES],
 --        [rdoAcceptPublicWaste_COM],
+--        [ucontrol_FinAssuranceType_ID],
+--        [ucontrol_FinAssuranceType_VAL],
+--        [ucontrol_FinAssuranceType_TAG],
+--        [ucontrol_FinAssuranceType_VIS],
+--        [ucontrol_FinAssuranceType_HIS],
+--        [ucontrol_FinAssuranceType_DES],
+--        [ucontrol_FinAssuranceType_COM],
 --        [grdClosure],
 --        [grdConstructionDetail],
 --        [grdMajorModification],
@@ -464,6 +470,26 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
         END)+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||' AS [rdoAcceptPublicWaste_HIS],
        'Accept Public Waste?' AS [rdoAcceptPublicWaste_DES],
        '' AS [rdoAcceptPublicWaste_COM],
+       --
+       'ucontrol_FinAssuranceType' AS [ucontrol_FinAssuranceType_ID],
+       iif(convert(VARCHAR(MAX),
+    (SELECT count([PermitNumber])
+     FROM [LEMIR_Stage].[dbo].[$grdFinancialAssurance] AS [F]
+     WHERE [F].[PermitNumber] = [MFI].[MainPermitNumber])) = '0', '', convert(VARCHAR(MAX),
+    (SELECT count([PermitNumber])
+     FROM [LEMIR_Stage].[dbo].[$grdFinancialAssurance] AS [F]
+     WHERE [F].[PermitNumber] = [MFI].[MainPermitNumber]))) AS [ucontrol_FinAssuranceType_VAL],
+       '' AS [ucontrol_FinAssuranceType_TAG],
+       'true' AS [ucontrol_FinAssuranceType_VIS],
+       iif(convert(VARCHAR(MAX),
+    (SELECT count([PermitNumber])
+     FROM [LEMIR_Stage].[dbo].[$grdFinancialAssurance] AS [F]
+     WHERE [F].[PermitNumber] = [MFI].[MainPermitNumber])) = '0', '', convert(VARCHAR(MAX),
+    (SELECT count([PermitNumber])
+     FROM [LEMIR_Stage].[dbo].[$grdFinancialAssurance] AS [F]
+     WHERE [F].[PermitNumber] = [MFI].[MainPermitNumber]))+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||') AS [ucontrol_FinAssuranceType_HIS],
+       '' AS [ucontrol_FinAssuranceType_DES],
+       '' AS [ucontrol_FinAssuranceType_COM],
        --
        isnull(
     (SELECT DISTINCT

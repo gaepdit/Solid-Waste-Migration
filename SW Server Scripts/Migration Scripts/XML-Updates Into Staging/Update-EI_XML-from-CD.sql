@@ -14,7 +14,7 @@ UPDATE [dbo].[EI_TYPE]
             [C].[txtPermitNumber_COM] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_CD] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*],
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
      --[ddlEnvInterestStatus_ID]
     (SELECT DISTINCT
             [C].[ddlEnvInterestStatus_ID] AS [id],
@@ -26,7 +26,7 @@ UPDATE [dbo].[EI_TYPE]
             [C].[ddlEnvInterestStatus_DES] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_CD] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*],
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
      --[ddlOwnershipType_ID]
     (SELECT DISTINCT
             [C].[ddlOwnershipType_ID] AS [id],
@@ -38,7 +38,7 @@ UPDATE [dbo].[EI_TYPE]
             [C].[ddlOwnershipType_COM] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_CD] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*],
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
      --[txtComment_ID]
     (SELECT DISTINCT
             [C].[txtComment_ID] AS [id],
@@ -50,7 +50,7 @@ UPDATE [dbo].[EI_TYPE]
             [C].[txtComment_COM] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_CD] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*],
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
      --[txtPermittedCapacity_ID]
     (SELECT DISTINCT
             [C].[txtPermittedCapacity_ID] AS [id],
@@ -62,7 +62,7 @@ UPDATE [dbo].[EI_TYPE]
             [C].[txtPermittedCapacity_COM] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_CD] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*],
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
      --[txtRemainingCapacity_ID]
     (SELECT DISTINCT
             [C].[txtRemainingCapacity_ID] AS [id],
@@ -74,7 +74,7 @@ UPDATE [dbo].[EI_TYPE]
             [C].[txtRemainingCapacity_COM] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_CD] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*],
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
      --[txtRemainingLife_ID]
     (SELECT DISTINCT
             [C].[txtRemainingLife_ID] AS [id],
@@ -86,7 +86,7 @@ UPDATE [dbo].[EI_TYPE]
             [C].[txtRemainingLife_COM] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_CD] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*],
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
      --[txtTotalAcreage_ID]
     (SELECT DISTINCT
             [C].[txtTotalAcreage_ID] AS [id],
@@ -98,7 +98,7 @@ UPDATE [dbo].[EI_TYPE]
             [C].[txtTotalAcreage_COM] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_CD] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*],
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
      --[txtConstructedDisposalFootprint_ID]
      (SELECT DISTINCT
             [C].[txtConstructedDisposalFootprint_ID] AS [id],
@@ -110,7 +110,7 @@ UPDATE [dbo].[EI_TYPE]
             [C].[txtConstructedDisposalFootprint_COM] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_CD] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*],
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
      --[rdoGWInstalled_ID]
      (SELECT DISTINCT
             [C].[rdoGWInstalled_ID] AS [id],
@@ -122,7 +122,7 @@ UPDATE [dbo].[EI_TYPE]
             [C].[rdoGWInstalled_COM] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_CD] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataefield'), TYPE) AS [*],
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
      --[ddlAssessmentMonitoring_ID]
      (SELECT DISTINCT
             [C].[ddlAssessmentMonitoring_ID] AS [id],
@@ -134,7 +134,7 @@ UPDATE [dbo].[EI_TYPE]
             [C].[ddlAssessmentMonitoring_COM] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_CD] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*],
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
      --[rdoMethaneInstalled_ID]
      (SELECT DISTINCT
             [C].[rdoMethaneInstalled_ID] AS [id],
@@ -146,7 +146,7 @@ UPDATE [dbo].[EI_TYPE]
             [C].[rdoMethaneInstalled_COM] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_CD] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*],
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
      --[ddlMethaneMonitoringFrequency_ID]
      (SELECT DISTINCT
             [C].[ddlMethaneMonitoringFrequency_ID] AS [id],
@@ -158,7 +158,7 @@ UPDATE [dbo].[EI_TYPE]
             [C].[ddlMethaneMonitoringFrequency_COM] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_CD] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*],
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
      --[rdoUnderDrainInstalled_ID]
      (SELECT DISTINCT
             [C].[rdoUnderDrainInstalled_ID] AS [id],
@@ -170,7 +170,7 @@ UPDATE [dbo].[EI_TYPE]
             [C].[rdoUnderDrainInstalled_COM] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_CD] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*],
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
      --[rdoLFGasInstalled_ID]
      (SELECT DISTINCT
             [C].[rdoLFGasInstalled_ID] AS [id],
@@ -182,7 +182,7 @@ UPDATE [dbo].[EI_TYPE]
             [C].[rdoLFGasInstalled_COM] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_CD] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*],
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
      --[rdoWasteEnergyOnsite_ID]
      (SELECT DISTINCT
             [C].[rdoWasteEnergyOnsite_ID] AS [id],
@@ -194,7 +194,7 @@ UPDATE [dbo].[EI_TYPE]
             [C].[rdoWasteEnergyOnsite_COM] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_CD] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*],
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
      --[txtEnergyProduced_ID]
      (SELECT DISTINCT
             [C].[txtEnergyProduced_ID] AS [id],
@@ -206,7 +206,7 @@ UPDATE [dbo].[EI_TYPE]
             [C].[txtEnergyProduced_COM] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_CD] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*],
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
      --[txtPermitIssueDate_ID]
      (SELECT DISTINCT
             [C].[txtPermitIssueDate_ID] AS [id],
@@ -218,7 +218,7 @@ UPDATE [dbo].[EI_TYPE]
             [C].[txtPermitIssueDate_COM] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_CD] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*],
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
      --[txtPermitReviewDueDate_ID]
      (SELECT DISTINCT
             [C].[txtPermitReviewDueDate_ID] AS [id],
@@ -230,7 +230,7 @@ UPDATE [dbo].[EI_TYPE]
             [C].[txtPermitReviewDueDate_COM] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_CD] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*],
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
      --[txtPostClosureCarePeriod_ID]
      (SELECT DISTINCT
             [C].[txtPostClosureCarePeriod_ID] AS [id],
@@ -242,7 +242,7 @@ UPDATE [dbo].[EI_TYPE]
             [C].[txtPostClosureCarePeriod_COM] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_CD] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*],
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
      --[txtPostClosureReleaseDate_ID]
      (SELECT DISTINCT
             [C].[txtPostClosureReleaseDate_ID] AS [id],
@@ -254,7 +254,7 @@ UPDATE [dbo].[EI_TYPE]
             [C].[txtPostClosureReleaseDate_COM] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_CD] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*],
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
      --[rdoAcceptPublicWaste_ID]
      (SELECT DISTINCT
             [C].[rdoAcceptPublicWaste_ID] AS [id],
@@ -266,7 +266,7 @@ UPDATE [dbo].[EI_TYPE]
             [C].[rdoAcceptPublicWaste_COM] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_CD] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*],
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
      --[rdoAcceptCCR_ID]
      (SELECT DISTINCT
             [C].[rdoAcceptCCR_ID] AS [id],
@@ -278,7 +278,7 @@ UPDATE [dbo].[EI_TYPE]
             [C].[rdoAcceptCCR_COM] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_CD] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*],
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
      --[rdoAcceptAsbestos_ID]
      (SELECT DISTINCT
             [C].[rdoAcceptAsbestos_ID] AS [id],
@@ -290,7 +290,19 @@ UPDATE [dbo].[EI_TYPE]
             [C].[rdoAcceptAsbestos_COM] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_CD] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*],
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
+      --[ucontrol_FinAssuranceType_ID]
+    (SELECT DISTINCT
+            [B].[ucontrol_FinAssuranceType_ID] AS [id],
+            [B].[ucontrol_FinAssuranceType_VAL] AS [value],
+            [B].[ucontrol_FinAssuranceType_TAG] AS [tag],
+            [B].[ucontrol_FinAssuranceType_VIS] AS [visible],
+            [B].[ucontrol_FinAssuranceType_HIS] AS [history],
+            [B].[ucontrol_FinAssuranceType_DES] AS [description],
+            [B].[ucontrol_FinAssuranceType_COM] AS [comment]
+     FROM [LEMIR_Stage].[dbo].[EI_CD] AS [B]
+          INNER JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [I] ON [B].[PermitNumber] = [I].[PermitNumber]
+     WHERE [B].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
       --[dbo].[$grdClosure]
     (SELECT DISTINCT
             convert(VARCHAR(50), [C].[txtAcceptingWasteCeasedDate], 101) AS [txtAcceptingWasteCeasedDate],
