@@ -1,159 +1,166 @@
 
 /******************************************************
 *** Insert into LEMIR_Stage values for EI "LSF" XML ***
-*******************************************************/
+******************************************************/
 
 --
 USE [LEMIR_Stage]
 GO
 --
-INSERT INTO [dbo].[EI_LSF]
-           ([PermitNumber]
-           ,[txtPermitNumber_ID]
-           ,[txtPermitNumber_VAL]
-           ,[txtPermitNumber_TAG]
-           ,[txtPermitNumber_VIS]
-           ,[txtPermitNumber_HIS]
-           ,[txtPermitNumber_DES]
-           ,[txtPermitNumber_COM]
-           ,[ddlEnvInterestStatus_ID]
-           ,[ddlEnvInterestStatus_VAL]
-           ,[ddlEnvInterestStatus_TAG]
-           ,[ddlEnvInterestStatus_VIS]
-           ,[ddlEnvInterestStatus_HIS]
-           ,[ddlEnvInterestStatus_DES]
-           ,[ddlEnvInterestStatus_COM]
-           ,[ddlOwnershipType_ID]
-           ,[ddlOwnershipType_VAL]
-           ,[ddlOwnershipType_TAG]
-           ,[ddlOwnershipType_VIS]
-           ,[ddlOwnershipType_HIS]
-           ,[ddlOwnershipType_DES]
-           ,[ddlOwnershipType_COM]
-           ,[txtComment_ID]
-           ,[txtComment_VAL]
-           ,[txtComment_TAG]
-           ,[txtComment_VIS]
-           ,[txtComment_HIS]
-           ,[txtComment_DES]
-           ,[txtComment_COM]
-           ,[txtPermittedCapacity_ID]
-           ,[txtPermittedCapacity_VAL]
-           ,[txtPermittedCapacity_TAG]
-           ,[txtPermittedCapacity_VIS]
-           ,[txtPermittedCapacity_HIS]
-           ,[txtPermittedCapacity_DES]
-           ,[txtPermittedCapacity_COM]
-           ,[txtSolidificationPitDesc_ID]
-           ,[txtSolidificationPitDesc_VAL]
-           ,[txtSolidificationPitDesc_TAG]
-           ,[txtSolidificationPitDesc_VIS]
-           ,[txtSolidificationPitDesc_HIS]
-           ,[txtSolidificationPitDesc_DES]
-           ,[txtSolidificationPitDesc_COM]
-           ,[rdoLeakDetectionSystem_ID]
-           ,[rdoLeakDetectionSystem_VAL]
-           ,[rdoLeakDetectionSystem_TAG]
-           ,[rdoLeakDetectionSystem_VIS]
-           ,[rdoLeakDetectionSystem_HIS]
-           ,[rdoLeakDetectionSystem_DES]
-           ,[rdoLeakDetectionSystem_COM]
-           ,[rdoGWInstalled_ID]
-           ,[rdoGWInstalled_VAL]
-           ,[rdoGWInstalled_TAG]
-           ,[rdoGWInstalled_VIS]
-           ,[rdoGWInstalled_HIS]
-           ,[rdoGWInstalled_DES]
-           ,[rdoGWInstalled_COM]
-           ,[ddlAssessmentMonitoring_ID]
-           ,[ddlAssessmentMonitoring_VAL]
-           ,[ddlAssessmentMonitoring_TAG]
-           ,[ddlAssessmentMonitoring_VIS]
-           ,[ddlAssessmentMonitoring_HIS]
-           ,[ddlAssessmentMonitoring_DES]
-           ,[ddlAssessmentMonitoring_COM]
-           ,[rdoMethaneInstalled_ID]
-           ,[rdoMethaneInstalled_VAL]
-           ,[rdoMethaneInstalled_TAG]
-           ,[rdoMethaneInstalled_VIS]
-           ,[rdoMethaneInstalled_HIS]
-           ,[rdoMethaneInstalled_DES]
-           ,[rdoMethaneInstalled_COM]
-           ,[ddlMethaneMonitoringFrequency_ID]
-           ,[ddlMethaneMonitoringFrequency_VAL]
-           ,[ddlMethaneMonitoringFrequency_TAG]
-           ,[ddlMethaneMonitoringFrequency_VIS]
-           ,[ddlMethaneMonitoringFrequency_HIS]
-           ,[ddlMethaneMonitoringFrequency_DES]
-           ,[ddlMethaneMonitoringFrequency_COM]
-           ,[rdoUnderDrainInstalled_ID]
-           ,[rdoUnderDrainInstalled_VAL]
-           ,[rdoUnderDrainInstalled_TAG]
-           ,[rdoUnderDrainInstalled_VIS]
-           ,[rdoUnderDrainInstalled_HIS]
-           ,[rdoUnderDrainInstalled_DES]
-           ,[rdoUnderDrainInstalled_COM]
-           ,[rdoLFGasInstalled_ID]
-           ,[rdoLFGasInstalled_VAL]
-           ,[rdoLFGasInstalled_TAG]
-           ,[rdoLFGasInstalled_VIS]
-           ,[rdoLFGasInstalled_HIS]
-           ,[rdoLFGasInstalled_DES]
-           ,[rdoLFGasInstalled_COM]
-           ,[rdoWasteEnergyOnsite_ID]
-           ,[rdoWasteEnergyOnsite_VAL]
-           ,[rdoWasteEnergyOnsite_TAG]
-           ,[rdoWasteEnergyOnsite_VIS]
-           ,[rdoWasteEnergyOnsite_HIS]
-           ,[rdoWasteEnergyOnsite_DES]
-           ,[rdoWasteEnergyOnsite_COM]
-           ,[txtEnergyProduced_ID]
-           ,[txtEnergyProduced_VAL]
-           ,[txtEnergyProduced_TAG]
-           ,[txtEnergyProduced_VIS]
-           ,[txtEnergyProduced_HIS]
-           ,[txtEnergyProduced_DES]
-           ,[txtEnergyProduced_COM]
-           ,[txtPermitIssueDate_ID]
-           ,[txtPermitIssueDate_VAL]
-           ,[txtPermitIssueDate_TAG]
-           ,[txtPermitIssueDate_VIS]
-           ,[txtPermitIssueDate_HIS]
-           ,[txtPermitIssueDate_DES]
-           ,[txtPermitIssueDate_COM]
-           ,[txtPermitReviewDueDate_ID]
-           ,[txtPermitReviewDueDate_VAL]
-           ,[txtPermitReviewDueDate_TAG]
-           ,[txtPermitReviewDueDate_VIS]
-           ,[txtPermitReviewDueDate_HIS]
-           ,[txtPermitReviewDueDate_DES]
-           ,[txtPermitReviewDueDate_COM]
-           ,[txtWasteDescription_ID]
-           ,[txtWasteDescription_VAL]
-           ,[txtWasteDescription_TAG]
-           ,[txtWasteDescription_VIS]
-           ,[txtWasteDescription_HIS]
-           ,[txtWasteDescription_DES]
-           ,[txtWasteDescription_COM]
-           ,[rdoAcceptPublicWaste_ID]
-           ,[rdoAcceptPublicWaste_VAL]
-           ,[rdoAcceptPublicWaste_TAG]
-           ,[rdoAcceptPublicWaste_VIS]
-           ,[rdoAcceptPublicWaste_HIS]
-           ,[rdoAcceptPublicWaste_DES]
-           ,[rdoAcceptPublicWaste_COM]
-           ,[rdoAcceptCCR_ID]
-           ,[rdoAcceptCCR_VAL]
-           ,[rdoAcceptCCR_TAG]
-           ,[rdoAcceptCCR_VIS]
-           ,[rdoAcceptCCR_HIS]
-           ,[rdoAcceptCCR_DES]
-           ,[rdoAcceptCCR_COM]
-           ,[grdClosure]
-           ,[grdConstructionDetail]
-           ,[grdMajorModification]
-           ,[grdFinancialAssurance]
-           ,[FACILITY_ID_REF])
+--INSERT INTO [dbo].[EI_LSF]
+--       ([PermitNumber],
+--        [txtPermitNumber_ID],
+--        [txtPermitNumber_VAL],
+--        [txtPermitNumber_TAG],
+--        [txtPermitNumber_VIS],
+--        [txtPermitNumber_HIS],
+--        [txtPermitNumber_DES],
+--        [txtPermitNumber_COM],
+--        [ddlEnvInterestStatus_ID],
+--        [ddlEnvInterestStatus_VAL],
+--        [ddlEnvInterestStatus_TAG],
+--        [ddlEnvInterestStatus_VIS],
+--        [ddlEnvInterestStatus_HIS],
+--        [ddlEnvInterestStatus_DES],
+--        [ddlEnvInterestStatus_COM],
+--        [ddlOwnershipType_ID],
+--        [ddlOwnershipType_VAL],
+--        [ddlOwnershipType_TAG],
+--        [ddlOwnershipType_VIS],
+--        [ddlOwnershipType_HIS],
+--        [ddlOwnershipType_DES],
+--        [ddlOwnershipType_COM],
+--        [txtComment_ID],
+--        [txtComment_VAL],
+--        [txtComment_TAG],
+--        [txtComment_VIS],
+--        [txtComment_HIS],
+--        [txtComment_DES],
+--        [txtComment_COM],
+--        [txtPermittedCapacity_ID],
+--        [txtPermittedCapacity_VAL],
+--        [txtPermittedCapacity_TAG],
+--        [txtPermittedCapacity_VIS],
+--        [txtPermittedCapacity_HIS],
+--        [txtPermittedCapacity_DES],
+--        [txtPermittedCapacity_COM],
+--        [txtSolidificationPitDesc_ID],
+--        [txtSolidificationPitDesc_VAL],
+--        [txtSolidificationPitDesc_TAG],
+--        [txtSolidificationPitDesc_VIS],
+--        [txtSolidificationPitDesc_HIS],
+--        [txtSolidificationPitDesc_DES],
+--        [txtSolidificationPitDesc_COM],
+--        [rdoLeakDetectionSystem_ID],
+--        [rdoLeakDetectionSystem_VAL],
+--        [rdoLeakDetectionSystem_TAG],
+--        [rdoLeakDetectionSystem_VIS],
+--        [rdoLeakDetectionSystem_HIS],
+--        [rdoLeakDetectionSystem_DES],
+--        [rdoLeakDetectionSystem_COM],
+--        [rdoGWInstalled_ID],
+--        [rdoGWInstalled_VAL],
+--        [rdoGWInstalled_TAG],
+--        [rdoGWInstalled_VIS],
+--        [rdoGWInstalled_HIS],
+--        [rdoGWInstalled_DES],
+--        [rdoGWInstalled_COM],
+--        [ddlAssessmentMonitoring_ID],
+--        [ddlAssessmentMonitoring_VAL],
+--        [ddlAssessmentMonitoring_TAG],
+--        [ddlAssessmentMonitoring_VIS],
+--        [ddlAssessmentMonitoring_HIS],
+--        [ddlAssessmentMonitoring_DES],
+--        [ddlAssessmentMonitoring_COM],
+--        [rdoMethaneInstalled_ID],
+--        [rdoMethaneInstalled_VAL],
+--        [rdoMethaneInstalled_TAG],
+--        [rdoMethaneInstalled_VIS],
+--        [rdoMethaneInstalled_HIS],
+--        [rdoMethaneInstalled_DES],
+--        [rdoMethaneInstalled_COM],
+--        [ddlMethaneMonitoringFrequency_ID],
+--        [ddlMethaneMonitoringFrequency_VAL],
+--        [ddlMethaneMonitoringFrequency_TAG],
+--        [ddlMethaneMonitoringFrequency_VIS],
+--        [ddlMethaneMonitoringFrequency_HIS],
+--        [ddlMethaneMonitoringFrequency_DES],
+--        [ddlMethaneMonitoringFrequency_COM],
+--        [rdoUnderDrainInstalled_ID],
+--        [rdoUnderDrainInstalled_VAL],
+--        [rdoUnderDrainInstalled_TAG],
+--        [rdoUnderDrainInstalled_VIS],
+--        [rdoUnderDrainInstalled_HIS],
+--        [rdoUnderDrainInstalled_DES],
+--        [rdoUnderDrainInstalled_COM],
+--        [rdoLFGasInstalled_ID],
+--        [rdoLFGasInstalled_VAL],
+--        [rdoLFGasInstalled_TAG],
+--        [rdoLFGasInstalled_VIS],
+--        [rdoLFGasInstalled_HIS],
+--        [rdoLFGasInstalled_DES],
+--        [rdoLFGasInstalled_COM],
+--        [rdoWasteEnergyOnsite_ID],
+--        [rdoWasteEnergyOnsite_VAL],
+--        [rdoWasteEnergyOnsite_TAG],
+--        [rdoWasteEnergyOnsite_VIS],
+--        [rdoWasteEnergyOnsite_HIS],
+--        [rdoWasteEnergyOnsite_DES],
+--        [rdoWasteEnergyOnsite_COM],
+--        [txtEnergyProduced_ID],
+--        [txtEnergyProduced_VAL],
+--        [txtEnergyProduced_TAG],
+--        [txtEnergyProduced_VIS],
+--        [txtEnergyProduced_HIS],
+--        [txtEnergyProduced_DES],
+--        [txtEnergyProduced_COM],
+--        [txtPermitIssueDate_ID],
+--        [txtPermitIssueDate_VAL],
+--        [txtPermitIssueDate_TAG],
+--        [txtPermitIssueDate_VIS],
+--        [txtPermitIssueDate_HIS],
+--        [txtPermitIssueDate_DES],
+--        [txtPermitIssueDate_COM],
+--        [txtPermitReviewDueDate_ID],
+--        [txtPermitReviewDueDate_VAL],
+--        [txtPermitReviewDueDate_TAG],
+--        [txtPermitReviewDueDate_VIS],
+--        [txtPermitReviewDueDate_HIS],
+--        [txtPermitReviewDueDate_DES],
+--        [txtPermitReviewDueDate_COM],
+--        [txtWasteDescription_ID],
+--        [txtWasteDescription_VAL],
+--        [txtWasteDescription_TAG],
+--        [txtWasteDescription_VIS],
+--        [txtWasteDescription_HIS],
+--        [txtWasteDescription_DES],
+--        [txtWasteDescription_COM],
+--        [rdoAcceptPublicWaste_ID],
+--        [rdoAcceptPublicWaste_VAL],
+--        [rdoAcceptPublicWaste_TAG],
+--        [rdoAcceptPublicWaste_VIS],
+--        [rdoAcceptPublicWaste_HIS],
+--        [rdoAcceptPublicWaste_DES],
+--        [rdoAcceptPublicWaste_COM],
+--        [rdoAcceptCCR_ID],
+--        [rdoAcceptCCR_VAL],
+--        [rdoAcceptCCR_TAG],
+--        [rdoAcceptCCR_VIS],
+--        [rdoAcceptCCR_HIS],
+--        [rdoAcceptCCR_DES],
+--        [rdoAcceptCCR_COM],
+--        [ucontrol_FinAssuranceType_ID],
+--        [ucontrol_FinAssuranceType_VAL],
+--        [ucontrol_FinAssuranceType_TAG],
+--        [ucontrol_FinAssuranceType_VIS],
+--        [ucontrol_FinAssuranceType_HIS],
+--        [ucontrol_FinAssuranceType_DES],
+--        [ucontrol_FinAssuranceType_COM],
+--        [grdClosure],
+--        [grdConstructionDetail],
+--        [grdMajorModification],
+--        [grdFinancialAssurance],
+--        [FACILITY_ID_REF])
 SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        --
        'txtPermitNumber' AS [txtPermitNumber_ID],
@@ -299,7 +306,7 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        'General Comments:' AS [txtComment_DES],
        '' AS [txtComment_COM],
        --
-      'txtPermittedCapacity' AS [txtPermittedCapacity_ID],
+       'txtPermittedCapacity' AS [txtPermittedCapacity_ID],
        isnull(str([MFI].[PermittedCapacity(CY)], 20, 2), '') AS [txtPermittedCapacity_VAL],
        'Permitted Capacity (CY)' AS [txtPermittedCapacity_TAG],
        'true' AS [txtPermittedCapacity_VIS],
@@ -307,21 +314,21 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        'Permitted Capacity (CY):' AS [txtPermittedCapacity_DES],
        '' AS [txtPermittedCapacity_COM],
       --
-      'txtSolidificationPitDesc' AS[txtSolidificationPitDesc_ID],
-      '' as [txtSolidificationPitDesc_VAL],
-      'Description of Solidification Pit' AS [txtSolidificationPitDesc_TAG],
-      'true' AS [txtSolidificationPitDesc_VIS],
-      '' AS [txtSolidificationPitDesc_HIS],
-      'Description of Solidification Pit:' AS [txtSolidificationPitDesc_DES],
-      '' AS [txtSolidificationPitDesc_COM],
+       'txtSolidificationPitDesc' AS [txtSolidificationPitDesc_ID],
+       '' AS [txtSolidificationPitDesc_VAL],
+       'Description of Solidification Pit' AS [txtSolidificationPitDesc_TAG],
+       'true' AS [txtSolidificationPitDesc_VIS],
+       '' AS [txtSolidificationPitDesc_HIS],
+       'Description of Solidification Pit:' AS [txtSolidificationPitDesc_DES],
+       '' AS [txtSolidificationPitDesc_COM],
       --
-      'rdoLeakDetectionSystem' AS [rdoLeakDetectionSystem_ID],
-      '' AS [rdoLeakDetectionSystem_VAL],
-      'Leak Detection System' AS [rdoLeakDetectionSystem_TAG],
-      'true' AS [rdoLeakDetectionSystem_VIS],
-      '' AS[rdoLeakDetectionSystem_HIS],
-      'Leak Detection System:' AS [rdoLeakDetectionSystem_DES],
-      '' AS [rdoLeakDetectionSystem_COM],
+       'rdoLeakDetectionSystem' AS [rdoLeakDetectionSystem_ID],
+       '' AS [rdoLeakDetectionSystem_VAL],
+       'Leak Detection System' AS [rdoLeakDetectionSystem_TAG],
+       'true' AS [rdoLeakDetectionSystem_VIS],
+       '' AS [rdoLeakDetectionSystem_HIS],
+       'Leak Detection System:' AS [rdoLeakDetectionSystem_DES],
+       '' AS [rdoLeakDetectionSystem_COM],
      --
        'rdoGWInstalled' AS [rdoGWInstalled_ID],
        (CASE
@@ -375,7 +382,7 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        'Methane Monitoring System Installed:' AS [rdoMethaneInstalled_DES],
        '' AS [rdoMethaneInstalled_COM],
       --
-      'ddlMethaneMonitoringFrequency' AS [ddlMethaneMonitoringFrequency_ID],
+       'ddlMethaneMonitoringFrequency' AS [ddlMethaneMonitoringFrequency_ID],
        '' AS [ddlMethaneMonitoringFrequency_VAL],
        'Current Methane Monitoring Frequency' AS [ddlMethaneMonitoringFrequency_TAG],
        'true' AS [ddlMethaneMonitoringFrequency_VIS],
@@ -510,6 +517,26 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        '' AS [rdoAcceptCCR_HIS],
        'Accept CCR?' AS [rdoAcceptCCR_DES],
        '' AS [rdoAcceptCCR_COM],
+       --
+       'ucontrol_FinAssuranceType' AS [ucontrol_FinAssuranceType_ID],
+       iif(convert(VARCHAR(MAX),
+    (SELECT count([PermitNumber])
+     FROM [LEMIR_Stage].[dbo].[$grdFinancialAssurance] AS [F]
+     WHERE [F].[PermitNumber] = [MFI].[MainPermitNumber])) = '0', '', convert(VARCHAR(MAX),
+    (SELECT count([PermitNumber])
+     FROM [LEMIR_Stage].[dbo].[$grdFinancialAssurance] AS [F]
+     WHERE [F].[PermitNumber] = [MFI].[MainPermitNumber]))) AS [ucontrol_FinAssuranceType_VAL],
+       '' AS [ucontrol_FinAssuranceType_TAG],
+       'true' AS [ucontrol_FinAssuranceType_VIS],
+       iif(convert(VARCHAR(MAX),
+    (SELECT count([PermitNumber])
+     FROM [LEMIR_Stage].[dbo].[$grdFinancialAssurance] AS [F]
+     WHERE [F].[PermitNumber] = [MFI].[MainPermitNumber])) = '0', '', convert(VARCHAR(MAX),
+    (SELECT count([PermitNumber])
+     FROM [LEMIR_Stage].[dbo].[$grdFinancialAssurance] AS [F]
+     WHERE [F].[PermitNumber] = [MFI].[MainPermitNumber]))+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||') AS [ucontrol_FinAssuranceType_HIS],
+       '' AS [ucontrol_FinAssuranceType_DES],
+       '' AS [ucontrol_FinAssuranceType_COM],
       --
        isnull(
     (SELECT DISTINCT
@@ -551,9 +578,9 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
      FROM [LEMIR_Stage].[dbo].[$grdFinancialAssurance] AS [F]
      WHERE [F].[PermitNumber] = [MFI].[MainPermitNumber] FOR XML PATH('grdFinancialAssurance')), '') AS [grdFinancialAssurance],
        --
-       [MFI].[MainPermitNumber] as [FACILITY_ID_REF]
+       [MFI].[MainPermitNumber] AS [FACILITY_ID_REF]
 FROM [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MFI]
      LEFT JOIN [LandDataBase].[dbo].[OperationStatus] AS [OS] ON [MFI].[OperationStatus] = [OS].[OperationStatus]
-       LEFT JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [EI] ON [MFI].[MainPermitNumber] = [EI].[PermitNumber]
-     WHERE [EI].[LEMIR_EI_CD] = 'LS'
+     LEFT JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [EI] ON [MFI].[MainPermitNumber] = [EI].[PermitNumber]
+WHERE [EI].[LEMIR_EI_CD] = 'LS'
 GO

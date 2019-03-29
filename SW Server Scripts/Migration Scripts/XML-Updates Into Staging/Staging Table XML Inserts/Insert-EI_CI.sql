@@ -204,6 +204,13 @@ ORDER BY 1;
 --        [rdoAcceptAsbestos_HIS],
 --        [rdoAcceptAsbestos_DES],
 --        [rdoAcceptAsbestos_COM],
+        --[ucontrol_FinAssuranceType_ID],
+        --[ucontrol_FinAssuranceType_VAL],
+        --[ucontrol_FinAssuranceType_TAG],
+        --[ucontrol_FinAssuranceType_VIS],
+        --[ucontrol_FinAssuranceType_HIS],
+        --[ucontrol_FinAssuranceType_DES],
+        --[ucontrol_FinAssuranceType_COM],
 --        [grdClosure],
 --        [grdConstructionDetail],
 --        [grdMajorModification],
@@ -219,7 +226,7 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        'Permit Number:' AS [txtPermitNumber_DES],
        '' AS [txtPermitNumber_COM],
        --
-      'ddlEnvInterestStatus' AS [ddlEnvInterestStatus_ID],
+       'ddlEnvInterestStatus' AS [ddlEnvInterestStatus_ID],
        [ddlEnvInterestStatus_VAL]=CASE
                                     WHEN [OS].[OperationStatus] = '1'
                                       THEN 'Operating'
@@ -363,21 +370,21 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        '' AS [txtPermittedCapacity_COM],
       --
        'txtRemainingCapacity' AS [txtRemainingCapacity_ID],
-       isnull(convert(varchar(50),isnull(IIF(
+       isnull(convert(VARCHAR(50), isnull(IIF(
     (SELECT DISTINCT
             [RC].[RemainingCapacity(CY)]
      FROM [LandDataBase].[dbo].[RemainingCapacity] AS [RC]
           LEFT JOIN [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MF] ON [MF].[MainPermitNumber] = [RC].[PermitNumber]
           JOIN [#latestYear] AS [LY] ON [RC].[PermitNumber] = [LY].[PermitNumber]
      WHERE [LY].[latest year] = [RC].[FYReportingYear]
-           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber]) = 0, NULL, 
+           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber]) = 0, NULL,
     (SELECT DISTINCT
             [RC].[RemainingCapacity(CY)]
      FROM [LandDataBase].[dbo].[RemainingCapacity] AS [RC]
           LEFT JOIN [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MF] ON [MF].[MainPermitNumber] = [RC].[PermitNumber]
           JOIN [#latestYear] AS [LY] ON [RC].[PermitNumber] = [LY].[PermitNumber]
      WHERE [LY].[latest year] = [RC].[FYReportingYear]
-           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber])), null)),'') AS [txtRemainingCapacity_VAL],
+           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber])), NULL)), '') AS [txtRemainingCapacity_VAL],
        'Remaining Capacity (CY)' AS [txtRemainingCapacity_TAG],
        'true' AS [txtRemainingCapacity_VIS],
        isnull(convert(VARCHAR(50),
@@ -392,38 +399,38 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        '' AS [txtRemainingCapacity_COM],
        --
        'txtRemainingLife' AS [txtRemainingLife_ID],
-   isnull(convert(varchar(50),isnull(IIF(
+       isnull(convert(VARCHAR(50), isnull(IIF(
     (SELECT DISTINCT
             [RC].[Years Remaining]
      FROM [LandDataBase].[dbo].[RemainingCapacity] AS [RC]
           LEFT JOIN [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MF] ON [MF].[MainPermitNumber] = [RC].[PermitNumber]
           JOIN [#latestYear] AS [LY] ON [RC].[PermitNumber] = [LY].[PermitNumber]
      WHERE [LY].[latest year] = [RC].[FYReportingYear]
-           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber]) = 0, NULL, 
+           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber]) = 0, NULL,
     (SELECT DISTINCT
             [RC].[Years Remaining]
      FROM [LandDataBase].[dbo].[RemainingCapacity] AS [RC]
           LEFT JOIN [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MF] ON [MF].[MainPermitNumber] = [RC].[PermitNumber]
           JOIN [#latestYear] AS [LY] ON [RC].[PermitNumber] = [LY].[PermitNumber]
      WHERE [LY].[latest year] = [RC].[FYReportingYear]
-           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber])), null)),'') AS [txtRemainingLife_VAL],
+           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber])), NULL)), '') AS [txtRemainingLife_VAL],
        'Remaining Life of EI (Years)' AS [txtRemainingLife_TAG],
        'true' AS [txtRemainingLife_VIS],
-    isnull(convert(varchar(50),isnull(IIF(
+       isnull(convert(VARCHAR(50), isnull(IIF(
     (SELECT DISTINCT
             [RC].[Years Remaining]
      FROM [LandDataBase].[dbo].[RemainingCapacity] AS [RC]
           LEFT JOIN [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MF] ON [MF].[MainPermitNumber] = [RC].[PermitNumber]
           JOIN [#latestYear] AS [LY] ON [RC].[PermitNumber] = [LY].[PermitNumber]
      WHERE [LY].[latest year] = [RC].[FYReportingYear]
-           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber]) = 0, NULL, 
+           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber]) = 0, NULL,
     (SELECT DISTINCT
             [RC].[Years Remaining]
      FROM [LandDataBase].[dbo].[RemainingCapacity] AS [RC]
           LEFT JOIN [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MF] ON [MF].[MainPermitNumber] = [RC].[PermitNumber]
           JOIN [#latestYear] AS [LY] ON [RC].[PermitNumber] = [LY].[PermitNumber]
      WHERE [LY].[latest year] = [RC].[FYReportingYear]
-           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber])), null))+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||', '') AS [txtRemainingLife_HIS],
+           AND [RC].[PermitNumber] = [MFI].[MainPermitNumber])), NULL))+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||', '') AS [txtRemainingLife_HIS],
        'Remaining Life of EI (Years):' AS [txtRemainingLife_DES],
        '' AS [txtRemainingLife_COM],
        --
@@ -495,7 +502,7 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        'Methane Monitoring System Installed:' AS [rdoMethaneInstalled_DES],
        '' AS [rdoMethaneInstalled_COM],
        --
-      'ddlMethaneMonitoringFrequency' AS [ddlMethaneMonitoringFrequency_ID],
+       'ddlMethaneMonitoringFrequency' AS [ddlMethaneMonitoringFrequency_ID],
        '' AS [ddlMethaneMonitoringFrequency_VAL],
        'Current Methane Monitoring Frequency' AS [ddlMethaneMonitoringFrequency_TAG],
        'true' AS [ddlMethaneMonitoringFrequency_VIS],
@@ -646,6 +653,26 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        '' AS [rdoAcceptAsbestos_HIS],
        'Accept Asbestos?' AS [rdoAcceptAsbestos_DES],
        '' AS [rdoAcceptAsbestos_COM],
+       --
+       'ucontrol_FinAssuranceType' AS [ucontrol_FinAssuranceType_ID],
+       iif(convert(VARCHAR(MAX),
+    (SELECT count([PermitNumber])
+     FROM [LEMIR_Stage].[dbo].[$grdFinancialAssurance] AS [F]
+     WHERE [F].[PermitNumber] = [MFI].[MainPermitNumber])) = '0', '', convert(VARCHAR(MAX),
+    (SELECT count([PermitNumber])
+     FROM [LEMIR_Stage].[dbo].[$grdFinancialAssurance] AS [F]
+     WHERE [F].[PermitNumber] = [MFI].[MainPermitNumber]))) AS [ucontrol_FinAssuranceType_VAL],
+       '' AS [ucontrol_FinAssuranceType_TAG],
+       'true' AS [ucontrol_FinAssuranceType_VIS],
+       iif(convert(VARCHAR(MAX),
+    (SELECT count([PermitNumber])
+     FROM [LEMIR_Stage].[dbo].[$grdFinancialAssurance] AS [F]
+     WHERE [F].[PermitNumber] = [MFI].[MainPermitNumber])) = '0', '', convert(VARCHAR(MAX),
+    (SELECT count([PermitNumber])
+     FROM [LEMIR_Stage].[dbo].[$grdFinancialAssurance] AS [F]
+     WHERE [F].[PermitNumber] = [MFI].[MainPermitNumber]))+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||') AS [ucontrol_FinAssuranceType_HIS],
+       '' AS [ucontrol_FinAssuranceType_DES],
+       '' AS [ucontrol_FinAssuranceType_COM],
       --
        isnull(
     (SELECT DISTINCT
@@ -687,11 +714,11 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
      FROM [LEMIR_Stage].[dbo].[$grdFinancialAssurance] AS [F]
      WHERE [F].[PermitNumber] = [MFI].[MainPermitNumber] FOR XML PATH('grdFinancialAssurance')), '') AS [grdFinancialAssurance],
        --
-       [MFI].[MainPermitNumber] as [FACILITY_ID_REF]
+       [MFI].[MainPermitNumber] AS [FACILITY_ID_REF]
 FROM [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MFI]
      LEFT JOIN [LandDataBase].[dbo].[OperationStatus] AS [OS] ON [MFI].[OperationStatus] = [OS].[OperationStatus]
      LEFT JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [EI] ON [MFI].[MainPermitNumber] = [EI].[PermitNumber]
-     WHERE [EI].[LEMIR_EI_CD] = 'CI'
+WHERE [EI].[LEMIR_EI_CD] = 'CI'
 GO
 --
 DROP TABLE [#latestYear];

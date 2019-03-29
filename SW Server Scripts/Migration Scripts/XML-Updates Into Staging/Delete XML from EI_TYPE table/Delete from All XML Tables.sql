@@ -1,13 +1,13 @@
 USE [LEMIR_Stage]
 GO
-DELETE FROM [dbo].[$grdClosure]
-GO
-DELETE FROM [dbo].[$grdConstructionDetail]
-GO
-DELETE FROM [dbo].[$grdFinancialAssurance]
-GO
-DELETE FROM [dbo].[$grdMajorModification]
-GO
+--DELETE FROM [dbo].[$grdClosure]
+--GO
+--DELETE FROM [dbo].[$grdConstructionDetail]
+--GO
+--DELETE FROM [dbo].[$grdFinancialAssurance]
+--GO
+--DELETE FROM [dbo].[$grdMajorModification]
+--GO
 DELETE FROM [dbo].[EI_BIO]
 GO
 DELETE FROM [dbo].[EI_CCRL]
@@ -22,9 +22,9 @@ DELETE FROM [dbo].[EI_CO]
 GO
 DELETE FROM [dbo].[EI_COL]
 GO
-DELETE FROM [dbo].[EI_GM]
-GO
-DELETE FROM [dbo].[EI_GW_MM_XML]
+--DELETE FROM [dbo].[EI_GM]
+--GO
+--DELETE FROM [dbo].[EI_GW_MM_XML]
 GO
 DELETE FROM [dbo].[EI_IN]
 GO
@@ -32,8 +32,8 @@ DELETE FROM [dbo].[EI_LI]
 GO
 DELETE FROM [dbo].[EI_LSF]
 GO
-DELETE FROM [dbo].[EI_MM]
-GO
+--DELETE FROM [dbo].[EI_MM]
+--GO
 DELETE FROM [dbo].[EI_MRF]
 GO
 DELETE FROM [dbo].[EI_MSWL]

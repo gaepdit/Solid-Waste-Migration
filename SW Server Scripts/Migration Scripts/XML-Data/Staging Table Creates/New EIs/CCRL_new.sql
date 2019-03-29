@@ -11,7 +11,8 @@ IF EXISTS
     (SELECT *
      FROM [sys].[objects]
      WHERE object_id = OBJECT_ID(N'[dbo].[EI_CCRL]')
-           AND [type] IN(N'U'))
+           AND [type] IN(N'U'
+                        ))
   BEGIN
     DROP TABLE [dbo].[EI_CCRL]
   END
@@ -226,6 +227,14 @@ CREATE TABLE [dbo].[EI_CCRL]
              [rdoAcceptAsbestos_HIS]               VARCHAR(MAX) NULL,
              [rdoAcceptAsbestos_DES]               VARCHAR(100) NULL,
              [rdoAcceptAsbestos_COM]               VARCHAR(MAX) NULL,
+        --DataField
+             [ucontrol_FinAssuranceType_ID]        VARCHAR(100) NULL,
+             [ucontrol_FinAssuranceType_VAL]       VARCHAR(MAX) NULL,
+             [ucontrol_FinAssuranceType_TAG]       VARCHAR(100) NULL,
+             [ucontrol_FinAssuranceType_VIS]       VARCHAR(100) NULL,
+             [ucontrol_FinAssuranceType_HIS]       VARCHAR(MAX) NULL,
+             [ucontrol_FinAssuranceType_DES]       VARCHAR(100) NULL,
+             [ucontrol_FinAssuranceType_COM]       VARCHAR(MAX) NULL,
       --FinancialAssurance XML
              [grdFinancialAssurance]               XML NULL,
 	  --Closure XML

@@ -202,6 +202,14 @@ CREATE TABLE [dbo].[EI_TT]
              [rdoAcceptAsbestos_HIS]             VARCHAR(MAX) NULL,
              [rdoAcceptAsbestos_DES]             VARCHAR(100) NULL,
              [rdoAcceptAsbestos_COM]             VARCHAR(MAX) NULL,
+        --DataField
+             [ucontrol_FinAssuranceType_ID]      VARCHAR(100) NULL,
+             [ucontrol_FinAssuranceType_VAL]     VARCHAR(MAX) NULL,
+             [ucontrol_FinAssuranceType_TAG]     VARCHAR(100) NULL,
+             [ucontrol_FinAssuranceType_VIS]     VARCHAR(100) NULL,
+             [ucontrol_FinAssuranceType_HIS]     VARCHAR(MAX) NULL,
+             [ucontrol_FinAssuranceType_DES]     VARCHAR(100) NULL,
+             [ucontrol_FinAssuranceType_COM]     VARCHAR(MAX) NULL,
       --Closure XML
              [grdClosure]                        XML NULL,
       --Construction Detail XML
