@@ -11,7 +11,8 @@ IF EXISTS
     (SELECT *
      FROM [sys].[objects]
      WHERE object_id = OBJECT_ID(N'[dbo].[EI_LSF]')
-           AND [type] IN(N'U'))
+           AND [type] IN(N'U'
+                        ))
   BEGIN
     DROP TABLE [dbo].[EI_LSF]
   END
@@ -186,6 +187,14 @@ CREATE TABLE [dbo].[EI_LSF]
              [rdoAcceptCCR_HIS]                  VARCHAR(MAX) NULL,
              [rdoAcceptCCR_DES]                  VARCHAR(100) NULL,
              [rdoAcceptCCR_COM]                  VARCHAR(MAX) NULL,
+        --DataField
+             [ucontrol_FinAssuranceType_ID]      VARCHAR(100) NULL,
+             [ucontrol_FinAssuranceType_VAL]     VARCHAR(MAX) NULL,
+             [ucontrol_FinAssuranceType_TAG]     VARCHAR(100) NULL,
+             [ucontrol_FinAssuranceType_VIS]     VARCHAR(100) NULL,
+             [ucontrol_FinAssuranceType_HIS]     VARCHAR(MAX) NULL,
+             [ucontrol_FinAssuranceType_DES]     VARCHAR(100) NULL,
+             [ucontrol_FinAssuranceType_COM]     VARCHAR(MAX) NULL,
         --Closure XML
              [grdClosure]                        XML NULL,
       --Construction Detail XML

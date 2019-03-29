@@ -1,0 +1,6 @@
+USE [LEMIR_Stage]
+GO
+DELETE FROM [dbo].[EI_TYPE]
+GO
+
+

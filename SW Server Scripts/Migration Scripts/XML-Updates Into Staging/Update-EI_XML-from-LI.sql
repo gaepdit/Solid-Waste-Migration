@@ -303,6 +303,18 @@ UPDATE [dbo].[EI_TYPE]
      FROM [LEMIR_Stage].[dbo].[EI_LI] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
      WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*],
+      --[ucontrol_FinAssuranceType_ID]
+    (SELECT DISTINCT
+            [B].[ucontrol_FinAssuranceType_ID] AS [id],
+            [B].[ucontrol_FinAssuranceType_VAL] AS [value],
+            [B].[ucontrol_FinAssuranceType_TAG] AS [tag],
+            [B].[ucontrol_FinAssuranceType_VIS] AS [visible],
+            [B].[ucontrol_FinAssuranceType_HIS] AS [history],
+            [B].[ucontrol_FinAssuranceType_DES] AS [description],
+            [B].[ucontrol_FinAssuranceType_COM] AS [comment]
+     FROM [LEMIR_Stage].[dbo].[EI_LI] AS [B]
+          INNER JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [I] ON [B].[PermitNumber] = [I].[PermitNumber]
+     WHERE [B].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
      --[dbo].[$grdClosure]
     (SELECT DISTINCT
             convert(VARCHAR(50), [C].[txtAcceptingWasteCeasedDate], 101) AS [txtAcceptingWasteCeasedDate],
