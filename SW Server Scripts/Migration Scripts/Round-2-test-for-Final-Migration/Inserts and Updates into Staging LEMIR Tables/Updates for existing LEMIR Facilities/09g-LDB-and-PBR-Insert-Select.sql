@@ -25,20 +25,22 @@ DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 --        [UPDATED_DATE],
 --        [UPDATED_BY],
 --        [FACILITY_ID_REF])
-SELECT [FF].[FACILITY_RID] AS [FACILITY_RID],
+SELECT DISTINCT
+       [UI].[LEMIR ID for Update] AS [FACILITY_RID],
        [SE].[EMAIL_RID] AS [EMAIL_RID],
        'A' AS [STATUS_CD],
        GETDATE() AS [CREATED_DATE],
        @created_by_string AS [CREATED_BY],
        GETDATE() AS [UPDATED_DATE],
        @created_by_string AS [UPDATED_BY],
-       [FF].[FACILITY_ID_REF]
-FROM [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF]
-     JOIN [LEMIR_Stage].[dbo].[SYS_EMAIL] AS [SE] ON [FF].[FACILITY_ID_REF] = [SE].[FACILITY_ID_REF]
-     JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [UI].[MainPermitNumber] = [FF].[FACILITY_IDENTIFIER]
-WHERE [FF].[CREATED_BY] = @created_by_string
-      AND [SE].[CREATED_BY] = @created_by_string
+       [SE].[FACILITY_ID_REF]
+FROM [LEMIR_Stage].[dbo].[SYS_EMAIL] AS [SE]
+     JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [UI].[MainPermitNumber] = [SE].[FACILITY_ID_REF]
+WHERE [SE].[CREATED_BY] = @created_by_string
       AND [UI].[Insert or Update] = 'U'
       AND [UI].[LEMIR ID for Update] IS NOT NULL
-      AND [UI].[analysis hist notes] IS NULL;
+      AND [UI].[analysis hist notes] IS NULL
+      AND [UI].[LEMIR ID for Update] <> 3265
+
+ORDER BY 1
 

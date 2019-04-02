@@ -13,8 +13,10 @@ When        Who                 What
 DECLARE @rid_counter_start [INT];
 DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 --
-SELECT @rid_counter_start=ISNULL(MAX([FAC_ENV_PROGRAM_RID]), 1)
-FROM [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM];
+--SELECT @rid_counter_start=ISNULL(MAX([FAC_ENV_PROGRAM_RID]), 1)
+--FROM [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM];
+--
+SET @rid_counter_start=545237;
 --
 IF 'EPDMIG SW' =
     (SELECT [CREATED_BY]
@@ -45,19 +47,18 @@ IF 'EPDMIG SW' =
 --        [FACILITY_ID_REF])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [FAC_ENV_PROGRAM_RID],
-       [FF].[FACILITY_RID] AS [FACILITY_RID],
+       [UI].[LEMIR ID for Update] AS [FACILITY_RID],
        [EIT].[LEMIR_EI_RID] AS [TYPE_RID],
        'A' AS [STATUS_CD],
        GETDATE() AS [CREATED_DATE],
        @created_by_string AS [CREATED_BY],
        GETDATE() AS [UPDATED_DATE],
        @created_by_string AS [UPDATED_BY],
-       [EIT].[LEMIR_XML] AS [PROGRAM_DETAIL],
+       --[EIT].[LEMIR_XML] AS [PROGRAM_DETAIL],
        [MFI].[MainPermitNumber] AS [FAC_PROGRAM_IDENTIFIER],
        [MFI].[FacilityName] AS [AKA_NAME],
        [EIT].[FACILITY_ID_REF] AS [FACILITY_ID_REF]
-FROM [GovOnline_LEMIR_BAK-3-26-19].[dbo].[FAC_FACILITY] AS [FF]
-     JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [FF].[FACILITY_RID] = [UI].[LEMIR ID for Update]
+FROM [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI]
      JOIN [LandDatabase].[dbo].[MAIN FACILITY INFO] AS [MFI] ON [UI].[MainPermitNumber] = [MFI].[MainPermitNumber]
      JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [EIT] ON [UI].[MainPermitNumber] = [EIT].[PermitNumber]
 WHERE [UI].[Insert or Update] = 'U'
@@ -65,7 +66,11 @@ WHERE [UI].[Insert or Update] = 'U'
       AND ([UI].[analysis hist notes] IS NULL
            OR [UI].[analysis hist notes] = 'skip%')
       AND [EIT].[LEMIR_XML] IS NOT NULL
+      and [UI].[LEMIR ID for Update] <> 3265
+      --and [EIT].[LEMIR_EI_RID] = 10050
 ORDER BY 2
+--
+--
 --     JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [MFI].[MainPermitNumber] = [UI].[MainPermitNumber]
 --                                                             AND [UI].[Insert or Update] = 'U'
 ----WHERE [EIT].[LEMIR_EI_RID] <> 0
