@@ -13,8 +13,10 @@ When        Who                 What
 DECLARE @rid_counter_start INT;
 DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 --
-SELECT @rid_counter_start=ISNULL(MAX([PERMIT_RID]), 1)
-FROM [GovOnline_LEMIR_BAK-3-26-19].[GOV].[SUB_PERMIT];
+--SELECT @rid_counter_start=ISNULL(MAX([PERMIT_RID]), 1)
+--FROM [LEMIR_Stage].[GOV].[SUB_PERMIT];
+--
+set @rid_counter_start=2634680;
 --
 IF 'EPDMIG SW' =
     (SELECT [CREATED_BY]
