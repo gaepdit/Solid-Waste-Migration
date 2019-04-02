@@ -9,8 +9,10 @@ Insert Select 15 C
 DECLARE @rid_counter_start [INT];
 DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 --
-SELECT @rid_counter_start=ISNULL(MAX([FAC_ENV_PROGRAM_LOC_RID]), 1)
-FROM [GovOnline_LEMIR_BAK-3-26-19].[dbo].[FAC_ENV_PROGRAM_LOC];
+--SELECT @rid_counter_start=ISNULL(MAX([FAC_ENV_PROGRAM_LOC_RID]), 1)
+--FROM [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM_LOC];
+--
+set @rid_counter_start=553552;
 --
 IF 'EPDMIG SW' =
     (SELECT [CREATED_BY]
@@ -93,7 +95,7 @@ WHERE [UI].[Insert or Update] = 'U'
       AND [UI].[LEMIR ID for Update] IS NOT NULL
        AND ([UI].[analysis hist notes] IS NULL
            OR [UI].[analysis hist notes] = 'skip%')
-      AND [FEP].[FAC_ENV_PROGRAM_RID] <> '535016'
+      --AND [FEP].[FAC_ENV_PROGRAM_RID] <> '535016'
       --AND [SPL].[CREATED_BY] = @created_by_string
       --AND [FEP].[FAC_PROGRAM_IDENTIFIER] NOT IN(
       --                                          'PBR-023-16COL',
