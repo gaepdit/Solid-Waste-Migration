@@ -13,15 +13,15 @@ When        Who                 What
 DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 --
 --F
---INSERT INTO [LEMIR_Stage].[dbo].[FAC_ADDRESS]
---       ([FACILITY_RID],
---        [ADDRESS_RID],
---        [STATUS_CD],
---        [CREATED_DATE],
---        [CREATED_BY],
---        [UPDATED_DATE],
---        [UPDATED_BY],
---        [FACILITY_ID_REF])
+INSERT INTO [LEMIR_Stage].[dbo].[FAC_ADDRESS]
+       ([FACILITY_RID],
+        [ADDRESS_RID],
+        [STATUS_CD],
+        [CREATED_DATE],
+        [CREATED_BY],
+        [UPDATED_DATE],
+        [UPDATED_BY],
+        [FACILITY_ID_REF])
 SELECT [FF].[FACILITY_RID] AS [FACILITY_RID],
        [SA].[ADDRESS_RID] AS [ADDRESS_RID],
        'A' AS [STATUS_CD],

@@ -16,15 +16,15 @@ DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 --
 --Get MAX Contact Number
 --
---INSERT INTO [LEMIR_Stage].[dbo].[FAC_TELEPHONIC]
---       ([FACILITY_RID],
---        [TELEPHONIC_RID],
---        [STATUS_CD],
---        [CREATED_DATE],
---        [CREATED_BY],
---        [UPDATED_DATE],
---        [UPDATED_BY],
---        [FACILITY_ID_REF])
+INSERT INTO [LEMIR_Stage].[dbo].[FAC_TELEPHONIC]
+       ([FACILITY_RID],
+        [TELEPHONIC_RID],
+        [STATUS_CD],
+        [CREATED_DATE],
+        [CREATED_BY],
+        [UPDATED_DATE],
+        [UPDATED_BY],
+        [FACILITY_ID_REF])
 SELECT DISTINCT
        [UI].[LEMIR ID for Update] AS [FACILITY_RID],
        [ST].[TELEPHONIC_RID] AS [TELEPHONIC_RID],
@@ -33,13 +33,11 @@ SELECT DISTINCT
        @created_by_string AS [CREATED_BY],
        GETDATE() AS [UPDATED_DATE],
        @created_by_string AS [UPDATED_BY],
-       [ST].[FACILITY_ID_REF] as [FACILITY_ID_REF]
+       [ST].[FACILITY_ID_REF] AS [FACILITY_ID_REF]
 FROM [LEMIR_Stage].[dbo].[SYS_TELEPHONIC] AS [ST]
      JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [UI].[MainPermitNumber] = [ST].[FACILITY_ID_REF]
-WHERE [ST].[CREATED_BY] = @created_by_string
-      AND [UI].[Insert or Update] = 'U'
+WHERE [UI].[Insert or Update] = 'U'
       AND [UI].[LEMIR ID for Update] IS NOT NULL
-      AND ([UI].[analysis hist notes] IS NULL
-           OR [UI].[analysis hist notes] = 'skip%')
-      AND [UI].[LEMIR ID for Update] <> 3265
+   
+      --AND [UI].[LEMIR ID for Update] <> 3265
 

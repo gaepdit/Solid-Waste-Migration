@@ -51,37 +51,13 @@ SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
        @created_by_string AS [UPDATED_BY],
        GETDATE() AS [CREATED_DATE],
        GETDATE() AS [UPDATED_DATE],
-       [FACILITY_ID_REF]=CASE
-                           WHEN [MFI].[MainPermitNumber] LIKE '0%'
-                             THEN(SUBSTRING([MFI].[MainPermitNumber], 0, 8))
-                           WHEN [MFI].[MainPermitNumber] LIKE '1%'
-                             THEN(SUBSTRING([MFI].[MainPermitNumber], 0, 8))
-                           WHEN [MFI].[MainPermitNumber] LIKE 'APL %'
-                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                           WHEN [MFI].[MainPermitNumber] LIKE 'APL0%'
-                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                           WHEN [MFI].[MainPermitNumber] LIKE 'APL-%'
-                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                           WHEN [MFI].[MainPermitNumber] LIKE 'APLI%'
-                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                           WHEN [MFI].[MainPermitNumber] LIKE 'APL1%'
-                             THEN '400-'+substring([MFI].[MainPermitNumber], 5, 20)
-                           WHEN [MFI].[MainPermitNumber] LIKE 'B%'
-                             THEN '0'
-                           WHEN [MFI].[MainPermitNumber] LIKE 'CCR%'
-                             THEN '500-'+[MFI].[MainPermitNumber]
-                           WHEN [MFI].[MainPermitNumber] LIKE 'CON%'
-                             THEN '600-'+[MFI].[MainPermitNumber]
-                           WHEN [MFI].[MainPermitNumber] LIKE 'MOD%'
-                             THEN '700-'+[MFI].[MainPermitNumber]
-                           WHEN [MFI].[MainPermitNumber] LIKE 'PCSP%'
-                             THEN '800-'+[MFI].[MainPermitNumber]
-                           ELSE '0'
-                         END
+       [MFI].[MainPermitNumber] AS [FACILITY_ID_REF]
 FROM [LandDatabase].[dbo].[MAIN FACILITY INFO] AS [MFI]
      LEFT JOIN [LandDataBase].[dbo].[Contacts] AS [LC] ON [MFI].[MainPermitNumber] = [LC].[PermitNumber]
      JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [MFI].[MainPermitNumber] = [UI].[MainPermitNumber]
 WHERE [UI].[Insert or Update] = 'U'
-      AND [UI].[LEMIR ID for Update] IS NOT NULL
-      AND ([UI].[analysis hist notes] IS NULL
-           OR [UI].[analysis hist notes] = 'skip%')
+      AND [UI].[LEMIR ID for Update] IS NULL
+      AND [UI].[analysis hist notes] IS NOT NULL
+      AND [UI].[analysis hist notes] <> 'skip%'
+      AND [UI].[analysis hist notes] <> 'No Migrate'
+      AND [UI].[analysis hist notes] <> 'No migrate'

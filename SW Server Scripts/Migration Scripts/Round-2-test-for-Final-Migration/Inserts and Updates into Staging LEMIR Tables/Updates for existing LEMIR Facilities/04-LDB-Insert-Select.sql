@@ -13,10 +13,10 @@ When        Who                 What
 DECLARE @rid_counter_start [INT];
 DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 --
---SELECT @rid_counter_start=ISNULL(MAX([CONTACT_RID]), 1)
---FROM [LEMIR_Stage].[dbo].[SYS_CONTACT];
+SELECT @rid_counter_start=ISNULL(MAX([CONTACT_RID]), 1)
+FROM [LEMIR_Stage].[dbo].[SYS_CONTACT];
 --
-SET @rid_counter_start=623919;
+--SET @rid_counter_start=623919;
 --
 --
 IF 'EPDMIG SW' =
@@ -67,5 +67,4 @@ FROM [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MFI]
      JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [MFI].[MainPermitNumber] = [UI].[MainPermitNumber]
 WHERE [UI].[Insert or Update] = 'U'
       AND [UI].[LEMIR ID for Update] IS NOT NULL
-      AND ([UI].[analysis hist notes] IS NULL
-           OR [UI].[analysis hist notes] = 'skip%')
+   

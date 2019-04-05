@@ -53,24 +53,20 @@ SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
        GETDATE() AS [UPDATED_DATE],
        @created_by_string AS [UPDATED_BY],
        [EIT].[LEMIR_XML] AS [PROGRAM_DETAIL],
-       [MFI].[MainPermitNumber] AS [FAC_PROGRAM_IDENTIFIER],
-       [MFI].[FacilityName] AS [AKA_NAME],
+       [UI].[MainPermitNumber] AS [FAC_PROGRAM_IDENTIFIER],
+       [FF].[FACILITY_NAME] AS [AKA_NAME],
        [EIT].[FACILITY_ID_REF] AS [FACILITY_ID_REF]
-FROM [GovOnline_LEMIR_BAK-3-26-19].[dbo].[FAC_FACILITY] AS [FF]
-     JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [FF].[FACILITY_RID] = [UI].[LEMIR ID for Update]
-     JOIN [LandDatabase].[dbo].[MAIN FACILITY INFO] AS [MFI] ON [UI].[MainPermitNumber] = [MFI].[MainPermitNumber]
+FROM [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI]
      JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [EIT] ON [UI].[MainPermitNumber] = [EIT].[PermitNumber]
+     JOIN [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF] ON [UI].[analysis hist notes] = [FF].[FACILITY_ID_REF]
 WHERE [UI].[Insert or Update] = 'U'
-      AND [UI].[LEMIR ID for Update] IS NOT NULL
-      AND ([UI].[analysis hist notes] IS NULL
-           OR [UI].[analysis hist notes] = 'skip%')
+      AND [UI].[LEMIR ID for Update] IS NULL
+      AND [UI].[analysis hist notes] IS NOT NULL 
+      AND [UI].[analysis hist notes] NOT LIKE 'skip%'
+      AND [UI].[analysis hist notes] <> 'No Migrate'
+      AND [UI].[analysis hist notes] <> 'No migrate'
       AND [EIT].[LEMIR_XML] IS NOT NULL
-ORDER BY 2
---     JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [MFI].[MainPermitNumber] = [UI].[MainPermitNumber]
---                                                             AND [UI].[Insert or Update] = 'U'
-----WHERE [EIT].[LEMIR_EI_RID] <> 0
---      AND [EIT].[LEMIR_XML] IS NOT NULL
---      AND [MFI].[MainPermitNumber] not in ('025-041D(LI)(4)','025-041D(LI)','025-073P(RM)','036-010D(SL)','036-010D(SL)(1)','036-010D(SL1)(1)','034-005D(SL)','025-073P(RM)','146-011D(LI)','150-009D(SL)','150-009D(LI)','146-011D(LI)','028-040D(L)','063-027P(RM)','099-018D(L)(I)','099-018D(LI)','146-011D(L)','146-011D(LI)')
---      ORDER BY 2
+ORDER BY [EIT].[FACILITY_ID_REF]
+
 
                                                        

@@ -1,0 +1,7 @@
+USE [LEMIR_Stage]
+GO
+
+UPDATE [dbo].[EI_GW_MM_XML]
+   SET [LEMIR_XML] = NULL
+GO
+

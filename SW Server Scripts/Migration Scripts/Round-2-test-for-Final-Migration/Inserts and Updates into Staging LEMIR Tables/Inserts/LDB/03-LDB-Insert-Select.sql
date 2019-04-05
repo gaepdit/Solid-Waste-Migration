@@ -29,25 +29,25 @@ IF 'EPDMIG SW' =
   END
   
   --
---INSERT INTO [LEMIR_Stage].[dbo].[SYS_PHYSICAL_LOCATION]
---       ([LOCATION_RID],
---        [LOCATION_DESC],
---        [ST_NO],
---        [ST_DIRECTION_RID],
---        [ST_NAME],
---        [CITY_NAME],
---        [STATE_RID],
---        [COUNTY_RID],
---        [COUNTRY_RID],
---        [ZIP_CD],
---        [ZIP_SUFFIX_CD],
---        [GEO_COORDINATE_RID],
---        [STATUS_CD],
---        [CREATED_BY],
---        [UPDATED_BY],
---        [CREATED_DATE],
---        [UPDATED_DATE],
---        [FACILITY_ID_REF])
+INSERT INTO [LEMIR_Stage].[dbo].[SYS_PHYSICAL_LOCATION]
+       ([LOCATION_RID],
+        [LOCATION_DESC],
+        [ST_NO],
+        [ST_DIRECTION_RID],
+        [ST_NAME],
+        [CITY_NAME],
+        [STATE_RID],
+        [COUNTY_RID],
+        [COUNTRY_RID],
+        [ZIP_CD],
+        [ZIP_SUFFIX_CD],
+        [GEO_COORDINATE_RID],
+        [STATUS_CD],
+        [CREATED_BY],
+        [UPDATED_BY],
+        [CREATED_DATE],
+        [UPDATED_DATE],
+        [FACILITY_ID_REF])
 SELECT DISTINCT
        @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [LOCATION_RID],

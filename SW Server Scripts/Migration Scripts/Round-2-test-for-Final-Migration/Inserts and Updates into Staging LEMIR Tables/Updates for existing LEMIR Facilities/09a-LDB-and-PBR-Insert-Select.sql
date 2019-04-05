@@ -36,22 +36,12 @@ SELECT [SC].[CONTACT_RID] AS [CONTACT_RID],
 FROM [LEMIR_Stage].[dbo].[SYS_ADDRESS] AS [SA]
      JOIN [LEMIR_Stage].[dbo].[SYS_CONTACT] AS [SC] ON [SA].[FACILITY_ID_REF] = [SC].[FACILITY_ID_REF]
      JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [SA].[FACILITY_ID_REF] = [UI].[MainPermitNumber]
-     --JOIN [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF] ON [UI].[MainPermitNumber] = [FF].[FACILITY_IDENTIFIER]
-WHERE [SA].[CREATED_BY] = @created_by_string
-      AND [SC].[CREATED_BY] = @created_by_string
-      AND [UI].[Insert or Update] = 'U'
+WHERE [UI].[Insert or Update] = 'U'
       AND [UI].[LEMIR ID for Update] IS NOT NULL
-      AND ([UI].[analysis hist notes] IS NULL
-           OR [UI].[analysis hist notes] = 'skip%')
-           --and [SC].[CONTACT_RID] > 612699
-           --and [SA].[ADDRESS_RID] > 10717676
-           order by 2
+      --AND [SC].[CONTACT_RID] IS NOT NULL
+      --AND [SA].[ADDRESS_RID] IS NOT NULL
+ORDER BY 2
 
---contact_RID  Address_RID  Status_CD  created      updated
---602741	    10712622	    A	    EPDMIG SW	EPDMIG SW	2019-03-25 13:28:58.210	2019-03-25 13:28:58.210	063-027
---602856	    10712740	    A	    EPDMIG SW	EPDMIG SW	2019-03-25 13:28:58.210	2019-03-25 13:28:58.210	109-002
---608035	    10712622	    A	    EPDMIG SW	EPDMIG SW	2019-03-25 13:28:58.210	2019-03-25 13:28:58.210	063-027
---608150	    10712740	    A	    EPDMIG SW	EPDMIG SW	2019-03-25 13:28:58.210	2019-03-25 13:28:58.210	109-002
 
 
 

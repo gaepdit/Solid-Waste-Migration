@@ -28,21 +28,21 @@ IF 'EPDMIG SW' =
     SET @rid_counter_start=@rid_counter_start + 1000;
   END
   --
---INSERT INTO [LEMIR_Stage].[dbo].[SYS_CONTACT]
---       ([CONTACT_RID],
---        [LAST_NAME],
---        [FIRST_NAME],
---        [MIDDLE_INITIAL],
---        [CONTACT_TYPE_RID],
---        [COMPANY_NAME],
---        [JOB_TITLE],
---        [SALUTATION],
---        [STATUS_CD],
---        [CREATED_BY],
---        [UPDATED_BY],
---        [CREATED_DATE],
---        [UPDATED_DATE],
---        [FACILITY_ID_REF])
+INSERT INTO [LEMIR_Stage].[dbo].[SYS_CONTACT]
+       ([CONTACT_RID],
+        [LAST_NAME],
+        [FIRST_NAME],
+        [MIDDLE_INITIAL],
+        [CONTACT_TYPE_RID],
+        [COMPANY_NAME],
+        [JOB_TITLE],
+        [SALUTATION],
+        [STATUS_CD],
+        [CREATED_BY],
+        [UPDATED_BY],
+        [CREATED_DATE],
+        [UPDATED_DATE],
+        [FACILITY_ID_REF])
 SELECT distinct @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [CONTACT_RID],
        right([PC].[Owner/ContactName], (charindex(' ', reverse([PC].[Owner/ContactName]), 1))) AS [LAST_NAME],
