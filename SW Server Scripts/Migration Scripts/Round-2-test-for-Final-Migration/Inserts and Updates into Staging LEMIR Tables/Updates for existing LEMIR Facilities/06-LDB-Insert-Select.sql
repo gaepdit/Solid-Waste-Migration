@@ -14,10 +14,10 @@ When        Who                 What
 DECLARE @rid_counter_start [INT];
 DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 --
---SELECT @rid_counter_start=ISNULL(MAX([EMAIL_RID]), 1)
---FROM [LEMIR_Stage].[dbo].[SYS_EMAIL];
+SELECT @rid_counter_start=ISNULL(MAX([EMAIL_RID]), 1)
+FROM [LEMIR_Stage].[dbo].[SYS_EMAIL];
 --
-SET @rid_counter_start=18471696;
+--SET @rid_counter_start=18471696;
 --
 IF 'EPDMIG SW' =
     (SELECT [CREATED_BY]
@@ -50,11 +50,11 @@ SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
        @created_by_string AS [UPDATED_BY],
        GETDATE() AS [CREATED_DATE],
        GETDATE() AS [UPDATED_DATE],
-       [MFI].[MainPermitNumber] AS [FACILITY_ID_REF]
-FROM [LandDatabase].[dbo].[MAIN FACILITY INFO] AS [MFI]
-     JOIN [LandDataBase].[dbo].[Contacts] AS [LC] ON [MFI].[MainPermitNumber] = [LC].[PermitNumber]
-     INNER JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [MFI].[MainPermitNumber] = [UI].[MainPermitNumber]
+       [LC].[PermitNumber] AS [FACILITY_ID_REF]
+FROM [LandDataBase].[dbo].[Contacts] AS [LC] 
+     JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [LC].[PermitNumber] = [UI].[MainPermitNumber]
 WHERE [UI].[Insert or Update] = 'U'
       AND [UI].[LEMIR ID for Update] IS NOT NULL
-      AND ([UI].[analysis hist notes] IS NULL
-           OR [UI].[analysis hist notes] = 'skip%')
+      AND LOWER(isnull([LC].[Owner/ContactE-Mail], [LC].[FacilityManagerE-mail])) IS NOT null
+      order by 8
+    

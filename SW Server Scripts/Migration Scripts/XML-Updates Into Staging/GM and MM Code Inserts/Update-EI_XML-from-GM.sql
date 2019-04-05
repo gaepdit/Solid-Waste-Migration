@@ -14,7 +14,7 @@ UPDATE [dbo].[EI_GW_MM_XML]
             [C].[ucontrolGeologist_COM] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_GM] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_GW_MM_XML] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*],
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
       --[ucontrolComplianceStatus_ID]
     (SELECT DISTINCT
             [C].[ucontrolComplianceStatus_ID] AS [id],
@@ -26,7 +26,7 @@ UPDATE [dbo].[EI_GW_MM_XML]
             [C].[ucontrolComplianceStatus_COM] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_GM] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_GW_MM_XML] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*],
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
       --[ucontrolMilestone_ID]
     (SELECT DISTINCT
             [C].[ucontrolMilestone_ID] AS [id],
@@ -38,7 +38,7 @@ UPDATE [dbo].[EI_GW_MM_XML]
             [C].[ucontrolMilestone_COM] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_GM] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_GW_MM_XML] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*],
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
       --[ucontrolSubmittal_ID]
     (SELECT DISTINCT
             [C].[ucontrolSubmittal_ID] AS [id],
@@ -50,7 +50,7 @@ UPDATE [dbo].[EI_GW_MM_XML]
             [C].[ucontrolSubmittal_COM] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_GM] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_GW_MM_XML] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*],
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
       --[ucontrolAttachment_ID]
     (SELECT DISTINCT
             [C].[ucontrolAttachment_ID] AS [id],
@@ -62,7 +62,7 @@ UPDATE [dbo].[EI_GW_MM_XML]
             [C].[ucontrolAttachment_COM] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_GM] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_GW_MM_XML] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*],
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
       --[ddlGeologist_ID]
     (SELECT DISTINCT
             [C].[ddlGeologist_ID] AS [id],
@@ -74,7 +74,7 @@ UPDATE [dbo].[EI_GW_MM_XML]
             [C].[ddlGeologist_COM] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_GM] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_GW_MM_XML] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*],
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*],
       --[ddlComplianceStatus_ID]
     (SELECT DISTINCT
             [C].[ddlComplianceStatus_ID] AS [id],
@@ -86,7 +86,7 @@ UPDATE [dbo].[EI_GW_MM_XML]
             [C].[ddlComplianceStatus_COM] AS [comment]
      FROM [LEMIR_Stage].[dbo].[EI_GM] AS [C]
           INNER JOIN [LEMIR_Stage].[dbo].[EI_GW_MM_XML] AS [I] ON [C].[PermitNumber] = [I].[PermitNumber]
-     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('datafield'), TYPE) AS [*]
+     WHERE [C].[PermitNumber] = [EI].[PermitNumber] FOR XML PATH('dataField'), TYPE) AS [*]
      --Outer Tags
      FROM [dbo].[EI_GW_MM_XML] AS [EI]
           INNER JOIN [dbo].[EI_GM] AS [GM] ON [EI].[PermitNumber] = [GM].[PermitNumber]

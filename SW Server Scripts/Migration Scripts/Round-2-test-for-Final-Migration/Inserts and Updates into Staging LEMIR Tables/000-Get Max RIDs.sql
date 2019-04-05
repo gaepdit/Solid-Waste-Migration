@@ -5,7 +5,7 @@
 ******************************************************/
 
 --
-USE LEMIR_Stage
+USE [LEMIR_Stage]
 GO
 --
 -- Declare Max Variables
@@ -29,40 +29,40 @@ SELECT @rid_counter_start_SYS_PHYS_LOC=ISNULL(MAX([LOCATION_RID]), 1)
 FROM [dbo].[SYS_PHYSICAL_LOCATION];
 --
 SELECT @rid_counter_start_SYS_Contact=ISNULL(MAX([CONTACT_RID]), 1)
-FROM [LEMIR_Stage].[dbo].[SYS_CONTACT];
+FROM [dbo].[SYS_CONTACT];
 --
 SELECT @rid_counter_start_SYS_Address=ISNULL(MAX([ADDRESS_RID]), 1)
-FROM [LEMIR_Stage].[dbo].[SYS_ADDRESS];
+FROM [dbo].[SYS_ADDRESS];
 --
 SELECT @rid_counter_start_SYS_Email=ISNULL(MAX([EMAIL_RID]), 1)
-FROM [LEMIR_Stage].[dbo].[SYS_EMAIL];
+FROM [dbo].[SYS_EMAIL];
 --
 SELECT @rid_counter_start_SYS_Telephonic=ISNULL(MAX([TELEPHONIC_RID]), 1)
-FROM [LEMIR_Stage].[dbo].[SYS_TELEPHONIC];
+FROM [dbo].[SYS_TELEPHONIC];
 --
 SELECT @rid_counter_start_FAC_ENV_Program=ISNULL(MAX([FAC_ENV_PROGRAM_RID]), 1)
-FROM [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM];
+FROM [dbo].[FAC_ENV_PROGRAM];
 --
 SELECT @rid_counter_start_FAC_ENV_Program_Contact=ISNULL(MAX([ENV_PROGRAM_CONTACT_RID]), 1)
-FROM [LEMIR_Stage].[dbo].[SYS_ENV_PROGRAM_CONTACT];
+FROM [dbo].[SYS_ENV_PROGRAM_CONTACT];
 --
 SELECT @rid_counter_start_FAC_ENV_Program_LOC=ISNULL(MAX([FAC_ENV_PROGRAM_LOC_RID]), 1)
-FROM [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM_LOC];
+FROM [dbo].[FAC_ENV_PROGRAM_LOC];
 --
 SELECT @rid_counter_start_GOV_SUB_Permit=ISNULL(MAX([PERMIT_RID]), 1)
-FROM [LEMIR_Stage].[GOV].[SUB_PERMIT];
+FROM [GOV].[SUB_PERMIT];
 --
-SELECT max([FACILITY_RID]) AS [Max_Fac_RID],
+SELECT isnull(max([FACILITY_RID]), 1) AS [Max_Fac_RID],
        @rid_counter_start_SYS_GEO_COORD AS [Max_GEO_RID],
-       @rid_counter_start_SYS_PHYS_LOC AS Max_Phys_Loc_RID,
-       @rid_counter_start_SYS_Contact AS Max_sys_Contact,
-       @rid_counter_start_SYS_Address AS Max_sys_Address,
-       @rid_counter_start_SYS_Email AS sys_Email,
-       @rid_counter_start_SYS_Telephonic AS Max_Tele,
-       @rid_counter_start_FAC_ENV_Program AS Max_Fac_Env_Prog,
-       @rid_counter_start_FAC_ENV_Program_Contact AS Max_ENV_Prog_Contact,
-       @rid_counter_start_FAC_ENV_Program_LOC AS Max_ENV_Program_Loc,
-       @rid_counter_start_GOV_SUB_Permit AS Max_Gov_Sub_Permit
+       @rid_counter_start_SYS_PHYS_LOC AS [Max_Phys_Loc_RID],
+       @rid_counter_start_SYS_Contact AS [Max_sys_Contact],
+       @rid_counter_start_SYS_Address AS [Max_sys_Address],
+       @rid_counter_start_SYS_Email AS [sys_Email],
+       @rid_counter_start_SYS_Telephonic AS [Max_Tele],
+       @rid_counter_start_FAC_ENV_Program AS [Max_Fac_Env_Prog],
+       @rid_counter_start_FAC_ENV_Program_Contact AS [Max_ENV_Prog_Contact],
+       @rid_counter_start_FAC_ENV_Program_LOC AS [Max_ENV_Program_Loc],
+       @rid_counter_start_GOV_SUB_Permit AS [Max_Gov_Sub_Permit]
 FROM [dbo].[FAC_FACILITY]
 
 

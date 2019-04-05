@@ -33,10 +33,8 @@ SELECT [UI].[LEMIR ID for Update] AS [FACILITY_RID],
        GETDATE() AS [UPDATED_DATE],
        @created_by_string AS [UPDATED_BY],
        [SA].[FACILITY_ID_REF]
-FROM [LEMIR_Stage].[dbo].[SYS_ADDRESS] AS [SA] 
+FROM [LEMIR_Stage].[dbo].[SYS_ADDRESS] AS [SA]
      JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [UI].[MainPermitNumber] = [SA].[FACILITY_ID_REF]
-WHERE [SA].[CREATED_BY] = @created_by_string
-      AND [UI].[Insert or Update] = 'U'
+WHERE [UI].[Insert or Update] = 'U'
       AND [UI].[LEMIR ID for Update] IS NOT NULL
-      AND ([UI].[analysis hist notes] IS NULL
-           OR [UI].[analysis hist notes] = 'skip%');
+     

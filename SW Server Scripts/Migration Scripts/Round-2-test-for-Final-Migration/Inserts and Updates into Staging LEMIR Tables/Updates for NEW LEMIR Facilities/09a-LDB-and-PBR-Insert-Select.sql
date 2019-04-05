@@ -32,40 +32,14 @@ SELECT [SC].[CONTACT_RID] AS [CONTACT_RID],
        [SC].[FACILITY_ID_REF]
 FROM [LEMIR_Stage].[dbo].[SYS_ADDRESS] AS [SA]
      JOIN [LEMIR_Stage].[dbo].[SYS_CONTACT] AS [SC] ON [SA].[FACILITY_ID_REF] = [SC].[FACILITY_ID_REF]
-     JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [SA].[FACILITY_ID_REF] = CASE
-                                                                                        WHEN [UI].[MainPermitNumber] LIKE '0%'
-                                                                                          THEN(SUBSTRING([UI].[MainPermitNumber], 0, 8))
-                                                                                        WHEN [UI].[MainPermitNumber] LIKE '1%'
-                                                                                          THEN(SUBSTRING([UI].[MainPermitNumber], 0, 8))
-                                                                                        WHEN [UI].[MainPermitNumber] LIKE 'APL %'
-                                                                                          THEN '400-'+substring([UI].[MainPermitNumber], 5, 20)
-                                                                                        WHEN [UI].[MainPermitNumber] LIKE 'APL0%'
-                                                                                          THEN '400-'+substring([UI].[MainPermitNumber], 5, 20)
-                                                                                        WHEN [UI].[MainPermitNumber] LIKE 'APL-%'
-                                                                                          THEN '400-'+substring([UI].[MainPermitNumber], 5, 20)
-                                                                                        WHEN [UI].[MainPermitNumber] LIKE 'APLI%'
-                                                                                          THEN '400-'+substring([UI].[MainPermitNumber], 5, 20)
-                                                                                        WHEN [UI].[MainPermitNumber] LIKE 'APL1%'
-                                                                                          THEN '400-'+substring([UI].[MainPermitNumber], 5, 20)
-                                                                                        WHEN [UI].[MainPermitNumber] LIKE 'B%'
-                                                                                          THEN '0'
-                                                                                        WHEN [UI].[MainPermitNumber] LIKE 'CCR%'
-                                                                                          THEN '500-'+[UI].[MainPermitNumber]
-                                                                                        WHEN [UI].[MainPermitNumber] LIKE 'CON%'
-                                                                                          THEN '600-'+[UI].[MainPermitNumber]
-                                                                                        WHEN [UI].[MainPermitNumber] LIKE 'MOD%'
-                                                                                          THEN '700-'+[UI].[MainPermitNumber]
-                                                                                        WHEN [UI].[MainPermitNumber] LIKE 'PCSP%'
-                                                                                          THEN '800-'+[UI].[MainPermitNumber]
-                                                                                        ELSE '0'
-                                                                                      END
+     JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [SA].[FACILITY_ID_REF] = [UI].[MainPermitNumber]
      JOIN [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF] ON [UI].[MainPermitNumber] = [FF].[FACILITY_IDENTIFIER]
-WHERE [SA].[CREATED_BY] = @created_by_string
-      AND [SC].[CREATED_BY] = @created_by_string
-      AND [UI].[Insert or Update] = 'U'
-      AND [UI].[LEMIR ID for Update] IS NOT NULL
-      AND ([UI].[analysis hist notes] IS NULL
-           OR [UI].[analysis hist notes] = 'skip%');
+WHERE [UI].[Insert or Update] = 'U'
+      AND [UI].[LEMIR ID for Update] IS NULL
+      AND [UI].[analysis hist notes] IS NOT NULL
+      AND [UI].[analysis hist notes] <> 'skip%'
+      AND [UI].[analysis hist notes] <> 'No Migrate'
+      AND [UI].[analysis hist notes] <> 'No migrate'
 
 --contact_RID  Address_RID  Status_CD  created      updated
 --602741	    10712622	    A	    EPDMIG SW	EPDMIG SW	2019-03-25 13:28:58.210	2019-03-25 13:28:58.210	063-027

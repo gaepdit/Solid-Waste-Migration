@@ -13,10 +13,10 @@ When        Who                 What
 DECLARE @rid_counter_start INT;
 DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 --
---SELECT @rid_counter_start=ISNULL(MAX([PERMIT_RID]), 1)
---FROM [LEMIR_Stage].[GOV].[SUB_PERMIT];
+SELECT @rid_counter_start=ISNULL(MAX([PERMIT_RID]), 1)
+FROM [LEMIR_Stage].[GOV].[SUB_PERMIT];
 --
-set @rid_counter_start=2634680;
+--set @rid_counter_start=2634680;
 --
 IF 'EPDMIG SW' =
     (SELECT [CREATED_BY]
@@ -65,12 +65,12 @@ SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
        @created_by_string AS [UPDATED_BY],
        [FF].[FACILITY_ID_REF]
 FROM [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MFI]
-     JOIN [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF] ON [FF].[FACILITY_IDENTIFIER] = [MFI].[MainPermitNumber]
+     JOIN [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF] ON [FF].[FACILITY_ID_REF] = [MFI].[MainPermitNumber]
      JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [MFI].[MainPermitNumber] = [UI].[MainPermitNumber]
 WHERE [UI].[Insert or Update] = 'U'
       AND [UI].[LEMIR ID for Update] IS NOT NULL
-      AND ([UI].[analysis hist notes] IS NULL
-           OR [UI].[analysis hist notes] = 'skip%')
+      --AND ([UI].[analysis hist notes] IS NULL
+      --     OR [UI].[analysis hist notes] like 'skip%')
   --
   --
 --     JOIN [LandDataBase].[dbo].[Permit] AS [P] ON [mfi].[MainPermitNumber] = [P].[PermitNumber]

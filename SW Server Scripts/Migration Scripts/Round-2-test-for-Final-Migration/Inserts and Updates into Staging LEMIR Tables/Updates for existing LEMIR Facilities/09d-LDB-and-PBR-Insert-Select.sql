@@ -38,7 +38,4 @@ FROM [LEMIR_Stage].[dbo].[SYS_CONTACT] AS [SC]
      JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [SC].[FACILITY_ID_REF] = [UI].[MainPermitNumber]
 WHERE [UI].[Insert or Update] = 'U'
       AND [UI].[LEMIR ID for Update] IS NOT NULL
-      AND ([UI].[analysis hist notes] IS NULL
-           OR [UI].[analysis hist notes] = 'skip%')
-      --AND [SC].[CONTACT_RID] > 612699
 ORDER BY 1
