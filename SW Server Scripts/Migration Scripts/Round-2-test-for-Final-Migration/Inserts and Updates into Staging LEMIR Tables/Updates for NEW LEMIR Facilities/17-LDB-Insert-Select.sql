@@ -14,7 +14,7 @@ DECLARE @rid_counter_start INT;
 DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 --
 SELECT @rid_counter_start=ISNULL(MAX([PERMIT_RID]), 1)
-FROM [GovOnline_LEMIR_BAK-3-26-19].[GOV].[SUB_PERMIT];
+FROM [LEMIR_Stage].[GOV].[SUB_PERMIT];
 --
 IF 'EPDMIG SW' =
     (SELECT [CREATED_BY]
@@ -61,14 +61,16 @@ SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
        @created_by_string AS [CREATED_BY],
        GETDATE() AS [UPDATED_DATE],
        @created_by_string AS [UPDATED_BY],
-       [FF].[FACILITY_ID_REF]
+       [FF].[FACILITY_ID_REF] AS [FACILITY_ID_REF]
 FROM [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MFI]
-     JOIN [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF] ON [FF].[FACILITY_IDENTIFIER] = [MFI].[MainPermitNumber]
-     JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [MFI].[MainPermitNumber] = [UI].[MainPermitNumber]
-WHERE [UI].[Insert or Update] = 'U'
-      AND [UI].[LEMIR ID for Update] IS NOT NULL
-      AND ([UI].[analysis hist notes] IS NULL
-           OR [UI].[analysis hist notes] = 'skip%')
+     JOIN [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF] ON [FF].[FACILITY_ID_REF] = [MFI].[MainPermitNumber]
+     --JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [MFI].[MainPermitNumber] = [UI].[MainPermitNumber]
+     JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [FF].[FACILITY_ID_REF] = [UI].[analysis hist notes]
+WHERE  [UI].[LEMIR ID for Update] IS NULL
+      AND [UI].[analysis hist notes] IS NOT NULL
+      AND [UI].[analysis hist notes] <> 'skip%'
+      AND [UI].[analysis hist notes] <> 'No Migrate'
+      AND [UI].[analysis hist notes] <> 'No migrate'
   --
   --
 --     JOIN [LandDataBase].[dbo].[Permit] AS [P] ON [mfi].[MainPermitNumber] = [P].[PermitNumber]

@@ -36,11 +36,8 @@ SELECT DISTINCT
        [SE].[FACILITY_ID_REF]
 FROM [LEMIR_Stage].[dbo].[SYS_EMAIL] AS [SE]
      JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [UI].[MainPermitNumber] = [SE].[FACILITY_ID_REF]
-WHERE [SE].[CREATED_BY] = @created_by_string
-      AND [UI].[Insert or Update] = 'U'
+WHERE [UI].[Insert or Update] = 'U'
       AND [UI].[LEMIR ID for Update] IS NOT NULL
-      AND [UI].[analysis hist notes] IS NULL
-      AND [UI].[LEMIR ID for Update] <> 3265
-
+      AND [UI].[LEMIR ID for Update] NOT IN ('332757','3405')
 ORDER BY 1
 

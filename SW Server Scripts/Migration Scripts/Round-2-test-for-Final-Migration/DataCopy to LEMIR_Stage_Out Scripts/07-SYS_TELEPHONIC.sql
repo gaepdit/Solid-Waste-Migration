@@ -1,16 +1,16 @@
 
---INSERT INTO [LEMIR_Stage_Out].[dbo].[SYS_TELEPHONIC]
---       ([TELEPHONIC_RID],
---        [PHONE_TYPE_RID],
---        [PHONE_AREA_CODE],
---        [PHONE_NO],
---        [PHONE_EXTENSION],
---        [STATUS_CD],
---        [CREATED_BY],
---        [UPDATED_BY],
---        [CREATED_DATE],
---        [UPDATED_DATE],
---        [SERVICE_PROVIDER])
+INSERT INTO [LEMIR_Stage_Out].[dbo].[SYS_TELEPHONIC]
+       ([TELEPHONIC_RID],
+        [PHONE_TYPE_RID],
+        [PHONE_AREA_CODE],
+        [PHONE_NO],
+        [PHONE_EXTENSION],
+        [STATUS_CD],
+        [CREATED_BY],
+        [UPDATED_BY],
+        [CREATED_DATE],
+        [UPDATED_DATE],
+        [SERVICE_PROVIDER])
 SELECT [ST].[TELEPHONIC_RID],
        [ST].[PHONE_TYPE_RID],
        [ST].[PHONE_AREA_CODE],
@@ -24,6 +24,6 @@ SELECT [ST].[TELEPHONIC_RID],
        [ST].[SERVICE_PROVIDER]
        --[ST].[FACILITY_ID_REF]
 FROM [LEMIR_Stage].[dbo].[SYS_TELEPHONIC] AS [ST]
-WHERE [ST].[TELEPHONIC_RID] > 21656157
+--WHERE [ST].[TELEPHONIC_RID] > 21640481
 
 

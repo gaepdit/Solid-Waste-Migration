@@ -20,10 +20,10 @@ When        Who                 What
 DECLARE @rid_counter_start INT;
 DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 --
---SELECT @rid_counter_start=ISNULL(MAX([ENV_PROGRAM_CONTACT_RID]), 1)
---FROM [LEMIR_Stage].[dbo].[SYS_ENV_PROGRAM_CONTACT];
+SELECT @rid_counter_start=ISNULL(MAX([ENV_PROGRAM_CONTACT_RID]), 1)
+FROM [LEMIR_Stage].[dbo].[SYS_ENV_PROGRAM_CONTACT];
 --
-set @rid_counter_start=713534;
+--set @rid_counter_start=713534;
 --
 IF 'EPDMIG SW' =
     (SELECT [CREATED_BY]
@@ -60,16 +60,13 @@ SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
        GETDATE() AS [UPDATED_DATE],
        @created_by_string AS [UPDATED_BY],
        [FEP].[FAC_ENV_PROGRAM_RID] AS [FAC_ENV_PROGRAM_RID],
-       [FEP].[FACILITY_ID_REF]
-FROM [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF]
-     JOIN [LEMIR_Stage].[dbo].[SYS_CONTACT] AS [SC] ON [FF].[FACILITY_ID_REF] = [SC].[FACILITY_ID_REF]
-     JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [FF].[FACILITY_RID] = [UI].[LEMIR ID for Update]
-     JOIN [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM] AS [FEP] ON [FF].[FACILITY_RID] = [FEP].[FACILITY_RID]
+       [FEP].[FACILITY_ID_REF] AS [FACILITY_ID_REF]
+FROM [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] -- ON [FF].[FACILITY_RID] = [UI].[LEMIR ID for Update]
+     JOIN [LEMIR_Stage].[dbo].[SYS_CONTACT] AS [SC] ON [UI].[MainPermitNumber] = [SC].[FACILITY_ID_REF]
+     JOIN [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM] AS [FEP] ON [UI].[MainPermitNumber] = [FEP].[FACILITY_ID_REF]
 WHERE [UI].[Insert or Update] = 'U'
       AND [UI].[LEMIR ID for Update] IS NOT NULL
-       AND ([UI].[analysis hist notes] IS NULL
-           OR [UI].[analysis hist notes] = 'skip%')
-      AND [SC].[CONTACT_RID] NOT IN(
-                                    '603354',
-                                    '608648'
-                                   )
+      --AND [SC].[CONTACT_RID] NOT IN(
+      --                              '605195',
+      --                              '611947'
+      --                             )

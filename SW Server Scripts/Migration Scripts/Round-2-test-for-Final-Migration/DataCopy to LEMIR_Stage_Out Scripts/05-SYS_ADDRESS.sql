@@ -1,32 +1,32 @@
 
 
---INSERT INTO [LEMIR_Stage_Out].[dbo].[SYS_ADDRESS]
---       ([ADDRESS_RID],
---        [ADDRESS_LINE1],
---        [ADDRESS_LINE2],
---        [CITY_NAME],
---        [PROVINCE_NAME],
---        [STATE_RID],
---        [COUNTY_RID],
---        [COUNTRY_RID],
---        [DISTRICT_NAME],
---        [STREET_DISTRICT_NAME],
---        [ZIP_CD],
---        [ZIP_SUFFIX_CD],
---        [STATUS_CD],
---        [CREATED_BY],
---        [UPDATED_BY],
---        [CREATED_DATE],
---        [UPDATED_DATE],
---        [ADDRESS_TYPE_RID],
---        [TRIBE_RID],
---        [QUAD_CD],
---        [ADDRESS_NAME],
---        [APT_NO],
---        [BLOCK_NO],
---        [LOT_NO],
---        [QUAL_NO],
---        [PROPERTY_OWNER])
+INSERT INTO [LEMIR_Stage_Out].[dbo].[SYS_ADDRESS]
+       ([ADDRESS_RID],
+        [ADDRESS_LINE1],
+        [ADDRESS_LINE2],
+        [CITY_NAME],
+        [PROVINCE_NAME],
+        [STATE_RID],
+        [COUNTY_RID],
+        [COUNTRY_RID],
+        [DISTRICT_NAME],
+        [STREET_DISTRICT_NAME],
+        [ZIP_CD],
+        [ZIP_SUFFIX_CD],
+        [STATUS_CD],
+        [CREATED_BY],
+        [UPDATED_BY],
+        [CREATED_DATE],
+        [UPDATED_DATE],
+        [ADDRESS_TYPE_RID],
+        [TRIBE_RID],
+        [QUAD_CD],
+        [ADDRESS_NAME],
+        [APT_NO],
+        [BLOCK_NO],
+        [LOT_NO],
+        [QUAL_NO],
+        [PROPERTY_OWNER])
 SELECT [ADDRESS_RID],
        [ADDRESS_LINE1],
        [ADDRESS_LINE2],
@@ -55,6 +55,6 @@ SELECT [ADDRESS_RID],
        [PROPERTY_OWNER]
        --[FACILITY_ID_REF]
 FROM [LEMIR_Stage].[dbo].[SYS_ADDRESS]
-WHERE [ADDRESS_RID] > 10722942
+--WHERE [ADDRESS_RID] > 10717676
 
 

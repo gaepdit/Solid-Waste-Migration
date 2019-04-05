@@ -35,12 +35,6 @@ SELECT [SC].[CONTACT_RID] AS [CONTACT_RID],
 FROM [LEMIR_Stage].[dbo].[SYS_CONTACT] AS [SC]
      JOIN [LEMIR_Stage].[dbo].[SYS_TELEPHONIC] AS [ST] ON [SC].[FACILITY_ID_REF] = [ST].[FACILITY_ID_REF]
      JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [SC].[FACILITY_ID_REF] = [UI].[MainPermitNumber]
-     --JOIN [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF] ON [UI].[MainPermitNumber] = [FF].[FACILITY_IDENTIFIER]
-WHERE [ST].[CREATED_BY] = @created_by_string
-      AND [SC].[CREATED_BY] = @created_by_string
-      AND [UI].[Insert or Update] = 'U'
+WHERE [UI].[Insert or Update] = 'U'
       AND [UI].[LEMIR ID for Update] IS NOT NULL
-      AND ([UI].[analysis hist notes] IS NULL
-           OR [UI].[analysis hist notes] = 'skip%')
-      --AND [SC].[CONTACT_RID] > 612699
 ORDER BY 8

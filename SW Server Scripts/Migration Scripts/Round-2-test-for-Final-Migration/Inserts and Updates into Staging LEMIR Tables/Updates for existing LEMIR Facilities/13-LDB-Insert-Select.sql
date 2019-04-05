@@ -13,10 +13,10 @@ When        Who                 What
 DECLARE @rid_counter_start [INT];
 DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 --
---SELECT @rid_counter_start=ISNULL(MAX([FAC_ENV_PROGRAM_RID]), 1)
---FROM [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM];
+SELECT @rid_counter_start=ISNULL(MAX([FAC_ENV_PROGRAM_RID]), 1)
+FROM [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM];
 --
-SET @rid_counter_start=545237;
+--SET @rid_counter_start=545237;
 --
 IF 'EPDMIG SW' =
     (SELECT [CREATED_BY]
@@ -54,8 +54,8 @@ SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
        @created_by_string AS [CREATED_BY],
        GETDATE() AS [UPDATED_DATE],
        @created_by_string AS [UPDATED_BY],
-       --[EIT].[LEMIR_XML] AS [PROGRAM_DETAIL],
-       [MFI].[MainPermitNumber] AS [FAC_PROGRAM_IDENTIFIER],
+       [EIT].[LEMIR_XML] AS [PROGRAM_DETAIL],
+       [UI].[MainPermitNumber] AS [FAC_PROGRAM_IDENTIFIER],
        [MFI].[FacilityName] AS [AKA_NAME],
        [EIT].[FACILITY_ID_REF] AS [FACILITY_ID_REF]
 FROM [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI]
@@ -63,19 +63,6 @@ FROM [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI]
      JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [EIT] ON [UI].[MainPermitNumber] = [EIT].[PermitNumber]
 WHERE [UI].[Insert or Update] = 'U'
       AND [UI].[LEMIR ID for Update] IS NOT NULL
-      AND ([UI].[analysis hist notes] IS NULL
-           OR [UI].[analysis hist notes] = 'skip%')
       AND [EIT].[LEMIR_XML] IS NOT NULL
-      and [UI].[LEMIR ID for Update] <> 3265
-      --and [EIT].[LEMIR_EI_RID] = 10050
-ORDER BY 2
---
---
---     JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [MFI].[MainPermitNumber] = [UI].[MainPermitNumber]
---                                                             AND [UI].[Insert or Update] = 'U'
-----WHERE [EIT].[LEMIR_EI_RID] <> 0
---      AND [EIT].[LEMIR_XML] IS NOT NULL
---      AND [MFI].[MainPermitNumber] not in ('025-041D(LI)(4)','025-041D(LI)','025-073P(RM)','036-010D(SL)','036-010D(SL)(1)','036-010D(SL1)(1)','034-005D(SL)','025-073P(RM)','146-011D(LI)','150-009D(SL)','150-009D(LI)','146-011D(LI)','028-040D(L)','063-027P(RM)','099-018D(L)(I)','099-018D(LI)','146-011D(L)','146-011D(LI)')
---      ORDER BY 2
-
-                                                       
+ORDER BY 2,
+         3
