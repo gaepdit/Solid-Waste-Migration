@@ -58,15 +58,15 @@ SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
        'A' AS [STATUS_CD],
        left([MFI].[Comments], 499) AS [COMMENTS],
        '1' AS [PERMIT_STATUS_RID],
-       '1108' AS [PERMIT_TYPE_RID],
+       '1166' AS [PERMIT_TYPE_RID],
        GETDATE() AS [CREATED_DATE],
        @created_by_string AS [CREATED_BY],
        GETDATE() AS [UPDATED_DATE],
        @created_by_string AS [UPDATED_BY],
-       [FF].[FACILITY_ID_REF]
-FROM [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MFI]
-     JOIN [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF] ON [FF].[FACILITY_ID_REF] = [MFI].[MainPermitNumber]
-     JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [MFI].[MainPermitNumber] = [UI].[MainPermitNumber]
+       [UI].[MainPermitNumber] as [FACILITY_ID_REF]
+FROM [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI]
+join [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MFI] ON [UI].[MainPermitNumber] = [MFI].[MainPermitNumber]
+      JOIN [GovOnline_LEMIR].[dbo].[FAC_FACILITY] AS [FF] ON [UI].[LEMIR ID for Update] = [FF].[FACILITY_RID]
 WHERE [UI].[Insert or Update] = 'U'
       AND [UI].[LEMIR ID for Update] IS NOT NULL
       --AND ([UI].[analysis hist notes] IS NULL

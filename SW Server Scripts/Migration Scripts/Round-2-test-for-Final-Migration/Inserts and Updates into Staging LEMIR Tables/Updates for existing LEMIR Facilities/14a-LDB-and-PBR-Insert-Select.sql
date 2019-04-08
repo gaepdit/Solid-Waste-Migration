@@ -39,17 +39,17 @@ IF 'EPDMIG SW' =
   --
   -- DONE
   --
---INSERT INTO [LEMIR_Stage].[dbo].[SYS_ENV_PROGRAM_CONTACT]
---       ([ENV_PROGRAM_CONTACT_RID],
---        [CONTACT_RID],
---        [TYPE_RID],
---        [STATUS_CD],
---        [CREATED_DATE],
---        [CREATED_BY],
---        [UPDATED_DATE],
---        [UPDATED_BY],
---        [FAC_ENV_PROGRAM_RID],
---        [FACILITY_ID_REF])
+INSERT INTO [LEMIR_Stage].[dbo].[SYS_ENV_PROGRAM_CONTACT]
+       ([ENV_PROGRAM_CONTACT_RID],
+        [CONTACT_RID],
+        [TYPE_RID],
+        [STATUS_CD],
+        [CREATED_DATE],
+        [CREATED_BY],
+        [UPDATED_DATE],
+        [UPDATED_BY],
+        [FAC_ENV_PROGRAM_RID],
+        [FACILITY_ID_REF])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [ENV_PROGRAM_CONTACT_RID],
        [SC].[CONTACT_RID] AS [CONTACT_RID],
@@ -61,7 +61,7 @@ SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
        @created_by_string AS [UPDATED_BY],
        [FEP].[FAC_ENV_PROGRAM_RID] AS [FAC_ENV_PROGRAM_RID],
        [FEP].[FACILITY_ID_REF] AS [FACILITY_ID_REF]
-FROM [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] -- ON [FF].[FACILITY_RID] = [UI].[LEMIR ID for Update]
+FROM [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI]
      JOIN [LEMIR_Stage].[dbo].[SYS_CONTACT] AS [SC] ON [UI].[MainPermitNumber] = [SC].[FACILITY_ID_REF]
      JOIN [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM] AS [FEP] ON [UI].[MainPermitNumber] = [FEP].[FACILITY_ID_REF]
 WHERE [UI].[Insert or Update] = 'U'
@@ -70,3 +70,4 @@ WHERE [UI].[Insert or Update] = 'U'
       --                              '605195',
       --                              '611947'
       --                             )
+ORDER BY 10

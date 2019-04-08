@@ -56,22 +56,33 @@ SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
        'A' AS [STATUS_CD],
        left([MFI].[Comments], 499) AS [COMMENTS],
        '1' AS [PERMIT_STATUS_RID],
-       '1108' AS [PERMIT_TYPE_RID],
+       '1165' AS [PERMIT_TYPE_RID],
        GETDATE() AS [CREATED_DATE],
        @created_by_string AS [CREATED_BY],
        GETDATE() AS [UPDATED_DATE],
        @created_by_string AS [UPDATED_BY],
-       [FF].[FACILITY_ID_REF] AS [FACILITY_ID_REF]
-FROM [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MFI]
-     JOIN [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF] ON [FF].[FACILITY_ID_REF] = [MFI].[MainPermitNumber]
-     --JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [MFI].[MainPermitNumber] = [UI].[MainPermitNumber]
-     JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [FF].[FACILITY_ID_REF] = [UI].[analysis hist notes]
-WHERE  [UI].[LEMIR ID for Update] IS NULL
+       [UI].[MainPermitNumber] AS [FACILITY_ID_REF]
+FROM [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI]
+      JOIN [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MFI] ON [UI].[MainPermitNumber] = [MFI].[MainPermitNumber]
+      JOIN [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF] ON [UI].[analysis hist notes] = [FF].[FACILITY_ID_REF]
+WHERE [UI].[LEMIR ID for Update] IS NULL
       AND [UI].[analysis hist notes] IS NOT NULL
       AND [UI].[analysis hist notes] <> 'skip%'
       AND [UI].[analysis hist notes] <> 'No Migrate'
       AND [UI].[analysis hist notes] <> 'No migrate'
-  --
+      AND [UI].[MainPermitNumber] NOT IN(
+                                         '080-006D(L)',
+                                         '080-007D(C&D)',
+                                         '107-014D(C&D)',
+                                         '107-013D(SL)(2)',
+                                         '136-014D(L)',
+                                         '136-018D(MSWL)',
+                                         '025-068D(L)',
+                                         '028-040D(C&D)',
+                                         '092-021D(MSWL)',
+                                         '148-009D(MSWL)',
+                                         '150-010D(MSWL)'
+                                        )
   --
 --     JOIN [LandDataBase].[dbo].[Permit] AS [P] ON [mfi].[MainPermitNumber] = [P].[PermitNumber]
 --WHERE [FF].[CREATED_BY] = 'EPDMIG SW'

@@ -30,23 +30,23 @@ IF 'EPDMIG SW' =
   END
   
   --
---INSERT INTO [LEMIR_Stage].[dbo].[SYS_ADDRESS]
---       ([ADDRESS_RID],
---        [ADDRESS_LINE1],
---        [ADDRESS_LINE2],
---        [CITY_NAME],
---        [PROVINCE_NAME],
---        [STATE_RID],
---        [COUNTRY_RID],
---        [ZIP_CD],
---        [ZIP_SUFFIX_CD],
---        [STATUS_CD],
---        [CREATED_BY],
---        [UPDATED_BY],
---        [CREATED_DATE],
---        [UPDATED_DATE],
---        [ADDRESS_TYPE_RID],
---        [FACILITY_ID_REF])
+INSERT INTO [LEMIR_Stage].[dbo].[SYS_ADDRESS]
+       ([ADDRESS_RID],
+        [ADDRESS_LINE1],
+        [ADDRESS_LINE2],
+        [CITY_NAME],
+        [PROVINCE_NAME],
+        [STATE_RID],
+        [COUNTRY_RID],
+        [ZIP_CD],
+        [ZIP_SUFFIX_CD],
+        [STATUS_CD],
+        [CREATED_BY],
+        [UPDATED_BY],
+        [CREATED_DATE],
+        [UPDATED_DATE],
+        [ADDRESS_TYPE_RID],
+        [FACILITY_ID_REF])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [ADDRESS_RID],
        ltrim([MFI].[MailingAddress]) AS [ADDRESS_LINE1],
@@ -65,7 +65,7 @@ SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
        '2' AS [ADDRESS_TYPE_RID],
        [MFI].[MainPermitNumber] AS [FACILITY_ID_REF]
 FROM [LandDatabase].[dbo].[MAIN FACILITY INFO] AS [MFI]
-     LEFT JOIN [GovOnline_LEMIR_BAK-3-26-19].[dbo].[REF_STATE] AS [RS] ON [MFI].[State] = [RS].[STATE_CD]
+     LEFT JOIN [GovOnline_LEMIR].[dbo].[REF_STATE] AS [RS] ON [MFI].[State] = [RS].[STATE_CD]
      JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [MFI].[MainPermitNumber] = [UI].[MainPermitNumber]
 WHERE [UI].[Insert or Update] = 'U'
       AND [UI].[LEMIR ID for Update] IS NULL
