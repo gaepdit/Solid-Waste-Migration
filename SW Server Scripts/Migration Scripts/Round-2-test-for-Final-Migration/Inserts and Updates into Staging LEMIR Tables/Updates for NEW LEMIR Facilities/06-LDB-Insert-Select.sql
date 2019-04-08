@@ -29,15 +29,15 @@ IF 'EPDMIG SW' =
     SET @rid_counter_start=@rid_counter_start + 1000;
   END
 --
---INSERT INTO [LEMIR_Stage].[dbo].[SYS_EMAIL]
---       ([EMAIL_RID],
---        [EMAIL_ADDRESS],
---        [STATUS_CD],
---        [CREATED_BY],
---        [UPDATED_BY],
---        [CREATED_DATE],
---        [UPDATED_DATE],
---        [FACILITY_ID_REF])
+INSERT INTO [LEMIR_Stage].[dbo].[SYS_EMAIL]
+       ([EMAIL_RID],
+        [EMAIL_ADDRESS],
+        [STATUS_CD],
+        [CREATED_BY],
+        [UPDATED_BY],
+        [CREATED_DATE],
+        [UPDATED_DATE],
+        [FACILITY_ID_REF])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [EMAIL_RID],
        LOWER(isnull([LC].[Owner/ContactE-Mail], [LC].[FacilityManagerE-mail])) AS [EMAIL_ADDRESS],
@@ -46,10 +46,9 @@ SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
        @created_by_string AS [UPDATED_BY],
        GETDATE() AS [CREATED_DATE],
        GETDATE() AS [UPDATED_DATE],
-       [MFI].[MainPermitNumber] AS [FACILITY_ID_REF]
-FROM [LandDatabase].[dbo].[MAIN FACILITY INFO] AS [MFI]
-     left JOIN [LandDataBase].[dbo].[Contacts] AS [LC] ON [MFI].[MainPermitNumber] = [LC].[PermitNumber]
-     JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [MFI].[MainPermitNumber] = [UI].[MainPermitNumber]
+       [LC].[PermitNumber] AS [FACILITY_ID_REF]
+FROM [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI]
+     JOIN [LandDataBase].[dbo].[Contacts] AS [LC]  ON [LC].[PermitNumber] = [UI].[MainPermitNumber]
 WHERE [UI].[Insert or Update] = 'U'
       AND [UI].[LEMIR ID for Update] IS NULL
       AND [UI].[analysis hist notes] IS NOT NULL

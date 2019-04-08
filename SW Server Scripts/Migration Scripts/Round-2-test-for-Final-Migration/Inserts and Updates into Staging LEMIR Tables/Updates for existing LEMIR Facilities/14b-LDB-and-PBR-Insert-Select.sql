@@ -38,15 +38,15 @@ IF 'EPDMIG SW' =
 --
 -- DONE
 --
---INSERT INTO [LEMIR_Stage].[dbo].[SYS_ENV_PROGRAM_CONTACT_DUTY]
---       ([ENV_PROGRAM_CONTACT_RID],
---        [CONTACT_DUTY_RID],
---        [STATUS_CD],
---        [CREATED_DATE],
---        [CREATED_BY],
---        [UPDATED_DATE],
---        [UPDATED_BY],
---        [FACILITY_ID_REF])
+INSERT INTO [LEMIR_Stage].[dbo].[SYS_ENV_PROGRAM_CONTACT_DUTY]
+       ([ENV_PROGRAM_CONTACT_RID],
+        [CONTACT_DUTY_RID],
+        [STATUS_CD],
+        [CREATED_DATE],
+        [CREATED_BY],
+        [UPDATED_DATE],
+        [UPDATED_BY],
+        [FACILITY_ID_REF])
 SELECT [SEPC].[ENV_PROGRAM_CONTACT_RID] AS [ENV_PROGRAM_CONTACT_RID],
        iif([SC].[CONTACT_TYPE_RID] = '13', '4', '8') AS [CONTACT_DUTY_RID],
        'A' AS [STATUS_CD],
@@ -57,7 +57,7 @@ SELECT [SEPC].[ENV_PROGRAM_CONTACT_RID] AS [ENV_PROGRAM_CONTACT_RID],
        [SC].[FACILITY_ID_REF] AS [FACILITY_ID_REF]
 FROM [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI]
      JOIN [LEMIR_Stage].[dbo].[SYS_CONTACT] AS [SC] ON [UI].[MainPermitNumber] = [SC].[FACILITY_ID_REF]
-     JOIN [LEMIR_Stage].[dbo].[SYS_ENV_PROGRAM_CONTACT] AS [SEPC] ON [SC].[FACILITY_ID_REF] = [SEPC].[FACILITY_ID_REF]
+     JOIN [LEMIR_Stage].[dbo].[SYS_ENV_PROGRAM_CONTACT] AS [SEPC] ON [SC].[CONTACT_RID] = [SEPC].[CONTACT_RID]
 WHERE [UI].[Insert or Update] = 'U'
       AND [UI].[LEMIR ID for Update] IS NOT NULL
       --AND [UI].[analysis hist notes] IS NULL
@@ -67,3 +67,4 @@ WHERE [UI].[Insert or Update] = 'U'
       --                                            '698310',
       --                                            '699793'
       --                                           )
+      order by 8
