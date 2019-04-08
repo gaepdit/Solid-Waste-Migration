@@ -13,15 +13,15 @@ When        Who                 What
 DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 --
 --B
---INSERT INTO [LEMIR_Stage].[dbo].[SYS_CONTACT_TELEPHONIC]
---       ([CONTACT_RID],
---        [TELEPHONIC_RID],
---        [STATUS_CD],
---        [CREATED_BY],
---        [UPDATED_BY],
---        [CREATED_DATE],
---        [UPDATED_DATE],
---        [FACILITY_ID_REF])
+INSERT INTO [LEMIR_Stage].[dbo].[SYS_CONTACT_TELEPHONIC]
+       ([CONTACT_RID],
+        [TELEPHONIC_RID],
+        [STATUS_CD],
+        [CREATED_BY],
+        [UPDATED_BY],
+        [CREATED_DATE],
+        [UPDATED_DATE],
+        [FACILITY_ID_REF])
 SELECT [SC].[CONTACT_RID] AS [CONTACT_RID],
        [ST].[TELEPHONIC_RID] AS [TELEPHONIC_RID],
        'A' AS [STATUS_CD],
@@ -33,7 +33,6 @@ SELECT [SC].[CONTACT_RID] AS [CONTACT_RID],
 FROM [LEMIR_Stage].[dbo].[SYS_CONTACT] AS [SC]
      JOIN [LEMIR_Stage].[dbo].[SYS_TELEPHONIC] AS [ST] ON [SC].[FACILITY_ID_REF] = [ST].[FACILITY_ID_REF]
      JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [SC].[FACILITY_ID_REF] = [UI].[MainPermitNumber]
-     JOIN [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF] ON [UI].[MainPermitNumber] = [FF].[FACILITY_IDENTIFIER]
 WHERE [UI].[Insert or Update] = 'U'
       AND [UI].[LEMIR ID for Update] IS NULL
       AND [UI].[analysis hist notes] IS NOT NULL

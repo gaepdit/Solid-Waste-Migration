@@ -43,23 +43,37 @@ IF 'EPDMIG SW' =
 --        [FAC_PROGRAM_IDENTIFIER],
 --        [AKA_NAME],
 --        [FACILITY_ID_REF])
-SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
-    (SELECT 1)) AS [FAC_ENV_PROGRAM_RID],
+SELECT DISTINCT  -- @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
+    --(SELECT 1)) AS [FAC_ENV_PROGRAM_RID],
        [FF].[FACILITY_RID] AS [FACILITY_RID],
        10059 AS [TYPE_RID],
        'A' AS [STATUS_CD],
        GETDATE() AS [CREATED_DATE],
        @created_by_string AS [CREATED_BY],
        GETDATE() AS [UPDATED_DATE],
-       @created_by_string AS [UPDATED_BY],
-       [M].[LEMIR_XML] AS [PROGRAM_DETAIL],
-       [FF].[FACILITY_ID_REF] AS [FAC_PROGRAM_IDENTIFIER],
-       [FF].[FACILITY_NAME] AS [AKA_NAME],
-       [FF].[FACILITY_ID_REF] AS [FACILITY_ID_REF]
+       @created_by_string AS [UPDATED_BY]
+       --[M].[LEMIR_XML] AS [PROGRAM_DETAIL],
+       --[FF].[FACILITY_ID_REF] AS [FAC_PROGRAM_IDENTIFIER],
+       --[FF].[FACILITY_NAME] AS [AKA_NAME],
+       --[FF].[FACILITY_ID_REF] AS [FACILITY_ID_REF]
 FROM [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI]
      JOIN [LEMIR_Stage].[dbo].[EI_GW_MM_XML] AS [M] ON [UI].[MainPermitNumber] = [M].[PermitNumber]
      JOIN [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF] ON [UI].[MainPermitNumber] = [FF].[FACILITY_ID_REF]
 WHERE [M].[LEMIR_EI_CD] = 'MM'
-ORDER BY 2
+      --AND [FF].[FACILITY_RID] IS NOT NULL
+      --AND [UI].[MainPermitNumber] NOT IN(
+      --                                   '080-006D(L)',
+      --                                   '080-007D(C&D)',
+      --                                   '107-014D(C&D)',
+      --                                   '107-013D(SL)(2)',
+      --                                   '136-014D(L)',
+      --                                   '136-018D(MSWL)',
+      --                                   '025-068D(L)',
+      --                                   '028-040D(C&D)',
+      --                                   '092-021D(MSWL)',
+      --                                   '148-009D(MSWL)',
+      --                                   '150-010D(MSWL)'
+      --                                  )
+ORDER BY 1
 
                                                        

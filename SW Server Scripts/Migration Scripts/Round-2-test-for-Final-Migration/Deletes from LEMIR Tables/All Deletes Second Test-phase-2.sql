@@ -1,4 +1,4 @@
-USE [LEMIR_Stage]  -- fill this in
+USE [LEMIR_Stage_Out]   --[LEMIR_Stage]  -- fill this in
 GO
 DELETE FROM [GOV].[SUB_PERMIT]
 WHERE [CREATED_BY] = 'EPDMIG SW'

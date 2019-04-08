@@ -30,18 +30,18 @@ IF 'EPDMIG SW' =
   END
   
 --
---INSERT INTO [LEMIR_Stage].[dbo].[SYS_TELEPHONIC]
---       ([TELEPHONIC_RID],
---        [PHONE_TYPE_RID],
---        [PHONE_AREA_CODE],
---        [PHONE_NO],
---        [PHONE_EXTENSION],
---        [STATUS_CD],
---        [CREATED_BY],
---        [UPDATED_BY],
---        [CREATED_DATE],
---        [UPDATED_DATE],
---        [FACILITY_ID_REF])
+INSERT INTO [LEMIR_Stage].[dbo].[SYS_TELEPHONIC]
+       ([TELEPHONIC_RID],
+        [PHONE_TYPE_RID],
+        [PHONE_AREA_CODE],
+        [PHONE_NO],
+        [PHONE_EXTENSION],
+        [STATUS_CD],
+        [CREATED_BY],
+        [UPDATED_BY],
+        [CREATED_DATE],
+        [UPDATED_DATE],
+        [FACILITY_ID_REF])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [TELEPHONIC_RID],
        1 AS [PHONE_TYPE_RID],
@@ -55,7 +55,7 @@ SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
        GETDATE() AS [UPDATED_DATE],
        [MFI].[MainPermitNumber] AS [FACILITY_ID_REF]
 FROM [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MFI]
-     left JOIN [LandDataBase].[dbo].[Contacts] AS [LC] ON [MFI].[MainPermitNumber] = [LC].[PermitNumber]
+     JOIN [LandDataBase].[dbo].[Contacts] AS [LC] ON [MFI].[MainPermitNumber] = [LC].[PermitNumber]
      JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [MFI].[MainPermitNumber] = [UI].[MainPermitNumber]
 WHERE [UI].[Insert or Update] = 'U'
       AND [UI].[LEMIR ID for Update] IS NULL

@@ -24,22 +24,22 @@ IF 'EPDMIG SW' =
     SET @rid_counter_start=@rid_counter_start + 1000;
   END
   --
---INSERT INTO [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM_LOC]
---       ([FAC_ENV_PROGRAM_LOC_RID],
---        [FAC_ENV_PROGRAM_RID],
---        [LOCATION_RID],
---        [PRIMARY_IND],
---        [EFF_DATE],
---        [EXP_DATE],
---        [LOCATION_IDENTIFIER],
---        [LOCATION_TYPE_NAME],
---        [LOCATION_ALIAS],
---        [STATUS_CD],
---        [CREATED_DATE],
---        [CREATED_BY],
---        [UPDATED_DATE],
---        [UPDATED_BY],
---        [FACILITY_ID_REF])
+INSERT INTO [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM_LOC]
+       ([FAC_ENV_PROGRAM_LOC_RID],
+        [FAC_ENV_PROGRAM_RID],
+        [LOCATION_RID],
+        [PRIMARY_IND],
+        [EFF_DATE],
+        [EXP_DATE],
+        [LOCATION_IDENTIFIER],
+        [LOCATION_TYPE_NAME],
+        [LOCATION_ALIAS],
+        [STATUS_CD],
+        [CREATED_DATE],
+        [CREATED_BY],
+        [UPDATED_DATE],
+        [UPDATED_BY],
+        [FACILITY_ID_REF])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [FAC_ENV_PROGRAM_LOC_RID],
        [FEP].[FAC_ENV_PROGRAM_RID] AS [FAC_ENV_PROGRAM_RID],
@@ -84,69 +84,26 @@ SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
        @created_by_string AS [CREATED_BY],
        GETDATE() AS [UPDATED_DATE],
        [SPL].[UPDATED_BY] AS [UPDATED_BY],
-       [FF].[FACILITY_ID_REF]
-FROM [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM] AS [FEP]
-     JOIN [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF] ON [FF].[FACILITY_ID_REF] = [FEP].[FACILITY_ID_REF]
-     JOIN [LEMIR_Stage].[dbo].[SYS_PHYSICAL_LOCATION] AS [SPL] ON [SPL].[FACILITY_ID_REF] = [FF].[FACILITY_ID_REF]
-     JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [FF].[FACILITY_ID_REF] = [UI].[analysis hist notes]
+       [UI].[MainPermitNumber] AS [FACILITY_ID_REF]
+FROM [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI]
+     LEFT JOIN [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM] AS [FEP] ON [UI].[MainPermitNumber] = [FEP].[FACILITY_ID_REF]
+     LEFT JOIN [LEMIR_Stage].[dbo].[SYS_PHYSICAL_LOCATION] AS [SPL] ON [UI].[MainPermitNumber] = [SPL].[FACILITY_ID_REF]
 WHERE [UI].[Insert or Update] = 'U'
       AND [UI].[LEMIR ID for Update] IS NULL
       AND [UI].[analysis hist notes] IS NOT NULL
       AND [UI].[analysis hist notes] <> 'skip%'
       AND [UI].[analysis hist notes] <> 'No Migrate'
       AND [UI].[analysis hist notes] <> 'No migrate'
-      --AND [FEP].[FAC_ENV_PROGRAM_RID] <> '535016'
-      --AND [SPL].[CREATED_BY] = @created_by_string
-      --AND [FEP].[FAC_PROGRAM_IDENTIFIER] NOT IN(
-      --                                          'PBR-023-16COL',
-      --                                          'PBR-016-025COL;TS',
-      --                                          'PBR-005-26TS',
-      --                                          'PBR-028-137COL',
-      --                                          'PBR-029-13OSTT',
-      --                                          'PBR-031-108COL',
-      --                                          'PBR-031-109OSTT',
-      --                                          'PBR-031-110COL',
-      --                                          'PBR-035-026OSTT',
-      --                                          'PBR-036-20OSTT',
-      --                                          'PBR-042-12OSP',
-      --                                          'PBR-055-15TS',
-      --                                          'PBR-056-307COL',
-      --                                          'PBR-060-250TS',
-      --                                          'PBR-063-35TS',
-      --                                          'PBR-069-49TS',
-      --                                          'PBR-072-02TS',
-      --                                          'PBR-075-40COL',
-      --                                          'PBR-092-43TS',
-      --                                          'PBR-093-012OSTT',
-      --                                          'PBR-094-05TS',
-      --                                          'PBR-095-09COL',
-      --                                          'PBR-099-010COL',
-      --                                          'PBR-099-010TS',
-      --                                          'PBR-120-05COL',
-      --                                          'PBR-141-11COL',
-      --                                          'PBR-147-50COL',
-      --                                          'PBR-150-06TS',
-      --                                          'PBR-155-032COL',
-      --                                          'PBR-159-08TS',
-      --                                          'PBR-160-67COL',
-      --                                          'PBR-022-20COL',
-      --                                          'PBR-022-20TS',
-      --                                          'PBR-033-108COL',
-      --                                          'PBR-033-109TS',
-      --                                          'PBR-033-123OSP',
-      --                                          'PBR-042-12TS',
-      --                                          'PBR-060-246COL',
-      --                                          'PBR-066-011TS',
-      --                                          'PBR-067-791COL',
-      --                                          'PBR-067-792COL',
-      --                                          'PBR-067-793COL',
-      --                                          'PBR-067-806COL',
-      --                                          'PBR-067-806TS',
-      --                                          'PBR-111-08TS',
-      --                                          'PBR-114-19COL',
-      --                                          'PBR141-11TS',
-      --                                          'PBR-147-54COL',
-      --                                          'PBR-147-54TS'
-      --                                         )
-                                                                        --AND [SPL].[UPDATED_BY] LIKE concat(@created_by_string, ' %')
-     --JOIN [GovOnline_LEMIR].[dbo].[REF_FACILITY_TYPE] AS [RFT] ON [FF].[FACILITY_TYPE_RID] = [RFT].[FACILITY_TYPE_RID]
+      AND [UI].[MainPermitNumber] NOT IN(
+                                         '080-006D(L)',
+                                         '080-007D(C&D)',
+                                         '107-014D(C&D)',
+                                         '107-013D(SL)(2)',
+                                         '136-014D(L)',
+                                         '136-018D(MSWL)',
+                                         '025-068D(L)',
+                                         '028-040D(C&D)',
+                                         '092-021D(MSWL)',
+                                         '148-009D(MSWL)',
+                                         '150-010D(MSWL)'
+                                        )

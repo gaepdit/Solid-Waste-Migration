@@ -16,15 +16,15 @@ DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 --Get MAX Contact Number
 --
 --
---INSERT INTO [LEMIR_Stage].[dbo].[SYS_CONTACT_ADDRESS]
---       ([CONTACT_RID],
---        [ADDRESS_RID],
---        [STATUS_CD],
---        [CREATED_BY],
---        [UPDATED_BY],
---        [CREATED_DATE],
---        [UPDATED_DATE],
---        [FACILITY_ID_REF])
+INSERT INTO [LEMIR_Stage].[dbo].[SYS_CONTACT_ADDRESS]
+       ([CONTACT_RID],
+        [ADDRESS_RID],
+        [STATUS_CD],
+        [CREATED_BY],
+        [UPDATED_BY],
+        [CREATED_DATE],
+        [UPDATED_DATE],
+        [FACILITY_ID_REF])
 SELECT [SC].[CONTACT_RID] AS [CONTACT_RID],
        [SA].[ADDRESS_RID] AS [ADDRESS_RID],
        'A' AS [STATUS_CD],
@@ -32,7 +32,7 @@ SELECT [SC].[CONTACT_RID] AS [CONTACT_RID],
        @created_by_string AS [UPDATED_BY],
        GETDATE() AS [CREATED_DATE],
        GETDATE() AS [UPDATED_DATE],
-       [SC].[FACILITY_ID_REF]
+       [SA].[FACILITY_ID_REF] as [FACILITY_ID_REF]
 FROM [LEMIR_Stage].[dbo].[SYS_ADDRESS] AS [SA]
      JOIN [LEMIR_Stage].[dbo].[SYS_CONTACT] AS [SC] ON [SA].[FACILITY_ID_REF] = [SC].[FACILITY_ID_REF]
      JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [SA].[FACILITY_ID_REF] = [UI].[MainPermitNumber]

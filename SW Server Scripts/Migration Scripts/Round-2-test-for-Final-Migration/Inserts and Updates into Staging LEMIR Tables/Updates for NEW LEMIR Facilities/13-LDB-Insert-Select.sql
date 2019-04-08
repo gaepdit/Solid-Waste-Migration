@@ -30,19 +30,19 @@ IF 'EPDMIG SW' =
 --
 -- DONE
 --
---INSERT INTO [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM]
---       ([FAC_ENV_PROGRAM_RID],
---        [FACILITY_RID],
---        [TYPE_RID],
---        [STATUS_CD],
---        [CREATED_DATE],
---        [CREATED_BY],
---        [UPDATED_DATE],
---        [UPDATED_BY],
---        [PROGRAM_DETAIL],
---        [FAC_PROGRAM_IDENTIFIER],
---        [AKA_NAME],
---        [FACILITY_ID_REF])
+INSERT INTO [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM]
+       ([FAC_ENV_PROGRAM_RID],
+        [FACILITY_RID],
+        [TYPE_RID],
+        [STATUS_CD],
+        [CREATED_DATE],
+        [CREATED_BY],
+        [UPDATED_DATE],
+        [UPDATED_BY],
+        [PROGRAM_DETAIL],
+        [FAC_PROGRAM_IDENTIFIER],
+        [AKA_NAME],
+        [FACILITY_ID_REF])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [FAC_ENV_PROGRAM_RID],
        [FF].[FACILITY_RID] AS [FACILITY_RID],
@@ -61,12 +61,26 @@ FROM [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI]
      JOIN [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF] ON [UI].[analysis hist notes] = [FF].[FACILITY_ID_REF]
 WHERE [UI].[Insert or Update] = 'U'
       AND [UI].[LEMIR ID for Update] IS NULL
-      AND [UI].[analysis hist notes] IS NOT NULL 
+      AND [UI].[analysis hist notes] IS NOT NULL
       AND [UI].[analysis hist notes] NOT LIKE 'skip%'
       AND [UI].[analysis hist notes] <> 'No Migrate'
       AND [UI].[analysis hist notes] <> 'No migrate'
       AND [EIT].[LEMIR_XML] IS NOT NULL
-ORDER BY [EIT].[FACILITY_ID_REF]
+      AND [EIT].[FACILITY_ID_REF] NOT IN(
+                                         '080-006D(L)',
+                                         '080-007D(C&D)',
+                                         '107-014D(C&D)',
+                                         '107-013D(SL)(2)',
+                                         '136-014D(L)',
+                                         '136-018D(MSWL)',
+                                         '025-068D(L)',
+                                         '028-040D(C&D)',
+                                         '092-021D(MSWL)',
+                                         '148-009D(MSWL)',
+                                         '150-010D(MSWL)'
+                                        )
+--ORDER BY [EIT].[FACILITY_ID_REF]
+ORDER BY 2
 
 
                                                        
