@@ -62,19 +62,19 @@ FROM [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI]
       left JOIN [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF] ON [UI].[MainPermitNumber] = [FF].[FACILITY_ID_REF]
 WHERE [M].[LEMIR_EI_CD] = 'MM'
 AND [UI].[analysis hist notes] IS NOT null
-      AND [UI].[MainPermitNumber] NOT IN(
-                                         '080-006D(L)',
-                                         '080-007D(C&D)',
-                                         '107-014D(C&D)',
-                                         '107-013D(SL)(2)',
-                                         '136-014D(L)',
-                                         '136-018D(MSWL)',
-                                         '025-068D(L)',
-                                         '028-040D(C&D)',
-                                         '092-021D(MSWL)',
-                                         '148-009D(MSWL)',
-                                         '150-010D(MSWL)'
-                                        )
+      --AND [UI].[MainPermitNumber] NOT IN(
+      --                                   '080-006D(L)',
+      --                                   '080-007D(C&D)',
+      --                                   '107-014D(C&D)',
+      --                                   '107-013D(SL)(2)',
+      --                                   '136-014D(L)',
+      --                                   '136-018D(MSWL)',
+      --                                   '025-068D(L)',
+      --                                   '028-040D(C&D)',
+      --                                   '092-021D(MSWL)',
+      --                                   '148-009D(MSWL)',
+      --                                   '150-010D(MSWL)'
+      --                                  )
 ORDER BY 2
 
                                                    
