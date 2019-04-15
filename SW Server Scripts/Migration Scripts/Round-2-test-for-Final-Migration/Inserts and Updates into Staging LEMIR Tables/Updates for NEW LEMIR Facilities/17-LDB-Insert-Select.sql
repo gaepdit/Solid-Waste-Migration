@@ -56,30 +56,57 @@ SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
        'A' AS [STATUS_CD],
        left([MFI].[Comments], 499) AS [COMMENTS],
        '1' AS [PERMIT_STATUS_RID],
-       '1165' AS [PERMIT_TYPE_RID],
+       [PERMIT_TYPE_RID]=CASE
+                           WHEN [EIT].[LEMIR_EI_CD] = 'Other-D or P'
+                             THEN 1126
+                           WHEN [EIT].[LEMIR_EI_CD] = 'IN'
+                             THEN 1165
+                           WHEN [EIT].[LEMIR_EI_CD] IN('MSWL', 'C&D')
+                             THEN 1166
+                           WHEN [EIT].[LEMIR_EI_CD] = 'LI'
+                             THEN 1167
+                           WHEN [EIT].[LEMIR_EI_CD] = 'BIO'
+                             THEN 1169
+                           WHEN [EIT].[LEMIR_EI_CD] = 'CO'
+                             THEN 1170
+                           WHEN [EIT].[LEMIR_EI_CD] = 'LS'
+                             THEN 1171
+                           WHEN [EIT].[LEMIR_EI_CD] = 'MRF'
+                             THEN 1172
+                           WHEN [EIT].[LEMIR_EI_CD] = 'COL'
+                             THEN 1184
+                           WHEN [EIT].[LEMIR_EI_CD] = 'TS'
+                             THEN 1186
+                           WHEN [EIT].[LEMIR_EI_CD] = 'TT'
+                             THEN 1188
+                           WHEN [EIT].[LEMIR_EI_CD] = 'PBR-OTH'
+                             THEN 1189
+                           WHEN [EIT].[LEMIR_EI_CD] = 'YTL'
+                             THEN 1190
+                           ELSE 1126
+                         END,
        GETDATE() AS [CREATED_DATE],
        @created_by_string AS [CREATED_BY],
        GETDATE() AS [UPDATED_DATE],
        @created_by_string AS [UPDATED_BY],
        [UI].[MainPermitNumber] AS [FACILITY_ID_REF]
 FROM [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI]
-      JOIN [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MFI] ON [UI].[MainPermitNumber] = [MFI].[MainPermitNumber]
-      JOIN [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF] ON [UI].[analysis hist notes] = [FF].[FACILITY_ID_REF]
+     JOIN [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MFI] ON [UI].[MainPermitNumber] = [MFI].[MainPermitNumber]
+     JOIN [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF] ON [UI].[analysis hist notes] = [FF].[FACILITY_ID_REF]
+     LEFT JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [EIT] ON [MFI].[MainPermitNumber] = [EIT].[PermitNumber]
 WHERE [UI].[LEMIR ID for Update] IS NULL
       AND [UI].[analysis hist notes] IS NOT NULL
       AND [UI].[analysis hist notes] <> 'skip%'
       AND [UI].[analysis hist notes] <> 'No Migrate'
       AND [UI].[analysis hist notes] <> 'No migrate'
       AND [UI].[MainPermitNumber] NOT IN(
+                                         '028-040D(C&D)',
                                          '080-006D(L)',
                                          '080-007D(C&D)',
                                          '107-014D(C&D)',
                                          '107-013D(SL)(2)',
                                          '136-014D(L)',
                                          '136-018D(MSWL)',
-                                         '025-068D(L)',
-                                         '028-040D(C&D)',
-                                         '092-021D(MSWL)',
                                          '148-009D(MSWL)',
                                          '150-010D(MSWL)'
                                         )

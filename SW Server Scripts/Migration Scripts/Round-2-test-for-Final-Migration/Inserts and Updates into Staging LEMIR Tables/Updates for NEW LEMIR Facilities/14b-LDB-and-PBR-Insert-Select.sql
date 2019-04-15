@@ -66,15 +66,13 @@ WHERE [UI].[Insert or Update] = 'U'
       AND [UI].[analysis hist notes] <> 'No Migrate'
       AND [UI].[analysis hist notes] <> 'No migrate'
       AND [UI].[MainPermitNumber]NOT IN(
+                                         '028-040D(C&D)',
                                          '080-006D(L)',
                                          '080-007D(C&D)',
                                          '107-014D(C&D)',
                                          '107-013D(SL)(2)',
                                          '136-014D(L)',
                                          '136-018D(MSWL)',
-                                         '025-068D(L)',
-                                         '028-040D(C&D)',
-                                         '092-021D(MSWL)',
                                          '148-009D(MSWL)',
                                          '150-010D(MSWL)'
                                         )

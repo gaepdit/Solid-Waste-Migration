@@ -1,18 +1,5 @@
-USE [LEMIR_Stage]
+USE [GovOnline_LEMIR]
 GO
---
---
---SET @rid_counter_start_FAC_FACILITY=@rid_counter_start_FAC_FACILITY + 25000;
---SET @rid_counter_start_SYS_GEO_COORD=@rid_counter_start_SYS_GEO_COORD + 25000;
---SET @rid_counter_start_SYS_PHYS_LOC=@rid_counter_start_SYS_PHYS_LOC + 25000;
---SET @rid_counter_start_SYS_Contact=@rid_counter_start_SYS_Contact + 25000;
---SET @rid_counter_start_SYS_Address=@rid_counter_start_SYS_Address + 25000;
---SET @rid_counter_start_SYS_Email=@rid_counter_start_SYS_Email + 25000;
---SET @rid_counter_start_SYS_Telephonic=@rid_counter_start_SYS_Telephonic + 25000;
---SET @rid_counter_start_FAC_ENV_Program=@rid_counter_start_FAC_ENV_Program + 25000;
---SET @rid_counter_start_FAC_ENV_Program_Contact=@rid_counter_start_FAC_ENV_Program_Contact + 25000;
---SET @rid_counter_start_FAC_ENV_Program_LOC=@rid_counter_start_FAC_ENV_Program_LOC + 25000;
---SET @rid_counter_start_GOV_SUB_Permit=@rid_counter_start_GOV_SUB_Permit + 25000;
 --
 --
 DECLARE @rid_counter_start_FAC_FACILITY [INT]
@@ -249,7 +236,7 @@ VALUES
     (SELECT [CONTACT_RID]
      FROM [dbo].[SYS_CONTACT]
      WHERE [CREATED_BY] = 'EPDMIG SW Dummy'),
-       13,
+       10059,
        'A',
        GETDATE(),
        'EPDMIG SW Dummy',

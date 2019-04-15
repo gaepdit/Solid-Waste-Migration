@@ -86,8 +86,8 @@ SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
        [SPL].[UPDATED_BY] AS [UPDATED_BY],
        [UI].[MainPermitNumber] AS [FACILITY_ID_REF]
 FROM [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI]
-     LEFT JOIN [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM] AS [FEP] ON [UI].[MainPermitNumber] = [FEP].[FACILITY_ID_REF]
-     LEFT JOIN [LEMIR_Stage].[dbo].[SYS_PHYSICAL_LOCATION] AS [SPL] ON [UI].[MainPermitNumber] = [SPL].[FACILITY_ID_REF]
+      JOIN [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM] AS [FEP] ON [UI].[MainPermitNumber] = [FEP].[FACILITY_ID_REF]
+      JOIN [LEMIR_Stage].[dbo].[SYS_PHYSICAL_LOCATION] AS [SPL] ON [UI].[MainPermitNumber] = [SPL].[FACILITY_ID_REF]
 WHERE [UI].[Insert or Update] = 'U'
       AND [UI].[LEMIR ID for Update] IS NULL
       AND [UI].[analysis hist notes] IS NOT NULL
@@ -95,15 +95,13 @@ WHERE [UI].[Insert or Update] = 'U'
       AND [UI].[analysis hist notes] <> 'No Migrate'
       AND [UI].[analysis hist notes] <> 'No migrate'
       AND [UI].[MainPermitNumber] NOT IN(
+                                         '028-040D(C&D)',
                                          '080-006D(L)',
                                          '080-007D(C&D)',
                                          '107-014D(C&D)',
                                          '107-013D(SL)(2)',
                                          '136-014D(L)',
                                          '136-018D(MSWL)',
-                                         '025-068D(L)',
-                                         '028-040D(C&D)',
-                                         '092-021D(MSWL)',
                                          '148-009D(MSWL)',
                                          '150-010D(MSWL)'
                                         )

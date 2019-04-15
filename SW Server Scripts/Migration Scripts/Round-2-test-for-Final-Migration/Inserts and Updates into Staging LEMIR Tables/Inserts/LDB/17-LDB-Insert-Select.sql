@@ -28,23 +28,23 @@ IF 'EPDMIG SW' =
     SET @rid_counter_start=@rid_counter_start + 1000;
   END
 --
-INSERT INTO [LEMIR_Stage].[GOV].[SUB_PERMIT]
-       ([PERMIT_RID],
-        [PERMIT_NUMBER],
-        [SYS_FACILITY_ID],
-        [FACILITY_NAME],
-        [ISSUED_DTTM],
-        --[EFFECTIVE_DTTM],
-        [EXPIRATION_DTTM],
-        [STATUS_CD],
-        [COMMENTS],
-        [PERMIT_STATUS_RID],
-        [PERMIT_TYPE_RID],
-        [CREATED_DTTM],
-        [CREATED_BY],
-        [UPDATED_DTTM],
-        [UPDATED_BY],
-        [FACILITY_ID_REF])
+--INSERT INTO [LEMIR_Stage].[GOV].[SUB_PERMIT]
+--       ([PERMIT_RID],
+--        [PERMIT_NUMBER],
+--        [SYS_FACILITY_ID],
+--        [FACILITY_NAME],
+--        [ISSUED_DTTM],
+--        --[EFFECTIVE_DTTM],
+--        [EXPIRATION_DTTM],
+--        [STATUS_CD],
+--        [COMMENTS],
+--        [PERMIT_STATUS_RID],
+--        [PERMIT_TYPE_RID],
+--        [CREATED_DTTM],
+--        [CREATED_BY],
+--        [UPDATED_DTTM],
+--        [UPDATED_BY],
+--        [FACILITY_ID_REF])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [PERMIT_RID],
        [MFI].[MainPermitNumber] AS [PERMIT_NUMBER],
@@ -56,18 +56,48 @@ SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
        'A' AS [STATUS_CD],
        left([MFI].[Comments], 499) AS [COMMENTS],
        '1' AS [PERMIT_STATUS_RID],
-       '1108' AS [PERMIT_TYPE_RID],
+       [PERMIT_TYPE_RID]=CASE
+                           WHEN [EIT].[LEMIR_EI_CD] = 'Other-D or P'
+                             THEN 1126
+                           WHEN [EIT].[LEMIR_EI_CD] = 'IN'
+                             THEN 1165
+                           WHEN [EIT].[LEMIR_EI_CD] IN('MSWL', 'C&D')
+                             THEN 1166
+                           WHEN [EIT].[LEMIR_EI_CD] = 'LI'
+                             THEN 1167
+                           WHEN [EIT].[LEMIR_EI_CD] = 'BIO'
+                             THEN 1169
+                           WHEN [EIT].[LEMIR_EI_CD] = 'CO'
+                             THEN 1170
+                           WHEN [EIT].[LEMIR_EI_CD] = 'LS'
+                             THEN 1171
+                           WHEN [EIT].[LEMIR_EI_CD] = 'MRF'
+                             THEN 1172
+                           WHEN [EIT].[LEMIR_EI_CD] = 'COL'
+                             THEN 1184
+                           WHEN [EIT].[LEMIR_EI_CD] = 'TS'
+                             THEN 1186
+                           WHEN [EIT].[LEMIR_EI_CD] = 'TT'
+                             THEN 1188
+                           WHEN [EIT].[LEMIR_EI_CD] = 'PBR-OTH'
+                             THEN 1189
+                           WHEN [EIT].[LEMIR_EI_CD] = 'YTL'
+                             THEN 1190
+                           ELSE 1126
+                         END,
        GETDATE() AS [CREATED_DATE],
        @created_by_string AS [CREATED_BY],
        GETDATE() AS [UPDATED_DATE],
        @created_by_string AS [UPDATED_BY],
-       [MFI].[MainPermitNumber] as [FACILITY_ID_REF]
+       [MFI].[MainPermitNumber] AS [FACILITY_ID_REF]
 FROM [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MFI]
      JOIN [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF] ON [MFI].[MainPermitNumber] = [FF].[FACILITY_IDENTIFIER]
      LEFT JOIN [LandDatabase].[dbo].[OperationStatus] AS [LOS] ON [mfi].[OperationStatus] = [LOS].[OperationStatus]
      LEFT JOIN [LandDatabase].[dbo].[GIS] AS [GIS] ON [mfi].[MainPermitNumber] = [gis].[PermitNumber]
      JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [MFI].[MainPermitNumber] = [UI].[MainPermitNumber]
+     LEFT JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [EIT] ON [MFI].[MainPermitNumber] = [EIT].[PermitNumber]
 WHERE [UI].[Insert or Update] = 'I'
+ORDER BY 10
       --AND [MFI].[MainPermitNumber] NOT IN(
       --                                    '025-041D(LI)(4)',
       --                                    '025-041D(LI)',
