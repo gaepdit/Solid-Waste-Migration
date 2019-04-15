@@ -1,13 +1,13 @@
 USE [LEMIR_Stage]
 GO
---DELETE FROM [dbo].[$grdClosure]
---GO
---DELETE FROM [dbo].[$grdConstructionDetail]
---GO
---DELETE FROM [dbo].[$grdFinancialAssurance]
---GO
---DELETE FROM [dbo].[$grdMajorModification]
---GO
+DELETE FROM [dbo].[$grdClosure]
+GO
+DELETE FROM [dbo].[$grdConstructionDetail]
+GO
+DELETE FROM [dbo].[$grdFinancialAssurance]
+GO
+DELETE FROM [dbo].[$grdMajorModification]
+GO
 DELETE FROM [dbo].[EI_BIO]
 GO
 DELETE FROM [dbo].[EI_CCRL]
