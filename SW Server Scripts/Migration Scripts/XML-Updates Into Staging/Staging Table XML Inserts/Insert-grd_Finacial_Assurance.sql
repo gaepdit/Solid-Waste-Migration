@@ -64,7 +64,7 @@ SELECT [FM].[PERMIT NUMBER] AS [PERMIT NUMBER],
        isnull([FM].[Comments], '') AS [txtComments],
        [FM].[PERMIT NUMBER] as [FACILITY_ID_REF]
 FROM [LandDataBase].[dbo].[FA MAIN] AS [FM]
-WHERE [FM].[FA_Required] = 1
+--WHERE [FM].[FA_Required] = 1
 ORDER BY 1
 GO
 

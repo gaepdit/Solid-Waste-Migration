@@ -437,10 +437,10 @@ SELECT isnull([MFI].[MainPermitNumber], [MF].[PermitNumber]) AS [PermitNumber],
        '' AS [ddlOwnershipType_COM],
        ----
        'txtComment' AS [txtComment_ID],
-       isnull([MF].[Comments], '') AS [txtComment_VAL],
+       isnull([MF].[WasteDescription], '') AS [txtComment_VAL],
        'General Comments' AS [txtComment_TAG],
        'true' AS [txtComment_VIS],
-       isnull([MF].[Comments]+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||', '') AS [txtComment_HIS],
+       isnull([MF].[WasteDescription]+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||', '') AS [txtComment_HIS],
        'General Comments:' AS [txtComment_DES],
        '' AS [txtComment_COM],
        ----
