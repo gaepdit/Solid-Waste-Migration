@@ -13,15 +13,15 @@ When        Who                 What
 --A
 DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 --
-INSERT INTO [LEMIR_Stage].[dbo].[SYS_CONTACT_ADDRESS]
-       ([CONTACT_RID],
-        [ADDRESS_RID],
-        [STATUS_CD],
-        [CREATED_BY],
-        [UPDATED_BY],
-        [CREATED_DATE],
-        [UPDATED_DATE],
-        [FACILITY_ID_REF])
+--INSERT INTO [LEMIR_Stage].[dbo].[SYS_CONTACT_ADDRESS]
+--       ([CONTACT_RID],
+--        [ADDRESS_RID],
+--        [STATUS_CD],
+--        [CREATED_BY],
+--        [UPDATED_BY],
+--        [CREATED_DATE],
+--        [UPDATED_DATE],
+--        [FACILITY_ID_REF])
 SELECT [SC].[CONTACT_RID] AS [CONTACT_RID],
        [SA].[ADDRESS_RID] AS [ADDRESS_RID],
        'A' AS [STATUS_CD],
@@ -34,4 +34,6 @@ FROM [LEMIR_Stage].[dbo].[SYS_ADDRESS] AS [SA]
      JOIN [LEMIR_Stage].[dbo].[SYS_CONTACT] AS [SC] ON [SA].[FACILITY_ID_REF] = [SC].[FACILITY_ID_REF]
 WHERE [SA].[CREATED_BY] = @created_by_string
       AND [SC].[CREATED_BY] = @created_by_string
+      AND [SA].ADDRESS_TYPE_RID = 5
+      AND [SC].CONTACT_TYPE_RID = 13
 ORDER BY 2
