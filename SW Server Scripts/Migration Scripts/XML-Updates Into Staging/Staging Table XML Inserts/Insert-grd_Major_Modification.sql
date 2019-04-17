@@ -14,11 +14,12 @@ GO
 --        [FACILITY_ID_REF])
 SELECT [M].[PermitNumber],
        isnull(convert(VARCHAR(50), [M].[CompletionDate], 101), '') AS [txtMajorModificationIssuedDate],
-       isnull([M].[MajorCode]+' -- '+[M].[Comments], '') AS [txtMajorModificationPurpose],
-       [M].[PermitNumber] as [FACILITY_ID_REF]
+       isnull([M].[MajorCode], '')+isnull(' -- '+[M].[Comments],'') AS [txtMajorModificationPurpose],
+       [M].[PermitNumber] AS [FACILITY_ID_REF]
 FROM [LandDataBase].[dbo].[Modifications] AS [M]
-WHERE [M].[MinorCode] = 26
-      AND [M].[MajorCode] <> 'Other Modification'
+WHERE [M].[MajorCode] <> 'Other Modification'
+      --AND [M].[MinorCode] = 26
+ORDER BY 1
 GO
-
+--
 
