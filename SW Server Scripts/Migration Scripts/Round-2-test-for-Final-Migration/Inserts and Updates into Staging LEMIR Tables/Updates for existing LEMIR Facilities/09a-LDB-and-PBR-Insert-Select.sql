@@ -32,14 +32,14 @@ SELECT [SC].[CONTACT_RID] AS [CONTACT_RID],
        @created_by_string AS [UPDATED_BY],
        GETDATE() AS [CREATED_DATE],
        GETDATE() AS [UPDATED_DATE],
-       [SA].[FACILITY_ID_REF] as [FACILITY_ID_REF]
+       [SA].[FACILITY_ID_REF] AS [FACILITY_ID_REF]
 FROM [LEMIR_Stage].[dbo].[SYS_ADDRESS] AS [SA]
      JOIN [LEMIR_Stage].[dbo].[SYS_CONTACT] AS [SC] ON [SA].[FACILITY_ID_REF] = [SC].[FACILITY_ID_REF]
      JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [SA].[FACILITY_ID_REF] = [UI].[MainPermitNumber]
 WHERE [UI].[Insert or Update] = 'U'
       AND [UI].[LEMIR ID for Update] IS NOT NULL
-      --AND [SC].[CONTACT_RID] IS NOT NULL
-      --AND [SA].[ADDRESS_RID] IS NOT NULL
+      AND [SA].[ADDRESS_TYPE_RID] = 4
+      AND [SC].[CONTACT_TYPE_RID] = 13
 ORDER BY 2
 
 

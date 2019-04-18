@@ -39,3 +39,4 @@ WHERE [UI].[Insert or Update] = 'U'
       AND [UI].[analysis hist notes] <> 'skip%'
       AND [UI].[analysis hist notes] <> 'No Migrate'
       AND [UI].[analysis hist notes] <> 'No migrate'
+      AND [SA].[ADDRESS_TYPE_RID] = 2

@@ -34,5 +34,6 @@ FROM [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF]
      JOIN [LEMIR_Stage].[dbo].[SYS_ADDRESS] AS [SA] ON [FF].[FACILITY_IDENTIFIER] = [SA].[FACILITY_ID_REF]
 WHERE [FF].[CREATED_BY] = @created_by_string
       AND [SA].[CREATED_BY] = @created_by_string
+      AND [SA].[ADDRESS_TYPE_RID] = 2
 
 

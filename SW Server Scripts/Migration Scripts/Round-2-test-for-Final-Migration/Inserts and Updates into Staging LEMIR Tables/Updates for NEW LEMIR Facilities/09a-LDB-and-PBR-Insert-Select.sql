@@ -31,14 +31,16 @@ SELECT [SC].[CONTACT_RID] AS [CONTACT_RID],
        GETDATE() AS [UPDATED_DATE],
        [SA].[FACILITY_ID_REF] AS [FACILITY_ID_REF]
 FROM [LEMIR_Stage].[dbo].[SYS_ADDRESS] AS [SA]
-     left JOIN [LEMIR_Stage].[dbo].[SYS_CONTACT] AS [SC] ON [SA].[FACILITY_ID_REF] = [SC].[FACILITY_ID_REF]
-     left JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [SA].[FACILITY_ID_REF] = [UI].[MainPermitNumber]
+     LEFT JOIN [LEMIR_Stage].[dbo].[SYS_CONTACT] AS [SC] ON [SA].[FACILITY_ID_REF] = [SC].[FACILITY_ID_REF]
+     LEFT JOIN [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI] ON [SA].[FACILITY_ID_REF] = [UI].[MainPermitNumber]
 WHERE [UI].[Insert or Update] = 'U'
       AND [UI].[LEMIR ID for Update] IS NULL
       AND [UI].[analysis hist notes] IS NOT NULL
       AND [UI].[analysis hist notes] <> 'skip%'
       AND [UI].[analysis hist notes] <> 'No Migrate'
       AND [UI].[analysis hist notes] <> 'No migrate'
+      AND [SA].[ADDRESS_TYPE_RID] = 4
+      AND [SC].[CONTACT_TYPE_RID] = 13
 
 --contact_RID  Address_RID  Status_CD  created      updated
 --602741	    10712622	    A	    EPDMIG SW	EPDMIG SW	2019-03-25 13:28:58.210	2019-03-25 13:28:58.210	063-027
