@@ -66,6 +66,7 @@ FROM [LEMIR_Stage].[dbo].[SYS_CONTACT] AS [SC]
      JOIN [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF] ON [FF].[FACILITY_ID_REF] = [SC].[FACILITY_ID_REF]
      JOIN [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM] AS [FEP] ON [FF].[FACILITY_ID_REF] = [FEP].[FACILITY_ID_REF]
 WHERE [FEP].[CREATED_BY] = @created_by_string
+AND [SC].CONTACT_TYPE_RID = '13'
 
      
 --

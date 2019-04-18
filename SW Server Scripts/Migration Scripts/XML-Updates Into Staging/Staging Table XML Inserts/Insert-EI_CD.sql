@@ -609,7 +609,7 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        isnull([MFI].[PC/CPeriod], '') AS [txtPostClosureCarePeriod_VAL],
        'Post Closure Care Period' AS [txtPostClosureCarePeriod_TAG],
        'true' AS [txtPostClosureCarePeriod_VIS],
-       isnull(convert(VARCHAR(50), [MFI].[PC/CPeriod], 101)+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||', '') AS [txtPostClosureCarePeriod_HIS],
+       isnull(convert(VARCHAR(50), [MFI].[PC/CPeriod])+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||', '') AS [txtPostClosureCarePeriod_HIS],
        'Post Closure Care Period:' AS [txtPostClosureCarePeriod_DES],
        '' AS [txtPostClosureCarePeriod_COM],
        ----
