@@ -66,6 +66,7 @@ FROM [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI]
      JOIN [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM] AS [FEP] ON [UI].[MainPermitNumber] = [FEP].[FACILITY_ID_REF]
 WHERE [UI].[Insert or Update] = 'U'
       AND [UI].[LEMIR ID for Update] IS NOT NULL
+      AND [SC].CONTACT_TYPE_RID = 13
       --AND [SC].[CONTACT_RID] NOT IN(
       --                              '605195',
       --                              '611947'

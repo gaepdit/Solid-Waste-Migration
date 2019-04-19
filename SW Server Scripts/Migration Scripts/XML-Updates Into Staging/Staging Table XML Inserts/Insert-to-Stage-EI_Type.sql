@@ -1,11 +1,11 @@
 USE [LEMIR_Stage]
 GO
 --
---INSERT INTO [dbo].[EI_TYPE]
---       ([PermitNumber],
---        [LEMIR_EI_RID],
---        [LEMIR_EI_CD],
---        [FACILITY_ID_REF])
+INSERT INTO [dbo].[EI_TYPE]
+       ([PermitNumber],
+        [LEMIR_EI_RID],
+        [LEMIR_EI_CD],
+        [FACILITY_ID_REF])
 SELECT isnull([MFI].[MainPermitNumber], [MF].[PermitNumber]) AS [PermitNumber],
        [LEMIR_EI_RID]=CASE
                         WHEN [MFI].[MainPermitNumber] IN('009-006P', '011-027P', '025-073P', '033-096P', '033-097P', '060-093(P)', '121-019P', '067-038P', '092-023P', '105-015P', '129-013P')

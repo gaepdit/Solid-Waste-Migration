@@ -7,21 +7,21 @@
 USE [LEMIR_Stage]
 GO
 --
---INSERT INTO [dbo].[$grdFinancialAssurance]
---       ([PermitNumber],
---        [txtFiscalYearEndDate],
---        [txtEffectiveStartDate],
---        [txtEffectiveEndDate],
---        [ddlFAType],
---        [txtMechanismNo],
---        [txtCurrentOpenArea],
---        [txtApprovedOpenArea],
---        [txtClosureAmount],
---        [txtPostClosureCareAmount],
---        [txtCorrectiveActionAmount],
---        [txtTotalAssuredCost],
---        [txtComments],
---        [FACILITY_ID_REF])
+INSERT INTO [dbo].[$grdFinancialAssurance]
+       ([PermitNumber],
+        [txtFiscalYearEndDate],
+        [txtEffectiveStartDate],
+        [txtEffectiveEndDate],
+        [ddlFAType],
+        [txtMechanismNo],
+        [txtCurrentOpenArea],
+        [txtApprovedOpenArea],
+        [txtClosureAmount],
+        [txtPostClosureCareAmount],
+        [txtCorrectiveActionAmount],
+        [txtTotalAssuredCost],
+        [txtComments],
+        [FACILITY_ID_REF])
 SELECT [FM].[PERMIT NUMBER] AS [PERMIT NUMBER],
        isnull(convert(VARCHAR(50), [FM].[FISCAL YEAR END], 101), '') AS [txtFiscalYearEndDate],
        isnull(convert(VARCHAR(50), [FM].[DATE FA DUE], 101), '') AS [txtEffectiveStartDate],

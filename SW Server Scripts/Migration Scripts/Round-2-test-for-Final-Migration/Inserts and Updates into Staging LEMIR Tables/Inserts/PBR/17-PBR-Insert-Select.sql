@@ -28,24 +28,24 @@ IF 'EPDMIG SW' =
     SET @rid_counter_start=@rid_counter_start + 1000;
   END
 --
---INSERT INTO [LEMIR_Stage].[GOV].[SUB_PERMIT]
---       ([PERMIT_RID],
---        [PERMIT_NUMBER],
---        [SYS_FACILITY_ID],
---        [FACILITY_NAME],
---        [ISSUED_DTTM],
-----        [EFFECTIVE_DTTM],
---        --[EXPIRATION_DTTM],
---        [STATUS_CD],
---        [COMMENTS],
---        [PERMIT_STATUS_RID],
---        [PERMIT_TYPE_RID],
-----        [APPLICATION_RID],
---        [CREATED_DTTM],
---        [CREATED_BY],
---        [UPDATED_DTTM],
---        [UPDATED_BY],
---        [FACILITY_ID_REF])
+INSERT INTO [LEMIR_Stage].[GOV].[SUB_PERMIT]
+       ([PERMIT_RID],
+        [PERMIT_NUMBER],
+        [SYS_FACILITY_ID],
+        [FACILITY_NAME],
+        [ISSUED_DTTM],
+--        [EFFECTIVE_DTTM],
+        --[EXPIRATION_DTTM],
+        [STATUS_CD],
+        [COMMENTS],
+        [PERMIT_STATUS_RID],
+        [PERMIT_TYPE_RID],
+--        [APPLICATION_RID],
+        [CREATED_DTTM],
+        [CREATED_BY],
+        [UPDATED_DTTM],
+        [UPDATED_BY],
+        [FACILITY_ID_REF])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [PERMIT_RID],
        [MF].[PermitNumber] AS [PERMIT_NUMBER],
@@ -54,7 +54,7 @@ SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
        iif([MF].[PBR Approval Date] = '', NULL, [MF].[PBR Approval Date]) AS [ISSUED_DTTM],
        --[MF].[DateSiteClosed] AS [EXPIRATION_DATE],
        'A' AS [STATUS_CD],
-       [Comments] AS [COMMENTS],
+       left([Comments],499) AS [COMMENTS],
        '1' AS [PERMIT_STATUS_RID],
        [PERMIT_TYPE_RID]=CASE
                            WHEN [EIT].[LEMIR_EI_CD] = 'Other-D or P'

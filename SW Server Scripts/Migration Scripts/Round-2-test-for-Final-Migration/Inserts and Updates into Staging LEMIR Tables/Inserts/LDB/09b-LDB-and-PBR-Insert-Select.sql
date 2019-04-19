@@ -34,4 +34,5 @@ FROM [LEMIR_Stage].[dbo].[SYS_CONTACT] AS [SC]
      JOIN [LEMIR_Stage].[dbo].[SYS_TELEPHONIC] AS [ST] ON [SC].[FACILITY_ID_REF] = [ST].[FACILITY_ID_REF]
 WHERE [ST].[CREATED_BY] = @created_by_string
       AND [SC].[CREATED_BY] = @created_by_string
+      AND [ST].PHONE_TYPE_RID = 1
  
