@@ -7,11 +7,11 @@
 USE [LEMIR_Stage]
 GO
 --
---INSERT INTO [dbo].[$grdMajorModification]
---       ([PermitNumber],
---        [txtMajorModificationIssuedDate],
---        [txtMajorModificationPurpose],
---        [FACILITY_ID_REF])
+INSERT INTO [dbo].[$grdMajorModification]
+       ([PermitNumber],
+        [txtMajorModificationIssuedDate],
+        [txtMajorModificationPurpose],
+        [FACILITY_ID_REF])
 SELECT [M].[PermitNumber],
        isnull(convert(VARCHAR(50), [M].[CompletionDate], 101), '') AS [txtMajorModificationIssuedDate],
        isnull([M].[MajorCode], '')+isnull(' -- '+[M].[Comments],'') AS [txtMajorModificationPurpose],

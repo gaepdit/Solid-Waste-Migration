@@ -13,8 +13,10 @@ When        Who                 What
 DECLARE @rid_counter_start INT;
 DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 --
-SELECT @rid_counter_start=ISNULL(MAX([PERMIT_RID]), 1)
-FROM [GovOnline_LEMIR].[GOV].[SUB_PERMIT];
+--SELECT @rid_counter_start=ISNULL(MAX([PERMIT_RID]), 1)
+--FROM [GovOnline_LEMIR].[GOV].[SUB_PERMIT];
+--
+SET @rid_counter_start = 5267532;
 --
 IF 'EPDMIG SW' =
     (SELECT [CREATED_BY]
@@ -28,23 +30,23 @@ IF 'EPDMIG SW' =
     SET @rid_counter_start=@rid_counter_start + 1000;
   END
 --
---INSERT INTO [LEMIR_Stage].[GOV].[SUB_PERMIT]
---       ([PERMIT_RID],
---        [PERMIT_NUMBER],
---        [SYS_FACILITY_ID],
---        [FACILITY_NAME],
---        [ISSUED_DTTM],
---        --[EFFECTIVE_DTTM],
---        [EXPIRATION_DTTM],
---        [STATUS_CD],
---        [COMMENTS],
---        [PERMIT_STATUS_RID],
---        [PERMIT_TYPE_RID],
---        [CREATED_DTTM],
---        [CREATED_BY],
---        [UPDATED_DTTM],
---        [UPDATED_BY],
---        [FACILITY_ID_REF])
+INSERT INTO [LEMIR_Stage].[GOV].[SUB_PERMIT]
+       ([PERMIT_RID],
+        [PERMIT_NUMBER],
+        [SYS_FACILITY_ID],
+        [FACILITY_NAME],
+        [ISSUED_DTTM],
+        --[EFFECTIVE_DTTM],
+        [EXPIRATION_DTTM],
+        [STATUS_CD],
+        [COMMENTS],
+        [PERMIT_STATUS_RID],
+        [PERMIT_TYPE_RID],
+        [CREATED_DTTM],
+        [CREATED_BY],
+        [UPDATED_DTTM],
+        [UPDATED_BY],
+        [FACILITY_ID_REF])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [PERMIT_RID],
        [MFI].[MainPermitNumber] AS [PERMIT_NUMBER],

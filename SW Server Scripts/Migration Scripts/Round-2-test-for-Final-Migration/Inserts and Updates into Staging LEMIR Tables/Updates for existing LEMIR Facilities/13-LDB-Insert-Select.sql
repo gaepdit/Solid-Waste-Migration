@@ -64,6 +64,6 @@ FROM [LEMIR_Stage].[dbo].[$EI_insert_update] AS [UI]
 WHERE [UI].[Insert or Update] = 'U'
       AND [UI].[LEMIR ID for Update] IS NOT NULL
       AND [EIT].[LEMIR_XML] IS NOT NULL
-      AND [EIT].[FACILITY_ID_REF] NOT IN ('037-006D(SL)','037-008D(L)','037-009P(INC)','134-009D(SL)')
+      AND [EIT].[FACILITY_ID_REF] <> '134-009D(SL)'    ---NOT IN ('037-006D(SL)','037-008D(L)','037-009P(INC)','134-009D(SL)')
 ORDER BY 2,
          3

@@ -7,12 +7,12 @@
 USE [LEMIR_Stage]
 GO
 --
---INSERT INTO [dbo].[$grdConstructionDetail]
---       ([PermitNumber],
---        [txtApprovedDate],
---        [txtPhase],
---        [txtCell],
---        [FACILITY_ID_REF])
+INSERT INTO [dbo].[$grdConstructionDetail]
+       ([PermitNumber],
+        [txtApprovedDate],
+        [txtPhase],
+        [txtCell],
+        [FACILITY_ID_REF])
 SELECT [C].[PermitNumber] AS [PermitNumber],
        isnull(convert(VARCHAR(50), [C].[CompletionDate], 101), '') AS [txtApprovedDate],
        isnull([C].[Phase(s)], '') AS [txtPhase],

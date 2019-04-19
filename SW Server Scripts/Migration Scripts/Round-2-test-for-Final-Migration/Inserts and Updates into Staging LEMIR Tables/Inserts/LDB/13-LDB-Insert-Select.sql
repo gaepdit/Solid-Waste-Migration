@@ -13,8 +13,10 @@ When        Who                 What
 DECLARE @rid_counter_start [INT];
 DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 --
-SELECT @rid_counter_start=ISNULL(MAX([FAC_ENV_PROGRAM_RID]), 1)
-FROM [GovOnline_LEMIR].[dbo].[FAC_ENV_PROGRAM];
+--SELECT @rid_counter_start=ISNULL(MAX([FAC_ENV_PROGRAM_RID]), 1)
+--FROM [GovOnline_LEMIR].[dbo].[FAC_ENV_PROGRAM];
+--
+SET @rid_counter_start = 543429;
 --
 IF 'EPDMIG SW' =
     (SELECT [CREATED_BY]
@@ -30,19 +32,19 @@ IF 'EPDMIG SW' =
 --
 -- DONE
 --
---INSERT INTO [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM]
---       ([FAC_ENV_PROGRAM_RID],
---        [FACILITY_RID],
---        [TYPE_RID],
---        [STATUS_CD],
---        [CREATED_DATE],
---        [CREATED_BY],
---        [UPDATED_DATE],
---        [UPDATED_BY],
---        [PROGRAM_DETAIL],
---        [FAC_PROGRAM_IDENTIFIER],
---        [AKA_NAME],
---        [FACILITY_ID_REF])
+INSERT INTO [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM]
+       ([FAC_ENV_PROGRAM_RID],
+        [FACILITY_RID],
+        [TYPE_RID],
+        [STATUS_CD],
+        [CREATED_DATE],
+        [CREATED_BY],
+        [UPDATED_DATE],
+        [UPDATED_BY],
+        [PROGRAM_DETAIL],
+        [FAC_PROGRAM_IDENTIFIER],
+        [AKA_NAME],
+        [FACILITY_ID_REF])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [FAC_ENV_PROGRAM_RID],
        [FF].[FACILITY_RID] AS [FACILITY_RID],

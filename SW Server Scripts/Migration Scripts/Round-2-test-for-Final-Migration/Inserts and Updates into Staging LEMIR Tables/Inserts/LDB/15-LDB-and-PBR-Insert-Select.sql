@@ -9,8 +9,10 @@ Insert Select 15 C
 DECLARE @rid_counter_start [INT];
 DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 --
-SELECT @rid_counter_start=ISNULL(MAX([FAC_ENV_PROGRAM_LOC_RID]), 1)
-FROM [GovOnline_LEMIR].[dbo].[FAC_ENV_PROGRAM_LOC];
+--SELECT @rid_counter_start=ISNULL(MAX([FAC_ENV_PROGRAM_LOC_RID]), 1)
+--FROM [GovOnline_LEMIR].[dbo].[FAC_ENV_PROGRAM_LOC];
+--
+SET @rid_counter_start = 552004;
 --
 IF 'EPDMIG SW' =
     (SELECT [CREATED_BY]
