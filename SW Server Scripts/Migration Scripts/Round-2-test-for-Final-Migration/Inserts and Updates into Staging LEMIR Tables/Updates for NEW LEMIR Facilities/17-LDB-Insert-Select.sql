@@ -28,23 +28,23 @@ IF 'EPDMIG SW' =
     SET @rid_counter_start=@rid_counter_start + 1000;
   END
 --
---INSERT INTO [LEMIR_Stage].[GOV].[SUB_PERMIT]
---       ([PERMIT_RID],
---        [PERMIT_NUMBER],
---        [SYS_FACILITY_ID],
---        [FACILITY_NAME],
---        [ISSUED_DTTM],
-----        [EFFECTIVE_DTTM],
---        [EXPIRATION_DTTM],
---        [STATUS_CD],
---        [COMMENTS],
---        [PERMIT_STATUS_RID],
---        [PERMIT_TYPE_RID],
---        [CREATED_DTTM],
---        [CREATED_BY],
---        [UPDATED_DTTM],
---        [UPDATED_BY],
---        [FACILITY_ID_REF])
+INSERT INTO [LEMIR_Stage].[GOV].[SUB_PERMIT]
+       ([PERMIT_RID],
+        [PERMIT_NUMBER],
+        [SYS_FACILITY_ID],
+        [FACILITY_NAME],
+        [ISSUED_DTTM],
+--        [EFFECTIVE_DTTM],
+        [EXPIRATION_DTTM],
+        [STATUS_CD],
+        [COMMENTS],
+        [PERMIT_STATUS_RID],
+        [PERMIT_TYPE_RID],
+        [CREATED_DTTM],
+        [CREATED_BY],
+        [UPDATED_DTTM],
+        [UPDATED_BY],
+        [FACILITY_ID_REF])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [PERMIT_RID],
        [MFI].[MainPermitNumber] AS [PERMIT_NUMBER],
@@ -99,17 +99,17 @@ WHERE [UI].[LEMIR ID for Update] IS NULL
       AND [UI].[analysis hist notes] <> 'skip%'
       AND [UI].[analysis hist notes] <> 'No Migrate'
       AND [UI].[analysis hist notes] <> 'No migrate'
-      AND [UI].[MainPermitNumber] NOT IN(
-                                         '028-040D(C&D)',
-                                         '080-006D(L)',
-                                         '080-007D(C&D)',
-                                         '107-014D(C&D)',
-                                         '107-013D(SL)(2)',
-                                         '136-014D(L)',
-                                         '136-018D(MSWL)',
-                                         '148-009D(MSWL)',
-                                         '150-010D(MSWL)'
-                                        )
+      --AND [UI].[MainPermitNumber] NOT IN(
+      --                                   '028-040D(C&D)',
+      --                                   '080-006D(L)',
+      --                                   '080-007D(C&D)',
+      --                                   '107-014D(C&D)',
+      --                                   '107-013D(SL)(2)',
+      --                                   '136-014D(L)',
+      --                                   '136-018D(MSWL)',
+      --                                   '148-009D(MSWL)',
+      --                                   '150-010D(MSWL)'
+      --                                  )
   --
 --     JOIN [LandDataBase].[dbo].[Permit] AS [P] ON [mfi].[MainPermitNumber] = [P].[PermitNumber]
 --WHERE [FF].[CREATED_BY] = 'EPDMIG SW'

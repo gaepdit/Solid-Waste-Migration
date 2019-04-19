@@ -7,12 +7,12 @@
 USE [LEMIR_Stage]
 GO
 --
---INSERT INTO [dbo].[$grdClosure]
---       ([PermitNumber],
---        [txtAcceptingWasteCeasedDate],
---        [txtPhaseCell], 
---        [txtClosurePermitIssuedDate],
---        [FACILITY_ID_REF])
+INSERT INTO [dbo].[$grdClosure]
+       ([PermitNumber],
+        [txtAcceptingWasteCeasedDate],
+        [txtPhaseCell], 
+        [txtClosurePermitIssuedDate],
+        [FACILITY_ID_REF])
 SELECT [CL].[PermitNumber] AS [PermitNumber],
        isnull(convert(VARCHAR(50), [MFI].[DateCeasedAcceptingWaste], 101), '') AS [txtAcceptingWasteCeasedDate],
        isnull([CL].[Comments], '') AS [txtPhaseCell],

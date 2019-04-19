@@ -39,4 +39,5 @@ WHERE [UI].[Insert or Update] = 'U'
       AND [UI].[analysis hist notes] <> 'skip%'
       AND [UI].[analysis hist notes] <> 'No Migrate'
       AND [UI].[analysis hist notes] <> 'No migrate'
+      AND [ST].PHONE_TYPE_RID = 1
 ORDER BY 8
