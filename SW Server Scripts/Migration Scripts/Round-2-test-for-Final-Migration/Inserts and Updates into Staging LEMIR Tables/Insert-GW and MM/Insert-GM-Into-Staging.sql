@@ -175,9 +175,11 @@ INTO [#temp5]
 FROM [#temp4] AS [F]
      LEFT JOIN [GovOnline_LEMIR].[dbo].[FAC_FACILITY] AS [LFF] ON [F].[LEMIR_FACILITY_RID] = [LFF].[FACILITY_RID]
      LEFT JOIN [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF] ON [FF].[FACILITY_RID] = [F].[Stage_FACILITY_RID]
+WHERE [F].[Stage_FACILITY_RID] IS NOT NULL
 --
 --SELECT *
 --FROM [#temp5]
+--ORDER BY 1
 --
 -- Main Insert *********************************************************************************************
 --

@@ -32,19 +32,19 @@ IF 'EPDMIG SW' =
 --
 -- DONE
 --
-INSERT INTO [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM]
-       ([FAC_ENV_PROGRAM_RID],
-        [FACILITY_RID],
-        [TYPE_RID],
-        [STATUS_CD],
-        [CREATED_DATE],
-        [CREATED_BY],
-        [UPDATED_DATE],
-        [UPDATED_BY],
-        [PROGRAM_DETAIL],
-        [FAC_PROGRAM_IDENTIFIER],
-        [AKA_NAME],
-        [FACILITY_ID_REF])
+--INSERT INTO [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM]
+--       ([FAC_ENV_PROGRAM_RID],
+--        [FACILITY_RID],
+--        [TYPE_RID],
+--        [STATUS_CD],
+--        [CREATED_DATE],
+--        [CREATED_BY],
+--        [UPDATED_DATE],
+--        [UPDATED_BY],
+--        [PROGRAM_DETAIL],
+--        [FAC_PROGRAM_IDENTIFIER],
+--        [AKA_NAME],
+--        [FACILITY_ID_REF])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [FAC_ENV_PROGRAM_RID],
        [UI].[LEMIR ID for Update] AS [FACILITY_RID],
@@ -65,5 +65,4 @@ WHERE [UI].[Insert or Update] = 'U'
       AND [UI].[LEMIR ID for Update] IS NOT NULL
       AND [EIT].[LEMIR_XML] IS NOT NULL
       AND [EIT].[FACILITY_ID_REF] <> '134-009D(SL)'    ---NOT IN ('037-006D(SL)','037-008D(L)','037-009P(INC)','134-009D(SL)')
-ORDER BY 2,
-         3
+ORDER BY 11
