@@ -82,8 +82,10 @@ SET @x='<DynamicFormValue>
   </SolidWaste>
 </DynamicFormValue>'
 --
-SELECT @rid_counter_start=ISNULL(MAX([FAC_ENV_PROGRAM_RID]), 1)
-FROM [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM];
+--SELECT @rid_counter_start=ISNULL(MAX([FAC_ENV_PROGRAM_RID]), 1)
+--FROM [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM];
+--
+SET @rid_counter_start= 550756
 --
 IF 'EPDMIG SW' =
     (SELECT [CREATED_BY]
@@ -175,9 +177,11 @@ INTO [#temp5]
 FROM [#temp4] AS [F]
      LEFT JOIN [GovOnline_LEMIR].[dbo].[FAC_FACILITY] AS [LFF] ON [F].[LEMIR_FACILITY_RID] = [LFF].[FACILITY_RID]
      LEFT JOIN [LEMIR_Stage].[dbo].[FAC_FACILITY] AS [FF] ON [FF].[FACILITY_RID] = [F].[Stage_FACILITY_RID]
+     WHERE [F].[Stage_FACILITY_RID] IS NOT null
 --
 --SELECT *
 --FROM [#temp5]
+--order by 4
 --
 -- Main Insert *********************************************************************************************
 --
