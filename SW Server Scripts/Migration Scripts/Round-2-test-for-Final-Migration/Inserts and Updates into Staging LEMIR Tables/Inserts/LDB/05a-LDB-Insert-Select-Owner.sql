@@ -17,7 +17,7 @@ DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 --SELECT @rid_counter_start=ISNULL(MAX([ADDRESS_RID]), 1)
 --FROM [GovOnline_LEMIR].[dbo].[SYS_ADDRESS];
 --
-SET @rid_counter_start = 10722355;
+SET @rid_counter_start = 10733208; -- current Max RID - 5/21/19
 --
 IF 'EPDMIG SW' =
     (SELECT [CREATED_BY]
@@ -32,23 +32,23 @@ IF 'EPDMIG SW' =
   END
   
   --
-INSERT INTO [LEMIR_Stage].[dbo].[SYS_ADDRESS]
-       ([ADDRESS_RID],
-        [ADDRESS_LINE1],
-        [ADDRESS_LINE2],
-        [CITY_NAME],
-        [PROVINCE_NAME],
-        [STATE_RID],
-        [COUNTRY_RID],
-        [ZIP_CD],
-        [ZIP_SUFFIX_CD],
-        [STATUS_CD],
-        [CREATED_BY],
-        [UPDATED_BY],
-        [CREATED_DATE],
-        [UPDATED_DATE],
-        [ADDRESS_TYPE_RID],
-        [FACILITY_ID_REF])
+--INSERT INTO [LEMIR_Stage].[dbo].[SYS_ADDRESS]
+--       ([ADDRESS_RID],
+--        [ADDRESS_LINE1],
+--        [ADDRESS_LINE2],
+--        [CITY_NAME],
+--        [PROVINCE_NAME],
+--        [STATE_RID],
+--        [COUNTRY_RID],
+--        [ZIP_CD],
+--        [ZIP_SUFFIX_CD],
+--        [STATUS_CD],
+--        [CREATED_BY],
+--        [UPDATED_BY],
+--        [CREATED_DATE],
+--        [UPDATED_DATE],
+--        [ADDRESS_TYPE_RID],
+--        [FACILITY_ID_REF])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [ADDRESS_RID],
        ltrim([C].[Owner/ConatctAddress]) AS [ADDRESS_LINE1],
