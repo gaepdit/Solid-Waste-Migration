@@ -12,7 +12,7 @@ DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 --SELECT @rid_counter_start=ISNULL(MAX([FAC_ENV_PROGRAM_LOC_RID]), 1)
 --FROM [GovOnline_LEMIR].[dbo].[FAC_ENV_PROGRAM_LOC];
 --
-SET @rid_counter_start = 552004;
+SET @rid_counter_start = 557848; -- current Max RID - 5/21/19
 --
 IF 'EPDMIG SW' =
     (SELECT [CREATED_BY]
@@ -26,22 +26,22 @@ IF 'EPDMIG SW' =
     SET @rid_counter_start=@rid_counter_start + 1000;
   END
   --
-INSERT INTO [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM_LOC]
-       ([FAC_ENV_PROGRAM_LOC_RID],
-        [FAC_ENV_PROGRAM_RID],
-        [LOCATION_RID],
-        [PRIMARY_IND],
-        [EFF_DATE],
-        [EXP_DATE],
-        [LOCATION_IDENTIFIER],
-        [LOCATION_TYPE_NAME],
-        [LOCATION_ALIAS],
-        [STATUS_CD],
-        [CREATED_DATE],
-        [CREATED_BY],
-        [UPDATED_DATE],
-        [UPDATED_BY],
-        [FACILITY_ID_REF])
+--INSERT INTO [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM_LOC]
+--       ([FAC_ENV_PROGRAM_LOC_RID],
+--        [FAC_ENV_PROGRAM_RID],
+--        [LOCATION_RID],
+--        [PRIMARY_IND],
+--        [EFF_DATE],
+--        [EXP_DATE],
+--        [LOCATION_IDENTIFIER],
+--        [LOCATION_TYPE_NAME],
+--        [LOCATION_ALIAS],
+--        [STATUS_CD],
+--        [CREATED_DATE],
+--        [CREATED_BY],
+--        [UPDATED_DATE],
+--        [UPDATED_BY],
+--        [FACILITY_ID_REF])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [FAC_ENV_PROGRAM_LOC_RID],
        [FEP].[FAC_ENV_PROGRAM_RID] AS [FAC_ENV_PROGRAM_RID],

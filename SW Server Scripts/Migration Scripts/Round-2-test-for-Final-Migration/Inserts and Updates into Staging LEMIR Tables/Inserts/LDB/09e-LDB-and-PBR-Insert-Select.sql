@@ -14,15 +14,15 @@ DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 --
 --
 --E
-INSERT INTO [LEMIR_Stage].[dbo].[FAC_LOCATION]
-       ([FACILITY_RID],
-        [LOCATION_RID],
-        [STATUS_CD],
-        [CREATED_BY],
-        [UPDATED_BY],
-        [CREATED_DATE],
-        [UPDATED_DATE],
-        [FACILITY_ID_REF])
+--INSERT INTO [LEMIR_Stage].[dbo].[FAC_LOCATION]
+--       ([FACILITY_RID],
+--        [LOCATION_RID],
+--        [STATUS_CD],
+--        [CREATED_BY],
+--        [UPDATED_BY],
+--        [CREATED_DATE],
+--        [UPDATED_DATE],
+--        [FACILITY_ID_REF])
 SELECT [FF].[FACILITY_RID] AS [FACILITY_RID],
        [SPL].[LOCATION_RID] AS [LOCATION_RID],
        'A' AS [STATUS_CD],
