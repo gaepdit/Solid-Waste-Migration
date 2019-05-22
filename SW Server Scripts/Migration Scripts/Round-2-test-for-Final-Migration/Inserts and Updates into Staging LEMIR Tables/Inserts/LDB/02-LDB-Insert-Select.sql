@@ -16,7 +16,7 @@ DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 --SELECT @rid_counter_start=ISNULL(MAX([GEO_COORDINATE_RID]), 1)
 --FROM [GovOnline_LEMIR].[dbo].[SYS_GEO_COORDINATE];
 --
-SET @rid_counter_start = 632258;
+SET @rid_counter_start = 638173; -- current Max RID - 5/21/19
 --
 IF 'EPDMIG SW' =
     (SELECT [CREATED_BY]
@@ -31,16 +31,16 @@ IF 'EPDMIG SW' =
   END
   
 --
-INSERT INTO [LEMIR_Stage].[dbo].[SYS_GEO_COORDINATE]
-       ([GEO_COORDINATE_RID],
-        [LATITUDE_MEASURE],
-        [LONGITUDE_MEASURE],
-        [STATUS_CD],
-        [CREATED_DATE],
-        [CREATED_BY],
-        [UPDATED_DATE],
-        [UPDATED_BY],
-        [FACILITY_ID_REF])
+--INSERT INTO [LEMIR_Stage].[dbo].[SYS_GEO_COORDINATE]
+--       ([GEO_COORDINATE_RID],
+--        [LATITUDE_MEASURE],
+--        [LONGITUDE_MEASURE],
+--        [STATUS_CD],
+--        [CREATED_DATE],
+--        [CREATED_BY],
+--        [UPDATED_DATE],
+--        [UPDATED_BY],
+--        [FACILITY_ID_REF])
 SELECT DISTINCT [GEO_COORDINATE_RID]=@rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)),
        substring(convert(VARCHAR, [GIS].[Latitude]), 0, 8) AS [LATITUDE_MEASURE],

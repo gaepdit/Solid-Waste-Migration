@@ -23,7 +23,7 @@ DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 --SELECT @rid_counter_start=ISNULL(MAX([ENV_PROGRAM_CONTACT_RID]), 1)
 --FROM [LEMIR_Stage].[dbo].[SYS_ENV_PROGRAM_CONTACT_DUTY];
 --
-SET @rid_counter_start = 703323;
+SET @rid_counter_start = 709219;  -- current Max RID - 5/21/19
 --
 IF 'EPDMIG SW' =
     (SELECT [CREATED_BY]
@@ -40,15 +40,15 @@ IF 'EPDMIG SW' =
 --
 -- DONE
 --
-INSERT INTO [LEMIR_Stage].[dbo].[SYS_ENV_PROGRAM_CONTACT_DUTY]
-       ([ENV_PROGRAM_CONTACT_RID],
-        [CONTACT_DUTY_RID],
-        [STATUS_CD],
-        [CREATED_DATE],
-        [CREATED_BY],
-        [UPDATED_DATE],
-        [UPDATED_BY],
-        [FACILITY_ID_REF])
+--INSERT INTO [LEMIR_Stage].[dbo].[SYS_ENV_PROGRAM_CONTACT_DUTY]
+--       ([ENV_PROGRAM_CONTACT_RID],
+--        [CONTACT_DUTY_RID],
+--        [STATUS_CD],
+--        [CREATED_DATE],
+--        [CREATED_BY],
+--        [UPDATED_DATE],
+--        [UPDATED_BY],
+--        [FACILITY_ID_REF])
 SELECT [SEPC].[ENV_PROGRAM_CONTACT_RID] AS [ENV_PROGRAM_CONTACT_RID],
        iif([SC].[CONTACT_TYPE_RID] = '13', '4', '8') AS [CONTACT_DUTY_RID],
        'A' AS [STATUS_CD],
