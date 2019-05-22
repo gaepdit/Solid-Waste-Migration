@@ -16,7 +16,7 @@ DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 --SELECT @rid_counter_start=ISNULL(MAX([FAC_ENV_PROGRAM_RID]), 1)
 --FROM [GovOnline_LEMIR].[dbo].[FAC_ENV_PROGRAM];
 --
-SET @rid_counter_start = 543429;
+SET @rid_counter_start = 552384; -- current Max RID - 5/21/19
 --
 IF 'EPDMIG SW' =
     (SELECT [CREATED_BY]

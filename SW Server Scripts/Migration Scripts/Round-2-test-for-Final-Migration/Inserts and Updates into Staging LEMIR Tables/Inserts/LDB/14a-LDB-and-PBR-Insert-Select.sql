@@ -23,7 +23,7 @@ DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 --SELECT @rid_counter_start=ISNULL(MAX([ENV_PROGRAM_CONTACT_RID]), 1)
 --FROM [GovOnline_LEMIR].[dbo].[SYS_ENV_PROGRAM_CONTACT];
 --
-SET @rid_counter_start = 703323;
+SET @rid_counter_start = 709219;  -- current Max RID - 5/21/19
 --
 IF 'EPDMIG SW' =
     (SELECT [CREATED_BY]
@@ -42,17 +42,17 @@ IF 'EPDMIG SW' =
   -- 607896, 10041, 533845
   --  607931, 10046, 533880
   --
-INSERT INTO [LEMIR_Stage].[dbo].[SYS_ENV_PROGRAM_CONTACT]
-       ([ENV_PROGRAM_CONTACT_RID],
-        [CONTACT_RID],
-        [TYPE_RID],
-        [STATUS_CD],
-        [CREATED_DATE],
-        [CREATED_BY],
-        [UPDATED_DATE],
-        [UPDATED_BY],
-        [FAC_ENV_PROGRAM_RID],
-        [FACILITY_ID_REF])
+--INSERT INTO [LEMIR_Stage].[dbo].[SYS_ENV_PROGRAM_CONTACT]
+--       ([ENV_PROGRAM_CONTACT_RID],
+--        [CONTACT_RID],
+--        [TYPE_RID],
+--        [STATUS_CD],
+--        [CREATED_DATE],
+--        [CREATED_BY],
+--        [UPDATED_DATE],
+--        [UPDATED_BY],
+--        [FAC_ENV_PROGRAM_RID],
+--        [FACILITY_ID_REF])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [ENV_PROGRAM_CONTACT_RID],
        [SC].[CONTACT_RID] AS [CONTACT_RID],

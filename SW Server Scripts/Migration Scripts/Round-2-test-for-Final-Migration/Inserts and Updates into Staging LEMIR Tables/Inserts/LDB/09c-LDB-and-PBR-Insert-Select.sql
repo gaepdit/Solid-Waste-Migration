@@ -14,15 +14,15 @@ DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SW';
 
 --
 --C
-INSERT INTO [LEMIR_Stage].[dbo].[SYS_CONTACT_EMAIL]
-       ([CONTACT_RID],
-        [EMAIL_RID],
-        [STATUS_CD],
-        [CREATED_BY],
-        [UPDATED_BY],
-        [CREATED_DATE],
-        [UPDATED_DATE],
-        [FACILITY_ID_REF])
+--INSERT INTO [LEMIR_Stage].[dbo].[SYS_CONTACT_EMAIL]
+--       ([CONTACT_RID],
+--        [EMAIL_RID],
+--        [STATUS_CD],
+--        [CREATED_BY],
+--        [UPDATED_BY],
+--        [CREATED_DATE],
+--        [UPDATED_DATE],
+--        [FACILITY_ID_REF])
 SELECT [SC].[CONTACT_RID] AS [CONTACT_RID],
        [SE].[EMAIL_RID] AS [EMAIL_RID],
        'A' AS [STATUS_CD],
