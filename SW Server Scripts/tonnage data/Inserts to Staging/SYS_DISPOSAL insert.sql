@@ -22,10 +22,10 @@ FROM [PermitByRule].[dbo].[Tonnage]
 WHERE [PermitNo] LIKE '%-%'
       AND [Tonnage].[ReportingYear] IS NOT NULL
       AND [ReportingQtr] IS NOT NULL
-      AND [PermitNo] NOT IN(
-                            ' 001-006D(SL)',
-                            '001-006D(SL)'
-                           )
+      --AND [PermitNo] NOT IN(
+      --                      ' 001-006D(SL)',
+      --                      '001-006D(SL)'
+      --                     )
 GROUP BY [PermitNo],
          [Tonnage].[ReportingYear],
          [ReportingQtr]
@@ -112,15 +112,15 @@ FROM [#TempTonFull1] AS [TTF1]
      LEFT JOIN [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MFI] ON [TTF1].[PermitNumber] = [MFI].[MainPermitNumber]
      LEFT JOIN [PermitByRule].[dbo].[PBR_Main_Facility] AS [PMF] ON [TTF1].[PermitNumber] = [PMF].[PermitNumber]
 WHERE [TTF1].[FACILITY_RID] IS NOT NULL
-      AND [TTF1].[PermitNumber] NOT IN(
-                                       '037-010D(MSWL)',
-                                       '044-0150D(SL)',
-                                       '057-021D(C&D)',
-                                       '136-018D(MSWL)',
-                                       '138-006D(MSWL)',
-                                       '089-020D(SL)',
-                                       '155-047D(SL)'
-                                      )
+      --AND [TTF1].[PermitNumber] NOT IN(
+      --                                 '037-010D(MSWL)',
+      --                                 '044-0150D(SL)',
+      --                                 '057-021D(C&D)',
+      --                                 '136-018D(MSWL)',
+      --                                 '138-006D(MSWL)',
+      --                                 '089-020D(SL)',
+      --                                 '155-047D(SL)'
+      --                                )
 ORDER BY 1,
          4,
          5;
@@ -156,27 +156,27 @@ SET @rid_counter_start=1000;
 --    SET @rid_counter_start=@rid_counter_start + 1000;
 --  END
   --
---INSERT INTO [LEMIR_Stage].[dbo].[SYS_DISPOSAL]
---       ([SYS_DISPOSAL_RID],
---        [FACILITY_RID],
---        [REPORTING_YEAR],
---        [REPORTING_QUARTER],
---        [SUBMISSION_RID],
---        [INIT_DISPOSAL_AMOUNT],
---        [INIT_RECYCLED_AMOUNT],
---        [DISPOSAL_AMOUNT],
---        [RECYCLED_AMOUNT],
---        [SUB_FEE_RID],
---        [FEE_AMOUNT],
---        [SYN_DATE],
---        [SENT_BY],
---        [STATUS_CD],
---        [CREATED_BY],
---        [CREATED_DATE],
---        [UPDATED_BY],
---        [UPDATED_DATE],
---        [CHANGED_IND],
---        [FACILITY_TYPE])
+INSERT INTO [LEMIR_Stage].[dbo].[SYS_DISPOSAL]
+       ([SYS_DISPOSAL_RID],
+        [FACILITY_RID],
+        [REPORTING_YEAR],
+        [REPORTING_QUARTER],
+        [SUBMISSION_RID],
+        [INIT_DISPOSAL_AMOUNT],
+        [INIT_RECYCLED_AMOUNT],
+        [DISPOSAL_AMOUNT],
+        [RECYCLED_AMOUNT],
+        [SUB_FEE_RID],
+        [FEE_AMOUNT],
+        [SYN_DATE],
+        [SENT_BY],
+        [STATUS_CD],
+        [CREATED_BY],
+        [CREATED_DATE],
+        [UPDATED_BY],
+        [UPDATED_DATE],
+        [CHANGED_IND],
+        [FACILITY_TYPE])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [SYS_DISPOSAL_RID],
        --[TT].[PermitNumber],

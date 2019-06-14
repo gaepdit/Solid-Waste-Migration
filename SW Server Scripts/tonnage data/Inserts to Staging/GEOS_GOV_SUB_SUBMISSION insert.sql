@@ -22,10 +22,10 @@ FROM [PermitByRule].[dbo].[Tonnage]
 WHERE [PermitNo] LIKE '%-%'
       AND [Tonnage].[ReportingYear] IS NOT NULL
       AND [ReportingQtr] IS NOT NULL
-      AND [PermitNo] NOT IN(
-                            ' 001-006D(SL)',
-                            '001-006D(SL)'
-                           )
+      --AND [PermitNo] NOT IN(
+      --                      ' 001-006D(SL)',
+      --                      '001-006D(SL)'
+      --                     )
 GROUP BY [PermitNo],
          [Tonnage].[ReportingYear],
          [ReportingQtr]
@@ -112,15 +112,15 @@ FROM [#TempTonFull1] AS [TTF1]
      LEFT JOIN [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MFI] ON [TTF1].[PermitNumber] = [MFI].[MainPermitNumber]
      LEFT JOIN [PermitByRule].[dbo].[PBR_Main_Facility] AS [PMF] ON [TTF1].[PermitNumber] = [PMF].[PermitNumber]
 WHERE [TTF1].[FACILITY_RID] IS NOT NULL
-      AND [TTF1].[PermitNumber] NOT IN(
-                                       '037-010D(MSWL)',
-                                       '044-050D(SL)',
-                                       '057-021D(C&D)',
-                                       '136-018D(MSWL)',
-                                       '138-006D(MSWL)',
-                                       '089-020D(SL)',
-                                       '155-047D(SL)'
-                                      )
+      --AND [TTF1].[PermitNumber] NOT IN(
+      --                                 '037-010D(MSWL)',
+      --                                 '044-050D(SL)',
+      --                                 '057-021D(C&D)',
+      --                                 '136-018D(MSWL)',
+      --                                 '138-006D(MSWL)',
+      --                                 '089-020D(SL)',
+      --                                 '155-047D(SL)'
+      --                                )
 ORDER BY 1,
          4,
          5;
@@ -143,11 +143,11 @@ DECLARE @created_by_string VARCHAR(MAX)='EPDMIG SWT';
 --FROM [GovOnline_GEOS].[GOV].[SUB_SUBMISSION] AS [GSS];
 --
 --
-SET @rid_counter_start=349969;
+SET @rid_counter_start=382069;
 --
 --IF 'EPDMIG SWT' =
 --    (SELECT [CREATED_BY]
---     FROM [LEMIR_Stage].[GOV].[SUB_SUBMISSION_GEOS]
+--     FROM [GovOnline_GEOS].[GOV].[SUB_SUBMISSION]
 --     WHERE [SUBMISSION_RID] = @rid_counter_start)
 --  BEGIN
 --    SET @rid_counter_start=@rid_counter_start + 1;
@@ -156,20 +156,20 @@ SET @rid_counter_start=349969;
 --  BEGIN
 --    SET @rid_counter_start=@rid_counter_start + 1000;
 --  END
-  --
---INSERT INTO [LEMIR_Stage].[GOV].[SUB_SUBMISSION_GEOS]
---       ([SUBMISSION_RID],
---        [APPLICATION_RID],
---        [SYS_FACILITY_ID],
---        [FACILITY_NAME],
---        [SUB_DTTM],
---        [LOCK_FLAG],
---        [CREATED_DTTM],
---        [CREATED_BY],
---        [UPDATED_DTTM],
---        [UPDATED_BY],
---        [SUB_STATUS_RID],
---        [MIG_TRACK_NUMBER])
+--  --
+INSERT INTO [LEMIR_Stage].[GOV].[SUB_SUBMISSION_GEOS]
+       ([SUBMISSION_RID],
+        [APPLICATION_RID],
+        [SYS_FACILITY_ID],
+        [FACILITY_NAME],
+        [SUB_DTTM],
+        [LOCK_FLAG],
+        [CREATED_DTTM],
+        [CREATED_BY],
+        [UPDATED_DTTM],
+        [UPDATED_BY],
+        [SUB_STATUS_RID],
+        [MIG_TRACK_NUMBER])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [SUBMISSION_RID], --NEW
        2148 AS [APPLICATION_RID], --2148

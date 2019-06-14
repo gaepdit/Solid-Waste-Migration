@@ -29,25 +29,25 @@ set @rid_counter_start = 1000;
 --    SET @rid_counter_start=@rid_counter_start + 1000;
 --  END
   --
---INSERT INTO [LEMIR_Stage].[dbo].[SYS_DISPOSAL_HISTORY]
---       ([SYS_DISPOSAL_HISTORY_RID],
---        [SYS_DISPOSAL_RID],
---        [ORIGINAL_DISPOSAL_AMOUNT],
---        [REVISED_DISPOSAL_AMOUNT],
---        [ORIGINAL_RECYCLED_AMOUNT],
---        [REVISED_RECYCLED_AMOUNT],
---        [COMMENT_TEXT],
---        [SUB_FEE_RID],
---        [SYN_DATE],
---        [SENT_BY],
---        [STATUS_CD],
---        [CREATED_BY],
---        [CREATED_DATE],
---        [UPDATED_BY],
---        [UPDATED_DATE],
---        [REVISED_DATE],
---        [REVISED_BY],
---        [BATCH_TIMESTAMP])
+INSERT INTO [LEMIR_Stage].[dbo].[SYS_DISPOSAL_HISTORY]
+       ([SYS_DISPOSAL_HISTORY_RID],
+        [SYS_DISPOSAL_RID],
+        [ORIGINAL_DISPOSAL_AMOUNT],
+        [REVISED_DISPOSAL_AMOUNT],
+        [ORIGINAL_RECYCLED_AMOUNT],
+        [REVISED_RECYCLED_AMOUNT],
+        [COMMENT_TEXT],
+        [SUB_FEE_RID],
+        [SYN_DATE],
+        [SENT_BY],
+        [STATUS_CD],
+        [CREATED_BY],
+        [CREATED_DATE],
+        [UPDATED_BY],
+        [UPDATED_DATE],
+        [REVISED_DATE],
+        [REVISED_BY],
+        [BATCH_TIMESTAMP])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [SYS_DISPOSAL_HISTORY_RID],
        [SD].[SYS_DISPOSAL_RID] AS [SYS_DISPOSAL_RID],
@@ -58,14 +58,14 @@ SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
        NULL AS [COMMENT_TEXT],
        NULL AS [SUB_FEE_RID],
        getdate() AS [SYN_DATE],
-       'EPDMIG SWT' AS [SENT_BY],
+       @created_by_string AS [SENT_BY],
        'A' AS [STATUS_CD],
-       'EPDMIG SWT' AS [CREATED_BY],
+       @created_by_string AS [CREATED_BY],
        getdate() AS [CREATED_DATE],
-       'EPDMIG SWT' AS [UPDATED_BY],
+       @created_by_string AS [UPDATED_BY],
        getdate() AS [UPDATED_DATE],
        getdate() AS [REVISED_DATE],
-       'EPDMIG SWT' AS [REVISED_BY],
+       @created_by_string AS [REVISED_BY],
        getdate() AS [BATCH_TIMESTAMP]
 FROM [LEMIR_Stage].[dbo].[SYS_DISPOSAL] AS [SD]
 
