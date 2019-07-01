@@ -84,5 +84,6 @@ WHERE [RRPT].[STATUS_CD] = 'A'
       AND [RRPT].[TYPE_RID] > 10040
       AND [RRPT].[TYPE_RID] < 10060
       and [ST2].[PHONE_TYPE_RID] = 1
+      and [FF].[FACILITY_RID] = 345878
 ORDER BY 1,
          2
