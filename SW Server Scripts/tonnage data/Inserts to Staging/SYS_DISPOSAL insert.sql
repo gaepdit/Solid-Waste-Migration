@@ -156,27 +156,27 @@ SET @rid_counter_start=1000;
 --    SET @rid_counter_start=@rid_counter_start + 1000;
 --  END
   --
-INSERT INTO [LEMIR_Stage].[dbo].[SYS_DISPOSAL]
-       ([SYS_DISPOSAL_RID],
-        [FACILITY_RID],
-        [REPORTING_YEAR],
-        [REPORTING_QUARTER],
-        [SUBMISSION_RID],
-        [INIT_DISPOSAL_AMOUNT],
-        [INIT_RECYCLED_AMOUNT],
-        [DISPOSAL_AMOUNT],
-        [RECYCLED_AMOUNT],
-        [SUB_FEE_RID],
-        [FEE_AMOUNT],
-        [SYN_DATE],
-        [SENT_BY],
-        [STATUS_CD],
-        [CREATED_BY],
-        [CREATED_DATE],
-        [UPDATED_BY],
-        [UPDATED_DATE],
-        [CHANGED_IND],
-        [FACILITY_TYPE])
+--INSERT INTO [LEMIR_Stage].[dbo].[SYS_DISPOSAL]
+--       ([SYS_DISPOSAL_RID],
+--        [FACILITY_RID],
+--        [REPORTING_YEAR],
+--        [REPORTING_QUARTER],
+--        [SUBMISSION_RID],
+--        [INIT_DISPOSAL_AMOUNT],
+--        [INIT_RECYCLED_AMOUNT],
+--        [DISPOSAL_AMOUNT],
+--        [RECYCLED_AMOUNT],
+--        [SUB_FEE_RID],
+--        [FEE_AMOUNT],
+--        [SYN_DATE],
+--        [SENT_BY],
+--        [STATUS_CD],
+--        [CREATED_BY],
+--        [CREATED_DATE],
+--        [UPDATED_BY],
+--        [UPDATED_DATE],
+--        [CHANGED_IND],
+--        [FACILITY_TYPE])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [SYS_DISPOSAL_RID],
        --[TT].[PermitNumber],
