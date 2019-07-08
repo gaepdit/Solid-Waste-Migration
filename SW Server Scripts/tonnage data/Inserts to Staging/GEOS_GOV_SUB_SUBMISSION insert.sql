@@ -157,19 +157,19 @@ SET @rid_counter_start=382069;
 --    SET @rid_counter_start=@rid_counter_start + 1000;
 --  END
 --  --
-INSERT INTO [LEMIR_Stage].[GOV].[SUB_SUBMISSION_GEOS]
-       ([SUBMISSION_RID],
-        [APPLICATION_RID],
-        [SYS_FACILITY_ID],
-        [FACILITY_NAME],
-        [SUB_DTTM],
-        [LOCK_FLAG],
-        [CREATED_DTTM],
-        [CREATED_BY],
-        [UPDATED_DTTM],
-        [UPDATED_BY],
-        [SUB_STATUS_RID],
-        [MIG_TRACK_NUMBER])
+--INSERT INTO [LEMIR_Stage].[GOV].[SUB_SUBMISSION_GEOS]
+--       ([SUBMISSION_RID],
+--        [APPLICATION_RID],
+--        [SYS_FACILITY_ID],
+--        [FACILITY_NAME],
+--        [SUB_DTTM],
+--        [LOCK_FLAG],
+--        [CREATED_DTTM],
+--        [CREATED_BY],
+--        [UPDATED_DTTM],
+--        [UPDATED_BY],
+--        [SUB_STATUS_RID],
+--        [MIG_TRACK_NUMBER])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [SUBMISSION_RID], --NEW
        2148 AS [APPLICATION_RID], --2148
