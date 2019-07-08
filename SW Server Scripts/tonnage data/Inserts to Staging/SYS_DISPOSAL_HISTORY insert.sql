@@ -29,25 +29,25 @@ set @rid_counter_start = 1000;
 --    SET @rid_counter_start=@rid_counter_start + 1000;
 --  END
   --
-INSERT INTO [LEMIR_Stage].[dbo].[SYS_DISPOSAL_HISTORY]
-       ([SYS_DISPOSAL_HISTORY_RID],
-        [SYS_DISPOSAL_RID],
-        [ORIGINAL_DISPOSAL_AMOUNT],
-        [REVISED_DISPOSAL_AMOUNT],
-        [ORIGINAL_RECYCLED_AMOUNT],
-        [REVISED_RECYCLED_AMOUNT],
-        [COMMENT_TEXT],
-        [SUB_FEE_RID],
-        [SYN_DATE],
-        [SENT_BY],
-        [STATUS_CD],
-        [CREATED_BY],
-        [CREATED_DATE],
-        [UPDATED_BY],
-        [UPDATED_DATE],
-        [REVISED_DATE],
-        [REVISED_BY],
-        [BATCH_TIMESTAMP])
+--INSERT INTO [LEMIR_Stage].[dbo].[SYS_DISPOSAL_HISTORY]
+--       ([SYS_DISPOSAL_HISTORY_RID],
+--        [SYS_DISPOSAL_RID],
+--        [ORIGINAL_DISPOSAL_AMOUNT],
+--        [REVISED_DISPOSAL_AMOUNT],
+--        [ORIGINAL_RECYCLED_AMOUNT],
+--        [REVISED_RECYCLED_AMOUNT],
+--        [COMMENT_TEXT],
+--        [SUB_FEE_RID],
+--        [SYN_DATE],
+--        [SENT_BY],
+--        [STATUS_CD],
+--        [CREATED_BY],
+--        [CREATED_DATE],
+--        [UPDATED_BY],
+--        [UPDATED_DATE],
+--        [REVISED_DATE],
+--        [REVISED_BY],
+--        [BATCH_TIMESTAMP])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [SYS_DISPOSAL_HISTORY_RID],
        [SD].[SYS_DISPOSAL_RID] AS [SYS_DISPOSAL_RID],
