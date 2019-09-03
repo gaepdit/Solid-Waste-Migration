@@ -1,0 +1,13 @@
+
+SELECT [FL].[FACILITY_RID],
+       [FL].[LOCATION_RID],
+       [FL].[STATUS_CD],
+       [FL].[CREATED_BY],
+       [FL].[UPDATED_BY],
+       [FL].[CREATED_DATE],
+       [FL].[UPDATED_DATE]
+FROM [GovOnline_LEMIR].[dbo].[FAC_LOCATION] AS [FL]
+ WHERE [FL].[FACILITY_RID] in (348937, 347512)
+
+
+
