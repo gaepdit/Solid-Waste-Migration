@@ -44,3 +44,5 @@ SELECT [LOCATION_RID],
        [FACILITY_ID_REF]
 FROM [LEMIR_Stage].[dbo].[SYS_PHYSICAL_LOCATION]
 where [CITY_NAME] like '%*%'
+or [CITY_NAME] like '% '
+or [CITY_NAME] is null

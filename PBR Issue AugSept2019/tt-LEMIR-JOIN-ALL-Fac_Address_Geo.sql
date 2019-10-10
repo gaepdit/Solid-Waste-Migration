@@ -78,7 +78,9 @@ SELECT [sa].[ADDRESS_RID],
        [sa].[QUAL_NO],
        [sa].[PROPERTY_OWNER]
 INTO [#SA]
-FROM [GovOnline_LEMIR].[dbo].[SYS_ADDRESS] AS [sa];
+FROM [GovOnline_LEMIR].[dbo].[SYS_ADDRESS] AS [sa]
+where [UPDATED_BY] = 'EPDMIG SW'
+and [sa].[ADDRESS_TYPE_RID] = 2;
 
 /*******************************************************
 ***** Script for SelectTopNRows command from SSMS  *****
@@ -92,7 +94,9 @@ SELECT [fa].[FACILITY_RID],
        [fa].[UPDATED_DATE],
        [fa].[UPDATED_BY]
 INTO [#FA]
-FROM [GovOnline_LEMIR].[dbo].[FAC_ADDRESS] AS [fa];
+FROM [GovOnline_LEMIR].[dbo].[FAC_ADDRESS] AS [fa]
+where [UPDATED_BY] = 'EPDMIG SW'
+;
 
 /*******************************************************
 ***** Script for SelectTopNRows command from SSMS  *****
@@ -159,7 +163,8 @@ SELECT [sgc].[GEO_COORDINATE_RID],
        [sgc].[LONGTITUDE_MINUTE],
        [sgc].[LONGTITUDE_SECOND]
 INTO [#sgc]
-FROM [GovOnline_LEMIR].[dbo].[SYS_GEO_COORDINATE] AS [sgc];
+FROM [GovOnline_LEMIR].[dbo].[SYS_GEO_COORDINATE] AS [sgc]
+where [UPDATED_BY] = 'EPDMIG SW';
 --
 --SELECT *
 --FROM [#sgc];
@@ -186,9 +191,12 @@ FROM [#FF] AS [ff]
      left JOIN [#RS] AS [rs] ON [sa].[STATE_RID] = [rs].[STATE_RID]
      left JOIN [#sgc] AS [gc] ON [ff].[GEO_COORDINATE_RID] = [gc].[GEO_COORDINATE_RID];
      --
-SELECT *
+SELECT distinct *
 FROM [#LEMIRfacAddress] AS [ff]
-WHERE [ff].[FACILITY_RID] in (348937, 347512);
+--WHERE [ff].[FACILITY_RID] in (347166, 348937)
+where [ff].[STATE_CD] is not null
+ORDER BY 2
+;
 
      --
 DROP TABLE [#LEMIRfacAddress];

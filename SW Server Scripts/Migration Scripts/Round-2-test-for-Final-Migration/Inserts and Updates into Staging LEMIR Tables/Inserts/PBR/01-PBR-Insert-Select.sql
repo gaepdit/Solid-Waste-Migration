@@ -68,4 +68,4 @@ WHERE [MF].[FacilityName] IS NOT NULL   --[UI].[Insert or Update] = 'U'
       AND [MF].[FacilityName] <> ''
       AND [MF].[FacilityName] <> char(39)
       AND [MF].[FacilityName] <> '*'
-ORDER BY 3
+ORDER BY 2
