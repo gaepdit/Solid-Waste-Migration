@@ -45,3 +45,4 @@ SELECT [LOCATION_RID],
 FROM [LEMIR_Stage].[dbo].[SYS_PHYSICAL_LOCATION]
 where [ST_NAME] like '%*%'
 or [ST_NAME] like '% '
+or [ST_NAME] is null
