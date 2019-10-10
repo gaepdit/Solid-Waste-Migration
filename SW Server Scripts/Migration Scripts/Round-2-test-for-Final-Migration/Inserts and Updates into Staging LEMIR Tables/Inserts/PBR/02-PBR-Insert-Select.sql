@@ -41,8 +41,8 @@ IF 'EPDMIG SW' =
 SELECT DISTINCT
        [GEO_COORDINATE_RID]=@rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)),
-       cast(substring([MF].[Latitude], 0, 8) AS FLOAT) AS [LATITUDE_MEASURE], --[MF].[Latitude]
-       cast(substring([MF].[Longitude], 0, 9) AS FLOAT) AS [LONGITUDE_MEASURE], --[MF].[Longitude]
+        [MF].[Latitude],   --cast(substring([MF].[Latitude], 0, 8) AS FLOAT) AS [LATITUDE_MEASURE], --[MF].[Latitude]
+       [MF].[Longitude],--cast(substring([MF].[Longitude], 0, 9) AS FLOAT) AS [LONGITUDE_MEASURE], --[MF].[Longitude]
        'A' AS [STATUS_CD],
        GETDATE() AS [CREATED_DATE],
        @created_by_string AS [CREATED_BY],
@@ -51,13 +51,13 @@ SELECT DISTINCT
        [MF].[PermitNumber] as [FACILITY_ID_REF]
 FROM [PermitByRule].[dbo].[PBR_Main_Facility] AS [MF]
      --LEFT JOIN [LEMIR_Stage].[dbo].[Update_Insert] AS [UI] ON [MF].[PermitNumber] = [UI].[Permit_Number]
-WHERE [mf].[Latitude] IS NOT NULL
-      AND [mf].[Latitude] NOT IN(
-                                 '',
-                                 '*'
-                                )
-      AND [MF].[FacilityName] IS NOT NULL
-      AND [MF].[FacilityName] <> ''
-      AND [MF].[FacilityName] <> char(39)
-      AND [MF].[FacilityName] <> '*'
+WHERE [mf].[Latitude] IS  NULL
+      --AND [mf].[Latitude] NOT IN(
+      --                           '',
+      --                           '*'
+      --                          )
+      --AND [MF].[FacilityName] IS NOT NULL
+      --AND [MF].[FacilityName] <> ''
+      --AND [MF].[FacilityName] <> char(39)
+      --AND [MF].[FacilityName] <> '*'
 ORDER BY 9
