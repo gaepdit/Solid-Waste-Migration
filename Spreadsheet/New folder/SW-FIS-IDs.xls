@@ -1,0 +1,1435 @@
+<div>
+	<table cellspacing="0" rules="all" border="1" style="border-collapse:collapse;">
+		<tr>
+			<th scope="col">FACILITY_RID</th><th scope="col">PERMIT_NUMBER</th><th scope="col">FACILITY_NAME</th><th scope="col">FIS_ID</th><th scope="col">FACILITY_NAME1</th><th scope="col">AKA_NAME</th><th scope="col">TYPE_RID</th><th scope="col">TYPE_CD</th><th scope="col">TYPE_NAME</th>
+		</tr><tr>
+			<td>33668</td><td>001-004D(LI)</td><td>Hatch Nuclear Plant</td><td>17870</td><td>Plant Hatch Nuclear Plant</td><td>Plant Hatch PIL2</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>1692</td><td>001-006D(SL)</td><td>Appling County Roaring Creek Landfill</td><td>5578</td><td>Appling County Roaring Creek Landfill</td><td>Appling Co - Roaring Creek PH 1&amp;2 (SL)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345576</td><td>001-007P(RM)</td><td>B-Square Recycling and Recovery</td><td>32573</td><td>B-Square Recycling and Recovery</td><td>B-Square Recycling and Recovery</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>345577</td><td>002-005D(SL)</td><td>Atkinson Co - Pudding Creek (SL)</td><td>32574</td><td>Atkinson Co - Pudding Creek (SL)</td><td>Atkinson Co - Pudding Creek (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345578</td><td>002-007D(L)</td><td>Sears - CR 120 (L)</td><td>32688</td><td>Sears - CR 120 (L)</td><td>Sears - CR 120 (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345579</td><td>002-009D(MSWL)</td><td>Atkinson Co - SR 50 MSWL</td><td>32375</td><td>Atkinson Co - SR 50 MSWL</td><td>Atkinson Co - SR 50 MSWL</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345580</td><td>003-002D(SL)</td><td>Alma - Radio Station Rd Ph 2 (SL)</td><td>32342</td><td>Alma - Radio Station Rd Ph 2 (SL)</td><td>Alma - Radio Station Rd Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345581</td><td>005-004D(SL)</td><td>Central State Hospital (SL)</td><td>32689</td><td>Central State Hospital (SL)</td><td>Central State Hospital (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345582</td><td>005-005D(SL)</td><td>D &amp; C Refuse - Woodbine (SL)</td><td>32690</td><td>D &amp; C Refuse - Woodbine (SL)</td><td>D &amp; C Refuse - Woodbine (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345581</td><td>005-015D(L)</td><td>Central State Hospital (SL)</td><td>32689</td><td>Central State Hospital (SL)</td><td>Central State Hospital (SL)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>1805</td><td>005-016D(SL)</td><td>Baldwin County Landfill</td><td>8882</td><td>Baldwin County Landfill</td><td>Baldwin Co - Union Hill Ch Rd Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>154974</td><td>005-017D(SL)</td><td>BALDWIN COUNTY LANDFIL          </td><td>&nbsp;</td><td>BALDWIN COUNTY LANDFIL          </td><td>Baldwin Co - Union Hill Ch Rd, Ph 3 (MSWL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345583</td><td>006-006D(SL)</td><td>R&amp;B Landfill</td><td>34379</td><td>R&amp;B Landfill</td><td>R&amp;B Landfill</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>1830</td><td>006-009D(MSWL)</td><td>R&amp;B Landfill</td><td>32446</td><td>R&amp;B Landfill</td><td>R&amp;B Landfill</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345585</td><td>007-016D(SL)</td><td>Barrow Co - Finch Rd Ph 2+3 (SL)</td><td>32581</td><td>Barrow Co - Finch Rd Ph 2+3 (SL)</td><td>Barrow Co - Finch Rd Ph 2+3 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345586</td><td>007-018D(SL)</td><td>Republic Services - Speedway - SR 324 Site 1 (SL)</td><td>33795</td><td>Republic Services - Speedway - SR 324 Site 1 (SL)</td><td>Republic Services - Speedway - SR 324 Site 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345587</td><td>007-020D(SL)</td><td>Republic Waste - Oak Grove SR 324</td><td>32477</td><td>Republic Waste - Oak Grove SR 324</td><td>Republic Waste - Oak Grove SR 324</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345588</td><td>007-021D(IN)</td><td>Patrick Inert Landfill</td><td>32582</td><td>Patrick Inert Landfill</td><td>Patrick Inert Landfill</td><td>10048</td><td>IN</td><td>SW- Inert Landfill</td>
+		</tr><tr>
+			<td>345589</td><td>008-007D(LI)</td><td>Chemical Products Corp - Old Mill Rd (LI)</td><td>32583</td><td>Chemical Products Corp - Old Mill Rd (LI)</td><td>Chemical Products Corp - Old Mill Rd (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345590</td><td>008-008D(SL)</td><td>Bartow Co - SR 294 Emerson (SL)</td><td>33732</td><td>Bartow Co - SR 294 Emerson (SL)</td><td>Bartow Co - SR 294 Emerson (SL)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345591</td><td>008-012D(SL)</td><td>Bartow Co - SR 140 Adairsville (SL)</td><td>32691</td><td>Bartow Co - SR 140 Adairsville (SL)</td><td>Bartow Co - SR 140 Adairsville (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>1867</td><td>008-016D(SL)</td><td>Bartow County Board of Commissioners</td><td>9197</td><td>Bartow County Board of Commissioners</td><td>Bartow Co - SR 294 Emerson MSWL PH 2&amp;3</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>1898</td><td>008-017P</td><td>Tidwell Plumbing, Inc.</td><td>5633</td><td>Tidwell Plumbing, Inc.</td><td>Tidwell Plumbing, Inc.</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>33681</td><td>008-018D(LI)</td><td>Georgia Power - Plant Bowen</td><td>17862</td><td>Georgia Power - Plant Bowen</td><td>Georgia Power - Plant Bowen</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345592</td><td>008-019D(C&amp;D)</td><td>Southern States - Hodges Mine Road C&amp;D Landfill</td><td>32692</td><td>Southern States - Hodges Mine Road C&amp;D Landfill</td><td>Southern States - Hodges Mine Road C&amp;D Landfill</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>148703</td><td>008-020D(LI)</td><td>CHEMICAL PRODUCTS CORP          </td><td>&nbsp;</td><td>CHEMICAL PRODUCTS CORP          </td><td>Chemical Products Corporation</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345593</td><td>009-004D(SL)</td><td>Fitzgerald - Kiochee Church Rd Ph 1 (SL)</td><td>32584</td><td>Fitzgerald - Kiochee Church Rd Ph 1 (SL)</td><td>Fitzgerald - Kiochee Church Rd Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345594</td><td>009-005D(SL)</td><td>Fitzgerald, Kiochee Church Rd, Ph.2</td><td>32403</td><td>Fitzgerald, Kiochee Church Rd, Ph.2</td><td>Fitzgerald, Kiochee Church Rd, Ph.2</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>33063</td><td>009-006P</td><td>VLS RAILCAR - FITZGERALD, LLC</td><td>&nbsp;</td><td>VLS RAILCAR - FITZGERALD, LLC</td><td>VLS Railcar - Fitzgerald, LLC.</td><td>10041</td><td>LS</td><td>SW-Liquid Solidification Facility</td>
+		</tr><tr>
+			<td>345595</td><td>010-004D(SL)</td><td>Berrien Co - SR 76 W Nashville (SL)</td><td>32693</td><td>Berrien Co - SR 76 W Nashville (SL)</td><td>Berrien Co - SR 76 W Nashville (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345596</td><td>010-007D(L)</td><td>Berrien Co - Brogdon Rd (L)</td><td>32694</td><td>Berrien Co - Brogdon Rd (L)</td><td>Berrien Co - Brogdon Rd (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345597</td><td>010-008D(L)</td><td>Berrien Co - CR 48/CR 28 Ph 1 (L)</td><td>32585</td><td>Berrien Co - CR 48/CR 28 Ph 1 (L)</td><td>Berrien Co - CR 48/CR 28 Ph 1 (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345597</td><td>010-009P(CO)</td><td>Berrien Co - CR 48/CR 28 Ph 1 (L)</td><td>32585</td><td>Berrien Co - CR 48/CR 28 Ph 1 (L)</td><td>Berrien Co - CR 48/CR 28 Ph 1 (L)</td><td>10042</td><td>CO</td><td>SW- Composting</td>
+		</tr><tr>
+			<td>345598</td><td>010-009P(RM)(CO)</td><td>Berrien Co - CR 48/CR 28 (P-RM)</td><td>32586</td><td>Berrien Co - CR 48/CR 28 (P-RM)</td><td>Berrien Co - CR 48/CR 28 (P-RM)</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>345599</td><td>011-007D(SL)</td><td>Macon - 11th St Ph 1 (SL)</td><td>32695</td><td>Macon - 11th St Ph 1 (SL)</td><td>Macon - 11th St Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345600</td><td>011-009D(LI)</td><td>Fauconniere - Marion Rd Ph 1 (LI)</td><td>32587</td><td>Fauconniere - Marion Rd Ph 1 (LI)</td><td>Fauconniere - Marion Rd Ph 1 (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345601</td><td>011-011D(LI)</td><td>General (Allied) Chemical - Mead Rd (LI)</td><td>32588</td><td>General (Allied) Chemical - Mead Rd (LI)</td><td>General (Allied) Chemical - Mead Rd (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345602</td><td>011-015D(L)(I)</td><td>Bibb Co - Riverwood International, Mead Rd, PISWDF</td><td>32696</td><td>Bibb Co - Riverwood International, Mead Rd, PISWDF</td><td>Bibb Co - Riverwood International, Mead Rd, PISWDF</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>11910</td><td>011-017D(SL)</td><td>Old City of Macon Landfill</td><td>32413</td><td>Old City of Macon Landfill</td><td>Macon - Walker Rd Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345603</td><td>011-018D(L)</td><td>Republic Services - Swift Creek Landfill</td><td>33734</td><td>Republic Services - Swift Creek Landfill</td><td>Republic Services - Swift Creek Landfill</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345604</td><td>011-020D(LI)</td><td>Macon Kraft Inc. - Read Road (L)</td><td>33836</td><td>Macon Kraft Inc. - Read Road (L)</td><td>Macon Kraft Inc. - Read Road (L)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345605</td><td>011-022D(LI)</td><td>Fauconniere - Marion Rd Ph 2 (LI)</td><td>33812</td><td>Fauconniere - Marion Rd Ph 2 (LI)</td><td>Fauconniere - Marion Rd Ph 2 (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345606</td><td>011-023P(INC)I</td><td>Medical Center of Central Georgia</td><td>32589</td><td>Medical Center of Central Georgia</td><td>Medical Center of Central Georgia</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>345608</td><td>011-025D(LI)</td><td>GA Power Company  Plant Arkwright Ash Pond No.3 Monofill</td><td>33735</td><td>GA Power Company  Plant Arkwright Ash Pond No.3 Monofill</td><td>GA Power Company  Plant Arkwright Ash Pond No.3 Monofill</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>1983</td><td>011-026D(SL)</td><td>Mullis-Davis/Grisold Road Landfill</td><td>9220</td><td>Mullis-Davis/Grisold Road Landfill</td><td>Republic Services - Swift Creek MSW Landfill</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345609</td><td>011-027P</td><td>A&amp;D Environmental Services (GA), LLC</td><td>33736</td><td>A&amp;D Environmental Services (GA), LLC</td><td>A&amp;D Environmental Services (GA), LLC</td><td>10041</td><td>LS</td><td>SW-Liquid Solidification Facility</td>
+		</tr><tr>
+			<td>148953</td><td>011-028D(L)(I)</td><td>ARMSTRONG WORLD INDUSTRIES INC</td><td>&nbsp;</td><td>ARMSTRONG WORLD INDUSTRIES INC</td><td>Armstrong World Industries, Inc.</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345602</td><td>011-029D(C&amp;D)</td><td>Bibb Co - Riverwood International, Mead Rd, PISWDF</td><td>32696</td><td>Bibb Co - Riverwood International, Mead Rd, PISWDF</td><td>Bibb Co - Riverwood International, Mead Rd, PISWDF</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345610</td><td>011-030D(LI)</td><td>Georgia Power Plant Arkwright Ash Pond 1</td><td>32591</td><td>Georgia Power Plant Arkwright Ash Pond 1</td><td>Georgia Power Plant Arkwright Ash Pond 1</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345611</td><td>011-031D(LI)</td><td>Georgia Power Plant Arkwright Ash Pond 2 Dry Ash Stockpile</td><td>33796</td><td>Georgia Power Plant Arkwright Ash Pond 2 Dry Ash Stockpile</td><td>Georgia Power Plant Arkwright Ash Pond 2 Dry Ash Stockpile</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345612</td><td>012-004D(SL)</td><td>Bleckley Co - Cochran - SR 26 (SL)</td><td>32592</td><td>Bleckley Co - Cochran - SR 26 (SL)</td><td>Bleckley Co - Cochran - SR 26 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345613</td><td>013-002D(SL)</td><td>Brantley Co - US 84/SR 50 Schlttvlle (SL)</td><td>32697</td><td>Brantley Co - US 84/SR 50 Schlttvlle (SL)</td><td>Brantley Co - US 84/SR 50 Schlttvlle (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345614</td><td>013-003D(SL)</td><td>Brantley Co - Smyrna Church Rd (SL)</td><td>33737</td><td>Brantley Co - Smyrna Church Rd (SL)</td><td>Brantley Co - Smyrna Church Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345615</td><td>014-003D(SL)</td><td>Quitman - SR 33 Ph 1 (SL)</td><td>32593</td><td>Quitman - SR 33 Ph 1 (SL)</td><td>Quitman - SR 33 Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345615</td><td>014-004P(INC)</td><td>Quitman - SR 33 Ph 1 (SL)</td><td>32593</td><td>Quitman - SR 33 Ph 1 (SL)</td><td>Quitman - SR 33 Ph 1 (SL)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>345616</td><td>015-004D(SL)</td><td>Bryan Co - US 280/Mill Creek (SL)</td><td>32594</td><td>Bryan Co - US 280/Mill Creek (SL)</td><td>Bryan Co - US 280/Mill Creek (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345617</td><td>015-005D(L)</td><td>Bryan Co - SR 144 Spur Ph 1 (L)</td><td>33821</td><td>Bryan Co - SR 144 Spur Ph 1 (L)</td><td>Bryan Co - SR 144 Spur Ph 1 (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345618</td><td>015-008D(L)</td><td>Bryan Co - SR 144 Spur Ph 2 (L)</td><td>32595</td><td>Bryan Co - SR 144 Spur Ph 2 (L)</td><td>Bryan Co - SR 144 Spur Ph 2 (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345619</td><td>016-006D(LI)</td><td>Tyco International - CR 446 Ph 1 (LI)</td><td>33822</td><td>Tyco International - CR 446 Ph 1 (LI)</td><td>Tyco International - CR 446 Ph 1 (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>152238</td><td>016-007D(SL)</td><td>STATESBORO/BULLOCH CO LANDFILL  </td><td>&nbsp;</td><td>STATESBORO/BULLOCH CO LANDFILL  </td><td>Statesboro - Lakeview Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345620</td><td>016-009D(LI)</td><td>Tyco International - CR 446 Ph 2 (LI)</td><td>32596</td><td>Tyco International - CR 446 Ph 2 (LI)</td><td>Tyco International - CR 446 Ph 2 (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345621</td><td>016-010D(LI)</td><td>Tyco International - CR 446 Ph 3&amp;4 (LI)</td><td>33797</td><td>Tyco International - CR 446 Ph 3&amp;4 (LI)</td><td>Tyco International - CR 446 Ph 3&amp;4 (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>152238</td><td>016-011P(INC)</td><td>STATESBORO/BULLOCH CO LANDFILL  </td><td>&nbsp;</td><td>STATESBORO/BULLOCH CO LANDFILL  </td><td>Statesboro - Lakeview Rd ACD (P-INC)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>345622</td><td>016-013P(INC)</td><td>Ellis Wood Contracting, Inc.</td><td>32597</td><td>Ellis Wood Contracting, Inc.</td><td>Ellis Wood Contracting, Inc.</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>2170</td><td>017-002D(SL)</td><td>Burke County Solid Waste</td><td>14839</td><td>Burke County Solid Waste</td><td>Burke Co - Clarke Rd (SL)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345623</td><td>017-005D(LI)</td><td>Georgia Power - Plant Vogtle</td><td>32698</td><td>Georgia Power - Plant Vogtle</td><td>Georgia Power - Plant Vogtle</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>149357</td><td>017-006D(LI)</td><td>GA POWER/PLANT VOGTLE</td><td>&nbsp;</td><td>GA POWER/PLANT VOGTLE</td><td>GA Power - Plant Vogtle #2 (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345624</td><td>017-007D(LI)</td><td>GA Power - Plant Vogtle #3 (LI)</td><td>33823</td><td>GA Power - Plant Vogtle #3 (LI)</td><td>GA Power - Plant Vogtle #3 (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>2191</td><td>018-004D(SL)</td><td>Butts County Landfill</td><td>5701</td><td>Butts County Landfill</td><td>Butts Co - Brownlee Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345625</td><td>018-008D(MSWL)</td><td>Republic Services - Pine Ridge Recycling (MSWL)</td><td>32466</td><td>Republic Services - Pine Ridge Recycling (MSWL)</td><td>Republic Services - Pine Ridge Recycling (MSWL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345626</td><td>018-009P(CO)</td><td>Scotts Miracle-Gro Green Waste Composting Facility</td><td>32598</td><td>Scotts Miracle-Gro Green Waste Composting Facility</td><td>Scotts Miracle-Gro Green Waste Composting Facility</td><td>10042</td><td>CO</td><td>SW- Composting</td>
+		</tr><tr>
+			<td>345627</td><td>019-004D(SL)</td><td>Calhoun Co - SR 45 Morgan (SL)</td><td>32599</td><td>Calhoun Co - SR 45 Morgan (SL)</td><td>Calhoun Co - SR 45 Morgan (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345628</td><td>020-002D(LI)</td><td>Gilman Paper - St Marys Ph 3 (LI)</td><td>32699</td><td>Gilman Paper - St Marys Ph 3 (LI)</td><td>Gilman Paper - St Marys Ph 3 (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345629</td><td>020-007D(L)</td><td>US Navy - King Bay Ph 1 (L)</td><td>32600</td><td>US Navy - King Bay Ph 1 (L)</td><td>US Navy - King Bay Ph 1 (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345630</td><td>020-008D(LI)</td><td>Southeast Energy Group (LI)</td><td>33772</td><td>Southeast Energy Group (LI)</td><td>Southeast Energy Group (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345631</td><td>020-012D(SL)</td><td>Camden Co - Vacuna Rd Ph 2 (SL)</td><td>33738</td><td>Camden Co - Vacuna Rd Ph 2 (SL)</td><td>Camden Co - Vacuna Rd Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345632</td><td>020-013D(LI)</td><td>Gilman Paper - St Marys Ph 2 (LI)</td><td>32700</td><td>Gilman Paper - St Marys Ph 2 (LI)</td><td>Gilman Paper - St Marys Ph 2 (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345633</td><td>020-014D(L)</td><td>US Navy - Kings Bay Ph 3 (L)</td><td>33798</td><td>US Navy - Kings Bay Ph 3 (L)</td><td>US Navy - Kings Bay Ph 3 (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345634</td><td>020-015D(SL)(I)</td><td>Bayer CropScience, LP</td><td>32601</td><td>Bayer CropScience, LP</td><td>Bayer CropScience, LP</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345635</td><td>020-017D(MSWL)</td><td>Camden Co-SR110 MSWL</td><td>32602</td><td>Camden Co-SR110 MSWL</td><td>Camden Co-SR110 MSWL</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345636</td><td>020-018D(LI)</td><td>Camden Co-Gilman Paper Co, SR 110 (PISWL)</td><td>32701</td><td>Camden Co-Gilman Paper Co, SR 110 (PISWL)</td><td>Camden Co-Gilman Paper Co, SR 110 (PISWL)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>2034</td><td>020-019D(C&amp;D)</td><td>Camden County Solid Waste Department</td><td>340</td><td>Camden County Solid Waste Department</td><td>Camden Co - S.R. 110 C/D/I Waste Landfill</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345637</td><td>021-001D(SL)</td><td>Candler Co - SR 121 Metter (SL)</td><td>32603</td><td>Candler Co - SR 121 Metter (SL)</td><td>Candler Co - SR 121 Metter (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>350987</td><td>021-005D(L)</td><td>Candler Co - SR 121 Phase 2 C&amp;D</td><td>&nbsp;</td><td>Candler Co - SR 121 Phase 2 C&amp;D</td><td>Candler Co - SR 121 Phase 2 C&amp;D</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>8813</td><td>021-006D(MSWL)</td><td>Candler County BOC Landfill dba Candler County Landfill</td><td>8696</td><td>Candler County BOC Landfill dba Candler County Landfill</td><td>Candler Co-SR 121 Phase 2 MSWL</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>149553</td><td>022-008D(SL)</td><td>CARROLL COUNTY SOLID WASTE</td><td>34320</td><td>CARROLL COUNTY SOLID WASTE</td><td>Carrollton - SR 166 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>2065</td><td>022-009D(LI)</td><td>Southwire Company</td><td>13473</td><td>Southwire Company</td><td>Southwire Company</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345638</td><td>023-005D(SL)</td><td>Catoosa Co - SR 151 W Exp (SL)</td><td>32604</td><td>Catoosa Co - SR 151 W Exp (SL)</td><td>Catoosa Co - SR 151 W Exp (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>10876</td><td>023-007D(MSWL)</td><td>Catoosa Co. Landfill</td><td>13682</td><td>Catoosa Co. Landfill</td><td>Catoosa Co - SR151, Site No. 2 MSWL</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345639</td><td>024-003D(SL)</td><td>Charlton Co - SR 23 Folkston (SL)</td><td>32605</td><td>Charlton Co - SR 23 Folkston (SL)</td><td>Charlton Co - SR 23 Folkston (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345639</td><td>024-004D(L)</td><td>Charlton Co - SR 23 Folkston (SL)</td><td>32605</td><td>Charlton Co - SR 23 Folkston (SL)</td><td>Charlton Co - SR 23 Folkston (SL)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345640</td><td>024-005D(L)</td><td>Charlton Co - SR 23 St George (L)</td><td>32606</td><td>Charlton Co - SR 23 St George (L)</td><td>Charlton Co - SR 23 St George (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345641</td><td>024-006D(SL)</td><td>Chesser Island Road Landfill, Inc. MSWL</td><td>32385</td><td>Chesser Island Road Landfill, Inc. MSWL</td><td>Chesser Island Road Landfill, Inc. MSWL</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345642</td><td>025-010D(L)</td><td>Savannah - Bacon Park (L)</td><td>32607</td><td>Savannah - Bacon Park (L)</td><td>Savannah - Bacon Park (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>149925</td><td>025-016D(LI)</td><td>WASTE MANAGEMENT OF GEORGIA INC </td><td>&nbsp;</td><td>WASTE MANAGEMENT OF GEORGIA INC </td><td>Waste Mgt of Savannah (Metro Waste) (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345643</td><td>025-018D(LI)</td><td>Savannah Sugar-US 17  (LI)</td><td>32608</td><td>Savannah Sugar-US 17  (LI)</td><td>Savannah Sugar-US 17  (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345644</td><td>025-025D(LI)</td><td>Ductile Iron of America (LI)</td><td>33739</td><td>Ductile Iron of America (LI)</td><td>Ductile Iron of America (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>149872</td><td>025-030D(L)</td><td>CLIFTON EQUIPMENT RENTAL CO     </td><td>34289</td><td>CLIFTON EQUIPMENT RENTAL CO     </td><td>Clifton Equipment Rental Company, Inc.</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345645</td><td>025-035D(LI)</td><td>E M Chemicals-O&#39;Leary Rd (LI)</td><td>32702</td><td>E M Chemicals-O&#39;Leary Rd (LI)</td><td>E M Chemicals-O&#39;Leary Rd (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345646</td><td>025-038D(L)</td><td>Chatham Co - Chevis Rd (L)</td><td>33799</td><td>Chatham Co - Chevis Rd (L)</td><td>Chatham Co - Chevis Rd (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345647</td><td>025-040D(L)</td><td>Chatham Co - I 16 Bloomingdale (L)</td><td>32609</td><td>Chatham Co - I 16 Bloomingdale (L)</td><td>Chatham Co - I 16 Bloomingdale (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345648</td><td>025-041D(LI)</td><td>International Paper - Blmgdale/Elkins Cmtry (LI)</td><td>&nbsp;</td><td>International Paper - Blmgdale/Elkins Cmtry (LI)</td><td>International Paper - Blmgdale/Elkins Cmtry (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345649</td><td>025-041D(LI)(4)</td><td>International Paper-Carter Adams Cell #4</td><td>32610</td><td>International Paper-Carter Adams Cell #4</td><td>International Paper-Carter Adams Cell #4</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345650</td><td>025-045D(SL)</td><td>Superior Sanitation - Little Neck Rd (SL)</td><td>32611</td><td>Superior Sanitation - Little Neck Rd (SL)</td><td>Superior Sanitation - Little Neck Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345651</td><td>025-046D(L)</td><td>Port Wentworth - Augustine Creek (L)</td><td>32703</td><td>Port Wentworth - Augustine Creek (L)</td><td>Port Wentworth - Augustine Creek (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345652</td><td>025-048D(L)</td><td>Tybee Island - Polk Ave/Van Horne Dr (L)</td><td>32704</td><td>Tybee Island - Polk Ave/Van Horne Dr (L)</td><td>Tybee Island - Polk Ave/Van Horne Dr (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>10885</td><td>025-051D(MSWL)</td><td>Dean Forest Landfill</td><td>11046</td><td>Dean Forest Landfill</td><td>Savannah - Dean Forest Road</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345653</td><td>025-051D(SL)</td><td>Savannah-Dean Forest Rd (SL)</td><td>32498</td><td>Savannah-Dean Forest Rd (SL)</td><td>Savannah-Dean Forest Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345654</td><td>025-053D(LI)</td><td>Garrett-Kelly Hill Rd (LI)</td><td>33742</td><td>Garrett-Kelly Hill Rd (LI)</td><td>Garrett-Kelly Hill Rd (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345655</td><td>025-056D(L)</td><td>Chatham Co-Thomas Ave (L)</td><td>32612</td><td>Chatham Co-Thomas Ave (L)</td><td>Chatham Co-Thomas Ave (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345656</td><td>025-057D(L)</td><td>Chatham Co - Sharon Park (L)</td><td>17166</td><td>Chatham Co - Sharon Park (L)</td><td>Chatham Co - Sharon Park (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345657</td><td>025-058D(L)</td><td>Chatham Co - SR 367 Wilmington Island Ph 2 (L)</td><td>33801</td><td>Chatham Co - SR 367 Wilmington Island Ph 2 (L)</td><td>Chatham Co - SR 367 Wilmington Island Ph 2 (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>2383</td><td>025-061D(LI)</td><td>Georgia Power -  Plant Kraft</td><td>4790</td><td>Georgia Power -  Plant Kraft</td><td>Georgia Power Company Plant Kraft (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345659</td><td>025-063D(L)</td><td>Carter - Quacco Rd (L)</td><td>33824</td><td>Carter - Quacco Rd (L)</td><td>Carter - Quacco Rd (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345660</td><td>025-065D(LI)</td><td>Clay - Ric US 80 (LI)</td><td>32613</td><td>Clay - Ric US 80 (LI)</td><td>Clay - Ric US 80 (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345661</td><td>025-066D(L)</td><td>Macmillian - Dean Forest Rd (L)</td><td>32614</td><td>Macmillian - Dean Forest Rd (L)</td><td>Macmillian - Dean Forest Rd (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345662</td><td>025-067D(L)</td><td>GPA-Hutchinson Island (L)</td><td>32615</td><td>GPA-Hutchinson Island (L)</td><td>GPA-Hutchinson Island (L)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345920</td><td>025-068D(L)</td><td>Crosby - Quacco Rd (L)</td><td>32548</td><td>Crosby - Quacco Rd (L)</td><td>Crosby - Quacco Rd (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>8624</td><td>025-070D(MSWL)</td><td>Superior Landfill &amp; Recycling Center</td><td>14736</td><td>Superior Landfill &amp; Recycling Center</td><td>Superior Landfill &amp; Recycling Center - Site No.2 MSWL</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345921</td><td>025-071D(LI)</td><td>Centerpoint Garden City, LLC Landfill</td><td>33859</td><td>Centerpoint Garden City, LLC Landfill</td><td>Centerpoint Garden City, LLC Landfill</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>152848</td><td>025-072D(L)(I)</td><td>REPUBLIC SERVICES - Savannah Regional Industrial</td><td>27176</td><td>REPUBLIC  SERVICES</td><td>Republic Services - Savannah Regional Industrial Landfill, Inc</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345922</td><td>025-073P</td><td>Return Logistics Int. Corp., Processing Facility</td><td>&nbsp;</td><td>Return Logistics Int. Corp., Processing Facility</td><td>Return Logistics Int. Corp., Processing Facility</td><td>10041</td><td>LS</td><td>SW-Liquid Solidification Facility</td>
+		</tr><tr>
+			<td>345923</td><td>025-073P(RM)</td><td>ATLAS WASTE AND RECYCLING SYSTEMS, INC.</td><td>&nbsp;</td><td>ATLAS WASTE AND RECYCLING SYSTEMS, INC.</td><td>ATLAS WASTE AND RECYCLING SYSTEMS, INC.</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>345924</td><td>025-074P(MRF)</td><td>Green Acres C&amp;D Recyclers, LLC</td><td>&nbsp;</td><td>Green Acres C&amp;D Recyclers, LLC</td><td>Green Acres C&amp;D Recyclers, LLC</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>149924</td><td>025-075P(BIO)</td><td>PMP INC                         </td><td>&nbsp;</td><td>PMP INC                         </td><td>PMP, Inc. Autoclave</td><td>10044</td><td>BIO</td><td>SW- Biomedical Processing</td>
+		</tr><tr>
+			<td>345925</td><td>026-004D(SL)</td><td>Ft. Benning - 1st Division Rd. (SL)</td><td>32455</td><td>Ft. Benning - 1st Division Rd. (SL)</td><td>Ft. Benning - 1st Division Rd. (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345926</td><td>026-005D(CLO)</td><td>Cusseta - Firetower Road C/D Landfill (In-Place Closure)</td><td>32456</td><td>Cusseta - Firetower Road C/D Landfill (In-Place Closure)</td><td>Cusseta - Firetower Road C/D Landfill (In-Place Closure)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345927</td><td>027-006D(SL)</td><td>Chattooga Co - Penn Bridge Rd Ph 1 (SL)</td><td>32457</td><td>Chattooga Co - Penn Bridge Rd Ph 1 (SL)</td><td>Chattooga Co - Penn Bridge Rd Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345928</td><td>027-008D(SL)</td><td>Chattooga Co - CR323 (Holland - Chattoogaville Rd) MSWL</td><td>32549</td><td>Chattooga Co - CR323 (Holland - Chattoogaville Rd) MSWL</td><td>Chattooga Co - CR323 (Holland - Chattoogaville Rd) MSWL</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345929</td><td>028-007D(L)</td><td>Cherokee Co - Univeter Rd (L)</td><td>33860</td><td>Cherokee Co - Univeter Rd (L)</td><td>Cherokee Co - Univeter Rd (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345930</td><td>028-012D(L)</td><td>Brown - SR 92 W Woodstock (L)</td><td>33861</td><td>Brown - SR 92 W Woodstock (L)</td><td>Brown - SR 92 W Woodstock (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345931</td><td>028-013D(L)</td><td>Kendrick - Arnold Mill Rd Ph 1 (L)</td><td>33862</td><td>Kendrick - Arnold Mill Rd Ph 1 (L)</td><td>Kendrick - Arnold Mill Rd Ph 1 (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>369738</td><td>028-0148 PBR(COL)</td><td>Mercer Construction Services, Inc.</td><td>33721</td><td>Mercer Construction Services, Inc.</td><td>Mercer Construction Services, Inc.</td><td>10054</td><td>COL</td><td>SW- Collection</td>
+		</tr><tr>
+			<td>345932</td><td>028-014D(SL)</td><td>Canton - Ridge Rd Ph 2 (SL)</td><td>32458</td><td>Canton - Ridge Rd Ph 2 (SL)</td><td>Canton - Ridge Rd Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345933</td><td>028-015D(SL)</td><td>Cherokee Co - Blalock Rd Ph 3 (SL)</td><td>33863</td><td>Cherokee Co - Blalock Rd Ph 3 (SL)</td><td>Cherokee Co - Blalock Rd Ph 3 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345934</td><td>028-017D(SL)</td><td>Blalock Rd Phase 4</td><td>32459</td><td>Blalock Rd Phase 4</td><td>Blalock Rd Phase 4</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345935</td><td>028-030D(L)</td><td>Swims - SR 92 (Dixie) Ph 1&amp;2 (L)</td><td>33792</td><td>Swims - SR 92 (Dixie) Ph 1&amp;2 (L)</td><td>Swims - SR 92 (Dixie) Ph 1&amp;2 (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345936</td><td>028-032D(L)</td><td>Kuykendall - Earney Rd (L)</td><td>32550</td><td>Kuykendall - Earney Rd (L)</td><td>Kuykendall - Earney Rd (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345937</td><td>028-034D(L)</td><td>Swims - SR 92 (Dixie) Ph 3 (L)</td><td>32460</td><td>Swims - SR 92 (Dixie) Ph 3 (L)</td><td>Swims - SR 92 (Dixie) Ph 3 (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>2413</td><td>028-039D(SL)</td><td>Pine Bluff Landfill</td><td>506</td><td>Pine Bluff Landfill</td><td>Pine Bluff Landfill</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345938</td><td>028-040D(L)</td><td>Cherokee Co-Swims - SR 92 Ph 4</td><td>33864</td><td>Cherokee Co-Swims - SR 92 Ph 4</td><td>Cherokee Co-Swims - SR 92 Ph 4</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345939</td><td>028-041D(SL)</td><td>Cherokee Co - Blalock Rd Ph 6 (SL)</td><td>33865</td><td>Cherokee Co - Blalock Rd Ph 6 (SL)</td><td>Cherokee Co - Blalock Rd Ph 6 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345940</td><td>028-042P(BIO)</td><td>Curtis Bay Medical Waste Services GA, LLC</td><td>&nbsp;</td><td>Curtis Bay Medical Waste Services GA, LLC</td><td>Curtis Bay Medical Waste Services GA, LLC</td><td>10044</td><td>BIO</td><td>SW- Biomedical Processing</td>
+		</tr><tr>
+			<td>345941</td><td>028-043D(C&amp;D)</td><td>Waste Pro of GA, Inc d/b/a Cherokee C&amp;D Landfill</td><td>17594</td><td>Waste Pro of GA, Inc d/b/a Cherokee C&amp;D Landfill</td><td>Waste Pro of GA, Inc d/b/a Cherokee C&amp;D Landfill</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345942</td><td>029-004D(SL)</td><td>Clarke Co - Athens Dunlap Rd (SL) Ph 1</td><td>32461</td><td>Clarke Co - Athens Dunlap Rd (SL) Ph 1</td><td>Clarke Co - Athens Dunlap Rd (SL) Ph 1</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345943</td><td>029-009D(L)</td><td>Coggins - Trade St (L)</td><td>33869</td><td>Coggins - Trade St (L)</td><td>Coggins - Trade St (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>139428</td><td>029-011P(INC)</td><td>NORAMCO INC                     </td><td>&nbsp;</td><td>NORAMCO INC                     </td><td>Noramco, Inc.</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>153082</td><td>029-012D(SL)</td><td>ATHENS CLARKE COUNTY LANDFILL   </td><td>32386</td><td>ATHENS CLARKE COUNTY LANDFILL   </td><td>Clarke Co - Athens Dunlap Rd (SL) Ph 2,3,&amp; 4</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>153082</td><td>029-013P(RM)</td><td>ATHENS CLARKE COUNTY LANDFILL   </td><td>32386</td><td>ATHENS CLARKE COUNTY LANDFILL   </td><td>Clarke Co - Athens Dunlap Road MRF</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>345945</td><td>030-002D(SL)</td><td>Clay Co - SR 39 Ph 1 (SL)</td><td>33871</td><td>Clay Co - SR 39 Ph 1 (SL)</td><td>Clay Co - SR 39 Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>2514</td><td>030-003D(SL)</td><td>Clay County Landfill</td><td>9365</td><td>Clay County Landfill</td><td>Clay Co - SR 39 Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345946</td><td>031-017D(SL)</td><td>WMI - Rolling Hills (SL)</td><td>32462</td><td>WMI - Rolling Hills (SL)</td><td>WMI - Rolling Hills (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345947</td><td>031-023D(L)</td><td>Forest Park - Jones Rd Ext (L)</td><td>33873</td><td>Forest Park - Jones Rd Ext (L)</td><td>Forest Park - Jones Rd Ext (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>8925</td><td>031-027D(SL)</td><td>Clayton County Landfill dba Clayon County Transpotation and Development Dept.</td><td>13100</td><td>Clayton County Landfill dba Clayon County Transpotation and Development Dept.</td><td>Clayton Co - SR 3 Lovejoy #2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345948</td><td>031-031D(L)</td><td>Forest Park - Jones Rd Ph 3 (L)</td><td>33872</td><td>Forest Park - Jones Rd Ph 3 (L)</td><td>Forest Park - Jones Rd Ph 3 (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345949</td><td>031-033P(INC)</td><td>Stericycle, Inc. - Lake City Facility</td><td>33874</td><td>Stericycle, Inc. - Lake City Facility</td><td>Stericycle, Inc. - Lake City Facility</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>332757</td><td>031-035P(INC)</td><td>STERICYCLE,  INC</td><td>&nbsp;</td><td>STERICYCLE,  INC</td><td>Stericycle</td><td>10044</td><td>BIO</td><td>SW- Biomedical Processing</td>
+		</tr><tr>
+			<td>345950</td><td>031-037D(SL)</td><td>Clayton Co-SR 3 Lovejoy Site # 3</td><td>32387</td><td>Clayton Co-SR 3 Lovejoy Site # 3</td><td>Clayton Co-SR 3 Lovejoy Site # 3</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345951</td><td>031-039D(C&amp;D)</td><td>Stephens MDS, LP Processing Facility</td><td>32504</td><td>Stephens MDS, LP Processing Facility</td><td>Stephens MDS, LP Processing Facility</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345952</td><td>031-040P(MRF)</td><td>Technical Environmental Solutions &amp; Recycling, LLC</td><td>33875</td><td>Technical Environmental Solutions &amp; Recycling, LLC</td><td>Technical Environmental Solutions &amp; Recycling, LLC</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>7642</td><td>031-042P(MRF)</td><td>Waste Management - Forest Park Transfer Station</td><td>12321</td><td>Waste Management - Forest Park Transfer Station</td><td>Forest Park Transfer Station</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>345954</td><td>031-043P(MRF)</td><td>Waste Eliminator, Inc.</td><td>33877</td><td>Waste Eliminator, Inc.</td><td>Waste Eliminator, Inc.</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>345955</td><td>032-004D(SL)</td><td>Clinch Co - Smith Road Phase 1 MSWL</td><td>32463</td><td>Clinch Co - Smith Road Phase 1 MSWL</td><td>Clinch Co - Smith Road Phase 1 MSWL</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345956</td><td>033-031D(LI)</td><td>Austell Box Board (LI)</td><td>32464</td><td>Austell Box Board (LI)</td><td>Austell Box Board (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345957</td><td>033-035D(LS)I</td><td>Colonial Pipeline (Atlanta JCT LFM) (SI)</td><td>&nbsp;</td><td>Colonial Pipeline (Atlanta JCT LFM) (SI)</td><td>Colonial Pipeline (Atlanta JCT LFM) (SI)</td><td>10045</td><td>Other-D or P</td><td>SW- Other-Processor/ Disposal</td>
+		</tr><tr>
+			<td>350995</td><td>033-037D(L)</td><td>Cobb Co - County Farm Rd #2 Phs 1-2-3 (L)</td><td>&nbsp;</td><td>Cobb Co - County Farm Rd #2 Phs 1-2-3 (L)</td><td>Cobb Co - County Farm Rd #2 Phs 1-2-3 (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345959</td><td>033-038D(SL)</td><td>Cobb Co - Cheatham Rd Ph 2 (SL)</td><td>32465</td><td>Cobb Co - Cheatham Rd Ph 2 (SL)</td><td>Cobb Co - Cheatham Rd Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345958</td><td>033-039D(SL)</td><td>Cobb Co - County Farm Rd #2 Phs 1-2-3 (L)</td><td>33878</td><td>Cobb Co - County Farm Rd #2 Phs 1-2-3 (L)</td><td>Cobb Co - County Farm Rd #2 Phs 1-2-3 (L)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>2868</td><td>033-081D(L)</td><td>Chambers Oakdale Landfill</td><td>14873</td><td>Chambers Oakdale Landfill</td><td>Chambers - Oakdale Rd/I-285 (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345958</td><td>033-095P(CO)</td><td>Cobb Co - County Farm Rd #2 Phs 1-2-3 (L)</td><td>33878</td><td>Cobb Co - County Farm Rd #2 Phs 1-2-3 (L)</td><td>Cobb Co - County Farm Rd #2 Phs 1-2-3 (L)</td><td>10042</td><td>CO</td><td>SW- Composting</td>
+		</tr><tr>
+			<td>345961</td><td>033-096P</td><td>Environmental Waste Recovery, Inc.</td><td>33879</td><td>Environmental Waste Recovery, Inc.</td><td>Environmental Waste Recovery, Inc.</td><td>10041</td><td>LS</td><td>SW-Liquid Solidification Facility</td>
+		</tr><tr>
+			<td>345962</td><td>033-097P</td><td>BOCA Industries, Inc.</td><td>&nbsp;</td><td>BOCA Industries, Inc.</td><td>BOCA Industries, Inc.</td><td>10041</td><td>LS</td><td>SW-Liquid Solidification Facility</td>
+		</tr><tr>
+			<td>2867</td><td>033-098P(MRF)</td><td>Plant Atkinson Transfer Station</td><td>12320</td><td>Plant Atkinson Transfer Station</td><td>Plant Atkinson Transfer Station MRF</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>345963</td><td>034-005D(C&amp;D)</td><td>Transwaste Services, Inc. C.R. 129/17 Mile River</td><td>32467</td><td>Transwaste Services, Inc. C.R. 129/17 Mile River</td><td>Transwaste Services, Inc. C.R. 129/17 Mile River</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345964</td><td>034-005D(SL)</td><td>Coffee Co - CR 129/17 Mile River (SL)</td><td>32468</td><td>Coffee Co - CR 129/17 Mile River (SL)</td><td>Coffee Co - CR 129/17 Mile River (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345965</td><td>035-002D(SL)</td><td>Colquitt Co - CR 15 Sunset Ph 1 (SL)</td><td>32469</td><td>Colquitt Co - CR 15 Sunset Ph 1 (SL)</td><td>Colquitt Co - CR 15 Sunset Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345965</td><td>035-015P(INC)</td><td>Colquitt Co - CR 15 Sunset Ph 1 (SL)</td><td>32469</td><td>Colquitt Co - CR 15 Sunset Ph 1 (SL)</td><td>Colquitt Co - CR 15 Sunset Ph 1 (SL)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>345966</td><td>036-006D(L)</td><td>Grovetown - Newmantown Rd (L)</td><td>32551</td><td>Grovetown - Newmantown Rd (L)</td><td>Grovetown - Newmantown Rd (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345967</td><td>036-007D(L)</td><td>Harlem - Lamkin Rd (L)</td><td>32470</td><td>Harlem - Lamkin Rd (L)</td><td>Harlem - Lamkin Rd (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345968</td><td>036-010D(SL)</td><td>Columbia Co - Baker Place Rd (SL), Ph 2</td><td>33880</td><td>Columbia Co - Baker Place Rd (SL), Ph 2</td><td>Columbia Co - Baker Place Rd (SL), Ph 2</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345969</td><td>036-010D(SL)(1)</td><td>Columbia Co - Baker Place Rd (SL), Ph 1</td><td>33881</td><td>Columbia Co - Baker Place Rd (SL), Ph 1</td><td>Columbia Co - Baker Place Rd (SL), Ph 1</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345971</td><td>036-012D(L)</td><td>Reeves - Frontage/Buff Rds (L)</td><td>32552</td><td>Reeves - Frontage/Buff Rds (L)</td><td>Reeves - Frontage/Buff Rds (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345972</td><td>036-014P(INC)</td><td>Hensley Blackstone Rd ACD P(INC)</td><td>&nbsp;</td><td>Hensley Blackstone Rd ACD P(INC)</td><td>Hensley Blackstone Rd ACD P(INC)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>345973</td><td>036-015P(INC)</td><td>Sample &amp; Son, Inc., SR232 (ACD)</td><td>32492</td><td>Sample &amp; Son, Inc., SR232 (ACD)</td><td>Sample &amp; Son, Inc., SR232 (ACD)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>345974</td><td>036-016P(INC)</td><td>Columbia Co - Kruggel, Morris Rd, ACD</td><td>32472</td><td>Columbia Co - Kruggel, Morris Rd, ACD</td><td>Columbia Co - Kruggel, Morris Rd, ACD</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>8023</td><td>036-017D(C&amp;D)</td><td>Sample and Son, Inc</td><td>12491</td><td>Sample and Son, Inc</td><td>Columbia Co-Sample &amp; Son (C&amp;D)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345975</td><td>036-018P(MRF)</td><td>Tutt Contracting, Inc.</td><td>32553</td><td>Tutt Contracting, Inc.</td><td>Tutt Contracting, Inc.</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>345976</td><td>036-019P(MRF)</td><td>Tutt Contracting Inc. Materials Recovery Facility</td><td>32473</td><td>Tutt Contracting Inc. Materials Recovery Facility</td><td>Tutt Contracting Inc. Materials Recovery Facility</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>345977</td><td>037-005D(LI)</td><td>Weyerhauser - CR 250  (LI)</td><td>32474</td><td>Weyerhauser - CR 250  (LI)</td><td>Weyerhauser - CR 250  (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345978</td><td>037-006D(SL)</td><td>Cook Co - Taylor Rd Rd Adel Ph 1 (SL)</td><td>33882</td><td>Cook Co - Taylor Rd Rd Adel Ph 1 (SL)</td><td>Cook Co - Taylor Rd Rd Adel Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345979</td><td>037-008D(L)</td><td>Cook Co-Taylor Rd Adel (L)</td><td>33883</td><td>Cook Co-Taylor Rd Adel (L)</td><td>Cook Co-Taylor Rd Adel (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345980</td><td>037-009P(INC)</td><td>Cook Co-Taylor Rd Adel ACD (P-INC)</td><td>&nbsp;</td><td>Cook Co-Taylor Rd Adel ACD (P-INC)</td><td>Cook Co-Taylor Rd Adel ACD (P-INC)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>3265</td><td>037-010D(MSWL)</td><td>Cook County Landfill</td><td>14073</td><td>Cook County Landfill</td><td>Cook Co. - Taylor Rd, Site 2 (MSWL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>350996</td><td>037-011D(C&amp;D)</td><td>Cook Co. - C.R. 216 Construction/Demolition Landfill</td><td>32396</td><td>Cook Co. - C.R. 216 Construction/Demolition Landfill</td><td>Cook Co. - C.R. 216 Construction/Demolition Landfill</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>140556</td><td>038-003D(LI)</td><td>WILLIAM L BONNELL CO            </td><td>&nbsp;</td><td>WILLIAM L BONNELL CO            </td><td>William Bonnell Co (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345981</td><td>038-007D(SL)</td><td>Coweta Co - Ishman Ballard Rd Ph 1A (SL)</td><td>32475</td><td>Coweta Co - Ishman Ballard Rd Ph 1A (SL)</td><td>Coweta Co - Ishman Ballard Rd Ph 1A (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345983</td><td>038-011D(LI)</td><td>GA Power - Plant Yates (LI)</td><td>32476</td><td>GA Power - Plant Yates (LI)</td><td>GA Power - Plant Yates (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345984</td><td>038-014D(I)</td><td>GA Power - Plant Yates (LI) -Gypsum</td><td>33885</td><td>GA Power - Plant Yates (LI) -Gypsum</td><td>GA Power - Plant Yates (LI) -Gypsum</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>350997</td><td>038-015D(C&amp;D)</td><td>Coweta Co. - Ishman Ballard Rd C/D Landfill</td><td>32397</td><td>Coweta Co. - Ishman Ballard Rd C/D Landfill</td><td>Coweta Co. - Ishman Ballard Rd C/D Landfill</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345985</td><td>039-004D(LI)</td><td>Syncorp Inc. (Monarch Wine Co.) (LI)</td><td>&nbsp;</td><td>Syncorp Inc. (Monarch Wine Co.) (LI)</td><td>Syncorp Inc. (Monarch Wine Co.) (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345986</td><td>039-005D(SL)</td><td>Crawford Co - CR 49 Roberta (SL)</td><td>32478</td><td>Crawford Co - CR 49 Roberta (SL)</td><td>Crawford Co - CR 49 Roberta (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345987</td><td>039-006D(SL)</td><td>Crawford Co - SR 341/Hopeville Rd (SL)</td><td>32479</td><td>Crawford Co - SR 341/Hopeville Rd (SL)</td><td>Crawford Co - SR 341/Hopeville Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345988</td><td>039-007D(IN)</td><td>Crawford County - Jackson Road Inert Waste Landfill</td><td>33886</td><td>Crawford County - Jackson Road Inert Waste Landfill</td><td>Crawford County - Jackson Road Inert Waste Landfill</td><td>10048</td><td>IN</td><td>SW- Inert Landfill</td>
+		</tr><tr>
+			<td>345989</td><td>040-004D(SL)</td><td>Cordele - US 41 S Ph 2 (SL)</td><td>32480</td><td>Cordele - US 41 S Ph 2 (SL)</td><td>Cordele - US 41 S Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>1702</td><td>040-006P(RM)</td><td>Crisp County Landfill</td><td>888</td><td>Crisp County Landfill</td><td>Solid Waste Management Authority of Crisp Co</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>1702</td><td>040-007P(BA)</td><td>Crisp County Landfill</td><td>888</td><td>Crisp County Landfill</td><td>Crisp Co.-US 41 Baler Facility</td><td>10045</td><td>Other-D or P</td><td>SW- Other-Processor/ Disposal</td>
+		</tr><tr>
+			<td>1702</td><td>040-008D(MSWL)</td><td>Crisp County Landfill</td><td>888</td><td>Crisp County Landfill</td><td>Crisp Co-US 41S Site 2 (Ph 4&amp;5) MSWL</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345990</td><td>040-009P(MRF)</td><td>Synergy Solutions Crisp County, LP MRF</td><td>32482</td><td>Synergy Solutions Crisp County, LP MRF</td><td>Synergy Solutions Crisp County, LP MRF</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>154143</td><td>041-004D(SL)</td><td>DADE COUNTY LANDFILL            </td><td>&nbsp;</td><td>DADE COUNTY LANDFILL            </td><td>Dade Co - Back Valley Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345991</td><td>042-002D(SL)</td><td>Dawson Co - Shoal Hole Rd (SL)</td><td>33887</td><td>Dawson Co - Shoal Hole Rd (SL)</td><td>Dawson Co - Shoal Hole Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345992</td><td>043-003D(LI)</td><td>BASF Corporation-Attapulgus-General Refuse (LI)</td><td>32483</td><td>BASF Corporation-Attapulgus-General Refuse (LI)</td><td>BASF Corporation-Attapulgus-General Refuse (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345993</td><td>043-004D(L)</td><td>Bainbridge - Ave C (L)</td><td>32484</td><td>Bainbridge - Ave C (L)</td><td>Bainbridge - Ave C (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345994</td><td>043-006D(SL)</td><td>Decatur Co-SR 309 Bainbridge Ph 2 (SL)</td><td>32485</td><td>Decatur Co-SR 309 Bainbridge Ph 2 (SL)</td><td>Decatur Co-SR 309 Bainbridge Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345995</td><td>043-008D(LI)</td><td>BASF Corporation- Attapulgus (LI)</td><td>33888</td><td>BASF Corporation- Attapulgus (LI)</td><td>BASF Corporation- Attapulgus (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345996</td><td>043-010D(LI)</td><td>BASF Corporation-Attapulgus Filter Cake-Phase 3</td><td>33889</td><td>BASF Corporation-Attapulgus Filter Cake-Phase 3</td><td>BASF Corporation-Attapulgus Filter Cake-Phase 3</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>3181</td><td>043-011D(MSWL)</td><td>Decatur County Solid Waste Facility</td><td>3892</td><td>Decatur County Solid Waste Facility</td><td>Decatur Co - US Hwy 27 Municipal Solid Waste Landfill</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345997</td><td>044-017D(SL)</td><td>DeKalb Co - Seminole Rd Ph 1 (SL)</td><td>&nbsp;</td><td>DeKalb Co - Seminole Rd Ph 1 (SL)</td><td>DeKalb Co - Seminole Rd Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345998</td><td>044-029D(L)</td><td>APAC/GA - Donzi Ln Ph 2 (L)</td><td>33890</td><td>APAC/GA - Donzi Ln Ph 2 (L)</td><td>APAC/GA - Donzi Ln Ph 2 (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345999</td><td>044-031D(L)</td><td>Chamblee - Keswick Dr (L)</td><td>33891</td><td>Chamblee - Keswick Dr (L)</td><td>Chamblee - Keswick Dr (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>346000</td><td>044-032D(L)</td><td>Pattillo - Mtn Ind Blvd Ph 2 &amp; 3 (L)</td><td>33892</td><td>Pattillo - Mtn Ind Blvd Ph 2 &amp; 3 (L)</td><td>Pattillo - Mtn Ind Blvd Ph 2 &amp; 3 (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>346001</td><td>044-033D(L)</td><td>APAC/GA - Donzi Ln Ph 3 (L)</td><td>33893</td><td>APAC/GA - Donzi Ln Ph 3 (L)</td><td>APAC/GA - Donzi Ln Ph 3 (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>346002</td><td>044-035D(SL)</td><td>WMI-Live Oak #1 (SL)</td><td>34250</td><td>WMI-Live Oak #1 (SL)</td><td>WMI-Live Oak #1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346003</td><td>044-036D(L)</td><td>Emory - Old Briarclif Rd L</td><td>33894</td><td>Emory - Old Briarclif Rd L</td><td>Emory - Old Briarclif Rd L</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>350998</td><td>044-037D(SL)</td><td>DeKalb Co-Seminole Rd Ph 2 (SL)</td><td>32398</td><td>DeKalb Co-Seminole Rd Ph 2 (SL)</td><td>DeKalb Co-Seminole Rd Ph 2 (SL)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>3405</td><td>044-039P(SH)</td><td>Seminole Road Landfill</td><td>14800</td><td>Seminole Road Landfill</td><td>DeKalb Co-Seminole Rd Shredder (P-SH)</td><td>10045</td><td>Other-D or P</td><td>SW- Other-Processor/ Disposal</td>
+		</tr><tr>
+			<td>346004</td><td>044-040D(L)</td><td>APAC/GA - Donzi Ln Ph 4 (L)</td><td>33895</td><td>APAC/GA - Donzi Ln Ph 4 (L)</td><td>APAC/GA - Donzi Ln Ph 4 (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>346005</td><td>044-041D(L)</td><td>Rogers Lake Road C&amp;D Landfill</td><td>17603</td><td>Rogers Lake Road C&amp;D Landfill</td><td>Rogers Lake Road C&amp;D Landfill</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>346006</td><td>044-042D(L)</td><td>APAC/GA - Donzi Ln Ph 5A (L)</td><td>33896</td><td>APAC/GA - Donzi Ln Ph 5A (L)</td><td>APAC/GA - Donzi Ln Ph 5A (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>3395</td><td>044-044D(L)</td><td>Donzi Lane Landfill</td><td>14963</td><td>Donzi Lane Landfill</td><td>APAC/GA - Donzi Ln Ph 5B (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>346007</td><td>044-046D(C&amp;D)</td><td>Phillips-Scales Rd C&amp;D (L)</td><td>33897</td><td>Phillips-Scales Rd C&amp;D (L)</td><td>Phillips-Scales Rd C&amp;D (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>346008</td><td>044-047D(MSWL)</td><td>WMI-Live Oak #2 (SL)</td><td>961</td><td>WMI-Live Oak #2 (SL)</td><td>WMI-Live Oak #2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345746</td><td>044-048D(SL)</td><td>BFI-Hickory Ridge (MSWL)</td><td>1030</td><td>BFI-Hickory Ridge (MSWL)</td><td>BFI-Hickory Ridge (MSWL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>10779</td><td>044-049D(C&amp;D)</td><td>Scales Road Landfill</td><td>6670</td><td>Scales Road Landfill</td><td>East DeKalb Landfill</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>3405</td><td>044-050D(SL)</td><td>Seminole Road Landfill</td><td>14800</td><td>Seminole Road Landfill</td><td>DeKalb Co-Seminole Rd Ph 2A,3&amp;4 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345747</td><td>045-005D(SL)</td><td>Dodge Co - Bay Springs Church Rd (SL)</td><td>32716</td><td>Dodge Co - Bay Springs Church Rd (SL)</td><td>Dodge Co - Bay Springs Church Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345748</td><td>045-006D(L)</td><td>Rhine - Mill Creek (L)</td><td>32717</td><td>Rhine - Mill Creek (L)</td><td>Rhine - Mill Creek (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345749</td><td>045-007D(SL)</td><td>Dodge Co - CR 274 (Dodge Ave) Eastman (SL)</td><td>32651</td><td>Dodge Co - CR 274 (Dodge Ave) Eastman (SL)</td><td>Dodge Co - CR 274 (Dodge Ave) Eastman (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345750</td><td>045-008D(LI)</td><td>Sylvan Hardwoods, SR 341 N, PISWDF</td><td>32718</td><td>Sylvan Hardwoods, SR 341 N, PISWDF</td><td>Sylvan Hardwoods, SR 341 N, PISWDF</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345751</td><td>046-001D(SL)</td><td>Dooly Co - US 41 (SL)</td><td>32719</td><td>Dooly Co - US 41 (SL)</td><td>Dooly Co - US 41 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345752</td><td>046-006D(SL)</td><td>Dooly Co - CR 101 (SL)</td><td>32652</td><td>Dooly Co - CR 101 (SL)</td><td>Dooly Co - CR 101 (SL)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345753</td><td>047-012D(L)</td><td>Marine Corps Logistics Base (L)</td><td>32720</td><td>Marine Corps Logistics Base (L)</td><td>Marine Corps Logistics Base (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>3613</td><td>047-014D(SL)</td><td>Dougherty County Landfill</td><td>1120</td><td>Dougherty County Landfill</td><td>Dougherty Co-Fleming/Gaissert Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345754</td><td>047-018D(L)</td><td>Cannon-Melton Landfill Holdings, LLC</td><td>32653</td><td>Cannon-Melton Landfill Holdings, LLC</td><td>Cannon-Melton Landfill Holdings, LLC</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>1704</td><td>047-023D(C&amp;D)</td><td>Maple Hill Landfill</td><td>12689</td><td>Maple Hill Landfill</td><td>Maple Hill Landfill, Inc.</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345755</td><td>048-007D(SL)</td><td>Douglas Co - Cedar Mtn Rd (SL)</td><td>33777</td><td>Douglas Co - Cedar Mtn Rd (SL)</td><td>Douglas Co - Cedar Mtn Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345756</td><td>048-009D(SL)</td><td>Douglas Co-Cedar Mt/Worthan Rd Ph 1 (SL)</td><td>32399</td><td>Douglas Co-Cedar Mt/Worthan Rd Ph 1 (SL)</td><td>Douglas Co-Cedar Mt/Worthan Rd Ph 1 (SL)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345757</td><td>049-002D(SL)</td><td>Blakley - Howell St/Pitt Rd (SL)</td><td>33752</td><td>Blakley - Howell St/Pitt Rd (SL)</td><td>Blakley - Howell St/Pitt Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345758</td><td>049-006D(LI)</td><td>Georgia-Pacific Cedar Springs LLC</td><td>33813</td><td>Georgia-Pacific Cedar Springs LLC</td><td>Georgia-Pacific Cedar Springs LLC</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345759</td><td>049-007D(SL)</td><td>Early Co - CR135 MSWL</td><td>32721</td><td>Early Co - CR135 MSWL</td><td>Early Co - CR135 MSWL</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345760</td><td>049-008D(LI)</td><td>Georgia Pacific Plywood Plant, SR370</td><td>32722</td><td>Georgia Pacific Plywood Plant, SR370</td><td>Georgia Pacific Plywood Plant, SR370</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345761</td><td>049-009D(L)(I)</td><td>Great Southern Paper Co. - Primary Clarifier Sludge Monofill</td><td>32654</td><td>Great Southern Paper Co. - Primary Clarifier Sludge Monofill</td><td>Great Southern Paper Co. - Primary Clarifier Sludge Monofill</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345762</td><td>049-010D(LI)</td><td>Longleaf Energy Associates, LLC</td><td>32723</td><td>Longleaf Energy Associates, LLC</td><td>Longleaf Energy Associates, LLC</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>7292</td><td>049-011D(LI)</td><td>Georgia-Pacific Cedar Springs LLC</td><td>4016</td><td>Georgia-Pacific Cedar Springs LLC</td><td>Georgia Pacific Corp-Cedar Springs (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345763</td><td>050-002D(L)</td><td>Echols Co - CR 135 (L)</td><td>32724</td><td>Echols Co - CR 135 (L)</td><td>Echols Co - CR 135 (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345764</td><td>050-003D(L)</td><td>Echols Co - Carter St (L)</td><td>32725</td><td>Echols Co - Carter St (L)</td><td>Echols Co - Carter St (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>3916</td><td>051-005D(SL)</td><td>Effingham Co. SR17 Guyton Sanitary Landfill</td><td>6060</td><td>Effingham Co. SR17 Guyton Sanitary Landfill</td><td>Effingham Co - SR 17 Guyton (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345765</td><td>051-007D(L)</td><td>Effingham Co - SR 119 W Sprgfld (L)</td><td>33778</td><td>Effingham Co - SR 119 W Sprgfld (L)</td><td>Effingham Co - SR 119 W Sprgfld (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>141233</td><td>051-008D(LI)</td><td>GEORGIA POWER CO PLANT MCINTOSH</td><td>&nbsp;</td><td>GEORGIA POWER CO PLANT MCINTOSH</td><td>Georgia Power, Plant McIntosh (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345766</td><td>051-009D(LI)</td><td>Ft Howard Paper (LI)</td><td>32655</td><td>Ft Howard Paper (LI)</td><td>Ft Howard Paper (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345767</td><td>051-010D(LI)</td><td>Georgia Power Company - Plant McIntosh Ash Monofill #4</td><td>33753</td><td>Georgia Power Company - Plant McIntosh Ash Monofill #4</td><td>Georgia Power Company - Plant McIntosh Ash Monofill #4</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345768</td><td>052-002D(SL)</td><td>Elberton - Old Middleton Rd Ph 1 (SL)</td><td>32726</td><td>Elberton - Old Middleton Rd Ph 1 (SL)</td><td>Elberton - Old Middleton Rd Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345769</td><td>052-006D(SL)</td><td>Elberton - Old Middleton Rd Ph 2 (SL)</td><td>33831</td><td>Elberton - Old Middleton Rd Ph 2 (SL)</td><td>Elberton - Old Middleton Rd Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345770</td><td>052-008D(SL)</td><td>Elbert Co - Hull Chapel Rd Ph 1 (SL)</td><td>32656</td><td>Elbert Co - Hull Chapel Rd Ph 1 (SL)</td><td>Elbert Co - Hull Chapel Rd Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345771</td><td>053-002D(SL)</td><td>Emanuel Co - SR 297 Swainsboro (SL)</td><td>32657</td><td>Emanuel Co - SR 297 Swainsboro (SL)</td><td>Emanuel Co - SR 297 Swainsboro (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345772</td><td>053-003D(L)</td><td>Garfield (L)</td><td>32727</td><td>Garfield (L)</td><td>Garfield (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345773</td><td>053-005P(INC)</td><td>American Envirecycle Inc. (CI)</td><td>32728</td><td>American Envirecycle Inc. (CI)</td><td>American Envirecycle Inc. (CI)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>345771</td><td>053-006P(INC)</td><td>Emanuel Co - SR 297 Swainsboro (SL)</td><td>32657</td><td>Emanuel Co - SR 297 Swainsboro (SL)</td><td>Emanuel Co - SR 297 Swainsboro (SL)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>345774</td><td>054-004D(SL)</td><td>Evans Co - US 301 Claxton (SL)</td><td>32658</td><td>Evans Co - US 301 Claxton (SL)</td><td>Evans Co - US 301 Claxton (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345775</td><td>054-005D(L)</td><td>Evans Co - Sikes Branch Claxton (L)</td><td>33764</td><td>Evans Co - Sikes Branch Claxton (L)</td><td>Evans Co - Sikes Branch Claxton (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>4036</td><td>054-006D(C&amp;D)</td><td>Evans County Little Bull Creek C&amp;D Landfill</td><td>32402</td><td>Evans County Little Bull Creek C&amp;D Landfill</td><td>Evans Co - Little Bull Creek C/D Landfill</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345776</td><td>055-007D(SL)</td><td>Fannin Co - SR 5 Ph 2 (SL)</td><td>32659</td><td>Fannin Co - SR 5 Ph 2 (SL)</td><td>Fannin Co - SR 5 Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345777</td><td>056-006D(SL)</td><td>Fayette Co - Grady Ave Ph 2 (SL)</td><td>32660</td><td>Fayette Co - Grady Ave Ph 2 (SL)</td><td>Fayette Co - Grady Ave Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>141465</td><td>056-012D(SL)</td><td>BFI LANDFILL                    </td><td>34258</td><td>BFI LANDFILL                    </td><td>BFI - Roberts Rd Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>7512</td><td>056-014D(SL)</td><td>Fayette County Transfer Station</td><td>8405</td><td>Fayette County Transfer Station</td><td>Fayette Co - 1st Manassas Mile Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>350989</td><td>056-015D(L)</td><td>Fayette Co - 1st Manassas Mile Rd N Side (L)</td><td>34161</td><td>Fayette Co - 1st Manassas Mile Rd N Side (L)</td><td>Fayette Co - 1st Manassas Mile Rd N Side (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>350989</td><td>056-015D(L)</td><td>Fayette Co - 1st Manassas Mile Rd N Side (L)</td><td>34161</td><td>Fayette Co - 1st Manassas Mile Rd N Side (L)</td><td>IN-Fayette Co - 1st Manassas Mile Rd N Side (L)</td><td>10048</td><td>IN</td><td>SW- Inert Landfill</td>
+		</tr><tr>
+			<td>345778</td><td>057-009D(SL)</td><td>Floyd Co - Berry Hill Rd (SL)</td><td>32661</td><td>Floyd Co - Berry Hill Rd (SL)</td><td>Floyd Co - Berry Hill Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345779</td><td>057-010D(LI)</td><td>Monier Resources (LI)</td><td>32729</td><td>Monier Resources (LI)</td><td>Monier Resources (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345780</td><td>057-013D(SL)</td><td>Rome- Walker Mtn Rd Ph 1, 2 &amp; 3 (SL)</td><td>33765</td><td>Rome- Walker Mtn Rd Ph 1, 2 &amp; 3 (SL)</td><td>Rome- Walker Mtn Rd Ph 1, 2 &amp; 3 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345781</td><td>057-016D(LI)</td><td>EVANS&#39; FARM COAL ASH LANDFILL (LI)</td><td>32730</td><td>EVANS&#39; FARM COAL ASH LANDFILL (LI)</td><td>EVANS&#39; FARM COAL ASH LANDFILL (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>141520</td><td>057-017D(LI)</td><td>INLAND CONTAINER CORP           </td><td>34412</td><td>INLAND CONTAINER CORP           </td><td>Inland Rome-Turner Bend Road (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>4197</td><td>057-019D(LI)</td><td>Georgia Power- Plant Hammond</td><td>14325</td><td>Georgia Power- Plant Hammond</td><td>GA Power - Plant Hammond (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>10939</td><td>057-020D(MSWL)</td><td>Walker Mountain Road</td><td>11079</td><td>Walker Mountain Road</td><td>Rome Walker Mtn Rd, Site 2</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>350990</td><td>057-021D(C&amp;D)</td><td>Floyd Co - Rome Walker Mtn Rd C/D Landfill</td><td>32404</td><td>Floyd Co - Rome Walker Mtn Rd C/D Landfill</td><td>Floyd Co - Rome Walker Mtn Rd C/D Landfill</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345782</td><td>057-022D(LI)</td><td>Georgia Power, Huffaker Road</td><td>32662</td><td>Georgia Power, Huffaker Road</td><td>Georgia Power, Huffaker Road</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345783</td><td>058-004D(SL)</td><td>Forsyth Co - Kelly Mill Rd Site #2 (SL)</td><td>32731</td><td>Forsyth Co - Kelly Mill Rd Site #2 (SL)</td><td>Forsyth Co - Kelly Mill Rd Site #2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345784</td><td>058-005D(L)</td><td>Anglin - Francis Rd (L)</td><td>33779</td><td>Anglin - Francis Rd (L)</td><td>Anglin - Francis Rd (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345785</td><td>058-006D(SL)</td><td>Forsyth Co - Hightower Rd Ph 1 (SL)</td><td>32663</td><td>Forsyth Co - Hightower Rd Ph 1 (SL)</td><td>Forsyth Co - Hightower Rd Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345786</td><td>058-007D(L)</td><td>Miller/Trammel - Trammel Rd (L) - [Permit Revoked  - See Comments]</td><td>32732</td><td>Miller/Trammel - Trammel Rd (L) - [Permit Revoked  - See Comments]</td><td>Miller/Trammel - Trammel Rd (L) - [Permit Revoked  - See Comments]</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345787</td><td>058-009D(SL)</td><td>Forsyth Co - Hightower Rd Ph 3 (SL)</td><td>33766</td><td>Forsyth Co - Hightower Rd Ph 3 (SL)</td><td>Forsyth Co - Hightower Rd Ph 3 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345788</td><td>058-010D(SL)</td><td>Forsyth Co - Hightower Rd Ph 4 MSWL</td><td>33767</td><td>Forsyth Co - Hightower Rd Ph 4 MSWL</td><td>Forsyth Co - Hightower Rd Ph 4 MSWL</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>8174</td><td>058-012D(MSWL)</td><td>Advanced Disposal dba Eagle Point Landfill</td><td>12574</td><td>Advanced Disposal dba Eagle Point Landfill</td><td>Eagle Point Landfill</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345790</td><td>058-013D(C&amp;D)</td><td>Greenleaf Recycling, LLC</td><td>28973</td><td>Greenleaf Recycling, LLC</td><td>Greenleaf Recycling, LLC</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345791</td><td>059-006D(SL)</td><td>Lavonia - Bear Creek Rd Ph 1 (SL)</td><td>33832</td><td>Lavonia - Bear Creek Rd Ph 1 (SL)</td><td>Lavonia - Bear Creek Rd Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>4110</td><td>059-008D(SL)</td><td>Franklin County Sanitary Landfill</td><td>6119</td><td>Franklin County Sanitary Landfill</td><td>Franklin Co - Harrison Bridge Rd Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345792</td><td>059-009D(SL)</td><td>Lavonia - Bear Creek Rd Ph 2 (SL)</td><td>32664</td><td>Lavonia - Bear Creek Rd Ph 2 (SL)</td><td>Lavonia - Bear Creek Rd Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>4110</td><td>059-010P(RM)</td><td>Franklin County Sanitary Landfill</td><td>6119</td><td>Franklin County Sanitary Landfill</td><td>Franklin Co - Harrison Bridge Rd MRF</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>345794</td><td>059-012D(C&amp;D)</td><td>EarthResources of Franklin County, LLC, SR51</td><td>32665</td><td>EarthResources of Franklin County, LLC, SR51</td><td>EarthResources of Franklin County, LLC, SR51</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345795</td><td>060-007D(SL)</td><td>Fulton Co - Morgan Falls (SL)</td><td>32666</td><td>Fulton Co - Morgan Falls (SL)</td><td>Fulton Co - Morgan Falls (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>142021</td><td>060-009D(LI)</td><td>ATLANTIC STEEL CO               </td><td>&nbsp;</td><td>ATLANTIC STEEL CO               </td><td>Atlantic Steel (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345796</td><td>060-010D(SL)</td><td>Southern States - Bolton Rd (SL)</td><td>32667</td><td>Southern States - Bolton Rd (SL)</td><td>Southern States - Bolton Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345797</td><td>060-011D(SL)</td><td>Fulton Co - Merk Rd (SL)</td><td>32669</td><td>Fulton Co - Merk Rd (SL)</td><td>Fulton Co - Merk Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345798</td><td>060-026D(SL)</td><td>Atlanta - Gun Club Rd (SL)</td><td>32670</td><td>Atlanta - Gun Club Rd (SL)</td><td>Atlanta - Gun Club Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>369713</td><td>060-0276 PBR(CO)</td><td>Urban Food Forest at Browns Mill - COA</td><td>32566</td><td>Urban Food Forest at Browns Mill - COA</td><td>Urban Food Forest at Browns Mill - COA</td><td>10042</td><td>CO</td><td>SW- Composting</td>
+		</tr><tr>
+			<td>369760</td><td>060-0277 PBR(OSTT-BIO)</td><td>Emory Saint Joseph&#39;s Hospital</td><td>33925</td><td>Emory Saint Joseph&#39;s Hospital</td><td>Emory Saint Joseph&#39;s Hospital</td><td>10057</td><td>PBR-OTH</td><td>SW- Other-PBR</td>
+		</tr><tr>
+			<td>369716</td><td>060-0278 PBR(TS)</td><td>Waste Pro Recycling Center</td><td>32569</td><td>Waste Pro Recycling Center</td><td>Waste Pro Recycling Center</td><td>10055</td><td>TS</td><td>SW- Transfer Station</td>
+		</tr><tr>
+			<td>369772</td><td>060-0279 PBR(COL)</td><td>Southern Green Industries, Inc.</td><td>33926</td><td>Southern Green Industries, Inc.</td><td>Southern Green Industries, Inc.</td><td>10054</td><td>COL</td><td>SW- Collection</td>
+		</tr><tr>
+			<td>345799</td><td>060-029D(L)</td><td>Price - Cleveland Ave (L)</td><td>32733</td><td>Price - Cleveland Ave (L)</td><td>Price - Cleveland Ave (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>142201</td><td>060-036D(LI)</td><td>GENERAL CHEMICAL CORP           </td><td>&nbsp;</td><td>GENERAL CHEMICAL CORP           </td><td>General (Allied) Chemical Co (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345800</td><td>060-038D(LI)</td><td>Bobby Hendrix (LI)</td><td>32671</td><td>Bobby Hendrix (LI)</td><td>Bobby Hendrix (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345801</td><td>060-046D(SL)</td><td>Atlanta - Cascade Rd (SL)</td><td>32672</td><td>Atlanta - Cascade Rd (SL)</td><td>Atlanta - Cascade Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345802</td><td>060-048D(SL)</td><td>Atlanta - Key Rd (SL)</td><td>33768</td><td>Atlanta - Key Rd (SL)</td><td>Atlanta - Key Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345803</td><td>060-051D(SL)</td><td>BFI - Watts Rd (SL)</td><td>33769</td><td>BFI - Watts Rd (SL)</td><td>BFI - Watts Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345804</td><td>060-054D(L)</td><td>Hamil - Brumbelow Rd (L)</td><td>32673</td><td>Hamil - Brumbelow Rd (L)</td><td>Hamil - Brumbelow Rd (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345805</td><td>060-057D(L)</td><td>Atlanta - Confederate Ave (L)</td><td>32674</td><td>Atlanta - Confederate Ave (L)</td><td>Atlanta - Confederate Ave (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345806</td><td>060-059D(L)</td><td>Honea- C &amp; R Landfill Francis Rd (L)</td><td>32675</td><td>Honea- C &amp; R Landfill Francis Rd (L)</td><td>Honea- C &amp; R Landfill Francis Rd (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345807</td><td>060-062D(SL)</td><td>United Waste - Westview Ph 2 (SL)</td><td>33770</td><td>United Waste - Westview Ph 2 (SL)</td><td>United Waste - Westview Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>155874</td><td>060-064D(SL)</td><td>MERK RD LANDFILL                </td><td>34260</td><td>MERK RD LANDFILL                </td><td>Fulton Co - Merk/Miles Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>1707</td><td>060-072D(L)</td><td>Chadwick Road Landfill</td><td>5582</td><td>Chadwick Road Landfill</td><td>Chadwick Rd Landfill, Inc.</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345809</td><td>060-075D(L)</td><td>Price - Roosevelt Hwy (L)</td><td>33780</td><td>Price - Roosevelt Hwy (L)</td><td>Price - Roosevelt Hwy (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345808</td><td>060-076P(INC)</td><td>Southern States - Bolton Rd (P-RM)</td><td>32676</td><td>Southern States - Bolton Rd (P-RM)</td><td>Southern States - Bolton Rd (P-RM)</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>345811</td><td>060-083D(SL)</td><td>Chambers - Bolton Rd (SL)</td><td>33815</td><td>Chambers - Bolton Rd (SL)</td><td>Chambers - Bolton Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345812</td><td>060-084P(RM)</td><td>Fulton Co - Price &amp; Sons, SR 14 (MRF)</td><td>33771</td><td>Fulton Co - Price &amp; Sons, SR 14 (MRF)</td><td>Fulton Co - Price &amp; Sons, SR 14 (MRF)</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>345813</td><td>060-085P(RM)</td><td>Visy Paper MRF</td><td>32734</td><td>Visy Paper MRF</td><td>Visy Paper MRF</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>345814</td><td>060-086P(RM)</td><td>BFI of Georgia, Inc. Atlanta Bfirst Fac.</td><td>32735</td><td>BFI of Georgia, Inc. Atlanta Bfirst Fac.</td><td>BFI of Georgia, Inc. Atlanta Bfirst Fac.</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>142274</td><td>060-087D(L)(I)</td><td>SONOCO PRODUCTS CO              </td><td>&nbsp;</td><td>SONOCO PRODUCTS CO              </td><td>Sonoco Products Company</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>4729</td><td>060-088D(C&amp;D)</td><td>Waste Industries</td><td>13158</td><td>Waste Industries</td><td>Safeguard Landfill Management C &amp; D</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>4348</td><td>060-089D(C&amp;D)</td><td>Willow Oak Landfill</td><td>11923</td><td>Willow Oak Landfill</td><td>Willow Oak C&amp;D Landfill</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>349190</td><td>060-090P(MRF)</td><td>WELCOME ALL TRANSFER STATION</td><td>&nbsp;</td><td>WELCOME ALL TRANSFER STATION</td><td>WELCOME ALL TRANSFER STATION</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>7643</td><td>060-091P(MRF)</td><td>Waste Management - Gateway Transfer Station</td><td>12323</td><td>Waste Management - Gateway Transfer Station</td><td>Waste Management Gateway MRF</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>345815</td><td>060-092P(MRF)</td><td>American Recycling of Georgia, LLC</td><td>33816</td><td>American Recycling of Georgia, LLC</td><td>American Recycling of Georgia, LLC</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>9301</td><td>060-093(P)</td><td>EQ Industrial Services, Inc.</td><td>13350</td><td>EQ Industrial Services, Inc.</td><td>EQ Atlanta</td><td>10041</td><td>LS</td><td>SW-Liquid Solidification Facility</td>
+		</tr><tr>
+			<td>5600</td><td>060-094P(MRF)</td><td>MBA Waste Services, LLC dba Big Johns Portables</td><td>12921</td><td>MBA Waste Services, LLC dba Big Johns Portables</td><td>MBA Waste Services, LLC MRF</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>345816</td><td>061-010D(SL)</td><td>Gilmer Co - SR 52 N/TV Tower Ph 1-5 (SL)</td><td>32677</td><td>Gilmer Co - SR 52 N/TV Tower Ph 1-5 (SL)</td><td>Gilmer Co - SR 52 N/TV Tower Ph 1-5 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345817</td><td>062-002D(SL)</td><td>Gibson - CR 50 Ph 1 (SL)</td><td>32678</td><td>Gibson - CR 50 Ph 1 (SL)</td><td>Gibson - CR 50 Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345818</td><td>063-002D(LI)</td><td>Brunswick Cellulose</td><td>4123</td><td>Brunswick Cellulose</td><td>Brunswick Cellulose</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345819</td><td>063-003D(SI)</td><td>Hercules (SI)</td><td>33833</td><td>Hercules (SI)</td><td>Hercules (SI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345820</td><td>063-005D(L)</td><td>Jekyll Island Auth - Old Plantation Rd (L)</td><td>32679</td><td>Jekyll Island Auth - Old Plantation Rd (L)</td><td>Jekyll Island Auth - Old Plantation Rd (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345821</td><td>063-015D(SL)</td><td>Glynn Co - Cate Rd (SL)</td><td>32680</td><td>Glynn Co - Cate Rd (SL)</td><td>Glynn Co - Cate Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345822</td><td>063-016D(L)</td><td>Glynn Co - Frederica Academy SSI (L)</td><td>32535</td><td>Glynn Co - Frederica Academy SSI (L)</td><td>Glynn Co - Frederica Academy SSI (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345823</td><td>063-017D(L)</td><td>Paulk - S Harrington Rd SSI (L)</td><td>32536</td><td>Paulk - S Harrington Rd SSI (L)</td><td>Paulk - S Harrington Rd SSI (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345824</td><td>063-018D(L)</td><td>Brunswick - Dolphin St (L)</td><td>32537</td><td>Brunswick - Dolphin St (L)</td><td>Brunswick - Dolphin St (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345825</td><td>063-019D(L)</td><td>Hutcheson - Petersville Rd (L)</td><td>29759</td><td>Hutcheson - Petersville Rd (L)</td><td>Hutcheson - Petersville Rd (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345826</td><td>063-022D(L)</td><td>Merritt - SR 303/US 341 (L)</td><td>32538</td><td>Merritt - SR 303/US 341 (L)</td><td>Merritt - SR 303/US 341 (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345821</td><td>063-024D(L)</td><td>Glynn Co - Cate Rd (SL)</td><td>32680</td><td>Glynn Co - Cate Rd (SL)</td><td>Glynn Co - Cate Rd (SL)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345827</td><td>063-025D(L)</td><td>Eller-Whitlock Ave (L)</td><td>33838</td><td>Eller-Whitlock Ave (L)</td><td>Eller-Whitlock Ave (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>4668</td><td>063-026D(LI)</td><td>Georgia Pacific Wood Products LLC</td><td>4107</td><td>Georgia Pacific Wood Products LLC</td><td>Georgia Pacific Corp. SR99</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>5274</td><td>063-027P(MRF)</td><td>Liberty Rolloffs &amp; Recycling</td><td>12968</td><td>Liberty Rolloffs &amp; Recycling</td><td>Liberty Roll-Offs &amp; Recycling, Habersham St</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>345828</td><td>063-027P(RM)</td><td>Liberty Roll-Offs &amp; Recycling</td><td>33817</td><td>Liberty Roll-Offs &amp; Recycling</td><td>Liberty Roll-Offs &amp; Recycling</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>4930</td><td>063-029D(LI)</td><td>Brunswick Cellulose, Inc.</td><td>10179</td><td>Brunswick Cellulose, Inc.</td><td>Brunswick Celluose, Inc. No.6 Landfill</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>369771</td><td>064-0023 PBR(COL)</td><td>Gordon Street Facility</td><td>33924</td><td>Gordon Street Facility</td><td>Gordon Street Facility</td><td>10054</td><td>COL</td><td>SW- Collection</td>
+		</tr><tr>
+			<td>345829</td><td>064-010D(SL)</td><td>Gordon Co - Lick Creek Rd Ranger (SL)</td><td>32539</td><td>Gordon Co - Lick Creek Rd Ranger (SL)</td><td>Gordon Co - Lick Creek Rd Ranger (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345830</td><td>064-011D(SL)</td><td>Gordon Co - Harris Rd Ph 2 (SL)</td><td>32681</td><td>Gordon Co - Harris Rd Ph 2 (SL)</td><td>Gordon Co - Harris Rd Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345830</td><td>064-014D(L)</td><td>Gordon Co - Harris Rd Ph 2 (SL)</td><td>32681</td><td>Gordon Co - Harris Rd Ph 2 (SL)</td><td>Gordon Co - Harris Rd Ph 2 (SL)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345831</td><td>064-015P(INC)</td><td>North American Container Corp. PISWDF (ACD)</td><td>&nbsp;</td><td>North American Container Corp. PISWDF (ACD)</td><td>North American Container Corp. PISWDF (ACD)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>345832</td><td>064-016D(SL)</td><td>Gordon Co - Redbone Ridges Rd (SL)</td><td>32405</td><td>Gordon Co - Redbone Ridges Rd (SL)</td><td>Gordon Co - Redbone Ridges Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>5296</td><td>065-002D(SL)</td><td>Cairo Municipal Solid Waste Landfill</td><td>10298</td><td>Cairo Municipal Solid Waste Landfill</td><td>Cairo - 6TH Ave (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>143090</td><td>065-006P(INC)</td><td>PALLET SOUTH                    </td><td>&nbsp;</td><td>PALLET SOUTH                    </td><td>Pallets South SR93 ACD (PISWDF)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>345663</td><td>066-007D(SL)</td><td>Greene Co - US 278 W #2 Ph 1 (SL)</td><td>32616</td><td>Greene Co - US 278 W #2 Ph 1 (SL)</td><td>Greene Co - US 278 W #2 Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345664</td><td>066-008D(SL)</td><td>Greene Co - US 278 W #2 Ph 2 (SL)</td><td>33802</td><td>Greene Co - US 278 W #2 Ph 2 (SL)</td><td>Greene Co - US 278 W #2 Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345665</td><td>067-008D(SL)</td><td>Buford - McEver Rd Ph 1 (SL)</td><td>32617</td><td>Buford - McEver Rd Ph 1 (SL)</td><td>Buford - McEver Rd Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345666</td><td>067-016D(SL)</td><td>Sugar Hill - Appling Rd Ph 1 (SL)</td><td>33743</td><td>Sugar Hill - Appling Rd Ph 1 (SL)</td><td>Sugar Hill - Appling Rd Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345667</td><td>067-019D(L)</td><td>Buford - Tuggle Greer Rd (L)</td><td>32618</td><td>Buford - Tuggle Greer Rd (L)</td><td>Buford - Tuggle Greer Rd (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345668</td><td>067-021D(SL)</td><td>Button Gwinnett - Arnold Rd Ph 1 (SL)</td><td>32619</td><td>Button Gwinnett - Arnold Rd Ph 1 (SL)</td><td>Button Gwinnett - Arnold Rd Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>1312</td><td>067-024D(SL)</td><td>Gwinnett County Construction</td><td>12229</td><td>Gwinnett County Construction</td><td>Crymes Landfill</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345669</td><td>067-025D(SL)</td><td>WMI - B J Landfill Expansion (SL)</td><td>33744</td><td>WMI - B J Landfill Expansion (SL)</td><td>WMI - B J Landfill Expansion (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>143264</td><td>067-027D(SL)</td><td>B J LANDFILL/WASTE MGMT         </td><td>&nbsp;</td><td>B J LANDFILL/WASTE MGMT         </td><td>WMI - B J Landfill Ph 3 &amp;4 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345670</td><td>067-030D(SL)</td><td>Buford - Peachtree Ind Blvd Ph 2 (SL)</td><td>33803</td><td>Buford - Peachtree Ind Blvd Ph 2 (SL)</td><td>Buford - Peachtree Ind Blvd Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>4956</td><td>067-032D(SL)</td><td>Richland Creek Road Sanitary Landfill</td><td>1807</td><td>Richland Creek Road Sanitary Landfill</td><td>BFI - Richland Creek Road MSWL</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345671</td><td>067-033P(INC)</td><td>Lawrenceville, Paper Mill Rd ACD P(INC)</td><td>33787</td><td>Lawrenceville, Paper Mill Rd ACD P(INC)</td><td>Lawrenceville, Paper Mill Rd ACD P(INC)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>4887</td><td>067-037D(SL)</td><td>Button Gwinnett Landfill</td><td>1918</td><td>Button Gwinnett Landfill</td><td>Button Gwinnett - Arnold Rd Ph 3 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345673</td><td>067-038P</td><td>Disposal Solutions L.L.C.</td><td>33745</td><td>Disposal Solutions L.L.C.</td><td>Disposal Solutions L.L.C.</td><td>10041</td><td>LS</td><td>SW-Liquid Solidification Facility</td>
+		</tr><tr>
+			<td>345674</td><td>067-039P(MRF)</td><td>Metro Green, LLC</td><td>&nbsp;</td><td>Metro Green, LLC</td><td>Metro Green, LLC</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>333334</td><td>067-041P(MRF)</td><td>WASTE ELIMINATOR INC.</td><td>16607</td><td>WASTE ELIMINATOR INC.</td><td>Waste Eliminator, Inc.</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>345675</td><td>068-016D(SL)</td><td>Habersham Co - Pea Ridge Rd Ph 1 (SL)</td><td>32621</td><td>Habersham Co - Pea Ridge Rd Ph 1 (SL)</td><td>Habersham Co - Pea Ridge Rd Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345676</td><td>068-017D(SL)</td><td>Habersham Co - Pea Ridge Rd Ph 2&amp;3 (SL)</td><td>33804</td><td>Habersham Co - Pea Ridge Rd Ph 2&amp;3 (SL)</td><td>Habersham Co - Pea Ridge Rd Ph 2&amp;3 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>4882</td><td>068-020D(SL)</td><td>Habersham Solid Waste Department</td><td>6280</td><td>Habersham Solid Waste Department</td><td>Habersham Co - SR13 MSWL</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345677</td><td>069-008D(SL)</td><td>Hall Co - Allen Creek Ph A (SL)</td><td>32622</td><td>Hall Co - Allen Creek Ph A (SL)</td><td>Hall Co - Allen Creek Ph A (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>5185</td><td>069-014D(C&amp;D)</td><td>RTS Landfill</td><td>10263</td><td>RTS Landfill</td><td>RTS Landfill</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345678</td><td>069-015D(MSWL)</td><td>Hall Co - Candler Rd (SR 60)</td><td>32409</td><td>Hall Co - Candler Rd (SR 60)</td><td>Hall Co - Candler Rd (SR 60)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>143856</td><td>069-016P(CO)</td><td>HALL CO SANITARY LANDFILL       </td><td>&nbsp;</td><td>HALL CO SANITARY LANDFILL       </td><td>Hall Co - Allen Creek Composting Facility</td><td>10042</td><td>CO</td><td>SW- Composting</td>
+		</tr><tr>
+			<td>6643</td><td>069-017D(C&amp;D)</td><td>Gainesville Waste and Recycling, LLC</td><td>8129</td><td>Gainesville Waste &amp; Recycling, LLC</td><td>Gainesville Waste and Recycling (GWAR)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345679</td><td>070-002D(SL)</td><td>Sparta - Fairmont/Stockade Rds (SL)</td><td>32623</td><td>Sparta - Fairmont/Stockade Rds (SL)</td><td>Sparta - Fairmont/Stockade Rds (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345680</td><td>070-003D(SL)</td><td>Dixie Recycling Inc. - CR144 SLF</td><td>32705</td><td>Dixie Recycling Inc. - CR144 SLF</td><td>Dixie Recycling Inc. - CR144 SLF</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345681</td><td>071-004D(SL)</td><td>Haralson Co - US 78 Bremen (Site #1) MSWL</td><td>33805</td><td>Haralson Co - US 78 Bremen (Site #1) MSWL</td><td>Haralson Co - US 78 Bremen (Site #1) MSWL</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345682</td><td>071-005D(SL)</td><td>Haralson Co - US 78 Bremen (Site # 2) MSWL</td><td>33806</td><td>Haralson Co - US 78 Bremen (Site # 2) MSWL</td><td>Haralson Co - US 78 Bremen (Site # 2) MSWL</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345683</td><td>071-006D(C&amp;D)</td><td>Haralson Co - HCSWA US 78</td><td>32410</td><td>Haralson Co - HCSWA US 78</td><td>Haralson Co - HCSWA US 78</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345684</td><td>072-003D(SL)</td><td>West Point - SR 103 (SL)</td><td>32706</td><td>West Point - SR 103 (SL)</td><td>West Point - SR 103 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345685</td><td>072-009D(SL)</td><td>Harris Co - Hamilton Rd E (SL)</td><td>32624</td><td>Harris Co - Hamilton Rd E (SL)</td><td>Harris Co - Hamilton Rd E (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345686</td><td>073-002D(SL)</td><td>Hart Co - SR 172 S Ph 1&amp;2 (SL)</td><td>33825</td><td>Hart Co - SR 172 S Ph 1&amp;2 (SL)</td><td>Hart Co - SR 172 S Ph 1&amp;2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345687</td><td>073-005D(SL)</td><td>Hart Co - SR 172 S Ph 3 (SL)</td><td>32625</td><td>Hart Co - SR 172 S Ph 3 (SL)</td><td>Hart Co - SR 172 S Ph 3 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345688</td><td>074-004D(SL)</td><td>Heard Co - Frolona Rd (SL)</td><td>32626</td><td>Heard Co - Frolona Rd (SL)</td><td>Heard Co - Frolona Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>33770</td><td>074-005D(LI)</td><td>Georgia Power - Plant Wansley Steam Plant</td><td>17374</td><td>Georgia Power - Plant Wansley Steam Plant</td><td>Plant Wansley - Georgia Power</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>9312</td><td>075-011D(SL)</td><td>Peach State/Henry Co. Recycling Center</td><td>34309</td><td>Peach State/Henry Co. Recycling Center</td><td>Henry Co - Windy Hill Road LF</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345689</td><td>075-015D(SL)</td><td>Henry Co - W Asbury Rd Ph 1 (SL)</td><td>33807</td><td>Henry Co - W Asbury Rd Ph 1 (SL)</td><td>Henry Co - W Asbury Rd Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345690</td><td>075-021D(SL)</td><td>Henry Co - W Asbury Rd Ph 2 (SL)</td><td>33808</td><td>Henry Co - W Asbury Rd Ph 2 (SL)</td><td>Henry Co - W Asbury Rd Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>9312</td><td>075-024P(INC)</td><td>Peach State/Henry Co. Recycling Center</td><td>34309</td><td>Peach State/Henry Co. Recycling Center</td><td>Henry Co - W Asbury Rd ACD (P-INC)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>345691</td><td>076-005D(SL)</td><td>Houston Co - Old Perry Rd Ph 1 (SL)</td><td>32627</td><td>Houston Co - Old Perry Rd Ph 1 (SL)</td><td>Houston Co - Old Perry Rd Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345692</td><td>076-009D(SL)</td><td>Perry - Elko Rd (SL)</td><td>32628</td><td>Perry - Elko Rd (SL)</td><td>Perry - Elko Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345693</td><td>076-01D(LI)</td><td>Cemex Clinchfield Landfill</td><td>32629</td><td>Cemex Clinchfield Landfill</td><td>Cemex Clinchfield Landfill</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>5491</td><td>076-020D(MSWL)</td><td>Houston County Landfill</td><td>10359</td><td>Houston County Landfill</td><td>Houston Co - SR 247 Klondike MSWL</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345694</td><td>076-022D(L)</td><td>Perry - Chapel Rd/Ford Creek (L)</td><td>32630</td><td>Perry - Chapel Rd/Ford Creek (L)</td><td>Perry - Chapel Rd/Ford Creek (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345694</td><td>076-023P(INC)</td><td>Perry - Chapel Rd/Ford Creek (L)</td><td>32630</td><td>Perry - Chapel Rd/Ford Creek (L)</td><td>Perry - Chapel Rd/Ford Creek (L)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>345695</td><td>076-024D(C&amp;D)</td><td>Houston Co - SR247 Klondike C/D Landfill</td><td>32411</td><td>Houston Co - SR247 Klondike C/D Landfill</td><td>Houston Co - SR247 Klondike C/D Landfill</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345696</td><td>077-003D(SL)</td><td>Ocilla - SR 32 E Ph 1 (SL)</td><td>33746</td><td>Ocilla - SR 32 E Ph 1 (SL)</td><td>Ocilla - SR 32 E Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345696</td><td>077-004P(INC)</td><td>Ocilla - SR 32 E Ph 1 (SL)</td><td>33746</td><td>Ocilla - SR 32 E Ph 1 (SL)</td><td>Ocilla - SR 32 E Ph 1 (SL)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>345697</td><td>078-007D(L)</td><td>Commerce - Pigeon St (L)</td><td>32707</td><td>Commerce - Pigeon St (L)</td><td>Commerce - Pigeon St (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345699</td><td>078-009D(SL)</td><td>Jackson Co - SR 82 Prison Farm Ph 2 (SL)</td><td>32631</td><td>Jackson Co - SR 82 Prison Farm Ph 2 (SL)</td><td>Jackson Co - SR 82 Prison Farm Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345700</td><td>079-003D(LI)</td><td>Roy Kelly Landfill (LI)</td><td>32632</td><td>Roy Kelly Landfill (LI)</td><td>Roy Kelly Landfill (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345701</td><td>079-004D(SL)</td><td>Jasper Co - SR 212 Monticello (SL)</td><td>34205</td><td>Jasper Co - SR 212 Monticello (SL)</td><td>Jasper Co - SR 212 Monticello (SL)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345702</td><td>079-005D(LI)</td><td>Worley - CR 151 (LI)</td><td>32633</td><td>Worley - CR 151 (LI)</td><td>Worley - CR 151 (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345703</td><td>079-006D(LI)</td><td>Georgia Pacific Wood Products, Monticello</td><td>32634</td><td>Georgia Pacific Wood Products, Monticello</td><td>Georgia Pacific Wood Products, Monticello</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>5346</td><td>079-007D(C&amp;D)</td><td>Jasper County Landfill</td><td>6424</td><td>Jasper County Landfill</td><td>Jasper Co - SR 212 Construction/Demolition/Industrial Waste Landfill</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345704</td><td>080-005D(SL)</td><td>Jeff Davis Co - CR 20 (SL)</td><td>32635</td><td>Jeff Davis Co - CR 20 (SL)</td><td>Jeff Davis Co - CR 20 (SL)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345705</td><td>081-006D(SL)</td><td>Jefferson Co - US 1 (Avera Rd) (SL)</td><td>32636</td><td>Jefferson Co - US 1 (Avera Rd) (SL)</td><td>Jefferson Co - US 1 (Avera Rd) (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345706</td><td>081-007D(LI)</td><td>Thiele Kaolin - CR 101 (LI)</td><td>32637</td><td>Thiele Kaolin - CR 101 (LI)</td><td>Thiele Kaolin - CR 101 (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345707</td><td>081-008D(L)</td><td>Wadley - Artesian St (L)</td><td>32638</td><td>Wadley - Artesian St (L)</td><td>Wadley - Artesian St (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345708</td><td>081-009D(SL)</td><td>Wrens - Industrial St (SL)</td><td>32639</td><td>Wrens - Industrial St (SL)</td><td>Wrens - Industrial St (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>5436</td><td>081-010P(RM)</td><td>Jefferson County MSWL CR 138 Waste Management Facility</td><td>7791</td><td>Jefferson County MSWL CR 138 Waste Management Facility</td><td>Jefferson Co. - CR 138 Materials Recovery Facility</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>5436</td><td>081-011D(MSWL)</td><td>Jefferson County MSWL CR 138 Waste Management Facility</td><td>7791</td><td>Jefferson County MSWL CR 138 Waste Management Facility</td><td>Jefferson Co - CR 138 MSWL</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345709</td><td>082-002D(SL)</td><td>Jenkins Co - Old Louisville Rd (SL)</td><td>32709</td><td>Jenkins Co - Old Louisville Rd (SL)</td><td>Jenkins Co - Old Louisville Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345710</td><td>082-003D(L)</td><td>Millen - US 25 S (L)</td><td>33809</td><td>Millen - US 25 S (L)</td><td>Millen - US 25 S (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345711</td><td>082-004D(SL)</td><td>Jenkins Co-CR 54 (SL)</td><td>33810</td><td>Jenkins Co-CR 54 (SL)</td><td>Jenkins Co-CR 54 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>5517</td><td>082-005D(SL)</td><td>Jenkins County Transfer Station</td><td>12817</td><td>Jenkins County Transfer Station</td><td>Jenkins Co-CR54 Phase 2 MSWL &amp; C&amp;D Site</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345712</td><td>083-002D(SL)</td><td>Johnson Co - SR 15 Wrightsville Ph 1 (SL)</td><td>33826</td><td>Johnson Co - SR 15 Wrightsville Ph 1 (SL)</td><td>Johnson Co - SR 15 Wrightsville Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345713</td><td>083-004D(SL)</td><td>Johnson Co - SR 15 Wrightsville Ph 2 (SL)</td><td>32640</td><td>Johnson Co - SR 15 Wrightsville Ph 2 (SL)</td><td>Johnson Co - SR 15 Wrightsville Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345714</td><td>084-002D(SL)</td><td>Jones Co - Cumslo Rd, CR S1079, Gray</td><td>33827</td><td>Jones Co - Cumslo Rd, CR S1079, Gray</td><td>Jones Co - Cumslo Rd, CR S1079, Gray</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345715</td><td>084-006D(SL)</td><td>Jones Co - Cumslo Rd Ph 2 (SL)</td><td>33747</td><td>Jones Co - Cumslo Rd Ph 2 (SL)</td><td>Jones Co - Cumslo Rd Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345716</td><td>085-004D(SL)</td><td>Lamar Co - Grove St Ext (Old Milner Rd) (SL)</td><td>32641</td><td>Lamar Co - Grove St Ext (Old Milner Rd) (SL)</td><td>Lamar Co - Grove St Ext (Old Milner Rd) (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345717</td><td>085-005D(L)</td><td>Barnesville - Goggins Rd (L)</td><td>32710</td><td>Barnesville - Goggins Rd (L)</td><td>Barnesville - Goggins Rd (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345717</td><td>085-006D(SL)</td><td>Barnesville - Goggins Rd (L)</td><td>32710</td><td>Barnesville - Goggins Rd (L)</td><td>Barnesville - Goggins Rd (L)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>5524</td><td>085-007D(MSWL)</td><td>Lamar County Regional Solid Waste Authority</td><td>10377</td><td>Lamar County Regional Solid Waste Authority</td><td>Lamar Co - Cedar Grove Regional MSWL</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345718</td><td>085-008P(CO)</td><td>Greenco Environmental, LLC</td><td>32711</td><td>Greenco Environmental, LLC</td><td>Greenco Environmental, LLC</td><td>10042</td><td>CO</td><td>SW- Composting</td>
+		</tr><tr>
+			<td>345719</td><td>086-004D(SL)</td><td>Lanier Co - Studstill Rd Ph 1 (SL)</td><td>32642</td><td>Lanier Co - Studstill Rd Ph 1 (SL)</td><td>Lanier Co - Studstill Rd Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345720</td><td>087-007D(LI)</td><td>Westrock Southeast - Shad Crk Rd Indl Ph #1 (LI)</td><td>32643</td><td>Westrock Southeast - Shad Crk Rd Indl Ph #1 (LI)</td><td>Westrock Southeast - Shad Crk Rd Indl Ph #1 (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>7543</td><td>087-008D(SL)</td><td>Laurens County</td><td>12894</td><td>Laurens County</td><td>Laurens Co - Bethsaida Church Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345721</td><td>087-009D(SL)</td><td>East Dublin - Nathaniel Dr Rows 1&amp;2 (SL)</td><td>33811</td><td>East Dublin - Nathaniel Dr Rows 1&amp;2 (SL)</td><td>East Dublin - Nathaniel Dr Rows 1&amp;2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345723</td><td>087-014D(LI)</td><td>SE Paper Mfg-Shad Crk Rd Const 2 (LI)</td><td>32644</td><td>SE Paper Mfg-Shad Crk Rd Const 2 (LI)</td><td>SE Paper Mfg-Shad Crk Rd Const 2 (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>5556</td><td>087-015D(MSWL)</td><td>Laurens County Old Macon Rd. Landfill</td><td>2166</td><td>Laurens County Old Macon Rd. Landfill</td><td>Laurens Co - Old Macon Road MSWL</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345724</td><td>087-015D(SL)</td><td>Laurens County - Old Macon Road SL</td><td>32712</td><td>Laurens County - Old Macon Road SL</td><td>Laurens County - Old Macon Road SL</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345725</td><td>087-016D(LI)</td><td>Westrock Southeast, LLC Papermill Road Private Industry Solid Waste Disposal Facility</td><td>2163</td><td>Westrock Southeast, LLC Papermill Road Private Industry Solid Waste Disposal Facility</td><td>Westrock Southeast, LLC Papermill Road Private Industry Solid Waste Disposal Facility</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>8574</td><td>088-006D(SL)</td><td>Lee County Landfill</td><td>8645</td><td>Lee County Landfill</td><td>Lee Co - SR 32 Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345726</td><td>088-011D(LI)</td><td>Sumner&#39;s Farm (LI)</td><td>33828</td><td>Sumner&#39;s Farm (LI)</td><td>Sumner&#39;s Farm (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345727</td><td>089-003D(SL)</td><td>Liberty Co - Limerick Rd (SL)</td><td>32645</td><td>Liberty Co - Limerick Rd (SL)</td><td>Liberty Co - Limerick Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345728</td><td>089-010D(SL)</td><td>US Army - Ft Stewart Main Cantonment (SL)</td><td>32529</td><td>US Army - Ft Stewart Main Cantonment (SL)</td><td>US Army - Ft Stewart Main Cantonment (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345729</td><td>089-011D(L)</td><td>Liberty Co - CR 194 #3 (L)</td><td>32646</td><td>Liberty Co - CR 194 #3 (L)</td><td>Liberty Co - CR 194 #3 (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345730</td><td>089-013P(INC)</td><td>Liberty Co - Limerick Rd ACD (AT SL)(P-INC)</td><td>33748</td><td>Liberty Co - Limerick Rd ACD (AT SL)(P-INC)</td><td>Liberty Co - Limerick Rd ACD (AT SL)(P-INC)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>345729</td><td>089-014P(INC)</td><td>Liberty Co - CR 194 #3 (L)</td><td>32646</td><td>Liberty Co - CR 194 #3 (L)</td><td>Liberty Co - CR 194 #3 (L)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>345727</td><td>089-016D(L)</td><td>Liberty Co - Limerick Rd (SL)</td><td>32645</td><td>Liberty Co - Limerick Rd (SL)</td><td>Liberty Co - Limerick Rd (SL)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345731</td><td>089-017D(L)</td><td>Liberty Co - Wells Rd (L)</td><td>32713</td><td>Liberty Co - Wells Rd (L)</td><td>Liberty Co - Wells Rd (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345727</td><td>089-018P(INC)</td><td>Liberty Co - Limerick Rd (SL)</td><td>32645</td><td>Liberty Co - Limerick Rd (SL)</td><td>Liberty Co - Limerick Rd (SL)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>345731</td><td>089-019P(INC)</td><td>Liberty Co - Wells Rd (L)</td><td>32713</td><td>Liberty Co - Wells Rd (L)</td><td>Liberty Co - Wells Rd (L)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>350988</td><td>089-020D(L)</td><td>US Army-Ft Stewart Main Cantonment (L)</td><td>32530</td><td>US Army-Ft Stewart Main Cantonment (L)</td><td>US Army-Ft Stewart Main Cantonment (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>144774</td><td>089-021D(LI)</td><td>INTERSTATE PAPER CORP           </td><td>&nbsp;</td><td>INTERSTATE PAPER CORP           </td><td>Interstate Paper Co - US 17 (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345732</td><td>090-004D(SL)</td><td>Lincoln Co - CR 121/Prater (SL)</td><td>32647</td><td>Lincoln Co - CR 121/Prater (SL)</td><td>Lincoln Co - CR 121/Prater (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345733</td><td>092-001D(SL)</td><td>Valdosta - SR 94 (SL)</td><td>33774</td><td>Valdosta - SR 94 (SL)</td><td>Valdosta - SR 94 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345734</td><td>092-003D(SL)</td><td>Hahira - Friendship Church Rd (SL)</td><td>32714</td><td>Hahira - Friendship Church Rd (SL)</td><td>Hahira - Friendship Church Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345735</td><td>092-011D(LI)</td><td>Strickland Cotton mills (LI)</td><td>32715</td><td>Strickland Cotton mills (LI)</td><td>Strickland Cotton mills (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345736</td><td>092-014D(SL)</td><td>Valdosta - Wetherington Lane (SL)</td><td>33775</td><td>Valdosta - Wetherington Lane (SL)</td><td>Valdosta - Wetherington Lane (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345737</td><td>092-015D(SL)</td><td>Lowndes Co - SR 31 Clyattvlle Ph 3 A1 (SL)</td><td>32648</td><td>Lowndes Co - SR 31 Clyattvlle Ph 3 A1 (SL)</td><td>Lowndes Co - SR 31 Clyattvlle Ph 3 A1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345738</td><td>092-016D(L)(I)</td><td>Packaging Corp of America</td><td>33749</td><td>Packaging Corp of America</td><td>Packaging Corp of America</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345737</td><td>092-017P(INC)</td><td>Lowndes Co - SR 31 Clyattvlle Ph 3 A1 (SL)</td><td>32648</td><td>Lowndes Co - SR 31 Clyattvlle Ph 3 A1 (SL)</td><td>Lowndes Co - SR 31 Clyattvlle Ph 3 A1 (SL)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>5675</td><td>092-019D(MSWL)</td><td>Onyx Pecan Row Landfill, LLC</td><td>13264</td><td>Onyx Pecan Row Landfill, LLC</td><td>Advanced Disposal Services Pecan Row Landfill, Inc.</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345733</td><td>092-020P(INC)</td><td>Valdosta - SR 94 (SL)</td><td>33774</td><td>Valdosta - SR 94 (SL)</td><td>Valdosta - SR 94 (SL)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>345739</td><td>092-021D(MSWL)</td><td>Lowndes Co - SR 31 Clyattvlle #2 (SL)</td><td>33829</td><td>Lowndes Co - SR 31 Clyattvlle #2 (SL)</td><td>Lowndes Co - SR 31 Clyattvlle #2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>13314</td><td>092-022D(MSWL)</td><td>Advanced Disposal dba Evergreen Landfill, Inc.</td><td>2269</td><td>Advanced Disposal dba Evergreen Landfill, Inc.</td><td>Advanced Disposal Services Evergreen Landfill, Inc</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345740</td><td>092-023P</td><td>Care Environmental Corporation</td><td>33750</td><td>Care Environmental Corporation</td><td>Care Environmental Corporation</td><td>10041</td><td>LS</td><td>SW-Liquid Solidification Facility</td>
+		</tr><tr>
+			<td>345741</td><td>092-024P(MRF)</td><td>Southern Rolloff &amp; Recycling, LLC</td><td>33751</td><td>Southern Rolloff &amp; Recycling, LLC</td><td>Southern Rolloff &amp; Recycling, LLC</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>5822</td><td>093-003D(SL)</td><td>Lumpkin County Landfill</td><td>12078</td><td>Lumpkin County Landfill</td><td>Lumpkin Co - Barlow Homes Rd Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345742</td><td>093-004D(SL)</td><td>Camp Merrill - U S Army</td><td>33830</td><td>Camp Merrill - U S Army</td><td>Camp Merrill - U S Army</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>5831</td><td>093-005D(SL)</td><td>ITT /Camp Frank Merrill</td><td>7917</td><td>ITT /Camp Frank Merrill</td><td>U S Army - Camp Merrill #6 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345743</td><td>094-004D(LI)</td><td>International Paper - Flint River Mill</td><td>32649</td><td>International Paper - Flint River Mill</td><td>International Paper - Flint River Mill</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345744</td><td>094-005D(SL)</td><td>Macon Co - SR 49 N #3 (SL)</td><td>32650</td><td>Macon Co - SR 49 N #3 (SL)</td><td>Macon Co - SR 49 N #3 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346009</td><td>094-007D(SL)</td><td>Middle Ga Waste - SR49 Westside</td><td>33898</td><td>Middle Ga Waste - SR49 Westside</td><td>Middle Ga Waste - SR49 Westside</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346010</td><td>094-009D(MSWL)</td><td>Macon Co. - Middle Ga SWMA Regional MSWL</td><td>32414</td><td>Macon Co. - Middle Ga SWMA Regional MSWL</td><td>Macon Co. - Middle Ga SWMA Regional MSWL</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>5841</td><td>095-006D(SL)</td><td>Madison County Board of Commissioners</td><td>7923</td><td>Madison County Board of Commissioners</td><td>Madison Co - Sanitary Landfill 2&amp;3 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>350999</td><td>095-008D(L)</td><td>Madison Co - Colbert Rd S (L)</td><td>&nbsp;</td><td>Madison Co - Colbert Rd S (L)</td><td>Madison Co - Colbert Rd S (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>346011</td><td>096-002D(SL)</td><td>Marion Co - Mt Zion Ch Rd Ph 1,2(SL)&amp;3 Inert</td><td>32486</td><td>Marion Co - Mt Zion Ch Rd Ph 1,2(SL)&amp;3 Inert</td><td>Marion Co - Mt Zion Ch Rd Ph 1,2(SL)&amp;3 Inert</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346012</td><td>097-007D(SL)</td><td>McDuffie Co - Mesena Rd Ph 1 (SL)</td><td>33899</td><td>McDuffie Co - Mesena Rd Ph 1 (SL)</td><td>McDuffie Co - Mesena Rd Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346013</td><td>097-009D(L)</td><td>James - SR 17 S (L)</td><td>32487</td><td>James - SR 17 S (L)</td><td>James - SR 17 S (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>346014</td><td>097-010D(L)</td><td>Williams - Mesena Rd (L)</td><td>32554</td><td>Williams - Mesena Rd (L)</td><td>Williams - Mesena Rd (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>346015</td><td>097-011P(INC)</td><td>Thomson - US 278 ACD (P-INC)</td><td>&nbsp;</td><td>Thomson - US 278 ACD (P-INC)</td><td>Thomson - US 278 ACD (P-INC)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>346016</td><td>097-012D(SL)</td><td>McDuffie Co - Wrightsboro Rd/Moore Rd (SL)</td><td>32555</td><td>McDuffie Co - Wrightsboro Rd/Moore Rd (SL)</td><td>McDuffie Co - Wrightsboro Rd/Moore Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346017</td><td>098-003D(SL)</td><td>McIntosh Co - King Rd (SL)</td><td>17599</td><td>McIntosh Co - King Rd (SL)</td><td>McIntosh Co - King Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346018</td><td>098-004D(L)</td><td>Darien - SR 251 W (L)</td><td>32556</td><td>Darien - SR 251 W (L)</td><td>Darien - SR 251 W (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>346019</td><td>098-005D(L)</td><td>DNR - Sapelo Island #2 (L)</td><td>32557</td><td>DNR - Sapelo Island #2 (L)</td><td>DNR - Sapelo Island #2 (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>351000</td><td>098-006D(C&amp;D)</td><td>McIntosh County - King Road Construction and Demolition Landfill</td><td>&nbsp;</td><td>McIntosh County - King Road Construction and Demolition Landfill</td><td>McIntosh County - King Road Construction and Demolition Landfill</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>346020</td><td>099-006D(SL)</td><td>Meriwether Co - Whit Waddell Rd (SL)</td><td>33901</td><td>Meriwether Co - Whit Waddell Rd (SL)</td><td>Meriwether Co - Whit Waddell Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346021</td><td>099-011D(SL)</td><td>Meriwether Co - Whit Waddell Rd S (SL)</td><td>33902</td><td>Meriwether Co - Whit Waddell Rd S (SL)</td><td>Meriwether Co - Whit Waddell Rd S (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346022</td><td>099-012P(COI)</td><td>Clay Composting (COI)</td><td>32488</td><td>Clay Composting (COI)</td><td>Clay Composting (COI)</td><td>10042</td><td>CO</td><td>SW- Composting</td>
+		</tr><tr>
+			<td>346023</td><td>099-014D(SL)</td><td>Meriwether Co - Whit Waddell Rd #2 (SL)</td><td>33903</td><td>Meriwether Co - Whit Waddell Rd #2 (SL)</td><td>Meriwether Co - Whit Waddell Rd #2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346024</td><td>099-015D(SL)</td><td>Meriwether Co - CR 98 Durand (SL)</td><td>32489</td><td>Meriwether Co - CR 98 Durand (SL)</td><td>Meriwether Co - CR 98 Durand (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346025</td><td>099-017D(L)(I)</td><td>Georgia Pacific Warm Springs Plywood Plant</td><td>32490</td><td>Georgia Pacific Warm Springs Plywood Plant</td><td>Georgia Pacific Warm Springs Plywood Plant</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>346026</td><td>099-018D(LI)</td><td>Mead Souther Wood Products</td><td>32491</td><td>Mead Souther Wood Products</td><td>Mead Souther Wood Products</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>5749</td><td>099-019D(MSWL)</td><td>Turkey Run Landfill</td><td>4389</td><td>Turkey Run Landfill</td><td>Greenbow, LLC Turkey Run Municipal Solid Waste Landfill</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346027</td><td>100-004D(SL)</td><td>Miller Co - CR 37/Sheffield (SL)</td><td>32493</td><td>Miller Co - CR 37/Sheffield (SL)</td><td>Miller Co - CR 37/Sheffield (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346028</td><td>100-005D(L)</td><td>Donaldsonville - SR 39 N (L)</td><td>32494</td><td>Donaldsonville - SR 39 N (L)</td><td>Donaldsonville - SR 39 N (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>346028</td><td>100-006P(INC)</td><td>Donaldsonville - SR 39 N (L)</td><td>32494</td><td>Donaldsonville - SR 39 N (L)</td><td>Donaldsonville - SR 39 N (L)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>346029</td><td>101-004D(SL)</td><td>Mitchell Co - SR 3A (SL)</td><td>17628</td><td>Mitchell Co - SR 3A (SL)</td><td>Mitchell Co - SR 3A (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346030</td><td>101-005D(L)</td><td>Baconton, City of  (L)</td><td>32558</td><td>Baconton, City of  (L)</td><td>Baconton, City of  (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>346031</td><td>102-002D(SL)</td><td>Forsyth, Old Brent Rd, Ph 1 &amp; 2</td><td>32495</td><td>Forsyth, Old Brent Rd, Ph 1 &amp; 2</td><td>Forsyth, Old Brent Rd, Ph 1 &amp; 2</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346032</td><td>102-004D(LI)</td><td>Georgia Power - Plant Scherer</td><td>32496</td><td>Georgia Power - Plant Scherer</td><td>Georgia Power - Plant Scherer</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>346033</td><td>102-005D(SI)</td><td>Whitng - SR 18 (SI)</td><td>32497</td><td>Whitng - SR 18 (SI)</td><td>Whitng - SR 18 (SI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>346034</td><td>102-007D(LI)</td><td>GA Power - Plant Scherer PH 3 (LI)</td><td>32499</td><td>GA Power - Plant Scherer PH 3 (LI)</td><td>GA Power - Plant Scherer PH 3 (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>346035</td><td>102-008D(SL)</td><td>Monroe Co - Strickland Loop Rd</td><td>16604</td><td>Monroe Co - Strickland Loop Rd</td><td>Monroe Co - Strickland Loop Rd</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>5726</td><td>102-009D(LI)</td><td>Georgia Power Company</td><td>13294</td><td>Georgia Power Company</td><td>Plant Scherer-Georgia Power</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>346036</td><td>103-001D(SL)</td><td>Montgomery Co - US 221 Ailey Ph 1 (SL)</td><td>32500</td><td>Montgomery Co - US 221 Ailey Ph 1 (SL)</td><td>Montgomery Co - US 221 Ailey Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346037</td><td>104-006D(SL)</td><td>Morgan Co - US 441 N (CO WK CP) Ph 1 (SL)</td><td>32559</td><td>Morgan Co - US 441 N (CO WK CP) Ph 1 (SL)</td><td>Morgan Co - US 441 N (CO WK CP) Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346038</td><td>104-007D(SL)</td><td>Morgan Co - US 441 N (CO WK CMP) Ph 2 (SL)</td><td>34229</td><td>Morgan Co - US 441 N (CO WK CMP) Ph 2 (SL)</td><td>Morgan Co - US 441 N (CO WK CMP) Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>5766</td><td>104-008D(LI)</td><td>Georgia Pacific Corporation</td><td>2286</td><td>Georgia Pacific Corporation</td><td>Georgia Pacific Wood Products</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>346039</td><td>104-009D(IN)</td><td>Morgan County - US 441 North</td><td>34236</td><td>Morgan County - US 441 North</td><td>Morgan County - US 441 North</td><td>10048</td><td>IN</td><td>SW- Inert Landfill</td>
+		</tr><tr>
+			<td>346040</td><td>104-033P(COI)</td><td>Anderson Peat Organic Compost (COI)</td><td>33904</td><td>Anderson Peat Organic Compost (COI)</td><td>Anderson Peat Organic Compost (COI)</td><td>10042</td><td>CO</td><td>SW- Composting</td>
+		</tr><tr>
+			<td>346041</td><td>105-004D(SL)</td><td>Murray Co - US 411 Dennis Mill Rd (SL)</td><td>32560</td><td>Murray Co - US 411 Dennis Mill Rd (SL)</td><td>Murray Co - US 411 Dennis Mill Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346042</td><td>105-011D(SL)</td><td>Murray Co - US 411 Westside (SL)</td><td>32502</td><td>Murray Co - US 411 Westside (SL)</td><td>Murray Co - US 411 Westside (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>351001</td><td>105-012D(L)</td><td>Murray Co - US 411 Westside (L)</td><td>&nbsp;</td><td>Murray Co - US 411 Westside (L)</td><td>Murray Co - US 411 Westside (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>11026</td><td>105-014D(MSWL)</td><td>Murray County Landfill</td><td>11108</td><td>Murray County Landfill</td><td>Murray Co. - US 411 Westside Site 2 MSWL</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>30597</td><td>105-015P</td><td>AMERICA ENVIRONMENTAL SERVICES</td><td>&nbsp;</td><td>AMERICA ENVIRONMENTAL SERVICES</td><td>America Environmental Services</td><td>10041</td><td>LS</td><td>SW-Liquid Solidification Facility</td>
+		</tr><tr>
+			<td>346043</td><td>106-001D(SL)</td><td>Columbus Sanitary Landfill</td><td>32503</td><td>Columbus Sanitary Landfill</td><td>Columbus Sanitary Landfill</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>145430</td><td>106-004D(L)</td><td>TYLERS GRP &amp; S S/JACK TYLER GROC</td><td>&nbsp;</td><td>TYLERS GRP &amp; S S/JACK TYLER GROC</td><td>Tyler - Buena Vista Rd (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>346044</td><td>106-011D(SL)</td><td>Columbus - Schatulga Rd W Fill Ph 2 (SL)</td><td>32505</td><td>Columbus - Schatulga Rd W Fill Ph 2 (SL)</td><td>Columbus - Schatulga Rd W Fill Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346044</td><td>106-015P(INC)</td><td>Columbus - Schatulga Rd W Fill Ph 2 (SL)</td><td>32505</td><td>Columbus - Schatulga Rd W Fill Ph 2 (SL)</td><td>Columbus - Schatulga Rd W Fill Ph 2 (SL)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>5909</td><td>106-016D(MSWL)</td><td>Columbus Consolidated Government Pine Grove Landfill</td><td>2335</td><td>Columbus Consolidated Government Pine Grove Landfill</td><td>Columbus, Pine Grove MSWL</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346045</td><td>107-010D(L)</td><td>Porterdale - SR 81 (L)</td><td>33905</td><td>Porterdale - SR 81 (L)</td><td>Porterdale - SR 81 (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>346046</td><td>107-011D(SL)</td><td>Newton Co - Lackey Rd Ph 3 (SL)</td><td>32561</td><td>Newton Co - Lackey Rd Ph 3 (SL)</td><td>Newton Co - Lackey Rd Ph 3 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346047</td><td>107-013D(SL)</td><td>Newton Co - Forest Tower/Lwr Rvr Rds (SL)</td><td>17122</td><td>Newton Co - Forest Tower/Lwr Rvr Rds (SL)</td><td>Newton Co - Forest Tower/Lwr Rvr Rds (SL)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>346047</td><td>107-015D(MSWL)</td><td>Newton Co - Forest Tower/Lwr Rvr Rds (SL)</td><td>17122</td><td>Newton Co - Forest Tower/Lwr Rvr Rds (SL)</td><td>Newton Co - Forest Tower/Lwr Rvr Rds (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346048</td><td>108-002D(SL)</td><td>Oconee Co - Mayne Mill Rd Frmgtn (SL)</td><td>32506</td><td>Oconee Co - Mayne Mill Rd Frmgtn (SL)</td><td>Oconee Co - Mayne Mill Rd Frmgtn (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346049</td><td>108-007D(SL)</td><td>Oconee Co - US 441/CR 109 (SL)</td><td>32507</td><td>Oconee Co - US 441/CR 109 (SL)</td><td>Oconee Co - US 441/CR 109 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346049</td><td>108-008P(INC)</td><td>Oconee Co - US 441/CR 109 (SL)</td><td>32507</td><td>Oconee Co - US 441/CR 109 (SL)</td><td>Oconee Co - US 441/CR 109 (SL)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>346050</td><td>109-002D(SL)</td><td>Olgethorpe Co - US 78 C/D Landfill</td><td>32509</td><td>Olgethorpe Co - US 78 C/D Landfill</td><td>Olgethorpe Co - US 78 C/D Landfill</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>346051</td><td>109-002D(SL)-(1)</td><td>Olgethorpe Co - US 78 Ph 1 (SL)</td><td>33906</td><td>Olgethorpe Co - US 78 Ph 1 (SL)</td><td>Olgethorpe Co - US 78 Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>11248</td><td>109-003D(C&amp;D)</td><td>Oglethorpe County Construction &amp; Demolition Landfill</td><td>32445</td><td>Oglethorpe County Construction &amp; Demolition Landfill</td><td>Oglethorpe Co - US 78 Ph 2 C/D Landfill</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>346052</td><td>110-005D(SL)</td><td>Paulding Co - Gulledge Rd N Tract 1 (SL)</td><td>16448</td><td>Paulding Co - Gulledge Rd N Tract 1 (SL)</td><td>Paulding Co - Gulledge Rd N Tract 1 (SL)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>346053</td><td>111-004D(SL)</td><td>Peach Co - Housers Mill Rd (SL)</td><td>32510</td><td>Peach Co - Housers Mill Rd (SL)</td><td>Peach Co - Housers Mill Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>369765</td><td>112-0015 PBR(COL)</td><td>H&amp;H Trash Service</td><td>33842</td><td>H&amp;H Trash Service</td><td>H&amp;H Trash Service</td><td>10054</td><td>COL</td><td>SW- Collection</td>
+		</tr><tr>
+			<td>369780</td><td>112-0016 PBR(COL)</td><td>Clean-Up Caddy, LLC</td><td>33932</td><td>Clean-Up Caddy, LLC</td><td>Clean-Up Caddy, LLC</td><td>10054</td><td>COL</td><td>SW- Collection</td>
+		</tr><tr>
+			<td>346054</td><td>112-005D(SL)</td><td>Pickens Co - Jones Mtn Rd Ph 2 (SL)</td><td>33907</td><td>Pickens Co - Jones Mtn Rd Ph 2 (SL)</td><td>Pickens Co - Jones Mtn Rd Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346055</td><td>112-006D(SL)</td><td>Pickens Co - Jones Mtn Rd Ph 3 (SL)</td><td>33908</td><td>Pickens Co - Jones Mtn Rd Ph 3 (SL)</td><td>Pickens Co - Jones Mtn Rd Ph 3 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346056</td><td>112-007D(SL)</td><td>Pickens Co-Jones Mtn Rd Westside (SL)</td><td>33909</td><td>Pickens Co-Jones Mtn Rd Westside (SL)</td><td>Pickens Co-Jones Mtn Rd Westside (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346057</td><td>112-008D(C&amp;D)</td><td>Whitestone Valley C&amp;D Landfill</td><td>32511</td><td>Whitestone Valley C&amp;D Landfill</td><td>Whitestone Valley C&amp;D Landfill</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>346058</td><td>113-001D(SL)</td><td>Pierce Co - SR 121 Ph 1&amp;2 (SL)</td><td>32513</td><td>Pierce Co - SR 121 Ph 1&amp;2 (SL)</td><td>Pierce Co - SR 121 Ph 1&amp;2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346059</td><td>113-005D(L)</td><td>Blackshear - Piney Grove Ch Rd (L)</td><td>32514</td><td>Blackshear - Piney Grove Ch Rd (L)</td><td>Blackshear - Piney Grove Ch Rd (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>346060</td><td>114-007D(SL)</td><td>Pike Co - County Farm Rd (SL)</td><td>32515</td><td>Pike Co - County Farm Rd (SL)</td><td>Pike Co - County Farm Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346061</td><td>114-008P(COI)</td><td>Esary - Dundee Mills (COI)</td><td>32516</td><td>Esary - Dundee Mills (COI)</td><td>Esary - Dundee Mills (COI)</td><td>10042</td><td>CO</td><td>SW- Composting</td>
+		</tr><tr>
+			<td>346060</td><td>114-009D(L)</td><td>Pike Co - County Farm Rd (SL)</td><td>32515</td><td>Pike Co - County Farm Rd (SL)</td><td>Pike Co - County Farm Rd (SL)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>346062</td><td>115-005D(SL)</td><td>Polk Co - US 278 Cedartown Ph 2 (SL)</td><td>32517</td><td>Polk Co - US 278 Cedartown Ph 2 (SL)</td><td>Polk Co - US 278 Cedartown Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>6174</td><td>115-008D(SL)</td><td>Polk County Solid Waste Management</td><td>10601</td><td>Polk County Solid Waste Management</td><td>Polk Co - Grady Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346063</td><td>116-002D(SL)</td><td>Pulaski Co - US 129 Hawkinsville (SL)</td><td>32518</td><td>Pulaski Co - US 129 Hawkinsville (SL)</td><td>Pulaski Co - US 129 Hawkinsville (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346064</td><td>117-004D(SL)</td><td>Putnam Co - Martin Mill Rd Ph 1 (SL)</td><td>32519</td><td>Putnam Co - Martin Mill Rd Ph 1 (SL)</td><td>Putnam Co - Martin Mill Rd Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346065</td><td>117-005D(LI)</td><td>GA Power - Plant Branch (LI)</td><td>&nbsp;</td><td>GA Power - Plant Branch (LI)</td><td>GA Power - Plant Branch (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>346066</td><td>117-007D(SL)</td><td>Putnam Co - CR 29 (L) &amp; (SL)</td><td>33910</td><td>Putnam Co - CR 29 (L) &amp; (SL)</td><td>Putnam Co - CR 29 (L) &amp; (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>6188</td><td>118-002D(SL)</td><td>Quitman County Landfill</td><td>7994</td><td>Quitman County Landfill</td><td>Quitman Co - US 82/SR 50 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346067</td><td>118-003P(INC)</td><td>Environmental Waste Reductions, Inc.</td><td>32562</td><td>Environmental Waste Reductions, Inc.</td><td>Environmental Waste Reductions, Inc.</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>146113</td><td>119-004D(LI)</td><td>BURLINGTON INDUSTRIES-RABUN PLAN</td><td>&nbsp;</td><td>BURLINGTON INDUSTRIES-RABUN PLAN</td><td>Rabun Apparel (Fruit of The Loom) (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>346068</td><td>119-005D(SL)</td><td>Rabun Co - Eastman Mtn Rd #2 (SL)</td><td>32521</td><td>Rabun Co - Eastman Mtn Rd #2 (SL)</td><td>Rabun Co - Eastman Mtn Rd #2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346069</td><td>119-006D(C&amp;D)</td><td>Rabun Co - Boggs Mountain Rd C/D Landfill</td><td>17125</td><td>Rabun Co - Boggs Mountain Rd C/D Landfill</td><td>Rabun Co - Boggs Mountain Rd C/D Landfill</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>346070</td><td>120-002D(SL)</td><td>Randolph Co - Brooksville Rd Ph 1 (SL)</td><td>32522</td><td>Randolph Co - Brooksville Rd Ph 1 (SL)</td><td>Randolph Co - Brooksville Rd Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346072</td><td>121-010D(SL)</td><td>US Army - Ft Gordon 17th St (SL)</td><td>32523</td><td>US Army - Ft Gordon 17th St (SL)</td><td>US Army - Ft Gordon 17th St (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346073</td><td>121-011D(SL)</td><td>Richmond Co - RCCI,Arkard St</td><td>33912</td><td>Richmond Co - RCCI,Arkard St</td><td>Richmond Co - RCCI,Arkard St</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346074</td><td>121-012D(L)</td><td>Augusta  - Goodrich St (L)</td><td>33913</td><td>Augusta  - Goodrich St (L)</td><td>Augusta  - Goodrich St (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>163249</td><td>121-014D(SL)</td><td>FT GORDON</td><td>18847</td><td>FT GORDON</td><td>US Army - Ft Gordon Gibson Rd Ph 1-3 (SL)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>346075</td><td>121-015D(SL)</td><td>Richmond Co - Deans Bridge Rd Ph 2A (SL)</td><td>33914</td><td>Richmond Co - Deans Bridge Rd Ph 2A (SL)</td><td>Richmond Co - Deans Bridge Rd Ph 2A (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346076</td><td>121-016D(SL)</td><td>Richmond Co - Deans Bridge Rd Ph 2C (SL)</td><td>32481</td><td>Richmond Co - Deans Bridge Rd Ph 2C (SL)</td><td>Richmond Co - Deans Bridge Rd Ph 2C (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346077</td><td>121-016D(SL)-(2B)</td><td>Richmond Co - Deans Bridge Rd Ph 2B (SL)</td><td>33915</td><td>Richmond Co - Deans Bridge Rd Ph 2B (SL)</td><td>Richmond Co - Deans Bridge Rd Ph 2B (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346078</td><td>121-017D(LI)</td><td>Graphic Packaging International, LLC - Augusta Mill</td><td>&nbsp;</td><td>Graphic Packaging International, LLC - Augusta Mill</td><td>Graphic Packaging International, LLC - Augusta Mill</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>159296</td><td>121-018D(MSWL)</td><td>AUGUSTA-RICHMOND COUNTY SOLID WASTE</td><td>27387</td><td>AUGUSTA-RICHMOND COUNTY SOILD WASTE</td><td>Richmond Co - Deans Bridge Rd Ph III MSWL</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346079</td><td>121-019P</td><td>Garco, Inc.</td><td>32524</td><td>Garco, Inc.</td><td>Garco, Inc.</td><td>10041</td><td>LS</td><td>SW-Liquid Solidification Facility</td>
+		</tr><tr>
+			<td>346080</td><td>121-020P(AD)</td><td>Augusta Renewable Power, LLC Anaerobic Digester</td><td>32563</td><td>Augusta Renewable Power, LLC Anaerobic Digester</td><td>Augusta Renewable Power, LLC Anaerobic Digester</td><td>10042</td><td>CO</td><td>SW- Composting</td>
+		</tr><tr>
+			<td>146419</td><td>122-016D(SL)</td><td>CITY OF CONYERS                 </td><td>&nbsp;</td><td>CITY OF CONYERS                 </td><td>Conyers - Miller Bottom Rd Ph 2-4 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>159414</td><td>122-020P(MRF)</td><td>PRATT SPECIALTY SHEETS</td><td>&nbsp;</td><td>PRATT SPECIALTY SHEETS</td><td>Pratt Recycling, Inc.</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>346081</td><td>122-021P(AD)</td><td>Conyers Renewable Power , LLC Anaerobic Digester</td><td>33916</td><td>Conyers Renewable Power , LLC Anaerobic Digester</td><td>Conyers Renewable Power , LLC Anaerobic Digester</td><td>10042</td><td>CO</td><td>SW- Composting</td>
+		</tr><tr>
+			<td>346082</td><td>123-002D(SL)</td><td>Schley Co - SR 26 E Ph 1 (SL)</td><td>32564</td><td>Schley Co - SR 26 E Ph 1 (SL)</td><td>Schley Co - SR 26 E Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346083</td><td>123-004D(SL)</td><td>Schley Co - CR 65/Hicks (SL)</td><td>32525</td><td>Schley Co - CR 65/Hicks (SL)</td><td>Schley Co - CR 65/Hicks (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346083</td><td>123-005P(INC)</td><td>Schley Co - CR 65/Hicks (SL)</td><td>32525</td><td>Schley Co - CR 65/Hicks (SL)</td><td>Schley Co - CR 65/Hicks (SL)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>6333</td><td>124-003D(SL)</td><td>Screven County Municipal Solid Waste Landfill</td><td>8034</td><td>Screven County Municipal Solid Waste Landfill</td><td>Screven Co - Rocky Ford Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>6333</td><td>124-004P(INC)</td><td>Screven County Municipal Solid Waste Landfill</td><td>8034</td><td>Screven County Municipal Solid Waste Landfill</td><td>Screven Co - Rocky Ford Rd ACD (P-INC)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>346084</td><td>124-006D(LI)</td><td>Milliken &amp; Company - Longleaf</td><td>&nbsp;</td><td>Milliken &amp; Company - Longleaf</td><td>Milliken &amp; Company - Longleaf</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>346085</td><td>125-003D(SL)</td><td>Donalsonville - SR 39 (SL)</td><td>32526</td><td>Donalsonville - SR 39 (SL)</td><td>Donalsonville - SR 39 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346086</td><td>126-001D(SL)</td><td>Spalding Co - Yamacraw Rd Ph 1 Tct A (SL)</td><td>32527</td><td>Spalding Co - Yamacraw Rd Ph 1 Tct A (SL)</td><td>Spalding Co - Yamacraw Rd Ph 1 Tct A (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346087</td><td>126-003D(SL)</td><td>Griffin - Shoal Creek Rd (SL)</td><td>33918</td><td>Griffin - Shoal Creek Rd (SL)</td><td>Griffin - Shoal Creek Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346088</td><td>126-009D(C&amp;D)</td><td>Spalding Co - Griffin/Shoal Creek Rd Ph 2</td><td>33919</td><td>Spalding Co - Griffin/Shoal Creek Rd Ph 2</td><td>Spalding Co - Griffin/Shoal Creek Rd Ph 2</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>351002</td><td>126-010D(C&amp;D)</td><td>Spalding Co -Griffin Shoal Creek Rd Ph 3 Construction/Demolition Landfill</td><td>32501</td><td>Spalding Co -Griffin Shoal Creek Rd Ph 3 Construction/Demolition Landfill</td><td>Spalding Co -Griffin Shoal Creek Rd Ph 3 Construction/Demolition Landfill</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>346089</td><td>127-003D(SL)</td><td>Stephens Co - SR 145 Ph 2&amp;3 (SL)</td><td>32528</td><td>Stephens Co - SR 145 Ph 2&amp;3 (SL)</td><td>Stephens Co - SR 145 Ph 2&amp;3 (SL)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>346090</td><td>127-004P(CO)</td><td>Wilbros, LLC</td><td>33920</td><td>Wilbros, LLC</td><td>Wilbros, LLC</td><td>10042</td><td>CO</td><td>SW- Composting</td>
+		</tr><tr>
+			<td>6472</td><td>128-001D(SL)</td><td>Stewart County Landfill</td><td>8070</td><td>Stewart County Landfill</td><td>Stewart Co - CR 145 S Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346091</td><td>129-007D(SL)</td><td>Sumter Co - CR 195 S Ph 1 (SL)</td><td>33921</td><td>Sumter Co - CR 195 S Ph 1 (SL)</td><td>Sumter Co - CR 195 S Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346092</td><td>129-009D(LI)</td><td>Fauconniere/Buckeye Cellouse - Stge Cch Rd (LI)</td><td>32565</td><td>Fauconniere/Buckeye Cellouse - Stge Cch Rd (LI)</td><td>Fauconniere/Buckeye Cellouse - Stge Cch Rd (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>346093</td><td>129-010D(L)</td><td>Andersonville - Freeman St (L)</td><td>32534</td><td>Andersonville - Freeman St (L)</td><td>Andersonville - Freeman St (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>346094</td><td>129-011D(SL)</td><td>Sumter Co - CR 195 Ph 2 (SL)</td><td>33922</td><td>Sumter Co - CR 195 Ph 2 (SL)</td><td>Sumter Co - CR 195 Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>346091</td><td>129-012P(INC)</td><td>Sumter Co - CR 195 S Ph 1 (SL)</td><td>33921</td><td>Sumter Co - CR 195 S Ph 1 (SL)</td><td>Sumter Co - CR 195 S Ph 1 (SL)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>346095</td><td>129-013P</td><td>ECOFLO Southeast, Inc.</td><td>33917</td><td>ECOFLO Southeast, Inc.</td><td>ECOFLO Southeast, Inc.</td><td>10041</td><td>LS</td><td>SW-Liquid Solidification Facility</td>
+		</tr><tr>
+			<td>7434</td><td>129-014P(MRF)</td><td>Ameri-Green Environmental Recycling</td><td>11833</td><td>Ameri-Green Environmental Recycling</td><td>Ameri-Green Environmental Recycling</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>345833</td><td>130-005D(SL)</td><td>Talbot Co  - Adams St (SL)</td><td>32540</td><td>Talbot Co  - Adams St (SL)</td><td>Talbot Co  - Adams St (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345834</td><td>130-006D(SL)</td><td>Talbot Co - CR 65 #2 (SL)</td><td>34332</td><td>Talbot Co - CR 65 #2 (SL)</td><td>Talbot Co - CR 65 #2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345835</td><td>131-001D(SL)</td><td>Taliaferro Co - US 278 Crawfordville (SL)</td><td>33839</td><td>Taliaferro Co - US 278 Crawfordville (SL)</td><td>Taliaferro Co - US 278 Crawfordville (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345836</td><td>131-002D(SL)</td><td>Taliaferro Co - CR 10 Ph 1 (SL)</td><td>32682</td><td>Taliaferro Co - CR 10 Ph 1 (SL)</td><td>Taliaferro Co - CR 10 Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345837</td><td>131-003D(SL)</td><td>Taliaferro Co - CR 10 Ph 2 (SL)</td><td>33818</td><td>Taliaferro Co - CR 10 Ph 2 (SL)</td><td>Taliaferro Co - CR 10 Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345838</td><td>132-004D(L)</td><td>Collins - SR 292 W (L)</td><td>32541</td><td>Collins - SR 292 W (L)</td><td>Collins - SR 292 W (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345839</td><td>132-005D(SL)</td><td>Glennville - SR 144 Beards Creek (SL)</td><td>33840</td><td>Glennville - SR 144 Beards Creek (SL)</td><td>Glennville - SR 144 Beards Creek (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345840</td><td>132-006D(SL)</td><td>Tattnall Co - SR 178 Ohoopee River (SL)</td><td>32683</td><td>Tattnall Co - SR 178 Ohoopee River (SL)</td><td>Tattnall Co - SR 178 Ohoopee River (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345841</td><td>133-002D(SL)</td><td>Taylor Co - SR 137 Butler (SL)</td><td>32684</td><td>Taylor Co - SR 137 Butler (SL)</td><td>Taylor Co - SR 137 Butler (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345842</td><td>133-003D(SL)</td><td>WI Taylor County Disposal, LLC</td><td>4583</td><td>WI Taylor County Disposal, LLC</td><td>WI Taylor County Disposal, LLC</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>159726</td><td>134-002D(LI)</td><td>AMERCORD INC                    </td><td>&nbsp;</td><td>AMERCORD INC                    </td><td>Amercord Inc (Cook &amp; Co.)  (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>146928</td><td>134-012D(LI)</td><td>CHAMPION INTERNATIONAL CORP     </td><td>&nbsp;</td><td>CHAMPION INTERNATIONAL CORP     </td><td>Champion Int. (St. Regis) #1  (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345843</td><td>134-014D(L)(I)</td><td>Rayonier PIL (f.k.a. Champion Intl #3)</td><td>32685</td><td>Rayonier PIL (f.k.a. Champion Intl #3)</td><td>Rayonier PIL (f.k.a. Champion Intl #3)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>6542</td><td>134-015D(MSWL)</td><td>Telfair County Landfill</td><td>8095</td><td>Telfair County Landfill</td><td>Telfair Co - CR 144 MSWL</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345844</td><td>135-005D(SL)</td><td>Terrell Co - US 82 Dawson (SL)</td><td>32686</td><td>Terrell Co - US 82 Dawson (SL)</td><td>Terrell Co - US 82 Dawson (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345845</td><td>136-002D(SL)</td><td>Thomasville/Sunset Dr Ph 1 (SL)</td><td>33819</td><td>Thomasville/Sunset Dr Ph 1 (SL)</td><td>Thomasville/Sunset Dr Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345846</td><td>136-012D(SL)</td><td>Thomas Co - Thomasville/Sunset Dr Ph 2 MSWL</td><td>32512</td><td>Thomas Co - Thomasville/Sunset Dr Ph 2 MSWL</td><td>Thomas Co - Thomasville/Sunset Dr Ph 2 MSWL</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345847</td><td>136-015D(SL)</td><td>Thomasville/Sunset Dr Ph 4 MSWL</td><td>33841</td><td>Thomasville/Sunset Dr Ph 4 MSWL</td><td>Thomasville/Sunset Dr Ph 4 MSWL</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>350991</td><td>136-017D(C&amp;D)</td><td>Thomas Co - Thomasville/Sunset Dr Ph 3 C/D Landfill</td><td>32508</td><td>Thomas Co - Thomasville/Sunset Dr Ph 3 C/D Landfill</td><td>Thomas Co - Thomasville/Sunset Dr Ph 3 C/D Landfill</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>159780</td><td>136-019D(LI)</td><td>GEORGIA NORTH PLANT (AKA OIL DRI OCHLOCKEE PLANT)</td><td>30503</td><td>GEORGIA NORTH PLANT (AKA OIL DRI OCHLOCKEE PLANT)</td><td>Oil-Dri Corporation of Georgia</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>369736</td><td>137-0018 PBR(COL)</td><td>City of Omega</td><td>33718</td><td>City of Omega</td><td>City of Omega</td><td>10054</td><td>COL</td><td>SW- Collection</td>
+		</tr><tr>
+			<td>345848</td><td>137-007D(SL)</td><td>Tifton - Omega/Eldorado Rd Ph 1 (SL)</td><td>33820</td><td>Tifton - Omega/Eldorado Rd Ph 1 (SL)</td><td>Tifton - Omega/Eldorado Rd Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>6818</td><td>137-007D(SL)(3)</td><td>Tifton/Tift County Landfill</td><td>8176</td><td>Tifton/Tift County Landfill</td><td>Tifton-Omega/Eldorado Rd PH 3 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345849</td><td>137-008D(L)</td><td>Tifton - US 82 E/E 2nd St (L)</td><td>&nbsp;</td><td>Tifton - US 82 E/E 2nd St (L)</td><td>Tifton - US 82 E/E 2nd St (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>6818</td><td>137-013P(INC)</td><td>Tifton/Tift County Landfill</td><td>8176</td><td>Tifton/Tift County Landfill</td><td>Tifton - Omega Eldarado Rd ACD (P-INC)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>345850</td><td>137-014D(L)</td><td>Tifton - Maple St (L)</td><td>33843</td><td>Tifton - Maple St (L)</td><td>Tifton - Maple St (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345851</td><td>137-016D(SL)</td><td>Tift Co - Tifton Omega/Eldorado Rd Ph III MSWL</td><td>32542</td><td>Tift Co - Tifton Omega/Eldorado Rd Ph III MSWL</td><td>Tift Co - Tifton Omega/Eldorado Rd Ph III MSWL</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345852</td><td>138-001D(SL)</td><td>Toombs Co - S 1898 Area 1 (SL)</td><td>32420</td><td>Toombs Co - S 1898 Area 1 (SL)</td><td>Toombs Co - S 1898 Area 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345853</td><td>138-005D(SL)</td><td>Toombs Co-  S 1898 Ph 2 Vert. Expansion</td><td>33844</td><td>Toombs Co-  S 1898 Ph 2 Vert. Expansion</td><td>Toombs Co-  S 1898 Ph 2 Vert. Expansion</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>9203</td><td>138-006D(MSWL)</td><td>Toombs County Landfill</td><td>13545</td><td>Toombs County Landfill</td><td>Toombs Co-S1898, Phase 3 (MSWL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>350992</td><td>138-007D(C&amp;D)</td><td>Toombs Co - S1898 Construction/Demolition Landfill</td><td>32520</td><td>Toombs Co - S1898 Construction/Demolition Landfill</td><td>Toombs Co - S1898 Construction/Demolition Landfill</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>6682</td><td>139-002D(SL)</td><td>Towns County Landfill</td><td>8136</td><td>Towns County Landfill</td><td>Towns Co - SR 288 Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345854</td><td>141-005D(SL)</td><td>LaGrange - Orchard Hill Rd (SL)</td><td>33845</td><td>LaGrange - Orchard Hill Rd (SL)</td><td>LaGrange - Orchard Hill Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>6793</td><td>141-008D(SL)</td><td>Troup County C&amp;D Landfill</td><td>8170</td><td>Troup County C&amp;D Landfill</td><td>Troup Co - SR 109 Mountville Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345855</td><td>141-009D(SL)</td><td>Hogansville - Blue Creek Rd (SL)</td><td>32543</td><td>Hogansville - Blue Creek Rd (SL)</td><td>Hogansville - Blue Creek Rd (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345856</td><td>141-012D(SL)</td><td>Troup Co - Warner Rd S (SL)</td><td>33846</td><td>Troup Co - Warner Rd S (SL)</td><td>Troup Co - Warner Rd S (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>6891</td><td>141-013D(SL)</td><td>City of LaGrange Landfill</td><td>2781</td><td>City of LaGrange Landfill</td><td>LaGrange-I 85/SR 109 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>6793</td><td>141-023D(SL)</td><td>Troup County C&amp;D Landfill</td><td>8170</td><td>Troup County C&amp;D Landfill</td><td>Troup Co - SR 109 Mountville Ph 2 (SL)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345857</td><td>142-001D(SL)</td><td>Turner Co - SR 112 Ashburn Ph 1 &amp; 2 (SL)</td><td>33847</td><td>Turner Co - SR 112 Ashburn Ph 1 &amp; 2 (SL)</td><td>Turner Co - SR 112 Ashburn Ph 1 &amp; 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345858</td><td>142-004D(SL)</td><td>Turner Co - SR 112 Ashburn Ph 3 (SL)</td><td>32421</td><td>Turner Co - SR 112 Ashburn Ph 3 (SL)</td><td>Turner Co - SR 112 Ashburn Ph 3 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345858</td><td>142-005P(INC)</td><td>Turner Co - SR 112 Ashburn Ph 3 (SL)</td><td>32421</td><td>Turner Co - SR 112 Ashburn Ph 3 (SL)</td><td>Turner Co - SR 112 Ashburn Ph 3 (SL)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>345859</td><td>143-001D(LI)</td><td>KaMin (LI)</td><td>&nbsp;</td><td>KaMin (LI)</td><td>KaMin (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345860</td><td>143-004D(LI)</td><td>IMERYS Clay - Dry Branch (LI)</td><td>32422</td><td>IMERYS Clay - Dry Branch (LI)</td><td>IMERYS Clay - Dry Branch (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345861</td><td>143-005D(SL)</td><td>Twiggs Co - Old McCallum Pond Rd Ph 1&amp;2(SL)</td><td>32423</td><td>Twiggs Co - Old McCallum Pond Rd Ph 1&amp;2(SL)</td><td>Twiggs Co - Old McCallum Pond Rd Ph 1&amp;2(SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345862</td><td>143-007D(LI)</td><td>IMERYS Clay - Jeffersonville - Allfarm Rd (LI)</td><td>32424</td><td>IMERYS Clay - Jeffersonville - Allfarm Rd (LI)</td><td>IMERYS Clay - Jeffersonville - Allfarm Rd (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>13315</td><td>143-008D(SL)</td><td>Wolf Creek Landfill, LLC</td><td>2825</td><td>Wolf Creek Landfill, LLC</td><td>Wolf Creek Landfill, LLC</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>33160</td><td>143-009D(LI)</td><td>IMERYS PIGMENTS &amp; ADDITIVES</td><td>&nbsp;</td><td>IMERYS PIGMENTS &amp; ADDITIVES</td><td>IMERYS Clay - New Dry Branch, Georgia Kaolin Road</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345863</td><td>144-001D(SL)</td><td>Union Co - Haralson Memorial Dr (SL)</td><td>&nbsp;</td><td>Union Co - Haralson Memorial Dr (SL)</td><td>Union Co - Haralson Memorial Dr (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345864</td><td>145-005D(SL)</td><td>Thomaston - Zorn St Ph 2 &amp;3 (SL)</td><td>&nbsp;</td><td>Thomaston - Zorn St Ph 2 &amp;3 (SL)</td><td>Thomaston - Zorn St Ph 2 &amp;3 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345865</td><td>145-007D(L)</td><td>Kersey - Firetower Rd/Jeff David Rd (L)</td><td>32544</td><td>Kersey - Firetower Rd/Jeff David Rd (L)</td><td>Kersey - Firetower Rd/Jeff David Rd (L)</td><td>10045</td><td>Other-D or P</td><td>SW- Other-Processor/ Disposal</td>
+		</tr><tr>
+			<td>345866</td><td>145-010D(SL)</td><td>Upson Co, Thomaston - Po Biddy Rd MSWL</td><td>32545</td><td>Upson Co, Thomaston - Po Biddy Rd MSWL</td><td>Upson Co, Thomaston - Po Biddy Rd MSWL</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>11064</td><td>146-003D(SL)</td><td>Walker Co. Landfill</td><td>11119</td><td>Walker Co. Landfill</td><td>Walker Co - Marble Top Rd Areas 1-5 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345867</td><td>146-004D(SI)</td><td>STD Brands Chem - Shavers Farm (SI)</td><td>32425</td><td>STD Brands Chem - Shavers Farm (SI)</td><td>STD Brands Chem - Shavers Farm (SI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345868</td><td>146-011D(L)</td><td>Steele Brothers - SR341 (LI)</td><td>33850</td><td>Steele Brothers - SR341 (LI)</td><td>Steele Brothers - SR341 (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345869</td><td>146-011D(LI)</td><td>Steele Brothers - SR 341 (LI)</td><td>32426</td><td>Steele Brothers - SR 341 (LI)</td><td>Steele Brothers - SR 341 (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345870</td><td>146-013D(L)</td><td>LaFayette-Coffman Springs Rd (L)</td><td>32412</td><td>LaFayette-Coffman Springs Rd (L)</td><td>LaFayette-Coffman Springs Rd (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>29118</td><td>146-014D(LI)</td><td>ROSSVILLE DEVELOPMENT COPORATION</td><td>&nbsp;</td><td>ROSSVILLE DEVELOPMENT COPORATION</td><td>Rossville Development Corp. (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>350993</td><td>146-015D(MSWL)</td><td>Walker Co - Marble Top Rd Site 2 MSWL</td><td>32531</td><td>Walker Co - Marble Top RD Site 2 MSWL</td><td>Walker Co - Marble Top RD Site 2 MSWL</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345871</td><td>147-010D(SL)</td><td>Walton Co - SR 11/Roscoe Davis Rd Ph 3 (SL)</td><td>32427</td><td>Walton Co - SR 11/Roscoe Davis Rd Ph 3 (SL)</td><td>Walton Co - SR 11/Roscoe Davis Rd Ph 3 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345872</td><td>147-011D(LI)</td><td>Universal - Rundle PISWLF</td><td>32428</td><td>Universal - Rundle PISWLF</td><td>Universal - Rundle PISWLF</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>6970</td><td>147-012D(C&amp;D)</td><td>Highway 78 C&amp;D Landfill</td><td>8220</td><td>Highway 78 C&amp;D Landfill</td><td>Republic - US 78 Construction and Demolition Landfill</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>6993</td><td>147-013D(C&amp;D)</td><td>Walton C&amp;D Landfill</td><td>14547</td><td>Walton C&amp;D Landfill</td><td>Walton Construction &amp; Demolition Landfill</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>7001</td><td>147-014D(C&amp;D)</td><td>Caruthers Mill C&amp;D Landfill</td><td>14548</td><td>Caruthers Mill C&amp;D Landfill</td><td>Caruthers Mill C&amp;D Landfill</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345873</td><td>148-003D(SL)</td><td>Ware Co - US 82 Waresboro (SL)</td><td>32429</td><td>Ware Co - US 82 Waresboro (SL)</td><td>Ware Co - US 82 Waresboro (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345874</td><td>148-006D(SL)</td><td>Waycross - Blackwell/Common St (SL)</td><td>32430</td><td>Waycross - Blackwell/Common St (SL)</td><td>Waycross - Blackwell/Common St (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345875</td><td>148-008D(SL)</td><td>Tricounty MSWL, Phase 1</td><td>32546</td><td>Tricounty MSWL, Phase 1</td><td>Tricounty MSWL, Phase 1</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345876</td><td>149-008D(SL)</td><td>Warren Co - Shoal St #2 (SL)</td><td>32431</td><td>Warren Co - Shoal St #2 (SL)</td><td>Warren Co - Shoal St #2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>147910</td><td>149-009D(LI)</td><td>GA-PACIFIC WARRENTON C-N-S      </td><td>&nbsp;</td><td>GA-PACIFIC WARRENTON C-N-S      </td><td>Georgia Pacific Corp. - Warrenton Sawmill</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345877</td><td>149-010D(LI)</td><td>ACM Georgia, LLC</td><td>32341</td><td>ACM Georgia, LLC</td><td>ACM Georgia, LLC</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345878</td><td>150-006D(SL)</td><td>Washington Co - Kaolin Rd S Ph 1 (SL)</td><td>&nbsp;</td><td>Washington Co - Kaolin Rd S Ph 1 (SL)</td><td>Washington Co - Kaolin Rd S Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345879</td><td>150-007D(LI)</td><td>IMERYS Clays, Inc. - Deepstep Road</td><td>32432</td><td>IMERYS Clays, Inc. - Deepstep Road</td><td>IMERYS Clays, Inc. - Deepstep Road</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345880</td><td>150-008D(LI)</td><td>Thiele/Anglo/Burgess-Kaolin Rd (LI)</td><td>32433</td><td>Thiele/Anglo/Burgess-Kaolin Rd (LI)</td><td>Thiele/Anglo/Burgess-Kaolin Rd (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345881</td><td>150-009D(LI)</td><td>IMERYS Clays, Inc. (dba ECC International)</td><td>33851</td><td>IMERYS Clays, Inc. (dba ECC International)</td><td>IMERYS Clays, Inc. (dba ECC International)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345882</td><td>150-009D(SL)</td><td>Washington Co - Kaolin Rd S #2 (SL)</td><td>&nbsp;</td><td>Washington Co - Kaolin Rd S #2 (SL)</td><td>Washington Co - Kaolin Rd S #2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>147962</td><td>150-011D(LI)</td><td>ENGLISH CHINA CLAY PLT #2</td><td>&nbsp;</td><td>ENGLISH CHINA CLAY PLT #2</td><td>Anglo - American Clays Deepstep Hwy C&amp;D</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345883</td><td>150-012P(INC)</td><td>Washington Co - Kaolin Rd ACD</td><td>32434</td><td>Washington Co - Kaolin Rd ACD</td><td>Washington Co - Kaolin Rd ACD</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>345884</td><td>151-005D(SL)</td><td>Wayne Co - Goose Creek Ph 1 (SL)</td><td>32435</td><td>Wayne Co - Goose Creek Ph 1 (SL)</td><td>Wayne Co - Goose Creek Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345885</td><td>151-006D(SI)</td><td>Mickeys Meats - Odum Rd (SI)</td><td>32547</td><td>Mickeys Meats - Odum Rd (SI)</td><td>Mickeys Meats - Odum Rd (SI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345886</td><td>151-007D(L)</td><td>Wayne Co - Madray Springs (L)</td><td>32436</td><td>Wayne Co - Madray Springs (L)</td><td>Wayne Co - Madray Springs (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345887</td><td>151-008D(L)</td><td>Wayne Co - Slover (L)</td><td>32437</td><td>Wayne Co - Slover (L)</td><td>Wayne Co - Slover (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345888</td><td>151-009D(L)</td><td>Wayne Co - Gardi Ph 1 (L)</td><td>32438</td><td>Wayne Co - Gardi Ph 1 (L)</td><td>Wayne Co - Gardi Ph 1 (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345889</td><td>151-010D(L)</td><td>Wayne Co - Screven (L)</td><td>32439</td><td>Wayne Co - Screven (L)</td><td>Wayne Co - Screven (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345890</td><td>151-011D(L)</td><td>Wayne Co - Gardi Ph 2 Landfill</td><td>33852</td><td>Wayne Co - Gardi Ph 2 Landfill</td><td>Wayne Co - Gardi Ph 2 Landfill</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>7130</td><td>151-012D(LI)</td><td>Rayonier Performance Fibers - Jesup Mills</td><td>2892</td><td>Rayonier Performance Fibers - Jesup Mills</td><td>Rayonier Performance Fibres, LLC-Doctortown (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345884</td><td>151-013P(INC)</td><td>Wayne Co - Goose Creek Ph 1 (SL)</td><td>32435</td><td>Wayne Co - Goose Creek Ph 1 (SL)</td><td>Wayne Co - Goose Creek Ph 1 (SL)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>345891</td><td>151-014D(SL)</td><td>Republic Services - Broadhurst Environmental</td><td>4717</td><td>Republic Services - Broadhurst Environmental</td><td>Republic Services - Broadhurst Environmental</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345892</td><td>151-015D(IN)</td><td>Wayne County - Woods Bridge Road</td><td>32440</td><td>Wayne County - Woods Bridge Road</td><td>Wayne County - Woods Bridge Road</td><td>10048</td><td>IN</td><td>SW- Inert Landfill</td>
+		</tr><tr>
+			<td>345893</td><td>152-001D(SL)</td><td>Webster Co - SR 41 S Preston (SL)</td><td>32441</td><td>Webster Co - SR 41 S Preston (SL)</td><td>Webster Co - SR 41 S Preston (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345894</td><td>152-004P(CO)</td><td>Green Gro - CR 61 (P-CO)</td><td>&nbsp;</td><td>Green Gro - CR 61 (P-CO)</td><td>Green Gro - CR 61 (P-CO)</td><td>10042</td><td>CO</td><td>SW- Composting</td>
+		</tr><tr>
+			<td>345895</td><td>152-005P(CO)</td><td>Green Gro - CR 61 (P-CO)</td><td>&nbsp;</td><td>Green Gro - CR 61 (P-CO)</td><td>Green Gro - CR 61 (P-CO)</td><td>10042</td><td>CO</td><td>SW- Composting</td>
+		</tr><tr>
+			<td>345896</td><td>152-006P(CO)</td><td>Green Gro - CR 61 (P-CO)</td><td>&nbsp;</td><td>Green Gro - CR 61 (P-CO)</td><td>Green Gro - CR 61 (P-CO)</td><td>10042</td><td>CO</td><td>SW- Composting</td>
+		</tr><tr>
+			<td>345897</td><td>152-007P(CO)</td><td>Erth Products, LLC</td><td>&nbsp;</td><td>Webster Co. - Erth, CR61 SW Processing</td><td>Erth Products, LLC</td><td>10042</td><td>CO</td><td>SW- Composting</td>
+		</tr><tr>
+			<td>345898</td><td>153-005D(SL)</td><td>Treutlen &amp; Wheeler Cos - SR 46 Ph 2&amp;3 (SL)</td><td>32442</td><td>Treutlen &amp; Wheeler Cos - SR 46 Ph 2&amp;3 (SL)</td><td>Treutlen &amp; Wheeler Cos - SR 46 Ph 2&amp;3 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345899</td><td>154-003D(SL)</td><td>White Co - Dukes Creek (SL)</td><td>32443</td><td>White Co - Dukes Creek (SL)</td><td>White Co - Dukes Creek (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>369753</td><td>155-0039 PBR(COL)</td><td>North Georgia Waste Services, LLC</td><td>33756</td><td>North Georgia Waste Services, LLC</td><td>North Georgia Waste Services, LLC</td><td>10054</td><td>COL</td><td>SW- Collection</td>
+		</tr><tr>
+			<td>369715</td><td>155-0040 PBR(COL)</td><td>Green Garbage</td><td>32568</td><td>Green Garbage</td><td>Green Garbage</td><td>10054</td><td>COL</td><td>SW- Collection</td>
+		</tr><tr>
+			<td>345901</td><td>155-010D(LI)</td><td>Dow Chemicals  (LI)</td><td>&nbsp;</td><td>Dow Chemicals  (LI)</td><td>Dow Chemicals  (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345902</td><td>155-021D(SL)</td><td>Dalton - Old Dixie Hwy Ph 2 (SL)</td><td>32444</td><td>Dalton - Old Dixie Hwy Ph 2 (SL)</td><td>Dalton - Old Dixie Hwy Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345903</td><td>155-027D(SL)</td><td>Dalton - Old Dixie Hwy Ph 4 (SL)</td><td>33853</td><td>Dalton - Old Dixie Hwy Ph 4 (SL)</td><td>Dalton - Old Dixie Hwy Ph 4 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345905</td><td>155-033D(SL)</td><td>Dalton - Rocky Face (WS) Ph 2 (SL)</td><td>32447</td><td>Dalton - Rocky Face (WS) Ph 2 (SL)</td><td>Dalton - Rocky Face (WS) Ph 2 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345906</td><td>155-034D(L)</td><td>Dalton - Waugh St Ph 1 (L)</td><td>32448</td><td>Dalton - Waugh St Ph 1 (L)</td><td>Dalton - Waugh St Ph 1 (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345907</td><td>155-037D(L)</td><td>Dalton - Waugh St Ph 2 (L)</td><td>33856</td><td>Dalton - Waugh St Ph 2 (L)</td><td>Dalton - Waugh St Ph 2 (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345908</td><td>155-043D(L)</td><td>Dalton  -McGaughey Ch/Coahulla Crk (L)</td><td>32449</td><td>Dalton  -McGaughey Ch/Coahulla Crk (L)</td><td>Dalton  -McGaughey Ch/Coahulla Crk (L)</td><td>10047</td><td>C&amp;D</td><td>SW- Construction &amp; Demolition Landfill</td>
+		</tr><tr>
+			<td>345909</td><td>155-044D(SL)</td><td>Dalton - Old Dixie Hwy Ph 5 (SL)</td><td>33857</td><td>Dalton - Old Dixie Hwy Ph 5 (SL)</td><td>Dalton - Old Dixie Hwy Ph 5 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>160596</td><td>155-047D(SL)</td><td>OLD DIXIE SANITARY LANDFILL     </td><td>32532</td><td>OLD DIXIE SANITARY LANDFILL     </td><td>Whitfield Co - Dalton, Old Dixie Hwy, Ph 6</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>350994</td><td>155-048D(LI)</td><td>Whitfield Co - DWRSWA Old Dixie Hwy Baled Carpet</td><td>32533</td><td>Whitfield Co - DWRSWA Old Dixie Hwy Baled Carpet</td><td>Whitfield Co - DWRSWA Old Dixie Hwy Baled Carpet</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>160596</td><td>155-049P(RM)</td><td>OLD DIXIE SANITARY LANDFILL     </td><td>32532</td><td>OLD DIXIE SANITARY LANDFILL     </td><td>Whitfield Co - DWRSWMA Old Dixie Hwy MRF</td><td>10043</td><td>MRF</td><td>SW- Material Recovery Facility</td>
+		</tr><tr>
+			<td>7165</td><td>156-001D(SL)</td><td>Wilcox County Sanitary Landfill  dba. Public Works</td><td>8303</td><td>Wilcox County Sanitary Landfill  dba. Public Works</td><td>Wilcox Co - County Farm Rochelle Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345910</td><td>157-003D(SL)</td><td>Wilkes Co-CR 40 (SL)</td><td>&nbsp;</td><td>Wilkes Co-CR 40 (SL)</td><td>Wilkes Co-CR 40 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345911</td><td>157-004D(MSWL)</td><td>Wilkes Co - CR 40 Phase 2 MSWL</td><td>&nbsp;</td><td>Wilkes Co - CR 40 Phase 2 MSWL</td><td>Wilkes Co - CR 40 Phase 2 MSWL</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345912</td><td>158-005D(LI)</td><td>Engelhard - McIntyre #1 (LI)</td><td>32450</td><td>Engelhard - McIntyre #1 (LI)</td><td>Engelhard - McIntyre #1 (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345913</td><td>158-007D(LI)</td><td>Old Hickory Clay Company</td><td>&nbsp;</td><td>Old Hickory Clay Company</td><td>Old Hickory Clay Company</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345914</td><td>158-008D(LI)</td><td>Unimin Corporation McIntyre Plant</td><td>32451</td><td>Unimin Corporation McIntyre Plant</td><td>Unimin Corporation McIntyre Plant</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345915</td><td>158-009D(LI)</td><td>Engelhard - Gordon #1 (LI)</td><td>33858</td><td>Engelhard - Gordon #1 (LI)</td><td>Engelhard - Gordon #1 (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345916</td><td>158-010D(SL)</td><td>Wilkinson Co - SR 57 Pblc Wrks Camp (SL)</td><td>32452</td><td>Wilkinson Co - SR 57 Pblc Wrks Camp (SL)</td><td>Wilkinson Co - SR 57 Pblc Wrks Camp (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr><tr>
+			<td>345917</td><td>158-012D(LI)</td><td>Elite Labs - Porter Crk/CR 173 (LI)</td><td>32453</td><td>Elite Labs - Porter Crk/CR 173 (LI)</td><td>Elite Labs - Porter Crk/CR 173 (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345918</td><td>158-013D(LI)</td><td>BASF Corporation - McIntyre #2 (LI)</td><td>32454</td><td>BASF Corporation - McIntyre #2 (LI)</td><td>BASF Corporation - McIntyre #2 (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345919</td><td>158-014D(LI)</td><td>BASF Corporation  - Gordon #2 (LI)</td><td>&nbsp;</td><td>BASF Corporation  - Gordon #2 (LI)</td><td>BASF Corporation  - Gordon #2 (LI)</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>160678</td><td>158-015D(L)(I)</td><td>ENGELHARD CORP                  </td><td>&nbsp;</td><td>ENGELHARD CORP                  </td><td>Engelhard Corp - S1467/S2449 PISWDF Site 1</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>148372</td><td>158-016D(L)(I)</td><td>BASF CORPORATION</td><td>24297</td><td>BASF CORPORATION</td><td>BASF Corporation - McIntyre Site #3</td><td>10050</td><td>LI</td><td>SW- Private Industrial Landfill</td>
+		</tr><tr>
+			<td>345745</td><td>158-017P(TT)</td><td>Blue Ridge Energy Development, LLC (PT Power Company (LLC)</td><td>33776</td><td>Blue Ridge Energy Development, LLC (PT Power Company (LLC)</td><td>Blue Ridge Energy Development, LLC (PT Power Company (LLC)</td><td>10051</td><td>TT</td><td>SW- Thermal Treatment</td>
+		</tr><tr>
+			<td>7175</td><td>159-004D(SL)</td><td>Worth County Landfill</td><td>9580</td><td>Worth County Landfill</td><td>Worth Co - SR 112 Sylvester Ph 1 (SL)</td><td>10046</td><td>MSWL</td><td>SW- Municipal Solid Waste Landfill</td>
+		</tr>
+	</table>
+</div>
