@@ -6,7 +6,7 @@
 *************************************************/
 
 --
-USE [GovOnline_LEMIR_UAT];
+USE [GovOnline_LEMIR];
 --
 BEGIN TRANSACTION;
 --

@@ -4,7 +4,7 @@
 ******************************************************/
 
 --
-USE [LEMIR_Stage]
+USE [LEMIR_Stage_fixes]
 GO
 --
 --INSERT INTO [dbo].[EI_MRF]
@@ -316,7 +316,7 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        isnull([MFI].[Comments], '') AS [txtComment_VAL],
        'General Comments' AS [txtComment_TAG],
        'true' AS [txtComment_VIS],
-       isnull([MFI].[Comments], '')+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||' AS [txtComment_HIS],
+       isnull([MFI].[Comments]+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||', '') AS [txtComment_HIS],
        'General Comments:' AS [txtComment_DES],
        '' AS [txtComment_COM],
        --
@@ -626,9 +626,9 @@ SELECT [MFI].[MainPermitNumber] AS [PermitNumber],
        [MFI].[MainPermitNumber] as [FACILITY_ID_REF]
 FROM [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MFI]
      LEFT JOIN [LandDataBase].[dbo].[OperationStatus] AS [OS] ON [MFI].[OperationStatus] = [OS].[OperationStatus]
-       LEFT JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [EI] ON [MFI].[MainPermitNumber] = [EI].[PermitNumber]
+       LEFT JOIN [LEMIR_Stage_fixes].[dbo].[EI_TYPE] AS [EI] ON [MFI].[MainPermitNumber] = [EI].[PermitNumber]
      --WHERE [EI].[LEMIR_EI_CD] = 'MRF'
-     WHERE [MFI].[MainPermitNumber] IN ('002-008P(RM)','006-008P(RM)','011-021P(RM)','011-024P(RM)','025-032P(RMI)','032-005P(RM)','033-093P(RM)','035-014P(RM)','047-022P(RM)(I)','058-011P(RM)','059-011P','069-010P(RM)','078-008P(RMI)','121-005P(RMI)','134-013P(RMI)')
+     WHERE [MFI].[MainPermitNumber] IN ('002-008P(RM)','006-008P(RM)','011-021P(RM)','011-024P(RM)','025-032P(RMI)','032-005P(RM)','033-093P(RM)','035-014P(RM)','047-022P(RM)(I)','058-011P(RM)','059-011P','069-010P(RM)','078-008P(RMI)','121-005P(RMI)','134-013P(RMI)','078-008(RMI)')
 GO
 
 
