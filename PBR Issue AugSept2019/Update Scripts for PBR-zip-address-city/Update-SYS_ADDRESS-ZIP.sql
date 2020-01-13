@@ -6,16 +6,16 @@
 ** By: Tom Karasch                     **
 ****************************************/
 
--- Update CITY
+-- Update ZIP
 --
-USE [LEMIR_Stage]
+USE [GovOnline_LEMIR]
 GO
 UPDATE [dbo].[SYS_ADDRESS]
-  SET [CITY_NAME]='Migration',
-      [UPDATED_BY]='EPDMIG SW2C'
+  SET [ZIP_CD]='31111',
+      [UPDATED_BY]='EPDMIG SW2Z'
 WHERE [ADDRESS_RID] > 10723355
       AND [ADDRESS_RID] < 10747360
-      AND ([CITY_NAME] LIKE 'x%'
-           OR [CITY_NAME] IS NULL
-           OR [CITY_NAME] LIKE '%?%'
-           OR [CITY_NAME] LIKE '*%')
+      AND ([ZIP_CD] LIKE 'x%'
+           OR [ZIP_CD] IS NULL
+           OR [ZIP_CD] LIKE '%?%'
+           OR [ZIP_CD] LIKE '*%')

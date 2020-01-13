@@ -4,82 +4,82 @@
 ******************************************************/
 
 --
-USE [LEMIR_Stage]
+USE [LEMIR_Stage_fixes]
 GO
 --
---INSERT INTO [dbo].[EI_COL]
---       ([PermitNumber],
---        [txtPermitNumber_ID],
---        [txtPermitNumber_VAL],
---        [txtPermitNumber_TAG],
---        [txtPermitNumber_VIS],
---        [txtPermitNumber_HIS],
---        [txtPermitNumber_DES],
---        [txtPermitNumber_COM],
---        [ddlEnvInterestStatus_ID],
---        [ddlEnvInterestStatus_VAL],
---        [ddlEnvInterestStatus_TAG],
---        [ddlEnvInterestStatus_VIS],
---        [ddlEnvInterestStatus_HIS],
---        [ddlEnvInterestStatus_DES],
---        [ddlEnvInterestStatus_COM],
---        [ddlOwnershipType_ID],
---        [ddlOwnershipType_VAL],
---        [ddlOwnershipType_TAG],
---        [ddlOwnershipType_VIS],
---        [ddlOwnershipType_HIS],
---        [ddlOwnershipType_DES],
---        [ddlOwnershipType_COM],
---        [txtComment_ID],
---        [txtComment_VAL],
---        [txtComment_TAG],
---        [txtComment_VIS],
---        [txtComment_HIS],
---        [txtComment_DES],
---        [txtComment_COM],
---        [txtFacilityStartDate_ID],
---        [txtFacilityStartDate_VAL],
---        [txtFacilityStartDate_TAG],
---        [txtFacilityStartDate_VIS],
---        [txtFacilityStartDate_HIS],
---        [txtFacilityStartDate_DES],
---        [txtFacilityStartDate_COM],
---        [txtFacilityEndDate_ID],
---        [txtFacilityEndDate_VAL],
---        [txtFacilityEndDate_TAG],
---        [txtFacilityEndDate_VIS],
---        [txtFacilityEndDate_HIS],
---        [txtFacilityEndDate_DES],
---        [txtFacilityEndDate_COM],
---        [txtPBRApprovalDate_ID],
---        [txtPBRApprovalDate_VAL],
---        [txtPBRApprovalDate_TAG],
---        [txtPBRApprovalDate_VIS],
---        [txtPBRApprovalDate_HIS],
---        [txtPBRApprovalDate_DES],
---        [txtPBRApprovalDate_COM],
---        [txtClosureAcknowledgedDate_ID],
---        [txtClosureAcknowledgedDate_VAL],
---        [txtClosureAcknowledgedDate_TAG],
---        [txtClosureAcknowledgedDate_VIS],
---        [txtClosureAcknowledgedDate_HIS],
---        [txtClosureAcknowledgedDate_DES],
---        [txtClosureAcknowledgedDate_COM],
---        [txtSolidWasteHandled_ID],
---        [txtSolidWasteHandled_VAL],
---        [txtSolidWasteHandled_TAG],
---        [txtSolidWasteHandled_VIS],
---        [txtSolidWasteHandled_HIS],
---        [txtSolidWasteHandled_DES],
---        [txtSolidWasteHandled_COM],
---        [rdoAcceptPublicWaste_ID],
---        [rdoAcceptPublicWaste_VAL],
---        [rdoAcceptPublicWaste_TAG],
---        [rdoAcceptPublicWaste_VIS],
---        [rdoAcceptPublicWaste_HIS],
---        [rdoAcceptPublicWaste_DES],
---        [rdoAcceptPublicWaste_COM],
---        [FACILITY_ID_REF])
+INSERT INTO [dbo].[EI_COL]
+       ([PermitNumber],
+        [txtPermitNumber_ID],
+        [txtPermitNumber_VAL],
+        [txtPermitNumber_TAG],
+        [txtPermitNumber_VIS],
+        [txtPermitNumber_HIS],
+        [txtPermitNumber_DES],
+        [txtPermitNumber_COM],
+        [ddlEnvInterestStatus_ID],
+        [ddlEnvInterestStatus_VAL],
+        [ddlEnvInterestStatus_TAG],
+        [ddlEnvInterestStatus_VIS],
+        [ddlEnvInterestStatus_HIS],
+        [ddlEnvInterestStatus_DES],
+        [ddlEnvInterestStatus_COM],
+        [ddlOwnershipType_ID],
+        [ddlOwnershipType_VAL],
+        [ddlOwnershipType_TAG],
+        [ddlOwnershipType_VIS],
+        [ddlOwnershipType_HIS],
+        [ddlOwnershipType_DES],
+        [ddlOwnershipType_COM],
+        [txtComment_ID],
+        [txtComment_VAL],
+        [txtComment_TAG],
+        [txtComment_VIS],
+        [txtComment_HIS],
+        [txtComment_DES],
+        [txtComment_COM],
+        [txtFacilityStartDate_ID],
+        [txtFacilityStartDate_VAL],
+        [txtFacilityStartDate_TAG],
+        [txtFacilityStartDate_VIS],
+        [txtFacilityStartDate_HIS],
+        [txtFacilityStartDate_DES],
+        [txtFacilityStartDate_COM],
+        [txtFacilityEndDate_ID],
+        [txtFacilityEndDate_VAL],
+        [txtFacilityEndDate_TAG],
+        [txtFacilityEndDate_VIS],
+        [txtFacilityEndDate_HIS],
+        [txtFacilityEndDate_DES],
+        [txtFacilityEndDate_COM],
+        [txtPBRApprovalDate_ID],
+        [txtPBRApprovalDate_VAL],
+        [txtPBRApprovalDate_TAG],
+        [txtPBRApprovalDate_VIS],
+        [txtPBRApprovalDate_HIS],
+        [txtPBRApprovalDate_DES],
+        [txtPBRApprovalDate_COM],
+        [txtClosureAcknowledgedDate_ID],
+        [txtClosureAcknowledgedDate_VAL],
+        [txtClosureAcknowledgedDate_TAG],
+        [txtClosureAcknowledgedDate_VIS],
+        [txtClosureAcknowledgedDate_HIS],
+        [txtClosureAcknowledgedDate_DES],
+        [txtClosureAcknowledgedDate_COM],
+        [txtSolidWasteHandled_ID],
+        [txtSolidWasteHandled_VAL],
+        [txtSolidWasteHandled_TAG],
+        [txtSolidWasteHandled_VIS],
+        [txtSolidWasteHandled_HIS],
+        [txtSolidWasteHandled_DES],
+        [txtSolidWasteHandled_COM],
+        [rdoAcceptPublicWaste_ID],
+        [rdoAcceptPublicWaste_VAL],
+        [rdoAcceptPublicWaste_TAG],
+        [rdoAcceptPublicWaste_VIS],
+        [rdoAcceptPublicWaste_HIS],
+        [rdoAcceptPublicWaste_DES],
+        [rdoAcceptPublicWaste_COM],
+        [FACILITY_ID_REF])
 SELECT [MF].[MainPermitNumber] AS [PermitNumber],
        --
        'txtPermitNumber' AS [txtPermitNumber_ID],
@@ -184,10 +184,10 @@ SELECT [MF].[MainPermitNumber] AS [PermitNumber],
        '' AS [ddlOwnershipType_COM],
        --
        'txtComment' AS [txtComment_ID],
-       isnull([MF].[WasteDescription], '') AS [txtComment_VAL],
+       isnull([MF].[Comments], '') AS [txtComment_VAL],
        'General Comments' AS [txtComment_TAG],
        'true' AS [txtComment_VIS],
-       isnull([MF].[WasteDescription]+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||', '') AS [txtComment_HIS],
+       isnull([MF].[Comments]+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||', '') AS [txtComment_HIS],
        'General Comments:' AS [txtComment_DES],
        '' AS [txtComment_COM],
        --
@@ -208,55 +208,55 @@ SELECT [MF].[MainPermitNumber] AS [PermitNumber],
        '' AS [txtFacilityEndDate_COM],
        --
        'txtPBRApprovalDate' AS [txtPBRApprovalDate_ID],
-       isnull(convert(VARCHAR(50), [MF].[PBR Approval Date], 101), '') AS [txtPBRApprovalDate_VAL],
+       isnull(convert(VARCHAR(50), [MF].[PermitIssueDate], 101), '') AS [txtPBRApprovalDate_VAL],
        'PBR Approval Date' AS [txtPBRApprovalDate_TAG],
        'true' AS [txtPBRApprovalDate_VIS],
-       IIF([MF].[PBR Approval Date] = '', '', isnull(convert(VARCHAR(50), [MF].[PBR Approval Date], 101)+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||', '')) AS [txtPBRApprovalDate_HIS],
+       IIF([MF].[PermitIssueDate] = '', '', isnull(convert(VARCHAR(50), [MF].[PermitIssueDate], 101)+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||', '')) AS [txtPBRApprovalDate_HIS],
        'PBR Approval Date:' AS [txtPBRApprovalDate_DES],
        '' AS [txtPBRApprovalDate_COM],
        --
        'txtClosureAcknowledgedDate' AS [txtClosureAcknowledgedDate_ID],
-       isnull(convert(VARCHAR(50), [MF].[DateSiteClosed], 101), '') AS [txtClosureAcknowledgedDate_VAL],
+       isnull(convert(VARCHAR(50), [MF].[DateClosureCertificate Issued], 101), '') AS [txtClosureAcknowledgedDate_VAL],
        'Closure Acknowledged Date' AS [txtClosureAcknowledgedDate_TAG],
        'true' AS [txtClosureAcknowledgedDate_VIS],
-       IIF([MF].[DateSiteClosed] = '', '', isnull(convert(VARCHAR(50), [MF].[DateSiteClosed], 101)+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||', '')) AS [txtClosureAcknowledgedDate_HIS],
+       IIF([MF].[DateClosureCertificate Issued] = '', '', isnull(convert(VARCHAR(50), [MF].[DateClosureCertificate Issued], 101)+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||', '')) AS [txtClosureAcknowledgedDate_HIS],
        'Closure Acknowledged Date:' AS [txtClosureAcknowledgedDate_DES],
        '' AS [txtClosureAcknowledgedDate_COM],
        --
        'txtSolidWasteHandled' AS [txtSolidWasteHandled_ID],
-       [MF].[WasteDescription] AS [txtSolidWasteHandled_VAL],
+       [MF].[FacilityTypeDescription] AS [txtSolidWasteHandled_VAL],
        'Solid Waste Handled' AS [txtSolidWasteHandled_TAG],
        'true' AS [txtSolidWasteHandled_VIS],
-       [MF].[WasteDescription]+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||' AS [txtSolidWasteHandled_HIS],
+       [MF].[FacilityTypeDescription]+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||' AS [txtSolidWasteHandled_HIS],
        'Solid Waste Handled:' AS [txtSolidWasteHandled_DES],
        '' AS [txtSolidWasteHandled_COM],
        --
        'rdoAcceptPublicWaste' AS [rdoAcceptPublicWaste_ID],
        [rdoAcceptPublicWaste_VAL]=CASE
-                                    WHEN [MF].[AcceptPublicWaste] IN('YES', 'Y', 'y', 'yes', 'yES')
+                                    WHEN [MF].[OperationStatus] = '1'  --IN('YES', 'Y', 'y', 'yes', 'yES')
                                       THEN 'Y'
                                     ELSE 'N'
                                   END,
        'Accept Public Waste?' AS [rdoAcceptPublicWaste_TAG],
        'true' AS [rdoAcceptPublicWaste_VIS],
        CASE
-         WHEN [MF].[AcceptPublicWaste] IN('YES', 'Y', 'y', 'yes', 'yES')
+         WHEN [MF].[OperationStatus] = '1'  --IN('YES', 'Y', 'y', 'yes', 'yES')
            THEN 'Y'
          ELSE 'N'
        END+'|'+convert(VARCHAR(50), getdate(), 101)+' '+LTRIM(RIGHT(CONVERT(CHAR(20), GETDATE(), 22), 11))+'|'+'EPDMIG SW||' AS [rdoAcceptPublicWaste_HIS],
        'Accept Public Waste?' AS [rdoAcceptPublicWaste_DES],
        '' AS [rdoAcceptPublicWaste_COM],
        --
-       [MF].[PermitNumber] AS [FACILITY_ID_REF]
+       [MF].[MainPermitNumber] AS [FACILITY_ID_REF]
 --FROM [PermitByRule].[dbo].[PBR_Main_Facility] AS [MF]
 --     LEFT JOIN [PermitByRule].[dbo].[Operation Status] AS [OS] ON [mf].[OperationStatus] = [OS].[OperationStatus]
 --     LEFT JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [EI] ON [MF].[PermitNumber] = [EI].[PermitNumber]
 --WHERE [EI].[LEMIR_EI_CD] = 'COL'
  
 
- FROM [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MF]
+FROM [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MF]
      LEFT JOIN [LandDataBase].[dbo].[OperationStatus] AS [OS] ON [MF].[OperationStatus] = [OS].[OperationStatus]
-       LEFT JOIN [LEMIR_Stage].[dbo].[EI_TYPE] AS [EI] ON [MF].[MainPermitNumber] = [EI].[PermitNumber]
-       WHERE [MF].[MainPermitNumber] IN ('')
+     LEFT JOIN [LEMIR_Stage_fixes].[dbo].[EI_TYPE] AS [EI] ON [MF].[MainPermitNumber] = [EI].[PermitNumber]
+WHERE [MF].[MainPermitNumber] IN('025-069(CI)', '029-010(CI)', '033-094(CI)', '057-015(CI)', '067-036(CI)', '087-013(CI)')
 GO
 

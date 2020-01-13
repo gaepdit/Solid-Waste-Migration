@@ -8,7 +8,7 @@
 
 -- Update City
 --
-USE [LEMIR_Stage]
+USE [GovOnline_LEMIR]
 GO
 UPDATE [dbo].[SYS_PHYSICAL_LOCATION]
   SET [CITY_NAME]='Migration',
