@@ -6,19 +6,15 @@
 ** By: Tom Karasch                     **
 ****************************************/
 
--- Update Address
+-- Update ZIP
 --
-USE [LEMIR_Stage]
+USE [GovOnline_LEMIR]
 GO
 UPDATE [dbo].[SYS_PHYSICAL_LOCATION]
-  SET [ST_NO]='123',
-      [ST_NAME]='Migration St.',
-      [UPDATED_BY] = 'EPDMIG SW2A'
+  SET [ZIP_CD]='31111',
+      [UPDATED_BY]='EPDMIG SW2Z'
 WHERE [LOCATION_RID] > 1257553
       AND [LOCATION_RID] < 1262584
-      AND ([ST_NAME] LIKE '%*%'
-      OR [ST_NAME] LIKE '% '
-      OR [ST_NAME] IS NULL)
-
-
+      AND ([ZIP_CD] IS NULL
+           OR [ZIP_CD] = '00000')
 

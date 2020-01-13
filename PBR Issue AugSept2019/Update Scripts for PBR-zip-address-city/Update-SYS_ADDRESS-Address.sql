@@ -8,7 +8,7 @@
 
 -- Update Address_LINE1
 --
-USE [LEMIR_Stage]
+USE [GovOnline_LEMIR]
 GO
 UPDATE [dbo].[SYS_ADDRESS]
   SET [ADDRESS_LINE1]='123 Migration St.',
