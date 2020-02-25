@@ -1,0 +1,68 @@
+
+/*******************************************************
+***** Script for SelectTopNRows command from SSMS  *****
+*******************************************************/
+
+SELECT [GSS].[SUBMISSION_RID],
+       [GSS].[REF_SUBMISSION_RID],
+       [GSS].[APPLICATION_RID],
+       [GSS].[OWNER_USER_RID],
+       [GSS].[SYS_USER_RID],
+       [GSS].[SYS_FACILITY_ID],
+       [GSS].[FACILITY_NAME],
+       [GSS].[SENDER_IP_ADDRESS],
+       [GSS].[BIZ_XML],
+       [GSS].[SUB_TYPE],
+       [GSS].[SUB_XML],
+       [GSS].[SUB_DTTM],
+       [GSS].[RETRANSFER_FLAG],
+       [GSS].[ATOMIC_FLAG],
+       [GSS].[STATUS_UPDATED_DTTM],
+       [GSS].[COMMENTS],
+       [GSS].[IN_USE],
+       [GSS].[LOCK_FLAG],
+       [GSS].[TRANS_ID],
+       [GSS].[TRANS_STATUS_CD],
+       [GSS].[CREATED_DTTM],
+       [GSS].[CREATED_BY],
+       [GSS].[UPDATED_DTTM],
+       [GSS].[UPDATED_BY],
+       [GSS].[INUSED_BY],
+       [GSS].[SUB_STATUS_RID],
+       [GSS].[EXTRA_INFO],
+       [GSS].[LATITUDE_VALUE],
+       [GSS].[LONGTITUDE_VALUE],
+       [GSS].[REQ_ATTACHMENT_IND],
+       [GSS].[REQ_FEE_IND],
+       [GSS].[REQ_INSPECTION_IND],
+       [GSS].[REQ_REVIEW_IND],
+       [GSS].[STATUS_UPDATED_BY],
+       [GSS].[CONTACT_RID],
+       [GSS].[ARB_SUBSCRIPTION_ID],
+       [GSS].[ARB_START_DATE],
+       [GSS].[ARB_CREATED_DATE],
+       [GSS].[ARB_SCHEDULE_DATE],
+       [GSS].[ARB_ENROLLED_IND],
+       [GSS].[ARB_SUBSCRIPTION_STATUS],
+       [GSS].[CONTROL_NUMBER],
+       [GSS].[MIG_TRACK_NUMBER],
+       [GSS].[END_DATE],
+       [GSS].[FEE_PROGRAM_RID],
+       [GSS].[CRC_NUM],
+       [GSS].[SHA2_STRING],
+       [GSS].[EMAIL_NOTIFY_IND],
+       [GSS].[FAC_STATUS_RID],
+       [GSS].[FILE_ACKNOW_DTTM],
+       [GSS].[REVIEW_COMMENT],
+       [GSS].[REVIEW_USER_RID],
+       [GSS].[REVIEWED_DATE],
+       [GSS].[SUBMISSION_METHOD_TYPE_RID],
+       [GSS].[GROUP_CONTROL_NUMBER],
+       [GSS].[COPY_ID],
+       [GSS].[EXTERNAL_FACILITY_ID]
+FROM [GovOnline_GEOS].[GOV].[SUB_SUBMISSION] AS [GSS]
+--WHERE [GSS].[SYS_FACILITY_ID] = 346047
+where [GSS].[MIG_TRACK_NUMBER] like '107-013D(SL)%'
+and [GSS].[MIG_TRACK_NUMBER] not like '107-013D(SL)(2)%'
+-- IN(11764, 11765, 346047, 346046, 346045)
+      --OR [SD].[FACILITY_RID] IN(, )
