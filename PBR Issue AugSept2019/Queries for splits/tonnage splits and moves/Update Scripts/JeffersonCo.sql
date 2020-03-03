@@ -6,13 +6,18 @@
 ** Permit: 081-010P(RM)                          **
 ** Facility: Jefferson County MRF                **
 ** revision: PROD                                **
+** FIX: 2/28/20: Fix Key issues, etc.            **
+** FIX: 3/2/20: Fix Key issues                   **
 **************************************************/
-  --
+
+--
   -- *** old Values ***
 --    No Contacts
 -- FAC_ENV_PROG_RID = 579759   Must delete this first, then do complete insert/update
 -- contact ID = 13324
 -- telephonic_RIDs = 663962 663963 663964
+--
+--MRF-Jefferson Co. - CR 138 Materials Recovery Facility
 -- 
 BEGIN TRANSACTION;
 --
@@ -25,14 +30,11 @@ BEGIN TRY
   DECLARE @new_Location_RID AS INT;
 --
 
-  SET @old_FAC_RID=346047;
-  SET @new_FAC_RID=380518;
-  SET @new_Contact_RID=612690;
-  SET @new_Location_RID=1257937;
+  SET @old_FAC_RID=5436;
+  SET @new_FAC_RID=380496;
+  SET @new_Contact_RID=621508;
+  SET @new_Location_RID=1292647;
   --
-  DELETE FROM [GovOnline_LEMIR].[dbo].[FAC_ENV_PROGRAM]
-      WHERE [FAC_ENV_PROGRAM_RID]=579759
-
   --
   -- FAC_EMAIL
   INSERT INTO [GovOnline_LEMIR].[dbo].[FAC_EMAIL]
@@ -44,35 +46,16 @@ BEGIN TRY
           [UPDATED_DATE],
           [UPDATED_BY])
   VALUES(
-         380517,
-         18476301,
+         380496,
+         18476257,
          'A',
          GETDATE(),
          'EPDMIG SWS',
          GETDATE(),
          'EPDMIG SWS')
        --
-  INSERT INTO [GovOnline_LEMIR].[dbo].[FAC_EMAIL]
-         ([FACILITY_RID],
-          [EMAIL_RID],
-          [STATUS_CD],
-          [CREATED_DATE],
-          [CREATED_BY],
-          [UPDATED_DATE],
-          [UPDATED_BY])
-  VALUES(
-         380517,
-         18496631,
-         'A',
-         GETDATE(),
-         'EPDMIG SWS',
-         GETDATE(),
-         'EPDMIG SWS')
   --
-  -- FAC_TELEPHONIC
-  UPDATE [GovOnline_LEMIR].[dbo].[FAC_TELEPHONIC]
-    SET [FACILITY_RID]=@new_FAC_RID
-  WHERE [TELEPHONIC_RID] = 21640946
+  -- FAC_TELEPHONIC   (21653813, 21665158, 21665159)
   -- insert
   INSERT INTO [GovOnline_LEMIR].[dbo].[FAC_TELEPHONIC]
          ([FACILITY_RID],
@@ -84,7 +67,41 @@ BEGIN TRY
           [UPDATED_BY])
   VALUES(
          @new_FAC_RID,
-         21667831,
+         21653813,
+         'A',
+         GETDATE(),
+         'EPDMIG SWS',
+         GETDATE(),
+         'EPDMIG SWS')
+         --
+  INSERT INTO [GovOnline_LEMIR].[dbo].[FAC_TELEPHONIC]
+         ([FACILITY_RID],
+          [TELEPHONIC_RID],
+          [STATUS_CD],
+          [CREATED_DATE],
+          [CREATED_BY],
+          [UPDATED_DATE],
+          [UPDATED_BY])
+  VALUES(
+         @new_FAC_RID,
+         21665158,
+         'A',
+         GETDATE(),
+         'EPDMIG SWS',
+         GETDATE(),
+         'EPDMIG SWS')
+         --
+  INSERT INTO [GovOnline_LEMIR].[dbo].[FAC_TELEPHONIC]
+         ([FACILITY_RID],
+          [TELEPHONIC_RID],
+          [STATUS_CD],
+          [CREATED_DATE],
+          [CREATED_BY],
+          [UPDATED_DATE],
+          [UPDATED_BY])
+  VALUES(
+         @new_FAC_RID,
+         21665159,
          'A',
          GETDATE(),
          'EPDMIG SWS',
@@ -102,44 +119,41 @@ BEGIN TRY
           [UPDATED_BY])
   VALUES(
          @new_FAC_RID,
-         10723739,
+         10732871,
          'A',
          GETDATE(),
          'EPDMIG SWS',
          GETDATE(),
          'EPDMIG SWS')
  --
+ --DONE
   UPDATE [GovOnline_LEMIR].[dbo].[FAC_CONTACT]
     SET [FACILITY_RID]=@new_FAC_RID
   WHERE [CONTACT_RID] = @new_Contact_RID
   --
-  UPDATE [GovOnline_LEMIR].[dbo].[FAC_ENV_PROGRAM]
-    SET [FACILITY_RID]=@new_FAC_RID
-  WHERE [FACILITY_RID] = @old_FAC_RID
-        AND [FAC_PROGRAM_IDENTIFIER] = '081-010P(RM)';
-  --
+    --
   UPDATE [GovOnline_LEMIR].[dbo].[FAC_ENV_PROGRAM_LOC]
-    SET [LOCATION_RID]=@new_Location_RID
-  WHERE [FAC_ENV_PROGRAM_RID] = 544868;
+    SET [LOCATION_RID]=@new_Location_RID,
+        [LOCATION_ALIAS]='MRF-Jefferson Co. - CR 138 Materials Recovery Facility'
+  WHERE [FAC_ENV_PROGRAM_RID] = 549824;
+  --
+  -- Delete new incomplete EI
+  DELETE FROM [GovOnline_LEMIR].[dbo].[FAC_ENV_PROGRAM]
+  WHERE [FAC_ENV_PROGRAM_RID] = 579759
+  --
+  -- Now update Old EI to point to new facility and update name
+  UPDATE [GovOnline_LEMIR].[dbo].[FAC_ENV_PROGRAM]
+    SET [FACILITY_RID]=@new_FAC_RID,
+        [AKA_NAME]='MRF-Jefferson Co. - CR 138 Materials Recovery Facility'
+  WHERE [FAC_ENV_PROGRAM_RID] = 549824
+        --
   --  
   UPDATE [GovOnline_LEMIR].[GOV].[SUB_PERMIT]
-    SET [SYS_FACILITY_ID]=@new_FAC_RID
-  WHERE [SYS_FACILITY_ID] = @old_FAC_RID
-        AND [PERMIT_NUMBER] = '081-010P(RM)';
-        --
-  UPDATE [GovOnline_LEMIR].[GOV].[SUB_SUBMISSION]
     SET [SYS_FACILITY_ID]=@new_FAC_RID,
-        [FACILITY_NAME]=''
-  WHERE [MIG_TRACK_NUMBER] LIKE ''
-        AND [MIG_TRACK_NUMBER] NOT LIKE ''
-   -- 
-   -- GEOS
-  -- --
-  --UPDATE [GovOnline_GEOS].[GOV].[SUB_SUBMISSION]
-  --  SET [SYS_FACILITY_ID]=0,
-  --      [FACILITY_NAME]='Newton Co - Forest Tower/Lwr Rvr Rds C&D Landfill'
-  --WHERE [MIG_TRACK_NUMBER] LIKE '107-013D(SL)%'
-  --      AND [MIG_TRACK_NUMBER] NOT LIKE '107-013D(SL)(2)%'
+        [FACILITY_NAME]='MRF-Jefferson Co. - CR 138 Materials Recovery Facility'
+  WHERE [SYS_FACILITY_ID] = @old_FAC_RID
+        AND [PERMIT_NUMBER] = '081-010P(RM)'
+        --
   -- --
 END TRY
 BEGIN CATCH

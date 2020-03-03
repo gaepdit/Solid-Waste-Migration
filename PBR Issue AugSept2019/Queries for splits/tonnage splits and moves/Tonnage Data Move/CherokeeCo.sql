@@ -1,24 +1,46 @@
 
 /**************************************************
 ** Updates for moving SW tonnage data            **
-** Date: 02/13/2020                              **
+** Date: 03/02/2020                              **
 ** By: Tom Karasch                               **
 ** Permit: 028-039D(SL)                          **
 ** Facility: Cherokee Co USA Waste Pine Bluff LF **
-** revision:                                     **
+** revision: UAT                                 **
 **************************************************/
 
---
-USE [GovOnline_LEMIR];
 --
 BEGIN TRANSACTION;
 --
 BEGIN TRY
 --
+-- *** FIRST*** 
+-- Change GEOS.FAC_FACILITY  FIS_ID to "506"
+  UPDATE [GovOnline_GEOS].[dbo].[FAC_FACILITY]
+    SET [FIS_ID]=506
+  WHERE [FACILITY_RID] = 267
+--
+-- GEOS.SUB_PERMIT --- Change Facility Name on last 6 rows
+  UPDATE [GovOnline_GEOS].[GOV].[SUB_PERMIT]
+    SET [FACILITY_NAME]='PINE BLUFF LANDFILL'
+  WHERE [FACILITY_NAME] = 'Cherokee County/USA Waste Pine Bluff Landfill'
+ --
+---- LEMIR
+  -- GOV.SUB_PERMIT  change SYS_FAC_ID to 2413 and Facility Name to "Pine Bluff Landfill"
+  UPDATE [GovOnline_LEMIR].[GOV].[SUB_PERMIT]
+    SET [SYS_FACILITY_ID]=2413,
+        [FACILITY_NAME]='PINE BLUFF LANDFILL'
+  WHERE [SYS_FACILITY_ID] = 2461
   --
-  UPDATE [dbo].[SYS_DISPOSAL]
+  -- GOV.SUB_SUBMISSION  "      "      "    "       "         "      "      "      "
+  UPDATE [GovOnline_LEMIR].[GOV].[SUB_SUBMISSION]
+    SET [SYS_FACILITY_ID]=2413,
+        [FACILITY_NAME]='PINE BLUFF LANDFILL'
+  WHERE [SYS_FACILITY_ID] = 2461
+  --
+  UPDATE [GovOnline_LEMIR].[dbo].[SYS_DISPOSAL]
     SET [FACILITY_RID]=2413
   WHERE [FACILITY_RID] = 2461
+  -- also change CHANGE IND to "Y" --- MAYBE
   -- --
 END TRY
 BEGIN CATCH

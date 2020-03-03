@@ -6,6 +6,7 @@
 ** Permit: 107-013D(SL)                          **
 ** Facility: Newton County                       **
 ** revision: Prod                                **
+** fix: 2/28/20: fix FEP_LOC for Location_RID    **
 **************************************************/
 
 --
@@ -20,9 +21,9 @@ BEGIN TRY
 --
 
   SET @old_FAC_RID=346047;
-  SET @new_FAC_RID=380518;
+  SET @new_FAC_RID=380561;
   SET @new_Contact_RID=612690;
-  SET @new_Location_RID=1257937;
+  SET @new_Location_RID=1292711;
   --
   -- FAC_EMAIL
   INSERT INTO [GovOnline_LEMIR].[dbo].[FAC_EMAIL]
@@ -34,25 +35,8 @@ BEGIN TRY
           [UPDATED_DATE],
           [UPDATED_BY])
   VALUES(
-         380517,
-         18476301,
-         'A',
-         GETDATE(),
-         'EPDMIG SWS',
-         GETDATE(),
-         'EPDMIG SWS')
-       --
-  INSERT INTO [GovOnline_LEMIR].[dbo].[FAC_EMAIL]
-         ([FACILITY_RID],
-          [EMAIL_RID],
-          [STATUS_CD],
-          [CREATED_DATE],
-          [CREATED_BY],
-          [UPDATED_DATE],
-          [UPDATED_BY])
-  VALUES(
-         380517,
-         18496631,
+         @new_FAC_RID,
+         18472162,
          'A',
          GETDATE(),
          'EPDMIG SWS',
@@ -60,6 +44,8 @@ BEGIN TRY
          'EPDMIG SWS')
   --
   -- FAC_TELEPHONIC
+  -- Telephonic_RIDs >> 21640946, 21667831
+  --  DONE
   UPDATE [GovOnline_LEMIR].[dbo].[FAC_TELEPHONIC]
     SET [FACILITY_RID]=@new_FAC_RID
   WHERE [TELEPHONIC_RID] = 21640946
@@ -109,8 +95,9 @@ BEGIN TRY
         AND [FAC_PROGRAM_IDENTIFIER] = '107-013D(SL)';
   --
   UPDATE [GovOnline_LEMIR].[dbo].[FAC_ENV_PROGRAM_LOC]
-    SET [LOCATION_RID]=@new_Location_RID
-  WHERE [FAC_ENV_PROGRAM_RID] = 544868;
+    SET [LOCATION_RID]=@new_Location_RID,
+        [LOCATION_ALIAS]='Newton Co - Forest Tower/Lwr Rvr Rds C&D Landfill'
+  WHERE [FAC_ENV_PROGRAM_LOC_RID] = 553458;
   --  
   UPDATE [GovOnline_LEMIR].[GOV].[SUB_PERMIT]
     SET [SYS_FACILITY_ID]=@new_FAC_RID
@@ -131,6 +118,10 @@ BEGIN TRY
   --WHERE [MIG_TRACK_NUMBER] LIKE '107-013D(SL)%'
   --      AND [MIG_TRACK_NUMBER] NOT LIKE '107-013D(SL)(2)%'
   -- --
+  --Add tonnage data
+  --
+
+  --
 END TRY
 BEGIN CATCH
   SELECT ERROR_NUMBER() AS [ErrorNumber],
