@@ -12,17 +12,20 @@
 BEGIN TRANSACTION;
 --
 BEGIN TRY
---
--- *** FIRST*** 
--- Change GEOS.FAC_FACILITY  FIS_ID to "506"
+----
+---- *** FIRST*** PROD ****
+---- Change GEOS.FAC_FACILITY  FIS_ID to "506"  Prod Only
   UPDATE [GovOnline_GEOS].[dbo].[FAC_FACILITY]
     SET [FIS_ID]=506
   WHERE [FACILITY_RID] = 267
+  --
+  --*** UAT ***
+  -- Change GEOS.FAC_FACILITY  Table not necessary, FIS_ID already present
 --
--- GEOS.SUB_PERMIT --- Change Facility Name on last 6 rows
-  UPDATE [GovOnline_GEOS].[GOV].[SUB_PERMIT]
-    SET [FACILITY_NAME]='PINE BLUFF LANDFILL'
-  WHERE [FACILITY_NAME] = 'Cherokee County/USA Waste Pine Bluff Landfill'
+-- GEOS.SUB_PERMIT --- Change Facility Name on last 6 rows PLUS XML
+  --UPDATE [GovOnline_GEOS].[GOV].[SUB_PERMIT]
+  --  SET [FACILITY_NAME]='PINE BLUFF LANDFILL'
+  --WHERE [FACILITY_NAME] = 'Cherokee County/USA Waste Pine Bluff Landfill'
  --
 ---- LEMIR
   -- GOV.SUB_PERMIT  change SYS_FAC_ID to 2413 and Facility Name to "Pine Bluff Landfill"
