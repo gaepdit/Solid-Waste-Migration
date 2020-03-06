@@ -13,6 +13,39 @@ BEGIN TRANSACTION;
 --
 BEGIN TRY
 --
+  -- --
+  -- *** FIRST*** 
+-- Change GEOS.FAC_FACILITY  FIS_ID to "1368" *** already Done
+  UPDATE [GovOnline_GEOS].[dbo].[FAC_FACILITY]
+    SET [FIS_ID]=
+  WHERE [FACILITY_RID] = 
+--
+-- GEOS.SUB_PERMIT --- Change Facility Name on last 6 rows
+  UPDATE [GovOnline_GEOS].[GOV].[SUB_PERMIT]
+    SET [FACILITY_NAME]=''
+  WHERE [FACILITY_NAME] = ''
+ --
+---- LEMIR
+  -- GOV.SUB_PERMIT  change SYS_FAC_ID to 2413 and Facility Name to "Pine Bluff Landfill"
+  UPDATE [GovOnline_LEMIR].[GOV].[SUB_PERMIT]
+    SET [SYS_FACILITY_ID]=,
+        [FACILITY_NAME]=''
+  WHERE [SYS_FACILITY_ID] = 
+  --
+  -- GOV.SUB_SUBMISSION  "      "      "    "       "         "      "      "      "
+  UPDATE [GovOnline_LEMIR].[GOV].[SUB_SUBMISSION]
+    SET [SYS_FACILITY_ID]=,
+        [FACILITY_NAME]=''
+  WHERE [SYS_FACILITY_ID] = 
+  --
+  UPDATE [GovOnline_LEMIR].[dbo].[SYS_DISPOSAL]
+    SET [FACILITY_RID]=
+  WHERE [FACILITY_RID] = 
+  -- also change CHANGE IND to "Y" --- MAYBE
+
+
+
+
   --
   UPDATE [GovOnline_LEMIR].[dbo].[SYS_DISPOSAL]
     SET [FACILITY_RID]=6818
