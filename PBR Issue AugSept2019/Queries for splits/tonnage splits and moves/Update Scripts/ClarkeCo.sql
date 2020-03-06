@@ -8,6 +8,7 @@
 ** revision: PROD                                **
 ** FIX: 2/28/20: Fix Key issues, etc.            **
 ** FIX: 3/2/20: Fix Key issues                   **
+** FIX: 3/4/20: Fix Key issues                   **
 **************************************************/
 
 --
@@ -89,13 +90,11 @@ BEGIN TRY
     SET [FACILITY_RID]=@new_FAC_RID
   WHERE [CONTACT_RID] = @new_Contact_RID
   --
-    --DONE
-  UPDATE [GovOnline_LEMIR].[dbo].[FAC_ENV_PROGRAM_LOC]
-    SET [LOCATION_RID]=@new_Location_RID,
-        [LOCATION_ALIAS]='MRF-Clarke Co - Athens Dunlap Road Materials Recovery Facility'
-  WHERE [FAC_ENV_PROGRAM_RID] = 549757;
+  -- Delete FEP_LOC from new facilty
+DELETE FROM [GovOnline_LEMIR].[dbo].[FAC_ENV_PROGRAM_LOC]
+      WHERE [FAC_ENV_PROGRAM_RID] = 579758
   --DONE
-  -- First delete bad new EI from New facility
+  -- delete bad new EI from New facility
   DELETE FROM [GovOnline_LEMIR].[dbo].[FAC_ENV_PROGRAM]
   WHERE [FAC_ENV_PROGRAM_RID] = 579758
   --
@@ -105,14 +104,19 @@ BEGIN TRY
         [AKA_NAME]='MRF-Clarke Co - Athens Dunlap Road Materials Recovery Facility'
   WHERE [FAC_ENV_PROGRAM_RID] = 549757
  --
+ -- now change location RID in the FEP_LOC
+UPDATE [GovOnline_LEMIR].[dbo].[FAC_ENV_PROGRAM_LOC]
+   SET [LOCATION_RID] = @new_Location_RID,
+   [LOCATION_ALIAS]='MRF-Clarke Co - Athens Dunlap Road Materials Recovery Facility'
+ WHERE [FAC_ENV_PROGRAM_RID] = 549757
   --  
+  -- Update Gov.SUB_PERMIT
   UPDATE [GovOnline_LEMIR].[GOV].[SUB_PERMIT]
     SET [SYS_FACILITY_ID]=@new_FAC_RID,
         [FACILITY_NAME]='MRF-Clarke Co - Athens Dunlap Road Materials Recovery Facility'
   WHERE [SYS_FACILITY_ID] = @old_FAC_RID
         AND [PERMIT_NUMBER] = '029-013P(RM)';
         --
-       
    -- 
 END TRY
 BEGIN CATCH

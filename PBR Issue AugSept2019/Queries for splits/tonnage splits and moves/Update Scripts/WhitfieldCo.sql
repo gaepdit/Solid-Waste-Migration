@@ -8,6 +8,7 @@
 ** revision: PROD                                **
 ** FIX: 2/28/20: Fix Key issues, etc.            **
 ** FIX: 3/2/20: Fix Key issues                   **
+** FIX: 3/4/20: Fix Key issues                   **
 **************************************************/
 
 --
@@ -106,11 +107,9 @@ BEGIN TRY
     SET [FACILITY_RID]=@new_FAC_RID
   WHERE [CONTACT_RID] = @new_Contact_RID
   --
-   --
-  UPDATE [GovOnline_LEMIR].[dbo].[FAC_ENV_PROGRAM_LOC]
-    SET [LOCATION_RID]=@new_Location_RID,
-        [LOCATION_ALIAS]='MRF-Whitfield Co - Old Dixie Hwy Materials Recovery Facility'
-  WHERE [FAC_ENV_PROGRAM_RID] = 549883;
+      -- Delete FEP_LOC from new facilty
+  DELETE FROM [GovOnline_LEMIR].[dbo].[FAC_ENV_PROGRAM_LOC]
+  WHERE [FAC_ENV_PROGRAM_RID] = 579757
   --  
   --DONE
   DELETE FROM [GovOnline_LEMIR].[dbo].[FAC_ENV_PROGRAM]
@@ -120,6 +119,11 @@ BEGIN TRY
     SET [FACILITY_RID]=@new_FAC_RID,
         [AKA_NAME]='MRF-Whitfield Co - Old Dixie Hwy Materials Recovery Facility'
   WHERE [FAC_ENV_PROGRAM_RID] = 549883
+  --
+  UPDATE [GovOnline_LEMIR].[dbo].[FAC_ENV_PROGRAM_LOC]
+    SET [LOCATION_RID]=@new_Location_RID,
+        [LOCATION_ALIAS]='MRF-Whitfield Co - Old Dixie Hwy Materials Recovery Facility'
+  WHERE [FAC_ENV_PROGRAM_RID] = 549883;
   --
   UPDATE [GovOnline_LEMIR].[GOV].[SUB_PERMIT]
     SET [SYS_FACILITY_ID]=@new_FAC_RID,
