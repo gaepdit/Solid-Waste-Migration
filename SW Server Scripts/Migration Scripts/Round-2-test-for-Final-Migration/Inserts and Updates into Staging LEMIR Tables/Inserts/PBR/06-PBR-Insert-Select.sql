@@ -29,15 +29,15 @@ IF 'EPDMIG SW' =
     SET @rid_counter_start=@rid_counter_start + 1000;
   END
   --
-INSERT INTO [LEMIR_Stage].[dbo].[SYS_EMAIL]
-       ([EMAIL_RID],
-        [EMAIL_ADDRESS],
-        [STATUS_CD],
-        [CREATED_BY],
-        [UPDATED_BY],
-        [CREATED_DATE],
-        [UPDATED_DATE],
-        [FACILITY_ID_REF])
+--INSERT INTO [LEMIR_Stage].[dbo].[SYS_EMAIL]
+--       ([EMAIL_RID],
+--        [EMAIL_ADDRESS],
+--        [STATUS_CD],
+--        [CREATED_BY],
+--        [UPDATED_BY],
+--        [CREATED_DATE],
+--        [UPDATED_DATE],
+--        [FACILITY_ID_REF])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [EMAIL_RID],
        LOWER([PC].[Owner/ContactEmail]) AS [EMAIL_ADDRESS],

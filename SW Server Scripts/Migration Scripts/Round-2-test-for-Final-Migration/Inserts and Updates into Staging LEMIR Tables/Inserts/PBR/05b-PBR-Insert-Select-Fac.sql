@@ -29,23 +29,23 @@ IF 'EPDMIG SW' =
     SET @rid_counter_start=@rid_counter_start + 1000;
   END
   --
-INSERT INTO [LEMIR_Stage].[dbo].[SYS_ADDRESS]
-       ([ADDRESS_RID],
-        [ADDRESS_LINE1],
-        [ADDRESS_LINE2],
-        [CITY_NAME],
-        --[PROVINCE_NAME],
-        [STATE_RID],
-        [COUNTRY_RID],
-        [ZIP_CD],
-        [ZIP_SUFFIX_CD],
-        [STATUS_CD],
-        [CREATED_BY],
-        [UPDATED_BY],
-        [CREATED_DATE],
-        [UPDATED_DATE],
-        [ADDRESS_TYPE_RID],
-        [FACILITY_ID_REF])
+--INSERT INTO [LEMIR_Stage].[dbo].[SYS_ADDRESS]
+--       ([ADDRESS_RID],
+--        [ADDRESS_LINE1],
+--        [ADDRESS_LINE2],
+--        [CITY_NAME],
+--        --[PROVINCE_NAME],
+--        [STATE_RID],
+--        [COUNTRY_RID],
+--        [ZIP_CD],
+--        [ZIP_SUFFIX_CD],
+--        [STATUS_CD],
+--        [CREATED_BY],
+--        [UPDATED_BY],
+--        [CREATED_DATE],
+--        [UPDATED_DATE],
+--        [ADDRESS_TYPE_RID],
+--        [FACILITY_ID_REF])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [ADDRESS_RID],
        ltrim([MF].[FacilityAddress]) AS [ADDRESS_LINE1],

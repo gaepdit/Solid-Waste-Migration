@@ -28,7 +28,7 @@ BEGIN TRY
 
 
 ---- LEMIR
-  -- GOV.SUB_PERMIT  change SYS_FAC_ID to 2413 and Facility Name to "Pine Bluff Landfill"
+  -- GOV.SUB_PERMIT  change SYS_FAC_ID to 6891 and Facility Name to "CITY OF LAGRANGE LANDFILL"
   UPDATE [GovOnline_LEMIR].[GOV].[SUB_PERMIT]
     SET [SYS_FACILITY_ID]=6891,
         [FACILITY_NAME]='CITY OF LAGRANGE LANDFILL'
@@ -39,6 +39,9 @@ BEGIN TRY
     SET [SYS_FACILITY_ID]=6891,
         [FACILITY_NAME]='CITY OF LAGRANGE LANDFILL'
   WHERE [SYS_FACILITY_ID] = 9197
+  --  -- **************************************************************************************
+  -- Also change Gov.Sub_Phys_Loc
+  --****************************************************************************************
   --
   UPDATE [GovOnline_LEMIR].[dbo].[SYS_DISPOSAL]
     SET [FACILITY_RID]=6891
