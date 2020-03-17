@@ -21,11 +21,11 @@ BEGIN TRY
   --
   --*** UAT ***
   -- Change GEOS.FAC_FACILITY  Table not necessary, FIS_ID already present
---
--- GEOS.SUB_PERMIT --- Change Facility Name on last 6 rows PLUS XML
-  --UPDATE [GovOnline_GEOS].[GOV].[SUB_PERMIT]
-  --  SET [FACILITY_NAME]='PINE BLUFF LANDFILL'
-  --WHERE [FACILITY_NAME] = 'Cherokee County/USA Waste Pine Bluff Landfill'
+
+ --GEOS.SUB_PERMIT --- Change Facility Name on last 6 rows PLUS XML
+  UPDATE [GovOnline_GEOS].[GOV].[SUB_PERMIT]
+    SET [FACILITY_NAME]='PINE BLUFF LANDFILL'
+  WHERE [FACILITY_NAME] = 'Cherokee County/USA Waste Pine Bluff Landfill'
  --
 ---- LEMIR
   -- GOV.SUB_PERMIT  change SYS_FAC_ID to 2413 and Facility Name to "Pine Bluff Landfill"
@@ -39,6 +39,9 @@ BEGIN TRY
     SET [SYS_FACILITY_ID]=2413,
         [FACILITY_NAME]='PINE BLUFF LANDFILL'
   WHERE [SYS_FACILITY_ID] = 2461
+  -- **************************************************************************************
+  -- Also change Gov.Sub_Phys_Loc
+  --****************************************************************************************
   --
   UPDATE [GovOnline_LEMIR].[dbo].[SYS_DISPOSAL]
     SET [FACILITY_RID]=2413

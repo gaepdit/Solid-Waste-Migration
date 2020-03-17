@@ -29,17 +29,17 @@ IF 'EPDMIG SW' <>
     SET @rid_counter_start=@rid_counter_start + 1;
   END
   --
-INSERT INTO [LEMIR_Stage].[dbo].[SYS_TELEPHONIC]
-       ([TELEPHONIC_RID],
-        [PHONE_TYPE_RID],
-        [PHONE_AREA_CODE],
-        [PHONE_NO],
-        [STATUS_CD],
-        [CREATED_BY],
-        [UPDATED_BY],
-        [CREATED_DATE],
-        [UPDATED_DATE],
-        [FACILITY_ID_REF])
+--INSERT INTO [LEMIR_Stage].[dbo].[SYS_TELEPHONIC]
+--       ([TELEPHONIC_RID],
+--        [PHONE_TYPE_RID],
+--        [PHONE_AREA_CODE],
+--        [PHONE_NO],
+--        [STATUS_CD],
+--        [CREATED_BY],
+--        [UPDATED_BY],
+--        [CREATED_DATE],
+--        [UPDATED_DATE],
+--        [FACILITY_ID_REF])
 SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
     (SELECT 1)) AS [TELEPHONIC_RID],
        '2' AS [PHONE_TYPE_RID],
