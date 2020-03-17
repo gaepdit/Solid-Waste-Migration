@@ -40,6 +40,9 @@ BEGIN TRY
     SET [SYS_FACILITY_ID]=3613,
         [FACILITY_NAME]='Dougherty County Landfill'
   WHERE [SYS_FACILITY_ID] = 140837
+  --  -- **************************************************************************************
+  -- Also change Gov.Sub_Phys_Loc
+  --****************************************************************************************
   --
   UPDATE [GovOnline_LEMIR].[dbo].[SYS_DISPOSAL]
     SET [FACILITY_RID]=3613

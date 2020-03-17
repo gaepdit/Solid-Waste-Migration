@@ -38,6 +38,9 @@ BEGIN TRY
     SET [SYS_FACILITY_ID]=,
         [FACILITY_NAME]=''
   WHERE [SYS_FACILITY_ID] = 9197
+  --  -- **************************************************************************************
+  -- Also change Gov.Sub_Phys_Loc
+  --****************************************************************************************
   --
   UPDATE [GovOnline_LEMIR].[dbo].[SYS_DISPOSAL]
     SET [FACILITY_RID]=
