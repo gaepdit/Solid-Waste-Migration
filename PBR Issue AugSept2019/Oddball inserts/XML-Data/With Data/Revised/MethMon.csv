@@ -1,0 +1,49 @@
+Name:, id                              ,  value:,ucontrolGeologist                       
+Name:, value                           ,  value:,                                        
+Name:, tag                             ,  value:,                                        
+Name:, visible                         ,  value:,true                                    
+Name:, history                         ,  value:,|1/15/2019 11:55:08 AM|TKarasch||       
+Name:, description                     ,  value:,                                        
+Name:, comment                         ,  value:,                                        
+Name:, id1                             ,  value:,ucontrolComplianceStatus                
+Name:, value1                          ,  value:,                                        
+Name:, tag1                            ,  value:,                                        
+Name:, visible1                        ,  value:,true                                    
+Name:, history1                        ,  value:,|1/15/2019 11:55:08 AM|TKarasch||       
+Name:, description1                    ,  value:,                                        
+Name:, comment1                        ,  value:,                                        
+Name:, id2                             ,  value:,ucontrolMilestone                       
+Name:, value2                          ,  value:,                                        
+Name:, tag2                            ,  value:,                                        
+Name:, visible2                        ,  value:,true                                    
+Name:, history2                        ,  value:,|1/15/2019 11:55:08 AM|TKarasch||       
+Name:, description2                    ,  value:,                                        
+Name:, comment2                        ,  value:,                                        
+Name:, id3                             ,  value:,ucontrolSubmittal                       
+Name:, value3                          ,  value:,                                        
+Name:, tag3                            ,  value:,                                        
+Name:, visible3                        ,  value:,true                                    
+Name:, history3                        ,  value:,|1/15/2019 11:55:08 AM|TKarasch||       
+Name:, description3                    ,  value:,                                        
+Name:, comment3                        ,  value:,                                        
+Name:, id4                             ,  value:,ucontrolAttachment                      
+Name:, value4                          ,  value:,                                        
+Name:, tag4                            ,  value:,                                        
+Name:, visible4                        ,  value:,true                                    
+Name:, history4                        ,  value:,|1/15/2019 11:55:08 AM|TKarasch||       
+Name:, description4                    ,  value:,                                        
+Name:, comment4                        ,  value:,                                        
+Name:, id5                             ,  value:,ddlGeologist                            
+Name:, value5                          ,  value:,1002                                    
+Name:, tag5                            ,  value:,                                        
+Name:, visible5                        ,  value:,false                                   
+Name:, history5                        ,  value:,1002|1/15/2019 11:55:08 AM|TKarasch||   
+Name:, description5                    ,  value:,                                        
+Name:, comment5                        ,  value:,                                        
+Name:, id6                             ,  value:,ddlComplianceStatus                     
+Name:, value6                          ,  value:,Assessment Monitoring                   
+Name:, tag6                            ,  value:,                                        
+Name:, visible6                        ,  value:,false                                   
+Name:, history6                        ,  value:,Assessment Monitoring|1/15/2019 11:55:08 AM|TKarasch||
+Name:, description6                    ,  value:,                                        
+Name:, comment6                        ,  value:,                                        

@@ -1,0 +1,260 @@
+<DynamicFormValue>
+    <SolidWaste>
+        <dataField>
+            <id>txtPermitNumber</id>
+            <value>123-045(CCR-L)</value>
+            <tag>Permit Number</tag>
+            <visible>true</visible>
+            <history>123-045(CCR-L)|1/23/2019 3:57:12 PM|MHeaphy||</history>
+            <description>Permit Number:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>ddlEnvInterestStatus</id>
+            <value>Operating</value>
+            <tag>EI Status</tag>
+            <visible>true</visible>
+            <history>Operating|1/23/2019 3:57:12 PM|MHeaphy||</history>
+            <description>EI Status:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>ddlOwnershipType</id>
+            <value>Private Industrial</value>
+            <tag>Ownership Type</tag>
+            <visible>true</visible>
+            <history>Private Industrial|1/23/2019 3:57:12 PM|MHeaphy||</history>
+            <description>Ownership Type:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtWebsiteAddress</id>
+            <value>N/A</value>
+            <tag>Website Address</tag>
+            <visible>true</visible>
+            <history>N/A|1/23/2019 3:57:12 PM|MHeaphy||</history>
+            <description>Website Address:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtComment</id>
+            <value>Test</value>
+            <tag>General Comments</tag>
+            <visible>true</visible>
+            <history>Test|1/23/2019 3:57:12 PM|MHeaphy||</history>
+            <description>General Comments:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtPermittedCapacity</id>
+            <value>500000</value>
+            <tag>Permitted Capacity (CY)</tag>
+            <visible>true</visible>
+            <history>500000|1/23/2019 3:57:12 PM|MHeaphy||</history>
+            <description>Permitted Capacity (CY): </description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtRemainingCapacity</id>
+            <value>100000</value>
+            <tag>Remaining Capacity (CY)</tag>
+            <visible>true</visible>
+            <history>100000|1/23/2019 3:57:12 PM|MHeaphy||</history>
+            <description>Permitted Capacity (CY): </description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtRemainingLife</id>
+            <value>2</value>
+            <tag>Remaining Life of EI (Years)</tag>
+            <visible>true</visible>
+            <history>2|1/23/2019 3:57:12 PM|MHeaphy||</history>
+            <description>Remaining Life of EI (Years): </description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtTotalAcreage</id>
+            <value>15</value>
+            <tag>Total Acreage (acres)</tag>
+            <visible>true</visible>
+            <history>15|1/23/2019 3:57:12 PM|MHeaphy||</history>
+            <description>Total Acreage (acres): </description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtConstructedDisposalFootprint</id>
+            <value>15</value>
+            <tag>Constructed Disposal Footprint (acres)</tag>
+            <visible>true</visible>
+            <history>15|1/23/2019 3:57:12 PM|MHeaphy||</history>
+            <description>Constructed Disposal Footprint (acres): </description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>rdoGWInstalled</id>
+            <value>Y</value>
+            <tag>GW Monitoring System Installed</tag>
+            <visible>true</visible>
+            <history>Y|1/23/2019 3:57:12 PM|MHeaphy||</history>
+            <description>GW Monitoring System Installed:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>ddlAssessmentMonitoring</id>
+            <value>Detection</value>
+            <tag>Assessment/Detection Monitoring</tag>
+            <visible>true</visible>
+            <history>Detection|1/23/2019 3:57:12 PM|MHeaphy||</history>
+            <description>Assessment/Detection Monitoring:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>rdoMethaneInstalled</id>
+            <value>N</value>
+            <tag>Methane Monitoring System Installed</tag>
+            <visible>true</visible>
+            <history>N|1/23/2019 3:57:12 PM|MHeaphy||</history>
+            <description>Methane Monitoring System Installed:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>ddlMethaneMonitoringFrequency</id>
+            <value />
+            <tag>Current Methane Monitoring Frequency</tag>
+            <visible>true</visible>
+            <history>|1/23/2019 3:57:12 PM|MHeaphy||</history>
+            <description>Current Methane Monitoring Frequency:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>rdoUnderDrainInstalled</id>
+            <value>Y</value>
+            <tag>Underdrain System Installed</tag>
+            <visible>true</visible>
+            <history>Y|1/23/2019 3:57:12 PM|MHeaphy||</history>
+            <description>Underdrain System Installed:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>rdoLFGasInstalled</id>
+            <value>N</value>
+            <tag>Active LF Gas Collection Installed</tag>
+            <visible>true</visible>
+            <history>N|1/23/2019 3:57:12 PM|MHeaphy||</history>
+            <description>Active LF Gas Collection Installed:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>rdoWasteEnergyOnsite</id>
+            <value>N</value>
+            <tag>Waste to Energy Onsite?</tag>
+            <visible>true</visible>
+            <history>N|1/23/2019 3:57:12 PM|MHeaphy||</history>
+            <description>Waste to Energy Onsite?</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtEnergyProduced</id>
+            <value />
+            <tag>Energy Produced (MWH)</tag>
+            <visible>false</visible>
+            <history>|1/23/2019 3:57:12 PM|MHeaphy||</history>
+            <description>Energy Produced (MWH): </description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtPermitIssueDate</id>
+            <value>01/16/2017</value>
+            <tag>Permit Issued Date</tag>
+            <visible>true</visible>
+            <history>01/16/2017|1/23/2019 3:57:12 PM|MHeaphy||</history>
+            <description>Permit Issued Date:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtPermitReviewDueDate</id>
+            <value>02/08/2019</value>
+            <tag>Current Permit Review Filing Deadline</tag>
+            <visible>true</visible>
+            <history>02/08/2019|1/23/2019 3:57:12 PM|MHeaphy||</history>
+            <description>Current Permit Review Filing Deadline:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtPostClosureCarePeriod</id>
+            <value>10</value>
+            <tag>Post Closure Care Period</tag>
+            <visible>true</visible>
+            <history>10|1/23/2019 3:57:12 PM|MHeaphy||</history>
+            <description>Post Closure Care Period: </description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtPostClosureReleaseDate</id>
+            <value>01/08/2029</value>
+            <tag>Post Closure Care Release Date</tag>
+            <visible>true</visible>
+            <history>01/08/2029|1/23/2019 3:57:12 PM|MHeaphy||</history>
+            <description>Post Closure Care Release Date:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>rdoAcceptPublicWaste</id>
+            <value>N</value>
+            <tag>Accept Public Waste?</tag>
+            <visible>true</visible>
+            <history>N|1/23/2019 3:57:12 PM|MHeaphy||</history>
+            <description>Accept Public Waste?</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>rdoAcceptCCR</id>
+            <value>Y</value>
+            <tag>Accept CCR?</tag>
+            <visible>true</visible>
+            <history>Y|1/23/2019 3:57:12 PM|MHeaphy||</history>
+            <description>Accept CCR?</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>rdoAcceptAsbestos</id>
+            <value>N</value>
+            <tag>Accept Asbestos?</tag>
+            <visible>true</visible>
+            <history>N|1/23/2019 3:57:12 PM|MHeaphy||</history>
+            <description>Accept Asbestos?</description>
+            <comment />
+        </dataField>
+        <grdFinancialAssurance>
+            <txtFiscalYearEndDate>12/31/2018</txtFiscalYearEndDate>
+            <txtEffectiveStartDate>01/01/2019</txtEffectiveStartDate>
+            <txtEffectiveEndDate>12/31/2019</txtEffectiveEndDate>
+            <ddlFAType>Combo</ddlFAType>
+            <txtMechanismNo>2</txtMechanismNo>
+            <txtCurrentOpenArea>15</txtCurrentOpenArea>
+            <txtApprovedOpenArea>15</txtApprovedOpenArea>
+            <txtClosureAmount>10000000</txtClosureAmount>
+            <txtPostClosureCareAmount>20000000</txtPostClosureCareAmount>
+            <txtCorrectiveActionAmount>5000000</txtCorrectiveActionAmount>
+            <txtTotalAssuredCost>35000000</txtTotalAssuredCost>
+            <txtComments>test</txtComments>
+        </grdFinancialAssurance>
+        <grdClosure>
+            <txtAcceptingWasteCeasedDate>12/11/2017</txtAcceptingWasteCeasedDate>
+            <txtPhaseCell>I /n1</txtPhaseCell>
+            <txtClosurePermitIssuedDate>01/05/2018</txtClosurePermitIssuedDate>
+        </grdClosure>
+        <grdCCRUnitType>
+            <ddlCCRUnitType>Existing</ddlCCRUnitType>
+        </grdCCRUnitType>
+        <grdConstructionDetail>
+            <txtApprovedDate>01/08/2018</txtApprovedDate>
+            <txtPhase>II</txtPhase>
+            <txtCell>n2</txtCell>
+        </grdConstructionDetail>
+        <grdMajorModification>
+            <txtMajorModificationIssuedDate />
+            <txtMajorModificationPurpose />
+        </grdMajorModification>
+    </SolidWaste>
+</DynamicFormValue>

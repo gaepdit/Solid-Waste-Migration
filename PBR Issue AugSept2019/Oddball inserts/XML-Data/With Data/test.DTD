@@ -1,0 +1,777 @@
+<!ELEMENT DynamicFormValue
+(
+     ENVInterestCCRSI
+)>
+
+<!ELEMENT ENVInterestCCRSI
+(
+     dataField
+    ,dataField1
+    ,dataField2
+    ,dataField3
+    ,dataField4
+    ,dataField5
+    ,dataField6
+    ,dataField7
+    ,dataField8
+    ,dataField9
+    ,dataField10
+    ,dataField11
+    ,dataField12
+    ,dataField13
+    ,dataField14
+    ,dataField15
+    ,dataField16
+    ,dataField17
+    ,dataField18
+    ,dataField19
+    ,dataField20
+    ,dataField21
+    ,dataField22
+    ,dataField23
+    ,dataField24
+    ,dataField25
+    ,dataField26
+    ,dataField27
+    ,dataField28
+    ,dataField29
+    ,dataField30
+    ,dataField31
+    ,dataField32
+    ,dataField33
+    ,dataField34
+    ,dataField35
+    ,dataField36
+    ,dataField37
+    ,grdFinancialAssurance
+    ,grdCCRUnitType
+    ,grdMajorModification
+)>
+
+<!ELEMENT dataField
+(
+     id
+    ,value
+    ,tag
+    ,visible
+    ,history
+    ,description
+    ,comment
+)>
+
+<!ELEMENT dataField1
+(
+     id1
+    ,value1
+    ,tag1
+    ,visible1
+    ,history1
+    ,description1
+    ,comment1
+)>
+
+<!ELEMENT dataField2
+(
+     id2
+    ,value2
+    ,tag2
+    ,visible2
+    ,history2
+    ,description2
+    ,comment2
+)>
+
+<!ELEMENT dataField3
+(
+     id3
+    ,value3
+    ,tag3
+    ,visible3
+    ,history3
+    ,description3
+    ,comment3
+)>
+
+<!ELEMENT dataField4
+(
+     id4
+    ,value4
+    ,tag4
+    ,visible4
+    ,history4
+    ,description4
+    ,comment4
+)>
+
+<!ELEMENT dataField5
+(
+     id5
+    ,value5
+    ,tag5
+    ,visible5
+    ,history5
+    ,description5
+    ,comment5
+)>
+
+<!ELEMENT dataField6
+(
+     id6
+    ,value6
+    ,tag6
+    ,visible6
+    ,history6
+    ,description6
+    ,comment6
+)>
+
+<!ELEMENT dataField7
+(
+     id7
+    ,value7
+    ,tag7
+    ,visible7
+    ,history7
+    ,description7
+    ,comment7
+)>
+
+<!ELEMENT dataField8
+(
+     id8
+    ,value8
+    ,tag8
+    ,visible8
+    ,history8
+    ,description8
+    ,comment8
+)>
+
+<!ELEMENT dataField9
+(
+     id9
+    ,value9
+    ,tag9
+    ,visible9
+    ,history9
+    ,description9
+    ,comment9
+)>
+
+<!ELEMENT dataField10
+(
+     id10
+    ,value10
+    ,tag10
+    ,visible10
+    ,history10
+    ,description10
+    ,comment10
+)>
+
+<!ELEMENT dataField11
+(
+     id11
+    ,value11
+    ,tag11
+    ,visible11
+    ,history11
+    ,description11
+    ,comment11
+)>
+
+<!ELEMENT dataField12
+(
+     id12
+    ,value12
+    ,tag12
+    ,visible12
+    ,history12
+    ,description12
+    ,comment12
+)>
+
+<!ELEMENT dataField13
+(
+     id13
+    ,value13
+    ,tag13
+    ,visible13
+    ,history13
+    ,description13
+    ,comment13
+)>
+
+<!ELEMENT dataField14
+(
+     id14
+    ,value14
+    ,tag14
+    ,visible14
+    ,history14
+    ,description14
+    ,comment14
+)>
+
+<!ELEMENT dataField15
+(
+     id15
+    ,value15
+    ,tag15
+    ,visible15
+    ,history15
+    ,description15
+    ,comment15
+)>
+
+<!ELEMENT dataField16
+(
+     id16
+    ,value16
+    ,tag16
+    ,visible16
+    ,history16
+    ,description16
+    ,comment16
+)>
+
+<!ELEMENT dataField17
+(
+     id17
+    ,value17
+    ,tag17
+    ,visible17
+    ,history17
+    ,description17
+    ,comment17
+)>
+
+<!ELEMENT dataField18
+(
+     id18
+    ,value18
+    ,tag18
+    ,visible18
+    ,history18
+    ,description18
+    ,comment18
+)>
+
+<!ELEMENT dataField19
+(
+     id19
+    ,value19
+    ,tag19
+    ,visible19
+    ,history19
+    ,description19
+    ,comment19
+)>
+
+<!ELEMENT dataField20
+(
+     id20
+    ,value20
+    ,tag20
+    ,visible20
+    ,history20
+    ,description20
+    ,comment20
+)>
+
+<!ELEMENT dataField21
+(
+     id21
+    ,value21
+    ,tag21
+    ,visible21
+    ,history21
+    ,description21
+    ,comment21
+)>
+
+<!ELEMENT dataField22
+(
+     id22
+    ,value22
+    ,tag22
+    ,visible22
+    ,history22
+    ,description22
+    ,comment22
+)>
+
+<!ELEMENT dataField23
+(
+     id23
+    ,value23
+    ,tag23
+    ,visible23
+    ,history23
+    ,description23
+    ,comment23
+)>
+
+<!ELEMENT dataField24
+(
+     id24
+    ,value24
+    ,tag24
+    ,visible24
+    ,history24
+    ,description24
+    ,comment24
+)>
+
+<!ELEMENT dataField25
+(
+     id25
+    ,value25
+    ,tag25
+    ,visible25
+    ,history25
+    ,description25
+    ,comment25
+)>
+
+<!ELEMENT dataField26
+(
+     id26
+    ,value26
+    ,tag26
+    ,visible26
+    ,history26
+    ,description26
+    ,comment26
+)>
+
+<!ELEMENT dataField27
+(
+     id27
+    ,value27
+    ,tag27
+    ,visible27
+    ,history27
+    ,description27
+    ,comment27
+)>
+
+<!ELEMENT dataField28
+(
+     id28
+    ,value28
+    ,tag28
+    ,visible28
+    ,history28
+    ,description28
+    ,comment28
+)>
+
+<!ELEMENT dataField29
+(
+     id29
+    ,value29
+    ,tag29
+    ,visible29
+    ,history29
+    ,description29
+    ,comment29
+)>
+
+<!ELEMENT dataField30
+(
+     id30
+    ,value30
+    ,tag30
+    ,visible30
+    ,history30
+    ,description30
+    ,comment30
+)>
+
+<!ELEMENT dataField31
+(
+     id31
+    ,value31
+    ,tag31
+    ,visible31
+    ,history31
+    ,description31
+    ,comment31
+)>
+
+<!ELEMENT dataField32
+(
+     id32
+    ,value32
+    ,tag32
+    ,visible32
+    ,history32
+    ,description32
+    ,comment32
+)>
+
+<!ELEMENT dataField33
+(
+     id33
+    ,value33
+    ,tag33
+    ,visible33
+    ,history33
+    ,description33
+    ,comment33
+)>
+
+<!ELEMENT dataField34
+(
+     id34
+    ,value34
+    ,tag34
+    ,visible34
+    ,history34
+    ,description34
+    ,comment34
+)>
+
+<!ELEMENT dataField35
+(
+     id35
+    ,value35
+    ,tag35
+    ,visible35
+    ,history35
+    ,description35
+    ,comment35
+)>
+
+<!ELEMENT dataField36
+(
+     id36
+    ,value36
+    ,tag36
+    ,visible36
+    ,history36
+    ,description36
+    ,comment36
+)>
+
+<!ELEMENT dataField37
+(
+     id37
+    ,value37
+    ,tag37
+    ,visible37
+    ,history37
+    ,description37
+    ,comment37
+)>
+
+<!ELEMENT grdFinancialAssurance
+(
+     txtFiscalYearEndDate
+    ,txtEffectiveStartDate
+    ,txtEffectiveEndDate
+    ,ddlFAType
+    ,txtFAMechanismNo
+    ,txtAmendmentNo
+    ,txtFAReceivedDate
+    ,txtFAApprovedDate
+    ,txtCurrentOpenArea
+    ,txtLargestOpenCellArea
+    ,txtClosureAmount
+    ,txtPostClosureCareAmount
+    ,txtCorrectiveActionAmount
+    ,txtTotalAssuredCost
+    ,txtComments
+)>
+
+<!ELEMENT grdMajorModification
+(
+     txtMajorModificationIssuedDate
+    ,txtMajorModificationPurpose
+)>
+
+<!ELEMENT id                                       (#PCDATA)>
+<!ELEMENT value                                    (#PCDATA)>
+<!ELEMENT tag                                      (#PCDATA)>
+<!ELEMENT visible                                  (#PCDATA)>
+<!ELEMENT history                                  (#PCDATA)>
+<!ELEMENT description                              (#PCDATA)>
+<!ELEMENT comment                                  (#PCDATA)>
+<!ELEMENT id1                                      (#PCDATA)>
+<!ELEMENT value1                                   (#PCDATA)>
+<!ELEMENT tag1                                     (#PCDATA)>
+<!ELEMENT visible1                                 (#PCDATA)>
+<!ELEMENT history1                                 (#PCDATA)>
+<!ELEMENT description1                             (#PCDATA)>
+<!ELEMENT comment1                                 (#PCDATA)>
+<!ELEMENT id2                                      (#PCDATA)>
+<!ELEMENT value2                                   (#PCDATA)>
+<!ELEMENT tag2                                     (#PCDATA)>
+<!ELEMENT visible2                                 (#PCDATA)>
+<!ELEMENT history2                                 (#PCDATA)>
+<!ELEMENT description2                             (#PCDATA)>
+<!ELEMENT comment2                                 (#PCDATA)>
+<!ELEMENT id3                                      (#PCDATA)>
+<!ELEMENT value3                                   (#PCDATA)>
+<!ELEMENT tag3                                     (#PCDATA)>
+<!ELEMENT visible3                                 (#PCDATA)>
+<!ELEMENT history3                                 (#PCDATA)>
+<!ELEMENT description3                             (#PCDATA)>
+<!ELEMENT comment3                                 (#PCDATA)>
+<!ELEMENT id4                                      (#PCDATA)>
+<!ELEMENT value4                                   (#PCDATA)>
+<!ELEMENT tag4                                     (#PCDATA)>
+<!ELEMENT visible4                                 (#PCDATA)>
+<!ELEMENT history4                                 (#PCDATA)>
+<!ELEMENT description4                             (#PCDATA)>
+<!ELEMENT comment4                                 (#PCDATA)>
+<!ELEMENT id5                                      (#PCDATA)>
+<!ELEMENT value5                                   (#PCDATA)>
+<!ELEMENT tag5                                     (#PCDATA)>
+<!ELEMENT visible5                                 (#PCDATA)>
+<!ELEMENT history5                                 (#PCDATA)>
+<!ELEMENT description5                             (#PCDATA)>
+<!ELEMENT comment5                                 (#PCDATA)>
+<!ELEMENT id6                                      (#PCDATA)>
+<!ELEMENT value6                                   (#PCDATA)>
+<!ELEMENT tag6                                     (#PCDATA)>
+<!ELEMENT visible6                                 (#PCDATA)>
+<!ELEMENT history6                                 (#PCDATA)>
+<!ELEMENT description6                             (#PCDATA)>
+<!ELEMENT comment6                                 (#PCDATA)>
+<!ELEMENT id7                                      (#PCDATA)>
+<!ELEMENT value7                                   (#PCDATA)>
+<!ELEMENT tag7                                     (#PCDATA)>
+<!ELEMENT visible7                                 (#PCDATA)>
+<!ELEMENT history7                                 (#PCDATA)>
+<!ELEMENT description7                             (#PCDATA)>
+<!ELEMENT comment7                                 (#PCDATA)>
+<!ELEMENT id8                                      (#PCDATA)>
+<!ELEMENT value8                                   (#PCDATA)>
+<!ELEMENT tag8                                     (#PCDATA)>
+<!ELEMENT visible8                                 (#PCDATA)>
+<!ELEMENT history8                                 (#PCDATA)>
+<!ELEMENT description8                             (#PCDATA)>
+<!ELEMENT comment8                                 (#PCDATA)>
+<!ELEMENT id9                                      (#PCDATA)>
+<!ELEMENT value9                                   (#PCDATA)>
+<!ELEMENT tag9                                     (#PCDATA)>
+<!ELEMENT visible9                                 (#PCDATA)>
+<!ELEMENT history9                                 (#PCDATA)>
+<!ELEMENT description9                             (#PCDATA)>
+<!ELEMENT comment9                                 (#PCDATA)>
+<!ELEMENT id10                                     (#PCDATA)>
+<!ELEMENT value10                                  (#PCDATA)>
+<!ELEMENT tag10                                    (#PCDATA)>
+<!ELEMENT visible10                                (#PCDATA)>
+<!ELEMENT history10                                (#PCDATA)>
+<!ELEMENT description10                            (#PCDATA)>
+<!ELEMENT comment10                                (#PCDATA)>
+<!ELEMENT id11                                     (#PCDATA)>
+<!ELEMENT value11                                  (#PCDATA)>
+<!ELEMENT tag11                                    (#PCDATA)>
+<!ELEMENT visible11                                (#PCDATA)>
+<!ELEMENT history11                                (#PCDATA)>
+<!ELEMENT description11                            (#PCDATA)>
+<!ELEMENT comment11                                (#PCDATA)>
+<!ELEMENT id12                                     (#PCDATA)>
+<!ELEMENT value12                                  (#PCDATA)>
+<!ELEMENT tag12                                    (#PCDATA)>
+<!ELEMENT visible12                                (#PCDATA)>
+<!ELEMENT history12                                (#PCDATA)>
+<!ELEMENT description12                            (#PCDATA)>
+<!ELEMENT comment12                                (#PCDATA)>
+<!ELEMENT id13                                     (#PCDATA)>
+<!ELEMENT value13                                  (#PCDATA)>
+<!ELEMENT tag13                                    (#PCDATA)>
+<!ELEMENT visible13                                (#PCDATA)>
+<!ELEMENT history13                                (#PCDATA)>
+<!ELEMENT description13                            (#PCDATA)>
+<!ELEMENT comment13                                (#PCDATA)>
+<!ELEMENT id14                                     (#PCDATA)>
+<!ELEMENT value14                                  (#PCDATA)>
+<!ELEMENT tag14                                    (#PCDATA)>
+<!ELEMENT visible14                                (#PCDATA)>
+<!ELEMENT history14                                (#PCDATA)>
+<!ELEMENT description14                            (#PCDATA)>
+<!ELEMENT comment14                                (#PCDATA)>
+<!ELEMENT id15                                     (#PCDATA)>
+<!ELEMENT value15                                  (#PCDATA)>
+<!ELEMENT tag15                                    (#PCDATA)>
+<!ELEMENT visible15                                (#PCDATA)>
+<!ELEMENT history15                                (#PCDATA)>
+<!ELEMENT description15                            (#PCDATA)>
+<!ELEMENT comment15                                (#PCDATA)>
+<!ELEMENT id16                                     (#PCDATA)>
+<!ELEMENT value16                                  (#PCDATA)>
+<!ELEMENT tag16                                    (#PCDATA)>
+<!ELEMENT visible16                                (#PCDATA)>
+<!ELEMENT history16                                (#PCDATA)>
+<!ELEMENT description16                            (#PCDATA)>
+<!ELEMENT comment16                                (#PCDATA)>
+<!ELEMENT id17                                     (#PCDATA)>
+<!ELEMENT value17                                  (#PCDATA)>
+<!ELEMENT tag17                                    (#PCDATA)>
+<!ELEMENT visible17                                (#PCDATA)>
+<!ELEMENT history17                                (#PCDATA)>
+<!ELEMENT description17                            (#PCDATA)>
+<!ELEMENT comment17                                (#PCDATA)>
+<!ELEMENT id18                                     (#PCDATA)>
+<!ELEMENT value18                                  (#PCDATA)>
+<!ELEMENT tag18                                    (#PCDATA)>
+<!ELEMENT visible18                                (#PCDATA)>
+<!ELEMENT history18                                (#PCDATA)>
+<!ELEMENT description18                            (#PCDATA)>
+<!ELEMENT comment18                                (#PCDATA)>
+<!ELEMENT id19                                     (#PCDATA)>
+<!ELEMENT value19                                  (#PCDATA)>
+<!ELEMENT tag19                                    (#PCDATA)>
+<!ELEMENT visible19                                (#PCDATA)>
+<!ELEMENT history19                                (#PCDATA)>
+<!ELEMENT description19                            (#PCDATA)>
+<!ELEMENT comment19                                (#PCDATA)>
+<!ELEMENT id20                                     (#PCDATA)>
+<!ELEMENT value20                                  (#PCDATA)>
+<!ELEMENT tag20                                    (#PCDATA)>
+<!ELEMENT visible20                                (#PCDATA)>
+<!ELEMENT history20                                (#PCDATA)>
+<!ELEMENT description20                            (#PCDATA)>
+<!ELEMENT comment20                                (#PCDATA)>
+<!ELEMENT id21                                     (#PCDATA)>
+<!ELEMENT value21                                  (#PCDATA)>
+<!ELEMENT tag21                                    (#PCDATA)>
+<!ELEMENT visible21                                (#PCDATA)>
+<!ELEMENT history21                                (#PCDATA)>
+<!ELEMENT description21                            (#PCDATA)>
+<!ELEMENT comment21                                (#PCDATA)>
+<!ELEMENT id22                                     (#PCDATA)>
+<!ELEMENT value22                                  (#PCDATA)>
+<!ELEMENT tag22                                    (#PCDATA)>
+<!ELEMENT visible22                                (#PCDATA)>
+<!ELEMENT history22                                (#PCDATA)>
+<!ELEMENT description22                            (#PCDATA)>
+<!ELEMENT comment22                                (#PCDATA)>
+<!ELEMENT id23                                     (#PCDATA)>
+<!ELEMENT value23                                  (#PCDATA)>
+<!ELEMENT tag23                                    (#PCDATA)>
+<!ELEMENT visible23                                (#PCDATA)>
+<!ELEMENT history23                                (#PCDATA)>
+<!ELEMENT description23                            (#PCDATA)>
+<!ELEMENT comment23                                (#PCDATA)>
+<!ELEMENT id24                                     (#PCDATA)>
+<!ELEMENT value24                                  (#PCDATA)>
+<!ELEMENT tag24                                    (#PCDATA)>
+<!ELEMENT visible24                                (#PCDATA)>
+<!ELEMENT history24                                (#PCDATA)>
+<!ELEMENT description24                            (#PCDATA)>
+<!ELEMENT comment24                                (#PCDATA)>
+<!ELEMENT id25                                     (#PCDATA)>
+<!ELEMENT value25                                  (#PCDATA)>
+<!ELEMENT tag25                                    (#PCDATA)>
+<!ELEMENT visible25                                (#PCDATA)>
+<!ELEMENT history25                                (#PCDATA)>
+<!ELEMENT description25                            (#PCDATA)>
+<!ELEMENT comment25                                (#PCDATA)>
+<!ELEMENT id26                                     (#PCDATA)>
+<!ELEMENT value26                                  (#PCDATA)>
+<!ELEMENT tag26                                    (#PCDATA)>
+<!ELEMENT visible26                                (#PCDATA)>
+<!ELEMENT history26                                (#PCDATA)>
+<!ELEMENT description26                            (#PCDATA)>
+<!ELEMENT comment26                                (#PCDATA)>
+<!ELEMENT id27                                     (#PCDATA)>
+<!ELEMENT value27                                  (#PCDATA)>
+<!ELEMENT tag27                                    (#PCDATA)>
+<!ELEMENT visible27                                (#PCDATA)>
+<!ELEMENT history27                                (#PCDATA)>
+<!ELEMENT description27                            (#PCDATA)>
+<!ELEMENT comment27                                (#PCDATA)>
+<!ELEMENT id28                                     (#PCDATA)>
+<!ELEMENT value28                                  (#PCDATA)>
+<!ELEMENT tag28                                    (#PCDATA)>
+<!ELEMENT visible28                                (#PCDATA)>
+<!ELEMENT history28                                (#PCDATA)>
+<!ELEMENT description28                            (#PCDATA)>
+<!ELEMENT comment28                                (#PCDATA)>
+<!ELEMENT id29                                     (#PCDATA)>
+<!ELEMENT value29                                  (#PCDATA)>
+<!ELEMENT tag29                                    (#PCDATA)>
+<!ELEMENT visible29                                (#PCDATA)>
+<!ELEMENT history29                                (#PCDATA)>
+<!ELEMENT description29                            (#PCDATA)>
+<!ELEMENT comment29                                (#PCDATA)>
+<!ELEMENT id30                                     (#PCDATA)>
+<!ELEMENT value30                                  (#PCDATA)>
+<!ELEMENT tag30                                    (#PCDATA)>
+<!ELEMENT visible30                                (#PCDATA)>
+<!ELEMENT history30                                (#PCDATA)>
+<!ELEMENT description30                            (#PCDATA)>
+<!ELEMENT comment30                                (#PCDATA)>
+<!ELEMENT id31                                     (#PCDATA)>
+<!ELEMENT value31                                  (#PCDATA)>
+<!ELEMENT tag31                                    (#PCDATA)>
+<!ELEMENT visible31                                (#PCDATA)>
+<!ELEMENT history31                                (#PCDATA)>
+<!ELEMENT description31                            (#PCDATA)>
+<!ELEMENT comment31                                (#PCDATA)>
+<!ELEMENT id32                                     (#PCDATA)>
+<!ELEMENT value32                                  (#PCDATA)>
+<!ELEMENT tag32                                    (#PCDATA)>
+<!ELEMENT visible32                                (#PCDATA)>
+<!ELEMENT history32                                (#PCDATA)>
+<!ELEMENT description32                            (#PCDATA)>
+<!ELEMENT comment32                                (#PCDATA)>
+<!ELEMENT id33                                     (#PCDATA)>
+<!ELEMENT value33                                  (#PCDATA)>
+<!ELEMENT tag33                                    (#PCDATA)>
+<!ELEMENT visible33                                (#PCDATA)>
+<!ELEMENT history33                                (#PCDATA)>
+<!ELEMENT description33                            (#PCDATA)>
+<!ELEMENT comment33                                (#PCDATA)>
+<!ELEMENT id34                                     (#PCDATA)>
+<!ELEMENT value34                                  (#PCDATA)>
+<!ELEMENT tag34                                    (#PCDATA)>
+<!ELEMENT visible34                                (#PCDATA)>
+<!ELEMENT history34                                (#PCDATA)>
+<!ELEMENT description34                            (#PCDATA)>
+<!ELEMENT comment34                                (#PCDATA)>
+<!ELEMENT id35                                     (#PCDATA)>
+<!ELEMENT value35                                  (#PCDATA)>
+<!ELEMENT tag35                                    (#PCDATA)>
+<!ELEMENT visible35                                (#PCDATA)>
+<!ELEMENT history35                                (#PCDATA)>
+<!ELEMENT description35                            (#PCDATA)>
+<!ELEMENT comment35                                (#PCDATA)>
+<!ELEMENT id36                                     (#PCDATA)>
+<!ELEMENT value36                                  (#PCDATA)>
+<!ELEMENT tag36                                    (#PCDATA)>
+<!ELEMENT visible36                                (#PCDATA)>
+<!ELEMENT history36                                (#PCDATA)>
+<!ELEMENT description36                            (#PCDATA)>
+<!ELEMENT comment36                                (#PCDATA)>
+<!ELEMENT id37                                     (#PCDATA)>
+<!ELEMENT value37                                  (#PCDATA)>
+<!ELEMENT tag37                                    (#PCDATA)>
+<!ELEMENT visible37                                (#PCDATA)>
+<!ELEMENT history37                                (#PCDATA)>
+<!ELEMENT description37                            (#PCDATA)>
+<!ELEMENT comment37                                (#PCDATA)>
+<!ELEMENT txtFiscalYearEndDate                     (#PCDATA)>
+<!ELEMENT txtEffectiveStartDate                    (#PCDATA)>
+<!ELEMENT txtEffectiveEndDate                      (#PCDATA)>
+<!ELEMENT ddlFAType                                (#PCDATA)>
+<!ELEMENT txtFAMechanismNo                         (#PCDATA)>
+<!ELEMENT txtAmendmentNo                           (#PCDATA)>
+<!ELEMENT txtFAReceivedDate                        (#PCDATA)>
+<!ELEMENT txtFAApprovedDate                        (#PCDATA)>
+<!ELEMENT txtCurrentOpenArea                       (#PCDATA)>
+<!ELEMENT txtLargestOpenCellArea                   (#PCDATA)>
+<!ELEMENT txtClosureAmount                         (#PCDATA)>
+<!ELEMENT txtPostClosureCareAmount                 (#PCDATA)>
+<!ELEMENT txtCorrectiveActionAmount                (#PCDATA)>
+<!ELEMENT txtTotalAssuredCost                      (#PCDATA)>
+<!ELEMENT txtComments                              (#PCDATA)>
+<!ELEMENT grdCCRUnitType                           (#PCDATA)>
+<!ELEMENT txtMajorModificationIssuedDate           (#PCDATA)>
+<!ELEMENT txtMajorModificationPurpose              (#PCDATA)>

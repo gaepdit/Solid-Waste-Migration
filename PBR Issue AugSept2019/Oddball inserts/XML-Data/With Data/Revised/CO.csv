@@ -1,0 +1,181 @@
+Name:, id                              ,  value:,txtPermitNumber                         
+Name:, value                           ,  value:,123-045(CO)                             
+Name:, tag                             ,  value:,Permit Number                           
+Name:, visible                         ,  value:,true                                    
+Name:, history                         ,  value:,123-045(CO)|1/23/2019 10:29:25 AM|MHeaphy||
+Name:, description                     ,  value:,Permit Number:                          
+Name:, comment                         ,  value:,                                        
+Name:, id1                             ,  value:,ddlEnvInterestStatus                    
+Name:, value1                          ,  value:,Operating                               
+Name:, tag1                            ,  value:,EI Status                               
+Name:, visible1                        ,  value:,true                                    
+Name:, history1                        ,  value:,Operating|1/23/2019 10:29:25 AM|MHeaphy||
+Name:, description1                    ,  value:,EI Status:                              
+Name:, comment1                        ,  value:,                                        
+Name:, id2                             ,  value:,ddlOwnershipType                        
+Name:, value2                          ,  value:,Private Commercial                      
+Name:, tag2                            ,  value:,Ownership Type                          
+Name:, visible2                        ,  value:,true                                    
+Name:, history2                        ,  value:,Private Commercial|1/23/2019 10:29:25 AM|MHeaphy||
+Name:, description2                    ,  value:,Ownership Type:                         
+Name:, comment2                        ,  value:,                                        
+Name:, id3                             ,  value:,txtComment                              
+Name:, value3                          ,  value:,test                                    
+Name:, tag3                            ,  value:,General Comments                        
+Name:, visible3                        ,  value:,true                                    
+Name:, history3                        ,  value:,test|1/23/2019 10:29:25 AM|MHeaphy||    
+Name:, description3                    ,  value:,General Comments:                       
+Name:, comment3                        ,  value:,                                        
+Name:, id4                             ,  value:,rdoGWInstalled                          
+Name:, value4                          ,  value:,Y                                       
+Name:, tag4                            ,  value:,GW Monitoring System Installed          
+Name:, visible4                        ,  value:,true                                    
+Name:, history4                        ,  value:,Y|1/23/2019 10:29:25 AM|MHeaphy||       
+Name:, description4                    ,  value:,GW Monitoring System Installed:         
+Name:, comment4                        ,  value:,                                        
+Name:, id5                             ,  value:,ddlAssessmentMonitoring                 
+Name:, value5                          ,  value:,Detection                               
+Name:, tag5                            ,  value:,Assessment/Detection Monitoring         
+Name:, visible5                        ,  value:,true                                    
+Name:, history5                        ,  value:,Detection|1/23/2019 10:29:25 AM|MHeaphy||
+Name:, description5                    ,  value:,Assessment/Detection Monitoring:        
+Name:, comment5                        ,  value:,                                        
+Name:, id6                             ,  value:,rdoMethaneInstalled                     
+Name:, value6                          ,  value:,Y                                       
+Name:, tag6                            ,  value:,Methane Monitoring System Installed     
+Name:, visible6                        ,  value:,true                                    
+Name:, history6                        ,  value:,Y|1/23/2019 10:29:25 AM|MHeaphy||       
+Name:, description6                    ,  value:,Methane Monitoring System Installed:    
+Name:, comment6                        ,  value:,                                        
+Name:, id7                             ,  value:,ddlMethaneMonitoringFrequency           
+Name:, value7                          ,  value:,Monthly                                 
+Name:, tag7                            ,  value:,Current Methane Monitoring Frequency    
+Name:, visible7                        ,  value:,true                                    
+Name:, history7                        ,  value:,Monthly|1/23/2019 10:29:25 AM|MHeaphy|| 
+Name:, description7                    ,  value:,Current Methane Monitoring Frequency:   
+Name:, comment7                        ,  value:,                                        
+Name:, id8                             ,  value:,rdoUnderDrainInstalled                  
+Name:, value8                          ,  value:,Y                                       
+Name:, tag8                            ,  value:,Underdrain System Installed             
+Name:, visible8                        ,  value:,true                                    
+Name:, history8                        ,  value:,Y|1/23/2019 10:29:25 AM|MHeaphy||       
+Name:, description8                    ,  value:,Underdrain System Installed:            
+Name:, comment8                        ,  value:,                                        
+Name:, id9                             ,  value:,rdoLFGasInstalled                       
+Name:, value9                          ,  value:,Y                                       
+Name:, tag9                            ,  value:,Active LF Gas Collection Installed      
+Name:, visible9                        ,  value:,true                                    
+Name:, history9                        ,  value:,Y|1/23/2019 10:29:25 AM|MHeaphy||       
+Name:, description9                    ,  value:,Active LF Gas Collection Installed:     
+Name:, comment9                        ,  value:,                                        
+Name:, id10                            ,  value:,rdoWasteEnergyOnsite                    
+Name:, value10                         ,  value:,N                                       
+Name:, tag10                           ,  value:,Waste to Energy Onsite?                 
+Name:, visible10                       ,  value:,true                                    
+Name:, history10                       ,  value:,N|1/23/2019 10:29:25 AM|MHeaphy||       
+Name:, description10                   ,  value:,Waste to Energy Onsite?                 
+Name:, comment10                       ,  value:,                                        
+Name:, id11                            ,  value:,txtEnergyProduced                       
+Name:, value11                         ,  value:,                                        
+Name:, tag11                           ,  value:,Energy Produced (MWH)                   
+Name:, visible11                       ,  value:,false                                   
+Name:, history11                       ,  value:,|1/23/2019 10:29:25 AM|MHeaphy||        
+Name:, description11                   ,  value:,Energy Produced (MWH):                  
+Name:, comment11                       ,  value:,                                        
+Name:, id12                            ,  value:,txtPermitIssueDate                      
+Name:, value12                         ,  value:,02/01/2017                              
+Name:, tag12                           ,  value:,Permit Issued Date                      
+Name:, visible12                       ,  value:,true                                    
+Name:, history12                       ,  value:,02/01/2017|1/23/2019 10:29:25 AM|MHeaphy||
+Name:, description12                   ,  value:,Permit Issued Date:                     
+Name:, comment12                       ,  value:,                                        
+Name:, id13                            ,  value:,txtPermitReviewDueDate                  
+Name:, value13                         ,  value:,04/01/2019                              
+Name:, tag13                           ,  value:,Current Permit Review Filing Deadline   
+Name:, visible13                       ,  value:,true                                    
+Name:, history13                       ,  value:,04/01/2019|1/23/2019 10:29:25 AM|MHeaphy||
+Name:, description13                   ,  value:,Current Permit Review Filing Deadline:  
+Name:, comment13                       ,  value:,                                        
+Name:, id14                            ,  value:,txtPermittedCapacity                    
+Name:, value14                         ,  value:,100                                     
+Name:, tag14                           ,  value:,Permitted Capacity (CY)                 
+Name:, visible14                       ,  value:,true                                    
+Name:, history14                       ,  value:,100|1/23/2019 10:29:25 AM|MHeaphy||     
+Name:, description14                   ,  value:,Permitted Capacity (CY):                
+Name:, comment14                       ,  value:,                                        
+Name:, id15                            ,  value:,txtTotalAcreage                         
+Name:, value15                         ,  value:,50                                      
+Name:, tag15                           ,  value:,Total Acreage (acres)                   
+Name:, visible15                       ,  value:,true                                    
+Name:, history15                       ,  value:,50|1/23/2019 10:29:25 AM|MHeaphy||      
+Name:, description15                   ,  value:,Total Acreage (acres):                  
+Name:, comment15                       ,  value:,                                        
+Name:, id16                            ,  value:,chkCompostingClass                      
+Name:, value16                         ,  value:,1,2,3                                   
+Name:, tag16                           ,  value:,Composting Class                        
+Name:, visible16                       ,  value:,true                                    
+Name:, history16                       ,  value:,1,2,3|1/23/2019 10:29:25 AM|MHeaphy||   
+Name:, description16                   ,  value:,Composting Class:                       
+Name:, comment16                       ,  value:,                                        
+Name:, id17                            ,  value:,chkFeedstockCategories                  
+Name:, value17                         ,  value:,A,B,C,D                                 
+Name:, tag17                           ,  value:,Feedstock Categories                    
+Name:, visible17                       ,  value:,true                                    
+Name:, history17                       ,  value:,A,B,C,D|1/23/2019 10:29:25 AM|MHeaphy|| 
+Name:, description17                   ,  value:,Feedstock Categories:                   
+Name:, comment17                       ,  value:,                                        
+Name:, id18                            ,  value:,txtFeedstockTypes                       
+Name:, value18                         ,  value:,1,2,3,4,5                               
+Name:, tag18                           ,  value:,Feedstock Types                         
+Name:, visible18                       ,  value:,true                                    
+Name:, history18                       ,  value:,1,2,3,4,5|1/23/2019 10:29:25 AM|MHeaphy||
+Name:, description18                   ,  value:,Feedstock Types:                        
+Name:, comment18                       ,  value:,                                        
+Name:, id19                            ,  value:,txtCompostingMethod                     
+Name:, value19                         ,  value:,test                                    
+Name:, tag19                           ,  value:,Composting Method                       
+Name:, visible19                       ,  value:,true                                    
+Name:, history19                       ,  value:,test|1/23/2019 10:29:25 AM|MHeaphy||    
+Name:, description19                   ,  value:,Composting Method:                      
+Name:, comment19                       ,  value:,                                        
+Name:, id20                            ,  value:,txtCompostingPadType                    
+Name:, value20                         ,  value:,test                                    
+Name:, tag20                           ,  value:,Composting Pad Type                     
+Name:, visible20                       ,  value:,true                                    
+Name:, history20                       ,  value:,test|1/23/2019 10:29:25 AM|MHeaphy||    
+Name:, description20                   ,  value:,Composting Pad Type:                    
+Name:, comment20                       ,  value:,                                        
+Name:, id21                            ,  value:,txtActiveCompostingArea                 
+Name:, value21                         ,  value:,10                                      
+Name:, tag21                           ,  value:,Active Composting Area (acres)          
+Name:, visible21                       ,  value:,true                                    
+Name:, history21                       ,  value:,10|1/23/2019 10:29:25 AM|MHeaphy||      
+Name:, description21                   ,  value:,Active Composting Area (acres):         
+Name:, comment21                       ,  value:,                                        
+Name:, id22                            ,  value:,rdoAcceptPublicWaste                    
+Name:, value22                         ,  value:,Y                                       
+Name:, tag22                           ,  value:,Accept Public Waste?                    
+Name:, visible22                       ,  value:,true                                    
+Name:, history22                       ,  value:,Y|1/23/2019 10:29:25 AM|MHeaphy||       
+Name:, description22                   ,  value:,Accept Public Waste?                    
+Name:, comment22                       ,  value:,                                        
+Name:, txtAcceptingWasteCeasedDate     ,  value:,11/30/2017                              
+Name:, txtPhaseCell                    ,  value:,I/c1                                    
+Name:, txtClosurePermitIssuedDate      ,  value:,01/01/2018                              
+Name:, txtApprovedDate                 ,  value:,01/15/2019                              
+Name:, txtPhase                        ,  value:,1                                       
+Name:, txtCell                         ,  value:,2                                       
+Name:, txtMajorModificationIssuedDate  ,  value:,06/14/2017                              
+Name:, txtMajorModificationPurpose     ,  value:,new cell                                
+Name:, txtFiscalYearEndDate            ,  value:,12/31/2018                              
+Name:, txtEffectiveStartDate           ,  value:,01/01/2019                              
+Name:, txtEffectiveEndDate             ,  value:,12/31/2019                              
+Name:, ddlFAType                       ,  value:,CFT                                     
+Name:, txtMechanismNo                  ,  value:,3                                       
+Name:, txtCurrentOpenArea              ,  value:,100                                     
+Name:, txtApprovedOpenArea             ,  value:,100                                     
+Name:, txtClosureAmount                ,  value:,1000000                                 
+Name:, txtPostClosureCareAmount        ,  value:,2000000                                 
+Name:, txtCorrectiveActionAmount       ,  value:,1000000                                 
+Name:, txtTotalAssuredCost             ,  value:,5000000                                 
+Name:, txtComments                     ,  value:,                                        
