@@ -1,0 +1,358 @@
+<DynamicFormValue>
+    <ENVInterestTT>
+        <dataField>
+            <id>txtPermitNumber</id>
+            <value>ghjk</value>
+            <tag>Permit Number</tag>
+            <visible>true</visible>
+            <history>ghjk|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>Permit Number:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>ddlEnvInterestStatus</id>
+            <value>In-Closure</value>
+            <tag>EI Status</tag>
+            <visible>true</visible>
+            <history>In-Closure|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>EI Status:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>rdoOwnershipType</id>
+            <value>Public</value>
+            <tag>Ownership Type</tag>
+            <visible>true</visible>
+            <history>Public|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>Ownership Type:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>rdoGWInstalled</id>
+            <value>Y</value>
+            <tag>GW Monitoring System Installed</tag>
+            <visible>true</visible>
+            <history>Y|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>GW Monitoring System Installed:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>rdoMethaneInstalled</id>
+            <value>Y</value>
+            <tag>Methane Monitoring System Installed</tag>
+            <visible>true</visible>
+            <history>Y|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>Methane Monitoring System Installed:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>rdoUnderDrainInstalled</id>
+            <value>Y</value>
+            <tag>Under Drain System Installed</tag>
+            <visible>true</visible>
+            <history>Y|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>Under Drain System Installed:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>rdoLFGasInstalled</id>
+            <value>Y</value>
+            <tag>LF Gas Collection Installed</tag>
+            <visible>true</visible>
+            <history>Y|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>LF Gas Collection Installed:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>rdoWasteEnergyOnsite</id>
+            <value>Y</value>
+            <tag>Waste to Energy Onsite?</tag>
+            <visible>true</visible>
+            <history>Y|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>Waste to Energy Onsite?</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtEnergyProduced</id>
+            <value>2345</value>
+            <tag>Energy Produced (MWH)</tag>
+            <visible>true</visible>
+            <history>2345|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>Energy Produced (MWH): </description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>chkRelatedEnvInterest</id>
+            <value>CCR-LF,CI,IN,MRF</value>
+            <tag>Related Environmental Interests</tag>
+            <visible>true</visible>
+            <history>CCR-LF,CI,IN,MRF|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>Related Environmental Interests: </description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtPermitIssueDate</id>
+            <value>11/01/2018</value>
+            <tag>Permit Issued Date</tag>
+            <visible>true</visible>
+            <history>11/01/2018|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>Permit Issued Date:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtReceiveWasteApprovedDate</id>
+            <value>11/21/2018</value>
+            <tag>Date Approved to Receive Waste</tag>
+            <visible>true</visible>
+            <history>11/21/2018|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>Date Approved to Receive Waste:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtPermitReviewDueDate</id>
+            <value>11/15/2018</value>
+            <tag>Current Permit Review Due Date</tag>
+            <visible>true</visible>
+            <history>11/15/2018|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>Current Permit Review Due Date:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtAcceptingWasteCeasedDate</id>
+            <value>11/15/2018</value>
+            <tag>Date Ceased Accepting Waste</tag>
+            <visible>true</visible>
+            <history>11/15/2018|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>Date Ceased Accepting Waste:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtClosurePermitIssuedDate</id>
+            <value>11/07/2018</value>
+            <tag>Closure Permit Issued Date</tag>
+            <visible>true</visible>
+            <history>11/07/2018|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>Closure Permit Issued Date:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtPostClosureCarePeriod</id>
+            <value>123</value>
+            <tag>Post Closure Care Period</tag>
+            <visible>true</visible>
+            <history>123|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>Post Closure Care Period: </description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtPostClosureReleaseDate</id>
+            <value>11/02/2018</value>
+            <tag>Post Closure Care Release Date</tag>
+            <visible>true</visible>
+            <history>11/02/2018|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>Post Closure Care Release Date:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtPermittedCapacity</id>
+            <value>1234</value>
+            <tag>Permitted Capacity (CY)</tag>
+            <visible>true</visible>
+            <history>1234|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>Permitted Capacity (CY): </description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtRemainingCapacity</id>
+            <value>234</value>
+            <tag>Remaining Capacity (CY)</tag>
+            <visible>true</visible>
+            <history>234|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>Permitted Capacity (CY): </description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtTotalAcreage</id>
+            <value>1234</value>
+            <tag>Total Acreage (acres)</tag>
+            <visible>true</visible>
+            <history>1234|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>Total Acreage (acres): </description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtConstructedDisposalFootprint</id>
+            <value>1234</value>
+            <tag>Constructed Disposal Footprint (acres)</tag>
+            <visible>true</visible>
+            <history>1234|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>Constructed Disposal Footprint (acres): </description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtWasteDescription</id>
+            <value>www</value>
+            <tag>Waste Description</tag>
+            <visible>true</visible>
+            <history>www|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>Waste Description:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>rdoAcceptPublicWaste</id>
+            <value>Y</value>
+            <tag>Accept Public Waste?</tag>
+            <visible>true</visible>
+            <history>Y|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>Accept Public Waste?</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>rdoAcceptCCR</id>
+            <value />
+            <tag>Accept CCR?</tag>
+            <visible>true</visible>
+            <history>|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>Accept CCR?</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>rdoAcceptAsbestos</id>
+            <value>Y</value>
+            <tag>Accept Asbestos?</tag>
+            <visible>true</visible>
+            <history>Y|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>Accept Asbestos?</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtFillSequenceStatus</id>
+            <value>qq</value>
+            <tag>Status within sequence of fill</tag>
+            <visible>true</visible>
+            <history>qq|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>Status within sequence of fill:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtClosureSequenceStatus</id>
+            <value>ww</value>
+            <tag>Status within closure sequence</tag>
+            <visible>true</visible>
+            <history>ww|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>Status within closure sequence:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtPhaseInStatus</id>
+            <value>q</value>
+            <tag>Status of phase-in schedule for environmental monitoring locations</tag>
+            <visible>true</visible>
+            <history>q|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>Status of phase-in schedule for environmental monitoring locations:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtAddress1</id>
+            <value>qwer</value>
+            <tag>Mailing Address 1</tag>
+            <visible>true</visible>
+            <history>qwer|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>Address 1:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtAddress2</id>
+            <value>qwe</value>
+            <tag>Mailing Address 2</tag>
+            <visible>true</visible>
+            <history>qwe|11/26/2018 5:58:34 PM|Admin||</history>
+            <description />
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtCity</id>
+            <value>ss</value>
+            <tag>City</tag>
+            <visible>true</visible>
+            <history>ss|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>City:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtCounty</id>
+            <value>c</value>
+            <tag>County</tag>
+            <visible>true</visible>
+            <history>c|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>County:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>ddlState</id>
+            <value>IN</value>
+            <tag>State</tag>
+            <visible>true</visible>
+            <history>IN|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>State:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtZipCode</id>
+            <value>30306</value>
+            <tag>Zip Code</tag>
+            <visible>true</visible>
+            <history>30306|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>Zip Code:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtLatitudeSiteLocation</id>
+            <value>32.1656221</value>
+            <tag>Latitude</tag>
+            <visible>true</visible>
+            <history>32.1656221|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>Latitude:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>txtLongitudeSiteLocation</id>
+            <value>-82.90007509999998</value>
+            <tag>Longitude</tag>
+            <visible>true</visible>
+            <history>-82.90007509999998|11/26/2018 5:58:34 PM|Admin||</history>
+            <description>Longitude:</description>
+            <comment />
+        </dataField>
+        <dataField>
+            <id>ucMapcontrol</id>
+            <value />
+            <tag />
+            <visible>true</visible>
+            <history>|11/26/2018 5:58:34 PM|Admin||</history>
+            <description />
+            <comment />
+        </dataField>
+        <grdMajorModification>
+            <txtMajorModificationIssuedDate />
+            <txtMajorModificationPurpose />
+        </grdMajorModification>
+        <grdFinancialAssurance>
+            <txtFiscalYearEndDate />
+            <txtEffectiveStartDate />
+            <txtEffectiveEndDate />
+            <ddlFAType />
+            <txtFAMechanismNo />
+            <txtAmendmentNo />
+            <txtFAReceivedDate />
+            <txtFAApprovedDate />
+            <txtCurrentOpenArea />
+            <txtLargestOpenCellArea />
+            <txtClosureAmount />
+            <txtPostClosureCareAmount />
+            <txtCorrectiveActionAmount />
+            <txtTotalAssuredCost />
+            <txtComments />
+        </grdFinancialAssurance>
+    </ENVInterestTT>
+</DynamicFormValue>

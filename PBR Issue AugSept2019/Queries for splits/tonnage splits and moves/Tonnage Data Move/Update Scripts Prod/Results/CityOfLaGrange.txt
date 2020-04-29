@@ -1,0 +1,10 @@
+
+(1 row(s) affected)
+
+(0 row(s) affected)
+
+(1 row(s) affected)
+
+
+ErrorNumber	ErrorSeverity	ErrorState	ErrorProcedure	ErrorLine	ErrorMessage
+547	16	0	NULL	25	The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_PM_SUB_SUBMISSION_FAC_FACILITY". The conflict occurred in database "GovOnline_GEOS", table "dbo.FAC_FACILITY", column 'FACILITY_RID'.

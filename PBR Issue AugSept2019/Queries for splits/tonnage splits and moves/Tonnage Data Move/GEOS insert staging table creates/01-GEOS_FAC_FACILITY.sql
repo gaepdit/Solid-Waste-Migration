@@ -1,10 +1,10 @@
-USE [LEMIR_Stage]
+USE [LEMIR_Stage_Out]
 GO
 
 
 --/****** Object:  Table [dbo].[FAC_FACILITY]    Script Date: 3/13/2020 10:34:36 AM ******/
 DROP TABLE [dbo].[$1_GEOS_FAC_FACILITY]
---GO
+GO
 
 --/****** Object:  Table [dbo].[FAC_FACILITY]    Script Date: 3/13/2020 10:34:36 AM ******/
 --SET ANSI_NULLS ON
@@ -56,8 +56,8 @@ CREATE TABLE [dbo].[$1_GEOS_FAC_FACILITY]
              [ORGANIZATION_NAME]            [VARCHAR](200) NULL,
              [FACILITY_NAME_Encrypted]      [VARBINARY](2000) NULL,
              [EXTRA_INFO]                   [VARCHAR](MAX) NULL,
-             [EXTERNAL_FACILITY_ID]         [NCHAR](36) NULL,
-             [FACILITY_ID_REF]              [VARCHAR](100) NOT NULL,
+             --[EXTERNAL_FACILITY_ID]         [NCHAR](36) NULL,
+             --[FACILITY_ID_REF]              [VARCHAR](100) NOT NULL,
              CONSTRAINT [$1_GEOS_FAC_FACILITY_PK] PRIMARY KEY CLUSTERED([FACILITY_RID] ASC)
              WITH(PAD_INDEX=OFF, STATISTICS_NORECOMPUTE=OFF, IGNORE_DUP_KEY=OFF, ALLOW_ROW_LOCKS=ON, ALLOW_PAGE_LOCKS=ON) ON [PRIMARY]
              )
