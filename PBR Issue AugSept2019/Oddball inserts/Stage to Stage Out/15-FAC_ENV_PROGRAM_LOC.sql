@@ -1,0 +1,59 @@
+
+
+INSERT INTO [LEMIR_Stage_Out_OB].[dbo].[FAC_ENV_PROGRAM_LOC]
+       ([FAC_ENV_PROGRAM_LOC_RID],
+        [FAC_ENV_PROGRAM_RID],
+        [LOCATION_RID],
+        [PRIMARY_IND],
+        [EFF_DATE],
+        [EXP_DATE],
+        [LOCATION_IDENTIFIER],
+        [LOCATION_ALIAS],
+        [STATUS_CD],
+        [CREATED_DATE],
+        [CREATED_BY],
+        [UPDATED_DATE],
+        [UPDATED_BY],
+        [UST_PIPING_IND],
+        [NEW_REPLACE_UST_PIPINT_IND],
+        [UST_DISPENSER_IND],
+        [NEW_REPLACE_DISPENSER_IND],
+        [SP_FUNCTIONAL_IND],
+        [OP_FUNCTIONAL_IND],
+        [CORROSION_PROTECTION],
+        [CP_FUNCTIONAL_IND],
+        [PRINT_IND],
+        [PROGRAM_LOC_TEMPLATE],
+        [PROGRAM_LOC_DETAIL],
+        [LOCATION_TYPE_NAME])
+SELECT [FAC_ENV_PROGRAM_LOC_RID],
+       [FAC_ENV_PROGRAM_RID],
+       [LOCATION_RID],
+       [PRIMARY_IND],
+       [EFF_DATE],
+       [EXP_DATE],
+       [LOCATION_IDENTIFIER],
+       [LOCATION_ALIAS],
+       [STATUS_CD],
+       [CREATED_DATE],
+       [CREATED_BY],
+       [UPDATED_DATE],
+       [UPDATED_BY],
+       [UST_PIPING_IND],
+       [NEW_REPLACE_UST_PIPINT_IND],
+       [UST_DISPENSER_IND],
+       [NEW_REPLACE_DISPENSER_IND],
+       [SP_FUNCTIONAL_IND],
+       [OP_FUNCTIONAL_IND],
+       [CORROSION_PROTECTION],
+       [CP_FUNCTIONAL_IND],
+       [PRINT_IND],
+       [PROGRAM_LOC_TEMPLATE],
+       [PROGRAM_LOC_DETAIL],
+       [LOCATION_TYPE_NAME]
+       --[FACILITY_ID_REF]
+FROM [LEMIR_Stage_OB].[dbo].[FAC_ENV_PROGRAM_LOC]
+--WHERE [FAC_ENV_PROGRAM_LOC_RID] > 547370
+
+
+
