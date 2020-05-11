@@ -1,0 +1,2 @@
+DELETE [gov].[sub_permit]
+WHERE [permit_rid] IN(5273942, 5274025, 5274062, 5274064, 5274066, 5274067)
