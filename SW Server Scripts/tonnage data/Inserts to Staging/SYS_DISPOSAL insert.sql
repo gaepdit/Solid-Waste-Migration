@@ -8,40 +8,39 @@ When        Who                 What
 ----------  ------------------  ----------------------------------------
 2019-04-23  TKarasch            Init
 ***********************************************************************/
-
 /*********************************************************
 ***** [#PBRtemp] for [PermitByRule].[dbo].[Tonnage]  *****
 *********************************************************/
 
-SELECT [PermitNo],
-       iif([Tonnage].[ReportingYear] LIKE '2%', [ReportingYear], iif([ReportingYear] > 80, [ReportingYear] + 1900, [ReportingYear] + 2000)) AS [ReportingYearCorrected],
-       [ReportingQtr],
+SELECT [PermitNo], 
+       iif([Tonnage].[ReportingYear] LIKE '2%', [ReportingYear], iif([ReportingYear] > 80, [ReportingYear] + 1900, [ReportingYear] + 2000)) AS [ReportingYearCorrected], 
+       [ReportingQtr], 
        sum([Tonnage].[TonnageReported]) AS [TonnageReported]
 INTO [#PBRtemp]
 FROM [PermitByRule].[dbo].[Tonnage]
 WHERE [PermitNo] LIKE '%-%'
       AND [Tonnage].[ReportingYear] IS NOT NULL
       AND [ReportingQtr] IS NOT NULL
-      --AND [PermitNo] NOT IN(
-      --                      ' 001-006D(SL)',
-      --                      '001-006D(SL)'
-      --                     )
-GROUP BY [PermitNo],
-         [Tonnage].[ReportingYear],
+--AND [PermitNo] NOT IN(
+--                      ' 001-006D(SL)',
+--                      '001-006D(SL)'
+--                     )
+GROUP BY [PermitNo], 
+         [Tonnage].[ReportingYear], 
          [ReportingQtr]
-ORDER BY 1,
-         2,
+ORDER BY 1, 
+         2, 
          3;
 --
 /*********************************************************
 ***** [#LDBTemp] for [LandDataBase].[dbo].[Tonnage]  *****
 *********************************************************/
 
-SELECT DISTINCT
+SELECT DISTINCT 
        [Tonnage].[PermitNumber],
        --[FY],
-       iif([Tonnage].[ReportingYear] > 80, [ReportingYear] + 1900, [ReportingYear] + 2000) AS [CorrectedReportingYear],
-       [Tonnage].[ReportingQuarter],
+       iif([Tonnage].[ReportingYear] > 80, [ReportingYear] + 1900, [ReportingYear] + 2000) AS [CorrectedReportingYear], 
+       [Tonnage].[ReportingQuarter], 
        sum([Tonnage].[TonnageReported]) AS [Tonnage]
 INTO [#LDBTemp]
 FROM [LandDataBase].[dbo].[Tonnage]
@@ -50,10 +49,10 @@ WHERE [Tonnage].[PermitNumber] LIKE '%-%'
       AND [Tonnage].[ReportingQuarter] IS NOT NULL
 GROUP BY [Tonnage].[PermitNumber],
          --[FY],
-         [Tonnage].[ReportingYear],
+         [Tonnage].[ReportingYear], 
          [Tonnage].[ReportingQuarter]
-ORDER BY 1,
-         2,
+ORDER BY 1, 
+         2, 
          3;
 ----
 /*****************************************************
@@ -61,17 +60,17 @@ ORDER BY 1,
 *****************************************************/
 
 ----
-SELECT Ltrim(isnull([LT].[PermitNumber], [PT].[PermitNo])) AS [PermitNumber],
-       isnull([LT].[CorrectedReportingYear], [PT].[ReportingYearCorrected]) AS [ReportingYear],
-       isnull([LT].[ReportingQuarter], [PT].[ReportingQtr]) AS [ReportingQuarter],
+SELECT Ltrim(isnull([LT].[PermitNumber], [PT].[PermitNo])) AS [PermitNumber], 
+       isnull([LT].[CorrectedReportingYear], [PT].[ReportingYearCorrected]) AS [ReportingYear], 
+       isnull([LT].[ReportingQuarter], [PT].[ReportingQtr]) AS [ReportingQuarter], 
        isnull([LT].[Tonnage], [PT].[TonnageReported]) AS [Tonnage]
 INTO [#TempTons]
 FROM [#LDBtemp] AS [LT]
      FULL OUTER JOIN [#PBRtemp] AS [PT] ON [LT].[PermitNumber] = [PT].[PermitNo]
                                            AND [PT].[ReportingYearCorrected] = [LT].[CorrectedReportingYear]
                                            AND [PT].[ReportingQtr] = [LT].[ReportingQuarter]
-ORDER BY 1,
-         2,
+ORDER BY 1, 
+         2, 
          3;
 --
 /*****************************************************
@@ -79,13 +78,13 @@ ORDER BY 1,
 *****************************************************/
 
 --
-SELECT [TT].[PermitNumber],
+SELECT [TT].[PermitNumber], 
        isnull([FFS].[FACILITY_RID], isnull([UI].[LEMIR ID for Update],
     (SELECT [FF].[FACILITY_RID]
      FROM [GovOnline_LEMIR].[dbo].[FAC_FACILITY] AS [FF]
-     WHERE [FF].[FACILITY_IDENTIFIER] = [UI].[analysis hist notes]))) AS [FACILITY_RID],
-       [TT].[ReportingYear],
-       [TT].[ReportingQuarter],
+     WHERE [FF].[FACILITY_IDENTIFIER] = [UI].[analysis hist notes]))) AS [FACILITY_RID], 
+       [TT].[ReportingYear], 
+       [TT].[ReportingQuarter], 
        [TT].[Tonnage]
 INTO [#TempTonFull1]
 FROM [#TempTons] AS [TT]
@@ -97,14 +96,14 @@ FROM [#TempTons] AS [TT]
 ***************** [#TempTonFul1] *********************
 *****************************************************/
 
-SELECT DISTINCT
-       [TTF1].[PermitNumber],
-       [TTF1].[FACILITY_RID],
+SELECT DISTINCT 
+       [TTF1].[PermitNumber], 
+       [TTF1].[FACILITY_RID], 
        [FF].[FACILITY_NAME],
        --[MFI].[FacilityName],
        --[PMF].[FacilityName],
-       [TTF1].[ReportingYear],
-       [TTF1].[ReportingQuarter],
+       [TTF1].[ReportingYear], 
+       [TTF1].[ReportingQuarter], 
        [TTF1].[Tonnage]
 INTO [#TempTonFull]
 FROM [#TempTonFull1] AS [TTF1]
@@ -112,17 +111,17 @@ FROM [#TempTonFull1] AS [TTF1]
      LEFT JOIN [LandDataBase].[dbo].[MAIN FACILITY INFO] AS [MFI] ON [TTF1].[PermitNumber] = [MFI].[MainPermitNumber]
      LEFT JOIN [PermitByRule].[dbo].[PBR_Main_Facility] AS [PMF] ON [TTF1].[PermitNumber] = [PMF].[PermitNumber]
 WHERE [TTF1].[FACILITY_RID] IS NOT NULL
-      --AND [TTF1].[PermitNumber] NOT IN(
-      --                                 '037-010D(MSWL)',
-      --                                 '044-0150D(SL)',
-      --                                 '057-021D(C&D)',
-      --                                 '136-018D(MSWL)',
-      --                                 '138-006D(MSWL)',
-      --                                 '089-020D(SL)',
-      --                                 '155-047D(SL)'
-      --                                )
-ORDER BY 1,
-         4,
+--AND [TTF1].[PermitNumber] NOT IN(
+--                                 '037-010D(MSWL)',
+--                                 '044-0150D(SL)',
+--                                 '057-021D(C&D)',
+--                                 '136-018D(MSWL)',
+--                                 '138-006D(MSWL)',
+--                                 '089-020D(SL)',
+--                                 '155-047D(SL)'
+--                                )
+ORDER BY 1, 
+         4, 
          5;
 ----
 --SELECT *
@@ -155,7 +154,7 @@ SET @rid_counter_start=1000;
 --  BEGIN
 --    SET @rid_counter_start=@rid_counter_start + 1000;
 --  END
-  --
+--
 --INSERT INTO [LEMIR_Stage].[dbo].[SYS_DISPOSAL]
 --       ([SYS_DISPOSAL_RID],
 --        [FACILITY_RID],
@@ -177,27 +176,28 @@ SET @rid_counter_start=1000;
 --        [UPDATED_DATE],
 --        [CHANGED_IND],
 --        [FACILITY_TYPE])
-SELECT @rid_counter_start + ROW_NUMBER() OVER(ORDER BY
+SELECT @rid_counter_start + ROW_NUMBER() OVER(
+       ORDER BY
     (SELECT 1)) AS [SYS_DISPOSAL_RID],
        --[TT].[PermitNumber],
-       [TT].[FACILITY_RID] AS [FACILITY_RID],
-       [TT].[ReportingYear] AS [REPORTING_YEAR],
-       [TT].[ReportingQuarter] AS [REPORTING_QUARTER],
-       [SSG].[SUBMISSION_RID] AS [SUBMISSION_RID],
-       [TT].[Tonnage] AS [INIT_DISPOSAL_AMOUNT],
-       iif([TT].[ReportingYear] = 2018, ([T].[Tons _Recycled] / 4), NULL) AS [INIT_RECYCLED_AMOUNT],
-       [TT].[Tonnage] AS [DISPOSAL_AMOUNT],
-       iif([TT].[ReportingYear] = 2018, ([T].[Tons _Recycled] / 4), NULL) AS [RECYCLED_AMOUNT],
-       NULL AS [SUB_FEE_RID],
-       iif(round(([TT].[Tonnage] * .75) - isnull(iif([TT].[ReportingYear] = 2018, (([T].[Tons _Recycled] / 4) * .75), 0), 0), 2) > 0, round(([TT].[Tonnage] * .75) - isnull(iif([TT].[ReportingYear] = 2018, (([T].[Tons _Recycled] / 4) * .75), 0), 0), 2), 0) AS [FEE_AMOUNT],
-       getdate() AS [SYN_DATE],
-       'EPDMIG SWT' AS [SENT_BY],
-       'A' AS [STATUS_CD],
-       'EPDMIG SWT' AS [CREATED_BY],
-       getdate() AS [CREATED_DATE],
-       'EPDMIG SWT' AS [UPDATED_BY],
-       getdate() AS [UPDATED_DATE],
-       'Y' AS [CHANGED_IND],
+       [TT].[FACILITY_RID] AS [FACILITY_RID], 
+       [TT].[ReportingYear] AS [REPORTING_YEAR], 
+       [TT].[ReportingQuarter] AS [REPORTING_QUARTER], 
+       [SSG].[SUBMISSION_RID] AS [SUBMISSION_RID], 
+       [TT].[Tonnage] AS [INIT_DISPOSAL_AMOUNT], 
+       iif([TT].[ReportingYear] = 2018, ([T].[Tons _Recycled] / 4), NULL) AS [INIT_RECYCLED_AMOUNT], 
+       [TT].[Tonnage] AS [DISPOSAL_AMOUNT], 
+       iif([TT].[ReportingYear] = 2018, ([T].[Tons _Recycled] / 4), NULL) AS [RECYCLED_AMOUNT], 
+       NULL AS [SUB_FEE_RID], 
+       iif(round(([TT].[Tonnage] * .75) - isnull(iif([TT].[ReportingYear] = 2018, (([T].[Tons _Recycled] / 4) * .75), 0), 0), 2) > 0, round(([TT].[Tonnage] * .75) - isnull(iif([TT].[ReportingYear] = 2018, (([T].[Tons _Recycled] / 4) * .75), 0), 0), 2), 0) AS [FEE_AMOUNT], 
+       getdate() AS [SYN_DATE], 
+       'EPDMIG SWT' AS [SENT_BY], 
+       'A' AS [STATUS_CD], 
+       'EPDMIG SWT' AS [CREATED_BY], 
+       getdate() AS [CREATED_DATE], 
+       'EPDMIG SWT' AS [UPDATED_BY], 
+       getdate() AS [UPDATED_DATE], 
+       'Y' AS [CHANGED_IND], 
        [FACILITY_TYPE]=CASE
                          WHEN [FEP].[TYPE_RID] = 10047
                            THEN 'C&D'
@@ -215,8 +215,9 @@ FROM [#TempTonFull] AS [TT]
      LEFT JOIN [LEMIR_Stage].[GOV].[SUB_SUBMISSION_LEMIR] AS [SSG] ON [TT].[PermitNumber] + convert(VARCHAR(10), [TT].[ReportingYear]) + convert(VARCHAR(10), [TT].[ReportingQuarter]) = [SSG].[MIG_TRACK_NUMBER]
      LEFT JOIN [LEMIR_Stage].[dbo].[$TonnageEOY2018] AS [T] ON [TT].[PermitNumber] = [T].[Permit #]
      LEFT JOIN [LEMIR_Stage].[dbo].[FAC_ENV_PROGRAM] AS [FEP] ON [TT].[PermitNumber] = [FEP].[FACILITY_ID_REF]
-ORDER BY 3,
-         2;
+ORDER BY 2, 
+         3, 
+         4;
 --
 --
 DROP TABLE [#LDBTemp];
